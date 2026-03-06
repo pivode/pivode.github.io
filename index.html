@@ -28,12 +28,43 @@
     "dataset": [
       {
         "@type": "Dataset",
+        "name": "Roller Coaster Database (2024)",
+        "description": "Roller coasters across every major theme park worldwide. Height, speed, length, manufacturer, park, country, and coaster type.",
+        "url": "https://seangularity.gumroad.com/l/roller-coasters",
+        "keywords": ["roller coaster", "theme park", "amusement park", "travel", "rides"],
+        "temporalCoverage": "2024",
+        "encodingFormat": "text/csv",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Dataset",
         "name": "European Football Player Stats (1996-2025)",
         "description": "Player-level statistics across 30 seasons of the top 8 European leagues. Goals, assists, market value, nationality, and club history.",
         "url": "https://seangularity.gumroad.com/l/football-data-set",
         "keywords": ["football", "soccer", "Premier League", "La Liga", "Bundesliga", "Serie A", "player statistics", "sports data"],
         "temporalCoverage": "1996/2025",
         "spatialCoverage": "Europe",
+        "encodingFormat": "text/csv",
+        "isAccessibleForFree": false,
+        "offers": {
+          "@type": "Offer",
+          "price": "3.99",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Dataset",
+        "name": "Biotech IP + Funding Data (2000-2024)",
+        "description": "1.4 million USPTO biotech patent records matched with SEC Form D fundraising disclosures at the company level. 3,591 companies with both patent footprint and capital raise history.",
+        "url": "https://seangularity.gumroad.com/l/biotech-patents",
+        "keywords": ["biotech", "patents", "funding", "life science", "pharmaceutical", "SEC", "USPTO", "venture capital"],
+        "temporalCoverage": "2000/2024",
+        "spatialCoverage": "United States",
         "encodingFormat": "text/csv",
         "isAccessibleForFree": false,
         "offers": {
@@ -59,16 +90,17 @@
       },
       {
         "@type": "Dataset",
-        "name": "Roller Coaster Database (2024)",
-        "description": "Roller coasters across every major theme park worldwide. Height, speed, length, manufacturer, park, country, and coaster type.",
-        "url": "https://seangularity.gumroad.com/l/roller-coasters",
-        "keywords": ["roller coaster", "theme park", "amusement park", "travel", "rides"],
-        "temporalCoverage": "2024",
+        "name": "Indian Cars Database (2026)",
+        "description": "Every car variant currently sold in India with full specs - engine type, displacement, fuel, dimensions, price range, and safety ratings.",
+        "url": "https://seangularity.gumroad.com/l/indian-cars",
+        "keywords": ["indian cars", "automotive", "car specs", "India", "electric vehicle", "NCAP", "price"],
+        "temporalCoverage": "2026",
+        "spatialCoverage": "India",
         "encodingFormat": "text/csv",
-        "isAccessibleForFree": true,
+        "isAccessibleForFree": false,
         "offers": {
           "@type": "Offer",
-          "price": "0",
+          "price": "2.99",
           "priceCurrency": "USD"
         }
       }
@@ -505,7 +537,7 @@
     </p>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-number">3</div>
+        <div class="stat-number">5</div>
         <div class="stat-label">Datasets</div>
       </div>
       <div class="stat-divider"></div>
@@ -525,7 +557,7 @@
     <div class="section-label">Available now</div>
     <div class="grid">
 
-      <!-- ROLLER COASTERS (free hook) -->
+      <!-- ROLLER COASTERS -->
       <div class="card">
         <img
           class="card-cover"
@@ -541,42 +573,14 @@
           </div>
           <div class="card-title">Roller Coaster Database</div>
           <ul class="card-desc">
-            <li>Height, speed, length, manufacturer, and coaster type</li>
-            <li>Every major theme park worldwide - park name, country, region</li>
-            <li>Good for travel planning, theme park analysis, or just curiosity</li>
+            <li>Height, speed, length, manufacturer, and coaster type for every coaster</li>
+            <li>Every major theme park worldwide - park name, country, and region included</li>
+            <li>Good for travel planning, theme park analysis, or just satisfying curiosity</li>
           </ul>
           <div class="card-footer">
             <div class="price-free">Free</div>
             <a class="btn btn-free" href="https://seangularity.gumroad.com/l/roller-coasters" target="_blank" rel="noopener">
               Download free <span class="btn-arrow">&rarr;</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- MICHELIN GUIDE -->
-      <div class="card">
-        <img
-          class="card-cover"
-          src="/images/michelin.jpg"
-          alt="Michelin Guide Restaurants"
-          loading="lazy"
-        >
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="tag">50+ countries</span>
-            <span class="tag">2026</span>
-          </div>
-          <div class="card-title">Michelin Guide Restaurants</div>
-          <ul class="card-desc">
-            <li>Every starred and Bib Gourmand restaurant - name, cuisine, star rating</li>
-            <li>Full location data - city, region, country across 50+ countries</li>
-            <li>Complete 2026 guide, easy to filter by country, city, or tier</li>
-          </ul>
-          <div class="card-footer">
-            <div class="price">$1.99</div>
-            <a class="btn" href="https://seangularity.gumroad.com/l/michelin" target="_blank" rel="noopener">
-              Get dataset <span class="btn-arrow">&rarr;</span>
             </a>
           </div>
         </div>
@@ -597,13 +601,97 @@
           </div>
           <div class="card-title">European Football Player Stats</div>
           <ul class="card-desc">
-            <li>Goals, assists, market value, nationality, and club history per player</li>
-            <li>30 seasons across 8 top European leagues - Premier League, La Liga, and more</li>
-            <li>Deep enough to track careers, compare eras, or train models</li>
+            <li>Goals, assists, appearances, cards, minutes, nationality, and club per player-season</li>
+            <li>30 seasons across 8 top European leagues - Premier League, La Liga, Bundesliga, and more</li>
+            <li>Deep enough to track careers, compare eras, or train predictive models</li>
           </ul>
           <div class="card-footer">
             <div class="price">$3.99</div>
             <a class="btn" href="https://seangularity.gumroad.com/l/football-data-set" target="_blank" rel="noopener">
+              Get dataset <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BIOTECH IP + FUNDING -->
+      <div class="card">
+        <img
+          class="card-cover"
+          src="/images/biotech-patents.jpg"
+          alt="Biotech IP and Funding"
+          loading="lazy"
+        >
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="tag">113K companies</span>
+            <span class="tag">2000-2024</span>
+          </div>
+          <div class="card-title">Biotech IP + Funding Data</div>
+          <ul class="card-desc">
+            <li>Patent counts, CPC classification, and SEC fundraising history per company - side by side</li>
+            <li>1.4M USPTO biotech patents matched with Form D disclosures across 3,591 companies</li>
+            <li>Identify IP-rich companies that raised surprisingly little - or track which rounds drove the most subsequent filings</li>
+          </ul>
+          <div class="card-footer">
+            <div class="price">$3.99</div>
+            <a class="btn" href="https://seangularity.gumroad.com/l/biotech-patents" target="_blank" rel="noopener">
+              Get dataset <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MICHELIN GUIDE -->
+      <div class="card">
+        <img
+          class="card-cover"
+          src="/images/michelin.jpg"
+          alt="Michelin Guide Restaurants"
+          loading="lazy"
+        >
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="tag">51 countries</span>
+            <span class="tag">2026</span>
+          </div>
+          <div class="card-title">Michelin Guide Restaurants</div>
+          <ul class="card-desc">
+            <li>Every starred and Bib Gourmand restaurant - name, award level, price tier, and Michelin profile link</li>
+            <li>18,839 restaurants across 51 countries, from 3-star legends to Selected picks</li>
+            <li>Filter by country, city, or rating tier - built for immediate use in pandas, R, or Excel</li>
+          </ul>
+          <div class="card-footer">
+            <div class="price">$1.99</div>
+            <a class="btn" href="https://seangularity.gumroad.com/l/michelin" target="_blank" rel="noopener">
+              Get dataset <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INDIAN CARS -->
+      <div class="card">
+        <img
+          class="card-cover"
+          src="/images/indian-cars.jpg"
+          alt="Indian Cars Database"
+          loading="lazy"
+        >
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="tag">1,968 variants</span>
+            <span class="tag">2026</span>
+          </div>
+          <div class="card-title">Indian Cars Database</div>
+          <ul class="card-desc">
+            <li>Engine specs, dimensions, fuel type, transmission, mileage, and crash test ratings per variant</li>
+            <li>Every car on sale in India in 2026 - 285 models from 41 brands, Rs 3.25L to Rs 12.25Cr</li>
+            <li>Includes 247 electric variants and Bharat NCAP + Global NCAP safety scores where available</li>
+          </ul>
+          <div class="card-footer">
+            <div class="price">$2.99</div>
+            <a class="btn" href="https://seangularity.gumroad.com/l/indian-cars" target="_blank" rel="noopener">
               Get dataset <span class="btn-arrow">&rarr;</span>
             </a>
           </div>
