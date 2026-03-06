@@ -1,5 +1,5 @@
 /* =========================================================
-   THE WORLD WHEN YOU WERE BORN — style.css
+   THE WORLD WHEN YOU WERE BORN - style.css
    ========================================================= */
 
 /* CUSTOM PROPERTIES */
@@ -603,7 +603,7 @@ body {
 }
 
 /* =========================================================
-   PATTERN A — FOCAL NUMBER
+   PATTERN A - FOCAL NUMBER
    ========================================================= */
 
 .pattern-a {}
@@ -646,7 +646,7 @@ body {
 }
 
 /* =========================================================
-   PATTERN B — TWO-UP COMPARISON
+   PATTERN B - TWO-UP COMPARISON
    ========================================================= */
 
 .pattern-b {}
@@ -696,7 +696,7 @@ body {
 }
 
 /* =========================================================
-   PATTERN C — BILLBOARD CARD
+   PATTERN C - BILLBOARD CARD
    ========================================================= */
 
 .pattern-c {}
@@ -724,7 +724,7 @@ body {
 }
 
 /* =========================================================
-   PATTERN D — TIMELINE RIBBON
+   PATTERN D - TIMELINE RIBBON
    ========================================================= */
 
 .pattern-d {}
@@ -786,7 +786,7 @@ body {
 }
 
 /* =========================================================
-   PATTERN E — PRICE ROW
+   PATTERN E - PRICE ROW
    ========================================================= */
 
 .pattern-e {}
@@ -835,7 +835,7 @@ body {
 }
 
 /* =========================================================
-   PATTERN F — STAT TRIO
+   PATTERN F - STAT TRIO
    ========================================================= */
 
 .pattern-f {}
@@ -890,7 +890,7 @@ body {
 }
 
 /* =========================================================
-   TV PREMIERES — SHOW PILLS
+   TV PREMIERES - SHOW PILLS
    ========================================================= */
 
 .show-pills {
@@ -1024,6 +1024,85 @@ body {
 }
 
 /* =========================================================
+   ERA / DECADE THEME OVERRIDES
+   Applied to body via JS when infographic is shown.
+   Only mood-shifting properties are overridden - layout,
+   font stack, and dark base remain intact.
+   ========================================================= */
+
+/* 1950s - warm, golden, slightly amber-tinted darkness */
+body.era-50s {
+  --bg-void:    #0d0b07;
+  --bg-surface: #131009;
+  --bg-raised:  #1e1a10;
+  --border:     rgba(200, 150, 58, 0.12);
+  --text-secondary: #9a9080;
+  --text-tertiary:  #5e5648;
+  --accent:     #c8963a;
+  --radius-card: 6px;
+}
+
+/* 1960s - cool, mod, crisp with teal clarity */
+body.era-60s {
+  --bg-void:    #080c10;
+  --bg-surface: #0c1118;
+  --bg-raised:  #141c24;
+  --border:     rgba(0, 137, 123, 0.13);
+  --text-secondary: #8898a8;
+  --text-tertiary:  #4e6070;
+  --accent:     #00897b;
+  --radius-card: 4px;
+}
+
+/* 1970s - warm earth tones, amber, organic */
+body.era-70s {
+  --bg-void:    #0c0a06;
+  --bg-surface: #120f08;
+  --bg-raised:  #1c170e;
+  --border:     rgba(181, 101, 29, 0.13);
+  --text-secondary: #988870;
+  --text-tertiary:  #5c5040;
+  --accent:     #b5651d;
+  --radius-card: 8px;
+}
+
+/* 1980s - cool near-black with electric purple punch */
+body.era-80s {
+  --bg-void:    #080810;
+  --bg-surface: #0e0e1c;
+  --bg-raised:  #161628;
+  --border:     rgba(124, 58, 237, 0.15);
+  --text-secondary: #8888b0;
+  --text-tertiary:  #505070;
+  --accent:     #7c3aed;
+  --radius-card: 2px;
+}
+
+/* 1990s - neutral-dark, grunge undertone, muted green */
+body.era-90s {
+  --bg-void:    #070909;
+  --bg-surface: #0e1010;
+  --bg-raised:  #181c1a;
+  --border:     rgba(74, 124, 89, 0.12);
+  --text-secondary: #858e88;
+  --text-tertiary:  #4e5850;
+  --accent:     #4a7c59;
+  --radius-card: 10px;
+}
+
+/* 2000s - clean cool-dark with tech blue */
+body.era-00s {
+  --bg-void:    #06080d;
+  --bg-surface: #0b0e18;
+  --bg-raised:  #131826;
+  --border:     rgba(30, 64, 175, 0.15);
+  --text-secondary: #8090b0;
+  --text-tertiary:  #4a5878;
+  --accent:     #1e40af;
+  --radius-card: 12px;
+}
+
+/* =========================================================
    LANDING COLLAPSE ANIMATION
    ========================================================= */
 
@@ -1039,7 +1118,7 @@ body {
 }
 
 /* =========================================================
-   RESPONSIVE — MOBILE
+   RESPONSIVE - MOBILE
    ========================================================= */
 
 @media (max-width: 640px) {

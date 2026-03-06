@@ -1,5 +1,5 @@
 /* =========================================================
-   THE WORLD WHEN YOU WERE BORN — app.js
+   THE WORLD WHEN YOU WERE BORN - app.js
    ========================================================= */
 
 'use strict';
@@ -342,7 +342,34 @@ function applyAccent(year) {
 }
 
 // ---------------------------------------------------------------------------
-// NAME — localStorage persistence
+// DECADE THEME
+// Applies a subtle era-appropriate CSS class to body that overrides mood
+// variables (bg tints, border color, accent, border-radius character).
+// The accent set here is the CSS-variable fallback; applyAccent() sets the
+// inline style which takes precedence during the reveal overlay phase, so
+// both are aligned to the same decade color.
+// ---------------------------------------------------------------------------
+
+const ERA_CLASSES = ['era-50s', 'era-60s', 'era-70s', 'era-80s', 'era-90s', 'era-00s'];
+
+function applyDecadeTheme(year) {
+  // Remove any previously applied era class
+  document.body.classList.remove(...ERA_CLASSES);
+
+  const decade = Math.floor(year / 10) * 10;
+  switch (decade) {
+    case 1950: document.body.classList.add('era-50s'); break;
+    case 1960: document.body.classList.add('era-60s'); break;
+    case 1970: document.body.classList.add('era-70s'); break;
+    case 1980: document.body.classList.add('era-80s'); break;
+    case 1990: document.body.classList.add('era-90s'); break;
+    case 2000: document.body.classList.add('era-00s'); break;
+    default:   break; // 2010+ keeps base theme
+  }
+}
+
+// ---------------------------------------------------------------------------
+// NAME - localStorage persistence
 // ---------------------------------------------------------------------------
 
 function getUserName() {
@@ -576,6 +603,9 @@ function renderInfograpic(year, countryCode, data) {
     renderOutro(year, countryCode, data),
   ].join('');
 
+  // Apply era-mode aesthetics before infographic becomes visible
+  applyDecadeTheme(year);
+
   // Transition: shrink overlay, show infographic
   $revealOverlay.style.transition = 'opacity 400ms ease-in';
 
@@ -593,7 +623,7 @@ function renderInfograpic(year, countryCode, data) {
 }
 
 // ---------------------------------------------------------------------------
-// ACT I — THE WORLD STAGE
+// ACT I - THE WORLD STAGE
 // ---------------------------------------------------------------------------
 
 function renderActI(year, countryCode, data) {
@@ -655,7 +685,7 @@ function renderActI(year, countryCode, data) {
           ${patternA({
             eyebrow: popEyebrow,
             headline: 'How many people shared the planet',
-            number: pop ? pop.toFixed(1) : '—',
+            number: pop ? pop.toFixed(1) : '-',
             unit: 'billion people',
             context: popDiff ? `The world has grown by ${popDiff} billion since then.` : '',
             comparison: `Today: ${TODAY.population_billions}B`,
@@ -702,7 +732,7 @@ function renderActI(year, countryCode, data) {
 }
 
 // ---------------------------------------------------------------------------
-// ACT II — THE ECONOMY
+// ACT II - THE ECONOMY
 // ---------------------------------------------------------------------------
 
 function renderActII(year, countryCode, data) {
@@ -776,7 +806,7 @@ function renderActII(year, countryCode, data) {
         ${isUS ? patternA({
           eyebrow: 'Average Annual Salary',
           headline: 'What workers took home',
-          number: income ? formatCurrency(income) : '—',
+          number: income ? formatCurrency(income) : '-',
           unit: 'US median household income',
           context: incomeAdj ? `Adjusted for inflation, that's worth about $${incomeAdjK.toLocaleString()}k in today's dollars.` : '',
           comparison: `Today: $${todayK}k`,
@@ -786,9 +816,9 @@ function renderActII(year, countryCode, data) {
         }) : patternA({
           eyebrow: `${country.name} Economy`,
           headline: `What the economy looked like`,
-          number: countryGdp ? formatCurrency(countryGdp) : '—',
+          number: countryGdp ? formatCurrency(countryGdp) : '-',
           unit: `${country.name} GDP per capita`,
-          context: `The US was at ${usGdp ? formatCurrency(usGdp) : '—'} the same year.`,
+          context: `The US was at ${usGdp ? formatCurrency(usGdp) : '-'} the same year.`,
           countUp: countryGdp,
           countUpPrefix: '$',
           countUpAbbrev: true,
@@ -823,7 +853,7 @@ function renderActII(year, countryCode, data) {
           headline: 'Homes vs. salaries - then and now',
           left: {
             label: String(year),
-            value: ratioThen ? `${ratioThen}×` : '—',
+            value: ratioThen ? `${ratioThen}×` : '-',
             desc: ratioThen ? `Median home cost ${ratioThen}x the average annual salary` : 'Data unavailable',
           },
           right: {
@@ -840,7 +870,7 @@ function renderActII(year, countryCode, data) {
 }
 
 // ---------------------------------------------------------------------------
-// ACT III — CULTURE
+// ACT III - CULTURE
 // ---------------------------------------------------------------------------
 
 function renderActIII(year, countryCode, data) {
@@ -918,7 +948,7 @@ function renderActIII(year, countryCode, data) {
           stats: [
             { label: 'Most-Watched Show', value: tvShow,   sub: 'Television' },
             { label: 'Fiction Bestseller', value: book,     sub: bookAuthor || 'Fiction' },
-            { label: 'Box Office #1',      value: data.culture?.film?.box_office_no1 || '—', sub: 'Film' },
+            { label: 'Box Office #1',      value: data.culture?.film?.box_office_no1 || '-', sub: 'Film' },
           ],
         })}
 
@@ -928,7 +958,7 @@ function renderActIII(year, countryCode, data) {
 }
 
 // ---------------------------------------------------------------------------
-// ACT IV — TECHNOLOGY
+// ACT IV - TECHNOLOGY
 // ---------------------------------------------------------------------------
 
 function renderActIV(year, data) {
@@ -951,7 +981,7 @@ function renderActIV(year, data) {
           eyebrow: 'Notable Tech Releases',
           headline: 'What launched that year',
           items: releases.map(r => ({
-            month: r.month ? formatMonth(r.month) : '—',
+            month: r.month ? formatMonth(r.month) : '-',
             event: r.name || r,
           })),
         })}
@@ -971,7 +1001,7 @@ function renderActIV(year, data) {
 }
 
 // ---------------------------------------------------------------------------
-// ACT V — YOUR PLACE IN TIME
+// ACT V - YOUR PLACE IN TIME
 // ---------------------------------------------------------------------------
 
 function renderActV(year, countryCode, data) {
@@ -1020,7 +1050,7 @@ function renderActV(year, countryCode, data) {
           headline: 'Have we made progress?',
           left: {
             label: String(year),
-            value: lifeExpThen ? `${lifeExpThen} yrs` : '—',
+            value: lifeExpThen ? `${lifeExpThen} yrs` : '-',
             desc: `${lifeLabel} life expectancy at birth`,
           },
           right: {
@@ -1341,7 +1371,7 @@ function patternF({ eyebrow, headline, stats }) {
 }
 
 // ---------------------------------------------------------------------------
-// INTERSECTION OBSERVER — REVEAL
+// INTERSECTION OBSERVER - REVEAL
 // ---------------------------------------------------------------------------
 
 function initRevealObserver() {
@@ -1437,7 +1467,7 @@ $copyLinkBtn.addEventListener('click', () => {
 $tweetBtn.addEventListener('click', () => {
   const params = getURLParams();
   if (!params) return;
-  const text = `The world the year I was born — ${params.year}. pivode.github.io/born-in?year=${params.year}&country=${params.country}`;
+  const text = `The world the year I was born - ${params.year}. pivode.github.io/born-in?year=${params.year}&country=${params.country}`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
   window.open(tweetUrl, '_blank', 'noopener,noreferrer');
   $sharePopover.classList.add('hidden');
@@ -1463,8 +1493,9 @@ function resetToLanding() {
   $revealOverlay.classList.remove('active');
   $revealOverlay.style.transition = '';
 
-  // Reset accent
+  // Reset accent and era theme
   document.documentElement.style.setProperty('--accent', '#a78bfa');
+  document.body.classList.remove(...ERA_CLASSES);
 
   // Show landing
   $landing.classList.remove('hidden', 'collapsing');
@@ -1523,6 +1554,7 @@ function checkURLOnLoad() {
 
   // Skip reveal sequence for direct URL loads
   applyAccent(params.year);
+  applyDecadeTheme(params.year);
   stopTypewriter();
   $landing.classList.add('hidden');
 
@@ -1565,7 +1597,7 @@ function escHtml(str) {
 }
 
 function formatMonth(raw) {
-  if (!raw) return '—';
+  if (!raw) return '-';
   // Accept numeric 1-12 or string month names
   const n = parseInt(raw, 10);
   if (!isNaN(n) && n >= 1 && n <= 12) return MONTH_ABBR[n - 1];
@@ -1581,9 +1613,9 @@ function formatCurrency(n) {
 }
 
 function formatPriceValue(n) {
-  if (n == null) return '—';
+  if (n == null) return '-';
   const num = parseFloat(n);
-  if (isNaN(num)) return '—';
+  if (isNaN(num)) return '-';
   return num < 10 ? num.toFixed(2) : Math.round(num).toLocaleString();
 }
 
