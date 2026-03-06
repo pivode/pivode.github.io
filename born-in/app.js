@@ -285,7 +285,7 @@ function initiateReveal(year, countryCode) {
 // ---------------------------------------------------------------------------
 
 async function loadAndRender(year, countryCode) {
-  const url = `/born/data/${year}.json`;
+  const url = `/born-in/data/${year}.json`;
 
   try {
     const resp = await fetch(url);
@@ -819,7 +819,7 @@ $copyLinkBtn.addEventListener('click', () => {
 $tweetBtn.addEventListener('click', () => {
   const params = getURLParams();
   if (!params) return;
-  const text = `The world the year I was born — ${params.year}. pivode.github.io/born?year=${params.year}&country=${params.country}`;
+  const text = `The world the year I was born — ${params.year}. pivode.github.io/born-in?year=${params.year}&country=${params.country}`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
   window.open(tweetUrl, '_blank', 'noopener,noreferrer');
   $sharePopover.classList.add('hidden');
@@ -867,7 +867,7 @@ function resetToLanding() {
   startTypewriter();
 
   // Clear URL params
-  history.pushState({}, '', '/born');
+  history.pushState({}, '', '/born-in');
 }
 
 // ---------------------------------------------------------------------------
@@ -875,13 +875,13 @@ function resetToLanding() {
 // ---------------------------------------------------------------------------
 
 function updateURL(year, countryCode) {
-  history.pushState({ year, country: countryCode }, '', `/born?year=${year}&country=${countryCode}`);
+  history.pushState({ year, country: countryCode }, '', `/born-in?year=${year}&country=${countryCode}`);
 }
 
 function buildShareURL() {
   const params = getURLParams();
-  if (!params) return 'https://pivode.github.io/born';
-  return `https://pivode.github.io/born?year=${params.year}&country=${params.country}`;
+  if (!params) return 'https://pivode.github.io/born-in';
+  return `https://pivode.github.io/born-in-in?year=${params.year}&country=${params.country}`;
 }
 
 function getURLParams() {
