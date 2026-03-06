@@ -1,0 +1,21 @@
+# Pivode
+
+> High quality datasets for analysts, researchers, and builders. Exhaustive, cleaned datasets formatted as CSV - ready to use immediately in pandas, R, or Excel.
+
+Pivode publishes ready-to-use data products covering sports, food, travel, and automotive topics. All datasets are collected, cleaned, and delivered as structured CSV files with full schema documentation.
+
+## Datasets
+
+- [European Football Player Stats](https://seangularity.gumroad.com/l/football-data-set): Player-level statistics across 30 seasons of the top 8 European leagues (1996-2025). Includes goals, assists, market value, nationality, club history. $3.99.
+- [Michelin Guide Restaurants](https://seangularity.gumroad.com/l/michelin): Every Michelin-starred and Bib Gourmand restaurant across 50+ countries, complete 2026 guide. Includes cuisine type, star rating, city, and full location data. $1.99.
+- [Roller Coaster Database](https://seangularity.gumroad.com/l/roller-coasters): Roller coasters across every major theme park worldwide. Includes height, speed, length, manufacturer, park, country, and coaster type. Free.
+
+## Game Codebases
+
+- [The Frontier - Race to AGI](https://seangularity.gumroad.com/l/the-frontier): Production-ready browser game codebase. AI startup simulation with 32 interconnected systems. 44,000 lines of TypeScript, 860 passing tests. $1,999.
+- [Golden Era - FC Barcelona Manager](https://seangularity.gumroad.com/l/golden-era): Browser-based football manager simulation. 5 real Barcelona seasons (2017-2022), platform builds for CrazyGames, Poki, and GameDistribution. 22,354 lines of code, 656 passing tests. $1,999.
+
+## Links
+
+- Homepage: https://pivode.github.io
+- All datasets: https://seangularity.gumroad.com
