@@ -248,6 +248,76 @@
       "gdp_per_capita_usd": 57700,
       "leader": "Bertie Ahern",
       "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 149.1,
+      "life_expectancy": 49.9,
+      "gdp_per_capita_usd": 1656,
+      "leader": "Olusegun Obasanjo",
+      "leader_title": "President"
+    },
+    "ZA": {
+      "population_millions": 50.0,
+      "life_expectancy": 54.2,
+      "gdp_per_capita_usd": 6267,
+      "leader": "Thabo Mbeki",
+      "leader_title": "President"
+    },
+    "AR": {
+      "population_millions": 39.6,
+      "life_expectancy": 75.3,
+      "gdp_per_capita_usd": 5919,
+      "leader": "Nestor Kirchner",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 89.5,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 1452,
+      "leader": "Gloria Macapagal Arroyo",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 82.7,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 1397,
+      "leader": "Hosni Mubarak",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 58.8,
+      "life_expectancy": 81.2,
+      "gdp_per_capita_usd": 33762,
+      "leader": "Romano Prodi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 44.7,
+      "life_expectancy": 80.8,
+      "gdp_per_capita_usd": 29400,
+      "leader": "Jose Luis Rodriguez Zapatero",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 16.6,
+      "life_expectancy": 80.0,
+      "gdp_per_capita_usd": 43029,
+      "leader": "Jan Peter Balkenende",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 233.5,
+      "life_expectancy": 67.8,
+      "gdp_per_capita_usd": 1589,
+      "leader": "Susilo Bambang Yudhoyono",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 70.1,
+      "life_expectancy": 73.9,
+      "gdp_per_capita_usd": 7671,
+      "leader": "Recep Tayyip Erdogan",
+      "leader_title": "Prime Minister"
     }
   }
 }

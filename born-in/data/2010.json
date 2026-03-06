@@ -244,6 +244,76 @@
       "gdp_per_capita_usd": 48200,
       "leader": "Brian Cowen",
       "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 166.6,
+      "life_expectancy": 51.3,
+      "gdp_per_capita_usd": 2280,
+      "leader": "Umaru Yar'Adua",
+      "leader_title": "President"
+    },
+    "ZA": {
+      "population_millions": 52.3,
+      "life_expectancy": 58.9,
+      "gdp_per_capita_usd": 8149,
+      "leader": "Jacob Zuma",
+      "leader_title": "President"
+    },
+    "AR": {
+      "population_millions": 41.3,
+      "life_expectancy": 75.7,
+      "gdp_per_capita_usd": 10386,
+      "leader": "Cristina Fernandez de Kirchner",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 96.3,
+      "life_expectancy": 68.9,
+      "gdp_per_capita_usd": 2217,
+      "leader": "Gloria Macapagal Arroyo",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 89.2,
+      "life_expectancy": 69.1,
+      "gdp_per_capita_usd": 2646,
+      "leader": "Hosni Mubarak",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 60.2,
+      "life_expectancy": 82.1,
+      "gdp_per_capita_usd": 35841,
+      "leader": "Silvio Berlusconi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 46.8,
+      "life_expectancy": 82.0,
+      "gdp_per_capita_usd": 30636,
+      "leader": "Jose Luis Rodriguez Zapatero",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 16.8,
+      "life_expectancy": 80.8,
+      "gdp_per_capita_usd": 49917,
+      "leader": "Jan Peter Balkenende",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 246.3,
+      "life_expectancy": 68.4,
+      "gdp_per_capita_usd": 3122,
+      "leader": "Susilo Bambang Yudhoyono",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 73.3,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 10671,
+      "leader": "Recep Tayyip Erdogan",
+      "leader_title": "Prime Minister"
     }
   }
 }

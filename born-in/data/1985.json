@@ -270,6 +270,76 @@
       "gdp_per_capita_usd": 11400,
       "leader": "Garret FitzGerald",
       "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 84.9,
+      "life_expectancy": 46.2,
+      "gdp_per_capita_usd": 883,
+      "leader": "Ibrahim Babangida",
+      "leader_title": "President"
+    },
+    "ZA": {
+      "population_millions": 35.0,
+      "life_expectancy": 62.2,
+      "gdp_per_capita_usd": 1808,
+      "leader": "P.W. Botha",
+      "leader_title": "President"
+    },
+    "AR": {
+      "population_millions": 30.3,
+      "life_expectancy": 69.9,
+      "gdp_per_capita_usd": 2926,
+      "leader": "Raul Alfonsin",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 55.2,
+      "life_expectancy": 62.7,
+      "gdp_per_capita_usd": 644,
+      "leader": "Ferdinand Marcos",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 50.7,
+      "life_expectancy": 59.4,
+      "gdp_per_capita_usd": 793,
+      "leader": "Hosni Mubarak",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 56.9,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 7596,
+      "leader": "Bettino Craxi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 38.6,
+      "life_expectancy": 76.5,
+      "gdp_per_capita_usd": 4668,
+      "leader": "Felipe Gonzalez",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 14.5,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 8884,
+      "leader": "Ruud Lubbers",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 166.8,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 519,
+      "leader": "Suharto",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 50.7,
+      "life_expectancy": 65.5,
+      "gdp_per_capita_usd": 1324,
+      "leader": "Turgut Ozal",
+      "leader_title": "Prime Minister"
     }
   }
 }

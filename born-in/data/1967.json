@@ -266,6 +266,76 @@
       "gdp_per_capita_usd": 5350,
       "leader": "Jack Lynch",
       "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 52.3,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 99,
+      "leader": "Yakubu Gowon",
+      "leader_title": "Head of State"
+    },
+    "ZA": {
+      "population_millions": 20.3,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 675,
+      "leader": "B.J. Vorster",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 22.8,
+      "life_expectancy": 65.5,
+      "gdp_per_capita_usd": 1063,
+      "leader": "Juan Carlos Ongania",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 34.6,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 235,
+      "leader": "Ferdinand Marcos",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 32.2,
+      "life_expectancy": 48.1,
+      "gdp_per_capita_usd": 175,
+      "leader": "Gamal Abdel Nasser",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 52.5,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 1367,
+      "leader": "Aldo Moro",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 32.8,
+      "life_expectancy": 71.3,
+      "gdp_per_capita_usd": 962,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 12.6,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 1873,
+      "leader": "Piet de Jong",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 106.7,
+      "life_expectancy": 51.3,
+      "gdp_per_capita_usd": 60,
+      "leader": "Suharto",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 33.9,
+      "life_expectancy": 54.9,
+      "gdp_per_capita_usd": 651,
+      "leader": "Suleyman Demirel",
+      "leader_title": "Prime Minister"
     }
   }
 }

@@ -263,6 +263,76 @@
       "gdp_per_capita_usd": 2840,
       "leader": "John A. Costello",
       "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 37.2,
+      "life_expectancy": 35.5,
+      "gdp_per_capita_usd": 75,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 13.6,
+      "life_expectancy": 43.1,
+      "gdp_per_capita_usd": 320,
+      "leader": "D.F. Malan",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 17.2,
+      "life_expectancy": 61.3,
+      "gdp_per_capita_usd": 680,
+      "leader": "Juan Peron",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 19.6,
+      "life_expectancy": 53.6,
+      "gdp_per_capita_usd": 195,
+      "leader": "Elpidio Quirino",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 20.7,
+      "life_expectancy": 34.0,
+      "gdp_per_capita_usd": 110,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 47.1,
+      "life_expectancy": 65.7,
+      "gdp_per_capita_usd": 371,
+      "leader": "Alcide De Gasperi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 28.1,
+      "life_expectancy": 61.8,
+      "gdp_per_capita_usd": 186,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 10.1,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 509,
+      "leader": "Willem Drees",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 69.5,
+      "life_expectancy": 40.2,
+      "gdp_per_capita_usd": 34,
+      "leader": "Sukarno",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 21.4,
+      "life_expectancy": 47.3,
+      "gdp_per_capita_usd": 291,
+      "leader": "Adnan Menderes",
+      "leader_title": "Prime Minister"
     }
   }
 }

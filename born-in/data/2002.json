@@ -262,6 +262,76 @@
       "gdp_per_capita_usd": 42900,
       "leader": "Bertie Ahern",
       "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 133.5,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 742,
+      "leader": "Olusegun Obasanjo",
+      "leader_title": "President"
+    },
+    "ZA": {
+      "population_millions": 48.0,
+      "life_expectancy": 55.6,
+      "gdp_per_capita_usd": 2797,
+      "leader": "Thabo Mbeki",
+      "leader_title": "President"
+    },
+    "AR": {
+      "population_millions": 38.0,
+      "life_expectancy": 74.3,
+      "gdp_per_capita_usd": 2593,
+      "leader": "Eduardo Duhalde",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 83.1,
+      "life_expectancy": 67.9,
+      "gdp_per_capita_usd": 1036,
+      "leader": "Gloria Macapagal Arroyo",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 76.2,
+      "life_expectancy": 67.8,
+      "gdp_per_capita_usd": 1191,
+      "leader": "Hosni Mubarak",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 57.9,
+      "life_expectancy": 80.1,
+      "gdp_per_capita_usd": 23170,
+      "leader": "Silvio Berlusconi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 42.3,
+      "life_expectancy": 79.8,
+      "gdp_per_capita_usd": 16762,
+      "leader": "Jose Maria Aznar",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 16.3,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 29148,
+      "leader": "Jan Peter Balkenende",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 222.9,
+      "life_expectancy": 66.9,
+      "gdp_per_capita_usd": 889,
+      "leader": "Megawati Sukarnoputri",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 67.2,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 3558,
+      "leader": "Bulent Ecevit",
+      "leader_title": "Prime Minister"
     }
   }
 }
