@@ -94,6 +94,34 @@ body {
   opacity: 0;
 }
 
+/* NAME FIELD */
+.name-field {
+  margin-bottom: 16px;
+}
+
+.name-input {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 12px 20px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  text-align: center;
+  outline: none;
+  transition: border-color var(--transition-base);
+}
+
+.name-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.name-input:focus {
+  border-color: var(--accent);
+}
+
 /* INPUT ROW */
 .input-row {
   display: flex;
@@ -1198,4 +1226,120 @@ body {
 .copy-toast.visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* =========================================================
+   FEATURE 3: BIRTH COHORT CALLOUT
+   ========================================================= */
+
+.birth-cohort-callout {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* Baby names card */
+.baby-names-grid {
+  display: flex;
+  gap: 40px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.baby-names-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.baby-names-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin: 0;
+}
+.baby-names-list {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* =========================================================
+   FEATURE 4: SOCIAL MEDIA TIMELINE
+   ========================================================= */
+
+.social-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.social-item-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 100px;
+}
+
+/* =========================================================
+   FEATURE 2 + 6: MILESTONE AGES + TEMPORAL SHOCK
+   ========================================================= */
+
+.milestone-ages {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-top: 4px;
+}
+
+.milestone-ages strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.temporal-shock {
+  font-style: italic;
+  color: var(--accent);
+  font-size: 14px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+/* =========================================================
+   FEATURE 5: INFOGRAPHIC OUTRO
+   ========================================================= */
+
+.infographic-outro {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  padding: 48px;
+  text-align: center;
+}
+
+.outro-text {
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .infographic-outro {
+    padding: 40px 24px;
+  }
+
+  .milestone-ages {
+    font-size: 14px;
+  }
 }
