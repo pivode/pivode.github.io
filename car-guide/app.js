@@ -167,7 +167,7 @@ const MODULES = [
         tagColor       = 'green';
         recommendation = 'Maruti Brezza.';
         insight        = `If you want to own a car for 7-8 years without dreading service calls, Brezza is the answer. Maruti's service network is genuinely unmatched - there are authorized centers in towns most manufacturers have never heard of. Parts are cheap, mechanics everywhere understand the car, and resale is strong because the used car market trusts the brand. What you give up: Brezza doesn't have Nexon's crash test pedigree. If outright safety is important, that trade-off is worth acknowledging. But if your driving is mostly lower-speed urban and long-term reliability keeps you up at night, Brezza is the most sensible choice in this segment.`;
-        caveats = ['Brezza's safety has improved on 2022+ models. If buying used, verify it's the facelifted version.', 'Dealer-fitted accessories at Maruti outlets are pushed aggressively. Decline everything not standard - floor mats, body kits, and seat covers are classic margin plays. Aftermarket is better and cheaper.'];
+        caveats = ["Brezza's safety has improved on 2022+ models. If buying used, verify it's the facelifted version.", 'Dealer-fitted accessories at Maruti outlets are pushed aggressively. Decline everything not standard - floor mats, body kits, and seat covers are classic margin plays. Aftermarket is better and cheaper.'];
       } else if (priority === 'features') {
         if (city === 'metro') {
           tag            = 'OUR LEAN';
@@ -504,7 +504,7 @@ const MODULES = [
         tagColor       = 'green';
         recommendation = 'Skip the strong hybrid for highway use.';
         insight        = `Strong hybrid's advantage is almost entirely in city driving - that's where the electric motor and regenerative braking make a real difference. On highways at sustained speeds, the strong hybrid's real-world mileage converges with a regular petrol car (both around 18-19 kmpl). The ₹3.5L premium doesn't pay off in highway-heavy use. The mild hybrid or regular 1.5L petrol variant gets you 90% of the car for ₹3-4L less.`;
-        caveats = ['If you have any city driving mixed in, revisit this with a "mixed" profile - the hybrid's advantage returns whenever the engine can cut off in traffic.', 'Mild hybrid in Grand Vitara gives minimal fuel savings. If you\'re skipping strong hybrid, the regular 1.5L petrol is often the cleaner choice over mild hybrid too.'];
+        caveats = ["If you have any city driving mixed in, revisit this with a 'mixed' profile - the hybrid's advantage returns whenever the engine can cut off in traffic.", 'Mild hybrid in Grand Vitara gives minimal fuel savings. If you\'re skipping strong hybrid, the regular 1.5L petrol is often the cleaner choice over mild hybrid too.'];
       } else if (beven > 6 || term === 'u4') {
         tag            = 'CLEAR CALL';
         tagColor       = 'green';
