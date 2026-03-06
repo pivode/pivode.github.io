@@ -1502,11 +1502,19 @@ function renderActI(year, countryCode, data) {
 
   // Feature 4: CO2 at birth vs today
   const co2Then = CO2_PPM[year];
+  const co2Gain = co2Then ? (CO2_TODAY - co2Then).toFixed(1) : 0;
+  const co2Pct = co2Then ? Math.round((co2Gain / co2Then) * 100) : 0;
+  const co2Commentary = co2Then
+    ? (co2Pct > 30
+      ? `The atmosphere has ${co2Pct}% more CO\u2082 than the day you were born. Most of that increase happened in your lifetime.`
+      : `CO\u2082 has climbed ${co2Pct}% since your birth. The Keeling Curve has never gone down.`)
+    : '';
   const co2Card = co2Then ? patternB({
     eyebrow: 'Atmosphere',
     headline: 'CO\u2082 in the air you first breathed',
     left:  { label: String(year), value: `${co2Then} ppm`, desc: 'CO\u2082 concentration (Keeling Curve)' },
-    right: { label: 'Today', labelMuted: true, value: `${CO2_TODAY} ppm`, desc: `+${(CO2_TODAY - co2Then).toFixed(1)} ppm since your birth` },
+    right: { label: 'Today', labelMuted: true, value: `${CO2_TODAY} ppm`, desc: `+${co2Gain} ppm since your birth` },
+    commentary: co2Commentary,
   }) : '';
 
   // Feature 2: Top baby names
@@ -1638,6 +1646,14 @@ function renderActII(year, countryCode, data) {
     const compDesc = countryGdp < usGdp
       ? `${country.name} GDP per capita was ${(100 - ratio)}% below the US in ${year}`
       : `${country.name} GDP per capita was ${(ratio - 100)}% above the US in ${year}`;
+    const incomeMultiple = Math.round(usGdp / countryGdp);
+    const gdpCommentary = countryGdp < usGdp
+      ? (incomeMultiple >= 10
+        ? `The average American earned roughly ${incomeMultiple}x more. These gaps defined the world you grew up in.`
+        : incomeMultiple >= 3
+        ? `Americans earned about ${incomeMultiple}x more on paper, though cost of living differed enormously.`
+        : `A meaningful gap, though the numbers don't capture differences in cost of living and quality of life.`)
+      : `${country.name} was already among the world's wealthiest nations per person.`;
     gdpCompareCard = patternB({
       eyebrow: 'Economic Comparison',
       headline: `${country.name} vs. the United States`,
@@ -1652,6 +1668,7 @@ function renderActII(year, countryCode, data) {
         value: formatCurrency(usGdp),
         desc: compDesc,
       },
+      commentary: gdpCommentary,
     });
   }
 
@@ -1664,6 +1681,13 @@ function renderActII(year, countryCode, data) {
     const diff = (countryLifeExp - globalLifeExp).toFixed(1);
     const diffAbs = Math.abs(diff);
     const aboveBelow = diff > 0 ? `${diffAbs} years above the global average` : `${diffAbs} years below the global average`;
+    const lifeCommentary = diff > 5
+      ? `Well above the global average. Healthcare and living standards in ${country.name} were ahead of most of the world.`
+      : diff > 0
+      ? `Slightly above the world average. Not bad, but far from the longest-living nations.`
+      : diff > -5
+      ? `Just below the global average. Millions of people in ${country.name} never saw their grandchildren grow up.`
+      : `Far below the global average. Poverty, conflict, and disease cut lives tragically short.`;
     lifeExpCard = patternB({
       eyebrow: 'Health',
       headline: 'How long people lived',
@@ -1678,6 +1702,7 @@ function renderActII(year, countryCode, data) {
         value: `${globalLifeExp}`,
         desc: aboveBelow,
       },
+      commentary: lifeCommentary,
     });
   }
 
@@ -1721,6 +1746,9 @@ function renderActII(year, countryCode, data) {
             value: `$${todayK}k`,
             desc: verdictDesc,
           },
+          commentary: incomeAdj > TODAY.us_median_income
+            ? 'Your parents\' generation had more buying power on paper. But they didn\'t have smartphones, streaming, or same-day delivery.'
+            : 'Wages have grown, but housing, healthcare, and education have grown faster. The math isn\'t in your favor.',
         }) : ''}
 
         ${!isUS ? gdpCompareCard : ''}
@@ -1733,13 +1761,13 @@ function renderActII(year, countryCode, data) {
           prices,
         })}
 
-        ${isUS ? patternB({
+        ${isUS && ratioThen ? patternB({
           eyebrow: 'Housing',
           headline: 'Homes vs. salaries - then and now',
           left: {
             label: String(year),
-            value: ratioThen ? `${ratioThen}×` : '-',
-            desc: ratioThen ? `Median home cost ${ratioThen}x the average annual salary` : 'Data unavailable',
+            value: `${ratioThen}×`,
+            desc: `Median home cost ${ratioThen}x the average annual salary`,
           },
           right: {
             label: 'Today',
@@ -1747,6 +1775,9 @@ function renderActII(year, countryCode, data) {
             value: `${ratioToday}×`,
             desc: `Median home now costs ${ratioToday}x the average annual salary`,
           },
+          commentary: parseFloat(ratioToday) > parseFloat(ratioThen)
+            ? `Housing has gotten ${(parseFloat(ratioToday) / parseFloat(ratioThen)).toFixed(1)}x harder to afford relative to income. Your parents weren't exaggerating about how cheap houses were.`
+            : 'Housing was actually more expensive relative to income back then. One of the rare things that got better.',
         }) : ''}
 
       </div>
@@ -1896,6 +1927,9 @@ function renderActIV(year, data) {
           headline: 'Worlds discovered beyond our solar system',
           left:  { label: String(year), value: exoThen > 0 ? String(exoThen) : 'None', desc: exoThen === 0 ? 'No exoplanets confirmed yet' : 'confirmed exoplanets' },
           right: { label: 'Today', labelMuted: true, value: `${EXOPLANETS_TODAY.toLocaleString()}+`, desc: 'confirmed and counting' },
+          commentary: exoThen === 0
+            ? 'When you were born, humanity had no proof that planets existed outside our solar system. Now we know they\'re everywhere.'
+            : `We\'ve gone from ${exoThen} to ${EXOPLANETS_TODAY.toLocaleString()}. Most of these worlds were found by a single space telescope called Kepler.`,
         })}
 
       </div>
@@ -1962,6 +1996,13 @@ function renderActV(year, countryCode, data) {
             value: `${lifeExpTodayLocal} yrs`,
             desc: `${lifeLabel} life expectancy today`,
           },
+          commentary: lifeExpThen && lifeExpTodayLocal
+            ? (lifeExpTodayLocal - lifeExpThen) > 10
+              ? `That's ${(lifeExpTodayLocal - lifeExpThen).toFixed(0)} more years of life gained in a single generation. Vaccines, antibiotics, and cleaner water changed everything.`
+              : (lifeExpTodayLocal - lifeExpThen) > 3
+              ? `${(lifeExpTodayLocal - lifeExpThen).toFixed(0)} years of progress. Steady gains from better medicine, nutrition, and public health.`
+              : 'Progress has slowed in recent decades. The easy wins are behind us.'
+            : null,
         })}
 
         <div class="pattern-a" data-reveal>
@@ -2185,7 +2226,7 @@ function patternA({ eyebrow, headline, number, unit, context, comparison, countU
   `;
 }
 
-function patternB({ eyebrow, headline, left, right }) {
+function patternB({ eyebrow, headline, left, right, commentary }) {
   return `
     <div class="pattern-b" data-reveal>
       ${eyebrow  ? `<p class="eyebrow">${escHtml(eyebrow)}</p>` : ''}
@@ -2202,6 +2243,7 @@ function patternB({ eyebrow, headline, left, right }) {
           <p class="two-up-desc">${escHtml(right.desc)}</p>
         </div>
       </div>
+      ${commentary ? `<p class="two-up-commentary">${escHtml(commentary)}</p>` : ''}
     </div>
   `;
 }
