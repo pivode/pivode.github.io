@@ -195,6 +195,498 @@ const EXOPLANETS_BY_YEAR = {
 };
 const EXOPLANETS_TODAY = 5800;
 
+// ---------------------------------------------------------------------------
+// TIER 2: LOCAL SPORTS CHAMPIONS
+// ---------------------------------------------------------------------------
+
+const SPORTS_GB = {
+  1950:'Portsmouth',1952:'Manchester United',1954:'Wolverhampton',1955:'Chelsea',
+  1956:'Manchester United',1957:'Manchester United',1958:'Wolverhampton',1959:'Wolverhampton',
+  1960:'Burnley',1961:'Tottenham Hotspur',1962:'Ipswich Town',1963:'Everton',
+  1964:'Liverpool',1965:'Manchester United',1966:'Liverpool',1967:'Manchester United',
+  1968:'Manchester City',1969:'Leeds United',1970:'Everton',1971:'Arsenal',
+  1972:'Derby County',1973:'Liverpool',1974:'Leeds United',1975:'Derby County',
+  1976:'Liverpool',1977:'Liverpool',1978:'Nottingham Forest',1979:'Liverpool',
+  1980:'Liverpool',1981:'Aston Villa',1982:'Liverpool',1983:'Liverpool',
+  1984:'Liverpool',1985:'Everton',1986:'Liverpool',1987:'Everton',
+  1988:'Liverpool',1989:'Arsenal',1990:'Liverpool',1991:'Arsenal',
+  1992:'Leeds United',1993:'Manchester United',1994:'Manchester United',
+  1995:'Blackburn Rovers',1996:'Manchester United',1997:'Manchester United',
+  1998:'Arsenal',1999:'Manchester United',2000:'Manchester United',
+  2001:'Manchester United',2002:'Arsenal',2003:'Manchester United',
+  2004:'Arsenal',2005:'Chelsea',2006:'Chelsea',2007:'Manchester United',
+  2008:'Manchester United',2009:'Manchester United',2010:'Chelsea',
+};
+const SPORTS_GB_LEAGUE = year => year >= 1993 ? 'Premier League' : 'First Division';
+
+const SPORTS_DE = {
+  1950:'VfB Stuttgart',1952:'VfB Stuttgart',1954:'Hannover 96',1955:'Rot-Weiss Essen',
+  1956:'Borussia Dortmund',1957:'Borussia Dortmund',1958:'Schalke 04',
+  1959:'Eintracht Frankfurt',1960:'Hamburger SV',1961:'1. FC Nurnberg',
+  1962:'1. FC Koln',1963:'Borussia Dortmund',1964:'1. FC Koln',1965:'Werder Bremen',
+  1966:'TSV 1860 Munich',1967:'Eintracht Braunschweig',1968:'1. FC Nurnberg',
+  1969:'Bayern Munich',1970:'Borussia Monchengladbach',1971:'Borussia Monchengladbach',
+  1972:'Bayern Munich',1973:'Bayern Munich',1974:'Bayern Munich',
+  1975:'Borussia Monchengladbach',1976:'Borussia Monchengladbach',
+  1977:'Borussia Monchengladbach',1978:'1. FC Koln',1979:'Hamburger SV',
+  1980:'Bayern Munich',1981:'Bayern Munich',1982:'Hamburger SV',1983:'Hamburger SV',
+  1984:'VfB Stuttgart',1985:'Bayern Munich',1986:'Bayern Munich',1987:'Bayern Munich',
+  1988:'Werder Bremen',1989:'Bayern Munich',1990:'Bayern Munich',
+  1991:'1. FC Kaiserslautern',1992:'VfB Stuttgart',1993:'Werder Bremen',
+  1994:'Bayern Munich',1995:'Borussia Dortmund',1996:'Borussia Dortmund',
+  1997:'Bayern Munich',1998:'1. FC Kaiserslautern',1999:'Bayern Munich',
+  2000:'Bayern Munich',2001:'Bayern Munich',2002:'Borussia Dortmund',
+  2003:'Bayern Munich',2004:'Werder Bremen',2005:'Bayern Munich',
+  2006:'Bayern Munich',2007:'VfB Stuttgart',2008:'Bayern Munich',
+  2009:'VfL Wolfsburg',2010:'Bayern Munich',
+};
+const SPORTS_DE_LEAGUE = year => year >= 1964 ? 'Bundesliga' : 'Oberliga';
+
+const SPORTS_FR = {
+  1950:'Bordeaux',1952:'Nice',1954:'Lille',1955:'Reims',1956:'Nice',
+  1957:'Saint-Etienne',1958:'Reims',1959:'Nice',1960:'Reims',1961:'Monaco',
+  1962:'Reims',1963:'Monaco',1964:'Saint-Etienne',1965:'Nantes',1966:'Nantes',
+  1967:'Saint-Etienne',1968:'Saint-Etienne',1969:'Saint-Etienne',1970:'Saint-Etienne',
+  1971:'Marseille',1972:'Marseille',1973:'Nantes',1974:'Saint-Etienne',
+  1975:'Saint-Etienne',1976:'Saint-Etienne',1977:'Nantes',1978:'Monaco',
+  1979:'Strasbourg',1980:'Nantes',1981:'Saint-Etienne',1982:'Monaco',1983:'Nantes',
+  1984:'Bordeaux',1985:'Bordeaux',1986:'Paris Saint-Germain',1987:'Bordeaux',
+  1988:'Monaco',1989:'Marseille',1990:'Marseille',1991:'Marseille',1992:'Marseille',
+  1994:'Paris Saint-Germain',1995:'Nantes',1996:'Auxerre',1997:'Monaco',
+  1998:'Lens',1999:'Bordeaux',2000:'Monaco',2001:'Nantes',2002:'Lyon',
+  2003:'Lyon',2004:'Lyon',2005:'Lyon',2006:'Lyon',2007:'Lyon',2008:'Lyon',
+  2009:'Bordeaux',2010:'Marseille',
+};
+const SPORTS_FR_LEAGUE = year => year >= 2002 ? 'Ligue 1' : 'Division 1';
+
+const SPORTS_AU = {
+  1950:'Essendon',1952:'Geelong',1954:'Footscray',1955:'Melbourne',
+  1956:'Melbourne',1957:'Melbourne',1958:'Collingwood',1959:'Melbourne',
+  1960:'Melbourne',1961:'Hawthorn',1962:'Essendon',1963:'Geelong',
+  1964:'Melbourne',1965:'Essendon',1966:'St Kilda',1967:'Richmond',
+  1968:'Carlton',1969:'Richmond',1970:'Carlton',1971:'Hawthorn',
+  1972:'Carlton',1973:'Richmond',1974:'Richmond',1975:'North Melbourne',
+  1976:'Hawthorn',1977:'North Melbourne',1978:'Hawthorn',1979:'Carlton',
+  1980:'Richmond',1981:'Carlton',1982:'Carlton',1983:'Hawthorn',
+  1984:'Essendon',1985:'Essendon',1986:'Hawthorn',1987:'Carlton',
+  1988:'Hawthorn',1989:'Hawthorn',1990:'Collingwood',1991:'Hawthorn',
+  1992:'West Coast Eagles',1993:'Essendon',1994:'West Coast Eagles',
+  1995:'Carlton',1996:'North Melbourne',1997:'Adelaide Crows',
+  1998:'Adelaide Crows',1999:'North Melbourne',2000:'Essendon',
+  2001:'Brisbane Lions',2002:'Brisbane Lions',2003:'Brisbane Lions',
+  2004:'Port Adelaide',2005:'Sydney Swans',2006:'West Coast Eagles',
+  2007:'Geelong',2008:'Hawthorn',2009:'Geelong',2010:'Collingwood',
+};
+const SPORTS_AU_LEAGUE = year => year >= 1990 ? 'AFL' : 'VFL';
+
+const SPORTS_JP = {
+  1950:'Mainichi Orions',1952:'Yomiuri Giants',1954:'Chunichi Dragons',
+  1955:'Yomiuri Giants',1956:'Nishitetsu Lions',1957:'Nishitetsu Lions',
+  1958:'Nishitetsu Lions',1959:'Nankai Hawks',1960:'Taiyo Whales',
+  1961:'Yomiuri Giants',1962:'Toei Flyers',1963:'Yomiuri Giants',
+  1964:'Nankai Hawks',1965:'Yomiuri Giants',1966:'Yomiuri Giants',
+  1967:'Yomiuri Giants',1968:'Yomiuri Giants',1969:'Yomiuri Giants',
+  1970:'Yomiuri Giants',1971:'Yomiuri Giants',1972:'Yomiuri Giants',
+  1973:'Yomiuri Giants',1974:'Lotte Orions',1975:'Hankyu Braves',
+  1976:'Hankyu Braves',1977:'Hankyu Braves',1978:'Yakult Swallows',
+  1979:'Hiroshima Toyo Carp',1980:'Hiroshima Toyo Carp',1981:'Yomiuri Giants',
+  1982:'Seibu Lions',1983:'Seibu Lions',1984:'Hiroshima Toyo Carp',
+  1985:'Hanshin Tigers',1986:'Seibu Lions',1987:'Seibu Lions',1988:'Seibu Lions',
+  1989:'Yomiuri Giants',1990:'Seibu Lions',1991:'Seibu Lions',1992:'Seibu Lions',
+  1993:'Yakult Swallows',1994:'Yomiuri Giants',1995:'Yakult Swallows',
+  1996:'Orix BlueWave',1997:'Yakult Swallows',1998:'Yokohama BayStars',
+  1999:'Fukuoka Daiei Hawks',2000:'Yomiuri Giants',2001:'Yakult Swallows',
+  2002:'Yomiuri Giants',2003:'Fukuoka Daiei Hawks',2004:'Seibu Lions',
+  2005:'Chiba Lotte Marines',2006:'Nippon-Ham Fighters',2007:'Chunichi Dragons',
+  2008:'Seibu Lions',2009:'Yomiuri Giants',2010:'Chiba Lotte Marines',
+};
+
+const SPORTS_CA = {
+  1950:'Detroit Red Wings',1952:'Detroit Red Wings',1954:'Detroit Red Wings',
+  1955:'Detroit Red Wings',1956:'Montreal Canadiens',1957:'Montreal Canadiens',
+  1958:'Montreal Canadiens',1959:'Montreal Canadiens',1960:'Montreal Canadiens',
+  1961:'Chicago Blackhawks',1962:'Toronto Maple Leafs',1963:'Toronto Maple Leafs',
+  1964:'Toronto Maple Leafs',1965:'Montreal Canadiens',1966:'Montreal Canadiens',
+  1967:'Toronto Maple Leafs',1968:'Montreal Canadiens',1969:'Montreal Canadiens',
+  1970:'Boston Bruins',1971:'Montreal Canadiens',1972:'Boston Bruins',
+  1973:'Montreal Canadiens',1974:'Philadelphia Flyers',1975:'Philadelphia Flyers',
+  1976:'Montreal Canadiens',1977:'Montreal Canadiens',1978:'Montreal Canadiens',
+  1979:'Montreal Canadiens',1980:'New York Islanders',1981:'New York Islanders',
+  1982:'New York Islanders',1983:'New York Islanders',1984:'Edmonton Oilers',
+  1985:'Edmonton Oilers',1986:'Montreal Canadiens',1987:'Edmonton Oilers',
+  1988:'Edmonton Oilers',1989:'Calgary Flames',1990:'Edmonton Oilers',
+  1991:'Pittsburgh Penguins',1992:'Pittsburgh Penguins',1993:'Montreal Canadiens',
+  1994:'New York Rangers',1995:'New Jersey Devils',1996:'Colorado Avalanche',
+  1997:'Detroit Red Wings',1998:'Detroit Red Wings',1999:'Dallas Stars',
+  2000:'New Jersey Devils',2001:'Colorado Avalanche',2002:'Detroit Red Wings',
+  2003:'New Jersey Devils',2004:'Tampa Bay Lightning',2006:'Carolina Hurricanes',
+  2007:'Anaheim Ducks',2008:'Detroit Red Wings',2009:'Pittsburgh Penguins',
+  2010:'Chicago Blackhawks',
+};
+
+const SPORTS_BR = {
+  1959:'Bahia',1960:'Palmeiras',1961:'Santos',1962:'Santos',1963:'Santos',
+  1964:'Santos',1965:'Santos',1966:'Cruzeiro',1967:'Palmeiras',1968:'Botafogo',
+  1969:'Palmeiras',1970:'Fluminense',1971:'Atletico Mineiro',1972:'Palmeiras',
+  1973:'Palmeiras',1974:'Vasco da Gama',1975:'Internacional',1976:'Internacional',
+  1977:'Sao Paulo',1978:'Guarani',1979:'Internacional',1980:'Flamengo',
+  1981:'Gremio',1982:'Flamengo',1983:'Flamengo',1984:'Fluminense',
+  1985:'Coritiba',1986:'Sao Paulo',1987:'Sport Recife',1988:'Bahia',
+  1989:'Vasco da Gama',1990:'Corinthians',1991:'Sao Paulo',1992:'Flamengo',
+  1993:'Palmeiras',1994:'Palmeiras',1995:'Botafogo',1996:'Gremio',
+  1997:'Vasco da Gama',1998:'Corinthians',1999:'Corinthians',
+  2000:'Vasco da Gama',2001:'Atletico Paranaense',2002:'Santos',
+  2003:'Cruzeiro',2004:'Santos',2005:'Corinthians',2006:'Sao Paulo',
+  2007:'Sao Paulo',2008:'Sao Paulo',2009:'Flamengo',2010:'Fluminense',
+};
+
+const SPORTS_RU = {
+  1950:'CDKA Moscow',1952:'Spartak Moscow',1954:'Dynamo Moscow',
+  1955:'Spartak Moscow',1956:'Spartak Moscow',1957:'Dynamo Moscow',
+  1958:'Spartak Moscow',1959:'Spartak Moscow',1960:'Torpedo Moscow',
+  1961:'Dynamo Kiev',1962:'Spartak Moscow',1963:'Spartak Moscow',
+  1964:'Dynamo Tbilisi',1965:'Torpedo Moscow',1966:'Dynamo Kiev',
+  1967:'Dynamo Kiev',1968:'Dynamo Kiev',1969:'Spartak Moscow',
+  1970:'CSKA Moscow',1971:'Dynamo Kiev',1972:'Zorya Voroshilovgrad',
+  1973:'Ararat Yerevan',1974:'Dynamo Kiev',1975:'Dynamo Kiev',
+  1976:'Torpedo Moscow',1977:'Dynamo Kiev',1978:'Dynamo Tbilisi',
+  1979:'Spartak Moscow',1980:'Dynamo Kiev',1981:'Dynamo Kiev',
+  1982:'Dynamo Minsk',1983:'Dnipro',1984:'Zenit Leningrad',
+  1985:'Dynamo Kiev',1986:'Dynamo Kiev',1987:'Spartak Moscow',
+  1988:'Dnipro',1989:'Spartak Moscow',1990:'Dynamo Kiev',1991:'CSKA Moscow',
+  1992:'Spartak Moscow',1993:'Spartak Moscow',1994:'Spartak Moscow',
+  1995:'Spartak-Alania',1996:'Spartak Moscow',1997:'Spartak Moscow',
+  1998:'Spartak Moscow',1999:'Spartak Moscow',2000:'Spartak Moscow',
+  2001:'Spartak Moscow',2002:'Lokomotiv Moscow',2003:'CSKA Moscow',
+  2004:'Lokomotiv Moscow',2005:'CSKA Moscow',2006:'CSKA Moscow',
+  2007:'Zenit St. Petersburg',2008:'Rubin Kazan',2009:'Rubin Kazan',
+  2010:'Zenit St. Petersburg',
+};
+const SPORTS_RU_LEAGUE = year => year >= 1992 ? 'Russian League' : 'Soviet League';
+
+const SPORTS_KR = {
+  1983:'Hallelujah',1984:'Daewoo Royals',1985:'Lucky-Goldstar',
+  1986:'POSCO Atoms',1987:'Daewoo Royals',1988:'POSCO Atoms',
+  1989:'Yukong Elephants',1990:'Lucky-Goldstar',1991:'Daewoo Royals',
+  1992:'POSCO Atoms',1993:'Ilhwa Chunma',1994:'Ilhwa Chunma',
+  1995:'Ilhwa Chunma',1996:'Ulsan Hyundai',1997:'Pusan Daewoo',
+  1998:'Suwon Bluewings',1999:'Suwon Bluewings',2000:'Anyang LG Cheetahs',
+  2001:'Seongnam Ilhwa',2002:'Seongnam Ilhwa',2003:'Seongnam Ilhwa',
+  2004:'Suwon Bluewings',2005:'Ulsan Hyundai',2006:'Seongnam Ilhwa',
+  2007:'Pohang Steelers',2008:'Suwon Bluewings',2009:'Jeonbuk Motors',
+  2010:'FC Seoul',
+};
+
+const SPORTS_MX = {
+  1950:'Atlas',1952:'Tampico',1954:'Marte',1955:'Zacatepec',1956:'Leon',
+  1957:'Guadalajara',1958:'Zacatepec',1959:'Guadalajara',1960:'Guadalajara',
+  1961:'Guadalajara',1962:'Guadalajara',1963:'Oro',1964:'Guadalajara',
+  1965:'Guadalajara',1966:'America',1967:'Toluca',1968:'Toluca',
+  1969:'Cruz Azul',1970:'Guadalajara',1971:'America',1972:'Cruz Azul',
+  1973:'Cruz Azul',1974:'Cruz Azul',1975:'Toluca',1976:'America',
+  1977:'UNAM Pumas',1978:'UANL Tigres',1979:'Cruz Azul',1980:'Cruz Azul',
+  1981:'UNAM Pumas',1982:'UANL Tigres',1983:'Puebla',1984:'America',
+  1985:'America',1986:'Monterrey',1987:'Guadalajara',1988:'America',
+  1989:'America',1990:'Puebla',1991:'UNAM Pumas',1992:'Leon',
+  1993:'Atlante',1994:'UAG Tecos',1995:'Necaxa',1996:'Santos Laguna',
+  1997:'Guadalajara',1998:'Toluca',1999:'Toluca',2000:'Toluca',
+  2001:'Santos Laguna',2002:'America',2003:'Monterrey',2004:'UNAM Pumas',
+  2005:'America',2006:'Pachuca',2007:'Pachuca',2008:'Santos Laguna',
+  2009:'UNAM Pumas',2010:'Toluca',
+};
+
+const SPORTS_IE = {
+  1950:'Mayo',1952:'Cavan',1954:'Meath',1955:'Kerry',1956:'Galway',
+  1957:'Louth',1958:'Dublin',1959:'Kerry',1960:'Down',1961:'Down',
+  1962:'Kerry',1963:'Dublin',1964:'Galway',1965:'Galway',1966:'Galway',
+  1967:'Meath',1968:'Down',1969:'Kerry',1970:'Kerry',1971:'Offaly',
+  1972:'Offaly',1973:'Cork',1974:'Dublin',1975:'Kerry',1976:'Dublin',
+  1977:'Dublin',1978:'Kerry',1979:'Kerry',1980:'Kerry',1981:'Kerry',
+  1982:'Offaly',1983:'Dublin',1984:'Kerry',1985:'Kerry',1986:'Kerry',
+  1987:'Meath',1988:'Meath',1989:'Cork',1990:'Cork',1991:'Down',
+  1992:'Donegal',1993:'Derry',1994:'Down',1995:'Dublin',1996:'Meath',
+  1997:'Kerry',1998:'Galway',1999:'Meath',2000:'Kerry',2001:'Galway',
+  2002:'Armagh',2003:'Tyrone',2004:'Kerry',2005:'Tyrone',2006:'Kerry',
+  2007:'Kerry',2008:'Tyrone',2009:'Kerry',2010:'Cork',
+};
+
+const SPORTS_LOOKUP = {
+  GB: { data: SPORTS_GB, league: SPORTS_GB_LEAGUE, sport: 'Football' },
+  DE: { data: SPORTS_DE, league: SPORTS_DE_LEAGUE, sport: 'Football' },
+  FR: { data: SPORTS_FR, league: SPORTS_FR_LEAGUE, sport: 'Football' },
+  AU: { data: SPORTS_AU, league: SPORTS_AU_LEAGUE, sport: 'Aussie Rules' },
+  JP: { data: SPORTS_JP, league: () => 'Japan Series', sport: 'Baseball' },
+  CA: { data: SPORTS_CA, league: () => 'Stanley Cup', sport: 'Ice Hockey' },
+  BR: { data: SPORTS_BR, league: () => 'Brasileiro', sport: 'Football' },
+  RU: { data: SPORTS_RU, league: SPORTS_RU_LEAGUE, sport: 'Football' },
+  KR: { data: SPORTS_KR, league: () => 'K-League', sport: 'Football' },
+  MX: { data: SPORTS_MX, league: () => 'Liga MX', sport: 'Football' },
+  IE: { data: SPORTS_IE, league: () => 'All-Ireland SFC', sport: 'GAA Football' },
+};
+
+// ---------------------------------------------------------------------------
+// TIER 2: COUNTRY EVENTS (one memorable moment per country per year)
+// ---------------------------------------------------------------------------
+
+const COUNTRY_EVENTS = {
+  GB: {
+    1950:'NHS in first full year, Attlee wins second election',
+    1952:'King George VI dies, Elizabeth II becomes Queen',
+    1954:'Food rationing ends after 14 years',
+    1955:'Winston Churchill retires as PM',
+    1956:'Suez Crisis, Britain forced to withdraw',
+    1958:'Munich air disaster kills Manchester United players',
+    1963:'Profumo scandal, Beatles release first album',
+    1964:'Harold Wilson leads Labour to power',
+    1966:'England wins FIFA World Cup at Wembley',
+    1968:'Enoch Powell gives Rivers of Blood speech',
+    1969:'Troops sent to Northern Ireland',
+    1971:'Decimal currency introduced on 15 Feb',
+    1972:'Bloody Sunday in Derry',
+    1973:'UK joins EEC, three-day week amid energy crisis',
+    1975:'Margaret Thatcher becomes Conservative leader',
+    1977:'Queen Elizabeth II Silver Jubilee',
+    1978:'First test-tube baby Louise Brown born in Oldham',
+    1979:'Margaret Thatcher becomes first female PM',
+    1981:'Prince Charles marries Lady Diana',
+    1982:'Falklands War, Britain defeats Argentina',
+    1984:'Miners strike, Thatcher breaks unions',
+    1988:'Lockerbie bombing kills 259',
+    1990:'Thatcher ousted by own party, Major becomes PM',
+    1997:'Tony Blair wins landslide, Diana dies in Paris',
+    1998:'Good Friday Agreement signed',
+    2003:'Iraq War begins, million march against it in London',
+    2005:'7/7 London bombings kill 52',
+    2008:'Financial crisis, UK bails out banks',
+    2010:'First hung parliament since 1974, coalition formed',
+  },
+  DE: {
+    1954:'West Germany wins World Cup - the Miracle of Bern',
+    1955:'West Germany joins NATO',
+    1961:'Berlin Wall built overnight on 13 August',
+    1963:'Adenauer retires after 14 years as Chancellor',
+    1968:'Student protests peak across West Germany',
+    1969:'Willy Brandt becomes Chancellor, Ostpolitik begins',
+    1970:'Brandt kneels at Warsaw Ghetto memorial',
+    1972:'Munich Olympics massacre, 11 Israeli athletes killed',
+    1974:'West Germany wins World Cup at home',
+    1977:'German Autumn - RAF terror, Schleyer murdered',
+    1980:'Green Party founded',
+    1982:'Helmut Kohl becomes Chancellor',
+    1989:'Berlin Wall falls on 9 November',
+    1990:'German reunification on 3 October',
+    1998:'Schroeder defeats Kohl after 16 years of CDU',
+    2002:'Euro replaces Deutsche Mark',
+    2005:'Angela Merkel becomes first female Chancellor',
+    2006:'Germany hosts FIFA World Cup',
+    2010:'German economy rebounds fastest in Europe',
+  },
+  FR: {
+    1954:'Dien Bien Phu falls, France defeated in Indochina',
+    1958:'De Gaulle returns to power, Fifth Republic founded',
+    1960:'France tests first atomic bomb in Sahara',
+    1962:'Algeria gains independence after eight-year war',
+    1968:'May 68 student uprising paralyses the nation',
+    1969:'De Gaulle resigns after referendum defeat',
+    1981:'Mitterrand elected, Socialists win after 23 years',
+    1985:'Rainbow Warrior sunk by French secret service',
+    1989:'Bicentennial of the French Revolution',
+    1994:'Channel Tunnel opens linking France to Britain',
+    1998:'France hosts and wins FIFA World Cup',
+    2002:'Le Pen reaches presidential runoff, France shocked',
+    2005:'Banlieues riots, three weeks of unrest',
+    2007:'Sarkozy elected President',
+    2010:'Retirement age protests shut France for weeks',
+  },
+  JP: {
+    1952:'Allied occupation ends, Japan regains sovereignty',
+    1955:'Liberal Democratic Party founded, begins 38-year rule',
+    1958:'Tokyo Tower completed',
+    1964:'Tokyo Olympics, bullet train launched same day',
+    1968:'Japan becomes world\'s second largest economy',
+    1970:'Osaka World Expo, 64 million visitors',
+    1979:'Sony Walkman launched',
+    1985:'Plaza Accord causes yen surge, property boom begins',
+    1989:'Emperor Hirohito dies, Heisei era begins',
+    1990:'Nikkei crashes 39%, bubble economy bursts',
+    1995:'Kobe earthquake kills 6,434, Aum sarin attack',
+    2002:'Japan co-hosts FIFA World Cup',
+    2009:'Democratic Party wins landslide, ends LDP era',
+    2010:'Japan loses second-economy rank to China',
+  },
+  IN: {
+    1950:'Constitution comes into force, republic declared',
+    1952:'First general election, Nehru wins landslide',
+    1961:'India liberates Goa from Portuguese rule',
+    1962:'War with China humiliates India',
+    1964:'Nehru dies',
+    1966:'Indira Gandhi becomes first female PM',
+    1971:'India-Pakistan war creates Bangladesh',
+    1974:'India tests first nuclear device',
+    1975:'Indira Gandhi declares Emergency, democracy suspended',
+    1977:'First non-Congress government in 30 years',
+    1983:'India wins Cricket World Cup',
+    1984:'Golden Temple stormed, Indira Gandhi assassinated',
+    1991:'Economic liberalisation opens India\'s economy',
+    1992:'Babri Masjid demolished, riots kill thousands',
+    1998:'Pokhran nuclear tests, India declared nuclear state',
+    2000:'India\'s population crosses one billion',
+    2004:'Congress defeats BJP, Manmohan Singh becomes PM',
+    2008:'Mumbai 26/11 attacks, 166 killed over three days',
+  },
+  AU: {
+    1956:'Melbourne Olympics, first Games in Australia',
+    1966:'Decimal currency launched, dollar replaces pound',
+    1967:'Referendum grants citizenship to Aboriginal Australians',
+    1972:'Whitlam leads Labor to power after 23 years',
+    1973:'Sydney Opera House opens',
+    1974:'Cyclone Tracy destroys Darwin on Christmas Day',
+    1975:'Whitlam dismissed by Governor-General, constitutional crisis',
+    1992:'Mabo decision overturns terra nullius',
+    1996:'Port Arthur massacre, gun ban follows',
+    2000:'Sydney Olympics, Cathy Freeman lights cauldron',
+    2002:'Bali bombings kill 88 Australians',
+    2008:'Rudd apology to Aboriginal Australians',
+    2009:'Black Saturday bushfires kill 173',
+    2010:'Julia Gillard becomes first female PM',
+  },
+  CA: {
+    1967:'Canada\'s centennial, Expo 67 in Montreal',
+    1968:'Pierre Trudeau becomes PM, Trudeau-mania',
+    1970:'October Crisis, War Measures Act invoked',
+    1972:'Canada-Soviet hockey Summit Series',
+    1980:'Quebec sovereignty referendum lost',
+    1982:'Charter of Rights and Freedoms comes into effect',
+    1988:'Calgary Winter Olympics',
+    1993:'Chretien leads Liberals to majority',
+    1995:'Quebec referendum, YES loses by 1.2%',
+    2003:'Canada refuses to join Iraq War',
+    2005:'Same-sex marriage legalised nationwide',
+    2010:'Vancouver Winter Olympics, 14 gold medals',
+  },
+  BR: {
+    1950:'Brazil hosts World Cup, loses final to Uruguay',
+    1958:'Brazil wins first World Cup, Pele scores aged 17',
+    1960:'Capital moved to newly built Brasilia',
+    1964:'Military coup begins 21-year dictatorship',
+    1970:'Brazil wins World Cup, greatest team ever',
+    1984:'Diretas Ja, millions demand direct elections',
+    1988:'New constitution, redemocratisation complete',
+    1992:'Collor impeached for corruption',
+    1994:'Real Plan ends hyperinflation',
+    2002:'Lula elected, first working-class President',
+    2010:'Dilma Rousseff elected, first female President',
+  },
+  RU: {
+    1953:'Stalin dies 5 March',
+    1956:'Khrushchev denounces Stalin, shocks world',
+    1957:'Sputnik launched',
+    1961:'Yuri Gagarin becomes first human in space',
+    1962:'Cuban Missile Crisis',
+    1968:'Soviet tanks crush Prague Spring',
+    1979:'Soviet invasion of Afghanistan begins',
+    1985:'Gorbachev becomes leader, glasnost begins',
+    1986:'Chernobyl nuclear disaster',
+    1991:'Soviet Union dissolves 25 December',
+    1993:'Yeltsin dissolves parliament, tanks fire on White House',
+    1998:'Russia defaults on debt, rouble crisis',
+    1999:'Putin becomes PM, Yeltsin resigns',
+    2000:'Putin elected President',
+    2008:'Russia invades Georgia',
+  },
+  MX: {
+    1954:'Mexican women vote for first time federally',
+    1968:'Tlatelolco massacre days before Olympics',
+    1970:'Mexico hosts FIFA World Cup',
+    1982:'Mexico defaults on foreign debt',
+    1985:'Mexico City earthquake kills 10,000',
+    1986:'Mexico hosts World Cup, Maradona\'s Hand of God',
+    1993:'NAFTA signed',
+    1994:'Zapatista uprising, Colosio assassinated',
+    1995:'Peso crisis, Tequila Effect spreads',
+    2000:'Fox wins, ends 71 years of PRI rule',
+    2007:'Drug war declared, army deployed',
+    2009:'Swine flu pandemic begins in Mexico City',
+  },
+  KR: {
+    1950:'Korean War begins June 25',
+    1960:'April Revolution overthrows Syngman Rhee',
+    1961:'Military coup by Park Chung Hee',
+    1979:'Park Chung Hee assassinated',
+    1980:'Gwangju Uprising, hundreds killed',
+    1987:'June Struggle forces democratic transition',
+    1988:'Seoul Olympics',
+    1997:'Asian financial crisis, IMF bailout',
+    2000:'Inter-Korean summit, Kim Dae-jung wins Nobel',
+    2002:'Korea-Japan co-host World Cup, Korea reaches semis',
+    2006:'North Korea conducts first nuclear test',
+    2010:'ROKS Cheonan sunk, 46 sailors killed',
+  },
+  IE: {
+    1955:'Ireland joins the United Nations',
+    1963:'JFK visits Ireland, triumphal homecoming',
+    1969:'Troubles begin in earnest',
+    1972:'Bloody Sunday',
+    1973:'Ireland joins EEC',
+    1979:'Pope John Paul II visits, 1.25 million attend',
+    1981:'Bobby Sands dies on hunger strike',
+    1990:'Mary Robinson elected first female President',
+    1994:'IRA ceasefire, peace process accelerates',
+    1998:'Good Friday Agreement signed',
+    1999:'Ireland adopts the Euro, Celtic Tiger at full roar',
+    2005:'IRA formally ends armed campaign',
+    2008:'Banking crisis, Ireland\'s banks collapse',
+    2010:'Ireland accepts EU-IMF bailout',
+  },
+};
+
+// ---------------------------------------------------------------------------
+// TIER 2: LOCAL MUSIC CHARTS (Germany, France, Australia)
+// ---------------------------------------------------------------------------
+
+const MUSIC_DE_NO1 = {
+  1968:{s:'Mama',a:'Heintje'},1976:{s:'Fernando',a:'ABBA'},
+  1977:{s:'Yes Sir, I Can Boogie',a:'Baccara'},1978:{s:'Rivers of Babylon',a:'Boney M.'},
+  1982:{s:'Ein bisschen Frieden',a:'Nicole'},1983:{s:'Flashdance',a:'Irene Cara'},
+  1984:{s:'Big in Japan',a:'Alphaville'},1985:{s:'Live Is Life',a:'Opus'},
+  1986:{s:'Jeanny',a:'Falco'},1987:{s:'Voyage Voyage',a:'Desireless'},
+  1988:{s:'Girl You Know It\'s True',a:'Milli Vanilli'},
+  1990:{s:'Verdammt ich lieb\' dich',a:'Matthias Reim'},
+  1991:{s:'Wind of Change',a:'Scorpions'},1993:{s:'What Is Love',a:'Haddaway'},
+  1996:{s:'Macarena',a:'Los Del Rio'},
+  1997:{s:'Time to Say Goodbye',a:'Sarah Brightman & Andrea Bocelli'},
+  1998:{s:'My Heart Will Go On',a:'Celine Dion'},
+  1999:{s:'Mambo No. 5',a:'Lou Bega'},2001:{s:'Daylight in Your Eyes',a:'No Angels'},
+  2004:{s:'Dragostea Din Tei',a:'O-Zone'},2009:{s:'Poker Face',a:'Lady Gaga'},
+};
+
+const MUSIC_FR_NO1 = {
+  1969:{s:'Je t\'aime... moi non plus',a:'Serge Gainsbourg & Jane Birkin'},
+  1987:{s:'Joe le Taxi',a:'Vanessa Paradis'},1989:{s:'Lambada',a:'Kaoma'},
+  1995:{s:'Pour que tu m\'aimes encore',a:'Celine Dion'},
+  1996:{s:'Macarena',a:'Los Del Rio'},1997:{s:'Candle in the Wind 1997',a:'Elton John'},
+  1998:{s:'My Heart Will Go On',a:'Celine Dion'},1999:{s:'Mambo No. 5',a:'Lou Bega'},
+  2004:{s:'Dragostea Din Tei',a:'O-Zone'},2009:{s:'Poker Face',a:'Lady Gaga'},
+  2010:{s:'Baby',a:'Justin Bieber ft. Ludacris'},
+};
+
+const MUSIC_AU_NO1 = {
+  1975:{s:'Jive Talkin\'',a:'Bee Gees'},1976:{s:'Fernando',a:'ABBA'},
+  1978:{s:'Night Fever',a:'Bee Gees'},1981:{s:'Physical',a:'Olivia Newton-John'},
+  1983:{s:'Karma Chameleon',a:'Culture Club'},1986:{s:'Don\'t Dream It\'s Over',a:'Crowded House'},
+  1988:{s:'Don\'t Worry Be Happy',a:'Bobby McFerrin'},
+  1990:{s:'Nothing Compares 2 U',a:'Sinead O\'Connor'},
+  1991:{s:'(Everything I Do) I Do It for You',a:'Bryan Adams'},
+  1995:{s:'Gangsta\'s Paradise',a:'Coolio ft. L.V.'},
+  1996:{s:'Macarena',a:'Los Del Rio'},1998:{s:'My Heart Will Go On',a:'Celine Dion'},
+  1999:{s:'Mambo No. 5',a:'Lou Bega'},2008:{s:'Low',a:'Flo Rida ft. T-Pain'},
+  2009:{s:'I Gotta Feeling',a:'Black Eyed Peas'},
+  2010:{s:'Love the Way You Lie',a:'Eminem ft. Rihanna'},
+};
+
+const LOCAL_MUSIC = { DE: MUSIC_DE_NO1, FR: MUSIC_FR_NO1, AU: MUSIC_AU_NO1 };
+const LOCAL_MUSIC_LABEL = { DE: 'German Chart #1', FR: 'French Chart #1', AU: 'Australian Chart #1' };
+
 const DECADE_ACCENTS = {
   1950: '#e8b86d',
   1960: '#7ec8e3',
@@ -645,6 +1137,15 @@ function renderActI(year, countryCode, data) {
 
   const events = (data.world_events || []).slice(0, 5);
 
+  // Tier 2: Country political event
+  const countryEvent = countryCode !== 'US' ? COUNTRY_EVENTS[countryCode]?.[year] : null;
+  const countryEventCard = countryEvent ? `
+    <div class="pattern-a" data-reveal>
+      <p class="eyebrow">${country.flag} ${country.name}</p>
+      <p class="section-headline">That year in your country</p>
+      <p class="country-event-text">${escHtml(countryEvent)}</p>
+    </div>` : '';
+
   // Feature 4: CO2 at birth vs today
   const co2Then = CO2_PPM[year];
   const co2Card = co2Then ? patternB({
@@ -725,6 +1226,8 @@ function renderActI(year, countryCode, data) {
         ${namesCard}
 
         ${co2Card}
+
+        ${countryEventCard}
 
       </div>
     </div>
@@ -903,10 +1406,25 @@ function renderActIII(year, countryCode, data) {
   const songArtist = (countryCode === 'GB' && ukSong) ? ukArtist : artist;
   const songLabel  = (countryCode === 'GB' && ukSong) ? 'UK Chart #1' : 'Billboard Year-End #1';
 
+  // Tier 2: Local music chart (DE, FR, AU)
+  const localMusic = LOCAL_MUSIC[countryCode]?.[year];
+  const localMusicLabel = LOCAL_MUSIC_LABEL[countryCode] || null;
+
+  // Tier 2: Local sports champion
+  const sportEntry = SPORTS_LOOKUP[countryCode];
+  const localChampion = sportEntry?.data[year];
+  const localLeague = localChampion ? sportEntry.league(year) : null;
+
   return `
     <div class="act" id="act-3">
       <p class="act-label">Act III</p>
       <div class="act-sections">
+
+        ${localMusic && localMusicLabel ? patternC({
+          eyebrow: localMusicLabel,
+          title: localMusic.s,
+          detail: localMusic.a,
+        }) : ''}
 
         ${patternC({
           eyebrow: songLabel,
@@ -936,10 +1454,13 @@ function renderActIII(year, countryCode, data) {
           </div>
         ` : ''}
 
-        ${sportStats.length > 0 ? patternF({
+        ${(sportStats.length > 0 || localChampion) ? patternF({
           eyebrow: 'Sports',
           headline: 'Champions of the year',
-          stats: sportStats,
+          stats: [
+            localChampion && { label: localLeague, value: localChampion, sub: sportEntry.sport },
+            ...sportStats,
+          ].filter(Boolean).slice(0, 4),
         }) : ''}
 
         ${patternF({

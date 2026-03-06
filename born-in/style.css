@@ -1345,6 +1345,15 @@ body.era-00s {
   font-weight: 500;
 }
 
+/* Country event text */
+.country-event-text {
+  font-size: 17px;
+  color: var(--text-primary);
+  margin: 12px 0 0;
+  line-height: 1.6;
+  max-width: 560px;
+}
+
 /* =========================================================
    FEATURE 4: SOCIAL MEDIA TIMELINE
    ========================================================= */
