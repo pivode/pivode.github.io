@@ -707,8 +707,6 @@ function initBackButton() {
 // INIT
 // ---------------------------------------------------------------------------
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderHome();
-  initBackButton();
-  render();
-});
+renderHome();
+initBackButton();
+render();
