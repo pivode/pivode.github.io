@@ -350,7 +350,13 @@ function renderActI(year, countryCode, data) {
   const countryLeader = data.leaders?.[leaderInfo.key] || 'Unknown';
   const usPresident  = data.leaders?.us_president || 'Unknown';
   const unSec        = data.leaders?.un_secretary || 'Unknown';
+  const ukPm         = data.leaders?.uk_pm || 'Unknown';
   const country      = COUNTRY_MAP[countryCode];
+
+  // When US is selected, the country leader IS the US president — show UK PM instead to avoid duplicate
+  const secondStat = countryCode === 'US'
+    ? { label: 'UK Prime Minister', value: ukPm, sub: 'Prime Minister' }
+    : { label: 'US President', value: usPresident, sub: 'President' };
 
   const events = (data.world_events || []).slice(0, 5);
 
@@ -379,11 +385,7 @@ function renderActI(year, countryCode, data) {
               value: countryLeader,
               sub: leaderInfo.title,
             },
-            {
-              label: 'US President',
-              value: usPresident,
-              sub: 'President',
-            },
+            secondStat,
             {
               label: 'UN Secretary-General',
               value: unSec,
