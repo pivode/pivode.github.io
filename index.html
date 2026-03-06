@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pivode - Clean Datasets for Analysts & Researchers</title>
+  <meta name="description" content="Ready-to-use CSV datasets for analysts, researchers, and builders. No scraping, no cleaning - just data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f9f8f6;
+      --surface: #ffffff;
+      --border: #e8e5e0;
+      --text: #1a1814;
+      --muted: #6b6560;
+      --accent: #d4580a;
+      --accent-hover: #b84a08;
+      --accent-light: #fdf0e8;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(249, 248, 246, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo span {
+      color: var(--accent);
+    }
+
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .nav-link:hover { color: var(--text); }
+
+    /* HERO */
+    .hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 96px 2rem 80px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .stat-divider {
+      width: 1px;
+      background: var(--border);
+      align-self: stretch;
+    }
+
+    /* DATASETS */
+    .datasets {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 100px;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+
+    .card-cover {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: #e8e5e0;
+      display: block;
+    }
+
+    .card-cover-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #f0ede8 0%, #e0dbd4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--border);
+    }
+
+    .card-body {
+      padding: 20px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+
+    .tag-rows {
+      background: var(--accent-light);
+      color: var(--accent);
+      border-color: transparent;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 18px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .price {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .price-note {
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-left: 4px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+
+    .btn:hover { background: var(--accent-hover); }
+
+    .btn-arrow {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    /* COMING SOON CARD */
+    .card-coming {
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .card-coming .btn {
+      background: var(--border);
+      color: var(--muted);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 2rem;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-logo {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-logo span { color: var(--accent); }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: color 0.15s;
+    }
+
+    .footer-link:hover { color: var(--text); }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .hero { padding: 64px 1.25rem 60px; }
+      .datasets { padding: 0 1.25rem 80px; }
+      nav { padding: 0 1.25rem; }
+      .stat-divider { display: none; }
+      .hero-stats { gap: 20px; }
+      .footer-inner { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">piv<span>ode</span></a>
+    <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="nav-link">All datasets &rarr;</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-badge">Ready to download</div>
+    <h1>Clean datasets for analysts, researchers, and builders</h1>
+    <p class="hero-sub">
+      Every dataset is collected, cleaned, and formatted as a CSV - ready to drop into pandas, R, or Excel without any wrangling.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">1M+</div>
+        <div class="stat-label">Total rows</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-number">$2</div>
+        <div class="stat-label">Starting price</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-number">CSV</div>
+        <div class="stat-label">Always clean</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="datasets">
+    <div class="section-label">Available now</div>
+    <div class="grid">
+
+      <!-- EUROPEAN FOOTBALL -->
+      <div class="card">
+        <img
+          class="card-cover"
+          src="https://images.unsplash.com/photo-1551958219-acbc595d3e47?w=640&h=360&fit=crop"
+          alt="European Football"
+          loading="lazy"
+        >
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="tag tag-rows">551K rows</span>
+            <span class="tag">1992-2025</span>
+            <span class="tag">8 leagues</span>
+          </div>
+          <div class="card-title">European Football Player Stats</div>
+          <div class="card-desc">
+            Goals, assists, market value, nationality, and career data for every player across the top 8 European leagues over 30+ seasons.
+          </div>
+          <div class="card-footer">
+            <div class="price">$4.99 <span class="price-note">pay what you want</span></div>
+            <a class="btn" href="https://seangularity.gumroad.com/l/football-data-set" target="_blank" rel="noopener">
+              Get dataset <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLACEHOLDER - add new datasets here by duplicating a card block -->
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo">piv<span>ode</span></a>
+      <span class="footer-text">Clean data, no fuss.</span>
+      <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="footer-link">seangularity.gumroad.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
