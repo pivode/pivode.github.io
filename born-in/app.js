@@ -70,6 +70,18 @@ const TODAY = {
   global_life_expectancy: 72.3,
   us_life_expectancy: 78.5,
   home_salary_ratio: (420000 / 80000).toFixed(1),
+  // Current US prices (2024 averages, BLS/USDA/industry sources)
+  prices: {
+    gallon_gas_usd:    3.31,
+    gallon_milk_usd:   4.15,
+    dozen_eggs_usd:    4.99,
+    loaf_bread_usd:    3.99,
+    movie_ticket_usd: 13.50,
+    big_mac_usd:       5.29,
+    new_car_avg_usd:  48000,
+    median_home_usd: 420000,
+    first_class_stamp_cents: 73,
+  },
 };
 
 // CPI multipliers to convert historical salary to 2024 dollars
@@ -461,12 +473,12 @@ function renderActII(year, countryCode, data) {
   }
 
   const prices = [
-    { emoji: '⛽', label: 'Gallon of gas',   value: data.prices_us?.gallon_gas_usd },
-    { emoji: '🥛', label: 'Gallon of milk',  value: data.prices_us?.gallon_milk_usd },
-    { emoji: '🥚', label: 'Dozen eggs',      value: data.prices_us?.dozen_eggs_usd },
-    { emoji: '🍞', label: 'Loaf of bread',   value: data.prices_us?.loaf_bread_usd },
-    { emoji: '🎬', label: 'Movie ticket',    value: data.prices_us?.movie_ticket_usd },
-    { emoji: '🍔', label: 'Big Mac',         value: data.prices_us?.big_mac_usd },
+    { emoji: '⛽', label: 'Gallon of gas',   value: data.prices_us?.gallon_gas_usd,   todayValue: TODAY.prices.gallon_gas_usd },
+    { emoji: '🥛', label: 'Gallon of milk',  value: data.prices_us?.gallon_milk_usd,  todayValue: TODAY.prices.gallon_milk_usd },
+    { emoji: '🥚', label: 'Dozen eggs',      value: data.prices_us?.dozen_eggs_usd,   todayValue: TODAY.prices.dozen_eggs_usd },
+    { emoji: '🍞', label: 'Loaf of bread',   value: data.prices_us?.loaf_bread_usd,   todayValue: TODAY.prices.loaf_bread_usd },
+    { emoji: '🎬', label: 'Movie ticket',    value: data.prices_us?.movie_ticket_usd, todayValue: TODAY.prices.movie_ticket_usd },
+    { emoji: '🍔', label: 'Big Mac',         value: data.prices_us?.big_mac_usd,      todayValue: TODAY.prices.big_mac_usd },
   ].filter(p => p.value != null);
 
   // Country GDP per capita (for non-US)
@@ -853,13 +865,19 @@ function patternD({ eyebrow, headline, items }) {
 }
 
 function patternE({ eyebrow, headline, prices }) {
-  const pillsHtml = prices.map(p => `
+  const pillsHtml = prices.map(p => {
+    const todayHtml = p.todayValue != null
+      ? `<span class="price-pill-today">$${formatPriceValue(p.todayValue)} today</span>`
+      : '';
+    return `
     <div class="price-pill">
       <span class="price-pill-emoji">${p.emoji}</span>
       <span class="price-pill-value">$${formatPriceValue(p.value)}</span>
+      ${todayHtml}
       <span class="price-pill-label">${escHtml(p.label)}</span>
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   return `
     <div class="pattern-e" data-reveal>

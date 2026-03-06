@@ -793,6 +793,13 @@ body {
   line-height: 1;
 }
 
+.price-pill-today {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+
 .price-pill-label {
   font-size: 11px;
   color: var(--text-secondary);
