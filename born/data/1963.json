@@ -1,0 +1,198 @@
+{
+  "year": 1963,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.19,
+    "births_millions": 104,
+    "life_expectancy_global": 53.5,
+    "countries_count": 107,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 3375,
+    "us_median_household_income_usd": 6200,
+    "us_inflation_pct": 1.24,
+    "us_unemployment_pct": 5.7,
+    "us_minimum_wage_usd": 1.25,
+    "sp500_year_end": 75.02,
+    "dow_jones_year_end": 762.95,
+    "gold_oz_usd": 35.09,
+    "oil_barrel_usd": 1.80
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.30,
+    "gallon_milk_usd": 1.04,
+    "dozen_eggs_usd": 0.55,
+    "loaf_bread_usd": 0.21,
+    "movie_ticket_usd": 0.85,
+    "new_car_avg_usd": 2700,
+    "median_home_usd": 13000,
+    "first_class_stamp_cents": 5,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Sugar Shack",
+      "billboard_no1_artist": "Jimmy Gilmer & The Fireballs",
+      "grammy_record": "I Left My Heart in San Francisco",
+      "grammy_record_artist": "Tony Bennett",
+      "grammy_album": "The First Family",
+      "grammy_album_artist": "Vaughn Meader",
+      "uk_no1_jan": "The Next Time / Bachelor Boy",
+      "uk_no1_jan_artist": "Cliff Richard"
+    },
+    "film": {
+      "box_office_no1": "Cleopatra",
+      "box_office_no1_gross_m": 57.8,
+      "oscar_best_picture": "Lawrence of Arabia",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "David Lean",
+      "oscar_best_actor": "Gregory Peck",
+      "oscar_best_actor_film": "To Kill a Mockingbird",
+      "oscar_best_actress": "Anne Bancroft",
+      "oscar_best_actress_film": "The Miracle Worker"
+    },
+    "television": {
+      "most_watched_show": "The Beverly Hillbillies",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The Defenders",
+      "emmy_comedy": "The Dick Van Dyke Show",
+      "notable_premieres": ["The Fugitive", "My Favorite Martian", "General Hospital"],
+      "notable_finales": ["The Danny Kaye Show (season)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Shoes of the Fisherman",
+      "fiction_bestseller_author": "Morris L. West",
+      "nonfiction_bestseller": "Happiness Is a Warm Puppy",
+      "nonfiction_bestseller_author": "Charles M. Schulz",
+      "pulitzer_fiction": "The Reivers",
+      "pulitzer_fiction_author": "William Faulkner"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Los Angeles Dodgers",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Oscar Robertson",
+      "wimbledon_mens": "Chuck McKinley",
+      "wimbledon_womens": "Margaret Smith",
+      "f1_champion": "Jim Clark",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "The first geosynchronous communications satellite (Syncom 2) is launched; the hotline between Washington and Moscow is established",
+    "top_computer": "IBM 7094",
+    "top_computer_price_usd": 3000000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Syncom 2, first geosynchronous communications satellite, launched by NASA",
+      "Washington-Moscow hotline established following Cuban Missile Crisis",
+      "First touch-tone telephones introduced commercially in the US",
+      "Polaroid introduces the first instant color film camera"
+    ]
+  },
+  "world_events": [
+    {"month": 6, "event": "Valentina Tereshkova becomes the first woman in space, orbiting Earth 48 times over nearly three days in Vostok 6"},
+    {"month": 8, "event": "Martin Luther King Jr. delivers his 'I Have a Dream' speech to 250,000 people at the March on Washington"},
+    {"month": 8, "event": "Partial Nuclear Test Ban Treaty signed by the US, USSR, and UK, prohibiting nuclear tests in the atmosphere"},
+    {"month": 11, "event": "President John F. Kennedy assassinated in Dallas, Texas; Lyndon B. Johnson sworn in as president"},
+    {"month": 11, "event": "Lee Harvey Oswald, suspected Kennedy assassin, shot and killed by Jack Ruby in Dallas police headquarters"}
+  ],
+  "leaders": {
+    "us_president": "John F. Kennedy (to Nov), then Lyndon B. Johnson",
+    "uk_pm": "Harold Macmillan (to Oct), then Alec Douglas-Home",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Konrad Adenauer (to Oct), then Ludwig Erhard",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Hayato Ikeda",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Lester B. Pearson",
+    "brazil_president": "João Goulart",
+    "un_secretary": "U Thant",
+    "pope": "Pope John XXIII (to Jun), then Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Michael Jordan", "month": 2, "field": "Basketball"},
+    {"name": "Johnny Depp", "month": 6, "field": "Film"},
+    {"name": "Brad Pitt", "month": 12, "field": "Film"},
+    {"name": "Quentin Tarantino", "month": 3, "field": "Film"},
+    {"name": "Whitney Houston", "month": 8, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 189.2,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 3375,
+      "leader": "John F. Kennedy",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 53.6,
+      "life_expectancy": 71.3,
+      "gdp_per_capita_usd": 1531,
+      "leader": "Harold Macmillan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 466.0,
+      "life_expectancy": 42.5,
+      "gdp_per_capita_usd": 90,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 57.4,
+      "life_expectancy": 70.4,
+      "gdp_per_capita_usd": 1671,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 96.6,
+      "life_expectancy": 68.7,
+      "gdp_per_capita_usd": 740,
+      "leader": "Hayato Ikeda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 47.2,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 1564,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 78.0,
+      "life_expectancy": 55.8,
+      "gdp_per_capita_usd": 235,
+      "leader": "João Goulart",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 686.4,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 80,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 10.9,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 2011,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 19.0,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 2637,
+      "leader": "Lester B. Pearson",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

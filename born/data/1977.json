@@ -1,0 +1,198 @@
+{
+  "year": 1977,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.23,
+    "births_millions": 131,
+    "life_expectancy_global": 62.3,
+    "countries_count": 149,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 9451,
+    "us_median_household_income_usd": 13572,
+    "us_inflation_pct": 6.50,
+    "us_unemployment_pct": 7.1,
+    "us_minimum_wage_usd": 2.30,
+    "sp500_year_end": 95.10,
+    "dow_jones_year_end": 831.17,
+    "gold_oz_usd": 147.84,
+    "oil_barrel_usd": 13.92
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.62,
+    "gallon_milk_usd": 1.68,
+    "dozen_eggs_usd": 0.82,
+    "loaf_bread_usd": 0.32,
+    "movie_ticket_usd": 2.23,
+    "new_car_avg_usd": 5100,
+    "median_home_usd": 42900,
+    "first_class_stamp_cents": 13,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Tonight's the Night (Gonna Be Alright)",
+      "billboard_no1_artist": "Rod Stewart",
+      "grammy_record": "This Masquerade",
+      "grammy_record_artist": "George Benson",
+      "grammy_album": "Songs in the Key of Life",
+      "grammy_album_artist": "Stevie Wonder",
+      "uk_no1_jan": "Don't Give Up on Us",
+      "uk_no1_jan_artist": "David Soul"
+    },
+    "film": {
+      "box_office_no1": "Star Wars",
+      "box_office_no1_gross_m": 460.9,
+      "oscar_best_picture": "Rocky",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "John G. Avildsen",
+      "oscar_best_actor": "Peter Finch",
+      "oscar_best_actor_film": "Network",
+      "oscar_best_actress": "Faye Dunaway",
+      "oscar_best_actress_film": "Network"
+    },
+    "television": {
+      "most_watched_show": "Happy Days",
+      "most_watched_network": "ABC",
+      "emmy_drama": "Upstairs, Downstairs",
+      "emmy_comedy": "The Mary Tyler Moore Show",
+      "notable_premieres": ["Roots", "The Love Boat", "Eight Is Enough"],
+      "notable_finales": ["The Mary Tyler Moore Show"]
+    },
+    "books": {
+      "fiction_bestseller": "The Silmarillion",
+      "fiction_bestseller_author": "J.R.R. Tolkien",
+      "nonfiction_bestseller": "Roots",
+      "nonfiction_bestseller_author": "Alex Haley",
+      "pulitzer_fiction": "No award given",
+      "pulitzer_fiction_author": "N/A"
+    },
+    "sports": {
+      "super_bowl_winner": "Oakland Raiders",
+      "super_bowl_score": "32-14 vs Minnesota Vikings",
+      "super_bowl_mvp": "Fred Biletnikoff",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Portland Trail Blazers",
+      "nba_mvp": "Kareem Abdul-Jabbar",
+      "wimbledon_mens": "Bjorn Borg",
+      "wimbledon_womens": "Virginia Ruzici",
+      "f1_champion": "Niki Lauda",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Apple II computer introduced, the first mass-market personal computer; Voyager 1 and 2 launched toward the outer planets",
+    "top_computer": "Cray-1",
+    "top_computer_price_usd": 8900000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Apple II launched, one of the first successful mass-market personal computers",
+      "Voyager 1 and Voyager 2 spacecraft launched on grand tours of the outer solar system",
+      "Atari 2600 video game console released, bringing arcade gaming into homes",
+      "The TRS-80, sold at Radio Shack, brings affordable personal computing to America"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Jimmy Carter inaugurated as US President, beginning his administration with a pardon for Vietnam War draft evaders"},
+    {"month": 1, "event": "Roots miniseries airs on ABC, watched by 130 million Americans, reshaping public understanding of slavery"},
+    {"month": 5, "event": "Star Wars released in cinemas, transforming popular culture and cinema and becoming a global phenomenon"},
+    {"month": 8, "event": "Elvis Presley dies at Graceland at age 42, triggering worldwide mourning"},
+    {"month": 11, "event": "Egyptian President Anwar Sadat makes a historic visit to Israel, the first Arab leader to do so, beginning peace negotiations"}
+  ],
+  "leaders": {
+    "us_president": "Jimmy Carter",
+    "uk_pm": "James Callaghan",
+    "france_president": "Valéry Giscard d'Estaing",
+    "germany_chancellor": "Helmut Schmidt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Hua Guofeng",
+    "india_pm": "Morarji Desai",
+    "japan_pm": "Takeo Fukuda",
+    "australia_pm": "Malcolm Fraser",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Ernesto Geisel",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Kanye West", "month": 6, "field": "Music"},
+    {"name": "Liv Tyler", "month": 7, "field": "Film"},
+    {"name": "Orlando Bloom", "month": 1, "field": "Film"},
+    {"name": "Shakira", "month": 2, "field": "Music"},
+    {"name": "Diddy (Sean Combs)", "month": 11, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 220.2,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 9451,
+      "leader": "Jimmy Carter",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.2,
+      "life_expectancy": 73.2,
+      "gdp_per_capita_usd": 4856,
+      "leader": "James Callaghan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 632.0,
+      "life_expectancy": 51.5,
+      "gdp_per_capita_usd": 167,
+      "leader": "Morarji Desai",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.3,
+      "life_expectancy": 73.2,
+      "gdp_per_capita_usd": 8714,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 113.9,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 6117,
+      "leader": "Takeo Fukuda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 53.3,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 7636,
+      "leader": "Valéry Giscard d'Estaing",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 111.5,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 1367,
+      "leader": "Ernesto Geisel",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 943.5,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 176,
+      "leader": "Hua Guofeng",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 14.2,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 8234,
+      "leader": "Malcolm Fraser",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 23.3,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 9614,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

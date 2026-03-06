@@ -1,0 +1,198 @@
+{
+  "year": 1995,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.72,
+    "births_millions": 138,
+    "life_expectancy_global": 65.4,
+    "countries_count": 185,
+    "internet_users": 45000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 28690,
+    "us_median_household_income_usd": 34076,
+    "us_inflation_pct": 2.8,
+    "us_unemployment_pct": 5.6,
+    "us_minimum_wage_usd": 4.25,
+    "sp500_year_end": 615.93,
+    "dow_jones_year_end": 5117.12,
+    "gold_oz_usd": 387.00,
+    "oil_barrel_usd": 17.02
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.15,
+    "gallon_milk_usd": 2.96,
+    "dozen_eggs_usd": 0.87,
+    "loaf_bread_usd": 0.84,
+    "movie_ticket_usd": 4.35,
+    "new_car_avg_usd": 18800,
+    "median_home_usd": 110500,
+    "first_class_stamp_cents": 32,
+    "big_mac_usd": 2.32
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Gangsta's Paradise",
+      "billboard_no1_artist": "Coolio featuring L.V.",
+      "grammy_record": "All I Wanna Do",
+      "grammy_record_artist": "Sheryl Crow",
+      "grammy_album": "MTV Unplugged in New York",
+      "grammy_album_artist": "Tony Bennett",
+      "uk_no1_jan": "Cotton Eye Joe",
+      "uk_no1_jan_artist": "Rednex"
+    },
+    "film": {
+      "box_office_no1": "Toy Story",
+      "box_office_no1_gross_m": 191.8,
+      "oscar_best_picture": "Forrest Gump",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Robert Zemeckis",
+      "oscar_best_actor": "Tom Hanks",
+      "oscar_best_actor_film": "Forrest Gump",
+      "oscar_best_actress": "Jessica Lange",
+      "oscar_best_actress_film": "Blue Sky"
+    },
+    "television": {
+      "most_watched_show": "ER",
+      "most_watched_network": "NBC",
+      "emmy_drama": "NYPD Blue",
+      "emmy_comedy": "Frasier",
+      "notable_premieres": ["Xena: Warrior Princess", "The WB network launches", "JAG"],
+      "notable_finales": ["Roseanne (season 8)", "Murder, She Wrote"]
+    },
+    "books": {
+      "fiction_bestseller": "The Rainmaker",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "Men Are from Mars, Women Are from Venus",
+      "nonfiction_bestseller_author": "John Gray",
+      "pulitzer_fiction": "The Stone Diaries",
+      "pulitzer_fiction_author": "Carol Shields"
+    },
+    "sports": {
+      "super_bowl_winner": "San Francisco 49ers",
+      "super_bowl_score": "49-26 vs San Diego Chargers",
+      "super_bowl_mvp": "Steve Young",
+      "world_series_winner": "Atlanta Braves",
+      "nba_champion": "Houston Rockets",
+      "nba_mvp": "David Robinson",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Windows 95 launches to massive queues worldwide; the internet goes mainstream with 45 million users",
+    "top_computer": "Pentium 90 PC",
+    "top_computer_price_usd": 2499,
+    "avg_hard_drive_mb": 850,
+    "mobile_subscribers_millions": 91,
+    "notable_releases": [
+      "Windows 95 launches on August 24 with lines around the block and over one million copies sold in four days",
+      "Netscape Communications goes public, triggering the dot-com boom - stock price doubles on opening day",
+      "Java programming language released by Sun Microsystems, enabling web interactivity",
+      "DVD format announced jointly by Sony, Panasonic, Philips, and Toshiba"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Kobe earthquake kills 6,434 people in Japan and causes $100 billion in damage, exposing disaster preparedness failures"},
+    {"month": 3, "event": "Tokyo subway sarin attack by Aum Shinrikyo kills 13 and injures thousands in the worst terrorist attack on Japan's soil"},
+    {"month": 4, "event": "Oklahoma City bombing kills 168 people in the deadliest domestic terrorist attack in US history at that time"},
+    {"month": 11, "event": "Israeli Prime Minister Yitzhak Rabin assassinated by a right-wing Israeli extremist after a peace rally in Tel Aviv"},
+    {"month": 12, "event": "Dayton Peace Agreement signed, ending nearly four years of war in Bosnia and Herzegovina"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "John Major",
+    "france_president": "François Mitterrand (to May), then Jacques Chirac",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "P. V. Narasimha Rao",
+    "japan_pm": "Tomiichi Murayama (to Jan), then Ryutaro Hashimoto",
+    "australia_pm": "Paul Keating (to Mar), then John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Boutros Boutros-Ghali",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "One Direction's Niall Horan", "month": 9, "field": "Music"},
+    {"name": "Kendall Jenner", "month": 11, "field": "Modelling/Media"},
+    {"name": "Cardi B", "month": 10, "field": "Music"},
+    {"name": "Nick Jonas", "month": 9, "field": "Music"},
+    {"name": "Hailee Steinfeld", "month": 12, "field": "Film/Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 262.8,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 28690,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 58.3,
+      "life_expectancy": 77.0,
+      "gdp_per_capita_usd": 19974,
+      "leader": "John Major",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 932.6,
+      "life_expectancy": 61.2,
+      "gdp_per_capita_usd": 375,
+      "leader": "P. V. Narasimha Rao",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 81.7,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 30346,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 125.4,
+      "life_expectancy": 79.9,
+      "gdp_per_capita_usd": 41968,
+      "leader": "Tomiichi Murayama",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 58.0,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 26780,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 160.5,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 4726,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1204.9,
+      "life_expectancy": 70.7,
+      "gdp_per_capita_usd": 604,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 18.3,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 20018,
+      "leader": "Paul Keating",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 29.4,
+      "life_expectancy": 78.3,
+      "gdp_per_capita_usd": 20030,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

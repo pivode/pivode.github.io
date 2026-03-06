@@ -1,0 +1,199 @@
+{
+  "year": 1960,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.03,
+    "births_millions": 98,
+    "life_expectancy_global": 52.5,
+    "countries_count": 99,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 3007,
+    "us_median_household_income_usd": 5600,
+    "us_inflation_pct": 1.72,
+    "us_unemployment_pct": 5.5,
+    "us_minimum_wage_usd": 1.00,
+    "sp500_year_end": 58.03,
+    "dow_jones_year_end": 615.89,
+    "gold_oz_usd": 35.27,
+    "oil_barrel_usd": 1.90
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.31,
+    "gallon_milk_usd": 1.04,
+    "dozen_eggs_usd": 0.57,
+    "loaf_bread_usd": 0.20,
+    "movie_ticket_usd": 0.69,
+    "new_car_avg_usd": 2600,
+    "median_home_usd": 12700,
+    "first_class_stamp_cents": 4,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Theme from A Summer Place",
+      "billboard_no1_artist": "Percy Faith",
+      "grammy_record": "Theme from A Summer Place",
+      "grammy_record_artist": "Percy Faith",
+      "grammy_album": "The Button-Down Mind of Bob Newhart",
+      "grammy_album_artist": "Bob Newhart",
+      "uk_no1_jan": "What Do You Want to Make Those Eyes at Me For?",
+      "uk_no1_jan_artist": "Emile Ford & The Checkmates"
+    },
+    "film": {
+      "box_office_no1": "Spartacus",
+      "box_office_no1_gross_m": 60.0,
+      "oscar_best_picture": "Ben-Hur",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "William Wyler",
+      "oscar_best_actor": "Charlton Heston",
+      "oscar_best_actor_film": "Ben-Hur",
+      "oscar_best_actress": "Simone Signoret",
+      "oscar_best_actress_film": "Room at the Top"
+    },
+    "television": {
+      "most_watched_show": "Gunsmoke",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Playhouse 90",
+      "emmy_comedy": "The Jack Benny Program",
+      "notable_premieres": ["The Flintstones", "The Andy Griffith Show"],
+      "notable_finales": ["What's My Line (season)"]
+    },
+    "books": {
+      "fiction_bestseller": "Advise and Consent",
+      "fiction_bestseller_author": "Allen Drury",
+      "nonfiction_bestseller": "The Rise and Fall of the Third Reich",
+      "nonfiction_bestseller_author": "William L. Shirer",
+      "pulitzer_fiction": "Advise and Consent",
+      "pulitzer_fiction_author": "Allen Drury"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Pittsburgh Pirates",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Wilt Chamberlain",
+      "wimbledon_mens": "Neale Fraser",
+      "wimbledon_womens": "Maria Bueno",
+      "f1_champion": "Jack Brabham",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Echo 1, the world's first communications satellite, launched by NASA",
+    "top_computer": "IBM 7090",
+    "top_computer_price_usd": 2900000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Echo 1 communications satellite launched by NASA",
+      "COBOL programming language standardized",
+      "DEC PDP-1, the first minicomputer, introduced",
+      "IBM 1401 business computer launched, becoming most popular of the era"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Sit-in protests begin at Woolworth lunch counter in Greensboro, North Carolina, sparking the Civil Rights movement"},
+    {"month": 5, "event": "U-2 spy plane incident - Soviet Union shoots down American reconnaissance aircraft, pilot Francis Gary Powers captured"},
+    {"month": 9, "event": "First televised presidential debate between John F. Kennedy and Richard Nixon, a landmark in political history"},
+    {"month": 10, "event": "Nigeria gains independence from Britain, part of the 'Year of Africa' as 17 nations gain independence"},
+    {"month": 11, "event": "John F. Kennedy elected 35th US President, defeating Richard Nixon in one of the closest elections in history"},
+    {"month": 12, "event": "OPEC founded by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela to coordinate global oil production policy"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Harold Macmillan",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Hayato Ikeda",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "John Diefenbaker",
+    "brazil_president": "Juscelino Kubitschek",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope John XXIII"
+  },
+  "notable_births": [
+    {"name": "Bono", "month": 5, "field": "Music"},
+    {"name": "Diego Maradona", "month": 10, "field": "Football"},
+    {"name": "Daryl Hannah", "month": 12, "field": "Film"},
+    {"name": "Colin Firth", "month": 9, "field": "Film"},
+    {"name": "Ayrton Senna", "month": 3, "field": "Motorsport"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 180.7,
+      "life_expectancy": 69.7,
+      "gdp_per_capita_usd": 3007,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 52.4,
+      "life_expectancy": 71.1,
+      "gdp_per_capita_usd": 1381,
+      "leader": "Harold Macmillan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 448.3,
+      "life_expectancy": 41.2,
+      "gdp_per_capita_usd": 83,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 55.4,
+      "life_expectancy": 69.1,
+      "gdp_per_capita_usd": 1302,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 94.1,
+      "life_expectancy": 67.7,
+      "gdp_per_capita_usd": 479,
+      "leader": "Hayato Ikeda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 45.7,
+      "life_expectancy": 70.3,
+      "gdp_per_capita_usd": 1326,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 72.5,
+      "life_expectancy": 54.6,
+      "gdp_per_capita_usd": 208,
+      "leader": "Juscelino Kubitschek",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 660.3,
+      "life_expectancy": 43.7,
+      "gdp_per_capita_usd": 92,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 10.3,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 1789,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 17.9,
+      "life_expectancy": 71.1,
+      "gdp_per_capita_usd": 2294,
+      "leader": "John Diefenbaker",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

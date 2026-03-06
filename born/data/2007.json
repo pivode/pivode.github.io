@@ -1,0 +1,198 @@
+{
+  "year": 2007,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.60,
+    "births_millions": 136,
+    "life_expectancy_global": 68.8,
+    "countries_count": 195,
+    "internet_users": 1380000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 47584,
+    "us_median_household_income_usd": 50233,
+    "us_inflation_pct": 2.9,
+    "us_unemployment_pct": 4.6,
+    "us_minimum_wage_usd": 5.85,
+    "sp500_year_end": 1468.36,
+    "dow_jones_year_end": 13264.82,
+    "gold_oz_usd": 838.00,
+    "oil_barrel_usd": 95.98
+  },
+  "prices_us": {
+    "gallon_gas_usd": 2.80,
+    "gallon_milk_usd": 3.80,
+    "dozen_eggs_usd": 1.68,
+    "loaf_bread_usd": 1.28,
+    "movie_ticket_usd": 6.88,
+    "new_car_avg_usd": 28711,
+    "median_home_usd": 247900,
+    "first_class_stamp_cents": 41,
+    "big_mac_usd": 3.22
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Irreplaceable",
+      "billboard_no1_artist": "Beyoncé",
+      "grammy_record": "Not Ready to Make Nice",
+      "grammy_record_artist": "Dixie Chicks",
+      "grammy_album": "Taking the Long Way",
+      "grammy_album_artist": "Dixie Chicks",
+      "uk_no1_jan": "Smile",
+      "uk_no1_jan_artist": "Lily Allen"
+    },
+    "film": {
+      "box_office_no1": "Spider-Man 3",
+      "box_office_no1_gross_m": 336.5,
+      "oscar_best_picture": "The Departed",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Martin Scorsese",
+      "oscar_best_actor": "Forest Whitaker",
+      "oscar_best_actor_film": "The Last King of Scotland",
+      "oscar_best_actress": "Helen Mirren",
+      "oscar_best_actress_film": "The Queen"
+    },
+    "television": {
+      "most_watched_show": "American Idol",
+      "most_watched_network": "Fox",
+      "emmy_drama": "The Sopranos",
+      "emmy_comedy": "30 Rock",
+      "notable_premieres": ["Mad Men", "Breaking Bad", "Chuck", "Gossip Girl"],
+      "notable_finales": ["The Sopranos", "Scrubs (NBC)"]
+    },
+    "books": {
+      "fiction_bestseller": "Harry Potter and the Deathly Hallows",
+      "fiction_bestseller_author": "J.K. Rowling",
+      "nonfiction_bestseller": "The Secret",
+      "nonfiction_bestseller_author": "Rhonda Byrne",
+      "pulitzer_fiction": "The Road",
+      "pulitzer_fiction_author": "Cormac McCarthy"
+    },
+    "sports": {
+      "super_bowl_winner": "Indianapolis Colts",
+      "super_bowl_score": "29-17 vs Chicago Bears",
+      "super_bowl_mvp": "Peyton Manning",
+      "world_series_winner": "Boston Red Sox",
+      "nba_champion": "San Antonio Spurs",
+      "nba_mvp": "Dirk Nowitzki",
+      "wimbledon_mens": "Roger Federer",
+      "wimbledon_womens": "Venus Williams",
+      "f1_champion": "Kimi Raikkonen",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Apple launches the original iPhone on June 29, fundamentally changing the smartphone and tech industry forever",
+    "top_computer": "Apple MacBook",
+    "top_computer_price_usd": 1099,
+    "avg_hard_drive_mb": 320000,
+    "mobile_subscribers_millions": 3304,
+    "notable_releases": [
+      "Apple iPhone launches June 29 - the original touchscreen smartphone that changed everything",
+      "Amazon Kindle launches in November, selling out in 5.5 hours",
+      "Android announced by Google/Open Handset Alliance in November",
+      "Netflix begins streaming video online, starting the shift from physical DVDs"
+    ]
+  },
+  "world_events": [
+    {"month": 6, "event": "Apple iPhone unveiled and launched by Steve Jobs, transforming the mobile phone industry and creating the modern smartphone era"},
+    {"month": 8, "event": "US subprime mortgage crisis deepens as major banks report billions in losses, signaling the coming global financial meltdown"},
+    {"month": 4, "event": "Virginia Tech massacre - gunman kills 32 students and faculty in the deadliest mass shooting in US history at the time"},
+    {"month": 10, "event": "Southern California wildfires force evacuation of 500,000 people in San Diego area, the largest US evacuation since Hurricane Katrina"},
+    {"month": 12, "event": "Pakistan opposition leader Benazir Bhutto assassinated at a campaign rally in Rawalpindi, two months after returning from exile"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Gordon Brown",
+    "france_president": "Nicolas Sarkozy",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Yasuo Fukuda",
+    "australia_pm": "Kevin Rudd",
+    "canada_pm": "Stephen Harper",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Ban Ki-moon",
+    "pope": "Pope Benedict XVI"
+  },
+  "notable_births": [
+    {"name": "Kylie Jenner", "month": 8, "field": "Media/Business"},
+    {"name": "Khloe Kardashian", "month": 6, "field": "Media"},
+    {"name": "Blue Ivy Carter", "month": 1, "field": "Music"},
+    {"name": "Royalty Brown", "month": 5, "field": "Entertainment"},
+    {"name": "Dusty Rain Pfeifer", "month": 3, "field": "Social Media"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 301.2,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 47584,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 61.0,
+      "life_expectancy": 79.2,
+      "gdp_per_capita_usd": 47110,
+      "leader": "Gordon Brown",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1144.3,
+      "life_expectancy": 65.2,
+      "gdp_per_capita_usd": 1016,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.3,
+      "life_expectancy": 79.4,
+      "gdp_per_capita_usd": 41399,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.8,
+      "life_expectancy": 82.7,
+      "gdp_per_capita_usd": 34294,
+      "leader": "Yasuo Fukuda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 61.7,
+      "life_expectancy": 80.9,
+      "gdp_per_capita_usd": 41623,
+      "leader": "Nicolas Sarkozy",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 189.8,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 7348,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1318.0,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 2650,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 21.0,
+      "life_expectancy": 81.2,
+      "gdp_per_capita_usd": 39773,
+      "leader": "Kevin Rudd",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 32.9,
+      "life_expectancy": 80.5,
+      "gdp_per_capita_usd": 43681,
+      "leader": "Stephen Harper",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

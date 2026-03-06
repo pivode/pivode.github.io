@@ -1,0 +1,198 @@
+{
+  "year": 2001,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.16,
+    "births_millions": 131,
+    "life_expectancy_global": 67.0,
+    "countries_count": 194,
+    "internet_users": 513000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 35759,
+    "us_median_household_income_usd": 42900,
+    "us_inflation_pct": 2.8,
+    "us_unemployment_pct": 4.7,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1148.08,
+    "dow_jones_year_end": 10021.57,
+    "gold_oz_usd": 276.50,
+    "oil_barrel_usd": 19.84
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.46,
+    "gallon_milk_usd": 2.88,
+    "dozen_eggs_usd": 0.93,
+    "loaf_bread_usd": 0.99,
+    "movie_ticket_usd": 5.66,
+    "new_car_avg_usd": 25140,
+    "median_home_usd": 175200,
+    "first_class_stamp_cents": 34,
+    "big_mac_usd": 2.54
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Hanging by a Moment",
+      "billboard_no1_artist": "Lifehouse",
+      "grammy_record": "Beautiful Day",
+      "grammy_record_artist": "U2",
+      "grammy_album": "Two Against Nature",
+      "grammy_album_artist": "Steely Dan",
+      "uk_no1_jan": "Stan",
+      "uk_no1_jan_artist": "Eminem"
+    },
+    "film": {
+      "box_office_no1": "Harry Potter and the Philosopher's Stone",
+      "box_office_no1_gross_m": 317.6,
+      "oscar_best_picture": "Gladiator",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Steven Soderbergh",
+      "oscar_best_actor": "Russell Crowe",
+      "oscar_best_actor_film": "Gladiator",
+      "oscar_best_actress": "Julia Roberts",
+      "oscar_best_actress_film": "Erin Brockovich"
+    },
+    "television": {
+      "most_watched_show": "ER",
+      "most_watched_network": "NBC",
+      "emmy_drama": "The West Wing",
+      "emmy_comedy": "Sex and the City",
+      "notable_premieres": ["24", "Scrubs", "Smallville"],
+      "notable_finales": ["Buffy the Vampire Slayer (move to UPN)"]
+    },
+    "books": {
+      "fiction_bestseller": "Desecration",
+      "fiction_bestseller_author": "Jerry B. Jenkins & Tim LaHaye",
+      "nonfiction_bestseller": "The Prayer of Jabez",
+      "nonfiction_bestseller_author": "Bruce Wilkinson",
+      "pulitzer_fiction": "The Amazing Adventures of Kavalier & Clay",
+      "pulitzer_fiction_author": "Michael Chabon"
+    },
+    "sports": {
+      "super_bowl_winner": "Baltimore Ravens",
+      "super_bowl_score": "34-7 vs New York Giants",
+      "super_bowl_mvp": "Ray Lewis",
+      "world_series_winner": "Arizona Diamondbacks",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Allen Iverson",
+      "wimbledon_mens": "Goran Ivanisevic",
+      "wimbledon_womens": "Venus Williams",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Wikipedia launched in January; Apple releases the first iPod in October, transforming how people carry music",
+    "top_computer": "Apple Power Mac G4",
+    "top_computer_price_usd": 1699,
+    "avg_hard_drive_mb": 40960,
+    "mobile_subscribers_millions": 961,
+    "notable_releases": [
+      "Apple iPod launched on October 23, with 5 GB storage for 1,000 songs",
+      "Wikipedia launches on January 15 as a free online encyclopedia",
+      "Microsoft releases Windows XP in October, the most stable Windows yet",
+      "Mac OS X publicly released, bringing Unix foundation to Apple computers"
+    ]
+  },
+  "world_events": [
+    {"month": 9, "event": "September 11 terrorist attacks kill 2,977 people in New York, Washington DC, and Pennsylvania, reshaping global security and foreign policy"},
+    {"month": 10, "event": "US and coalition forces launch Operation Enduring Freedom in Afghanistan, targeting the Taliban regime and al-Qaeda"},
+    {"month": 3, "event": "Wikipedia launches on January 15; space station Mir deorbits and burns up over the Pacific in March after 15 years in orbit"},
+    {"month": 4, "event": "US-China diplomatic crisis as EP-3 spy plane collides with Chinese fighter jet over the South China Sea, pilot killed"},
+    {"month": 12, "event": "Enron Corporation files for bankruptcy in the largest corporate collapse in US history up to that point, exposing massive accounting fraud"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Gerhard Schröder",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "Atal Bihari Vajpayee",
+    "japan_pm": "Junichiro Koizumi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Billie Eilish", "month": 12, "field": "Music"},
+    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
+    {"name": "Lorde", "month": 11, "field": "Music"},
+    {"name": "Sofia Richie", "month": 8, "field": "Modeling/Media"},
+    {"name": "Skai Jackson", "month": 4, "field": "Television"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 285.1,
+      "life_expectancy": 76.9,
+      "gdp_per_capita_usd": 35759,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.1,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 26040,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1028.7,
+      "life_expectancy": 62.5,
+      "gdp_per_capita_usd": 452,
+      "leader": "Atal Bihari Vajpayee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.3,
+      "life_expectancy": 78.0,
+      "gdp_per_capita_usd": 23571,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.3,
+      "life_expectancy": 81.3,
+      "gdp_per_capita_usd": 33633,
+      "leader": "Junichiro Koizumi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 59.5,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 22703,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 177.6,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 3165,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1271.9,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 1042,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 19.4,
+      "life_expectancy": 79.7,
+      "gdp_per_capita_usd": 19780,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 31.1,
+      "life_expectancy": 79.2,
+      "gdp_per_capita_usd": 23526,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "year": 1992,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.48,
+    "births_millions": 140,
+    "life_expectancy_global": 65.7,
+    "countries_count": 179,
+    "internet_users": 10000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 25467,
+    "us_median_household_income_usd": 30636,
+    "us_inflation_pct": 3.0,
+    "us_unemployment_pct": 7.5,
+    "us_minimum_wage_usd": 4.25,
+    "sp500_year_end": 435.71,
+    "dow_jones_year_end": 3301.11,
+    "gold_oz_usd": 333.00,
+    "oil_barrel_usd": 19.25
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.13,
+    "gallon_milk_usd": 2.78,
+    "dozen_eggs_usd": 0.93,
+    "loaf_bread_usd": 0.74,
+    "movie_ticket_usd": 4.69,
+    "new_car_avg_usd": 16800,
+    "median_home_usd": 103700,
+    "first_class_stamp_cents": 29,
+    "big_mac_usd": 2.19
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "End of the Road",
+      "billboard_no1_artist": "Boyz II Men",
+      "grammy_record": "Unforgettable",
+      "grammy_record_artist": "Natalie Cole with Nat King Cole",
+      "grammy_album": "Unforgettable... with Love",
+      "grammy_album_artist": "Natalie Cole",
+      "uk_no1_jan": "Don't Let the Sun Go Down on Me",
+      "uk_no1_jan_artist": "Elton John & George Michael"
+    },
+    "film": {
+      "box_office_no1": "Aladdin",
+      "box_office_no1_gross_m": 217.4,
+      "oscar_best_picture": "The Silence of the Lambs",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Jonathan Demme",
+      "oscar_best_actor": "Anthony Hopkins",
+      "oscar_best_actor_film": "The Silence of the Lambs",
+      "oscar_best_actress": "Jodie Foster",
+      "oscar_best_actress_film": "The Silence of the Lambs"
+    },
+    "television": {
+      "most_watched_show": "60 Minutes",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Northern Exposure (pilot)",
+      "emmy_comedy": "Murphy Brown",
+      "notable_premieres": ["The Real World (MTV)", "Melrose Place", "Seinfeld (season 3 surge)"],
+      "notable_finales": ["Designing Women (CBS run)", "The Cosby Show"]
+    },
+    "books": {
+      "fiction_bestseller": "Dolores Claiborne",
+      "fiction_bestseller_author": "Stephen King",
+      "nonfiction_bestseller": "The Way Things Ought to Be",
+      "nonfiction_bestseller_author": "Rush Limbaugh",
+      "pulitzer_fiction": "A Thousand Acres",
+      "pulitzer_fiction_author": "Jane Smiley"
+    },
+    "sports": {
+      "super_bowl_winner": "Washington Redskins",
+      "super_bowl_score": "37-24 vs Buffalo Bills",
+      "super_bowl_mvp": "Mark Rypien",
+      "world_series_winner": "Toronto Blue Jays",
+      "nba_champion": "Chicago Bulls",
+      "nba_mvp": "Michael Jordan",
+      "wimbledon_mens": "Andre Agassi",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Nigel Mansell",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "The first SMS text message sent; Windows 3.1 launches; the term 'World Wide Web' enters public vocabulary",
+    "top_computer": "IBM ThinkPad 700C",
+    "top_computer_price_usd": 4350,
+    "avg_hard_drive_mb": 120,
+    "mobile_subscribers_millions": 23,
+    "notable_releases": [
+      "Windows 3.1 released by Microsoft, selling 3 million copies in the first two months",
+      "First SMS text message sent on December 3 by Neil Papworth to Richard Jarvis",
+      "Apple Newton MessagePad announced, pioneering the PDA category",
+      "CD-ROM drives become standard on new personal computers"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Soviet Union formally dissolved - 15 independent republics emerge from the former superpower, ending the Cold War era"},
+    {"month": 4, "event": "Los Angeles riots erupt after the acquittal of officers who beat Rodney King, killing 63 and causing $1 billion in damage"},
+    {"month": 6, "event": "Earth Summit held in Rio de Janeiro - 172 countries attend the largest environmental conference in history"},
+    {"month": 8, "event": "Hurricane Andrew devastates South Florida and Louisiana, causing $27 billion in damage and killing 65"},
+    {"month": 11, "event": "Bill Clinton defeats George H. W. Bush in the US presidential election, ending 12 years of Republican presidency"}
+  ],
+  "leaders": {
+    "us_president": "George H. W. Bush",
+    "uk_pm": "John Major",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "P. V. Narasimha Rao",
+    "japan_pm": "Kiichi Miyazawa",
+    "australia_pm": "Paul Keating",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "Fernando Collor de Mello (to Dec), then Itamar Franco",
+    "un_secretary": "Boutros Boutros-Ghali",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Zayn Malik", "month": 1, "field": "Music"},
+    {"name": "Miley Cyrus", "month": 11, "field": "Music/Film"},
+    {"name": "Demi Lovato", "month": 8, "field": "Music"},
+    {"name": "Selena Gomez", "month": 7, "field": "Music/Film"},
+    {"name": "Ed Sheeran", "month": 2, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 255.0,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 25467,
+      "leader": "George H. W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 57.8,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 19327,
+      "leader": "John Major",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 883.6,
+      "life_expectancy": 59.6,
+      "gdp_per_capita_usd": 311,
+      "leader": "P. V. Narasimha Rao",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 80.6,
+      "life_expectancy": 75.9,
+      "gdp_per_capita_usd": 25082,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 124.3,
+      "life_expectancy": 79.2,
+      "gdp_per_capita_usd": 30972,
+      "leader": "Kiichi Miyazawa",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 57.4,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 24086,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 154.1,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 2617,
+      "leader": "Fernando Collor de Mello",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1164.9,
+      "life_expectancy": 69.9,
+      "gdp_per_capita_usd": 366,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 17.6,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 18047,
+      "leader": "Paul Keating",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 28.4,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 20635,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

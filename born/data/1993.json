@@ -1,0 +1,198 @@
+{
+  "year": 1993,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.55,
+    "births_millions": 140,
+    "life_expectancy_global": 66.5,
+    "countries_count": 184,
+    "internet_users": 14000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 26387,
+    "us_median_household_income_usd": 31241,
+    "us_inflation_pct": 2.96,
+    "us_unemployment_pct": 6.9,
+    "us_minimum_wage_usd": 4.25,
+    "sp500_year_end": 466.45,
+    "dow_jones_year_end": 3754.09,
+    "gold_oz_usd": 359.77,
+    "oil_barrel_usd": 18.43
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.11,
+    "gallon_milk_usd": 2.86,
+    "dozen_eggs_usd": 0.87,
+    "loaf_bread_usd": 0.75,
+    "movie_ticket_usd": 4.14,
+    "new_car_avg_usd": 17100,
+    "median_home_usd": 106800,
+    "first_class_stamp_cents": 29,
+    "big_mac_usd": 2.28
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "I Will Always Love You",
+      "billboard_no1_artist": "Whitney Houston",
+      "grammy_record": "Tears in Heaven",
+      "grammy_record_artist": "Eric Clapton",
+      "grammy_album": "Unplugged",
+      "grammy_album_artist": "Eric Clapton",
+      "uk_no1_jan": "I Will Always Love You",
+      "uk_no1_jan_artist": "Whitney Houston"
+    },
+    "film": {
+      "box_office_no1": "Jurassic Park",
+      "box_office_no1_gross_m": 357.1,
+      "oscar_best_picture": "Unforgiven",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Clint Eastwood",
+      "oscar_best_actor": "Al Pacino",
+      "oscar_best_actor_film": "Scent of a Woman",
+      "oscar_best_actress": "Emma Thompson",
+      "oscar_best_actress_film": "Howards End"
+    },
+    "television": {
+      "most_watched_show": "60 Minutes",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Picket Fences",
+      "emmy_comedy": "Seinfeld",
+      "notable_premieres": ["The X-Files", "Late Show with David Letterman", "Frasier"],
+      "notable_finales": ["Cheers"]
+    },
+    "books": {
+      "fiction_bestseller": "The Bridges of Madison County",
+      "fiction_bestseller_author": "Robert James Waller",
+      "nonfiction_bestseller": "See, I Told You So",
+      "nonfiction_bestseller_author": "Rush Limbaugh",
+      "pulitzer_fiction": "A Good Scent from a Strange Mountain",
+      "pulitzer_fiction_author": "Robert Olen Butler"
+    },
+    "sports": {
+      "super_bowl_winner": "Dallas Cowboys",
+      "super_bowl_score": "52-17 vs Buffalo Bills",
+      "super_bowl_mvp": "Troy Aikman",
+      "world_series_winner": "Toronto Blue Jays",
+      "nba_champion": "Chicago Bulls",
+      "nba_mvp": "Charles Barkley",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Alain Prost",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "NCSA Mosaic web browser released, making the World Wide Web accessible to ordinary people for the first time",
+    "top_computer": "Apple Macintosh Quadra 950",
+    "top_computer_price_usd": 7200,
+    "avg_hard_drive_mb": 500,
+    "mobile_subscribers_millions": 34,
+    "notable_releases": [
+      "NCSA Mosaic web browser released in April, making the internet accessible to non-technical users",
+      "Intel Pentium processor released, bringing 60 MHz processing power to consumers",
+      "DOOM released by id Software, establishing the modern first-person shooter and gaming culture",
+      "Apple Newton MessagePad released as the first mainstream PDA"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Bill Clinton inaugurated as 42nd US President; the White House launches a website for the first time"},
+    {"month": 2, "event": "World Trade Center bombed by Islamic terrorists, killing 6 and injuring 1,000 in a parking garage explosion"},
+    {"month": 4, "event": "Branch Davidian compound near Waco, Texas stormed by FBI; fire kills 76 including cult leader David Koresh"},
+    {"month": 9, "event": "Oslo Accords signed by Yasser Arafat and Yitzhak Rabin on the White House lawn, creating a framework for Palestinian-Israeli peace"},
+    {"month": 10, "event": "Battle of Mogadishu: US soldiers killed in Somalia in the 'Black Hawk Down' incident, shown live on CNN"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "John Major",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": null,
+    "china_leader": "Jiang Zemin",
+    "india_pm": "P. V. Narasimha Rao",
+    "japan_pm": "Kiichi Miyazawa (to Aug), then Morihiro Hosokawa",
+    "australia_pm": "Paul Keating",
+    "canada_pm": "Brian Mulroney (to Jun), then Kim Campbell",
+    "brazil_president": "Itamar Franco",
+    "un_secretary": "Boutros Boutros-Ghali",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Billie Eilish", "month": 12, "field": "Music"},
+    {"name": "Ariana Grande", "month": 6, "field": "Music"},
+    {"name": "Malala Yousafzai", "month": 7, "field": "Activism"},
+    {"name": "Madison Beer", "month": 3, "field": "Music"},
+    {"name": "Millie Bobby Brown", "month": 2, "field": "Television/Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 258.1,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 26387,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 58.0,
+      "life_expectancy": 76.2,
+      "gdp_per_capita_usd": 18080,
+      "leader": "John Major",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 909.0,
+      "life_expectancy": 60.6,
+      "gdp_per_capita_usd": 296,
+      "leader": "P. V. Narasimha Rao",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 81.1,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 25701,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 124.6,
+      "life_expectancy": 79.6,
+      "gdp_per_capita_usd": 35793,
+      "leader": "Kiichi Miyazawa",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 57.5,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 23489,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 157.1,
+      "life_expectancy": 67.1,
+      "gdp_per_capita_usd": 2949,
+      "leader": "Itamar Franco",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1178.5,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 531,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 17.9,
+      "life_expectancy": 77.8,
+      "gdp_per_capita_usd": 17505,
+      "leader": "Paul Keating",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 28.7,
+      "life_expectancy": 78.0,
+      "gdp_per_capita_usd": 19889,
+      "leader": "Kim Campbell",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

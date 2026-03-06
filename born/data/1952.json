@@ -1,0 +1,198 @@
+{
+  "year": 1952,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.63,
+    "births_millions": 98,
+    "life_expectancy_global": 47.5,
+    "countries_count": 72,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1786,
+    "us_median_household_income_usd": 3900,
+    "us_inflation_pct": 0.88,
+    "us_unemployment_pct": 3.0,
+    "us_minimum_wage_usd": 0.75,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 291.90,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.75
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.27,
+    "gallon_milk_usd": 0.90,
+    "dozen_eggs_usd": 0.54,
+    "loaf_bread_usd": 0.16,
+    "movie_ticket_usd": 0.50,
+    "new_car_avg_usd": 1754,
+    "median_home_usd": 9050,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Blue Tango",
+      "billboard_no1_artist": "Leroy Anderson",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Feet Up (Pat Him on the Po-Po)",
+      "uk_no1_jan_artist": "Guy Mitchell"
+    },
+    "film": {
+      "box_office_no1": "This Is Cinerama",
+      "box_office_no1_gross_m": 32.0,
+      "oscar_best_picture": "The Greatest Show on Earth",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "John Ford",
+      "oscar_best_actor": "Gary Cooper",
+      "oscar_best_actor_film": "High Noon",
+      "oscar_best_actress": "Shirley Booth",
+      "oscar_best_actress_film": "Come Back, Little Sheba"
+    },
+    "television": {
+      "most_watched_show": "I Love Lucy",
+      "most_watched_network": "CBS",
+      "emmy_drama": null,
+      "emmy_comedy": "I Love Lucy",
+      "notable_premieres": ["The Today Show", "American Bandstand (local)"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The Silver Chalice",
+      "fiction_bestseller_author": "Thomas B. Costain",
+      "nonfiction_bestseller": "Tallulah",
+      "nonfiction_bestseller_author": "Tallulah Bankhead",
+      "pulitzer_fiction": "The Caine Mutiny",
+      "pulitzer_fiction_author": "Herman Wouk"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Minneapolis Lakers",
+      "nba_mvp": null,
+      "wimbledon_mens": "Frank Sedgman",
+      "wimbledon_womens": "Maureen Connolly",
+      "f1_champion": "Alberto Ascari",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "First hydrogen bomb (Mike) detonated by the United States at Enewetak Atoll",
+    "top_computer": "IBM 701",
+    "top_computer_price_usd": 666000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "IBM 701, its first commercial scientific computer, introduced",
+      "First hydrogen bomb (Mike) detonated by the United States",
+      "Bell Labs develops the first solar cell prototype",
+      "UNIVAC I predicts Eisenhower presidential victory on live TV"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "King George VI of Britain dies; Elizabeth II ascends to the throne at age 25"},
+    {"month": 7, "event": "Egypt's King Farouk overthrown in military coup led by General Muhammad Naguib"},
+    {"month": 10, "event": "United Kingdom tests its first atomic bomb at Monte Bello Islands, becoming the third nuclear power"},
+    {"month": 11, "event": "Dwight D. Eisenhower elected US President in a landslide, ending 20 years of Democratic rule"},
+    {"month": 11, "event": "US detonates first hydrogen bomb, 'Ivy Mike', vastly more powerful than atomic bombs"}
+  ],
+  "leaders": {
+    "us_president": "Harry S. Truman",
+    "uk_pm": "Winston Churchill",
+    "france_president": "Vincent Auriol",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Shigeru Yoshida",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Louis St. Laurent",
+    "brazil_president": "Getúlio Vargas",
+    "un_secretary": "Trygve Lie",
+    "pope": "Pope Pius XII"
+  },
+  "notable_births": [
+    {"name": "Dan Quayle", "month": 2, "field": "Politics"},
+    {"name": "Mr. T", "month": 5, "field": "Film/TV"},
+    {"name": "Jimmy Connors", "month": 9, "field": "Tennis"},
+    {"name": "Roseanne Barr", "month": 11, "field": "Comedy/TV"},
+    {"name": "Jeff Goldblum", "month": 10, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 157.6,
+      "life_expectancy": 68.6,
+      "gdp_per_capita_usd": 1786,
+      "leader": "Harry S. Truman",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 50.9,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 889,
+      "leader": "Winston Churchill",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 390.7,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 66,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 50.8,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 742,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 86.0,
+      "life_expectancy": 63.0,
+      "gdp_per_capita_usd": 228,
+      "leader": "Shigeru Yoshida",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 42.5,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 878,
+      "leader": "Vincent Auriol",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 56.6,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 143,
+      "leader": "Getúlio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 568.9,
+      "life_expectancy": 42.3,
+      "gdp_per_capita_usd": 55,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 8.6,
+      "life_expectancy": 70.1,
+      "gdp_per_capita_usd": 1278,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 14.5,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 1622,
+      "leader": "Louis St. Laurent",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

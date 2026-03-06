@@ -1,0 +1,198 @@
+{
+  "year": 1958,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.91,
+    "births_millions": 102,
+    "life_expectancy_global": 50.5,
+    "countries_count": 83,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 2176,
+    "us_median_household_income_usd": 5100,
+    "us_inflation_pct": 2.73,
+    "us_unemployment_pct": 6.8,
+    "us_minimum_wage_usd": 1.00,
+    "sp500_year_end": 55.21,
+    "dow_jones_year_end": 583.65,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.87
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.30,
+    "gallon_milk_usd": 1.01,
+    "dozen_eggs_usd": 0.65,
+    "loaf_bread_usd": 0.19,
+    "movie_ticket_usd": 0.52,
+    "new_car_avg_usd": 2200,
+    "median_home_usd": 12450,
+    "first_class_stamp_cents": 4,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Volare (Nel Blu Dipinto Di Blu)",
+      "billboard_no1_artist": "Domenico Modugno",
+      "grammy_record": "Nel Blu Dipinto Di Blu (Volare)",
+      "grammy_record_artist": "Domenico Modugno",
+      "grammy_album": "The Music from Peter Gunn",
+      "grammy_album_artist": "Henry Mancini",
+      "uk_no1_jan": "Great Balls of Fire",
+      "uk_no1_jan_artist": "Jerry Lee Lewis"
+    },
+    "film": {
+      "box_office_no1": "South Pacific",
+      "box_office_no1_gross_m": 36.8,
+      "oscar_best_picture": "The Bridge on the River Kwai",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "David Lean",
+      "oscar_best_actor": "Alec Guinness",
+      "oscar_best_actor_film": "The Bridge on the River Kwai",
+      "oscar_best_actress": "Joanne Woodward",
+      "oscar_best_actress_film": "The Three Faces of Eve"
+    },
+    "television": {
+      "most_watched_show": "Gunsmoke",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The Alcoa Hour / Goodyear Playhouse",
+      "emmy_comedy": "The Phil Silvers Show",
+      "notable_premieres": ["The Donna Reed Show", "77 Sunset Strip"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Doctor Zhivago",
+      "fiction_bestseller_author": "Boris Pasternak",
+      "nonfiction_bestseller": "Kids Say the Darndest Things!",
+      "nonfiction_bestseller_author": "Art Linkletter",
+      "pulitzer_fiction": "A Death in the Family",
+      "pulitzer_fiction_author": "James Agee"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": null,
+      "wimbledon_mens": "Ashley Cooper",
+      "wimbledon_womens": "Althea Gibson",
+      "f1_champion": "Mike Hawthorn",
+      "fifa_world_cup": "Brazil"
+    }
+  },
+  "technology": {
+    "milestone": "NASA founded; United States launches its first satellite, Explorer 1, in response to Sputnik",
+    "top_computer": "IBM 709",
+    "top_computer_price_usd": 1500000,
+    "avg_hard_drive_mb": 5,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "NASA established by US Congress on July 29",
+      "Explorer 1, first US satellite, launched on January 31",
+      "Jack Kilby at Texas Instruments invents the integrated circuit",
+      "BankAmericard (precursor to Visa) issued by Bank of America"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Explorer 1, the first successful US satellite, launched - marking America's entry into the Space Race"},
+    {"month": 3, "event": "Nikita Khrushchev becomes Soviet Premier as well as First Secretary, consolidating power"},
+    {"month": 7, "event": "US Congress establishes NASA in response to Soviet space achievements"},
+    {"month": 9, "event": "Charles de Gaulle becomes President of France; new Fifth Republic constitution adopted"},
+    {"month": 10, "event": "Pope Pius XII dies; Cardinal Angelo Roncalli elected as Pope John XXIII"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Harold Macmillan",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Nobusuke Kishi",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "John Diefenbaker",
+    "brazil_president": "Juscelino Kubitschek",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope John XXIII"
+  },
+  "notable_births": [
+    {"name": "Michael Jackson", "month": 8, "field": "Music"},
+    {"name": "Madonna", "month": 8, "field": "Music"},
+    {"name": "Prince", "month": 6, "field": "Music"},
+    {"name": "Tim Burton", "month": 8, "field": "Film"},
+    {"name": "Alec Baldwin", "month": 4, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 174.9,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 2176,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 51.7,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 1186,
+      "leader": "Harold Macmillan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 428.8,
+      "life_expectancy": 41.2,
+      "gdp_per_capita_usd": 77,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 53.2,
+      "life_expectancy": 69.3,
+      "gdp_per_capita_usd": 1394,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 92.6,
+      "life_expectancy": 66.4,
+      "gdp_per_capita_usd": 413,
+      "leader": "Nobusuke Kishi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 44.8,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 1161,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 66.4,
+      "life_expectancy": 52.6,
+      "gdp_per_capita_usd": 176,
+      "leader": "Juscelino Kubitschek",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 640.0,
+      "life_expectancy": 47.1,
+      "gdp_per_capita_usd": 68,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 9.9,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 1770,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 17.1,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 2107,
+      "leader": "John Diefenbaker",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

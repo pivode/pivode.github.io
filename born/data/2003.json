@@ -1,0 +1,198 @@
+{
+  "year": 2003,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.30,
+    "births_millions": 132,
+    "life_expectancy_global": 67.6,
+    "countries_count": 194,
+    "internet_users": 719000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 37749,
+    "us_median_household_income_usd": 43564,
+    "us_inflation_pct": 2.3,
+    "us_unemployment_pct": 6.0,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1111.92,
+    "dow_jones_year_end": 10453.92,
+    "gold_oz_usd": 416.25,
+    "oil_barrel_usd": 31.61
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.59,
+    "gallon_milk_usd": 2.72,
+    "dozen_eggs_usd": 0.91,
+    "loaf_bread_usd": 1.06,
+    "movie_ticket_usd": 6.03,
+    "new_car_avg_usd": 26532,
+    "median_home_usd": 195000,
+    "first_class_stamp_cents": 37,
+    "big_mac_usd": 2.71
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "In da Club",
+      "billboard_no1_artist": "50 Cent",
+      "grammy_record": "Don't Know Why",
+      "grammy_record_artist": "Norah Jones",
+      "grammy_album": "Come Away with Me",
+      "grammy_album_artist": "Norah Jones",
+      "uk_no1_jan": "Sound of the Underground",
+      "uk_no1_jan_artist": "Girls Aloud"
+    },
+    "film": {
+      "box_office_no1": "The Lord of the Rings: The Return of the King",
+      "box_office_no1_gross_m": 377.8,
+      "oscar_best_picture": "Chicago",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Roman Polanski",
+      "oscar_best_actor": "Adrien Brody",
+      "oscar_best_actor_film": "The Pianist",
+      "oscar_best_actress": "Nicole Kidman",
+      "oscar_best_actress_film": "The Hours"
+    },
+    "television": {
+      "most_watched_show": "CSI: Crime Scene Investigation",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The West Wing",
+      "emmy_comedy": "Everybody Loves Raymond",
+      "notable_premieres": ["The O.C.", "Arrested Development", "Two and a Half Men"],
+      "notable_finales": ["Dawson's Creek", "Buffy the Vampire Slayer"]
+    },
+    "books": {
+      "fiction_bestseller": "The Da Vinci Code",
+      "fiction_bestseller_author": "Dan Brown",
+      "nonfiction_bestseller": "The Purpose Driven Life",
+      "nonfiction_bestseller_author": "Rick Warren",
+      "pulitzer_fiction": "Middlesex",
+      "pulitzer_fiction_author": "Jeffrey Eugenides"
+    },
+    "sports": {
+      "super_bowl_winner": "Tampa Bay Buccaneers",
+      "super_bowl_score": "48-21 vs Oakland Raiders",
+      "super_bowl_mvp": "Dexter Jackson",
+      "world_series_winner": "Florida Marlins",
+      "nba_champion": "San Antonio Spurs",
+      "nba_mvp": "Tim Duncan",
+      "wimbledon_mens": "Roger Federer",
+      "wimbledon_womens": "Serena Williams",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "MySpace launches, becoming the dominant social network; iTunes Music Store opens in April, selling songs for 99 cents each",
+    "top_computer": "Apple PowerBook G4",
+    "top_computer_price_usd": 1999,
+    "avg_hard_drive_mb": 120000,
+    "mobile_subscribers_millions": 1351,
+    "notable_releases": [
+      "iTunes Music Store launches in April with 200,000 songs at 99 cents each",
+      "MySpace launches in August, becoming the first mass-market social network",
+      "Skype launches in August, enabling free internet voice and video calls",
+      "LinkedIn launches in May as a professional networking platform"
+    ]
+  },
+  "world_events": [
+    {"month": 3, "event": "US-led coalition invades Iraq in Operation Iraqi Freedom, toppling Saddam Hussein's government within weeks"},
+    {"month": 3, "event": "SARS (Severe Acute Respiratory Syndrome) outbreak spreads across Asia and beyond, killing 774 people in 17 countries"},
+    {"month": 12, "event": "Saddam Hussein captured by US forces hiding in a small underground bunker near Tikrit, Iraq"},
+    {"month": 2, "event": "Space Shuttle Columbia disintegrates on re-entry over Texas and Louisiana, killing all seven crew members"},
+    {"month": 8, "event": "Northeastern US and Canada blackout - the largest in North American history - leaves 55 million without power"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Gerhard Schröder",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Atal Bihari Vajpayee",
+    "japan_pm": "Junichiro Koizumi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Noah Schnapp", "month": 10, "field": "Television"},
+    {"name": "Finn Wolfhard", "month": 12, "field": "Television/Music"},
+    {"name": "Gaten Matarazzo", "month": 9, "field": "Television"},
+    {"name": "Isabela Merced", "month": 7, "field": "Film"},
+    {"name": "Destini Lombard", "month": 8, "field": "Social Media"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 290.1,
+      "life_expectancy": 77.1,
+      "gdp_per_capita_usd": 37749,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.6,
+      "life_expectancy": 78.3,
+      "gdp_per_capita_usd": 30820,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1068.2,
+      "life_expectancy": 63.3,
+      "gdp_per_capita_usd": 544,
+      "leader": "Atal Bihari Vajpayee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.5,
+      "life_expectancy": 78.4,
+      "gdp_per_capita_usd": 29798,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.7,
+      "life_expectancy": 81.9,
+      "gdp_per_capita_usd": 33559,
+      "leader": "Junichiro Koizumi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 60.1,
+      "life_expectancy": 79.5,
+      "gdp_per_capita_usd": 29069,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 182.1,
+      "life_expectancy": 71.3,
+      "gdp_per_capita_usd": 3070,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1288.4,
+      "life_expectancy": 72.4,
+      "gdp_per_capita_usd": 1274,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 19.9,
+      "life_expectancy": 80.2,
+      "gdp_per_capita_usd": 23077,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 31.7,
+      "life_expectancy": 79.6,
+      "gdp_per_capita_usd": 27748,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

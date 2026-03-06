@@ -1,0 +1,198 @@
+{
+  "year": 1994,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.65,
+    "births_millions": 139,
+    "life_expectancy_global": 65.2,
+    "countries_count": 185,
+    "internet_users": 25000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 27695,
+    "us_median_household_income_usd": 32264,
+    "us_inflation_pct": 2.6,
+    "us_unemployment_pct": 6.1,
+    "us_minimum_wage_usd": 4.25,
+    "sp500_year_end": 459.27,
+    "dow_jones_year_end": 3834.44,
+    "gold_oz_usd": 383.25,
+    "oil_barrel_usd": 17.20
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.11,
+    "gallon_milk_usd": 2.88,
+    "dozen_eggs_usd": 0.87,
+    "loaf_bread_usd": 0.75,
+    "movie_ticket_usd": 4.08,
+    "new_car_avg_usd": 17900,
+    "median_home_usd": 107200,
+    "first_class_stamp_cents": 29,
+    "big_mac_usd": 2.30
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "The Sign",
+      "billboard_no1_artist": "Ace of Base",
+      "grammy_record": "I Will Always Love You",
+      "grammy_record_artist": "Whitney Houston",
+      "grammy_album": "The Bodyguard (soundtrack)",
+      "grammy_album_artist": "Whitney Houston",
+      "uk_no1_jan": "Mr. Blobby",
+      "uk_no1_jan_artist": "Mr. Blobby"
+    },
+    "film": {
+      "box_office_no1": "The Lion King",
+      "box_office_no1_gross_m": 422.8,
+      "oscar_best_picture": "Schindler's List",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Steven Spielberg",
+      "oscar_best_actor": "Tom Hanks",
+      "oscar_best_actor_film": "Philadelphia",
+      "oscar_best_actress": "Holly Hunter",
+      "oscar_best_actress_film": "The Piano"
+    },
+    "television": {
+      "most_watched_show": "Home Improvement",
+      "most_watched_network": "ABC",
+      "emmy_drama": "Picket Fences",
+      "emmy_comedy": "Frasier",
+      "notable_premieres": ["Friends", "ER", "The Late Show with David Letterman (CBS)"],
+      "notable_finales": ["Cheers", "Star Trek: The Next Generation"]
+    },
+    "books": {
+      "fiction_bestseller": "The Celestine Prophecy",
+      "fiction_bestseller_author": "James Redfield",
+      "nonfiction_bestseller": "In the Kitchen with Rosie",
+      "nonfiction_bestseller_author": "Rosie Daley",
+      "pulitzer_fiction": "The Shipping News",
+      "pulitzer_fiction_author": "E. Annie Proulx"
+    },
+    "sports": {
+      "super_bowl_winner": "Dallas Cowboys",
+      "super_bowl_score": "30-13 vs Buffalo Bills",
+      "super_bowl_mvp": "Emmitt Smith",
+      "world_series_winner": "No champion (strike-cancelled season)",
+      "nba_champion": "Houston Rockets",
+      "nba_mvp": "Hakeem Olajuwon",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Conchita Martinez",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": "Brazil"
+    }
+  },
+  "technology": {
+    "milestone": "Netscape Navigator released; the first commercial web browser brings the internet to mainstream users",
+    "top_computer": "Power Macintosh 8100",
+    "top_computer_price_usd": 4290,
+    "avg_hard_drive_mb": 540,
+    "mobile_subscribers_millions": 55,
+    "notable_releases": [
+      "Netscape Navigator 1.0 released, making the World Wide Web accessible to everyday users",
+      "Amazon.com founded by Jeff Bezos in a Bellevue, Washington garage",
+      "PlayStation released in Japan by Sony, launching the PlayStation era of gaming",
+      "Apple Newton MessagePad 110 launched; Yahoo! founded by Jerry Yang and David Filo"
+    ]
+  },
+  "world_events": [
+    {"month": 4, "event": "Rwandan Genocide begins - approximately 800,000 Tutsi and moderate Hutu are killed over 100 days"},
+    {"month": 5, "event": "Nelson Mandela inaugurated as South Africa's first Black president following the country's first fully democratic election"},
+    {"month": 5, "event": "The Channel Tunnel officially opens, linking the UK and France beneath the English Channel for the first time"},
+    {"month": 6, "event": "O. J. Simpson murder case begins with low-speed Bronco chase watched by 95 million Americans on live TV"},
+    {"month": 12, "event": "First Chechen War begins as Russian forces invade Chechnya, starting a brutal conflict that lasts nearly two years"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "John Major",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "P. V. Narasimha Rao",
+    "japan_pm": "Morihiro Hosokawa (to Apr), then Tsutomu Hata (to Jun), then Tomiichi Murayama",
+    "australia_pm": "Paul Keating",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Itamar Franco (to Jan), then Fernando Henrique Cardoso",
+    "un_secretary": "Boutros Boutros-Ghali",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Justin Bieber", "month": 3, "field": "Music"},
+    {"name": "Ariana Grande", "month": 6, "field": "Music"},
+    {"name": "Cara Delevingne", "month": 8, "field": "Modelling/Film"},
+    {"name": "Shawn Mendes", "month": 8, "field": "Music"},
+    {"name": "Troye Sivan", "month": 6, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 260.3,
+      "life_expectancy": 75.7,
+      "gdp_per_capita_usd": 27695,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 58.1,
+      "life_expectancy": 76.8,
+      "gdp_per_capita_usd": 19198,
+      "leader": "John Major",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 916.5,
+      "life_expectancy": 60.7,
+      "gdp_per_capita_usd": 356,
+      "leader": "P. V. Narasimha Rao",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 81.4,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 27418,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 125.0,
+      "life_expectancy": 79.6,
+      "gdp_per_capita_usd": 38497,
+      "leader": "Morihiro Hosokawa",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 57.9,
+      "life_expectancy": 78.0,
+      "gdp_per_capita_usd": 23580,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 158.7,
+      "life_expectancy": 67.7,
+      "gdp_per_capita_usd": 4825,
+      "leader": "Itamar Franco",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1185.2,
+      "life_expectancy": 70.4,
+      "gdp_per_capita_usd": 473,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 18.1,
+      "life_expectancy": 78.0,
+      "gdp_per_capita_usd": 18532,
+      "leader": "Paul Keating",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 29.1,
+      "life_expectancy": 78.1,
+      "gdp_per_capita_usd": 19570,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

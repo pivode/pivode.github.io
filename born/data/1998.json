@@ -1,0 +1,198 @@
+{
+  "year": 1998,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.93,
+    "births_millions": 135,
+    "life_expectancy_global": 66.6,
+    "countries_count": 185,
+    "internet_users": 188000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 32854,
+    "us_median_household_income_usd": 38885,
+    "us_inflation_pct": 1.6,
+    "us_unemployment_pct": 4.5,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1229.23,
+    "dow_jones_year_end": 9181.43,
+    "gold_oz_usd": 287.80,
+    "oil_barrel_usd": 13.07
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.03,
+    "gallon_milk_usd": 3.30,
+    "dozen_eggs_usd": 1.04,
+    "loaf_bread_usd": 0.87,
+    "movie_ticket_usd": 4.69,
+    "new_car_avg_usd": 20200,
+    "median_home_usd": 128400,
+    "first_class_stamp_cents": 32,
+    "big_mac_usd": 2.56
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Too Close",
+      "billboard_no1_artist": "Next",
+      "grammy_record": "Sunny Came Home",
+      "grammy_record_artist": "Shawn Colvin",
+      "grammy_album": "Time Out of Mind",
+      "grammy_album_artist": "Bob Dylan",
+      "uk_no1_jan": "Never Ever",
+      "uk_no1_jan_artist": "All Saints"
+    },
+    "film": {
+      "box_office_no1": "Titanic",
+      "box_office_no1_gross_m": 488.2,
+      "oscar_best_picture": "Titanic",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "James Cameron",
+      "oscar_best_actor": "Jack Nicholson",
+      "oscar_best_actor_film": "As Good as It Gets",
+      "oscar_best_actress": "Helen Hunt",
+      "oscar_best_actress_film": "As Good as It Gets"
+    },
+    "television": {
+      "most_watched_show": "ER",
+      "most_watched_network": "NBC",
+      "emmy_drama": "The Practice",
+      "emmy_comedy": "Ally McBeal",
+      "notable_premieres": ["Sex and the City", "Will & Grace", "That '70s Show"],
+      "notable_finales": ["Seinfeld (series finale, 76 million viewers)", "Home Improvement (season 7)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Street Lawyer",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "The 9 Steps to Financial Freedom",
+      "nonfiction_bestseller_author": "Suze Orman",
+      "pulitzer_fiction": "American Pastoral",
+      "pulitzer_fiction_author": "Philip Roth"
+    },
+    "sports": {
+      "super_bowl_winner": "Denver Broncos",
+      "super_bowl_score": "31-24 vs Green Bay Packers",
+      "super_bowl_mvp": "Terrell Davis",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Chicago Bulls",
+      "nba_mvp": "Michael Jordan",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Jana Novotna",
+      "f1_champion": "Mika Hakkinen",
+      "fifa_world_cup": "France"
+    }
+  },
+  "technology": {
+    "milestone": "Google founded; iMac G3 launches in translucent colours; the dot-com bubble nears its peak",
+    "top_computer": "iMac G3",
+    "top_computer_price_usd": 1299,
+    "avg_hard_drive_mb": 6400,
+    "mobile_subscribers_millions": 318,
+    "notable_releases": [
+      "Google founded by Larry Page and Sergey Brin in a Menlo Park garage on September 4",
+      "Apple iMac G3 launches in Bondi Blue and other translucent colours, saving Apple from near-bankruptcy",
+      "Windows 98 released by Microsoft on June 25",
+      "MP3 players emerge commercially; Diamond Multimedia's Rio PMP300 launches and faces RIAA lawsuit"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "The Monica Lewinsky scandal breaks publicly, leading to Bill Clinton's impeachment later in the year"},
+    {"month": 8, "event": "US Embassy bombings in Kenya and Tanzania kill 224 people in Al-Qaeda attacks, signaling a new era of global terrorism"},
+    {"month": 8, "event": "Russia's financial crisis causes the ruble to collapse, defaulting on $40 billion in domestic debt"},
+    {"month": 12, "event": "US House of Representatives impeaches President Clinton on charges of perjury and obstruction of justice"},
+    {"month": 5, "event": "India conducts nuclear tests (Pokhran-II), followed by Pakistan's nuclear tests, dramatically escalating South Asian tensions"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Helmut Kohl (to Oct), then Gerhard Schröder",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "I. K. Gujral (to Mar), then Atal Bihari Vajpayee",
+    "japan_pm": "Ryutaro Hashimoto (to Jul), then Keizo Obuchi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Millie Bobby Brown", "month": 2, "field": "Film/Television"},
+    {"name": "Jeon Jung-kook (BTS)", "month": 9, "field": "Music"},
+    {"name": "Jacob Sartorius", "month": 10, "field": "Music/Social Media"},
+    {"name": "Sophie Turner", "month": 2, "field": "Film/Television"},
+    {"name": "Odessa A'zion", "month": 5, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 270.2,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 32854,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.2,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 25306,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 982.2,
+      "life_expectancy": 62.6,
+      "gdp_per_capita_usd": 425,
+      "leader": "Atal Bihari Vajpayee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.0,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 26978,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 126.5,
+      "life_expectancy": 80.5,
+      "gdp_per_capita_usd": 31409,
+      "leader": "Keizo Obuchi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 58.8,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 24398,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 166.2,
+      "life_expectancy": 69.3,
+      "gdp_per_capita_usd": 4790,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1241.9,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 828,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 18.9,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 20676,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 30.2,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 20186,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "year": 2006,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.52,
+    "births_millions": 135,
+    "life_expectancy_global": 68.5,
+    "countries_count": 195,
+    "internet_users": 1160000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 45009,
+    "us_median_household_income_usd": 48201,
+    "us_inflation_pct": 3.2,
+    "us_unemployment_pct": 4.6,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1418.30,
+    "dow_jones_year_end": 12463.15,
+    "gold_oz_usd": 636.30,
+    "oil_barrel_usd": 66.05
+  },
+  "prices_us": {
+    "gallon_gas_usd": 2.59,
+    "gallon_milk_usd": 3.09,
+    "dozen_eggs_usd": 1.31,
+    "loaf_bread_usd": 1.09,
+    "movie_ticket_usd": 6.55,
+    "new_car_avg_usd": 28205,
+    "median_home_usd": 246500,
+    "first_class_stamp_cents": 39,
+    "big_mac_usd": 3.15
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Bad Day",
+      "billboard_no1_artist": "Daniel Powter",
+      "grammy_record": "We Belong Together",
+      "grammy_record_artist": "Mariah Carey",
+      "grammy_album": "How to Dismantle an Atomic Bomb",
+      "grammy_album_artist": "U2",
+      "uk_no1_jan": "That's My Goal",
+      "uk_no1_jan_artist": "Shayne Ward"
+    },
+    "film": {
+      "box_office_no1": "Pirates of the Caribbean: Dead Man's Chest",
+      "box_office_no1_gross_m": 423.3,
+      "oscar_best_picture": "Crash",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Ang Lee",
+      "oscar_best_actor": "Philip Seymour Hoffman",
+      "oscar_best_actor_film": "Capote",
+      "oscar_best_actress": "Reese Witherspoon",
+      "oscar_best_actress_film": "Walk the Line"
+    },
+    "television": {
+      "most_watched_show": "American Idol",
+      "most_watched_network": "Fox",
+      "emmy_drama": "24",
+      "emmy_comedy": "The Office",
+      "notable_premieres": ["Heroes", "30 Rock", "Dexter", "Friday Night Lights"],
+      "notable_finales": ["The West Wing", "Charmed"]
+    },
+    "books": {
+      "fiction_bestseller": "For One More Day",
+      "fiction_bestseller_author": "Mitch Albom",
+      "nonfiction_bestseller": "The Audacity of Hope",
+      "nonfiction_bestseller_author": "Barack Obama",
+      "pulitzer_fiction": "March",
+      "pulitzer_fiction_author": "Geraldine Brooks"
+    },
+    "sports": {
+      "super_bowl_winner": "Pittsburgh Steelers",
+      "super_bowl_score": "21-10 vs Seattle Seahawks",
+      "super_bowl_mvp": "Hines Ward",
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": "Miami Heat",
+      "nba_mvp": "Steve Nash",
+      "wimbledon_mens": "Roger Federer",
+      "wimbledon_womens": "Amelie Mauresmo",
+      "f1_champion": "Fernando Alonso",
+      "fifa_world_cup": "Italy"
+    }
+  },
+  "technology": {
+    "milestone": "Twitter launches in July; Nintendo Wii and PlayStation 3 release, revolutionizing motion-control gaming; Google acquires YouTube for $1.65 billion",
+    "top_computer": "Apple MacBook Pro",
+    "top_computer_price_usd": 1999,
+    "avg_hard_drive_mb": 250000,
+    "mobile_subscribers_millions": 2747,
+    "notable_releases": [
+      "Twitter launches in July, with Jack Dorsey posting the first tweet on March 21",
+      "Nintendo Wii launches in November, bringing motion controls to mainstream gaming",
+      "Google acquires YouTube in October for $1.65 billion in stock",
+      "PlayStation 3 launches globally, introducing Blu-ray to consumers"
+    ]
+  },
+  "world_events": [
+    {"month": 7, "event": "Israel-Lebanon war erupts after Hezbollah captures two Israeli soldiers; 34-day conflict kills over 1,200 Lebanese and 165 Israelis"},
+    {"month": 10, "event": "North Korea conducts its first nuclear weapons test, claiming successful underground detonation and escalating tensions"},
+    {"month": 12, "event": "Saddam Hussein executed by hanging on December 30 in Baghdad for crimes against humanity"},
+    {"month": 6, "event": "FIFA World Cup held in Germany; Italy beats France on penalties in the final after Zidane's infamous headbutt"},
+    {"month": 5, "event": "Montenegro declares independence from Serbia following a referendum, becoming Europe's newest state"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Shinzo Abe",
+    "australia_pm": "John Howard",
+    "canada_pm": "Stephen Harper",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Ban Ki-moon",
+    "pope": "Pope Benedict XVI"
+  },
+  "notable_births": [
+    {"name": "Karol G", "month": 2, "field": "Music"},
+    {"name": "Rico Nasty", "month": 5, "field": "Music"},
+    {"name": "Sasha Obama", "month": 6, "field": "Public Figure"},
+    {"name": "Cruz Beckham", "month": 2, "field": "Entertainment"},
+    {"name": "Levi McConaughey", "month": 7, "field": "Entertainment"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 298.4,
+      "life_expectancy": 77.7,
+      "gdp_per_capita_usd": 45009,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 60.6,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 43675,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1125.5,
+      "life_expectancy": 64.7,
+      "gdp_per_capita_usd": 818,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.3,
+      "life_expectancy": 79.1,
+      "gdp_per_capita_usd": 36560,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.8,
+      "life_expectancy": 82.5,
+      "gdp_per_capita_usd": 34172,
+      "leader": "Shinzo Abe",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 61.2,
+      "life_expectancy": 80.5,
+      "gdp_per_capita_usd": 36544,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 188.0,
+      "life_expectancy": 72.3,
+      "gdp_per_capita_usd": 5885,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1311.8,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 2099,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 20.7,
+      "life_expectancy": 81.0,
+      "gdp_per_capita_usd": 36248,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 32.6,
+      "life_expectancy": 80.3,
+      "gdp_per_capita_usd": 36940,
+      "leader": "Stephen Harper",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

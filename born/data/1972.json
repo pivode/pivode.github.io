@@ -1,0 +1,198 @@
+{
+  "year": 1972,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.84,
+    "births_millions": 126,
+    "life_expectancy_global": 59.9,
+    "countries_count": 133,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 6094,
+    "us_median_household_income_usd": 9697,
+    "us_inflation_pct": 3.27,
+    "us_unemployment_pct": 5.6,
+    "us_minimum_wage_usd": 1.60,
+    "sp500_year_end": 118.05,
+    "dow_jones_year_end": 1020.02,
+    "gold_oz_usd": 58.16,
+    "oil_barrel_usd": 3.39
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.36,
+    "gallon_milk_usd": 1.25,
+    "dozen_eggs_usd": 0.61,
+    "loaf_bread_usd": 0.25,
+    "movie_ticket_usd": 1.70,
+    "new_car_avg_usd": 3800,
+    "median_home_usd": 27600,
+    "first_class_stamp_cents": 8,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "The First Time Ever I Saw Your Face",
+      "billboard_no1_artist": "Roberta Flack",
+      "grammy_record": "It's Too Late / I Feel the Earth Move",
+      "grammy_record_artist": "Carole King",
+      "grammy_album": "Tapestry",
+      "grammy_album_artist": "Carole King",
+      "uk_no1_jan": "Ernie (The Fastest Milkman in the West)",
+      "uk_no1_jan_artist": "Benny Hill"
+    },
+    "film": {
+      "box_office_no1": "The Godfather",
+      "box_office_no1_gross_m": 134.9,
+      "oscar_best_picture": "The French Connection",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "William Friedkin",
+      "oscar_best_actor": "Gene Hackman",
+      "oscar_best_actor_film": "The French Connection",
+      "oscar_best_actress": "Jane Fonda",
+      "oscar_best_actress_film": "Klute"
+    },
+    "television": {
+      "most_watched_show": "All in the Family",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Elizabeth R",
+      "emmy_comedy": "All in the Family",
+      "notable_premieres": ["M*A*S*H", "The Bob Newhart Show", "Maude"],
+      "notable_finales": ["The Dick Van Dyke Show"]
+    },
+    "books": {
+      "fiction_bestseller": "Jonathan Livingston Seagull",
+      "fiction_bestseller_author": "Richard Bach",
+      "nonfiction_bestseller": "The Living Bible",
+      "nonfiction_bestseller_author": "Kenneth N. Taylor",
+      "pulitzer_fiction": "Angle of Repose",
+      "pulitzer_fiction_author": "Wallace Stegner"
+    },
+    "sports": {
+      "super_bowl_winner": "Dallas Cowboys",
+      "super_bowl_score": "24-3 vs Miami Dolphins",
+      "super_bowl_mvp": "Roger Staubach",
+      "world_series_winner": "Oakland Athletics",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Kareem Abdul-Jabbar",
+      "wimbledon_mens": "Stan Smith",
+      "wimbledon_womens": "Billie Jean King",
+      "f1_champion": "Emerson Fittipaldi",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Pioneer 10 launched toward Jupiter; Landsat 1, the first Earth observation satellite, enters orbit",
+    "top_computer": "Cray-1 (in development)",
+    "top_computer_price_usd": 8000000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Pioneer 10 spacecraft launched on first mission to the outer solar system",
+      "Landsat 1, first Earth observation satellite, begins imaging the planet",
+      "Pong, first commercially successful video game, launched by Atari",
+      "HP-35 introduced by Hewlett-Packard as the world's first scientific pocket calculator"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "President Nixon visits China, meeting Mao Zedong and beginning normalization of US-China relations after 25 years"},
+    {"month": 5, "event": "Nixon and Brezhnev sign SALT I arms limitation treaty in Moscow, the first major agreement limiting nuclear weapons"},
+    {"month": 6, "event": "Five men arrested for breaking into Democratic National Committee headquarters at the Watergate complex in Washington"},
+    {"month": 9, "event": "Palestinian group Black September kills 11 Israeli athletes at the Munich Olympics in a hostage siege"},
+    {"month": 12, "event": "Apollo 17 returns from the Moon - the last humans to walk on the lunar surface, ending the Apollo program"}
+  ],
+  "leaders": {
+    "us_president": "Richard Nixon",
+    "uk_pm": "Edward Heath",
+    "france_president": "Georges Pompidou",
+    "germany_chancellor": "Willy Brandt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Kakuei Tanaka",
+    "australia_pm": "Gough Whitlam",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Emílio Garrastazu Médici",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Eminem", "month": 10, "field": "Music"},
+    {"name": "Gwyneth Paltrow", "month": 9, "field": "Film"},
+    {"name": "Cameron Diaz", "month": 8, "field": "Film"},
+    {"name": "Ben Affleck", "month": 8, "field": "Film"},
+    {"name": "Shaquille O'Neal", "month": 3, "field": "Basketball"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 209.9,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 6094,
+      "leader": "Richard Nixon",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.1,
+      "life_expectancy": 72.4,
+      "gdp_per_capita_usd": 2726,
+      "leader": "Edward Heath",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 554.0,
+      "life_expectancy": 48.4,
+      "gdp_per_capita_usd": 118,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.7,
+      "life_expectancy": 72.1,
+      "gdp_per_capita_usd": 4108,
+      "leader": "Willy Brandt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 107.2,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 2756,
+      "leader": "Kakuei Tanaka",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 51.7,
+      "life_expectancy": 72.9,
+      "gdp_per_capita_usd": 3558,
+      "leader": "Georges Pompidou",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 97.6,
+      "life_expectancy": 60.0,
+      "gdp_per_capita_usd": 531,
+      "leader": "Emílio Garrastazu Médici",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 854.1,
+      "life_expectancy": 62.7,
+      "gdp_per_capita_usd": 124,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 13.2,
+      "life_expectancy": 72.7,
+      "gdp_per_capita_usd": 3607,
+      "leader": "Gough Whitlam",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 21.8,
+      "life_expectancy": 73.4,
+      "gdp_per_capita_usd": 4639,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

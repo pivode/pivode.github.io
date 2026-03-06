@@ -1,0 +1,198 @@
+{
+  "year": 1956,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.81,
+    "births_millions": 100,
+    "life_expectancy_global": 49.5,
+    "countries_count": 80,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 2121,
+    "us_median_household_income_usd": 4700,
+    "us_inflation_pct": 1.49,
+    "us_unemployment_pct": 4.1,
+    "us_minimum_wage_usd": 1.00,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 499.47,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.83
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.30,
+    "gallon_milk_usd": 0.97,
+    "dozen_eggs_usd": 0.60,
+    "loaf_bread_usd": 0.18,
+    "movie_ticket_usd": 0.50,
+    "new_car_avg_usd": 2100,
+    "median_home_usd": 11700,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Heartbreak Hotel",
+      "billboard_no1_artist": "Elvis Presley",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Sixteen Tons",
+      "uk_no1_jan_artist": "Tennessee Ernie Ford"
+    },
+    "film": {
+      "box_office_no1": "The Ten Commandments",
+      "box_office_no1_gross_m": 65.0,
+      "oscar_best_picture": "Marty",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Delbert Mann",
+      "oscar_best_actor": "Ernest Borgnine",
+      "oscar_best_actor_film": "Marty",
+      "oscar_best_actress": "Anna Magnani",
+      "oscar_best_actress_film": "The Rose Tattoo"
+    },
+    "television": {
+      "most_watched_show": "I Love Lucy",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Requiem for a Heavyweight",
+      "emmy_comedy": "The Phil Silvers Show",
+      "notable_premieres": ["The Price Is Right", "As the World Turns"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Don't Go Near the Water",
+      "fiction_bestseller_author": "William Brinkley",
+      "nonfiction_bestseller": "Arthritis and Common Sense",
+      "nonfiction_bestseller_author": "Dan Dale Alexander",
+      "pulitzer_fiction": "Andersonville",
+      "pulitzer_fiction_author": "MacKinlay Kantor"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Philadelphia Warriors",
+      "nba_mvp": null,
+      "wimbledon_mens": "Lew Hoad",
+      "wimbledon_womens": "Shirley Fry",
+      "f1_champion": "Juan Manuel Fangio",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "First commercial transatlantic telephone cable (TAT-1) laid between Scotland and Newfoundland",
+    "top_computer": "IBM 704",
+    "top_computer_price_usd": 1500000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "First transatlantic telephone cable (TAT-1) begins service",
+      "IBM introduces the RAMAC 305, the first computer with a hard disk drive (5 MB)",
+      "Fortran programming language developed at IBM by John Backus",
+      "Elvis Presley appears on The Ed Sullivan Show, watched by 60 million viewers"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Khrushchev delivers 'Secret Speech' denouncing Stalin's cult of personality at the 20th Party Congress"},
+    {"month": 7, "event": "Egypt nationalizes the Suez Canal, triggering the Suez Crisis with Britain, France, and Israel"},
+    {"month": 10, "event": "Hungarian Revolution begins; Soviet tanks crush the uprising within weeks"},
+    {"month": 10, "event": "Suez Crisis: Britain and France invade Egypt to retake the canal, forced to withdraw under US and UN pressure"},
+    {"month": 11, "event": "Dwight D. Eisenhower re-elected US President in a landslide over Adlai Stevenson"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Anthony Eden",
+    "france_president": "René Coty",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Ichiro Hatoyama",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Louis St. Laurent",
+    "brazil_president": "Juscelino Kubitschek",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope Pius XII"
+  },
+  "notable_births": [
+    {"name": "Tom Hanks", "month": 7, "field": "Film"},
+    {"name": "Mel Gibson", "month": 1, "field": "Film"},
+    {"name": "Larry Bird", "month": 12, "field": "Basketball"},
+    {"name": "Björn Borg", "month": 6, "field": "Tennis"},
+    {"name": "Joe Montana", "month": 6, "field": "American Football"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 168.9,
+      "life_expectancy": 69.7,
+      "gdp_per_capita_usd": 2121,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 51.4,
+      "life_expectancy": 70.4,
+      "gdp_per_capita_usd": 1071,
+      "leader": "Anthony Eden",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 413.7,
+      "life_expectancy": 39.8,
+      "gdp_per_capita_usd": 72,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 52.0,
+      "life_expectancy": 68.6,
+      "gdp_per_capita_usd": 1178,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 90.9,
+      "life_expectancy": 65.3,
+      "gdp_per_capita_usd": 337,
+      "leader": "Ichiro Hatoyama",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 43.8,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 1056,
+      "leader": "René Coty",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 62.9,
+      "life_expectancy": 51.5,
+      "gdp_per_capita_usd": 163,
+      "leader": "Juscelino Kubitschek",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 614.0,
+      "life_expectancy": 45.5,
+      "gdp_per_capita_usd": 66,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 9.4,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 1627,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 16.1,
+      "life_expectancy": 70.3,
+      "gdp_per_capita_usd": 1963,
+      "leader": "Louis St. Laurent",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

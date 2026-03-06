@@ -1,0 +1,198 @@
+{
+  "year": 1988,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.09,
+    "births_millions": 137,
+    "life_expectancy_global": 66.5,
+    "countries_count": 159,
+    "internet_users": 50000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 21082,
+    "us_median_household_income_usd": 27225,
+    "us_inflation_pct": 4.08,
+    "us_unemployment_pct": 5.5,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 277.72,
+    "dow_jones_year_end": 2168.57,
+    "gold_oz_usd": 410.15,
+    "oil_barrel_usd": 14.87
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.95,
+    "gallon_milk_usd": 2.30,
+    "dozen_eggs_usd": 0.84,
+    "loaf_bread_usd": 0.68,
+    "movie_ticket_usd": 4.11,
+    "new_car_avg_usd": 10400,
+    "median_home_usd": 89300,
+    "first_class_stamp_cents": 25,
+    "big_mac_usd": 1.85
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Faith",
+      "billboard_no1_artist": "George Michael",
+      "grammy_record": "Graceland",
+      "grammy_record_artist": "Paul Simon",
+      "grammy_album": "Joshua Tree",
+      "grammy_album_artist": "U2",
+      "uk_no1_jan": "Always on My Mind",
+      "uk_no1_jan_artist": "Pet Shop Boys"
+    },
+    "film": {
+      "box_office_no1": "Rain Man",
+      "box_office_no1_gross_m": 172.8,
+      "oscar_best_picture": "The Last Emperor",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Bernardo Bertolucci",
+      "oscar_best_actor": "Michael Douglas",
+      "oscar_best_actor_film": "Wall Street",
+      "oscar_best_actress": "Cher",
+      "oscar_best_actress_film": "Moonstruck"
+    },
+    "television": {
+      "most_watched_show": "The Cosby Show",
+      "most_watched_network": "NBC",
+      "emmy_drama": "thirtysomething",
+      "emmy_comedy": "The Wonder Years",
+      "notable_premieres": ["Roseanne", "The Wonder Years", "Murphy Brown"],
+      "notable_finales": ["Highway to Heaven (season 4)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Sands of Time",
+      "fiction_bestseller_author": "Sidney Sheldon",
+      "nonfiction_bestseller": "The 8-Week Cholesterol Cure",
+      "nonfiction_bestseller_author": "Robert E. Kowalski",
+      "pulitzer_fiction": "Beloved",
+      "pulitzer_fiction_author": "Toni Morrison"
+    },
+    "sports": {
+      "super_bowl_winner": "Washington Redskins",
+      "super_bowl_score": "42-10 vs Denver Broncos",
+      "super_bowl_mvp": "Doug Williams",
+      "world_series_winner": "Los Angeles Dodgers",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Michael Jordan",
+      "wimbledon_mens": "Stefan Edberg",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Ayrton Senna",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "First worm spreads across the internet; CD-ROM becomes a mainstream computer peripheral",
+    "top_computer": "Apple Macintosh IIx",
+    "top_computer_price_usd": 7769,
+    "avg_hard_drive_mb": 40,
+    "mobile_subscribers_millions": 2.0,
+    "notable_releases": [
+      "Morris Worm, the first major internet worm, infects 6,000 computers and causes $10-100 million in damage",
+      "Nintendo releases the Game Boy handheld console in Japan",
+      "NeXT computer unveiled by Steve Jobs after being ousted from Apple",
+      "Kodak develops the first 1.4 megapixel digital camera sensor"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Winter Olympics in Calgary feature Eddie 'The Eagle' Edwards and the Jamaican bobsled team, captivating the world"},
+    {"month": 7, "event": "Iran Air Flight 655 shot down by US Navy over the Persian Gulf, killing all 290 aboard"},
+    {"month": 8, "event": "Iran-Iraq War ends after eight years with over one million dead, with no clear winner and borders unchanged"},
+    {"month": 12, "event": "Pan Am Flight 103 bombed over Lockerbie, Scotland, killing all 259 aboard and 11 on the ground"},
+    {"month": 12, "event": "Armenian earthquake kills 25,000; Gorbachev addresses UN, announcing unilateral Soviet troop reductions"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Rajiv Gandhi",
+    "japan_pm": "Noboru Takeshita",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "José Sarney",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Rihanna", "month": 2, "field": "Music"},
+    {"name": "Adele", "month": 5, "field": "Music"},
+    {"name": "Zayn Malik", "month": 1, "field": "Music"},
+    {"name": "Cara Delevingne", "month": 8, "field": "Modelling/Film"},
+    {"name": "Rupert Grint", "month": 8, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 244.5,
+      "life_expectancy": 74.9,
+      "gdp_per_capita_usd": 21082,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.8,
+      "life_expectancy": 75.4,
+      "gdp_per_capita_usd": 14673,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 803.0,
+      "life_expectancy": 58.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Rajiv Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.5,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 18700,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 122.6,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 24572,
+      "leader": "Noboru Takeshita",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 56.1,
+      "life_expectancy": 76.6,
+      "gdp_per_capita_usd": 17769,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 141.5,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 2246,
+      "leader": "José Sarney",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1096.1,
+      "life_expectancy": 69.2,
+      "gdp_per_capita_usd": 308,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 16.5,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 13824,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 26.4,
+      "life_expectancy": 77.1,
+      "gdp_per_capita_usd": 19007,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

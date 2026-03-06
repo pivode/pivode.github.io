@@ -1,0 +1,198 @@
+{
+  "year": 1955,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.77,
+    "births_millions": 99,
+    "life_expectancy_global": 49.1,
+    "countries_count": 76,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 2011,
+    "us_median_household_income_usd": 4400,
+    "us_inflation_pct": -0.37,
+    "us_unemployment_pct": 4.4,
+    "us_minimum_wage_usd": 0.75,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 488.40,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.77
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.29,
+    "gallon_milk_usd": 0.93,
+    "dozen_eggs_usd": 0.57,
+    "loaf_bread_usd": 0.18,
+    "movie_ticket_usd": 0.50,
+    "new_car_avg_usd": 2000,
+    "median_home_usd": 10000,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Rock Around the Clock",
+      "billboard_no1_artist": "Bill Haley & His Comets",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Mambo Italiano",
+      "uk_no1_jan_artist": "Rosemary Clooney"
+    },
+    "film": {
+      "box_office_no1": "Lady and the Tramp",
+      "box_office_no1_gross_m": 40.0,
+      "oscar_best_picture": "On the Waterfront",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Elia Kazan",
+      "oscar_best_actor": "Marlon Brando",
+      "oscar_best_actor_film": "On the Waterfront",
+      "oscar_best_actress": "Grace Kelly",
+      "oscar_best_actress_film": "The Country Girl"
+    },
+    "television": {
+      "most_watched_show": "I Love Lucy",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Producer's Showcase",
+      "emmy_comedy": "The Phil Silvers Show",
+      "notable_premieres": ["The Mickey Mouse Club", "Gunsmoke"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Marjorie Morningstar",
+      "fiction_bestseller_author": "Herman Wouk",
+      "nonfiction_bestseller": "Gift from the Sea",
+      "nonfiction_bestseller_author": "Anne Morrow Lindbergh",
+      "pulitzer_fiction": "A Fable",
+      "pulitzer_fiction_author": "William Faulkner"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Brooklyn Dodgers",
+      "nba_champion": "Syracuse Nationals",
+      "nba_mvp": null,
+      "wimbledon_mens": "Tony Trabert",
+      "wimbledon_womens": "Louise Brough",
+      "f1_champion": "Juan Manuel Fangio",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Disneyland opens in Anaheim, California - the world's first theme park of its kind",
+    "top_computer": "IBM 702",
+    "top_computer_price_usd": 800000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Disneyland opens in Anaheim, California",
+      "First McDonald's franchise opens in Des Plaines, Illinois",
+      "Polio vaccine by Jonas Salk declared safe and effective; mass vaccination begins",
+      "First fiber optic cable demonstrated by Narinder Singh Kapany"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Afro-Asian Bandung Conference held in Indonesia; 29 newly independent nations assert independence from Cold War blocs"},
+    {"month": 7, "event": "Disneyland opens in Anaheim, California, revolutionizing entertainment and theme park culture"},
+    {"month": 8, "event": "West Germany joins NATO as a sovereign state, reintegrating into the Western alliance"},
+    {"month": 9, "event": "James Dean killed in car accident at age 24, becoming an enduring cultural icon"},
+    {"month": 12, "event": "Rosa Parks refuses to give up her bus seat in Montgomery, Alabama, sparking the Montgomery Bus Boycott"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Anthony Eden",
+    "france_president": "René Coty",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Ichiro Hatoyama",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Louis St. Laurent",
+    "brazil_president": "João Café Filho",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope Pius XII"
+  },
+  "notable_births": [
+    {"name": "Steve Jobs", "month": 2, "field": "Technology"},
+    {"name": "Bill Gates", "month": 10, "field": "Technology"},
+    {"name": "Bruce Willis", "month": 3, "field": "Film"},
+    {"name": "Kevin Costner", "month": 1, "field": "Film"},
+    {"name": "Whoopi Goldberg", "month": 11, "field": "Film/Comedy"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 165.9,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 2011,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 51.2,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 1014,
+      "leader": "Anthony Eden",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 406.5,
+      "life_expectancy": 39.1,
+      "gdp_per_capita_usd": 70,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 51.5,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 1062,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 89.8,
+      "life_expectancy": 64.6,
+      "gdp_per_capita_usd": 298,
+      "leader": "Ichiro Hatoyama",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 43.4,
+      "life_expectancy": 68.0,
+      "gdp_per_capita_usd": 1003,
+      "leader": "René Coty",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 61.3,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 159,
+      "leader": "João Café Filho",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 601.9,
+      "life_expectancy": 44.6,
+      "gdp_per_capita_usd": 63,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 9.2,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 1554,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 15.7,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 1872,
+      "leader": "Louis St. Laurent",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

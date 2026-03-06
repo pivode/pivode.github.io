@@ -1,0 +1,198 @@
+{
+  "year": 1961,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.08,
+    "births_millions": 100,
+    "life_expectancy_global": 52.8,
+    "countries_count": 101,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 3067,
+    "us_median_household_income_usd": 5700,
+    "us_inflation_pct": 1.07,
+    "us_unemployment_pct": 6.7,
+    "us_minimum_wage_usd": 1.15,
+    "sp500_year_end": 66.20,
+    "dow_jones_year_end": 731.14,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.80
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.31,
+    "gallon_milk_usd": 1.04,
+    "dozen_eggs_usd": 0.55,
+    "loaf_bread_usd": 0.20,
+    "movie_ticket_usd": 0.69,
+    "new_car_avg_usd": 2650,
+    "median_home_usd": 12500,
+    "first_class_stamp_cents": 4,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Tossin' and Turnin'",
+      "billboard_no1_artist": "Bobby Lewis",
+      "grammy_record": "Theme from A Summer Place",
+      "grammy_record_artist": "Percy Faith",
+      "grammy_album": "Button-Down Mind Strikes Back",
+      "grammy_album_artist": "Bob Newhart",
+      "uk_no1_jan": "Poetry in Motion",
+      "uk_no1_jan_artist": "Johnny Tillotson"
+    },
+    "film": {
+      "box_office_no1": "101 Dalmatians",
+      "box_office_no1_gross_m": 68.6,
+      "oscar_best_picture": "The Apartment",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Billy Wilder",
+      "oscar_best_actor": "Burt Lancaster",
+      "oscar_best_actor_film": "Elmer Gantry",
+      "oscar_best_actress": "Elizabeth Taylor",
+      "oscar_best_actress_film": "BUtterfield 8"
+    },
+    "television": {
+      "most_watched_show": "Gunsmoke",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Macbeth (Hallmark Hall of Fame)",
+      "emmy_comedy": "The Jack Benny Program",
+      "notable_premieres": ["The Defenders", "Ben Casey", "Hazel"],
+      "notable_finales": ["The Real McCoys (season)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Agony and the Ecstasy",
+      "fiction_bestseller_author": "Irving Stone",
+      "nonfiction_bestseller": "The New English Bible",
+      "nonfiction_bestseller_author": "Various",
+      "pulitzer_fiction": "To Kill a Mockingbird",
+      "pulitzer_fiction_author": "Harper Lee"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Oscar Robertson",
+      "wimbledon_mens": "Rod Laver",
+      "wimbledon_womens": "Angela Mortimer",
+      "f1_champion": "Phil Hill",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Yuri Gagarin becomes the first human in space aboard Vostok 1; Alan Shepard becomes the first American in space",
+    "top_computer": "IBM 7090",
+    "top_computer_price_usd": 2900000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Yuri Gagarin orbits Earth in Vostok 1, the first human spaceflight",
+      "IBM Selectric typewriter introduced, revolutionizing office typing",
+      "Texas Instruments produces first commercial silicon integrated circuits",
+      "Digital Equipment Corporation introduces the PDP-1 computer"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "John F. Kennedy inaugurated as the 35th US President, delivering his famous 'Ask not what your country can do for you' speech"},
+    {"month": 4, "event": "Yuri Gagarin becomes the first human in space, completing one orbit of Earth in the Soviet Vostok 1 spacecraft"},
+    {"month": 4, "event": "Bay of Pigs invasion fails as CIA-backed Cuban exiles attempt to overthrow Fidel Castro's government"},
+    {"month": 8, "event": "East Germany begins construction of the Berlin Wall, dividing the city and sealing the Iron Curtain"},
+    {"month": 9, "event": "Non-Aligned Movement founded at the Belgrade Conference with 25 member nations, a major Cold War development"}
+  ],
+  "leaders": {
+    "us_president": "John F. Kennedy",
+    "uk_pm": "Harold Macmillan",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Hayato Ikeda",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "John Diefenbaker",
+    "brazil_president": "Jânio Quadros",
+    "un_secretary": "U Thant",
+    "pope": "Pope John XXIII"
+  },
+  "notable_births": [
+    {"name": "Barack Obama", "month": 8, "field": "Politics"},
+    {"name": "Princess Diana", "month": 7, "field": "Royalty"},
+    {"name": "Eddie Murphy", "month": 4, "field": "Comedy/Film"},
+    {"name": "George Clooney", "month": 5, "field": "Film"},
+    {"name": "Nadia Comaneci", "month": 11, "field": "Gymnastics"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 183.7,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 3067,
+      "leader": "John F. Kennedy",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 52.8,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 1430,
+      "leader": "Harold Macmillan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 454.0,
+      "life_expectancy": 41.7,
+      "gdp_per_capita_usd": 85,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 56.2,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 1413,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 94.9,
+      "life_expectancy": 68.0,
+      "gdp_per_capita_usd": 557,
+      "leader": "Hayato Ikeda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 46.2,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 1399,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 74.1,
+      "life_expectancy": 55.1,
+      "gdp_per_capita_usd": 218,
+      "leader": "Jânio Quadros",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 669.1,
+      "life_expectancy": 44.5,
+      "gdp_per_capita_usd": 76,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 10.5,
+      "life_expectancy": 70.9,
+      "gdp_per_capita_usd": 1880,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 18.2,
+      "life_expectancy": 71.3,
+      "gdp_per_capita_usd": 2424,
+      "leader": "John Diefenbaker",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

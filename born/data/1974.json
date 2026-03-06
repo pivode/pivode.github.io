@@ -1,0 +1,198 @@
+{
+  "year": 1974,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.00,
+    "births_millions": 128,
+    "life_expectancy_global": 61.0,
+    "countries_count": 138,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 7226,
+    "us_median_household_income_usd": 11101,
+    "us_inflation_pct": 11.04,
+    "us_unemployment_pct": 5.6,
+    "us_minimum_wage_usd": 2.00,
+    "sp500_year_end": 68.56,
+    "dow_jones_year_end": 616.24,
+    "gold_oz_usd": 154.00,
+    "oil_barrel_usd": 10.41
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.53,
+    "gallon_milk_usd": 1.48,
+    "dozen_eggs_usd": 0.79,
+    "loaf_bread_usd": 0.28,
+    "movie_ticket_usd": 1.89,
+    "new_car_avg_usd": 4440,
+    "median_home_usd": 32000,
+    "first_class_stamp_cents": 10,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "The Way We Were",
+      "billboard_no1_artist": "Barbra Streisand",
+      "grammy_record": "Killing Me Softly with His Song",
+      "grammy_record_artist": "Roberta Flack",
+      "grammy_album": "Innervisions",
+      "grammy_album_artist": "Stevie Wonder",
+      "uk_no1_jan": "Merry Xmas Everybody",
+      "uk_no1_jan_artist": "Slade"
+    },
+    "film": {
+      "box_office_no1": "Blazing Saddles",
+      "box_office_no1_gross_m": 119.6,
+      "oscar_best_picture": "The Sting",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "George Roy Hill",
+      "oscar_best_actor": "Jack Lemmon",
+      "oscar_best_actor_film": "Save the Tiger",
+      "oscar_best_actress": "Glenda Jackson",
+      "oscar_best_actress_film": "A Touch of Class"
+    },
+    "television": {
+      "most_watched_show": "All in the Family",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Upstairs, Downstairs",
+      "emmy_comedy": "M*A*S*H",
+      "notable_premieres": ["Happy Days", "Little House on the Prairie", "Kolchak: The Night Stalker"],
+      "notable_finales": ["The Waltons (season 2)"]
+    },
+    "books": {
+      "fiction_bestseller": "Centennial",
+      "fiction_bestseller_author": "James Michener",
+      "nonfiction_bestseller": "The Total Woman",
+      "nonfiction_bestseller_author": "Marabel Morgan",
+      "pulitzer_fiction": "The Dolphin",
+      "pulitzer_fiction_author": "Robert Lowell"
+    },
+    "sports": {
+      "super_bowl_winner": "Miami Dolphins",
+      "super_bowl_score": "24-7 vs Minnesota Vikings",
+      "super_bowl_mvp": "Larry Csonka",
+      "world_series_winner": "Oakland Athletics",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Kareem Abdul-Jabbar",
+      "wimbledon_mens": "Jimmy Connors",
+      "wimbledon_womens": "Chris Evert",
+      "f1_champion": "Emerson Fittipaldi",
+      "fifa_world_cup": "West Germany"
+    }
+  },
+  "technology": {
+    "milestone": "Intel releases the 8080 microprocessor; the Altair 8800 concept begins, ushering in the personal computer era",
+    "top_computer": "ILLIAC IV",
+    "top_computer_price_usd": 31000000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Intel 8080 microprocessor released, becoming the basis for the first personal computers",
+      "Xerox Alto operational with GUI, mouse, and ethernet - the model for modern PCs",
+      "First commercial barcode scanner installed in a Troy, Ohio supermarket",
+      "Dungeons & Dragons published by Gary Gygax and Dave Arneson, founding tabletop RPGs"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Newspaper heiress Patricia Hearst kidnapped by the Symbionese Liberation Army, later joining her captors in bank robbery"},
+    {"month": 4, "event": "Carnation Revolution in Portugal ends 48 years of dictatorship peacefully, beginning transition to democracy"},
+    {"month": 7, "event": "Impeachment hearings against President Nixon begin in the House Judiciary Committee over Watergate"},
+    {"month": 8, "event": "President Richard Nixon resigns the presidency after the Watergate scandal, the first US president to do so; Gerald Ford sworn in"},
+    {"month": 11, "event": "Haile Selassie, Emperor of Ethiopia for 44 years, deposed by a Marxist military junta as famine ravages the country"}
+  ],
+  "leaders": {
+    "us_president": "Richard Nixon (to Aug), then Gerald Ford",
+    "uk_pm": "Edward Heath (to Mar), then Harold Wilson",
+    "france_president": "Georges Pompidou (to Apr), then Valéry Giscard d'Estaing",
+    "germany_chancellor": "Willy Brandt (to May), then Helmut Schmidt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Kakuei Tanaka (to Dec), then Takeo Miki",
+    "australia_pm": "Gough Whitlam",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Ernesto Geisel",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Joaquin Phoenix", "month": 10, "field": "Film"},
+    {"name": "Leonardo DiCaprio", "month": 11, "field": "Film"},
+    {"name": "Ryan Seacrest", "month": 12, "field": "Television"},
+    {"name": "Robbie Williams", "month": 2, "field": "Music"},
+    {"name": "Christian Bale", "month": 1, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 213.9,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 7226,
+      "leader": "Richard Nixon",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.2,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 3517,
+      "leader": "Harold Wilson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 581.0,
+      "life_expectancy": 49.6,
+      "gdp_per_capita_usd": 140,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.9,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 6015,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 110.2,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 4198,
+      "leader": "Kakuei Tanaka",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 52.5,
+      "life_expectancy": 73.1,
+      "gdp_per_capita_usd": 5084,
+      "leader": "Valéry Giscard d'Estaing",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 103.5,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 806,
+      "leader": "Ernesto Geisel",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 880.6,
+      "life_expectancy": 64.1,
+      "gdp_per_capita_usd": 149,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 13.7,
+      "life_expectancy": 73.1,
+      "gdp_per_capita_usd": 5348,
+      "leader": "Gough Whitlam",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 22.4,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 6390,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

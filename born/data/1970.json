@@ -1,0 +1,199 @@
+{
+  "year": 1970,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.70,
+    "births_millions": 122,
+    "life_expectancy_global": 59.6,
+    "countries_count": 135,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 5234,
+    "us_median_household_income_usd": 8734,
+    "us_inflation_pct": 5.72,
+    "us_unemployment_pct": 4.9,
+    "us_minimum_wage_usd": 1.60,
+    "sp500_year_end": 92.15,
+    "dow_jones_year_end": 838.92,
+    "gold_oz_usd": 36.02,
+    "oil_barrel_usd": 1.80
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.35,
+    "gallon_milk_usd": 1.32,
+    "dozen_eggs_usd": 0.62,
+    "loaf_bread_usd": 0.25,
+    "movie_ticket_usd": 1.55,
+    "new_car_avg_usd": 3706,
+    "median_home_usd": 17000,
+    "first_class_stamp_cents": 6,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Bridge Over Troubled Water",
+      "billboard_no1_artist": "Simon & Garfunkel",
+      "grammy_record": "Aquarius/Let the Sunshine In",
+      "grammy_record_artist": "The 5th Dimension",
+      "grammy_album": "Blood, Sweat & Tears",
+      "grammy_album_artist": "Blood, Sweat & Tears",
+      "uk_no1_jan": "Two Little Boys",
+      "uk_no1_jan_artist": "Rolf Harris"
+    },
+    "film": {
+      "box_office_no1": "Airport",
+      "box_office_no1_gross_m": 100.5,
+      "oscar_best_picture": "Midnight Cowboy",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "John Schlesinger",
+      "oscar_best_actor": "John Wayne",
+      "oscar_best_actor_film": "True Grit",
+      "oscar_best_actress": "Maggie Smith",
+      "oscar_best_actress_film": "The Prime of Miss Jean Brodie"
+    },
+    "television": {
+      "most_watched_show": "Marcus Welby, M.D.",
+      "most_watched_network": "ABC",
+      "emmy_drama": "Marcus Welby, M.D.",
+      "emmy_comedy": "My World and Welcome to It",
+      "notable_premieres": ["Monday Night Football", "The Mary Tyler Moore Show", "The Odd Couple"],
+      "notable_finales": ["The Smothers Brothers Comedy Hour"]
+    },
+    "books": {
+      "fiction_bestseller": "Love Story",
+      "fiction_bestseller_author": "Erich Segal",
+      "nonfiction_bestseller": "Everything You Always Wanted to Know About Sex",
+      "nonfiction_bestseller_author": "David Reuben",
+      "pulitzer_fiction": "The Collected Stories of Jean Stafford",
+      "pulitzer_fiction_author": "Jean Stafford"
+    },
+    "sports": {
+      "super_bowl_winner": "Kansas City Chiefs",
+      "super_bowl_score": "23-7 vs Minnesota Vikings",
+      "super_bowl_mvp": "Len Dawson",
+      "world_series_winner": "Baltimore Orioles",
+      "nba_champion": "New York Knicks",
+      "nba_mvp": "Willis Reed",
+      "wimbledon_mens": "John Newcombe",
+      "wimbledon_womens": "Margaret Smith Court",
+      "f1_champion": "Jochen Rindt",
+      "fifa_world_cup": "Brazil"
+    }
+  },
+  "technology": {
+    "milestone": "Floppy disk invented at IBM; UNIX operating system developed at Bell Labs",
+    "top_computer": "PDP-11",
+    "top_computer_price_usd": 10800,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "UNIX operating system developed at Bell Labs by Ken Thompson and Dennis Ritchie",
+      "Floppy disk invented by IBM engineer Alan Shugart",
+      "First ARPANET message sent between UCLA and Stanford (1969, operational in 1970)",
+      "Intel 1103 - world's first commercially available DRAM chip released"
+    ]
+  },
+  "world_events": [
+    {"month": 4, "event": "Apollo 13 oxygen tank explodes en route to the Moon; crew safely returns to Earth"},
+    {"month": 4, "event": "First Earth Day celebrated on April 22, marking birth of the modern environmental movement"},
+    {"month": 5, "event": "National Guard kills four student protesters at Kent State University during Vietnam War protest"},
+    {"month": 9, "event": "Jimi Hendrix dies at age 27 in London; Janis Joplin dies the same month"},
+    {"month": 11, "event": "Salvador Allende inaugurated as the world's first democratically elected Marxist president in Chile"},
+    {"month": 12, "event": "Willy Brandt kneels at Warsaw Ghetto Memorial in spontaneous gesture of atonement for Nazi crimes"}
+  ],
+  "leaders": {
+    "us_president": "Richard Nixon",
+    "uk_pm": "Edward Heath",
+    "france_president": "Georges Pompidou",
+    "germany_chancellor": "Willy Brandt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Eisaku Sato",
+    "australia_pm": "John Gorton",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Emílio Garrastazu Médici",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Matt Damon", "month": 10, "field": "Film"},
+    {"name": "Mariah Carey", "month": 3, "field": "Music"},
+    {"name": "Queen Latifah", "month": 3, "field": "Music"},
+    {"name": "Andre Agassi", "month": 4, "field": "Tennis"},
+    {"name": "Christopher Nolan", "month": 7, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 205.1,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 5234,
+      "leader": "Richard Nixon",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 55.6,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 2278,
+      "leader": "Edward Heath",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 555.2,
+      "life_expectancy": 47.7,
+      "gdp_per_capita_usd": 112,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 60.7,
+      "life_expectancy": 70.9,
+      "gdp_per_capita_usd": 3075,
+      "leader": "Willy Brandt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 103.7,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 2044,
+      "leader": "Eisaku Sato",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 50.8,
+      "life_expectancy": 72.4,
+      "gdp_per_capita_usd": 2779,
+      "leader": "Georges Pompidou",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 95.7,
+      "life_expectancy": 59.6,
+      "gdp_per_capita_usd": 445,
+      "leader": "Emílio Garrastazu Médici",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 818.3,
+      "life_expectancy": 59.5,
+      "gdp_per_capita_usd": 114,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 12.5,
+      "life_expectancy": 71.5,
+      "gdp_per_capita_usd": 3278,
+      "leader": "John Gorton",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 21.3,
+      "life_expectancy": 73.0,
+      "gdp_per_capita_usd": 3957,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "year": 1966,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.42,
+    "births_millions": 118,
+    "life_expectancy_global": 56.3,
+    "countries_count": 122,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 4146,
+    "us_median_household_income_usd": 7400,
+    "us_inflation_pct": 3.01,
+    "us_unemployment_pct": 3.8,
+    "us_minimum_wage_usd": 1.25,
+    "sp500_year_end": 80.33,
+    "dow_jones_year_end": 785.69,
+    "gold_oz_usd": 35.13,
+    "oil_barrel_usd": 2.88
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.32,
+    "gallon_milk_usd": 1.06,
+    "dozen_eggs_usd": 0.60,
+    "loaf_bread_usd": 0.22,
+    "movie_ticket_usd": 1.09,
+    "new_car_avg_usd": 2700,
+    "median_home_usd": 21400,
+    "first_class_stamp_cents": 5,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "The Ballad of the Green Berets",
+      "billboard_no1_artist": "Sgt. Barry Sadler",
+      "grammy_record": "A Taste of Honey",
+      "grammy_record_artist": "Herb Alpert & The Tijuana Brass",
+      "grammy_album": "September of My Years",
+      "grammy_album_artist": "Frank Sinatra",
+      "uk_no1_jan": "Keep on Running",
+      "uk_no1_jan_artist": "Spencer Davis Group"
+    },
+    "film": {
+      "box_office_no1": "Hawaii",
+      "box_office_no1_gross_m": 15.6,
+      "oscar_best_picture": "The Sound of Music",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Robert Wise",
+      "oscar_best_actor": "Lee Marvin",
+      "oscar_best_actor_film": "Cat Ballou",
+      "oscar_best_actress": "Julie Christie",
+      "oscar_best_actress_film": "Darling"
+    },
+    "television": {
+      "most_watched_show": "Bonanza",
+      "most_watched_network": "NBC",
+      "emmy_drama": "Mission: Impossible",
+      "emmy_comedy": "The Dick Van Dyke Show",
+      "notable_premieres": ["Star Trek", "Batman", "The Monkees"],
+      "notable_finales": ["The Dick Van Dyke Show"]
+    },
+    "books": {
+      "fiction_bestseller": "Valley of the Dolls",
+      "fiction_bestseller_author": "Jacqueline Susann",
+      "nonfiction_bestseller": "How to Avoid Probate",
+      "nonfiction_bestseller_author": "Norman F. Dacey",
+      "pulitzer_fiction": "The Collected Stories of Katherine Anne Porter",
+      "pulitzer_fiction_author": "Katherine Anne Porter"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Baltimore Orioles",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Wilt Chamberlain",
+      "wimbledon_mens": "Manuel Santana",
+      "wimbledon_womens": "Billie Jean King",
+      "f1_champion": "Jack Brabham",
+      "fifa_world_cup": "England"
+    }
+  },
+  "technology": {
+    "milestone": "Luna 9 makes the first soft landing on the Moon; Surveyor 1 confirms the Moon's surface can support a spacecraft",
+    "top_computer": "IBM System/360 Model 91",
+    "top_computer_price_usd": 5000000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Luna 9 makes the first successful soft landing on the Moon",
+      "Surveyor 1 spacecraft lands on the Moon, confirming it can support Apollo landers",
+      "Dynamic Random Access Memory (DRAM) concept invented at IBM",
+      "The Gemini program completes with Gemini 12, paving the way for Apollo"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Indira Gandhi elected Prime Minister of India, becoming the first woman to lead the world's largest democracy"},
+    {"month": 6, "event": "Mao Zedong launches the Cultural Revolution in China, unleashing mass political persecution and social upheaval"},
+    {"month": 7, "event": "England wins the FIFA World Cup on home soil, defeating West Germany 4-2 in extra time at Wembley"},
+    {"month": 11, "event": "Florence, Italy devastated by catastrophic flooding of the Arno River, damaging thousands of irreplaceable artworks and manuscripts"},
+    {"month": 12, "event": "US troop strength in Vietnam reaches 385,000 as the war escalates dramatically"}
+  ],
+  "leaders": {
+    "us_president": "Lyndon B. Johnson",
+    "uk_pm": "Harold Wilson",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Ludwig Erhard (to Oct), then Kurt Georg Kiesinger",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Eisaku Sato",
+    "australia_pm": "Harold Holt",
+    "canada_pm": "Lester B. Pearson",
+    "brazil_president": "Humberto Castelo Branco",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Janet Jackson", "month": 5, "field": "Music"},
+    {"name": "Adam Sandler", "month": 9, "field": "Comedy/Film"},
+    {"name": "Halle Berry", "month": 8, "field": "Film"},
+    {"name": "Helena Bonham Carter", "month": 5, "field": "Film"},
+    {"name": "Mike Tyson", "month": 6, "field": "Boxing"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 196.6,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 4146,
+      "leader": "Lyndon B. Johnson",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 54.6,
+      "life_expectancy": 71.6,
+      "gdp_per_capita_usd": 1934,
+      "leader": "Harold Wilson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 494.0,
+      "life_expectancy": 45.4,
+      "gdp_per_capita_usd": 99,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 59.8,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 2069,
+      "leader": "Ludwig Erhard",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 99.0,
+      "life_expectancy": 71.5,
+      "gdp_per_capita_usd": 1083,
+      "leader": "Eisaku Sato",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 49.0,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 2063,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 83.8,
+      "life_expectancy": 57.7,
+      "gdp_per_capita_usd": 278,
+      "leader": "Humberto Castelo Branco",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 713.5,
+      "life_expectancy": 58.3,
+      "gdp_per_capita_usd": 97,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 11.6,
+      "life_expectancy": 71.6,
+      "gdp_per_capita_usd": 2440,
+      "leader": "Harold Holt",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 20.0,
+      "life_expectancy": 72.3,
+      "gdp_per_capita_usd": 2979,
+      "leader": "Lester B. Pearson",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

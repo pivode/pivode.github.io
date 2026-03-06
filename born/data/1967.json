@@ -1,0 +1,198 @@
+{
+  "year": 1967,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.49,
+    "births_millions": 120,
+    "life_expectancy_global": 57.0,
+    "countries_count": 123,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 4336,
+    "us_median_household_income_usd": 7700,
+    "us_inflation_pct": 2.77,
+    "us_unemployment_pct": 3.8,
+    "us_minimum_wage_usd": 1.40,
+    "sp500_year_end": 96.47,
+    "dow_jones_year_end": 905.11,
+    "gold_oz_usd": 35.18,
+    "oil_barrel_usd": 2.92
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.33,
+    "gallon_milk_usd": 1.08,
+    "dozen_eggs_usd": 0.61,
+    "loaf_bread_usd": 0.22,
+    "movie_ticket_usd": 1.22,
+    "new_car_avg_usd": 2800,
+    "median_home_usd": 22700,
+    "first_class_stamp_cents": 5,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "To Sir with Love",
+      "billboard_no1_artist": "Lulu",
+      "grammy_record": "Strangers in the Night",
+      "grammy_record_artist": "Frank Sinatra",
+      "grammy_album": "Sinatra: A Man and His Music",
+      "grammy_album_artist": "Frank Sinatra",
+      "uk_no1_jan": "Green Green Grass of Home",
+      "uk_no1_jan_artist": "Tom Jones"
+    },
+    "film": {
+      "box_office_no1": "The Jungle Book",
+      "box_office_no1_gross_m": 73.5,
+      "oscar_best_picture": "A Man for All Seasons",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Fred Zinnemann",
+      "oscar_best_actor": "Paul Scofield",
+      "oscar_best_actor_film": "A Man for All Seasons",
+      "oscar_best_actress": "Elizabeth Taylor",
+      "oscar_best_actress_film": "Who's Afraid of Virginia Woolf?"
+    },
+    "television": {
+      "most_watched_show": "The Andy Griffith Show",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Mission: Impossible",
+      "emmy_comedy": "The Monkees",
+      "notable_premieres": ["The Smothers Brothers Comedy Hour", "Flying Nun", "The Carol Burnett Show"],
+      "notable_finales": ["The Andy Griffith Show (season 7)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Arrangement",
+      "fiction_bestseller_author": "Elia Kazan",
+      "nonfiction_bestseller": "Death of a President",
+      "nonfiction_bestseller_author": "William Manchester",
+      "pulitzer_fiction": "The Fixer",
+      "pulitzer_fiction_author": "Bernard Malamud"
+    },
+    "sports": {
+      "super_bowl_winner": "Green Bay Packers",
+      "super_bowl_score": "35-10 vs Kansas City Chiefs",
+      "super_bowl_mvp": "Bart Starr",
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": "Philadelphia 76ers",
+      "nba_mvp": "Wilt Chamberlain",
+      "wimbledon_mens": "John Newcombe",
+      "wimbledon_womens": "Billie Jean King",
+      "f1_champion": "Denny Hulme",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "The first heart transplant performed by Dr. Christiaan Barnard; Apollo 1 fire kills three astronauts",
+    "top_computer": "IBM System/360 Model 91",
+    "top_computer_price_usd": 5000000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Dr. Christiaan Barnard performs world's first successful human heart transplant in Cape Town",
+      "Apollo 1 fire kills astronauts Grissom, White, and Chaffee during a launch rehearsal",
+      "Surveyor 3 lands on the Moon and takes soil samples",
+      "The first ATM is installed at Barclays Bank in London"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Super Bowl I played in Los Angeles - Green Bay Packers defeat Kansas City Chiefs 35-10 in the first AFL-NFL Championship Game"},
+    {"month": 6, "event": "Six-Day War: Israel defeats Egypt, Jordan, and Syria in six days, capturing the Sinai Peninsula, West Bank, Gaza Strip, and Golan Heights"},
+    {"month": 7, "event": "Detroit race riot leaves 43 dead and over 2,000 buildings burned in one of the worst urban uprisings in US history"},
+    {"month": 10, "event": "Che Guevara killed by Bolivian forces, becoming a worldwide symbol of revolution"},
+    {"month": 12, "event": "Dr. Christiaan Barnard performs the world's first human heart transplant in Cape Town, South Africa"}
+  ],
+  "leaders": {
+    "us_president": "Lyndon B. Johnson",
+    "uk_pm": "Harold Wilson",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Kurt Georg Kiesinger",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Eisaku Sato",
+    "australia_pm": "Harold Holt",
+    "canada_pm": "Lester B. Pearson",
+    "brazil_president": "Artur da Costa e Silva",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Kurt Cobain", "month": 2, "field": "Music"},
+    {"name": "Will Smith", "month": 9, "field": "Music/Film"},
+    {"name": "Julia Roberts", "month": 10, "field": "Film"},
+    {"name": "Vin Diesel", "month": 7, "field": "Film"},
+    {"name": "Jamie Foxx", "month": 12, "field": "Music/Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 198.7,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 4336,
+      "leader": "Lyndon B. Johnson",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 54.9,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 2013,
+      "leader": "Harold Wilson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 500.0,
+      "life_expectancy": 45.9,
+      "gdp_per_capita_usd": 101,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 59.9,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 2191,
+      "leader": "Kurt Georg Kiesinger",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 100.2,
+      "life_expectancy": 71.9,
+      "gdp_per_capita_usd": 1229,
+      "leader": "Eisaku Sato",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 49.5,
+      "life_expectancy": 72.3,
+      "gdp_per_capita_usd": 2236,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 85.7,
+      "life_expectancy": 58.1,
+      "gdp_per_capita_usd": 293,
+      "leader": "Artur da Costa e Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 722.2,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 95,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 11.8,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 2551,
+      "leader": "Harold Holt",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 20.4,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 3123,
+      "leader": "Lester B. Pearson",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

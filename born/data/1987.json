@@ -1,0 +1,199 @@
+{
+  "year": 1987,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.03,
+    "births_millions": 141,
+    "life_expectancy_global": 65.2,
+    "countries_count": 167,
+    "internet_users": 28000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 19588,
+    "us_median_household_income_usd": 26061,
+    "us_inflation_pct": 3.7,
+    "us_unemployment_pct": 6.2,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 247.08,
+    "dow_jones_year_end": 1938.83,
+    "gold_oz_usd": 446.84,
+    "oil_barrel_usd": 18.33
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.90,
+    "gallon_milk_usd": 2.28,
+    "dozen_eggs_usd": 0.78,
+    "loaf_bread_usd": 0.58,
+    "movie_ticket_usd": 3.91,
+    "new_car_avg_usd": 12264,
+    "median_home_usd": 104500,
+    "first_class_stamp_cents": 22,
+    "big_mac_usd": 1.60
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Walk Like an Egyptian",
+      "billboard_no1_artist": "The Bangles",
+      "grammy_record": "Higher Love",
+      "grammy_record_artist": "Steve Winwood",
+      "grammy_album": "Graceland",
+      "grammy_album_artist": "Paul Simon",
+      "uk_no1_jan": "Reet Petite",
+      "uk_no1_jan_artist": "Jackie Wilson"
+    },
+    "film": {
+      "box_office_no1": "Three Men and a Baby",
+      "box_office_no1_gross_m": 167.8,
+      "oscar_best_picture": "Platoon",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Oliver Stone",
+      "oscar_best_actor": "Paul Newman",
+      "oscar_best_actor_film": "The Color of Money",
+      "oscar_best_actress": "Marlee Matlin",
+      "oscar_best_actress_film": "Children of a Lesser God"
+    },
+    "television": {
+      "most_watched_show": "The Cosby Show",
+      "most_watched_network": "NBC",
+      "emmy_drama": "L.A. Law",
+      "emmy_comedy": "The Golden Girls",
+      "notable_premieres": ["Star Trek: The Next Generation", "Full House", "Married... with Children"],
+      "notable_finales": ["The Colbys", "Magnum P.I."]
+    },
+    "books": {
+      "fiction_bestseller": "Misery",
+      "fiction_bestseller_author": "Stephen King",
+      "nonfiction_bestseller": "Time Flies",
+      "nonfiction_bestseller_author": "Bill Cosby",
+      "pulitzer_fiction": "A Summons to Memphis",
+      "pulitzer_fiction_author": "Peter Taylor"
+    },
+    "sports": {
+      "super_bowl_winner": "New York Giants",
+      "super_bowl_score": "39-20 vs Denver Broncos",
+      "super_bowl_mvp": "Phil Simms",
+      "world_series_winner": "Minnesota Twins",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Magic Johnson",
+      "wimbledon_mens": "Pat Cash",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Nelson Piquet",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "GIF image format introduced by CompuServe",
+    "top_computer": "Macintosh II",
+    "top_computer_price_usd": 5498,
+    "avg_hard_drive_mb": 20,
+    "mobile_subscribers_millions": 1.2,
+    "notable_releases": [
+      "Macintosh II launched - first color Mac",
+      "HyperCard introduced by Apple",
+      "Perl programming language released by Larry Wall",
+      "GIF image format introduced by CompuServe"
+    ]
+  },
+  "world_events": [
+    {"month": 3, "event": "Herald of Free Enterprise ferry capsizes off Belgium killing 193"},
+    {"month": 5, "event": "Iran-Contra hearings begin in US Congress"},
+    {"month": 6, "event": "Reagan delivers 'Tear down this wall' speech at Brandenburg Gate"},
+    {"month": 8, "event": "Dow Jones hits all-time high of 2,722 before the fall"},
+    {"month": 10, "event": "Black Monday - Dow Jones drops 22.6% in a single day, the largest one-day crash in history"},
+    {"month": 12, "event": "INF Treaty signed by Reagan and Gorbachev, eliminating nuclear missiles"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev",
+    "china_leader": "Zhao Ziyang",
+    "india_pm": "Rajiv Gandhi",
+    "japan_pm": "Yasuhiro Nakasone",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "José Sarney",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Lionel Messi", "month": 6, "field": "Football"},
+    {"name": "Kendrick Lamar", "month": 6, "field": "Music"},
+    {"name": "Novak Djokovic", "month": 5, "field": "Tennis"},
+    {"name": "Zac Efron", "month": 10, "field": "Film"},
+    {"name": "Blake Lively", "month": 8, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 243.8,
+      "life_expectancy": 74.9,
+      "gdp_per_capita_usd": 19588,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.8,
+      "life_expectancy": 75.4,
+      "gdp_per_capita_usd": 12103,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 797.0,
+      "life_expectancy": 58.5,
+      "gdp_per_capita_usd": 323,
+      "leader": "Rajiv Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.1,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 15320,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 122.1,
+      "life_expectancy": 78.5,
+      "gdp_per_capita_usd": 19570,
+      "leader": "Yasuhiro Nakasone",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 55.6,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 14586,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 141.5,
+      "life_expectancy": 65.1,
+      "gdp_per_capita_usd": 2050,
+      "leader": "José Sarney",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1096.1,
+      "life_expectancy": 68.9,
+      "gdp_per_capita_usd": 252,
+      "leader": "Zhao Ziyang",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 16.3,
+      "life_expectancy": 76.5,
+      "gdp_per_capita_usd": 13058,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 26.5,
+      "life_expectancy": 76.9,
+      "gdp_per_capita_usd": 16427,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

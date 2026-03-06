@@ -1,0 +1,198 @@
+{
+  "year": 1971,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.76,
+    "births_millions": 125,
+    "life_expectancy_global": 59.4,
+    "countries_count": 131,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 5509,
+    "us_median_household_income_usd": 9028,
+    "us_inflation_pct": 3.27,
+    "us_unemployment_pct": 5.9,
+    "us_minimum_wage_usd": 1.60,
+    "sp500_year_end": 102.09,
+    "dow_jones_year_end": 890.20,
+    "gold_oz_usd": 40.80,
+    "oil_barrel_usd": 3.39
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.36,
+    "gallon_milk_usd": 1.18,
+    "dozen_eggs_usd": 0.61,
+    "loaf_bread_usd": 0.24,
+    "movie_ticket_usd": 1.65,
+    "new_car_avg_usd": 3500,
+    "median_home_usd": 26700,
+    "first_class_stamp_cents": 8,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Joy to the World",
+      "billboard_no1_artist": "Three Dog Night",
+      "grammy_record": "Bridge over Troubled Water",
+      "grammy_record_artist": "Simon & Garfunkel",
+      "grammy_album": "Bridge over Troubled Water",
+      "grammy_album_artist": "Simon & Garfunkel",
+      "uk_no1_jan": "Grandad",
+      "uk_no1_jan_artist": "Clive Dunn"
+    },
+    "film": {
+      "box_office_no1": "Fiddler on the Roof",
+      "box_office_no1_gross_m": 38.3,
+      "oscar_best_picture": "Patton",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Franklin J. Schaffner",
+      "oscar_best_actor": "George C. Scott",
+      "oscar_best_actor_film": "Patton",
+      "oscar_best_actress": "Glenda Jackson",
+      "oscar_best_actress_film": "Women in Love"
+    },
+    "television": {
+      "most_watched_show": "Marcus Welby, M.D.",
+      "most_watched_network": "ABC",
+      "emmy_drama": "The Bold Ones: The Senator",
+      "emmy_comedy": "All in the Family",
+      "notable_premieres": ["All in the Family", "The Electric Company", "The Mary Tyler Moore Show (season 2)"],
+      "notable_finales": ["The Ed Sullivan Show"]
+    },
+    "books": {
+      "fiction_bestseller": "Wheels",
+      "fiction_bestseller_author": "Arthur Hailey",
+      "nonfiction_bestseller": "The Pentagon Papers",
+      "nonfiction_bestseller_author": "Various",
+      "pulitzer_fiction": "No award given",
+      "pulitzer_fiction_author": "N/A"
+    },
+    "sports": {
+      "super_bowl_winner": "Baltimore Colts",
+      "super_bowl_score": "16-13 vs Dallas Cowboys",
+      "super_bowl_mvp": "Chuck Howley",
+      "world_series_winner": "Pittsburgh Pirates",
+      "nba_champion": "Milwaukee Bucks",
+      "nba_mvp": "Kareem Abdul-Jabbar",
+      "wimbledon_mens": "John Newcombe",
+      "wimbledon_womens": "Evonne Goolagong",
+      "f1_champion": "Jackie Stewart",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Intel releases the 4004, the world's first commercial microprocessor; floppy disk introduced by IBM",
+    "top_computer": "PDP-11",
+    "top_computer_price_usd": 20000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Intel releases the 4004, the world's first commercial microprocessor",
+      "IBM introduces the floppy disk (8-inch) for data storage",
+      "Ray Tomlinson sends the first email between computers on ARPANET",
+      "Atari founded by Nolan Bushnell and Ted Dabney"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "US and South Vietnamese forces launch Operation Lam Son 719, a large-scale incursion into Laos"},
+    {"month": 6, "event": "New York Times begins publishing the Pentagon Papers, revealing decades of government deception about Vietnam"},
+    {"month": 8, "event": "President Nixon ends the Bretton Woods system by suspending US dollar convertibility to gold, ending the gold standard"},
+    {"month": 10, "event": "The People's Republic of China admitted to the United Nations, replacing Taiwan's Republic of China in the Security Council"},
+    {"month": 12, "event": "Bangladesh Liberation War ends - India defeats Pakistan, creating the new nation of Bangladesh with 75 million people"}
+  ],
+  "leaders": {
+    "us_president": "Richard Nixon",
+    "uk_pm": "Edward Heath",
+    "france_president": "Georges Pompidou",
+    "germany_chancellor": "Willy Brandt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Eisaku Sato",
+    "australia_pm": "William McMahon",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Emílio Garrastazu Médici",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Tupac Shakur", "month": 6, "field": "Music"},
+    {"name": "Winona Ryder", "month": 10, "field": "Film"},
+    {"name": "Vin Diesel", "month": 7, "field": "Film"},
+    {"name": "Sean Combs", "month": 11, "field": "Music"},
+    {"name": "Snoop Dogg", "month": 10, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 207.1,
+      "life_expectancy": 71.1,
+      "gdp_per_capita_usd": 5509,
+      "leader": "Richard Nixon",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 55.9,
+      "life_expectancy": 72.2,
+      "gdp_per_capita_usd": 2430,
+      "leader": "Edward Heath",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 547.0,
+      "life_expectancy": 47.9,
+      "gdp_per_capita_usd": 112,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.3,
+      "life_expectancy": 71.9,
+      "gdp_per_capita_usd": 3492,
+      "leader": "Willy Brandt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 105.1,
+      "life_expectancy": 73.0,
+      "gdp_per_capita_usd": 2146,
+      "leader": "Eisaku Sato",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 51.3,
+      "life_expectancy": 72.8,
+      "gdp_per_capita_usd": 3142,
+      "leader": "Georges Pompidou",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 95.7,
+      "life_expectancy": 59.7,
+      "gdp_per_capita_usd": 461,
+      "leader": "Emílio Garrastazu Médici",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 841.1,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 118,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 13.1,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 3273,
+      "leader": "William McMahon",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 21.6,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 4197,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

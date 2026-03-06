@@ -1,0 +1,198 @@
+{
+  "year": 1957,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.86,
+    "births_millions": 101,
+    "life_expectancy_global": 50.0,
+    "countries_count": 82,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 2188,
+    "us_median_household_income_usd": 4900,
+    "us_inflation_pct": 3.31,
+    "us_unemployment_pct": 4.3,
+    "us_minimum_wage_usd": 1.00,
+    "sp500_year_end": 44.06,
+    "dow_jones_year_end": 435.69,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.88
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.31,
+    "gallon_milk_usd": 0.99,
+    "dozen_eggs_usd": 0.63,
+    "loaf_bread_usd": 0.19,
+    "movie_ticket_usd": 0.51,
+    "new_car_avg_usd": 2200,
+    "median_home_usd": 12200,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "All Shook Up",
+      "billboard_no1_artist": "Elvis Presley",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Singing the Blues",
+      "uk_no1_jan_artist": "Tommy Steele"
+    },
+    "film": {
+      "box_office_no1": "The Bridge on the River Kwai",
+      "box_office_no1_gross_m": 30.6,
+      "oscar_best_picture": "Around the World in 80 Days",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "George Stevens",
+      "oscar_best_actor": "Yul Brynner",
+      "oscar_best_actor_film": "The King and I",
+      "oscar_best_actress": "Ingrid Bergman",
+      "oscar_best_actress_film": "Anastasia"
+    },
+    "television": {
+      "most_watched_show": "Gunsmoke",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Requiem for a Heavyweight",
+      "emmy_comedy": "The Phil Silvers Show",
+      "notable_premieres": ["Leave It to Beaver", "Perry Mason"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "By Love Possessed",
+      "fiction_bestseller_author": "James Gould Cozzens",
+      "nonfiction_bestseller": "Kids Say the Darndest Things!",
+      "nonfiction_bestseller_author": "Art Linkletter",
+      "pulitzer_fiction": "no award",
+      "pulitzer_fiction_author": "N/A"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Milwaukee Braves",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": null,
+      "wimbledon_mens": "Lew Hoad",
+      "wimbledon_womens": "Althea Gibson",
+      "f1_champion": "Juan Manuel Fangio",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Soviet Union launches Sputnik 1, the world's first artificial satellite, igniting the Space Race",
+    "top_computer": "IBM 704",
+    "top_computer_price_usd": 1500000,
+    "avg_hard_drive_mb": 5,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Sputnik 1 launched by Soviet Union, the first artificial Earth satellite",
+      "Sputnik 2 carries Laika the dog into orbit - first living creature in space",
+      "S&P 500 index launched on March 4, 1957",
+      "FORTRAN programming language released by IBM"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Eisenhower Doctrine announced, pledging US military aid to Middle Eastern countries threatened by communism"},
+    {"month": 3, "event": "Ghana becomes the first sub-Saharan African country to gain independence from Britain"},
+    {"month": 3, "event": "Treaty of Rome signed, establishing the European Economic Community (predecessor to the EU)"},
+    {"month": 10, "event": "Soviet Union launches Sputnik 1, the world's first artificial satellite, shocking the West"},
+    {"month": 11, "event": "Sputnik 2 launched with dog Laika aboard, the first living creature in orbit"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Harold Macmillan",
+    "france_president": "René Coty",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Nobusuke Kishi",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "John Diefenbaker",
+    "brazil_president": "Juscelino Kubitschek",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope Pius XII"
+  },
+  "notable_births": [
+    {"name": "Osama bin Laden", "month": 3, "field": "Terrorism/Politics"},
+    {"name": "Nick Faldo", "month": 7, "field": "Golf"},
+    {"name": "Caroline Kennedy", "month": 11, "field": "Politics"},
+    {"name": "Steve Biko", "month": 12, "field": "Activism"},
+    {"name": "Donny Osmond", "month": 12, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 172.0,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 2188,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 51.5,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 1122,
+      "leader": "Harold Macmillan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 421.1,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 74,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 52.7,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 1295,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 91.9,
+      "life_expectancy": 65.8,
+      "gdp_per_capita_usd": 379,
+      "leader": "Nobusuke Kishi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 44.3,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 1109,
+      "leader": "René Coty",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 64.7,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 170,
+      "leader": "Juscelino Kubitschek",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 627.0,
+      "life_expectancy": 46.3,
+      "gdp_per_capita_usd": 68,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 9.6,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 1700,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 16.6,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 2054,
+      "leader": "John Diefenbaker",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

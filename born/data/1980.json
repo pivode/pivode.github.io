@@ -1,0 +1,199 @@
+{
+  "year": 1980,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.43,
+    "births_millions": 123,
+    "life_expectancy_global": 63.2,
+    "countries_count": 154,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 12575,
+    "us_median_household_income_usd": 17710,
+    "us_inflation_pct": 13.50,
+    "us_unemployment_pct": 7.1,
+    "us_minimum_wage_usd": 3.10,
+    "sp500_year_end": 135.76,
+    "dow_jones_year_end": 963.99,
+    "gold_oz_usd": 594.92,
+    "oil_barrel_usd": 32.50
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.19,
+    "gallon_milk_usd": 2.16,
+    "dozen_eggs_usd": 0.84,
+    "loaf_bread_usd": 0.51,
+    "movie_ticket_usd": 2.69,
+    "new_car_avg_usd": 7200,
+    "median_home_usd": 47200,
+    "first_class_stamp_cents": 15,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Call Me",
+      "billboard_no1_artist": "Blondie",
+      "grammy_record": "What a Fool Believes",
+      "grammy_record_artist": "The Doobie Brothers",
+      "grammy_album": "52nd Street",
+      "grammy_album_artist": "Billy Joel",
+      "uk_no1_jan": "There's No One Quite Like Grandma",
+      "uk_no1_jan_artist": "St Winifred's School Choir"
+    },
+    "film": {
+      "box_office_no1": "The Empire Strikes Back",
+      "box_office_no1_gross_m": 290.5,
+      "oscar_best_picture": "Kramer vs. Kramer",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Robert Benton",
+      "oscar_best_actor": "Dustin Hoffman",
+      "oscar_best_actor_film": "Kramer vs. Kramer",
+      "oscar_best_actress": "Sally Field",
+      "oscar_best_actress_film": "Norma Rae"
+    },
+    "television": {
+      "most_watched_show": "Dallas",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Hill Street Blues",
+      "emmy_comedy": "Taxi",
+      "notable_premieres": ["CNN", "Magnum P.I.", "Nightline"],
+      "notable_finales": ["The Waltons"]
+    },
+    "books": {
+      "fiction_bestseller": "The Covenant",
+      "fiction_bestseller_author": "James Michener",
+      "nonfiction_bestseller": "Cosmos",
+      "nonfiction_bestseller_author": "Carl Sagan",
+      "pulitzer_fiction": "The Executioner's Song",
+      "pulitzer_fiction_author": "Norman Mailer"
+    },
+    "sports": {
+      "super_bowl_winner": "Pittsburgh Steelers",
+      "super_bowl_score": "31-19 vs Los Angeles Rams",
+      "super_bowl_mvp": "Terry Bradshaw",
+      "world_series_winner": "Philadelphia Phillies",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Kareem Abdul-Jabbar",
+      "wimbledon_mens": "Björn Borg",
+      "wimbledon_womens": "Evonne Goolagong",
+      "f1_champion": "Alan Jones",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "CNN launches as the world's first 24-hour cable news network; Pac-Man debuts in arcades",
+    "top_computer": "Apple II Plus",
+    "top_computer_price_usd": 1195,
+    "avg_hard_drive_mb": 5,
+    "mobile_subscribers_millions": 0.5,
+    "notable_releases": [
+      "CNN launches on June 1 as the world's first 24-hour cable news network",
+      "Pac-Man arcade game released by Namco, becoming a global phenomenon",
+      "IBM begins development of its first personal computer",
+      "Usenet, an early internet discussion system, launched"
+    ]
+  },
+  "world_events": [
+    {"month": 4, "event": "US hostage rescue mission in Iran (Operation Eagle Claw) fails, killing eight American servicemen"},
+    {"month": 5, "event": "Mount St. Helens volcano erupts in Washington state, killing 57 people in the deadliest volcanic event in US history"},
+    {"month": 8, "event": "Solidarity trade union founded by Lech Walesa in Poland, challenging Soviet-backed communist rule"},
+    {"month": 9, "event": "Iraq invades Iran, beginning the Iran-Iraq War that will last eight years and kill over a million people"},
+    {"month": 11, "event": "Ronald Reagan wins US presidential election in a landslide over incumbent Jimmy Carter"},
+    {"month": 12, "event": "John Lennon shot and killed outside his apartment building in New York City"}
+  ],
+  "leaders": {
+    "us_president": "Jimmy Carter",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "Valéry Giscard d'Estaing",
+    "germany_chancellor": "Helmut Schmidt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Zenko Suzuki",
+    "australia_pm": "Malcolm Fraser",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "João Figueiredo",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Kim Kardashian", "month": 10, "field": "Media"},
+    {"name": "Venus Williams", "month": 6, "field": "Tennis"},
+    {"name": "Christina Aguilera", "month": 12, "field": "Music"},
+    {"name": "Jake Gyllenhaal", "month": 12, "field": "Film"},
+    {"name": "Macaulay Culkin", "month": 8, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 227.2,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 12575,
+      "leader": "Jimmy Carter",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.3,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 9426,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 698.9,
+      "life_expectancy": 53.7,
+      "gdp_per_capita_usd": 267,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.6,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 13298,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 116.8,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 9429,
+      "leader": "Zenko Suzuki",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 53.9,
+      "life_expectancy": 74.3,
+      "gdp_per_capita_usd": 12658,
+      "leader": "Valéry Giscard d'Estaing",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 121.7,
+      "life_expectancy": 63.3,
+      "gdp_per_capita_usd": 2242,
+      "leader": "João Figueiredo",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 981.2,
+      "life_expectancy": 66.4,
+      "gdp_per_capita_usd": 195,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 14.7,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 10087,
+      "leader": "Malcolm Fraser",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 24.6,
+      "life_expectancy": 75.3,
+      "gdp_per_capita_usd": 11416,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

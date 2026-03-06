@@ -1,0 +1,199 @@
+{
+  "year": 1975,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.09,
+    "births_millions": 124,
+    "life_expectancy_global": 62.1,
+    "countries_count": 144,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 7801,
+    "us_median_household_income_usd": 11800,
+    "us_inflation_pct": 9.13,
+    "us_unemployment_pct": 8.5,
+    "us_minimum_wage_usd": 2.10,
+    "sp500_year_end": 90.19,
+    "dow_jones_year_end": 852.41,
+    "gold_oz_usd": 160.86,
+    "oil_barrel_usd": 7.67
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.57,
+    "gallon_milk_usd": 1.57,
+    "dozen_eggs_usd": 0.77,
+    "loaf_bread_usd": 0.36,
+    "movie_ticket_usd": 2.05,
+    "new_car_avg_usd": 4950,
+    "median_home_usd": 39500,
+    "first_class_stamp_cents": 10,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Love Will Keep Us Together",
+      "billboard_no1_artist": "Captain & Tennille",
+      "grammy_record": "I Honestly Love You",
+      "grammy_record_artist": "Olivia Newton-John",
+      "grammy_album": "Fulfillingness' First Finale",
+      "grammy_album_artist": "Stevie Wonder",
+      "uk_no1_jan": "Bohemian Rhapsody",
+      "uk_no1_jan_artist": "Queen"
+    },
+    "film": {
+      "box_office_no1": "Jaws",
+      "box_office_no1_gross_m": 260.0,
+      "oscar_best_picture": "The Godfather Part II",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Francis Ford Coppola",
+      "oscar_best_actor": "Art Carney",
+      "oscar_best_actor_film": "Harry and Tonto",
+      "oscar_best_actress": "Ellen Burstyn",
+      "oscar_best_actress_film": "Alice Doesn't Live Here Anymore"
+    },
+    "television": {
+      "most_watched_show": "All in the Family",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Upstairs, Downstairs",
+      "emmy_comedy": "The Mary Tyler Moore Show",
+      "notable_premieres": ["Saturday Night Live", "Wheel of Fortune", "Baretta"],
+      "notable_finales": ["The Odd Couple"]
+    },
+    "books": {
+      "fiction_bestseller": "Ragtime",
+      "fiction_bestseller_author": "E.L. Doctorow",
+      "nonfiction_bestseller": "The Bermuda Triangle",
+      "nonfiction_bestseller_author": "Charles Berlitz",
+      "pulitzer_fiction": "The Killer Angels",
+      "pulitzer_fiction_author": "Michael Shaara"
+    },
+    "sports": {
+      "super_bowl_winner": "Pittsburgh Steelers",
+      "super_bowl_score": "16-6 vs Minnesota Vikings",
+      "super_bowl_mvp": "Franco Harris",
+      "world_series_winner": "Cincinnati Reds",
+      "nba_champion": "Golden State Warriors",
+      "nba_mvp": "Bob McAdoo",
+      "wimbledon_mens": "Arthur Ashe",
+      "wimbledon_womens": "Billie Jean King",
+      "f1_champion": "Niki Lauda",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Altair 8800 personal computer kit released, sparking the personal computing revolution",
+    "top_computer": "Altair 8800",
+    "top_computer_price_usd": 395,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Altair 8800 personal computer kit released, inspiring Gates and Allen to found Microsoft",
+      "Bill Gates and Paul Allen found Microsoft on April 4, 1975",
+      "Sony Betamax home video recorder released in Japan",
+      "First US commercial FM stereo subcarrier service launched"
+    ]
+  },
+  "world_events": [
+    {"month": 4, "event": "Fall of Saigon - South Vietnam surrenders to North Vietnam, ending the Vietnam War after 20 years"},
+    {"month": 4, "event": "Khmer Rouge seizes Phnom Penh, beginning the Cambodian genocide under Pol Pot"},
+    {"month": 6, "event": "India's Prime Minister Indira Gandhi declares state of emergency, suspending civil liberties"},
+    {"month": 7, "event": "Apollo-Soyuz Test Project - first US-Soviet joint space mission, symbolizing detente"},
+    {"month": 11, "event": "Australian constitutional crisis - Governor-General dismisses Prime Minister Gough Whitlam"},
+    {"month": 11, "event": "Spain transitions to democracy after General Francisco Franco dies after 36 years in power"}
+  ],
+  "leaders": {
+    "us_president": "Gerald Ford",
+    "uk_pm": "Harold Wilson",
+    "france_president": "Valéry Giscard d'Estaing",
+    "germany_chancellor": "Helmut Schmidt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Takeo Miki",
+    "australia_pm": "Gough Whitlam",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Ernesto Geisel",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Tiger Woods", "month": 12, "field": "Golf"},
+    {"name": "Angelina Jolie", "month": 6, "field": "Film"},
+    {"name": "David Beckham", "month": 5, "field": "Football"},
+    {"name": "Kate Winslet", "month": 10, "field": "Film"},
+    {"name": "Lauryn Hill", "month": 5, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 216.0,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 7801,
+      "leader": "Gerald Ford",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.2,
+      "life_expectancy": 73.1,
+      "gdp_per_capita_usd": 4290,
+      "leader": "Harold Wilson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 623.1,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 167,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.8,
+      "life_expectancy": 72.4,
+      "gdp_per_capita_usd": 6817,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 111.5,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 4512,
+      "leader": "Takeo Miki",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 52.7,
+      "life_expectancy": 73.4,
+      "gdp_per_capita_usd": 6520,
+      "leader": "Valéry Giscard d'Estaing",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 107.6,
+      "life_expectancy": 61.5,
+      "gdp_per_capita_usd": 1159,
+      "leader": "Ernesto Geisel",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 927.8,
+      "life_expectancy": 63.1,
+      "gdp_per_capita_usd": 177,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 13.9,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 6875,
+      "leader": "Gough Whitlam",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 23.1,
+      "life_expectancy": 74.4,
+      "gdp_per_capita_usd": 7548,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

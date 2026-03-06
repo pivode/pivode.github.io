@@ -1,0 +1,198 @@
+{
+  "year": 1969,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.63,
+    "births_millions": 123,
+    "life_expectancy_global": 58.2,
+    "countries_count": 126,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 5019,
+    "us_median_household_income_usd": 8389,
+    "us_inflation_pct": 5.46,
+    "us_unemployment_pct": 3.5,
+    "us_minimum_wage_usd": 1.60,
+    "sp500_year_end": 92.06,
+    "dow_jones_year_end": 800.36,
+    "gold_oz_usd": 41.28,
+    "oil_barrel_usd": 3.09
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.35,
+    "gallon_milk_usd": 1.08,
+    "dozen_eggs_usd": 0.62,
+    "loaf_bread_usd": 0.23,
+    "movie_ticket_usd": 1.42,
+    "new_car_avg_usd": 3100,
+    "median_home_usd": 25600,
+    "first_class_stamp_cents": 6,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Sugar Sugar",
+      "billboard_no1_artist": "The Archies",
+      "grammy_record": "Mrs. Robinson",
+      "grammy_record_artist": "Simon & Garfunkel",
+      "grammy_album": "By the Time I Get to Phoenix",
+      "grammy_album_artist": "Glen Campbell",
+      "uk_no1_jan": "Ob-La-Di, Ob-La-Da",
+      "uk_no1_jan_artist": "Marmalade"
+    },
+    "film": {
+      "box_office_no1": "Butch Cassidy and the Sundance Kid",
+      "box_office_no1_gross_m": 102.3,
+      "oscar_best_picture": "Oliver!",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Carol Reed",
+      "oscar_best_actor": "Cliff Robertson",
+      "oscar_best_actor_film": "Charly",
+      "oscar_best_actress": "Katharine Hepburn and Barbra Streisand",
+      "oscar_best_actress_film": "The Lion in Winter / Funny Girl"
+    },
+    "television": {
+      "most_watched_show": "Rowan & Martin's Laugh-In",
+      "most_watched_network": "NBC",
+      "emmy_drama": "NET Playhouse",
+      "emmy_comedy": "Get Smart",
+      "notable_premieres": ["Sesame Street", "The Brady Bunch", "Monty Python's Flying Circus"],
+      "notable_finales": ["Mission: Impossible (season 3)"]
+    },
+    "books": {
+      "fiction_bestseller": "Portnoy's Complaint",
+      "fiction_bestseller_author": "Philip Roth",
+      "nonfiction_bestseller": "American Heritage Dictionary",
+      "nonfiction_bestseller_author": "Various",
+      "pulitzer_fiction": "House Made of Dawn",
+      "pulitzer_fiction_author": "N. Scott Momaday"
+    },
+    "sports": {
+      "super_bowl_winner": "New York Jets",
+      "super_bowl_score": "16-7 vs Baltimore Colts",
+      "super_bowl_mvp": "Joe Namath",
+      "world_series_winner": "New York Mets",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Wes Unseld",
+      "wimbledon_mens": "Rod Laver",
+      "wimbledon_womens": "Ann Haydon Jones",
+      "f1_champion": "Jackie Stewart",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Neil Armstrong and Buzz Aldrin walk on the Moon; ARPANET, the precursor to the internet, sends its first message",
+    "top_computer": "PDP-10",
+    "top_computer_price_usd": 300000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Apollo 11 lands on the Moon - Neil Armstrong takes the first steps on July 20",
+      "ARPANET sends its first message between UCLA and Stanford Research Institute on October 29",
+      "UNIX operating system created at Bell Labs by Ken Thompson and Dennis Ritchie",
+      "Boeing 747 'Jumbo Jet' makes its first commercial flight, transforming air travel"
+    ]
+  },
+  "world_events": [
+    {"month": 7, "event": "Apollo 11 lands on the Moon - Neil Armstrong becomes the first human to walk on the lunar surface, watched by 600 million viewers worldwide"},
+    {"month": 8, "event": "Woodstock Music Festival draws 400,000 people to a farm in upstate New York for three days of music and counterculture"},
+    {"month": 9, "event": "Ho Chi Minh, founder of North Vietnam and symbol of Vietnamese resistance, dies at age 79"},
+    {"month": 10, "event": "The first message sent over ARPANET, the network that will evolve into the internet - the system crashes after 'LO'"},
+    {"month": 11, "event": "Seymour Hersh breaks the story of the My Lai Massacre, revealing US soldiers killed hundreds of unarmed South Vietnamese civilians"}
+  ],
+  "leaders": {
+    "us_president": "Richard Nixon",
+    "uk_pm": "Harold Wilson",
+    "france_president": "Georges Pompidou",
+    "germany_chancellor": "Kurt Georg Kiesinger (to Oct), then Willy Brandt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Eisaku Sato",
+    "australia_pm": "John Gorton",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "Emílio Garrastazu Médici",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Jennifer Aniston", "month": 2, "field": "Television/Film"},
+    {"name": "Jay-Z", "month": 12, "field": "Music"},
+    {"name": "Marilyn Manson", "month": 1, "field": "Music"},
+    {"name": "Renée Zellweger", "month": 4, "field": "Film"},
+    {"name": "Matthew Perry", "month": 8, "field": "Television"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 202.7,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 5019,
+      "leader": "Richard Nixon",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 55.5,
+      "life_expectancy": 72.1,
+      "gdp_per_capita_usd": 2145,
+      "leader": "Harold Wilson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 512.0,
+      "life_expectancy": 46.9,
+      "gdp_per_capita_usd": 107,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 60.7,
+      "life_expectancy": 71.7,
+      "gdp_per_capita_usd": 2717,
+      "leader": "Willy Brandt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 102.6,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 1677,
+      "leader": "Eisaku Sato",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 50.3,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 2663,
+      "leader": "Georges Pompidou",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 89.5,
+      "life_expectancy": 58.9,
+      "gdp_per_capita_usd": 349,
+      "leader": "Emílio Garrastazu Médici",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 740.7,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 100,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 12.3,
+      "life_expectancy": 72.3,
+      "gdp_per_capita_usd": 2793,
+      "leader": "John Gorton",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 21.0,
+      "life_expectancy": 73.0,
+      "gdp_per_capita_usd": 3533,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

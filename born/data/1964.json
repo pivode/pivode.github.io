@@ -1,0 +1,198 @@
+{
+  "year": 1964,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.25,
+    "births_millions": 107,
+    "life_expectancy_global": 54.0,
+    "countries_count": 113,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 3573,
+    "us_median_household_income_usd": 6600,
+    "us_inflation_pct": 1.28,
+    "us_unemployment_pct": 5.2,
+    "us_minimum_wage_usd": 1.25,
+    "sp500_year_end": 84.75,
+    "dow_jones_year_end": 874.13,
+    "gold_oz_usd": 35.10,
+    "oil_barrel_usd": 1.80
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.30,
+    "gallon_milk_usd": 1.04,
+    "dozen_eggs_usd": 0.54,
+    "loaf_bread_usd": 0.21,
+    "movie_ticket_usd": 0.93,
+    "new_car_avg_usd": 2700,
+    "median_home_usd": 13900,
+    "first_class_stamp_cents": 5,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "I Want to Hold Your Hand",
+      "billboard_no1_artist": "The Beatles",
+      "grammy_record": "The Days of Wine and Roses",
+      "grammy_record_artist": "Henry Mancini",
+      "grammy_album": "The Barbra Streisand Album",
+      "grammy_album_artist": "Barbra Streisand",
+      "uk_no1_jan": "Glad All Over",
+      "uk_no1_jan_artist": "The Dave Clark Five"
+    },
+    "film": {
+      "box_office_no1": "Mary Poppins",
+      "box_office_no1_gross_m": 102.3,
+      "oscar_best_picture": "Tom Jones",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Tony Richardson",
+      "oscar_best_actor": "Sidney Poitier",
+      "oscar_best_actor_film": "Lilies of the Field",
+      "oscar_best_actress": "Patricia Neal",
+      "oscar_best_actress_film": "Hud"
+    },
+    "television": {
+      "most_watched_show": "The Beverly Hillbillies",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The Defenders",
+      "emmy_comedy": "The Dick Van Dyke Show",
+      "notable_premieres": ["Gilligan's Island", "The Munsters", "Bewitched"],
+      "notable_finales": ["The Danny Thomas Show"]
+    },
+    "books": {
+      "fiction_bestseller": "The Spy Who Came in from the Cold",
+      "fiction_bestseller_author": "John le Carré",
+      "nonfiction_bestseller": "Four Days",
+      "nonfiction_bestseller_author": "United Press International",
+      "pulitzer_fiction": "No award given",
+      "pulitzer_fiction_author": "N/A"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Oscar Robertson",
+      "wimbledon_mens": "Roy Emerson",
+      "wimbledon_womens": "Maria Bueno",
+      "f1_champion": "John Surtees",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "IBM introduces the System/360, defining the mainframe era; the first Ford Mustang rolls off the assembly line",
+    "top_computer": "IBM System/360",
+    "top_computer_price_usd": 133000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "IBM System/360 mainframe announced, revolutionizing business computing",
+      "BASIC programming language created at Dartmouth College",
+      "Ford Mustang introduced, selling 418,000 in its first year",
+      "Tokyo Olympics broadcast globally via satellite for the first time"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "24th Amendment to the US Constitution ratified, abolishing poll taxes that had disenfranchised Black voters in the South"},
+    {"month": 7, "event": "Civil Rights Act of 1964 signed into law by President Johnson, outlawing discrimination based on race, color, religion, sex, or national origin"},
+    {"month": 8, "event": "Gulf of Tonkin incident leads US Congress to authorize military force in Vietnam, dramatically escalating American involvement"},
+    {"month": 10, "event": "Nikita Khrushchev ousted as Soviet leader, replaced by Leonid Brezhnev as General Secretary"},
+    {"month": 10, "event": "China conducts its first successful nuclear weapons test in the Gobi Desert, becoming the fifth nuclear power"}
+  ],
+  "leaders": {
+    "us_president": "Lyndon B. Johnson",
+    "uk_pm": "Alec Douglas-Home (to Oct), then Harold Wilson",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Ludwig Erhard",
+    "ussr_leader": "Nikita Khrushchev (to Oct), then Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru (to May), then Lal Bahadur Shastri",
+    "japan_pm": "Hayato Ikeda",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Lester B. Pearson",
+    "brazil_president": "Humberto Castelo Branco",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Nicolas Cage", "month": 1, "field": "Film"},
+    {"name": "Courteney Cox", "month": 6, "field": "Television"},
+    {"name": "Keanu Reeves", "month": 9, "field": "Film"},
+    {"name": "Sandra Bullock", "month": 7, "field": "Film"},
+    {"name": "Rob Lowe", "month": 3, "field": "Film/Television"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 191.9,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 3573,
+      "leader": "Lyndon B. Johnson",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 54.0,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 1599,
+      "leader": "Alec Douglas-Home",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 472.0,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 92,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 58.3,
+      "life_expectancy": 70.7,
+      "gdp_per_capita_usd": 1793,
+      "leader": "Ludwig Erhard",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 97.2,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 825,
+      "leader": "Hayato Ikeda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 47.9,
+      "life_expectancy": 71.6,
+      "gdp_per_capita_usd": 1666,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 80.0,
+      "life_expectancy": 56.2,
+      "gdp_per_capita_usd": 245,
+      "leader": "Humberto Castelo Branco",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 695.4,
+      "life_expectancy": 54.1,
+      "gdp_per_capita_usd": 83,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 11.1,
+      "life_expectancy": 71.3,
+      "gdp_per_capita_usd": 2090,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 19.3,
+      "life_expectancy": 72.1,
+      "gdp_per_capita_usd": 2750,
+      "leader": "Lester B. Pearson",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

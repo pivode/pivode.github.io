@@ -1,0 +1,198 @@
+{
+  "year": 2000,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.09,
+    "births_millions": 134,
+    "life_expectancy_global": 67.4,
+    "countries_count": 189,
+    "internet_users": 361000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 36335,
+    "us_median_household_income_usd": 41990,
+    "us_inflation_pct": 3.4,
+    "us_unemployment_pct": 4.0,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1320.28,
+    "dow_jones_year_end": 10786.85,
+    "gold_oz_usd": 272.65,
+    "oil_barrel_usd": 30.38
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.51,
+    "gallon_milk_usd": 2.97,
+    "dozen_eggs_usd": 0.96,
+    "loaf_bread_usd": 0.99,
+    "movie_ticket_usd": 5.39,
+    "new_car_avg_usd": 21850,
+    "median_home_usd": 147800,
+    "first_class_stamp_cents": 33,
+    "big_mac_usd": 2.51
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Breathe",
+      "billboard_no1_artist": "Faith Hill",
+      "grammy_record": "Smooth",
+      "grammy_record_artist": "Santana featuring Rob Thomas",
+      "grammy_album": "Supernatural",
+      "grammy_album_artist": "Santana",
+      "uk_no1_jan": "The Millennium Prayer",
+      "uk_no1_jan_artist": "Cliff Richard"
+    },
+    "film": {
+      "box_office_no1": "Mission: Impossible 2",
+      "box_office_no1_gross_m": 215.4,
+      "oscar_best_picture": "American Beauty",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Sam Mendes",
+      "oscar_best_actor": "Kevin Spacey",
+      "oscar_best_actor_film": "American Beauty",
+      "oscar_best_actress": "Hilary Swank",
+      "oscar_best_actress_film": "Boys Don't Cry"
+    },
+    "television": {
+      "most_watched_show": "Survivor (CBS)",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The Sopranos",
+      "emmy_comedy": "Will & Grace",
+      "notable_premieres": ["Survivor", "Big Brother (US)", "CSI: Crime Scene Investigation", "Gilmore Girls"],
+      "notable_finales": ["Beverly Hills, 90210 (series)", "Who Wants to Be a Millionaire? (original run peak)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Brethren",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "Who Moved My Cheese?",
+      "nonfiction_bestseller_author": "Spencer Johnson",
+      "pulitzer_fiction": "Interpreter of Maladies",
+      "pulitzer_fiction_author": "Jhumpa Lahiri"
+    },
+    "sports": {
+      "super_bowl_winner": "St. Louis Rams",
+      "super_bowl_score": "23-16 vs Tennessee Titans",
+      "super_bowl_mvp": "Kurt Warner",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Shaquille O'Neal",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Venus Williams",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Y2K bug passes without catastrophe; the dot-com bubble bursts, wiping out trillions in market value",
+    "top_computer": "Pentium III 1 GHz PC",
+    "top_computer_price_usd": 1799,
+    "avg_hard_drive_mb": 30000,
+    "mobile_subscribers_millions": 738,
+    "notable_releases": [
+      "Y2K arrives without widespread computer failures, after billions were spent on remediation worldwide",
+      "The dot-com bubble peaks in March with the NASDAQ hitting 5,048 before losing 78% of its value",
+      "PlayStation 2 released in Japan in March, becoming the best-selling console of all time",
+      "USB flash drives introduced commercially; Wikipedia founded by Jimmy Wales and Larry Sanger in January 2001"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Y2K computer bug passes without catastrophe, ending a global scare that cost $300-600 billion to remediate"},
+    {"month": 3, "event": "NASDAQ composite peaks at 5,048 before the dot-com bubble bursts, erasing $5 trillion in market value over two years"},
+    {"month": 10, "event": "USS Cole bombing in Yemen kills 17 US sailors in an Al-Qaeda attack, foreshadowing 9/11"},
+    {"month": 10, "event": "Concorde Air France Flight 4590 crashes in Paris killing 113, marking the beginning of Concorde's end"},
+    {"month": 11, "event": "US presidential election between George W. Bush and Al Gore produces an unprecedented 36-day recount battle in Florida"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Gerhard Schröder",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "Atal Bihari Vajpayee",
+    "japan_pm": "Keizo Obuchi (to Apr), then Yoshiro Mori",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Olivia Rodrigo", "month": 2, "field": "Music/Film"},
+    {"name": "Skai Jackson", "month": 4, "field": "Television"},
+    {"name": "Lil Nas X", "month": 4, "field": "Music"},
+    {"name": "Charli D'Amelio", "month": 5, "field": "Social Media"},
+    {"name": "Gracie Abrams", "month": 7, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 282.2,
+      "life_expectancy": 76.8,
+      "gdp_per_capita_usd": 36335,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.8,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 27657,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1016.9,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 447,
+      "leader": "Atal Bihari Vajpayee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.2,
+      "life_expectancy": 78.1,
+      "gdp_per_capita_usd": 23721,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 126.9,
+      "life_expectancy": 81.1,
+      "gdp_per_capita_usd": 38533,
+      "leader": "Yoshiro Mori",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 59.3,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 21966,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 173.9,
+      "life_expectancy": 70.1,
+      "gdp_per_capita_usd": 3749,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1262.6,
+      "life_expectancy": 71.7,
+      "gdp_per_capita_usd": 959,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 19.2,
+      "life_expectancy": 79.3,
+      "gdp_per_capita_usd": 21198,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 30.7,
+      "life_expectancy": 79.3,
+      "gdp_per_capita_usd": 24080,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

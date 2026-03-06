@@ -1,0 +1,199 @@
+{
+  "year": 1965,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 3.34,
+    "births_millions": 116,
+    "life_expectancy_global": 55.7,
+    "countries_count": 119,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 3828,
+    "us_median_household_income_usd": 6900,
+    "us_inflation_pct": 1.61,
+    "us_unemployment_pct": 4.5,
+    "us_minimum_wage_usd": 1.25,
+    "sp500_year_end": 92.43,
+    "dow_jones_year_end": 969.26,
+    "gold_oz_usd": 35.12,
+    "oil_barrel_usd": 2.86
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.31,
+    "gallon_milk_usd": 1.05,
+    "dozen_eggs_usd": 0.53,
+    "loaf_bread_usd": 0.21,
+    "movie_ticket_usd": 1.01,
+    "new_car_avg_usd": 2650,
+    "median_home_usd": 20000,
+    "first_class_stamp_cents": 5,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Wooly Bully",
+      "billboard_no1_artist": "Sam the Sham & the Pharaohs",
+      "grammy_record": "The Girl from Ipanema",
+      "grammy_record_artist": "Stan Getz & Astrud Gilberto",
+      "grammy_album": "Getz/Gilberto",
+      "grammy_album_artist": "Stan Getz & João Gilberto",
+      "uk_no1_jan": "I Feel Fine",
+      "uk_no1_jan_artist": "The Beatles"
+    },
+    "film": {
+      "box_office_no1": "The Sound of Music",
+      "box_office_no1_gross_m": 163.2,
+      "oscar_best_picture": "My Fair Lady",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "George Cukor",
+      "oscar_best_actor": "Rex Harrison",
+      "oscar_best_actor_film": "My Fair Lady",
+      "oscar_best_actress": "Julie Andrews",
+      "oscar_best_actress_film": "Mary Poppins"
+    },
+    "television": {
+      "most_watched_show": "Bonanza",
+      "most_watched_network": "NBC",
+      "emmy_drama": "The Fugitive",
+      "emmy_comedy": "The Dick Van Dyke Show",
+      "notable_premieres": ["Lost in Space", "Get Smart", "I Dream of Jeannie"],
+      "notable_finales": ["The Danny Thomas Show"]
+    },
+    "books": {
+      "fiction_bestseller": "The Source",
+      "fiction_bestseller_author": "James Michener",
+      "nonfiction_bestseller": "How to Be a Jewish Mother",
+      "nonfiction_bestseller_author": "Dan Greenburg",
+      "pulitzer_fiction": "The Keepers of the House",
+      "pulitzer_fiction_author": "Shirley Ann Grau"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Los Angeles Dodgers",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Wilt Chamberlain",
+      "wimbledon_mens": "Roy Emerson",
+      "wimbledon_womens": "Margaret Smith",
+      "f1_champion": "Jim Clark",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Gordon Moore publishes paper predicting transistor counts will double every two years (Moore's Law)",
+    "top_computer": "IBM System/360",
+    "top_computer_price_usd": 133000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "IBM System/360 mainframe family begins shipping",
+      "Gordon Moore articulates Moore's Law in Electronics magazine",
+      "First commercial satellite (Early Bird/Intelsat I) launched for transatlantic TV",
+      "DEC PDP-8, first mass-produced minicomputer, introduced"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "US begins sustained bombing campaign of North Vietnam (Operation Rolling Thunder), escalating the Vietnam War"},
+    {"month": 3, "event": "First US combat troops - 3,500 Marines - land at Da Nang, Vietnam, marking direct military involvement"},
+    {"month": 3, "event": "Bloody Sunday in Selma, Alabama - civil rights marchers beaten by police on Edmund Pettus Bridge"},
+    {"month": 8, "event": "Voting Rights Act signed by President Johnson, outlawing discriminatory voting practices"},
+    {"month": 9, "event": "Indo-Pakistani War of 1965 erupts over Kashmir, largest tank battles since WWII"},
+    {"month": 11, "event": "Rhodesia unilaterally declares independence from Britain under Ian Smith, triggering international sanctions"}
+  ],
+  "leaders": {
+    "us_president": "Lyndon B. Johnson",
+    "uk_pm": "Harold Wilson",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Ludwig Erhard",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Lal Bahadur Shastri",
+    "japan_pm": "Eisaku Sato",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Lester B. Pearson",
+    "brazil_president": "Humberto Castelo Branco",
+    "un_secretary": "U Thant",
+    "pope": "Pope Paul VI"
+  },
+  "notable_births": [
+    {"name": "Robert Downey Jr.", "month": 4, "field": "Film"},
+    {"name": "J.K. Rowling", "month": 7, "field": "Literature"},
+    {"name": "Dr. Dre", "month": 2, "field": "Music"},
+    {"name": "Scottie Pippen", "month": 9, "field": "Basketball"},
+    {"name": "Sarah Jessica Parker", "month": 3, "field": "Television"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 194.3,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 3828,
+      "leader": "Lyndon B. Johnson",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 54.4,
+      "life_expectancy": 71.7,
+      "gdp_per_capita_usd": 1842,
+      "leader": "Harold Wilson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 487.0,
+      "life_expectancy": 44.6,
+      "gdp_per_capita_usd": 97,
+      "leader": "Lal Bahadur Shastri",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 59.3,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 1909,
+      "leader": "Ludwig Erhard",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 98.3,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 909,
+      "leader": "Eisaku Sato",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 48.8,
+      "life_expectancy": 71.6,
+      "gdp_per_capita_usd": 1917,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 85.4,
+      "life_expectancy": 57.2,
+      "gdp_per_capita_usd": 265,
+      "leader": "Humberto Castelo Branco",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 726.3,
+      "life_expectancy": 57.3,
+      "gdp_per_capita_usd": 98,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 11.4,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 2292,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 19.6,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 2773,
+      "leader": "Lester B. Pearson",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

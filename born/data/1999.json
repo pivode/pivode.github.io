@@ -1,0 +1,198 @@
+{
+  "year": 1999,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.01,
+    "births_millions": 134,
+    "life_expectancy_global": 68.3,
+    "countries_count": 193,
+    "internet_users": 280000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 33849,
+    "us_median_household_income_usd": 40696,
+    "us_inflation_pct": 2.19,
+    "us_unemployment_pct": 4.2,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1469.25,
+    "dow_jones_year_end": 11497.12,
+    "gold_oz_usd": 290.25,
+    "oil_barrel_usd": 17.97
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.17,
+    "gallon_milk_usd": 2.88,
+    "dozen_eggs_usd": 0.97,
+    "loaf_bread_usd": 0.90,
+    "movie_ticket_usd": 5.08,
+    "new_car_avg_usd": 20450,
+    "median_home_usd": 134500,
+    "first_class_stamp_cents": 33,
+    "big_mac_usd": 2.43
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Believe",
+      "billboard_no1_artist": "Cher",
+      "grammy_record": "My Heart Will Go On",
+      "grammy_record_artist": "Celine Dion",
+      "grammy_album": "The Miseducation of Lauryn Hill",
+      "grammy_album_artist": "Lauryn Hill",
+      "uk_no1_jan": "Heartbeat / Tragedy",
+      "uk_no1_jan_artist": "Steps"
+    },
+    "film": {
+      "box_office_no1": "Star Wars: Episode I - The Phantom Menace",
+      "box_office_no1_gross_m": 431.1,
+      "oscar_best_picture": "Shakespeare in Love",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Steven Spielberg",
+      "oscar_best_actor": "Roberto Benigni",
+      "oscar_best_actor_film": "Life Is Beautiful",
+      "oscar_best_actress": "Gwyneth Paltrow",
+      "oscar_best_actress_film": "Shakespeare in Love"
+    },
+    "television": {
+      "most_watched_show": "ER",
+      "most_watched_network": "NBC",
+      "emmy_drama": "The Practice",
+      "emmy_comedy": "Ally McBeal",
+      "notable_premieres": ["The Sopranos", "Family Guy", "SpongeBob SquarePants"],
+      "notable_finales": ["Seinfeld (2nd highest rated US series finale)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Testament",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "Tuesdays with Morrie",
+      "nonfiction_bestseller_author": "Mitch Albom",
+      "pulitzer_fiction": "The Hours",
+      "pulitzer_fiction_author": "Michael Cunningham"
+    },
+    "sports": {
+      "super_bowl_winner": "Denver Broncos",
+      "super_bowl_score": "34-19 vs Atlanta Falcons",
+      "super_bowl_mvp": "John Elway",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "San Antonio Spurs",
+      "nba_mvp": "Karl Malone",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Lindsay Davenport",
+      "f1_champion": "Mika Häkkinen",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Y2K preparations dominate the year; Napster launches; Google Inc. incorporated in a garage; WiFi standard (802.11b) released",
+    "top_computer": "Apple iMac G3",
+    "top_computer_price_usd": 1199,
+    "avg_hard_drive_mb": 8000,
+    "mobile_subscribers_millions": 490,
+    "notable_releases": [
+      "Napster launched by Shawn Fanning in June, transforming music consumption and piracy",
+      "Google moves from Stanford to a garage in Menlo Park as a funded startup",
+      "Wi-Fi (IEEE 802.11b) standard released commercially",
+      "The Matrix film introduces bullet-time photography and popularizes cyberpunk aesthetics"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Euro currency introduced across 11 European nations, the largest monetary union in history"},
+    {"month": 3, "event": "NATO begins bombing Yugoslavia over Kosovo, the first major military action in Europe since WWII"},
+    {"month": 4, "event": "Columbine High School massacre: two students kill 13 and injure 21 before killing themselves in Colorado"},
+    {"month": 12, "event": "Panama Canal officially transferred from US to Panamanian sovereignty, fulfilling the 1977 treaty"},
+    {"month": 12, "event": "World holds its breath for Y2K - feared computer bug causes only minor disruptions as the millennium turns"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Gerhard Schröder",
+    "ussr_leader": null,
+    "china_leader": "Jiang Zemin",
+    "india_pm": "Atal Bihari Vajpayee",
+    "japan_pm": "Keizo Obuchi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Billie Eilish", "month": 12, "field": "Music"},
+    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
+    {"name": "Olivia Rodrigo", "month": 2, "field": "Music"},
+    {"name": "Finn Wolfhard", "month": 12, "field": "Television/Film"},
+    {"name": "Noah Cyrus", "month": 1, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 279.0,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 33849,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.5,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 28524,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1010.7,
+      "life_expectancy": 63.1,
+      "gdp_per_capita_usd": 444,
+      "leader": "Atal Bihari Vajpayee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.2,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 26084,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 126.7,
+      "life_expectancy": 81.2,
+      "gdp_per_capita_usd": 35705,
+      "leader": "Keizo Obuchi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 60.5,
+      "life_expectancy": 78.9,
+      "gdp_per_capita_usd": 24140,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 172.0,
+      "life_expectancy": 69.4,
+      "gdp_per_capita_usd": 3530,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1253.6,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 866,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 19.0,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 20645,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 30.7,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 22178,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

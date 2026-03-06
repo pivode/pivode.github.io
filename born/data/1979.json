@@ -1,0 +1,198 @@
+{
+  "year": 1979,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.38,
+    "births_millions": 133,
+    "life_expectancy_global": 63.3,
+    "countries_count": 152,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 11674,
+    "us_median_household_income_usd": 16461,
+    "us_inflation_pct": 11.35,
+    "us_unemployment_pct": 5.8,
+    "us_minimum_wage_usd": 2.90,
+    "sp500_year_end": 107.94,
+    "dow_jones_year_end": 838.74,
+    "gold_oz_usd": 307.80,
+    "oil_barrel_usd": 31.61
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.86,
+    "gallon_milk_usd": 1.94,
+    "dozen_eggs_usd": 0.86,
+    "loaf_bread_usd": 0.37,
+    "movie_ticket_usd": 2.47,
+    "new_car_avg_usd": 5500,
+    "median_home_usd": 55700,
+    "first_class_stamp_cents": 15,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "My Sharona",
+      "billboard_no1_artist": "The Knack",
+      "grammy_record": "Just the Way You Are",
+      "grammy_record_artist": "Billy Joel",
+      "grammy_album": "52nd Street",
+      "grammy_album_artist": "Billy Joel",
+      "uk_no1_jan": "YMCA",
+      "uk_no1_jan_artist": "Village People"
+    },
+    "film": {
+      "box_office_no1": "Kramer vs. Kramer",
+      "box_office_no1_gross_m": 106.3,
+      "oscar_best_picture": "The Deer Hunter",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Michael Cimino",
+      "oscar_best_actor": "Jon Voight",
+      "oscar_best_actor_film": "Coming Home",
+      "oscar_best_actress": "Jane Fonda",
+      "oscar_best_actress_film": "Coming Home"
+    },
+    "television": {
+      "most_watched_show": "Laverne & Shirley",
+      "most_watched_network": "ABC",
+      "emmy_drama": "Lou Grant",
+      "emmy_comedy": "Taxi",
+      "notable_premieres": ["Knots Landing", "The Dukes of Hazzard", "Benson"],
+      "notable_finales": ["Welcome Back, Kotter"]
+    },
+    "books": {
+      "fiction_bestseller": "The Matarese Circle",
+      "fiction_bestseller_author": "Robert Ludlum",
+      "nonfiction_bestseller": "Aunt Erma's Cope Book",
+      "nonfiction_bestseller_author": "Erma Bombeck",
+      "pulitzer_fiction": "The Stories of John Cheever",
+      "pulitzer_fiction_author": "John Cheever"
+    },
+    "sports": {
+      "super_bowl_winner": "Pittsburgh Steelers",
+      "super_bowl_score": "35-31 vs Dallas Cowboys",
+      "super_bowl_mvp": "Terry Bradshaw",
+      "world_series_winner": "Pittsburgh Pirates",
+      "nba_champion": "Seattle SuperSonics",
+      "nba_mvp": "Moses Malone",
+      "wimbledon_mens": "Bjorn Borg",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Jody Scheckter",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "VisiCalc becomes a commercial hit; Sony Walkman introduced, changing how people listen to music",
+    "top_computer": "Cray-1",
+    "top_computer_price_usd": 8900000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Sony Walkman introduced in Japan, creating the personal music revolution",
+      "Atari 400 and 800 home computers released, bringing color graphics home",
+      "Motorola 68000 microprocessor introduced, powering future Macs and game consoles",
+      "CompuServe becomes the first consumer online service provider in the US"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Iranian Revolution: Shah Mohammad Reza Pahlavi flees Iran; Ayatollah Khomeini returns from exile to establish an Islamic republic"},
+    {"month": 3, "event": "Three Mile Island nuclear accident in Pennsylvania - the worst nuclear incident in US history triggers global alarm"},
+    {"month": 6, "event": "OPEC announces another major oil price increase, deepening the energy crisis and stagflation across Western economies"},
+    {"month": 11, "event": "Iranian militants seize the US Embassy in Tehran, taking 66 Americans hostage in a crisis lasting 444 days"},
+    {"month": 12, "event": "Soviet Union invades Afghanistan, beginning a decade-long war that will contribute to the USSR's eventual collapse"}
+  ],
+  "leaders": {
+    "us_president": "Jimmy Carter",
+    "uk_pm": "James Callaghan (to May), then Margaret Thatcher",
+    "france_president": "Valéry Giscard d'Estaing",
+    "germany_chancellor": "Helmut Schmidt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Charan Singh",
+    "japan_pm": "Masayoshi Ohira",
+    "australia_pm": "Malcolm Fraser",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "João Figueiredo",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Heath Ledger", "month": 4, "field": "Film"},
+    {"name": "Kate Hudson", "month": 4, "field": "Film"},
+    {"name": "Norah Jones", "month": 3, "field": "Music"},
+    {"name": "Adam Levine", "month": 3, "field": "Music"},
+    {"name": "Pink", "month": 9, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 225.1,
+      "life_expectancy": 73.9,
+      "gdp_per_capita_usd": 11674,
+      "leader": "Jimmy Carter",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.2,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 7543,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 654.0,
+      "life_expectancy": 52.6,
+      "gdp_per_capita_usd": 190,
+      "leader": "Charan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.3,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 11968,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 115.9,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 9110,
+      "leader": "Masayoshi Ohira",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 53.8,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 10924,
+      "leader": "Valéry Giscard d'Estaing",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 115.2,
+      "life_expectancy": 62.8,
+      "gdp_per_capita_usd": 1938,
+      "leader": "João Figueiredo",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 969.0,
+      "life_expectancy": 67.2,
+      "gdp_per_capita_usd": 185,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 14.6,
+      "life_expectancy": 73.9,
+      "gdp_per_capita_usd": 10274,
+      "leader": "Malcolm Fraser",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 23.7,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 11659,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

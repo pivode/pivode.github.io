@@ -1,0 +1,198 @@
+{
+  "year": 2008,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.68,
+    "births_millions": 137,
+    "life_expectancy_global": 69.1,
+    "countries_count": 195,
+    "internet_users": 1580000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 48401,
+    "us_median_household_income_usd": 50303,
+    "us_inflation_pct": 3.8,
+    "us_unemployment_pct": 5.8,
+    "us_minimum_wage_usd": 6.55,
+    "sp500_year_end": 903.25,
+    "dow_jones_year_end": 8776.39,
+    "gold_oz_usd": 869.75,
+    "oil_barrel_usd": 61.95
+  },
+  "prices_us": {
+    "gallon_gas_usd": 3.27,
+    "gallon_milk_usd": 3.80,
+    "dozen_eggs_usd": 1.97,
+    "loaf_bread_usd": 1.37,
+    "movie_ticket_usd": 7.18,
+    "new_car_avg_usd": 27958,
+    "median_home_usd": 232100,
+    "first_class_stamp_cents": 42,
+    "big_mac_usd": 3.57
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Low",
+      "billboard_no1_artist": "Flo Rida featuring T-Pain",
+      "grammy_record": "Rehab",
+      "grammy_record_artist": "Amy Winehouse",
+      "grammy_album": "River: The Joni Letters",
+      "grammy_album_artist": "Herbie Hancock",
+      "uk_no1_jan": "When You Believe",
+      "uk_no1_jan_artist": "Leon Jackson"
+    },
+    "film": {
+      "box_office_no1": "The Dark Knight",
+      "box_office_no1_gross_m": 533.3,
+      "oscar_best_picture": "No Country for Old Men",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Joel Coen & Ethan Coen",
+      "oscar_best_actor": "Daniel Day-Lewis",
+      "oscar_best_actor_film": "There Will Be Blood",
+      "oscar_best_actress": "Marion Cotillard",
+      "oscar_best_actress_film": "La Vie en Rose"
+    },
+    "television": {
+      "most_watched_show": "American Idol",
+      "most_watched_network": "Fox",
+      "emmy_drama": "Mad Men",
+      "emmy_comedy": "30 Rock",
+      "notable_premieres": ["Breaking Bad", "True Blood", "The Big Bang Theory (S2)"],
+      "notable_finales": ["The Wire", "The Shield"]
+    },
+    "books": {
+      "fiction_bestseller": "Twilight",
+      "fiction_bestseller_author": "Stephenie Meyer",
+      "nonfiction_bestseller": "The Last Lecture",
+      "nonfiction_bestseller_author": "Randy Pausch",
+      "pulitzer_fiction": "The Brief Wondrous Life of Oscar Wao",
+      "pulitzer_fiction_author": "Junot Díaz"
+    },
+    "sports": {
+      "super_bowl_winner": "New York Giants",
+      "super_bowl_score": "17-14 vs New England Patriots",
+      "super_bowl_mvp": "Eli Manning",
+      "world_series_winner": "Philadelphia Phillies",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Kobe Bryant",
+      "wimbledon_mens": "Rafael Nadal",
+      "wimbledon_womens": "Venus Williams",
+      "f1_champion": "Lewis Hamilton",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Apple App Store launches with iPhone OS 2.0, creating the modern app economy; Android phones ship for the first time",
+    "top_computer": "MacBook Air",
+    "top_computer_price_usd": 1799,
+    "avg_hard_drive_mb": 500000,
+    "mobile_subscribers_millions": 4000,
+    "notable_releases": [
+      "Apple App Store launches July 10 with 500 apps, reaching 10 million downloads in 3 days",
+      "First Android phone (T-Mobile G1/HTC Dream) ships in October",
+      "MacBook Air unveiled January 15 as the world's thinnest laptop",
+      "Spotify launches in October in select European countries"
+    ]
+  },
+  "world_events": [
+    {"month": 9, "event": "Global financial crisis erupts as Lehman Brothers collapses on September 15 - the largest bankruptcy in US history - triggering a worldwide recession"},
+    {"month": 11, "event": "Barack Obama elected as the 44th President of the United States, becoming the first African American president in US history"},
+    {"month": 8, "event": "Beijing Summer Olympics open with a spectacular ceremony; Michael Phelps wins 8 gold medals, Usain Bolt sets 100m and 200m world records"},
+    {"month": 11, "event": "Mumbai terrorist attacks kill 166 people across the city over four days, executed by Pakistani militant group Lashkar-e-Taiba"},
+    {"month": 8, "event": "Russia invades Georgia in a brief war over the breakaway regions of South Ossetia and Abkhazia, reshaping Eastern European security"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Gordon Brown",
+    "france_president": "Nicolas Sarkozy",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Taro Aso",
+    "australia_pm": "Kevin Rudd",
+    "canada_pm": "Stephen Harper",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Ban Ki-moon",
+    "pope": "Pope Benedict XVI"
+  },
+  "notable_births": [
+    {"name": "Elon Musk's son X AE A-XII", "month": 5, "field": "Public Figure"},
+    {"name": "True Thompson", "month": 4, "field": "Entertainment"},
+    {"name": "Zola Jordan", "month": 7, "field": "Entertainment"},
+    {"name": "Axl Jack Duhamel", "month": 11, "field": "Entertainment"},
+    {"name": "Aleph Portman-Millepied", "month": 6, "field": "Entertainment"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 304.1,
+      "life_expectancy": 77.8,
+      "gdp_per_capita_usd": 48401,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 61.4,
+      "life_expectancy": 79.4,
+      "gdp_per_capita_usd": 46977,
+      "leader": "Gordon Brown",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1163.5,
+      "life_expectancy": 65.7,
+      "gdp_per_capita_usd": 1040,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.1,
+      "life_expectancy": 79.6,
+      "gdp_per_capita_usd": 45445,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.7,
+      "life_expectancy": 82.9,
+      "gdp_per_capita_usd": 38455,
+      "leader": "Taro Aso",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 62.1,
+      "life_expectancy": 81.2,
+      "gdp_per_capita_usd": 45379,
+      "leader": "Nicolas Sarkozy",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 191.5,
+      "life_expectancy": 72.9,
+      "gdp_per_capita_usd": 8625,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1324.7,
+      "life_expectancy": 74.9,
+      "gdp_per_capita_usd": 3414,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 21.4,
+      "life_expectancy": 81.5,
+      "gdp_per_capita_usd": 47272,
+      "leader": "Kevin Rudd",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 33.2,
+      "life_expectancy": 80.7,
+      "gdp_per_capita_usd": 45552,
+      "leader": "Stephen Harper",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "year": 1997,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.88,
+    "births_millions": 136,
+    "life_expectancy_global": 67.8,
+    "countries_count": 192,
+    "internet_users": 120000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 30300,
+    "us_median_household_income_usd": 37005,
+    "us_inflation_pct": 2.34,
+    "us_unemployment_pct": 4.9,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 970.43,
+    "dow_jones_year_end": 7908.25,
+    "gold_oz_usd": 290.23,
+    "oil_barrel_usd": 18.97
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.23,
+    "gallon_milk_usd": 3.23,
+    "dozen_eggs_usd": 1.17,
+    "loaf_bread_usd": 0.88,
+    "movie_ticket_usd": 4.59,
+    "new_car_avg_usd": 18100,
+    "median_home_usd": 124900,
+    "first_class_stamp_cents": 32,
+    "big_mac_usd": 2.42
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Candle in the Wind 1997 / Something About the Way You Look Tonight",
+      "billboard_no1_artist": "Elton John",
+      "grammy_record": "Change the World",
+      "grammy_record_artist": "Eric Clapton",
+      "grammy_album": "Falling into You",
+      "grammy_album_artist": "Celine Dion",
+      "uk_no1_jan": "2 Become 1",
+      "uk_no1_jan_artist": "Spice Girls"
+    },
+    "film": {
+      "box_office_no1": "Titanic",
+      "box_office_no1_gross_m": 600.8,
+      "oscar_best_picture": "The English Patient",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Anthony Minghella",
+      "oscar_best_actor": "Geoffrey Rush",
+      "oscar_best_actor_film": "Shine",
+      "oscar_best_actress": "Frances McDormand",
+      "oscar_best_actress_film": "Fargo"
+    },
+    "television": {
+      "most_watched_show": "ER",
+      "most_watched_network": "NBC",
+      "emmy_drama": "Law & Order",
+      "emmy_comedy": "Frasier",
+      "notable_premieres": ["Buffy the Vampire Slayer", "South Park", "Ally McBeal"],
+      "notable_finales": ["Mad About You (season 6)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Partner",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "Simple Abundance",
+      "nonfiction_bestseller_author": "Sarah Ban Breathnach",
+      "pulitzer_fiction": "Martin Dressler: The Tale of an American Dreamer",
+      "pulitzer_fiction_author": "Steven Millhauser"
+    },
+    "sports": {
+      "super_bowl_winner": "Green Bay Packers",
+      "super_bowl_score": "35-21 vs New England Patriots",
+      "super_bowl_mvp": "Desmond Howard",
+      "world_series_winner": "Florida Marlins",
+      "nba_champion": "Chicago Bulls",
+      "nba_mvp": "Karl Malone",
+      "wimbledon_mens": "Pete Sampras",
+      "wimbledon_womens": "Martina Hingis",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Deep Blue defeats Garry Kasparov at chess; Dolly the sheep cloned; DVD format launches; Netflix founded",
+    "top_computer": "Apple Power Mac G3",
+    "top_computer_price_usd": 2999,
+    "avg_hard_drive_mb": 2000,
+    "mobile_subscribers_millions": 215,
+    "notable_releases": [
+      "Deep Blue defeats world chess champion Garry Kasparov 3.5-2.5, first computer to beat a reigning champion",
+      "Dolly the sheep announced as first mammal cloned from an adult somatic cell",
+      "DVD format launched commercially, rapidly replacing VHS",
+      "Netflix founded by Reed Hastings and Marc Randolph as a DVD rental service"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Scientists in Scotland announce Dolly the sheep, the world's first cloned mammal from an adult cell, raising ethical questions globally"},
+    {"month": 7, "event": "Hong Kong transferred from British to Chinese sovereignty after 156 years as a colony, in a ceremony watched worldwide"},
+    {"month": 8, "event": "Princess Diana killed in a car crash in Paris; her death triggers an unprecedented global outpouring of grief"},
+    {"month": 9, "event": "Mother Teresa dies in Calcutta just days after Princess Diana, closing a remarkable chapter in 20th century history"},
+    {"month": 10, "event": "Asian financial crisis spreads from Thailand across Southeast Asia, wiping out trillions in market value"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "John Major (to May), then Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": null,
+    "china_leader": "Jiang Zemin",
+    "india_pm": "H. D. Deve Gowda (to Apr), then Inder Kumar Gujral",
+    "japan_pm": "Ryutaro Hashimoto",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Zendaya", "month": 9, "field": "Television/Film"},
+    {"name": "Chloe Grace Moretz", "month": 2, "field": "Film"},
+    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
+    {"name": "Simone Biles", "month": 3, "field": "Gymnastics"},
+    {"name": "Ansel Elgort", "month": 3, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 272.6,
+      "life_expectancy": 76.5,
+      "gdp_per_capita_usd": 30300,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 58.7,
+      "life_expectancy": 77.2,
+      "gdp_per_capita_usd": 26146,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 982.2,
+      "life_expectancy": 62.2,
+      "gdp_per_capita_usd": 415,
+      "leader": "Inder Kumar Gujral",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.1,
+      "life_expectancy": 77.2,
+      "gdp_per_capita_usd": 26507,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 126.2,
+      "life_expectancy": 80.7,
+      "gdp_per_capita_usd": 35012,
+      "leader": "Ryutaro Hashimoto",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 58.6,
+      "life_expectancy": 78.4,
+      "gdp_per_capita_usd": 26303,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 167.1,
+      "life_expectancy": 68.8,
+      "gdp_per_capita_usd": 5205,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1236.3,
+      "life_expectancy": 71.5,
+      "gdp_per_capita_usd": 780,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 18.5,
+      "life_expectancy": 78.3,
+      "gdp_per_capita_usd": 20785,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 30.3,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 20263,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

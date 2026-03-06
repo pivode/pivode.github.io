@@ -1,0 +1,198 @@
+{
+  "year": 1991,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.39,
+    "births_millions": 141,
+    "life_expectancy_global": 65.7,
+    "countries_count": 166,
+    "internet_users": 4400000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 24342,
+    "us_median_household_income_usd": 30126,
+    "us_inflation_pct": 4.23,
+    "us_unemployment_pct": 6.8,
+    "us_minimum_wage_usd": 4.25,
+    "sp500_year_end": 417.09,
+    "dow_jones_year_end": 3168.83,
+    "gold_oz_usd": 353.35,
+    "oil_barrel_usd": 21.50
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.14,
+    "gallon_milk_usd": 2.78,
+    "dozen_eggs_usd": 1.01,
+    "loaf_bread_usd": 0.70,
+    "movie_ticket_usd": 4.21,
+    "new_car_avg_usd": 16000,
+    "median_home_usd": 97000,
+    "first_class_stamp_cents": 29,
+    "big_mac_usd": 2.25
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "(Everything I Do) I Do It for You",
+      "billboard_no1_artist": "Bryan Adams",
+      "grammy_record": "Another Day in Paradise",
+      "grammy_record_artist": "Phil Collins",
+      "grammy_album": "Back on the Block",
+      "grammy_album_artist": "Quincy Jones",
+      "uk_no1_jan": "Sadness Part 1",
+      "uk_no1_jan_artist": "Enigma"
+    },
+    "film": {
+      "box_office_no1": "The Silence of the Lambs",
+      "box_office_no1_gross_m": 130.7,
+      "oscar_best_picture": "Dances with Wolves",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Kevin Costner",
+      "oscar_best_actor": "Jeremy Irons",
+      "oscar_best_actor_film": "Reversal of Fortune",
+      "oscar_best_actress": "Kathy Bates",
+      "oscar_best_actress_film": "Misery"
+    },
+    "television": {
+      "most_watched_show": "Cheers",
+      "most_watched_network": "NBC",
+      "emmy_drama": "L.A. Law",
+      "emmy_comedy": "Cheers",
+      "notable_premieres": ["Home Improvement", "Seinfeld (season 3)", "Clarissa Explains It All"],
+      "notable_finales": ["Dallas"]
+    },
+    "books": {
+      "fiction_bestseller": "Scarlett",
+      "fiction_bestseller_author": "Alexandra Ripley",
+      "nonfiction_bestseller": "Me: Stories of My Life",
+      "nonfiction_bestseller_author": "Katharine Hepburn",
+      "pulitzer_fiction": "Rabbit at Rest",
+      "pulitzer_fiction_author": "John Updike"
+    },
+    "sports": {
+      "super_bowl_winner": "New York Giants",
+      "super_bowl_score": "20-19 vs Buffalo Bills",
+      "super_bowl_mvp": "Ottis Anderson",
+      "world_series_winner": "Minnesota Twins",
+      "nba_champion": "Chicago Bulls",
+      "nba_mvp": "Michael Jordan",
+      "wimbledon_mens": "Michael Stich",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Ayrton Senna",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "World Wide Web goes public; Linux kernel released; Soviet internet nodes go online",
+    "top_computer": "IBM RS/6000",
+    "top_computer_price_usd": 12995,
+    "avg_hard_drive_mb": 100,
+    "mobile_subscribers_millions": 16,
+    "notable_releases": [
+      "World Wide Web made publicly available by CERN in August",
+      "Linus Torvalds releases Linux kernel 0.01, beginning the open-source revolution",
+      "Apple PowerBook 100 introduces the modern laptop form factor with trackball",
+      "id Software releases Wolfenstein 3D, creating the first-person shooter genre"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Gulf War: US-led coalition launches Operation Desert Storm, liberating Kuwait from Iraq in 100 hours of ground combat"},
+    {"month": 6, "event": "Yugoslavia begins to break apart as Slovenia and Croatia declare independence, starting a decade of Balkan wars"},
+    {"month": 8, "event": "Failed coup against Gorbachev in Moscow; Boris Yeltsin stands on a tank to defend democracy"},
+    {"month": 11, "event": "Magic Johnson announces he is HIV-positive, transforming public understanding of the AIDS epidemic"},
+    {"month": 12, "event": "Soviet Union formally dissolved on Christmas Day; Gorbachev resigns; 15 independent nations emerge"}
+  ],
+  "leaders": {
+    "us_president": "George H. W. Bush",
+    "uk_pm": "John Major",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev (dissolved Dec 25)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "Chandra Shekhar (to Jun), then P. V. Narasimha Rao",
+    "japan_pm": "Toshiki Kaifu (to Nov), then Kiichi Miyazawa",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "Fernando Collor de Mello",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Ed Sheeran", "month": 2, "field": "Music"},
+    {"name": "Ariana Grande", "month": 6, "field": "Music"},
+    {"name": "Nick Jonas", "month": 9, "field": "Music"},
+    {"name": "Emma Roberts", "month": 2, "field": "Film/Television"},
+    {"name": "Troye Sivan", "month": 6, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 253.0,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 24342,
+      "leader": "George H. W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 57.4,
+      "life_expectancy": 76.0,
+      "gdp_per_capita_usd": 18373,
+      "leader": "John Major",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 872.0,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 303,
+      "leader": "P. V. Narasimha Rao",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 79.8,
+      "life_expectancy": 75.7,
+      "gdp_per_capita_usd": 23647,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 123.9,
+      "life_expectancy": 79.1,
+      "gdp_per_capita_usd": 28920,
+      "leader": "Kiichi Miyazawa",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 56.9,
+      "life_expectancy": 77.2,
+      "gdp_per_capita_usd": 20808,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 151.6,
+      "life_expectancy": 66.4,
+      "gdp_per_capita_usd": 3000,
+      "leader": "Fernando Collor de Mello",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1158.2,
+      "life_expectancy": 69.8,
+      "gdp_per_capita_usd": 353,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 17.3,
+      "life_expectancy": 77.2,
+      "gdp_per_capita_usd": 18197,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 27.8,
+      "life_expectancy": 77.8,
+      "gdp_per_capita_usd": 21396,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

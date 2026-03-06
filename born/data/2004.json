@@ -1,0 +1,198 @@
+{
+  "year": 2004,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.38,
+    "births_millions": 133,
+    "life_expectancy_global": 67.9,
+    "countries_count": 194,
+    "internet_users": 817000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 40069,
+    "us_median_household_income_usd": 44334,
+    "us_inflation_pct": 2.7,
+    "us_unemployment_pct": 5.5,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1211.92,
+    "dow_jones_year_end": 10783.01,
+    "gold_oz_usd": 438.10,
+    "oil_barrel_usd": 41.51
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.88,
+    "gallon_milk_usd": 2.72,
+    "dozen_eggs_usd": 0.91,
+    "loaf_bread_usd": 1.01,
+    "movie_ticket_usd": 6.21,
+    "new_car_avg_usd": 27958,
+    "median_home_usd": 221000,
+    "first_class_stamp_cents": 37,
+    "big_mac_usd": 2.90
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Yeah!",
+      "billboard_no1_artist": "Usher featuring Lil Jon & Ludacris",
+      "grammy_record": "Clocks",
+      "grammy_record_artist": "Coldplay",
+      "grammy_album": "Speakerboxxx/The Love Below",
+      "grammy_album_artist": "OutKast",
+      "uk_no1_jan": "Mad World",
+      "uk_no1_jan_artist": "Michael Andrews featuring Gary Jules"
+    },
+    "film": {
+      "box_office_no1": "Shrek 2",
+      "box_office_no1_gross_m": 441.2,
+      "oscar_best_picture": "The Lord of the Rings: The Return of the King",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Peter Jackson",
+      "oscar_best_actor": "Sean Penn",
+      "oscar_best_actor_film": "Mystic River",
+      "oscar_best_actress": "Charlize Theron",
+      "oscar_best_actress_film": "Monster"
+    },
+    "television": {
+      "most_watched_show": "CSI: Crime Scene Investigation",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The Sopranos",
+      "emmy_comedy": "Arrested Development",
+      "notable_premieres": ["Lost", "Desperate Housewives", "House M.D.", "Deadwood"],
+      "notable_finales": ["Friends", "Frasier"]
+    },
+    "books": {
+      "fiction_bestseller": "The Da Vinci Code",
+      "fiction_bestseller_author": "Dan Brown",
+      "nonfiction_bestseller": "The South Beach Diet",
+      "nonfiction_bestseller_author": "Arthur Agatston",
+      "pulitzer_fiction": "The Known World",
+      "pulitzer_fiction_author": "Edward P. Jones"
+    },
+    "sports": {
+      "super_bowl_winner": "New England Patriots",
+      "super_bowl_score": "32-29 vs Carolina Panthers",
+      "super_bowl_mvp": "Tom Brady",
+      "world_series_winner": "Boston Red Sox",
+      "nba_champion": "Detroit Pistons",
+      "nba_mvp": "Kevin Garnett",
+      "wimbledon_mens": "Roger Federer",
+      "wimbledon_womens": "Maria Sharapova",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Facebook launches from Harvard dorm room in February; Gmail launches in April; Mozilla Firefox 1.0 debuts as serious IE challenger",
+    "top_computer": "Apple iMac G5",
+    "top_computer_price_usd": 1299,
+    "avg_hard_drive_mb": 160000,
+    "mobile_subscribers_millions": 1526,
+    "notable_releases": [
+      "Facebook launches February 4 from Mark Zuckerberg's Harvard dorm room",
+      "Mozilla Firefox 1.0 released in November, breaking Internet Explorer's dominance",
+      "Gmail launches in April with 1 GB of free storage - revolutionary at the time",
+      "World of Warcraft launches in November, becoming the largest MMORPG ever"
+    ]
+  },
+  "world_events": [
+    {"month": 12, "event": "Indian Ocean tsunami triggered by a 9.1-magnitude earthquake kills 227,898 people across 14 countries - one of the deadliest natural disasters in history"},
+    {"month": 3, "event": "Madrid train bombings kill 191 people and wound 2,050, the deadliest terrorist attack in European history since Lockerbie"},
+    {"month": 5, "event": "Abu Ghraib torture and prisoner abuse photos published, causing global outrage and damaging US credibility in the Iraq War"},
+    {"month": 11, "event": "George W. Bush re-elected US president, defeating John Kerry in a campaign dominated by the Iraq War and national security"},
+    {"month": 5, "event": "European Union expands by 10 countries on May 1, the largest single expansion in EU history, including former communist states"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Gerhard Schröder",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Junichiro Koizumi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Paul Martin",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Jaylen Brown", "month": 10, "field": "Basketball"},
+    {"name": "Asher Angel", "month": 6, "field": "Television/Music"},
+    {"name": "Gracie Abrams", "month": 7, "field": "Music"},
+    {"name": "Coco Gauff", "month": 3, "field": "Tennis"},
+    {"name": "Valentina Zenere", "month": 1, "field": "Television"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 292.8,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 40069,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.9,
+      "life_expectancy": 78.5,
+      "gdp_per_capita_usd": 36609,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1087.1,
+      "life_expectancy": 63.7,
+      "gdp_per_capita_usd": 631,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.5,
+      "life_expectancy": 78.6,
+      "gdp_per_capita_usd": 33613,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.8,
+      "life_expectancy": 82.1,
+      "gdp_per_capita_usd": 36522,
+      "leader": "Junichiro Koizumi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 60.4,
+      "life_expectancy": 79.8,
+      "gdp_per_capita_usd": 33913,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 184.2,
+      "life_expectancy": 71.6,
+      "gdp_per_capita_usd": 3639,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1296.2,
+      "life_expectancy": 72.9,
+      "gdp_per_capita_usd": 1508,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 20.1,
+      "life_expectancy": 80.5,
+      "gdp_per_capita_usd": 29968,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 32.0,
+      "life_expectancy": 79.8,
+      "gdp_per_capita_usd": 31629,
+      "leader": "Paul Martin",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

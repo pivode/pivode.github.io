@@ -1,0 +1,198 @@
+{
+  "year": 1981,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.53,
+    "births_millions": 128,
+    "life_expectancy_global": 64.2,
+    "countries_count": 156,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 13976,
+    "us_median_household_income_usd": 19074,
+    "us_inflation_pct": 10.33,
+    "us_unemployment_pct": 7.6,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 122.55,
+    "dow_jones_year_end": 875.00,
+    "gold_oz_usd": 460.00,
+    "oil_barrel_usd": 35.69
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.31,
+    "gallon_milk_usd": 2.19,
+    "dozen_eggs_usd": 0.91,
+    "loaf_bread_usd": 0.51,
+    "movie_ticket_usd": 2.78,
+    "new_car_avg_usd": 7200,
+    "median_home_usd": 66500,
+    "first_class_stamp_cents": 18,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Bette Davis Eyes",
+      "billboard_no1_artist": "Kim Carnes",
+      "grammy_record": "Sailing",
+      "grammy_record_artist": "Christopher Cross",
+      "grammy_album": "Christopher Cross",
+      "grammy_album_artist": "Christopher Cross",
+      "uk_no1_jan": "Imagine",
+      "uk_no1_jan_artist": "John Lennon"
+    },
+    "film": {
+      "box_office_no1": "Raiders of the Lost Ark",
+      "box_office_no1_gross_m": 212.2,
+      "oscar_best_picture": "Ordinary People",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Robert Redford",
+      "oscar_best_actor": "Robert De Niro",
+      "oscar_best_actor_film": "Raging Bull",
+      "oscar_best_actress": "Sissy Spacek",
+      "oscar_best_actress_film": "Coal Miner's Daughter"
+    },
+    "television": {
+      "most_watched_show": "Dallas",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Hill Street Blues",
+      "emmy_comedy": "Taxi",
+      "notable_premieres": ["Hill Street Blues", "Dynasty", "The Greatest American Hero"],
+      "notable_finales": ["The Dukes of Hazzard (season 3)"]
+    },
+    "books": {
+      "fiction_bestseller": "Noble House",
+      "fiction_bestseller_author": "James Clavell",
+      "nonfiction_bestseller": "Never-Ending War",
+      "nonfiction_bestseller_author": "Robert Leckie",
+      "pulitzer_fiction": "A Confederacy of Dunces",
+      "pulitzer_fiction_author": "John Kennedy Toole"
+    },
+    "sports": {
+      "super_bowl_winner": "Oakland Raiders",
+      "super_bowl_score": "27-10 vs Philadelphia Eagles",
+      "super_bowl_mvp": "Jim Plunkett",
+      "world_series_winner": "Los Angeles Dodgers",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Julius Erving",
+      "wimbledon_mens": "John McEnroe",
+      "wimbledon_womens": "Chris Evert Lloyd",
+      "f1_champion": "Nelson Piquet",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "IBM PC launched, establishing the standard for personal computing; first Space Shuttle Columbia flight",
+    "top_computer": "IBM Personal Computer (PC)",
+    "top_computer_price_usd": 1565,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "IBM Personal Computer (IBM PC) launched August 12, setting the standard for the PC industry",
+      "Space Shuttle Columbia completes first orbital test flight in April",
+      "MS-DOS 1.0 released by Microsoft as the operating system for the IBM PC",
+      "MTV (Music Television) launches, transforming the music industry"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "52 American hostages released from Iran after 444 days in captivity, moments after Ronald Reagan is inaugurated"},
+    {"month": 3, "event": "President Reagan shot and wounded in assassination attempt by John Hinckley Jr. outside a Washington hotel"},
+    {"month": 5, "event": "Pope John Paul II shot and gravely wounded in St. Peter's Square by Turkish gunman Mehmet Ali Agca"},
+    {"month": 7, "event": "Charles and Diana's royal wedding watched by 750 million people worldwide in BBC's most-watched broadcast"},
+    {"month": 10, "event": "Egyptian President Anwar Sadat assassinated by Islamic fundamentalists during a military parade in Cairo"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "Valéry Giscard d'Estaing (to May), then François Mitterrand",
+    "germany_chancellor": "Helmut Schmidt (to Oct), then Helmut Kohl",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Zenko Suzuki",
+    "australia_pm": "Malcolm Fraser",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "João Figueiredo",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Beyoncé", "month": 9, "field": "Music"},
+    {"name": "Justin Timberlake", "month": 1, "field": "Music"},
+    {"name": "Britney Spears", "month": 12, "field": "Music"},
+    {"name": "Paris Hilton", "month": 2, "field": "Media/Entertainment"},
+    {"name": "Elijah Wood", "month": 1, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 229.5,
+      "life_expectancy": 74.2,
+      "gdp_per_capita_usd": 13976,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.3,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 9447,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 683.3,
+      "life_expectancy": 53.9,
+      "gdp_per_capita_usd": 256,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.7,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 12239,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 117.6,
+      "life_expectancy": 76.0,
+      "gdp_per_capita_usd": 10168,
+      "leader": "Zenko Suzuki",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 54.2,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 12413,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 121.9,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 2348,
+      "leader": "João Figueiredo",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1000.7,
+      "life_expectancy": 68.4,
+      "gdp_per_capita_usd": 200,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 15.0,
+      "life_expectancy": 74.3,
+      "gdp_per_capita_usd": 11812,
+      "leader": "Malcolm Fraser",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 24.3,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 12077,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

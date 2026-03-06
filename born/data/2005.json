@@ -1,0 +1,198 @@
+{
+  "year": 2005,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.45,
+    "births_millions": 134,
+    "life_expectancy_global": 68.2,
+    "countries_count": 194,
+    "internet_users": 1000000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 42674,
+    "us_median_household_income_usd": 46326,
+    "us_inflation_pct": 3.4,
+    "us_unemployment_pct": 5.1,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 1248.29,
+    "dow_jones_year_end": 10717.50,
+    "gold_oz_usd": 513.00,
+    "oil_barrel_usd": 61.04
+  },
+  "prices_us": {
+    "gallon_gas_usd": 2.30,
+    "gallon_milk_usd": 3.22,
+    "dozen_eggs_usd": 1.00,
+    "loaf_bread_usd": 1.03,
+    "movie_ticket_usd": 6.41,
+    "new_car_avg_usd": 28399,
+    "median_home_usd": 240900,
+    "first_class_stamp_cents": 37,
+    "big_mac_usd": 3.06
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "We Belong Together",
+      "billboard_no1_artist": "Mariah Carey",
+      "grammy_record": "Here We Go Again",
+      "grammy_record_artist": "Ray Charles & Norah Jones",
+      "grammy_album": "Genius Loves Company",
+      "grammy_album_artist": "Ray Charles",
+      "uk_no1_jan": "Do They Know It's Christmas?",
+      "uk_no1_jan_artist": "Band Aid 20"
+    },
+    "film": {
+      "box_office_no1": "Star Wars: Episode III - Revenge of the Sith",
+      "box_office_no1_gross_m": 380.3,
+      "oscar_best_picture": "Million Dollar Baby",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Clint Eastwood",
+      "oscar_best_actor": "Jamie Foxx",
+      "oscar_best_actor_film": "Ray",
+      "oscar_best_actress": "Hilary Swank",
+      "oscar_best_actress_film": "Million Dollar Baby"
+    },
+    "television": {
+      "most_watched_show": "American Idol",
+      "most_watched_network": "Fox",
+      "emmy_drama": "Lost",
+      "emmy_comedy": "Everybody Loves Raymond",
+      "notable_premieres": ["The Office (US)", "How I Met Your Mother", "My Name Is Earl"],
+      "notable_finales": ["Everybody Loves Raymond", "Sex and the City (HBO)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Broker",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "You: The Owner's Manual",
+      "nonfiction_bestseller_author": "Michael F. Roizen & Mehmet C. Oz",
+      "pulitzer_fiction": "Gilead",
+      "pulitzer_fiction_author": "Marilynne Robinson"
+    },
+    "sports": {
+      "super_bowl_winner": "New England Patriots",
+      "super_bowl_score": "24-21 vs Philadelphia Eagles",
+      "super_bowl_mvp": "Deion Branch",
+      "world_series_winner": "Chicago White Sox",
+      "nba_champion": "San Antonio Spurs",
+      "nba_mvp": "Steve Nash",
+      "wimbledon_mens": "Roger Federer",
+      "wimbledon_womens": "Venus Williams",
+      "f1_champion": "Fernando Alonso",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "YouTube founded in February; Google Maps launches; Xbox 360 released - beginning of the HD gaming era",
+    "top_computer": "Apple Mac mini",
+    "top_computer_price_usd": 499,
+    "avg_hard_drive_mb": 160000,
+    "mobile_subscribers_millions": 2168,
+    "notable_releases": [
+      "YouTube founded in February by former PayPal employees, goes live in November",
+      "Google Maps launches in February, transforming how people navigate",
+      "Microsoft Xbox 360 launches in November, beginning the HD gaming console era",
+      "Reddit launched in June as a social news aggregation platform"
+    ]
+  },
+  "world_events": [
+    {"month": 8, "event": "Hurricane Katrina strikes the US Gulf Coast on August 29, devastating New Orleans and killing 1,833 people in the deadliest US natural disaster in 75 years"},
+    {"month": 7, "event": "London bombings on July 7 kill 52 people on the city's transport network in coordinated al-Qaeda-inspired attacks"},
+    {"month": 4, "event": "Pope John Paul II dies on April 2 after 26 years as pope; Joseph Ratzinger elected Pope Benedict XVI on April 19"},
+    {"month": 10, "event": "Kashmir earthquake kills over 73,000 people in Pakistan and India, leaving 3.5 million homeless as winter approaches"},
+    {"month": 12, "event": "Iraqi legislative elections held; millions vote to elect a permanent government under the new constitution"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Junichiro Koizumi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Paul Martin",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope Benedict XVI"
+  },
+  "notable_births": [
+    {"name": "Quavo", "month": 4, "field": "Music"},
+    {"name": "Zara Larsson", "month": 12, "field": "Music"},
+    {"name": "Tre Jones", "month": 1, "field": "Basketball"},
+    {"name": "Iann Dior", "month": 11, "field": "Music"},
+    {"name": "Xochitl Gomez", "month": 4, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 295.5,
+      "life_expectancy": 77.4,
+      "gdp_per_capita_usd": 42674,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 60.2,
+      "life_expectancy": 78.8,
+      "gdp_per_capita_usd": 40097,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1106.4,
+      "life_expectancy": 64.2,
+      "gdp_per_capita_usd": 730,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.4,
+      "life_expectancy": 78.8,
+      "gdp_per_capita_usd": 34060,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.8,
+      "life_expectancy": 82.3,
+      "gdp_per_capita_usd": 35632,
+      "leader": "Junichiro Koizumi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 60.7,
+      "life_expectancy": 80.1,
+      "gdp_per_capita_usd": 34703,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 186.1,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 4789,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1304.5,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 1753,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 20.4,
+      "life_expectancy": 80.8,
+      "gdp_per_capita_usd": 33631,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 32.3,
+      "life_expectancy": 80.1,
+      "gdp_per_capita_usd": 35078,
+      "leader": "Paul Martin",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

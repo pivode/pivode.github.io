@@ -1,0 +1,198 @@
+{
+  "year": 1989,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.18,
+    "births_millions": 138,
+    "life_expectancy_global": 66.9,
+    "countries_count": 159,
+    "internet_users": 100000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 22857,
+    "us_median_household_income_usd": 28906,
+    "us_inflation_pct": 4.83,
+    "us_unemployment_pct": 5.3,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 353.40,
+    "dow_jones_year_end": 2753.20,
+    "gold_oz_usd": 381.44,
+    "oil_barrel_usd": 18.33
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.02,
+    "gallon_milk_usd": 2.34,
+    "dozen_eggs_usd": 1.05,
+    "loaf_bread_usd": 0.71,
+    "movie_ticket_usd": 3.97,
+    "new_car_avg_usd": 12700,
+    "median_home_usd": 93100,
+    "first_class_stamp_cents": 25,
+    "big_mac_usd": 2.05
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Look Away",
+      "billboard_no1_artist": "Chicago",
+      "grammy_record": "Don't Worry, Be Happy",
+      "grammy_record_artist": "Bobby McFerrin",
+      "grammy_album": "Faith",
+      "grammy_album_artist": "George Michael",
+      "uk_no1_jan": "Especially for You",
+      "uk_no1_jan_artist": "Kylie Minogue & Jason Donovan"
+    },
+    "film": {
+      "box_office_no1": "Batman",
+      "box_office_no1_gross_m": 251.2,
+      "oscar_best_picture": "Rain Man",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Barry Levinson",
+      "oscar_best_actor": "Dustin Hoffman",
+      "oscar_best_actor_film": "Rain Man",
+      "oscar_best_actress": "Jodie Foster",
+      "oscar_best_actress_film": "The Accused"
+    },
+    "television": {
+      "most_watched_show": "Roseanne",
+      "most_watched_network": "ABC",
+      "emmy_drama": "L.A. Law",
+      "emmy_comedy": "Cheers",
+      "notable_premieres": ["Seinfeld", "Baywatch", "The Simpsons (series)"],
+      "notable_finales": ["Dynasty"]
+    },
+    "books": {
+      "fiction_bestseller": "Clear and Present Danger",
+      "fiction_bestseller_author": "Tom Clancy",
+      "nonfiction_bestseller": "All I Really Need to Know I Learned in Kindergarten",
+      "nonfiction_bestseller_author": "Robert Fulghum",
+      "pulitzer_fiction": "Breathing Lessons",
+      "pulitzer_fiction_author": "Anne Tyler"
+    },
+    "sports": {
+      "super_bowl_winner": "San Francisco 49ers",
+      "super_bowl_score": "20-16 vs Cincinnati Bengals",
+      "super_bowl_mvp": "Jerry Rice",
+      "world_series_winner": "Oakland Athletics",
+      "nba_champion": "Detroit Pistons",
+      "nba_mvp": "Magic Johnson",
+      "wimbledon_mens": "Boris Becker",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Alain Prost",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Tim Berners-Lee proposes the World Wide Web at CERN; Nintendo Game Boy launches globally",
+    "top_computer": "Apple Macintosh IIci",
+    "top_computer_price_usd": 6269,
+    "avg_hard_drive_mb": 40,
+    "mobile_subscribers_millions": 3.5,
+    "notable_releases": [
+      "Tim Berners-Lee submits his proposal for the World Wide Web at CERN on March 12",
+      "Nintendo Game Boy released worldwide, selling 118 million units over its lifetime",
+      "Intel 486 processor released, with 1.2 million transistors and integrated math coprocessor",
+      "First commercial internet service providers begin offering dial-up access"
+    ]
+  },
+  "world_events": [
+    {"month": 3, "event": "Exxon Valdez oil tanker runs aground in Prince William Sound, Alaska, spilling 11 million gallons in America's worst oil spill"},
+    {"month": 4, "event": "Tiananmen Square protests in Beijing grow to hundreds of thousands; government declares martial law"},
+    {"month": 6, "event": "Tiananmen Square massacre: Chinese military kills hundreds or thousands of democracy protesters"},
+    {"month": 11, "event": "Berlin Wall falls after East Germany opens its borders; crowds tear down the wall amid celebrations across Germany"},
+    {"month": 12, "event": "Romanian Revolution: Nicolae Ceausescu overthrown and executed on Christmas Day, ending communist rule"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan (to Jan), then George H. W. Bush",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Rajiv Gandhi (to Dec), then V. P. Singh",
+    "japan_pm": "Noboru Takeshita (to Jun), then Sosuke Uno",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "José Sarney",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Taylor Swift", "month": 12, "field": "Music"},
+    {"name": "Selena Gomez", "month": 7, "field": "Music/Television"},
+    {"name": "Miley Cyrus", "month": 11, "field": "Music/Television"},
+    {"name": "Daniel Radcliffe", "month": 7, "field": "Film"},
+    {"name": "Robert Pattinson", "month": 5, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 247.3,
+      "life_expectancy": 75.1,
+      "gdp_per_capita_usd": 22857,
+      "leader": "George H. W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 57.1,
+      "life_expectancy": 75.6,
+      "gdp_per_capita_usd": 16080,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 827.0,
+      "life_expectancy": 58.2,
+      "gdp_per_capita_usd": 346,
+      "leader": "Rajiv Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 62.1,
+      "life_expectancy": 75.4,
+      "gdp_per_capita_usd": 20726,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 123.1,
+      "life_expectancy": 78.8,
+      "gdp_per_capita_usd": 24808,
+      "leader": "Sosuke Uno",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 56.5,
+      "life_expectancy": 76.8,
+      "gdp_per_capita_usd": 19497,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 145.2,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 3018,
+      "leader": "José Sarney",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1108.5,
+      "life_expectancy": 69.3,
+      "gdp_per_capita_usd": 312,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 16.8,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 17878,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 26.8,
+      "life_expectancy": 77.4,
+      "gdp_per_capita_usd": 19983,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

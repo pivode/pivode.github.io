@@ -1,0 +1,198 @@
+{
+  "year": 1982,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.61,
+    "births_millions": 128,
+    "life_expectancy_global": 64.6,
+    "countries_count": 157,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 14411,
+    "us_median_household_income_usd": 20171,
+    "us_inflation_pct": 6.13,
+    "us_unemployment_pct": 9.7,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 140.64,
+    "dow_jones_year_end": 1046.54,
+    "gold_oz_usd": 448.12,
+    "oil_barrel_usd": 33.65
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.30,
+    "gallon_milk_usd": 2.24,
+    "dozen_eggs_usd": 0.88,
+    "loaf_bread_usd": 0.50,
+    "movie_ticket_usd": 2.94,
+    "new_car_avg_usd": 8000,
+    "median_home_usd": 67800,
+    "first_class_stamp_cents": 20,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Physical",
+      "billboard_no1_artist": "Olivia Newton-John",
+      "grammy_record": "Bette Davis Eyes",
+      "grammy_record_artist": "Kim Carnes",
+      "grammy_album": "Double Fantasy",
+      "grammy_album_artist": "John Lennon & Yoko Ono",
+      "uk_no1_jan": "Don't You Want Me",
+      "uk_no1_jan_artist": "Human League"
+    },
+    "film": {
+      "box_office_no1": "E.T. the Extra-Terrestrial",
+      "box_office_no1_gross_m": 359.2,
+      "oscar_best_picture": "Chariots of Fire",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Warren Beatty",
+      "oscar_best_actor": "Henry Fonda",
+      "oscar_best_actor_film": "On Golden Pond",
+      "oscar_best_actress": "Katharine Hepburn",
+      "oscar_best_actress_film": "On Golden Pond"
+    },
+    "television": {
+      "most_watched_show": "Dallas",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Hill Street Blues",
+      "emmy_comedy": "Barney Miller",
+      "notable_premieres": ["Late Night with David Letterman", "Cheers", "Family Ties"],
+      "notable_finales": ["M*A*S*H (finale set record with 106 million viewers in 1983)"]
+    },
+    "books": {
+      "fiction_bestseller": "E.T. the Extra-Terrestrial",
+      "fiction_bestseller_author": "William Kotzwinkle",
+      "nonfiction_bestseller": "Jane Fonda's Workout Book",
+      "nonfiction_bestseller_author": "Jane Fonda",
+      "pulitzer_fiction": "Rabbit Is Rich",
+      "pulitzer_fiction_author": "John Updike"
+    },
+    "sports": {
+      "super_bowl_winner": "San Francisco 49ers",
+      "super_bowl_score": "26-21 vs Cincinnati Bengals",
+      "super_bowl_mvp": "Joe Montana",
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Moses Malone",
+      "wimbledon_mens": "Jimmy Connors",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Keke Rosberg",
+      "fifa_world_cup": "Italy"
+    }
+  },
+  "technology": {
+    "milestone": "Commodore 64 released, becoming the best-selling personal computer of all time; TCP/IP protocols adopted, creating the modern internet",
+    "top_computer": "Commodore 64",
+    "top_computer_price_usd": 595,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Commodore 64 introduced for $595, eventually becoming best-selling personal computer in history",
+      "ARPANET officially adopts TCP/IP on January 1 - the true birthday of the modern internet",
+      "Compaq Computer releases its first IBM PC-compatible computer, launching the clone era",
+      "Intel 80286 processor released, bringing protected mode memory to PCs"
+    ]
+  },
+  "world_events": [
+    {"month": 4, "event": "Falklands War begins as Argentina invades the British Falkland Islands; Britain sends a naval task force 8,000 miles south"},
+    {"month": 6, "event": "Falklands War ends with British victory; Argentina surrenders after 74 days of fighting"},
+    {"month": 6, "event": "Israel invades Lebanon, beginning an 18-year occupation and triggering the Lebanese Civil War's worst phase"},
+    {"month": 9, "event": "Sabra and Shatila massacre: Lebanese Christian militias kill hundreds of Palestinian refugees in Beirut camps under Israeli watch"},
+    {"month": 11, "event": "Leonid Brezhnev dies after 18 years as Soviet leader; Yuri Andropov succeeds him"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Leonid Brezhnev (to Nov), then Yuri Andropov",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Indira Gandhi",
+    "japan_pm": "Zenko Suzuki (to Nov), then Yasuhiro Nakasone",
+    "australia_pm": "Malcolm Fraser (to Mar), then Bob Hawke",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "João Figueiredo",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Prince William", "month": 6, "field": "Royalty"},
+    {"name": "Anne Hathaway", "month": 11, "field": "Film"},
+    {"name": "Kelly Clarkson", "month": 4, "field": "Music"},
+    {"name": "Scarlett Johansson", "month": 11, "field": "Film"},
+    {"name": "John Legend", "month": 12, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 231.7,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 14411,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.3,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 9531,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 700.0,
+      "life_expectancy": 54.6,
+      "gdp_per_capita_usd": 271,
+      "leader": "Indira Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.6,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 11316,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 118.4,
+      "life_expectancy": 76.5,
+      "gdp_per_capita_usd": 10068,
+      "leader": "Yasuhiro Nakasone",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 54.5,
+      "life_expectancy": 74.7,
+      "gdp_per_capita_usd": 11957,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 128.0,
+      "life_expectancy": 63.9,
+      "gdp_per_capita_usd": 2308,
+      "leader": "João Figueiredo",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1015.9,
+      "life_expectancy": 68.9,
+      "gdp_per_capita_usd": 202,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 15.2,
+      "life_expectancy": 74.6,
+      "gdp_per_capita_usd": 12126,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 24.6,
+      "life_expectancy": 75.7,
+      "gdp_per_capita_usd": 12584,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

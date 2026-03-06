@@ -1,0 +1,198 @@
+{
+  "year": 2010,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.84,
+    "births_millions": 139,
+    "life_expectancy_global": 69.8,
+    "countries_count": 195,
+    "internet_users": 2000000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 48374,
+    "us_median_household_income_usd": 49445,
+    "us_inflation_pct": 1.6,
+    "us_unemployment_pct": 9.6,
+    "us_minimum_wage_usd": 7.25,
+    "sp500_year_end": 1257.64,
+    "dow_jones_year_end": 11577.51,
+    "gold_oz_usd": 1420.25,
+    "oil_barrel_usd": 91.38
+  },
+  "prices_us": {
+    "gallon_gas_usd": 2.79,
+    "gallon_milk_usd": 3.33,
+    "dozen_eggs_usd": 1.54,
+    "loaf_bread_usd": 1.37,
+    "movie_ticket_usd": 7.89,
+    "new_car_avg_usd": 29217,
+    "median_home_usd": 221800,
+    "first_class_stamp_cents": 44,
+    "big_mac_usd": 3.71
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "TiK ToK",
+      "billboard_no1_artist": "Kesha",
+      "grammy_record": "Use Somebody",
+      "grammy_record_artist": "Kings of Leon",
+      "grammy_album": "Fearless",
+      "grammy_album_artist": "Taylor Swift",
+      "uk_no1_jan": "You Are Not Alone",
+      "uk_no1_jan_artist": "Joe McElderry"
+    },
+    "film": {
+      "box_office_no1": "Toy Story 3",
+      "box_office_no1_gross_m": 415.0,
+      "oscar_best_picture": "The Hurt Locker",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Kathryn Bigelow",
+      "oscar_best_actor": "Jeff Bridges",
+      "oscar_best_actor_film": "Crazy Heart",
+      "oscar_best_actress": "Sandra Bullock",
+      "oscar_best_actress_film": "The Blind Side"
+    },
+    "television": {
+      "most_watched_show": "American Idol",
+      "most_watched_network": "Fox",
+      "emmy_drama": "Mad Men",
+      "emmy_comedy": "Modern Family",
+      "notable_premieres": ["The Walking Dead", "Boardwalk Empire", "Downton Abbey", "Justified"],
+      "notable_finales": ["Lost", "24", "Law & Order (original)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Girl with the Dragon Tattoo",
+      "fiction_bestseller_author": "Stieg Larsson",
+      "nonfiction_bestseller": "Decision Points",
+      "nonfiction_bestseller_author": "George W. Bush",
+      "pulitzer_fiction": "Tinkers",
+      "pulitzer_fiction_author": "Paul Harding"
+    },
+    "sports": {
+      "super_bowl_winner": "New Orleans Saints",
+      "super_bowl_score": "31-17 vs Indianapolis Colts",
+      "super_bowl_mvp": "Drew Brees",
+      "world_series_winner": "San Francisco Giants",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "LeBron James",
+      "wimbledon_mens": "Rafael Nadal",
+      "wimbledon_womens": "Serena Williams",
+      "f1_champion": "Sebastian Vettel",
+      "fifa_world_cup": "Spain"
+    }
+  },
+  "technology": {
+    "milestone": "iPad launches in April; Instagram launches in October; 2 billion internet users reached; the app economy fully arrives",
+    "top_computer": "Apple iPad (1st generation)",
+    "top_computer_price_usd": 499,
+    "avg_hard_drive_mb": 500000,
+    "mobile_subscribers_millions": 5282,
+    "notable_releases": [
+      "Apple iPad launches April 3 - sells 3 million in 80 days, creating the tablet category",
+      "Instagram launches October 6 on iOS, gaining 1 million users in 3 months",
+      "Pinterest founded in March as a visual bookmarking platform",
+      "Windows Phone 7 launches as Microsoft's reimagined mobile platform"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Haiti earthquake kills over 160,000 people and devastates Port-au-Prince on January 12, triggering the largest humanitarian response in history"},
+    {"month": 4, "event": "Deepwater Horizon oil rig explodes in the Gulf of Mexico, killing 11 workers and causing the largest marine oil spill in US history over 87 days"},
+    {"month": 7, "event": "FIFA World Cup in South Africa ends with Spain winning its first-ever title, defeating Netherlands 1-0 in extra time in Johannesburg"},
+    {"month": 12, "event": "WikiLeaks begins publishing 250,000 classified US diplomatic cables, causing an international diplomatic crisis"},
+    {"month": 8, "event": "Pakistani floods affect 20 million people in the worst flooding in the country's history, submerging one-fifth of the country"}
+  ],
+  "leaders": {
+    "us_president": "Barack Obama",
+    "uk_pm": "David Cameron",
+    "france_president": "Nicolas Sarkozy",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Naoto Kan",
+    "australia_pm": "Julia Gillard",
+    "canada_pm": "Stephen Harper",
+    "brazil_president": "Dilma Rousseff",
+    "un_secretary": "Ban Ki-moon",
+    "pope": "Pope Benedict XVI"
+  },
+  "notable_births": [
+    {"name": "Stormi Webster", "month": 2, "field": "Entertainment"},
+    {"name": "Sienna Princess Kumar", "month": 1, "field": "Entertainment"},
+    {"name": "Alaia McBroom", "month": 6, "field": "Social Media"},
+    {"name": "Penelope Disick", "month": 7, "field": "Entertainment"},
+    {"name": "Mason Disick", "month": 12, "field": "Entertainment"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 309.3,
+      "life_expectancy": 78.5,
+      "gdp_per_capita_usd": 48374,
+      "leader": "Barack Obama",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 62.3,
+      "life_expectancy": 80.0,
+      "gdp_per_capita_usd": 38711,
+      "leader": "David Cameron",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1200.1,
+      "life_expectancy": 66.8,
+      "gdp_per_capita_usd": 1357,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 81.8,
+      "life_expectancy": 80.2,
+      "gdp_per_capita_usd": 41785,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 128.1,
+      "life_expectancy": 83.0,
+      "gdp_per_capita_usd": 43118,
+      "leader": "Naoto Kan",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 62.8,
+      "life_expectancy": 81.7,
+      "gdp_per_capita_usd": 40638,
+      "leader": "Nicolas Sarkozy",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 195.0,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 11121,
+      "leader": "Dilma Rousseff",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1337.7,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 4524,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 22.3,
+      "life_expectancy": 82.1,
+      "gdp_per_capita_usd": 51948,
+      "leader": "Julia Gillard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 34.0,
+      "life_expectancy": 81.1,
+      "gdp_per_capita_usd": 47447,
+      "leader": "Stephen Harper",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

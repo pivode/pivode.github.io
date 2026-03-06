@@ -1,0 +1,198 @@
+{
+  "year": 1990,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.31,
+    "births_millions": 140,
+    "life_expectancy_global": 65.4,
+    "countries_count": 165,
+    "internet_users": 3000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 23954,
+    "us_median_household_income_usd": 29943,
+    "us_inflation_pct": 5.4,
+    "us_unemployment_pct": 5.6,
+    "us_minimum_wage_usd": 3.80,
+    "sp500_year_end": 330.22,
+    "dow_jones_year_end": 2633.66,
+    "gold_oz_usd": 383.51,
+    "oil_barrel_usd": 23.19
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.16,
+    "gallon_milk_usd": 2.78,
+    "dozen_eggs_usd": 1.00,
+    "loaf_bread_usd": 0.70,
+    "movie_ticket_usd": 4.23,
+    "new_car_avg_usd": 15900,
+    "median_home_usd": 97300,
+    "first_class_stamp_cents": 25,
+    "big_mac_usd": 2.25
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Hold On",
+      "billboard_no1_artist": "Wilson Phillips",
+      "grammy_record": "Wind Beneath My Wings",
+      "grammy_record_artist": "Bette Midler",
+      "grammy_album": "Nick of Time",
+      "grammy_album_artist": "Bonnie Raitt",
+      "uk_no1_jan": "Hangin' Tough",
+      "uk_no1_jan_artist": "New Kids on the Block"
+    },
+    "film": {
+      "box_office_no1": "Home Alone",
+      "box_office_no1_gross_m": 285.8,
+      "oscar_best_picture": "Driving Miss Daisy",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Oliver Stone",
+      "oscar_best_actor": "Daniel Day-Lewis",
+      "oscar_best_actor_film": "My Left Foot",
+      "oscar_best_actress": "Jessica Tandy",
+      "oscar_best_actress_film": "Driving Miss Daisy"
+    },
+    "television": {
+      "most_watched_show": "Cheers",
+      "most_watched_network": "NBC",
+      "emmy_drama": "L.A. Law",
+      "emmy_comedy": "Murphy Brown",
+      "notable_premieres": ["Twin Peaks", "The Simpsons (series)", "Law & Order"],
+      "notable_finales": ["ALF", "The Wonder Years (season 3)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Plains of Passage",
+      "fiction_bestseller_author": "Jean M. Auel",
+      "nonfiction_bestseller": "A Life on the Road",
+      "nonfiction_bestseller_author": "Charles Kuralt",
+      "pulitzer_fiction": "The Mambo Kings Play Songs of Love",
+      "pulitzer_fiction_author": "Oscar Hijuelos"
+    },
+    "sports": {
+      "super_bowl_winner": "San Francisco 49ers",
+      "super_bowl_score": "55-10 vs Denver Broncos",
+      "super_bowl_mvp": "Joe Montana",
+      "world_series_winner": "Cincinnati Reds",
+      "nba_champion": "Detroit Pistons",
+      "nba_mvp": "Magic Johnson",
+      "wimbledon_mens": "Stefan Edberg",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Ayrton Senna",
+      "fifa_world_cup": "West Germany"
+    }
+  },
+  "technology": {
+    "milestone": "Tim Berners-Lee proposes the World Wide Web at CERN; the first web server goes live",
+    "top_computer": "Macintosh IIfx",
+    "top_computer_price_usd": 9870,
+    "avg_hard_drive_mb": 40,
+    "mobile_subscribers_millions": 11,
+    "notable_releases": [
+      "Tim Berners-Lee publishes proposal for the World Wide Web at CERN",
+      "Windows 3.0 released by Microsoft, achieving mass-market success with 3 million copies sold in its first year",
+      "Adobe Photoshop 1.0 released for Macintosh",
+      "The Hubble Space Telescope launched aboard Space Shuttle Discovery"
+    ]
+  },
+  "world_events": [
+    {"month": 2, "event": "Nelson Mandela released from Victor Verster Prison after 27 years, signaling the end of apartheid in South Africa"},
+    {"month": 8, "event": "Iraq invades Kuwait, triggering the Gulf Crisis and a US-led international coalition response"},
+    {"month": 10, "event": "German reunification - East and West Germany officially reunify after 45 years of division"},
+    {"month": 11, "event": "Margaret Thatcher resigns as UK Prime Minister after 11 years, succeeded by John Major"},
+    {"month": 12, "event": "Lech Walesa elected President of Poland in the country's first popular presidential election"}
+  ],
+  "leaders": {
+    "us_president": "George H. W. Bush",
+    "uk_pm": "Margaret Thatcher (to Nov), then John Major",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "V. P. Singh (to Nov), then Chandra Shekhar",
+    "japan_pm": "Toshiki Kaifu",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "Fernando Collor de Mello",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Emma Watson", "month": 4, "field": "Film"},
+    {"name": "Usain Bolt", "month": 8, "field": "Athletics"},
+    {"name": "Nicki Minaj", "month": 12, "field": "Music"},
+    {"name": "Kristen Stewart", "month": 4, "field": "Film"},
+    {"name": "Chris Brown", "month": 5, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 249.6,
+      "life_expectancy": 75.4,
+      "gdp_per_capita_usd": 23954,
+      "leader": "George H. W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 57.2,
+      "life_expectancy": 75.9,
+      "gdp_per_capita_usd": 17160,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 849.5,
+      "life_expectancy": 58.5,
+      "gdp_per_capita_usd": 367,
+      "leader": "V. P. Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 79.4,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 22297,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 123.5,
+      "life_expectancy": 78.9,
+      "gdp_per_capita_usd": 25140,
+      "leader": "Toshiki Kaifu",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 56.7,
+      "life_expectancy": 77.0,
+      "gdp_per_capita_usd": 21374,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 149.5,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 3100,
+      "leader": "Fernando Collor de Mello",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1143.3,
+      "life_expectancy": 69.3,
+      "gdp_per_capita_usd": 317,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 17.1,
+      "life_expectancy": 77.0,
+      "gdp_per_capita_usd": 17721,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 27.7,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 20998,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

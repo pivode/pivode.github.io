@@ -1,0 +1,199 @@
+{
+  "year": 1985,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.83,
+    "births_millions": 128,
+    "life_expectancy_global": 65.4,
+    "countries_count": 159,
+    "internet_users": 1500
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 18236,
+    "us_median_household_income_usd": 23620,
+    "us_inflation_pct": 3.56,
+    "us_unemployment_pct": 7.2,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 211.28,
+    "dow_jones_year_end": 1546.67,
+    "gold_oz_usd": 317.42,
+    "oil_barrel_usd": 26.92
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.12,
+    "gallon_milk_usd": 2.18,
+    "dozen_eggs_usd": 0.80,
+    "loaf_bread_usd": 0.78,
+    "movie_ticket_usd": 3.55,
+    "new_car_avg_usd": 9005,
+    "median_home_usd": 82500,
+    "first_class_stamp_cents": 22,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Careless Whisper",
+      "billboard_no1_artist": "Wham! featuring George Michael",
+      "grammy_record": "What's Love Got to Do with It",
+      "grammy_record_artist": "Tina Turner",
+      "grammy_album": "Can't Slow Down",
+      "grammy_album_artist": "Lionel Richie",
+      "uk_no1_jan": "Do They Know It's Christmas?",
+      "uk_no1_jan_artist": "Band Aid"
+    },
+    "film": {
+      "box_office_no1": "Back to the Future",
+      "box_office_no1_gross_m": 210.6,
+      "oscar_best_picture": "Amadeus",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Milos Forman",
+      "oscar_best_actor": "F. Murray Abraham",
+      "oscar_best_actor_film": "Amadeus",
+      "oscar_best_actress": "Sally Field",
+      "oscar_best_actress_film": "Places in the Heart"
+    },
+    "television": {
+      "most_watched_show": "Dynasty",
+      "most_watched_network": "ABC",
+      "emmy_drama": "Cagney & Lacey",
+      "emmy_comedy": "The Cosby Show",
+      "notable_premieres": ["The Golden Girls", "Growing Pains", "Moonlighting"],
+      "notable_finales": ["Simon & Simon (season)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Mammoth Hunters",
+      "fiction_bestseller_author": "Jean M. Auel",
+      "nonfiction_bestseller": "Iacocca: An Autobiography",
+      "nonfiction_bestseller_author": "Lee Iacocca",
+      "pulitzer_fiction": "Foreign Affairs",
+      "pulitzer_fiction_author": "Alison Lurie"
+    },
+    "sports": {
+      "super_bowl_winner": "San Francisco 49ers",
+      "super_bowl_score": "38-16 vs Miami Dolphins",
+      "super_bowl_mvp": "Joe Montana",
+      "world_series_winner": "Kansas City Royals",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Moses Malone",
+      "wimbledon_mens": "Boris Becker",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Alain Prost",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Microsoft Windows 1.0 released; the Whole Earth 'Lectronic Link (WELL) online community launches",
+    "top_computer": "IBM PC AT",
+    "top_computer_price_usd": 5469,
+    "avg_hard_drive_mb": 10,
+    "mobile_subscribers_millions": 0.2,
+    "notable_releases": [
+      "Microsoft Windows 1.0 released on November 20",
+      "Nintendo Entertainment System (NES) launches in the US, reviving the home video game market",
+      "Aldus PageMaker released, pioneering desktop publishing",
+      "CD-ROM drives begin appearing in personal computers"
+    ]
+  },
+  "world_events": [
+    {"month": 3, "event": "Mikhail Gorbachev becomes Soviet leader, beginning reforms of glasnost and perestroika that will reshape the world"},
+    {"month": 6, "event": "TWA Flight 847 hijacked by Hezbollah; 17-day hostage ordeal grips the world"},
+    {"month": 7, "event": "Live Aid concerts held simultaneously in London and Philadelphia, raising $127 million for Ethiopian famine relief"},
+    {"month": 9, "event": "Wreck of the Titanic located by Robert Ballard at the bottom of the North Atlantic, 73 years after sinking"},
+    {"month": 11, "event": "Reagan and Gorbachev hold their first summit in Geneva, easing Cold War tensions after eight years of no US-Soviet summits"},
+    {"month": 11, "event": "Colombia's Nevado del Ruiz volcano erupts, destroying the town of Armero and killing over 23,000 people"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Rajiv Gandhi",
+    "japan_pm": "Yasuhiro Nakasone",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "José Sarney",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Cristiano Ronaldo", "month": 2, "field": "Football"},
+    {"name": "Michael Phelps", "month": 6, "field": "Swimming"},
+    {"name": "Keira Knightley", "month": 3, "field": "Film"},
+    {"name": "Lewis Hamilton", "month": 1, "field": "Motorsport"},
+    {"name": "Bruno Mars", "month": 10, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 238.5,
+      "life_expectancy": 74.7,
+      "gdp_per_capita_usd": 18236,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.6,
+      "life_expectancy": 75.1,
+      "gdp_per_capita_usd": 8578,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 765.1,
+      "life_expectancy": 56.6,
+      "gdp_per_capita_usd": 296,
+      "leader": "Rajiv Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.0,
+      "life_expectancy": 74.8,
+      "gdp_per_capita_usd": 11224,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 120.8,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 11324,
+      "leader": "Yasuhiro Nakasone",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 55.3,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 10135,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 135.5,
+      "life_expectancy": 64.1,
+      "gdp_per_capita_usd": 1662,
+      "leader": "José Sarney",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1058.5,
+      "life_expectancy": 67.6,
+      "gdp_per_capita_usd": 293,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 15.8,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 10011,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 25.8,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 14088,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "year": 1978,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.30,
+    "births_millions": 132,
+    "life_expectancy_global": 62.8,
+    "countries_count": 151,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 10550,
+    "us_median_household_income_usd": 15064,
+    "us_inflation_pct": 7.63,
+    "us_unemployment_pct": 6.1,
+    "us_minimum_wage_usd": 2.65,
+    "sp500_year_end": 96.11,
+    "dow_jones_year_end": 805.01,
+    "gold_oz_usd": 193.22,
+    "oil_barrel_usd": 14.02
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.63,
+    "gallon_milk_usd": 1.71,
+    "dozen_eggs_usd": 0.82,
+    "loaf_bread_usd": 0.34,
+    "movie_ticket_usd": 2.34,
+    "new_car_avg_usd": 5500,
+    "median_home_usd": 48700,
+    "first_class_stamp_cents": 15,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Shadow Dancing",
+      "billboard_no1_artist": "Andy Gibb",
+      "grammy_record": "Hotel California",
+      "grammy_record_artist": "Eagles",
+      "grammy_album": "Rumours",
+      "grammy_album_artist": "Fleetwood Mac",
+      "uk_no1_jan": "Mull of Kintyre / Girls' School",
+      "uk_no1_jan_artist": "Wings"
+    },
+    "film": {
+      "box_office_no1": "Grease",
+      "box_office_no1_gross_m": 188.7,
+      "oscar_best_picture": "Annie Hall",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Woody Allen",
+      "oscar_best_actor": "Richard Dreyfuss",
+      "oscar_best_actor_film": "The Goodbye Girl",
+      "oscar_best_actress": "Diane Keaton",
+      "oscar_best_actress_film": "Annie Hall"
+    },
+    "television": {
+      "most_watched_show": "Laverne & Shirley",
+      "most_watched_network": "ABC",
+      "emmy_drama": "The Rockford Files",
+      "emmy_comedy": "All in the Family",
+      "notable_premieres": ["Mork & Mindy", "Dallas", "Battlestar Galactica"],
+      "notable_finales": ["All in the Family"]
+    },
+    "books": {
+      "fiction_bestseller": "Chesapeake",
+      "fiction_bestseller_author": "James Michener",
+      "nonfiction_bestseller": "If Life Is a Bowl of Cherries, What Am I Doing in the Pits?",
+      "nonfiction_bestseller_author": "Erma Bombeck",
+      "pulitzer_fiction": "Elbow Room",
+      "pulitzer_fiction_author": "James Alan McPherson"
+    },
+    "sports": {
+      "super_bowl_winner": "Dallas Cowboys",
+      "super_bowl_score": "27-10 vs Denver Broncos",
+      "super_bowl_mvp": "Harvey Martin & Randy White",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Washington Bullets",
+      "nba_mvp": "Bill Walton",
+      "wimbledon_mens": "Bjorn Borg",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Mario Andretti",
+      "fifa_world_cup": "Argentina"
+    }
+  },
+  "technology": {
+    "milestone": "First GPS satellite launched; VisiCalc, the first spreadsheet program, invented - creating the business case for personal computers",
+    "top_computer": "Cray-1",
+    "top_computer_price_usd": 8900000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "VisiCalc spreadsheet program introduced for Apple II, the first killer app for personal computers",
+      "First experimental GPS Block I satellite launched",
+      "Space Invaders arcade game released, starting the golden age of arcade games",
+      "Intel 8086 processor released, founding the x86 architecture used in PCs today"
+    ]
+  },
+  "world_events": [
+    {"month": 3, "event": "Camp David Accords signed by Egypt and Israel brokered by President Carter, the first Arab-Israeli peace agreement"},
+    {"month": 8, "event": "Pope Paul VI dies; Pope John Paul I elected but dies after only 33 days - the shortest papacy in modern history"},
+    {"month": 10, "event": "Pope John Paul II elected, the first non-Italian pope in 455 years and first ever Polish pope"},
+    {"month": 11, "event": "Jonestown massacre: 918 people die in Guyana after cult leader Jim Jones orders mass poisoning, the largest US civilian death toll before 9/11"},
+    {"month": 12, "event": "China and the United States announce formal diplomatic recognition of each other"}
+  ],
+  "leaders": {
+    "us_president": "Jimmy Carter",
+    "uk_pm": "James Callaghan",
+    "france_president": "Valéry Giscard d'Estaing",
+    "germany_chancellor": "Helmut Schmidt",
+    "ussr_leader": "Leonid Brezhnev",
+    "china_leader": "Hua Guofeng",
+    "india_pm": "Morarji Desai",
+    "japan_pm": "Takeo Fukuda (to Dec), then Masayoshi Ohira",
+    "australia_pm": "Malcolm Fraser",
+    "canada_pm": "Pierre Trudeau",
+    "brazil_president": "João Figueiredo",
+    "un_secretary": "Kurt Waldheim",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Kobe Bryant", "month": 8, "field": "Basketball"},
+    {"name": "Ashton Kutcher", "month": 2, "field": "Television/Film"},
+    {"name": "Usher", "month": 10, "field": "Music"},
+    {"name": "James Franco", "month": 4, "field": "Film"},
+    {"name": "Nelly Furtado", "month": 12, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 222.6,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 10550,
+      "leader": "Jimmy Carter",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.2,
+      "life_expectancy": 73.4,
+      "gdp_per_capita_usd": 6009,
+      "leader": "James Callaghan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 643.0,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 176,
+      "leader": "Morarji Desai",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.3,
+      "life_expectancy": 73.4,
+      "gdp_per_capita_usd": 10178,
+      "leader": "Helmut Schmidt",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 114.9,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 8670,
+      "leader": "Takeo Fukuda",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 53.6,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 9165,
+      "leader": "Valéry Giscard d'Estaing",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 113.3,
+      "life_expectancy": 62.4,
+      "gdp_per_capita_usd": 1620,
+      "leader": "João Figueiredo",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 956.2,
+      "life_expectancy": 66.7,
+      "gdp_per_capita_usd": 156,
+      "leader": "Hua Guofeng",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 14.4,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 9329,
+      "leader": "Malcolm Fraser",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 23.5,
+      "life_expectancy": 74.7,
+      "gdp_per_capita_usd": 10673,
+      "leader": "Pierre Trudeau",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

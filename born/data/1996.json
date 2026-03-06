@@ -1,0 +1,198 @@
+{
+  "year": 1996,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 5.79,
+    "births_millions": 137,
+    "life_expectancy_global": 65.6,
+    "countries_count": 185,
+    "internet_users": 77000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 29968,
+    "us_median_household_income_usd": 35492,
+    "us_inflation_pct": 3.0,
+    "us_unemployment_pct": 5.4,
+    "us_minimum_wage_usd": 4.75,
+    "sp500_year_end": 740.74,
+    "dow_jones_year_end": 6448.27,
+    "gold_oz_usd": 369.00,
+    "oil_barrel_usd": 22.16
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.23,
+    "gallon_milk_usd": 3.21,
+    "dozen_eggs_usd": 0.95,
+    "loaf_bread_usd": 0.87,
+    "movie_ticket_usd": 4.42,
+    "new_car_avg_usd": 19100,
+    "median_home_usd": 115800,
+    "first_class_stamp_cents": 32,
+    "big_mac_usd": 2.36
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Macarena (Bayside Boys Mix)",
+      "billboard_no1_artist": "Los Del Rio",
+      "grammy_record": "Kiss from a Rose",
+      "grammy_record_artist": "Seal",
+      "grammy_album": "Jagged Little Pill",
+      "grammy_album_artist": "Alanis Morissette",
+      "uk_no1_jan": "Earth Song",
+      "uk_no1_jan_artist": "Michael Jackson"
+    },
+    "film": {
+      "box_office_no1": "Independence Day",
+      "box_office_no1_gross_m": 306.2,
+      "oscar_best_picture": "Braveheart",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Mel Gibson",
+      "oscar_best_actor": "Nicolas Cage",
+      "oscar_best_actor_film": "Leaving Las Vegas",
+      "oscar_best_actress": "Susan Sarandon",
+      "oscar_best_actress_film": "Dead Man Walking"
+    },
+    "television": {
+      "most_watched_show": "ER",
+      "most_watched_network": "NBC",
+      "emmy_drama": "ER",
+      "emmy_comedy": "Frasier",
+      "notable_premieres": ["7th Heaven", "Everybody Loves Raymond", "Sabrina the Teenage Witch"],
+      "notable_finales": ["Roseanne (season finale)", "Grace Under Fire"]
+    },
+    "books": {
+      "fiction_bestseller": "The Runaway Jury",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "Make the Connection",
+      "nonfiction_bestseller_author": "Oprah Winfrey & Bob Greene",
+      "pulitzer_fiction": "Independence Day",
+      "pulitzer_fiction_author": "Richard Ford"
+    },
+    "sports": {
+      "super_bowl_winner": "Dallas Cowboys",
+      "super_bowl_score": "27-17 vs Pittsburgh Steelers",
+      "super_bowl_mvp": "Larry Brown",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Chicago Bulls",
+      "nba_mvp": "Michael Jordan",
+      "wimbledon_mens": "Richard Krajicek",
+      "wimbledon_womens": "Steffi Graf",
+      "f1_champion": "Damon Hill",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Google founders meet at Stanford; DVD players go on sale; the dot-com boom accelerates",
+    "top_computer": "Pentium Pro 200 MHz PC",
+    "top_computer_price_usd": 3000,
+    "avg_hard_drive_mb": 2000,
+    "mobile_subscribers_millions": 145,
+    "notable_releases": [
+      "Nintendo 64 launches in Japan (June) and North America (September) with Super Mario 64",
+      "DVD players and discs go on sale in Japan, launching a new era of home video",
+      "Sergey Brin and Larry Page begin collaborating on the BackRub search engine that will become Google",
+      "Palm Pilot PDA released, pioneering the personal digital assistant market"
+    ]
+  },
+  "world_events": [
+    {"month": 3, "event": "Dunblane school massacre in Scotland kills 16 children and 1 teacher, leading to UK handgun ban"},
+    {"month": 7, "event": "TWA Flight 800 explodes off Long Island killing 230, triggering the longest aviation investigation in US history"},
+    {"month": 7, "event": "Summer Olympics open in Atlanta; Centennial Olympic Park bombing kills 2 during the Games"},
+    {"month": 9, "event": "Taliban capture Kabul, imposing strict Islamic law and banning women from schools and work across Afghanistan"},
+    {"month": 11, "event": "Bill Clinton re-elected US President, defeating Bob Dole with 379 electoral votes"}
+  ],
+  "leaders": {
+    "us_president": "Bill Clinton",
+    "uk_pm": "John Major",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "H. D. Deve Gowda",
+    "japan_pm": "Ryutaro Hashimoto",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Fernando Henrique Cardoso",
+    "un_secretary": "Boutros Boutros-Ghali (to Dec), then Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Billie Eilish", "month": 12, "field": "Music"},
+    {"name": "Zendaya", "month": 9, "field": "Film/Music"},
+    {"name": "Lorde", "month": 11, "field": "Music"},
+    {"name": "Simone Biles", "month": 3, "field": "Gymnastics"},
+    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 265.2,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 29968,
+      "leader": "Bill Clinton",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 58.6,
+      "life_expectancy": 77.2,
+      "gdp_per_capita_usd": 22075,
+      "leader": "John Major",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 948.7,
+      "life_expectancy": 61.7,
+      "gdp_per_capita_usd": 398,
+      "leader": "H. D. Deve Gowda",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 81.9,
+      "life_expectancy": 77.1,
+      "gdp_per_capita_usd": 29320,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 125.7,
+      "life_expectancy": 80.0,
+      "gdp_per_capita_usd": 37304,
+      "leader": "Ryutaro Hashimoto",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 58.3,
+      "life_expectancy": 78.4,
+      "gdp_per_capita_usd": 26824,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 162.4,
+      "life_expectancy": 68.6,
+      "gdp_per_capita_usd": 5158,
+      "leader": "Fernando Henrique Cardoso",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1223.9,
+      "life_expectancy": 70.9,
+      "gdp_per_capita_usd": 710,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 18.5,
+      "life_expectancy": 78.5,
+      "gdp_per_capita_usd": 21044,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 29.7,
+      "life_expectancy": 78.5,
+      "gdp_per_capita_usd": 20464,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

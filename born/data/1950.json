@@ -1,0 +1,198 @@
+{
+  "year": 1950,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.54,
+    "births_millions": 97,
+    "life_expectancy_global": 46.5,
+    "countries_count": 69,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1501,
+    "us_median_household_income_usd": 3300,
+    "us_inflation_pct": 1.26,
+    "us_unemployment_pct": 5.3,
+    "us_minimum_wage_usd": 0.75,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 235.41,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.71
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.27,
+    "gallon_milk_usd": 0.83,
+    "dozen_eggs_usd": 0.60,
+    "loaf_bread_usd": 0.14,
+    "movie_ticket_usd": 0.46,
+    "new_car_avg_usd": 1510,
+    "median_home_usd": 7354,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Goodnight, Irene",
+      "billboard_no1_artist": "Gordon Jenkins & The Weavers",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Rudolph the Red-Nosed Reindeer",
+      "uk_no1_jan_artist": "Nat King Cole"
+    },
+    "film": {
+      "box_office_no1": "Cinderella",
+      "box_office_no1_gross_m": 41.0,
+      "oscar_best_picture": "All About Eve",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Joseph L. Mankiewicz",
+      "oscar_best_actor": "Jose Ferrer",
+      "oscar_best_actor_film": "Cyrano de Bergerac",
+      "oscar_best_actress": "Judy Holliday",
+      "oscar_best_actress_film": "Born Yesterday"
+    },
+    "television": {
+      "most_watched_show": "Texaco Star Theatre",
+      "most_watched_network": "NBC",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": ["What's My Line?", "Your Show of Shows"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The Cardinal",
+      "fiction_bestseller_author": "Henry Morton Robinson",
+      "nonfiction_bestseller": "Betty Crocker's Picture Cook Book",
+      "nonfiction_bestseller_author": "Betty Crocker",
+      "pulitzer_fiction": "The Way West",
+      "pulitzer_fiction_author": "A.B. Guthrie Jr."
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Minneapolis Lakers",
+      "nba_mvp": null,
+      "wimbledon_mens": "Budge Patty",
+      "wimbledon_womens": "Louise Brough",
+      "f1_champion": "Giuseppe Farina",
+      "fifa_world_cup": "Uruguay"
+    }
+  },
+  "technology": {
+    "milestone": "ENIAC, the world's first general-purpose computer, made available for scientific calculations",
+    "top_computer": "ENIAC",
+    "top_computer_price_usd": 500000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Diners Club issues the first credit card",
+      "RCA introduces color television system",
+      "UNIVAC I computer nearly complete, commissioned by US Census Bureau",
+      "First organ transplants attempted by medical researchers"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "United Nations headquarters officially opens in New York City"},
+    {"month": 6, "event": "North Korea invades South Korea, triggering the Korean War and US-led UN military intervention"},
+    {"month": 8, "event": "US Senator Joseph McCarthy intensifies anti-communist 'Red Scare' investigations"},
+    {"month": 9, "event": "UN forces led by General MacArthur land at Inchon, turning the tide of the Korean War"},
+    {"month": 11, "event": "China enters the Korean War, pushing UN forces back below the 38th parallel"}
+  ],
+  "leaders": {
+    "us_president": "Harry S. Truman",
+    "uk_pm": "Clement Attlee",
+    "france_president": "Vincent Auriol",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Shigeru Yoshida",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Louis St. Laurent",
+    "brazil_president": "Getúlio Vargas",
+    "un_secretary": "Trygve Lie",
+    "pope": "Pope Pius XII"
+  },
+  "notable_births": [
+    {"name": "Stevie Wonder", "month": 5, "field": "Music"},
+    {"name": "Peter Gabriel", "month": 2, "field": "Music"},
+    {"name": "Bill Murray", "month": 9, "field": "Film"},
+    {"name": "Cybill Shepherd", "month": 2, "field": "Film"},
+    {"name": "Robbie Coltrane", "month": 3, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 152.3,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 1501,
+      "leader": "Harry S. Truman",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 50.6,
+      "life_expectancy": 69.2,
+      "gdp_per_capita_usd": 773,
+      "leader": "Clement Attlee",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 376.3,
+      "life_expectancy": 35.6,
+      "gdp_per_capita_usd": 64,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 50.0,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 505,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 83.6,
+      "life_expectancy": 61.3,
+      "gdp_per_capita_usd": 188,
+      "leader": "Shigeru Yoshida",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.8,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 775,
+      "leader": "Vincent Auriol",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 53.4,
+      "life_expectancy": 48.6,
+      "gdp_per_capita_usd": 133,
+      "leader": "Getúlio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 544.0,
+      "life_expectancy": 40.8,
+      "gdp_per_capita_usd": 50,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 8.2,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 1073,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 13.7,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 1307,
+      "leader": "Louis St. Laurent",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

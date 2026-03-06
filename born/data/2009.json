@@ -1,0 +1,198 @@
+{
+  "year": 2009,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.77,
+    "births_millions": 138,
+    "life_expectancy_global": 69.4,
+    "countries_count": 195,
+    "internet_users": 1800000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 46999,
+    "us_median_household_income_usd": 49777,
+    "us_inflation_pct": -0.4,
+    "us_unemployment_pct": 9.3,
+    "us_minimum_wage_usd": 7.25,
+    "sp500_year_end": 1115.10,
+    "dow_jones_year_end": 10428.05,
+    "gold_oz_usd": 1087.50,
+    "oil_barrel_usd": 79.36
+  },
+  "prices_us": {
+    "gallon_gas_usd": 2.35,
+    "gallon_milk_usd": 3.09,
+    "dozen_eggs_usd": 1.60,
+    "loaf_bread_usd": 1.37,
+    "movie_ticket_usd": 7.50,
+    "new_car_avg_usd": 26785,
+    "median_home_usd": 214000,
+    "first_class_stamp_cents": 44,
+    "big_mac_usd": 3.54
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Boom Boom Pow",
+      "billboard_no1_artist": "Black Eyed Peas",
+      "grammy_record": "Please Read the Letter",
+      "grammy_record_artist": "Robert Plant & Alison Krauss",
+      "grammy_album": "Raising Sand",
+      "grammy_album_artist": "Robert Plant & Alison Krauss",
+      "uk_no1_jan": "Hero",
+      "uk_no1_jan_artist": "X Factor Finalists"
+    },
+    "film": {
+      "box_office_no1": "Transformers: Revenge of the Fallen",
+      "box_office_no1_gross_m": 402.1,
+      "oscar_best_picture": "Slumdog Millionaire",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Danny Boyle",
+      "oscar_best_actor": "Sean Penn",
+      "oscar_best_actor_film": "Milk",
+      "oscar_best_actress": "Kate Winslet",
+      "oscar_best_actress_film": "The Reader"
+    },
+    "television": {
+      "most_watched_show": "American Idol",
+      "most_watched_network": "Fox",
+      "emmy_drama": "Mad Men",
+      "emmy_comedy": "30 Rock",
+      "notable_premieres": ["Modern Family", "Parks and Recreation", "Glee", "Community"],
+      "notable_finales": ["ER", "Battlestar Galactica"]
+    },
+    "books": {
+      "fiction_bestseller": "The Lost Symbol",
+      "fiction_bestseller_author": "Dan Brown",
+      "nonfiction_bestseller": "Arguing with Idiots",
+      "nonfiction_bestseller_author": "Glenn Beck",
+      "pulitzer_fiction": "Olive Kitteridge",
+      "pulitzer_fiction_author": "Elizabeth Strout"
+    },
+    "sports": {
+      "super_bowl_winner": "Pittsburgh Steelers",
+      "super_bowl_score": "27-23 vs Arizona Cardinals",
+      "super_bowl_mvp": "Santonio Holmes",
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "LeBron James",
+      "wimbledon_mens": "Roger Federer",
+      "wimbledon_womens": "Serena Williams",
+      "f1_champion": "Jenson Button",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Bitcoin white paper published by Satoshi Nakamoto; WhatsApp founded; Minecraft alpha released; US digital TV switchover complete",
+    "top_computer": "Apple MacBook Pro 13-inch",
+    "top_computer_price_usd": 1199,
+    "avg_hard_drive_mb": 500000,
+    "mobile_subscribers_millions": 4600,
+    "notable_releases": [
+      "Bitcoin genesis block mined on January 3 by the pseudonymous Satoshi Nakamoto",
+      "WhatsApp founded in January by former Yahoo employees Jan Koum and Brian Acton",
+      "Google Android 2.0 launches, rapidly gaining smartphone market share",
+      "Windows 7 released in October to strong reviews, fixing Vista's problems"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Barack Obama inaugurated as the 44th US President on January 20 before 1.8 million people on the National Mall - the largest crowd in Washington DC history"},
+    {"month": 6, "event": "H1N1 swine flu pandemic declared by WHO in June, eventually infecting 700 million people worldwide by August"},
+    {"month": 6, "event": "Michael Jackson dies suddenly on June 25 at age 50 from acute propofol intoxication, triggering global mourning"},
+    {"month": 4, "event": "Somali pirates seize the US cargo ship Maersk Alabama; Captain Richard Phillips held hostage before Navy SEAL rescue"},
+    {"month": 12, "event": "Copenhagen climate summit ends without a binding agreement, disappointing climate activists but establishing a voluntary framework"}
+  ],
+  "leaders": {
+    "us_president": "Barack Obama",
+    "uk_pm": "Gordon Brown",
+    "france_president": "Nicolas Sarkozy",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Hu Jintao",
+    "india_pm": "Manmohan Singh",
+    "japan_pm": "Yukio Hatoyama",
+    "australia_pm": "Kevin Rudd",
+    "canada_pm": "Stephen Harper",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Ban Ki-moon",
+    "pope": "Pope Benedict XVI"
+  },
+  "notable_births": [
+    {"name": "North West", "month": 6, "field": "Entertainment"},
+    {"name": "Saint-West", "month": 12, "field": "Entertainment"},
+    {"name": "Chicago West", "month": 1, "field": "Entertainment"},
+    {"name": "Psalm West", "month": 5, "field": "Entertainment"},
+    {"name": "Kim Possible (character revival era child)", "month": 1, "field": "Entertainment"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 306.8,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 46999,
+      "leader": "Barack Obama",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 61.8,
+      "life_expectancy": 79.7,
+      "gdp_per_capita_usd": 38592,
+      "leader": "Gordon Brown",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1182.0,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 1099,
+      "leader": "Manmohan Singh",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 81.9,
+      "life_expectancy": 79.9,
+      "gdp_per_capita_usd": 40661,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.6,
+      "life_expectancy": 83.0,
+      "gdp_per_capita_usd": 39321,
+      "leader": "Yukio Hatoyama",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 62.5,
+      "life_expectancy": 81.5,
+      "gdp_per_capita_usd": 41118,
+      "leader": "Nicolas Sarkozy",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 193.2,
+      "life_expectancy": 73.2,
+      "gdp_per_capita_usd": 8374,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1331.3,
+      "life_expectancy": 75.4,
+      "gdp_per_capita_usd": 3832,
+      "leader": "Hu Jintao",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 21.9,
+      "life_expectancy": 81.8,
+      "gdp_per_capita_usd": 42279,
+      "leader": "Kevin Rudd",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 33.6,
+      "life_expectancy": 80.9,
+      "gdp_per_capita_usd": 40317,
+      "leader": "Stephen Harper",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

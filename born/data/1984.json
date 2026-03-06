@@ -1,0 +1,198 @@
+{
+  "year": 1984,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.77,
+    "births_millions": 128,
+    "life_expectancy_global": 65.4,
+    "countries_count": 159,
+    "internet_users": 1000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 17121,
+    "us_median_household_income_usd": 22415,
+    "us_inflation_pct": 4.32,
+    "us_unemployment_pct": 7.5,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 167.24,
+    "dow_jones_year_end": 1211.57,
+    "gold_oz_usd": 309.91,
+    "oil_barrel_usd": 28.75
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.21,
+    "gallon_milk_usd": 2.26,
+    "dozen_eggs_usd": 1.01,
+    "loaf_bread_usd": 0.52,
+    "movie_ticket_usd": 3.36,
+    "new_car_avg_usd": 9300,
+    "median_home_usd": 72400,
+    "first_class_stamp_cents": 20,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "When Doves Cry",
+      "billboard_no1_artist": "Prince",
+      "grammy_record": "Beat It",
+      "grammy_record_artist": "Michael Jackson",
+      "grammy_album": "Thriller",
+      "grammy_album_artist": "Michael Jackson",
+      "uk_no1_jan": "Only You",
+      "uk_no1_jan_artist": "Flying Pickets"
+    },
+    "film": {
+      "box_office_no1": "Beverly Hills Cop",
+      "box_office_no1_gross_m": 234.8,
+      "oscar_best_picture": "Terms of Endearment",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "James L. Brooks",
+      "oscar_best_actor": "Robert Duvall",
+      "oscar_best_actor_film": "Tender Mercies",
+      "oscar_best_actress": "Shirley MacLaine",
+      "oscar_best_actress_film": "Terms of Endearment"
+    },
+    "television": {
+      "most_watched_show": "Dynasty",
+      "most_watched_network": "ABC",
+      "emmy_drama": "Hill Street Blues",
+      "emmy_comedy": "Cheers",
+      "notable_premieres": ["The Cosby Show", "Miami Vice", "Murder, She Wrote"],
+      "notable_finales": ["Magnum, P.I. (season 4)"]
+    },
+    "books": {
+      "fiction_bestseller": "The Talisman",
+      "fiction_bestseller_author": "Stephen King & Peter Straub",
+      "nonfiction_bestseller": "Iacocca: An Autobiography",
+      "nonfiction_bestseller_author": "Lee Iacocca",
+      "pulitzer_fiction": "Ironweed",
+      "pulitzer_fiction_author": "William Kennedy"
+    },
+    "sports": {
+      "super_bowl_winner": "Los Angeles Raiders",
+      "super_bowl_score": "38-9 vs Washington Redskins",
+      "super_bowl_mvp": "Marcus Allen",
+      "world_series_winner": "Detroit Tigers",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Larry Bird",
+      "wimbledon_mens": "John McEnroe",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Niki Lauda",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Apple Macintosh introduced with revolutionary GUI; William Gibson's Neuromancer coins the term 'cyberspace'",
+    "top_computer": "Apple Macintosh",
+    "top_computer_price_usd": 2495,
+    "avg_hard_drive_mb": 5,
+    "mobile_subscribers_millions": 0.1,
+    "notable_releases": [
+      "Apple Macintosh unveiled January 24 in legendary Super Bowl ad, introducing GUI computing to the mass market",
+      "IBM PC AT with 80286 processor released",
+      "William Gibson publishes Neuromancer, defining cyberpunk and coining 'cyberspace'",
+      "MIDI becomes the standard for electronic music, enabling modern music production"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Apple Computer launches the Macintosh in a famous Super Bowl commercial, revolutionizing personal computing"},
+    {"month": 6, "event": "Sikh militants occupying the Golden Temple in Amritsar stormed by Indian Army in Operation Blue Star"},
+    {"month": 10, "event": "Indian Prime Minister Indira Gandhi assassinated by her own Sikh bodyguards, triggering anti-Sikh riots killing 3,000"},
+    {"month": 11, "event": "Ronald Reagan wins 49-state landslide reelection over Walter Mondale"},
+    {"month": 12, "event": "Union Carbide gas leak in Bhopal, India kills thousands immediately; ultimately causes 15,000-20,000 deaths"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Yuri Andropov (to Feb), then Konstantin Chernenko",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Indira Gandhi (to Oct), then Rajiv Gandhi",
+    "japan_pm": "Yasuhiro Nakasone",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Pierre Trudeau (to Jun), then John Turner",
+    "brazil_president": "João Figueiredo",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Katy Perry", "month": 10, "field": "Music"},
+    {"name": "LeBron James", "month": 12, "field": "Basketball"},
+    {"name": "Scarlett Johansson", "month": 11, "field": "Film"},
+    {"name": "Mandy Moore", "month": 4, "field": "Music/Film"},
+    {"name": "Jesse Eisenberg", "month": 10, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 236.3,
+      "life_expectancy": 74.7,
+      "gdp_per_capita_usd": 17121,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.5,
+      "life_expectancy": 74.4,
+      "gdp_per_capita_usd": 8274,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 735.0,
+      "life_expectancy": 56.0,
+      "gdp_per_capita_usd": 268,
+      "leader": "Rajiv Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.2,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 10157,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 120.0,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 10663,
+      "leader": "Yasuhiro Nakasone",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 55.0,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 9907,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 132.3,
+      "life_expectancy": 64.9,
+      "gdp_per_capita_usd": 1868,
+      "leader": "João Figueiredo",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1043.5,
+      "life_expectancy": 69.9,
+      "gdp_per_capita_usd": 250,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 15.5,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 12011,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 25.1,
+      "life_expectancy": 76.2,
+      "gdp_per_capita_usd": 14017,
+      "leader": "John Turner",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

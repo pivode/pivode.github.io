@@ -1,0 +1,198 @@
+{
+  "year": 1986,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 4.93,
+    "births_millions": 129,
+    "life_expectancy_global": 65.8,
+    "countries_count": 159,
+    "internet_users": 5000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 18980,
+    "us_median_household_income_usd": 24897,
+    "us_inflation_pct": 1.91,
+    "us_unemployment_pct": 7.0,
+    "us_minimum_wage_usd": 3.35,
+    "sp500_year_end": 242.17,
+    "dow_jones_year_end": 1895.95,
+    "gold_oz_usd": 395.00,
+    "oil_barrel_usd": 14.44
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.93,
+    "gallon_milk_usd": 2.22,
+    "dozen_eggs_usd": 0.87,
+    "loaf_bread_usd": 0.57,
+    "movie_ticket_usd": 3.71,
+    "new_car_avg_usd": 9500,
+    "median_home_usd": 80300,
+    "first_class_stamp_cents": 22,
+    "big_mac_usd": 1.60
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "That's What Friends Are For",
+      "billboard_no1_artist": "Dionne & Friends",
+      "grammy_record": "We Are the World",
+      "grammy_record_artist": "USA for Africa",
+      "grammy_album": "No Jacket Required",
+      "grammy_album_artist": "Phil Collins",
+      "uk_no1_jan": "Merry Christmas Everyone",
+      "uk_no1_jan_artist": "Shakin' Stevens"
+    },
+    "film": {
+      "box_office_no1": "Top Gun",
+      "box_office_no1_gross_m": 179.8,
+      "oscar_best_picture": "Out of Africa",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Sydney Pollack",
+      "oscar_best_actor": "William Hurt",
+      "oscar_best_actor_film": "Kiss of the Spider Woman",
+      "oscar_best_actress": "Geraldine Page",
+      "oscar_best_actress_film": "The Trip to Bountiful"
+    },
+    "television": {
+      "most_watched_show": "The Cosby Show",
+      "most_watched_network": "NBC",
+      "emmy_drama": "Cagney & Lacey",
+      "emmy_comedy": "The Golden Girls",
+      "notable_premieres": ["ALF", "L.A. Law", "Pee-wee's Playhouse"],
+      "notable_finales": ["Miami Vice (season 2)"]
+    },
+    "books": {
+      "fiction_bestseller": "It",
+      "fiction_bestseller_author": "Stephen King",
+      "nonfiction_bestseller": "Fatherhood",
+      "nonfiction_bestseller_author": "Bill Cosby",
+      "pulitzer_fiction": "Foreign Affairs",
+      "pulitzer_fiction_author": "Alison Lurie"
+    },
+    "sports": {
+      "super_bowl_winner": "Chicago Bears",
+      "super_bowl_score": "46-10 vs New England Patriots",
+      "super_bowl_mvp": "Richard Dent",
+      "world_series_winner": "New York Mets",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": "Magic Johnson",
+      "wimbledon_mens": "Boris Becker",
+      "wimbledon_womens": "Martina Navratilova",
+      "f1_champion": "Alain Prost",
+      "fifa_world_cup": "Argentina"
+    }
+  },
+  "technology": {
+    "milestone": "Chernobyl nuclear disaster; Compaq introduces the first 386-based PC; Internet grows as NSFNET backbone expands",
+    "top_computer": "Compaq Deskpro 386",
+    "top_computer_price_usd": 6499,
+    "avg_hard_drive_mb": 20,
+    "mobile_subscribers_millions": 0.5,
+    "notable_releases": [
+      "Chernobyl nuclear reactor 4 explodes in the worst nuclear accident in history",
+      "Compaq introduces first PC with Intel 386 processor, beating IBM to market",
+      "NSFNET backbone network expanded, accelerating internet connectivity across US universities",
+      "Pixar Animation Studios founded after George Lucas sells computer division to Steve Jobs"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Space Shuttle Challenger explodes 73 seconds after launch, killing all seven crew members including teacher Christa McAuliffe"},
+    {"month": 4, "event": "Chernobyl nuclear plant reactor 4 explodes in Ukraine, releasing radiation across Europe in worst nuclear accident in history"},
+    {"month": 6, "event": "Diego Maradona scores 'Hand of God' goal and then 'Goal of the Century' against England in the World Cup quarter-finals"},
+    {"month": 10, "event": "Reagan and Gorbachev meet in Reykjavik; talks collapse over Reagan's refusal to abandon Star Wars SDI"},
+    {"month": 11, "event": "Iran-Contra affair revealed: Reagan administration secretly sold weapons to Iran and funneled proceeds to Nicaraguan rebels"}
+  ],
+  "leaders": {
+    "us_president": "Ronald Reagan",
+    "uk_pm": "Margaret Thatcher",
+    "france_president": "François Mitterrand",
+    "germany_chancellor": "Helmut Kohl",
+    "ussr_leader": "Mikhail Gorbachev",
+    "china_leader": "Deng Xiaoping",
+    "india_pm": "Rajiv Gandhi",
+    "japan_pm": "Yasuhiro Nakasone",
+    "australia_pm": "Bob Hawke",
+    "canada_pm": "Brian Mulroney",
+    "brazil_president": "José Sarney",
+    "un_secretary": "Javier Pérez de Cuéllar",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "Adele", "month": 5, "field": "Music"},
+    {"name": "Lady Gaga", "month": 3, "field": "Music"},
+    {"name": "Megan Fox", "month": 5, "field": "Film"},
+    {"name": "Drake", "month": 10, "field": "Music"},
+    {"name": "Rafael Nadal", "month": 6, "field": "Tennis"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 240.1,
+      "life_expectancy": 74.7,
+      "gdp_per_capita_usd": 18980,
+      "leader": "Ronald Reagan",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 56.6,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 10086,
+      "leader": "Margaret Thatcher",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 770.2,
+      "life_expectancy": 57.3,
+      "gdp_per_capita_usd": 290,
+      "leader": "Rajiv Gandhi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 61.1,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 12972,
+      "leader": "Helmut Kohl",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 121.0,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 17051,
+      "leader": "Yasuhiro Nakasone",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 55.5,
+      "life_expectancy": 76.0,
+      "gdp_per_capita_usd": 13013,
+      "leader": "François Mitterrand",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 137.3,
+      "life_expectancy": 65.4,
+      "gdp_per_capita_usd": 2009,
+      "leader": "José Sarney",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1069.5,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 280,
+      "leader": "Deng Xiaoping",
+      "leader_title": "Paramount Leader"
+    },
+    "AU": {
+      "population_millions": 16.0,
+      "life_expectancy": 75.9,
+      "gdp_per_capita_usd": 11406,
+      "leader": "Bob Hawke",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 25.6,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 14545,
+      "leader": "Brian Mulroney",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

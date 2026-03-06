@@ -1,0 +1,198 @@
+{
+  "year": 1959,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.96,
+    "births_millions": 103,
+    "life_expectancy_global": 51.0,
+    "countries_count": 85,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 2342,
+    "us_median_household_income_usd": 5400,
+    "us_inflation_pct": 0.69,
+    "us_unemployment_pct": 5.5,
+    "us_minimum_wage_usd": 1.00,
+    "sp500_year_end": 59.89,
+    "dow_jones_year_end": 679.36,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.90
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.31,
+    "gallon_milk_usd": 1.01,
+    "dozen_eggs_usd": 0.53,
+    "loaf_bread_usd": 0.20,
+    "movie_ticket_usd": 0.51,
+    "new_car_avg_usd": 2200,
+    "median_home_usd": 12400,
+    "first_class_stamp_cents": 4,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Mack the Knife",
+      "billboard_no1_artist": "Bobby Darin",
+      "grammy_record": "Midnight Flyer",
+      "grammy_record_artist": "Bobby Darin",
+      "grammy_album": "Come Dance with Me!",
+      "grammy_album_artist": "Frank Sinatra",
+      "uk_no1_jan": "Does Your Chewing Gum Lose Its Flavour",
+      "uk_no1_jan_artist": "Lonnie Donegan"
+    },
+    "film": {
+      "box_office_no1": "Ben-Hur",
+      "box_office_no1_gross_m": 70.0,
+      "oscar_best_picture": "Gigi",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Vincente Minnelli",
+      "oscar_best_actor": "David Niven",
+      "oscar_best_actor_film": "Separate Tables",
+      "oscar_best_actress": "Susan Hayward",
+      "oscar_best_actress_film": "I Want to Live!"
+    },
+    "television": {
+      "most_watched_show": "Gunsmoke",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Playhouse 90",
+      "emmy_comedy": "The Jack Benny Program",
+      "notable_premieres": ["Rawhide", "Bonanza", "The Twilight Zone"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Exodus",
+      "fiction_bestseller_author": "Leon Uris",
+      "nonfiction_bestseller": "Twist Twelve and Twenty",
+      "nonfiction_bestseller_author": "Pat Boone",
+      "pulitzer_fiction": "The Travels of Jaimie McPheeters",
+      "pulitzer_fiction_author": "Robert Lewis Taylor"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Los Angeles Dodgers",
+      "nba_champion": "Boston Celtics",
+      "nba_mvp": null,
+      "wimbledon_mens": "Alex Olmedo",
+      "wimbledon_womens": "Maria Bueno",
+      "f1_champion": "Jack Brabham",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Luna 2 becomes the first spacecraft to reach the Moon's surface; NASA selects first seven astronauts (Mercury Seven)",
+    "top_computer": "IBM 709",
+    "top_computer_price_usd": 1500000,
+    "avg_hard_drive_mb": 5,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Luna 2 becomes first spacecraft to reach the Moon",
+      "NASA selects Mercury Seven astronauts including John Glenn and Alan Shepard",
+      "Jack Kilby demonstrates working integrated circuit at Texas Instruments",
+      "American Airlines inaugurates first domestic jet passenger service (New York to Los Angeles)"
+    ]
+  },
+  "world_events": [
+    {"month": 1, "event": "Fidel Castro's revolutionary forces overthrow Batista's government in Cuba; Castro assumes power"},
+    {"month": 3, "event": "Tibetan uprising against Chinese rule; Dalai Lama flees to India"},
+    {"month": 5, "event": "St. Lawrence Seaway opens, linking the Great Lakes to the Atlantic Ocean"},
+    {"month": 9, "event": "Soviet Luna 2 probe crashes onto the Moon's surface, the first human-made object to reach another celestial body"},
+    {"month": 11, "event": "Antarctic Treaty signed by 12 nations, designating Antarctica as a scientific preserve free from military activity"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Harold Macmillan",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Nobusuke Kishi",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "John Diefenbaker",
+    "brazil_president": "Juscelino Kubitschek",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope John XXIII"
+  },
+  "notable_births": [
+    {"name": "Magic Johnson", "month": 8, "field": "Basketball"},
+    {"name": "Siouxsie Sioux", "month": 5, "field": "Music"},
+    {"name": "Emma Thompson", "month": 4, "field": "Film"},
+    {"name": "John McEnroe", "month": 2, "field": "Tennis"},
+    {"name": "Nick Lowe", "month": 3, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 177.8,
+      "life_expectancy": 69.9,
+      "gdp_per_capita_usd": 2342,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 52.0,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 1250,
+      "leader": "Harold Macmillan",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 436.4,
+      "life_expectancy": 41.9,
+      "gdp_per_capita_usd": 80,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 53.7,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 1499,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 93.4,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 459,
+      "leader": "Nobusuke Kishi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 45.3,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 1235,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 68.1,
+      "life_expectancy": 53.2,
+      "gdp_per_capita_usd": 185,
+      "leader": "Juscelino Kubitschek",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 654.0,
+      "life_expectancy": 47.9,
+      "gdp_per_capita_usd": 69,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 10.1,
+      "life_expectancy": 71.5,
+      "gdp_per_capita_usd": 1847,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 17.5,
+      "life_expectancy": 71.1,
+      "gdp_per_capita_usd": 2185,
+      "leader": "John Diefenbaker",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

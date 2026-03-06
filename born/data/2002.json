@@ -1,0 +1,198 @@
+{
+  "year": 2002,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 6.23,
+    "births_millions": 131,
+    "life_expectancy_global": 67.3,
+    "countries_count": 194,
+    "internet_users": 600000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 36330,
+    "us_median_household_income_usd": 42409,
+    "us_inflation_pct": 1.6,
+    "us_unemployment_pct": 5.8,
+    "us_minimum_wage_usd": 5.15,
+    "sp500_year_end": 879.82,
+    "dow_jones_year_end": 8341.63,
+    "gold_oz_usd": 342.75,
+    "oil_barrel_usd": 26.18
+  },
+  "prices_us": {
+    "gallon_gas_usd": 1.36,
+    "gallon_milk_usd": 2.76,
+    "dozen_eggs_usd": 0.89,
+    "loaf_bread_usd": 1.03,
+    "movie_ticket_usd": 5.81,
+    "new_car_avg_usd": 25786,
+    "median_home_usd": 187200,
+    "first_class_stamp_cents": 37,
+    "big_mac_usd": 2.59
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "How You Remind Me",
+      "billboard_no1_artist": "Nickelback",
+      "grammy_record": "Walk On",
+      "grammy_record_artist": "U2",
+      "grammy_album": "O Brother, Where Art Thou? (soundtrack)",
+      "grammy_album_artist": "Various Artists",
+      "uk_no1_jan": "Something Stupid",
+      "uk_no1_jan_artist": "Robbie Williams & Nicole Kidman"
+    },
+    "film": {
+      "box_office_no1": "Spider-Man",
+      "box_office_no1_gross_m": 403.7,
+      "oscar_best_picture": "A Beautiful Mind",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Ron Howard",
+      "oscar_best_actor": "Denzel Washington",
+      "oscar_best_actor_film": "Training Day",
+      "oscar_best_actress": "Halle Berry",
+      "oscar_best_actress_film": "Monster's Ball"
+    },
+    "television": {
+      "most_watched_show": "CSI: Crime Scene Investigation",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The West Wing",
+      "emmy_comedy": "Friends",
+      "notable_premieres": ["American Idol", "The Wire", "Without a Trace"],
+      "notable_finales": ["Ally McBeal", "Once and Again"]
+    },
+    "books": {
+      "fiction_bestseller": "The Summons",
+      "fiction_bestseller_author": "John Grisham",
+      "nonfiction_bestseller": "Self Matters",
+      "nonfiction_bestseller_author": "Phil McGraw",
+      "pulitzer_fiction": "Empire Falls",
+      "pulitzer_fiction_author": "Richard Russo"
+    },
+    "sports": {
+      "super_bowl_winner": "New England Patriots",
+      "super_bowl_score": "20-17 vs St. Louis Rams",
+      "super_bowl_mvp": "Tom Brady",
+      "world_series_winner": "Anaheim Angels",
+      "nba_champion": "Los Angeles Lakers",
+      "nba_mvp": "Tim Duncan",
+      "wimbledon_mens": "Lleyton Hewitt",
+      "wimbledon_womens": "Serena Williams",
+      "f1_champion": "Michael Schumacher",
+      "fifa_world_cup": "Brazil"
+    }
+  },
+  "technology": {
+    "milestone": "Friendster launches as one of the first social networks; camera phones begin mass adoption; Wi-Fi hotspots proliferate",
+    "top_computer": "Dell Dimension 8200",
+    "top_computer_price_usd": 1499,
+    "avg_hard_drive_mb": 81920,
+    "mobile_subscribers_millions": 1155,
+    "notable_releases": [
+      "Windows XP Service Pack 1 released with improved security features",
+      "Friendster launches, pioneering the social networking concept",
+      "Camera phones go mainstream in Asia and Europe",
+      "Mozilla 1.0 (precursor to Firefox) released as open-source browser"
+    ]
+  },
+  "world_events": [
+    {"month": 10, "event": "Bali bombings kill 202 people, mostly foreign tourists, in the deadliest terrorist attack in Indonesian history"},
+    {"month": 10, "event": "Washington DC sniper attacks leave 10 dead over three weeks, paralyzing the US capital region with fear"},
+    {"month": 3, "event": "US presents case at UN that Iraq possesses WMDs, setting stage for military conflict and global debate"},
+    {"month": 6, "event": "FIFA World Cup held in South Korea and Japan - Brazil wins their fifth title, defeating Germany 2-0 in the final"},
+    {"month": 11, "event": "Department of Homeland Security established in the US as the largest government reorganization since 1947, post-9/11"}
+  ],
+  "leaders": {
+    "us_president": "George W. Bush",
+    "uk_pm": "Tony Blair",
+    "france_president": "Jacques Chirac",
+    "germany_chancellor": "Gerhard Schröder",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Jiang Zemin",
+    "india_pm": "Atal Bihari Vajpayee",
+    "japan_pm": "Junichiro Koizumi",
+    "australia_pm": "John Howard",
+    "canada_pm": "Jean Chrétien",
+    "brazil_president": "Luiz Inácio Lula da Silva",
+    "un_secretary": "Kofi Annan",
+    "pope": "Pope John Paul II"
+  },
+  "notable_births": [
+    {"name": "JoJo Siwa", "month": 5, "field": "Entertainment"},
+    {"name": "Millie Bobby Brown", "month": 2, "field": "Television"},
+    {"name": "Neymar Jr.", "month": 2, "field": "Football"},
+    {"name": "Chloe Kim", "month": 4, "field": "Snowboarding"},
+    {"name": "Marshmello", "month": 5, "field": "Music"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 287.6,
+      "life_expectancy": 76.8,
+      "gdp_per_capita_usd": 36330,
+      "leader": "George W. Bush",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 59.4,
+      "life_expectancy": 78.1,
+      "gdp_per_capita_usd": 27979,
+      "leader": "Tony Blair",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1048.3,
+      "life_expectancy": 62.9,
+      "gdp_per_capita_usd": 481,
+      "leader": "Atal Bihari Vajpayee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.5,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 25107,
+      "leader": "Gerhard Schröder",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 127.5,
+      "life_expectancy": 81.6,
+      "gdp_per_capita_usd": 31407,
+      "leader": "Junichiro Koizumi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 59.9,
+      "life_expectancy": 79.3,
+      "gdp_per_capita_usd": 23949,
+      "leader": "Jacques Chirac",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 179.9,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 2830,
+      "leader": "Luiz Inácio Lula da Silva",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1280.4,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 1148,
+      "leader": "Jiang Zemin",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 19.7,
+      "life_expectancy": 79.9,
+      "gdp_per_capita_usd": 20202,
+      "leader": "John Howard",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 31.4,
+      "life_expectancy": 79.4,
+      "gdp_per_capita_usd": 23539,
+      "leader": "Jean Chrétien",
+      "leader_title": "Prime Minister"
+    }
+  }
+}

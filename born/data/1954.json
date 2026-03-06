@@ -1,0 +1,198 @@
+{
+  "year": 1954,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.72,
+    "births_millions": 99,
+    "life_expectancy_global": 48.5,
+    "countries_count": 74,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1855,
+    "us_median_household_income_usd": 4100,
+    "us_inflation_pct": 0.75,
+    "us_unemployment_pct": 5.5,
+    "us_minimum_wage_usd": 0.75,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 404.39,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.75
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.29,
+    "gallon_milk_usd": 0.92,
+    "dozen_eggs_usd": 0.55,
+    "loaf_bread_usd": 0.17,
+    "movie_ticket_usd": 0.50,
+    "new_car_avg_usd": 1900,
+    "median_home_usd": 9525,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Little Things Mean a Lot",
+      "billboard_no1_artist": "Kitty Kallen",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Oh Mein Papa",
+      "uk_no1_jan_artist": "Eddie Calvert"
+    },
+    "film": {
+      "box_office_no1": "White Christmas",
+      "box_office_no1_gross_m": 30.0,
+      "oscar_best_picture": "From Here to Eternity",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Fred Zinnemann",
+      "oscar_best_actor": "William Holden",
+      "oscar_best_actor_film": "Stalag 17",
+      "oscar_best_actress": "Audrey Hepburn",
+      "oscar_best_actress_film": "Roman Holiday"
+    },
+    "television": {
+      "most_watched_show": "I Love Lucy",
+      "most_watched_network": "CBS",
+      "emmy_drama": "The United States Steel Hour",
+      "emmy_comedy": "I Love Lucy",
+      "notable_premieres": ["Tonight Show with Steve Allen", "Lassie"],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Not as a Stranger",
+      "fiction_bestseller_author": "Morton Thompson",
+      "nonfiction_bestseller": "The Holy Bible: Revised Standard Version",
+      "nonfiction_bestseller_author": "Various",
+      "pulitzer_fiction": "no award",
+      "pulitzer_fiction_author": "N/A"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Giants",
+      "nba_champion": "Minneapolis Lakers",
+      "nba_mvp": null,
+      "wimbledon_mens": "Jaroslav Drobny",
+      "wimbledon_womens": "Maureen Connolly",
+      "f1_champion": "Juan Manuel Fangio",
+      "fifa_world_cup": "West Germany"
+    }
+  },
+  "technology": {
+    "milestone": "First successful polio vaccine announced by Jonas Salk, one of the greatest medical breakthroughs of the century",
+    "top_computer": "IBM 650",
+    "top_computer_price_usd": 500000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Jonas Salk announces successful polio vaccine trials",
+      "First transistor radio (Regency TR-1) released",
+      "Texas Instruments produces first silicon transistors commercially",
+      "Bell Labs scientists develop the solar cell"
+    ]
+  },
+  "world_events": [
+    {"month": 4, "event": "Army-McCarthy hearings televised nationally; Senator McCarthy's anti-communist crusade begins to collapse under public scrutiny"},
+    {"month": 5, "event": "Roger Bannister breaks the four-minute mile at Oxford, running 3:59.4"},
+    {"month": 5, "event": "French forces defeated at Dien Bien Phu, ending French colonial rule in Indochina"},
+    {"month": 7, "event": "Geneva Accords temporarily divide Vietnam at the 17th parallel"},
+    {"month": 12, "event": "US Senate censures Joseph McCarthy, effectively ending the Red Scare witch hunts"}
+  ],
+  "leaders": {
+    "us_president": "Dwight D. Eisenhower",
+    "uk_pm": "Winston Churchill",
+    "france_president": "René Coty",
+    "germany_chancellor": "Konrad Adenauer",
+    "ussr_leader": "Nikita Khrushchev",
+    "china_leader": "Mao Zedong",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Shigeru Yoshida",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "Louis St. Laurent",
+    "brazil_president": "Getúlio Vargas",
+    "un_secretary": "Dag Hammarskjöld",
+    "pope": "Pope Pius XII"
+  },
+  "notable_births": [
+    {"name": "Oprah Winfrey", "month": 1, "field": "TV/Media"},
+    {"name": "Jerry Seinfeld", "month": 4, "field": "Comedy"},
+    {"name": "John Travolta", "month": 2, "field": "Film"},
+    {"name": "Jackie Chan", "month": 4, "field": "Film"},
+    {"name": "Denzel Washington", "month": 12, "field": "Film"}
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 163.0,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 1855,
+      "leader": "Dwight D. Eisenhower",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 51.1,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 968,
+      "leader": "Winston Churchill",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 401.2,
+      "life_expectancy": 38.5,
+      "gdp_per_capita_usd": 68,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 51.3,
+      "life_expectancy": 67.8,
+      "gdp_per_capita_usd": 952,
+      "leader": "Konrad Adenauer",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 88.6,
+      "life_expectancy": 63.9,
+      "gdp_per_capita_usd": 261,
+      "leader": "Shigeru Yoshida",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 42.9,
+      "life_expectancy": 67.6,
+      "gdp_per_capita_usd": 955,
+      "leader": "René Coty",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 59.6,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 152,
+      "leader": "Getúlio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 589.9,
+      "life_expectancy": 43.6,
+      "gdp_per_capita_usd": 60,
+      "leader": "Mao Zedong",
+      "leader_title": "Chairman"
+    },
+    "AU": {
+      "population_millions": 9.0,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 1453,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 15.3,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 1784,
+      "leader": "Louis St. Laurent",
+      "leader_title": "Prime Minister"
+    }
+  }
+}
