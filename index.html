@@ -261,11 +261,28 @@
     }
 
     .card-desc {
-      font-size: 0.875rem;
-      color: var(--muted);
-      line-height: 1.6;
+      list-style: none;
       flex: 1;
       margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .card-desc li {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.5;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .card-desc li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: var(--border);
+      font-weight: 600;
     }
 
     .card-footer {
@@ -455,9 +472,11 @@
             <span class="tag">2024</span>
           </div>
           <div class="card-title">Roller Coaster Database</div>
-          <div class="card-desc">
-            Covers roller coasters across every major theme park worldwide - height, speed, length, manufacturer, park, country, and coaster type all in one place. Good for travel planning, theme park analysis, or just satisfying curiosity.
-          </div>
+          <ul class="card-desc">
+            <li>Height, speed, length, manufacturer, and coaster type</li>
+            <li>Every major theme park worldwide - park name, country, region</li>
+            <li>Good for travel planning, theme park analysis, or just curiosity</li>
+          </ul>
           <div class="card-footer">
             <div class="price-free">Free</div>
             <a class="btn btn-free" href="https://seangularity.gumroad.com/l/roller-coasters" target="_blank" rel="noopener">
@@ -481,9 +500,11 @@
             <span class="tag">2026</span>
           </div>
           <div class="card-title">Michelin Guide Restaurants</div>
-          <div class="card-desc">
-            Every Michelin-starred and Bib Gourmand restaurant across 50+ countries - cuisine type, star rating, city, and full location data. Spans the complete 2026 guide, structured for easy filtering by country, city, or rating tier.
-          </div>
+          <ul class="card-desc">
+            <li>Every starred and Bib Gourmand restaurant - name, cuisine, star rating</li>
+            <li>Full location data - city, region, country across 50+ countries</li>
+            <li>Complete 2026 guide, easy to filter by country, city, or tier</li>
+          </ul>
           <div class="card-footer">
             <div class="price">$1.99</div>
             <a class="btn" href="https://seangularity.gumroad.com/l/michelin" target="_blank" rel="noopener">
@@ -507,11 +528,13 @@
             <span class="tag">1996-2025</span>
           </div>
           <div class="card-title">European Football Player Stats</div>
-          <div class="card-desc">
-            Player-level statistics across 30 seasons of the top 8 European leagues - goals, assists, market value, nationality, club history, and more. Deep enough to track careers, compare eras, or build models.
-          </div>
+          <ul class="card-desc">
+            <li>Goals, assists, market value, nationality, and club history per player</li>
+            <li>30 seasons across 8 top European leagues - Premier League, La Liga, and more</li>
+            <li>Deep enough to track careers, compare eras, or train models</li>
+          </ul>
           <div class="card-footer">
-            <div class="price"><span>$3.99</span><span class="price-note">pay what you want</span></div>
+            <div class="price">$3.99</div>
             <a class="btn" href="https://seangularity.gumroad.com/l/football-data-set" target="_blank" rel="noopener">
               Get dataset <span class="btn-arrow">&rarr;</span>
             </a>
