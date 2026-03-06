@@ -109,7 +109,7 @@
     "ussr_leader": "Mikhail Gorbachev",
     "china_leader": "Deng Xiaoping",
     "india_pm": "Rajiv Gandhi (to Dec), then V. P. Singh",
-    "japan_pm": "Noboru Takeshita (to Jun), then Sosuke Uno",
+    "japan_pm": "Noboru Takeshita (to Jun), then Sosuke Uno (to Aug), then Toshiki Kaifu",
     "australia_pm": "Bob Hawke",
     "canada_pm": "Brian Mulroney",
     "brazil_president": "José Sarney",
@@ -118,10 +118,10 @@
   },
   "notable_births": [
     {"name": "Taylor Swift", "month": 12, "field": "Music"},
-    {"name": "Selena Gomez", "month": 7, "field": "Music/Television"},
-    {"name": "Miley Cyrus", "month": 11, "field": "Music/Television"},
+    {"name": "Jordin Sparks", "month": 12, "field": "Music"},
+    {"name": "Brie Larson", "month": 10, "field": "Film"},
     {"name": "Daniel Radcliffe", "month": 7, "field": "Film"},
-    {"name": "Robert Pattinson", "month": 5, "field": "Film"}
+    {"name": "Nina Dobrev", "month": 1, "field": "Television"}
   ],
   "countries": {
     "US": {
@@ -156,7 +156,7 @@
       "population_millions": 123.1,
       "life_expectancy": 78.8,
       "gdp_per_capita_usd": 24808,
-      "leader": "Sosuke Uno",
+      "leader": "Toshiki Kaifu",
       "leader_title": "Prime Minister"
     },
     "FR": {

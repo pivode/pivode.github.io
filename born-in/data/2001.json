@@ -97,7 +97,7 @@
   "world_events": [
     {"month": 9, "event": "September 11 terrorist attacks kill 2,977 people in New York, Washington DC, and Pennsylvania, reshaping global security and foreign policy"},
     {"month": 10, "event": "US and coalition forces launch Operation Enduring Freedom in Afghanistan, targeting the Taliban regime and al-Qaeda"},
-    {"month": 3, "event": "Wikipedia launches on January 15; space station Mir deorbits and burns up over the Pacific in March after 15 years in orbit"},
+    {"month": 1, "event": "Wikipedia launches on January 15 as a free online encyclopedia; space station Mir deorbits and burns up over the Pacific in March after 15 years in orbit"},
     {"month": 4, "event": "US-China diplomatic crisis as EP-3 spy plane collides with Chinese fighter jet over the South China Sea, pilot killed"},
     {"month": 12, "event": "Enron Corporation files for bankruptcy in the largest corporate collapse in US history up to that point, exposing massive accounting fraud"}
   ],
@@ -118,10 +118,9 @@
   },
   "notable_births": [
     {"name": "Billie Eilish", "month": 12, "field": "Music"},
-    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
-    {"name": "Lorde", "month": 11, "field": "Music"},
-    {"name": "Sofia Richie", "month": 8, "field": "Modeling/Media"},
-    {"name": "Skai Jackson", "month": 4, "field": "Television"}
+    {"name": "Emma Chamberlain", "month": 5, "field": "Social Media"},
+    {"name": "Isabela Merced", "month": 7, "field": "Film"},
+    {"name": "Sasha Obama", "month": 6, "field": "Public Figure"}
   ],
   "countries": {
     "US": {

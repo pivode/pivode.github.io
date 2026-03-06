@@ -5,7 +5,7 @@
     "population_billions": 5.03,
     "births_millions": 141,
     "life_expectancy_global": 65.2,
-    "countries_count": 167,
+    "countries_count": 159,
     "internet_users": 28000
   },
   "economy": {
@@ -157,7 +157,7 @@
       "population_millions": 122.1,
       "life_expectancy": 78.5,
       "gdp_per_capita_usd": 19570,
-      "leader": "Yasuhiro Nakasone",
+      "leader": "Noboru Takeshita",
       "leader_title": "Prime Minister"
     },
     "FR": {

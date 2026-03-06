@@ -64,6 +64,20 @@ const TODAY = {
   home_salary_ratio: (420000 / 80000).toFixed(1),
 };
 
+// CPI multipliers to convert historical salary to 2024 dollars
+// Source: US BLS CPI-U annual averages, base year 2024 (~314.5)
+const CPI_TO_2024 = {
+  1950:10.28,1951:9.53,1952:9.34,1953:9.24,1954:9.20,1955:9.24,1956:9.09,
+  1957:8.79,1958:8.57,1959:8.50,1960:8.37,1961:8.28,1962:8.19,1963:8.09,
+  1964:7.97,1965:7.85,1966:7.63,1967:7.42,1968:7.12,1969:6.76,1970:6.39,
+  1971:6.13,1972:5.95,1973:5.60,1974:5.04,1975:4.63,1976:4.37,1977:4.11,
+  1978:3.83,1979:3.44,1980:3.04,1981:2.75,1982:2.59,1983:2.51,1984:2.41,
+  1985:2.33,1986:2.28,1987:2.20,1988:2.11,1989:2.02,1990:1.91,1991:1.83,
+  1992:1.78,1993:1.73,1994:1.69,1995:1.64,1996:1.59,1997:1.56,1998:1.54,
+  1999:1.50,2000:1.45,2001:1.41,2002:1.39,2003:1.35,2004:1.31,2005:1.27,
+  2006:1.23,2007:1.20,2008:1.16,2009:1.16,2010:1.14,
+};
+
 // Typewriter phrases
 const TYPEWRITER_PHRASES = [
   'The world the day you arrived.',
@@ -317,7 +331,7 @@ function renderInfograpic(year, countryCode, data) {
   $infoContent.innerHTML = [
     renderActI(year, countryCode, data),
     renderActII(year, data),
-    renderActIII(data),
+    renderActIII(year, countryCode, data),
     renderActIV(data),
     renderActV(year, countryCode, data),
   ].join('');
@@ -418,6 +432,22 @@ function renderActII(year, data) {
   const ratioThen   = (income && homePrice) ? (homePrice / income).toFixed(1) : null;
   const ratioToday  = TODAY.home_salary_ratio;
 
+  // Inflation-adjusted salary (CPI-U, base 2024)
+  const cpiMult     = CPI_TO_2024[year] || 1;
+  const incomeAdj   = income ? Math.round(income * cpiMult) : null;
+  const incomeAdjK  = incomeAdj ? Math.round(incomeAdj / 1000) : null;
+  const todayK      = Math.round(TODAY.us_median_income / 1000);
+
+  // Verdict: how does adjusted ${year} salary compare to today?
+  let verdictDesc = `Current US median household income`;
+  if (incomeAdj) {
+    const diff = incomeAdj - TODAY.us_median_income;
+    const pct  = Math.abs(Math.round((diff / TODAY.us_median_income) * 100));
+    verdictDesc = diff > 0
+      ? `${pct}% more purchasing power than today's median`
+      : `${pct}% less purchasing power than today's median`;
+  }
+
   const prices = [
     { emoji: '⛽', label: 'Gallon of gas',   value: data.prices_us?.gallon_gas_usd },
     { emoji: '🥛', label: 'Gallon of milk',  value: data.prices_us?.gallon_milk_usd },
@@ -437,12 +467,28 @@ function renderActII(year, data) {
           headline: 'What workers took home',
           number: income ? formatCurrency(income) : '—',
           unit: 'US median household income',
-          context: income ? `Adjusted for inflation, that buys less than you might think.` : '',
-          comparison: `Today: $${(TODAY.us_median_income / 1000).toFixed(0)}k`,
+          context: incomeAdj ? `Adjusted for inflation, that's worth about $${incomeAdjK.toLocaleString()}k in today's dollars.` : '',
+          comparison: `Today: $${todayK}k`,
           countUp: income,
           countUpPrefix: '$',
           countUpAbbrev: true,
         })}
+
+        ${incomeAdj ? patternB({
+          eyebrow: 'Purchasing Power',
+          headline: 'Are we actually better off today?',
+          left: {
+            label: `${year} in today's $`,
+            value: `$${incomeAdjK.toLocaleString()}k`,
+            desc: `What $${Math.round(income / 1000)}k in ${year} is worth right now`,
+          },
+          right: {
+            label: 'Today',
+            labelMuted: true,
+            value: `$${todayK}k`,
+            desc: verdictDesc,
+          },
+        }) : ''}
 
         ${patternE({
           eyebrow: 'Everyday Prices',
@@ -475,14 +521,35 @@ function renderActII(year, data) {
 // ACT III — CULTURE
 // ---------------------------------------------------------------------------
 
-function renderActIII(data) {
-  const song   = data.culture?.music?.billboard_no1_song || 'Unknown';
-  const artist = data.culture?.music?.billboard_no1_artist || '';
-  const movie  = data.culture?.film?.oscar_best_picture || 'Unknown';
+function renderActIII(year, countryCode, data) {
+  const song       = data.culture?.music?.billboard_no1_song || 'Unknown';
+  const artist     = data.culture?.music?.billboard_no1_artist || '';
+  const ukSong     = data.culture?.music?.uk_no1_jan;
+  const ukArtist   = data.culture?.music?.uk_no1_jan_artist || '';
+  const grammyAlbum  = data.culture?.music?.grammy_album;
+  const grammyArtist = data.culture?.music?.grammy_album_artist || '';
+
+  const movie    = data.culture?.film?.oscar_best_picture || 'Unknown';
   const director = data.culture?.film?.oscar_best_director_name || '';
-  const tvShow = data.culture?.television?.most_watched_show || 'Unknown';
-  const book   = data.culture?.books?.fiction_bestseller || 'Unknown';
+  const tvShow   = data.culture?.television?.most_watched_show || 'Unknown';
+  const book     = data.culture?.books?.fiction_bestseller || 'Unknown';
   const bookAuthor = data.culture?.books?.fiction_bestseller_author || '';
+
+  const premieres = (data.culture?.television?.notable_premieres || []).slice(0, 5);
+
+  const sports = data.culture?.sports || {};
+  const sportStats = [
+    sports.fifa_world_cup    && { label: 'FIFA World Cup',  value: sports.fifa_world_cup, sub: 'Football' },
+    sports.f1_champion       && { label: 'F1 Champion',     value: sports.f1_champion, sub: 'Formula One' },
+    sports.super_bowl_winner && { label: 'Super Bowl',      value: sports.super_bowl_winner, sub: sports.super_bowl_score || 'Champion' },
+    sports.nba_champion      && { label: 'NBA Champion',    value: sports.nba_champion, sub: 'Basketball' },
+    sports.wimbledon_mens    && { label: "Wimbledon Men's", value: sports.wimbledon_mens, sub: 'Tennis' },
+  ].filter(Boolean).slice(0, 3);
+
+  // For GB users, show UK #1 instead of Billboard
+  const songTitle  = (countryCode === 'GB' && ukSong) ? ukSong : song;
+  const songArtist = (countryCode === 'GB' && ukSong) ? ukArtist : artist;
+  const songLabel  = (countryCode === 'GB' && ukSong) ? 'UK Chart #1' : 'Billboard Year-End #1';
 
   return `
     <div class="act" id="act-3">
@@ -490,9 +557,9 @@ function renderActIII(data) {
       <div class="act-sections">
 
         ${patternC({
-          eyebrow: 'Billboard Year-End #1',
-          title: song,
-          detail: artist,
+          eyebrow: songLabel,
+          title: songTitle,
+          detail: songArtist,
         })}
 
         ${patternC({
@@ -501,8 +568,30 @@ function renderActIII(data) {
           detail: director ? `Directed by ${director}` : '',
         })}
 
+        ${grammyAlbum ? patternC({
+          eyebrow: 'Grammy Album of the Year',
+          title: grammyAlbum,
+          detail: grammyArtist,
+        }) : ''}
+
+        ${premieres.length > 0 ? `
+          <div class="pattern-a" data-reveal>
+            <p class="eyebrow">TV Premieres</p>
+            <p class="section-headline">Shows born the same year as you</p>
+            <div class="show-pills">
+              ${premieres.map(s => `<span class="show-pill">${escHtml(s)}</span>`).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        ${sportStats.length > 0 ? patternF({
+          eyebrow: 'Sports',
+          headline: 'Champions of the year',
+          stats: sportStats,
+        }) : ''}
+
         ${patternF({
-          eyebrow: 'TV & Books',
+          eyebrow: 'Screen & Page',
           headline: 'What everyone was watching and reading',
           stats: [
             { label: 'Most-Watched Show', value: tvShow,   sub: 'Television' },
@@ -554,34 +643,58 @@ function renderActIV(data) {
 // ---------------------------------------------------------------------------
 
 function renderActV(year, countryCode, data) {
-  const countryData    = data.countries?.[countryCode] || data.countries?.US || {};
-  const lifeExpThen    = countryData.life_expectancy || data.world?.life_expectancy_global;
+  const countryData = data.countries?.[countryCode] || data.countries?.US || {};
+  const country     = COUNTRY_MAP[countryCode] || COUNTRIES[0];
+  const lifeExpThen = countryData.life_expectancy || data.world?.life_expectancy_global;
   const lifeExpTodayLocal = countryCode === 'US' ? TODAY.us_life_expectancy : TODAY.global_life_expectancy;
-  const lifeLabel      = countryCode === 'US' ? 'US' : 'Global';
+  const lifeLabel   = countryCode === 'US' ? 'US' : 'Global avg';
 
-  const births = (data.notable_births || []).slice(0, 5);
+  const popMillions = countryData.population_millions;
+  const gdpPerCap   = countryData.gdp_per_capita_usd;
+  const worldBirths = data.world?.births_millions;
 
-  const doublings   = Math.round((2024 - year) / 2);
-  const multiplier  = Math.pow(2, doublings).toLocaleString();
+  const births   = (data.notable_births || []).slice(0, 5);
+  const doublings  = Math.round((2024 - year) / 2);
+  const multiplier = Math.pow(2, doublings).toLocaleString();
+
+  const popFmt = !popMillions ? null
+    : popMillions >= 1000 ? `${(popMillions / 1000).toFixed(1)}B`
+    : `${Math.round(popMillions)}M`;
+
+  const gdpFmt = !gdpPerCap ? null
+    : gdpPerCap >= 10000 ? `$${Math.round(gdpPerCap / 1000)}k`
+    : `$${Math.round(gdpPerCap).toLocaleString()}`;
+
+  const countryStats = [
+    popFmt      && { label: 'Population', value: popFmt, sub: `people in ${country.name}` },
+    gdpFmt      && { label: 'GDP per Capita', value: gdpFmt, sub: 'per person per year' },
+    worldBirths && { label: 'Your Birth Cohort', value: `${worldBirths}M`, sub: 'babies born worldwide that year' },
+  ].filter(Boolean);
 
   return `
     <div class="act" id="act-5">
       <p class="act-label">Act V</p>
       <div class="act-sections">
 
+        ${countryStats.length > 0 ? patternF({
+          eyebrow: `${country.flag} ${country.name}`,
+          headline: `Your country the year you arrived`,
+          stats: countryStats,
+        }) : ''}
+
         ${patternB({
           eyebrow: 'Life Expectancy',
-          headline: 'How long people were expected to live',
+          headline: 'Have we made progress?',
           left: {
             label: String(year),
             value: lifeExpThen ? `${lifeExpThen} yrs` : '—',
-            desc: `${lifeLabel} average life expectancy at birth`,
+            desc: `${lifeLabel} life expectancy at birth`,
           },
           right: {
             label: 'Today',
             labelMuted: true,
             value: `${lifeExpTodayLocal} yrs`,
-            desc: `${lifeLabel} average life expectancy today`,
+            desc: `${lifeLabel} life expectancy today`,
           },
         })}
 
@@ -883,14 +996,14 @@ function updateURL(year, countryCode) {
 function buildShareURL() {
   const params = getURLParams();
   if (!params) return 'https://pivode.github.io/born-in';
-  return `https://pivode.github.io/born-in-in?year=${params.year}&country=${params.country}`;
+  return `https://pivode.github.io/born-in?year=${params.year}&country=${params.country}`;
 }
 
 function getURLParams() {
   const params = new URLSearchParams(window.location.search);
   const year    = parseInt(params.get('year'), 10);
   const country = params.get('country') || 'US';
-  if (!isNaN(year) && year >= YEAR_MIN && year <= YEAR_MAX) {
+  if (!isNaN(year) && year >= YEAR_MIN && year <= YEAR_MAX && !YEAR_GAPS.has(year)) {
     return { year, country };
   }
   return null;
@@ -916,7 +1029,7 @@ function checkURLOnLoad() {
   $headerYear.textContent = params.year;
   $headerCountry.innerHTML = `<span class="flag">${country.flag}</span><span class="country-name-full">&nbsp;${country.name}</span>`;
 
-  loadAndRender(params.year, params.country);
+  loadAndRender(params.year, country.code);
 }
 
 // ---------------------------------------------------------------------------

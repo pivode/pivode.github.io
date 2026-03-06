@@ -117,11 +117,11 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Billie Eilish", "month": 12, "field": "Music"},
     {"name": "Zendaya", "month": 9, "field": "Film/Music"},
     {"name": "Lorde", "month": 11, "field": "Music"},
-    {"name": "Simone Biles", "month": 3, "field": "Gymnastics"},
-    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"}
+    {"name": "Hailee Steinfeld", "month": 12, "field": "Film/Music"},
+    {"name": "Sophie Turner", "month": 2, "field": "Film/Television"},
+    {"name": "Bella Hadid", "month": 10, "field": "Modelling"}
   ],
   "countries": {
     "US": {

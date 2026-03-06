@@ -117,11 +117,9 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Billie Eilish", "month": 12, "field": "Music"},
-    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
-    {"name": "Olivia Rodrigo", "month": 2, "field": "Music"},
-    {"name": "Finn Wolfhard", "month": 12, "field": "Television/Film"},
-    {"name": "Noah Cyrus", "month": 1, "field": "Music"}
+    {"name": "Lil Nas X", "month": 4, "field": "Music"},
+    {"name": "Madison Beer", "month": 3, "field": "Music"},
+    {"name": "Hunter Schafer", "month": 12, "field": "Film/Modelling"}
   ],
   "countries": {
     "US": {

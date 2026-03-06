@@ -42,8 +42,8 @@
       "uk_no1_jan_artist": "Pet Shop Boys"
     },
     "film": {
-      "box_office_no1": "Rain Man",
-      "box_office_no1_gross_m": 172.8,
+      "box_office_no1": "Who Framed Roger Rabbit",
+      "box_office_no1_gross_m": 154.1,
       "oscar_best_picture": "The Last Emperor",
       "oscar_best_director": "Best Director",
       "oscar_best_director_name": "Bernardo Bertolucci",
@@ -89,7 +89,7 @@
     "mobile_subscribers_millions": 2.0,
     "notable_releases": [
       "Morris Worm, the first major internet worm, infects 6,000 computers and causes $10-100 million in damage",
-      "Nintendo releases the Game Boy handheld console in Japan",
+      "NeXT Computer unveiled by Steve Jobs, featuring object-oriented programming and advanced networking",
       "NeXT computer unveiled by Steve Jobs after being ousted from Apple",
       "Kodak develops the first 1.4 megapixel digital camera sensor"
     ]
@@ -119,8 +119,8 @@
   "notable_births": [
     {"name": "Rihanna", "month": 2, "field": "Music"},
     {"name": "Adele", "month": 5, "field": "Music"},
-    {"name": "Zayn Malik", "month": 1, "field": "Music"},
-    {"name": "Cara Delevingne", "month": 8, "field": "Modelling/Film"},
+    {"name": "Hayley Williams", "month": 12, "field": "Music"},
+    {"name": "Conor McGregor", "month": 7, "field": "Sports"},
     {"name": "Rupert Grint", "month": 8, "field": "Film"}
   ],
   "countries": {

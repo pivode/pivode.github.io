@@ -95,7 +95,7 @@
     ]
   },
   "world_events": [
-    {"month": 3, "event": "Camp David Accords signed by Egypt and Israel brokered by President Carter, the first Arab-Israeli peace agreement"},
+    {"month": 9, "event": "Camp David Accords signed by Egypt and Israel brokered by President Carter, the first Arab-Israeli peace agreement"},
     {"month": 8, "event": "Pope Paul VI dies; Pope John Paul I elected but dies after only 33 days - the shortest papacy in modern history"},
     {"month": 10, "event": "Pope John Paul II elected, the first non-Italian pope in 455 years and first ever Polish pope"},
     {"month": 11, "event": "Jonestown massacre: 918 people die in Guyana after cult leader Jim Jones orders mass poisoning, the largest US civilian death toll before 9/11"},
@@ -112,7 +112,7 @@
     "japan_pm": "Takeo Fukuda (to Dec), then Masayoshi Ohira",
     "australia_pm": "Malcolm Fraser",
     "canada_pm": "Pierre Trudeau",
-    "brazil_president": "João Figueiredo",
+    "brazil_president": "Ernesto Geisel",
     "un_secretary": "Kurt Waldheim",
     "pope": "Pope John Paul II"
   },
@@ -170,7 +170,7 @@
       "population_millions": 113.3,
       "life_expectancy": 62.4,
       "gdp_per_capita_usd": 1620,
-      "leader": "João Figueiredo",
+      "leader": "Ernesto Geisel",
       "leader_title": "President"
     },
     "CN": {

@@ -95,9 +95,9 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "United Nations headquarters officially opens in New York City"},
+    {"month": 1, "event": "President Truman authorizes development of the hydrogen bomb, escalating the nuclear arms race with the Soviet Union"},
     {"month": 6, "event": "North Korea invades South Korea, triggering the Korean War and US-led UN military intervention"},
-    {"month": 8, "event": "US Senator Joseph McCarthy intensifies anti-communist 'Red Scare' investigations"},
+    {"month": 2, "event": "US Senator Joseph McCarthy claims to have a list of 205 Communists in the State Department, launching the Red Scare"},
     {"month": 9, "event": "UN forces led by General MacArthur land at Inchon, turning the tide of the Korean War"},
     {"month": 11, "event": "China enters the Korean War, pushing UN forces back below the 38th parallel"}
   ],
@@ -112,7 +112,7 @@
     "japan_pm": "Shigeru Yoshida",
     "australia_pm": "Robert Menzies",
     "canada_pm": "Louis St. Laurent",
-    "brazil_president": "Getúlio Vargas",
+    "brazil_president": "Eurico Gaspar Dutra",
     "un_secretary": "Trygve Lie",
     "pope": "Pope Pius XII"
   },
@@ -170,7 +170,7 @@
       "population_millions": 53.4,
       "life_expectancy": 48.6,
       "gdp_per_capita_usd": 133,
-      "leader": "Getúlio Vargas",
+      "leader": "Eurico Gaspar Dutra",
       "leader_title": "President"
     },
     "CN": {

@@ -117,11 +117,11 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Billie Eilish", "month": 12, "field": "Music"},
     {"name": "Ariana Grande", "month": 6, "field": "Music"},
-    {"name": "Malala Yousafzai", "month": 7, "field": "Activism"},
-    {"name": "Madison Beer", "month": 3, "field": "Music"},
-    {"name": "Millie Bobby Brown", "month": 2, "field": "Television/Film"}
+    {"name": "Zayn Malik", "month": 1, "field": "Music"},
+    {"name": "Niall Horan", "month": 9, "field": "Music"},
+    {"name": "Perrie Edwards", "month": 7, "field": "Music"},
+    {"name": "Liam Payne", "month": 8, "field": "Music"}
   ],
   "countries": {
     "US": {

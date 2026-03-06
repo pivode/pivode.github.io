@@ -121,7 +121,7 @@
     {"name": "LeBron James", "month": 12, "field": "Basketball"},
     {"name": "Scarlett Johansson", "month": 11, "field": "Film"},
     {"name": "Mandy Moore", "month": 4, "field": "Music/Film"},
-    {"name": "Jesse Eisenberg", "month": 10, "field": "Film"}
+    {"name": "Mark Zuckerberg", "month": 5, "field": "Technology"}
   ],
   "countries": {
     "US": {
@@ -191,7 +191,7 @@
       "population_millions": 25.1,
       "life_expectancy": 76.2,
       "gdp_per_capita_usd": 14017,
-      "leader": "John Turner",
+      "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
     }
   }

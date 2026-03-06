@@ -117,11 +117,7 @@
     "pope": "Pope Benedict XVI"
   },
   "notable_births": [
-    {"name": "Kylie Jenner", "month": 8, "field": "Media/Business"},
-    {"name": "Khloe Kardashian", "month": 6, "field": "Media"},
-    {"name": "Blue Ivy Carter", "month": 1, "field": "Music"},
-    {"name": "Royalty Brown", "month": 5, "field": "Entertainment"},
-    {"name": "Dusty Rain Pfeifer", "month": 3, "field": "Social Media"}
+    {"name": "Lamine Yamal", "month": 7, "field": "Football"}
   ],
   "countries": {
     "US": {

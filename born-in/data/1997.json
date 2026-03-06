@@ -117,11 +117,11 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Zendaya", "month": 9, "field": "Television/Film"},
-    {"name": "Chloe Grace Moretz", "month": 2, "field": "Film"},
-    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
     {"name": "Simone Biles", "month": 3, "field": "Gymnastics"},
-    {"name": "Ansel Elgort", "month": 3, "field": "Film"}
+    {"name": "Chloe Grace Moretz", "month": 2, "field": "Film"},
+    {"name": "Malala Yousafzai", "month": 7, "field": "Activism"},
+    {"name": "Zara Larsson", "month": 12, "field": "Music"},
+    {"name": "Maisie Williams", "month": 4, "field": "Television/Film"}
   ],
   "countries": {
     "US": {

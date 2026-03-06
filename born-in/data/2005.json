@@ -117,11 +117,7 @@
     "pope": "Pope Benedict XVI"
   },
   "notable_births": [
-    {"name": "Quavo", "month": 4, "field": "Music"},
-    {"name": "Zara Larsson", "month": 12, "field": "Music"},
-    {"name": "Tre Jones", "month": 1, "field": "Basketball"},
-    {"name": "Iann Dior", "month": 11, "field": "Music"},
-    {"name": "Xochitl Gomez", "month": 4, "field": "Film"}
+    {"name": "Noah Jupe", "month": 2, "field": "Film"}
   ],
   "countries": {
     "US": {

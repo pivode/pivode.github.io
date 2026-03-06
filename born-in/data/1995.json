@@ -110,18 +110,18 @@
     "china_leader": "Jiang Zemin",
     "india_pm": "P. V. Narasimha Rao",
     "japan_pm": "Tomiichi Murayama (to Jan), then Ryutaro Hashimoto",
-    "australia_pm": "Paul Keating (to Mar), then John Howard",
+    "australia_pm": "Paul Keating",
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Boutros Boutros-Ghali",
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "One Direction's Niall Horan", "month": 9, "field": "Music"},
     {"name": "Kendall Jenner", "month": 11, "field": "Modelling/Media"},
-    {"name": "Cardi B", "month": 10, "field": "Music"},
-    {"name": "Nick Jonas", "month": 9, "field": "Music"},
-    {"name": "Hailee Steinfeld", "month": 12, "field": "Film/Music"}
+    {"name": "Troye Sivan", "month": 6, "field": "Music"},
+    {"name": "Gigi Hadid", "month": 4, "field": "Modelling"},
+    {"name": "Dua Lipa", "month": 8, "field": "Music"},
+    {"name": "Post Malone", "month": 7, "field": "Music"}
   ],
   "countries": {
     "US": {

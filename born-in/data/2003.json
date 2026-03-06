@@ -117,11 +117,9 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Noah Schnapp", "month": 10, "field": "Television"},
-    {"name": "Finn Wolfhard", "month": 12, "field": "Television/Music"},
-    {"name": "Gaten Matarazzo", "month": 9, "field": "Television"},
-    {"name": "Isabela Merced", "month": 7, "field": "Film"},
-    {"name": "Destini Lombard", "month": 8, "field": "Social Media"}
+    {"name": "Olivia Rodrigo", "month": 2, "field": "Music/Film"},
+    {"name": "JoJo Siwa", "month": 5, "field": "Entertainment"},
+    {"name": "Gracie Abrams", "month": 9, "field": "Music"}
   ],
   "countries": {
     "US": {

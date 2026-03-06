@@ -855,6 +855,32 @@ body {
 }
 
 /* =========================================================
+   TV PREMIERES — SHOW PILLS
+   ========================================================= */
+
+.show-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.show-pill {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: border-color var(--transition-base);
+}
+
+.show-pill:hover {
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* =========================================================
    LOADING STATE
    ========================================================= */
 

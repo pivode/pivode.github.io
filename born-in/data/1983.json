@@ -95,7 +95,7 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Final episode of M*A*S*H watched by a record 106 million Americans, the highest-rated US television broadcast ever"},
+    {"month": 2, "event": "Final episode of M*A*S*H watched by a record 106 million Americans, the highest-rated US television broadcast ever"},
     {"month": 3, "event": "President Reagan proposes the Strategic Defense Initiative (Star Wars), aiming to build a missile defense shield"},
     {"month": 9, "event": "Korean Air Lines Flight 007 shot down by a Soviet fighter jet after straying into Soviet airspace, killing all 269 aboard"},
     {"month": 10, "event": "US Marines headquarters bombed in Beirut, killing 241; simultaneous attack kills 58 French paratroopers"},
@@ -117,10 +117,10 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Kim Kardashian", "month": 10, "field": "Media/Entertainment"},
+    {"name": "Carrie Underwood", "month": 3, "field": "Music"},
     {"name": "Mila Kunis", "month": 8, "field": "Film/Television"},
-    {"name": "Blake Lively", "month": 8, "field": "Television/Film"},
-    {"name": "Nicki Minaj", "month": 12, "field": "Music"},
+    {"name": "Jesse Eisenberg", "month": 10, "field": "Film"},
+    {"name": "Jonah Hill", "month": 12, "field": "Film"},
     {"name": "Amy Winehouse", "month": 9, "field": "Music"}
   ],
   "countries": {

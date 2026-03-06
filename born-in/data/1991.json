@@ -118,10 +118,9 @@
   },
   "notable_births": [
     {"name": "Ed Sheeran", "month": 2, "field": "Music"},
-    {"name": "Ariana Grande", "month": 6, "field": "Music"},
-    {"name": "Nick Jonas", "month": 9, "field": "Music"},
     {"name": "Emma Roberts", "month": 2, "field": "Film/Television"},
-    {"name": "Troye Sivan", "month": 6, "field": "Music"}
+    {"name": "Kygo", "month": 9, "field": "Music"},
+    {"name": "Kevin De Bruyne", "month": 6, "field": "Football"}
   ],
   "countries": {
     "US": {

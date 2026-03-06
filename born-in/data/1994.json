@@ -118,10 +118,9 @@
   },
   "notable_births": [
     {"name": "Justin Bieber", "month": 3, "field": "Music"},
-    {"name": "Ariana Grande", "month": 6, "field": "Music"},
-    {"name": "Cara Delevingne", "month": 8, "field": "Modelling/Film"},
-    {"name": "Shawn Mendes", "month": 8, "field": "Music"},
-    {"name": "Troye Sivan", "month": 6, "field": "Music"}
+    {"name": "Harry Styles", "month": 2, "field": "Music"},
+    {"name": "Halsey", "month": 9, "field": "Music"},
+    {"name": "Ansel Elgort", "month": 3, "field": "Film"}
   ],
   "countries": {
     "US": {

@@ -91,7 +91,7 @@
       "Y2K arrives without widespread computer failures, after billions were spent on remediation worldwide",
       "The dot-com bubble peaks in March with the NASDAQ hitting 5,048 before losing 78% of its value",
       "PlayStation 2 released in Japan in March, becoming the best-selling console of all time",
-      "USB flash drives introduced commercially; Wikipedia founded by Jimmy Wales and Larry Sanger in January 2001"
+      "USB flash drives introduced commercially; Napster reaches 26 million users before record labels sue for copyright infringement"
     ]
   },
   "world_events": [
@@ -117,11 +117,9 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Olivia Rodrigo", "month": 2, "field": "Music/Film"},
-    {"name": "Skai Jackson", "month": 4, "field": "Television"},
-    {"name": "Lil Nas X", "month": 4, "field": "Music"},
-    {"name": "Charli D'Amelio", "month": 5, "field": "Social Media"},
-    {"name": "Gracie Abrams", "month": 7, "field": "Music"}
+    {"name": "Zion Williamson", "month": 7, "field": "Basketball"},
+    {"name": "Addison Rae", "month": 10, "field": "Social Media"},
+    {"name": "Noah Cyrus", "month": 1, "field": "Music"}
   ],
   "countries": {
     "US": {

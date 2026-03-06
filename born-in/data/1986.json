@@ -65,8 +65,8 @@
       "fiction_bestseller_author": "Stephen King",
       "nonfiction_bestseller": "Fatherhood",
       "nonfiction_bestseller_author": "Bill Cosby",
-      "pulitzer_fiction": "Foreign Affairs",
-      "pulitzer_fiction_author": "Alison Lurie"
+      "pulitzer_fiction": "Lonesome Dove",
+      "pulitzer_fiction_author": "Larry McMurtry"
     },
     "sports": {
       "super_bowl_winner": "Chicago Bears",
@@ -117,7 +117,7 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Adele", "month": 5, "field": "Music"},
+    {"name": "Usain Bolt", "month": 8, "field": "Athletics"},
     {"name": "Lady Gaga", "month": 3, "field": "Music"},
     {"name": "Megan Fox", "month": 5, "field": "Film"},
     {"name": "Drake", "month": 10, "field": "Music"},

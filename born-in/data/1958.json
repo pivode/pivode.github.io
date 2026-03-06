@@ -104,7 +104,7 @@
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
     "uk_pm": "Harold Macmillan",
-    "france_president": "Charles de Gaulle",
+    "france_president": "René Coty",
     "germany_chancellor": "Konrad Adenauer",
     "ussr_leader": "Nikita Khrushchev",
     "china_leader": "Mao Zedong",
@@ -163,7 +163,7 @@
       "population_millions": 44.8,
       "life_expectancy": 69.5,
       "gdp_per_capita_usd": 1161,
-      "leader": "Charles de Gaulle",
+      "leader": "René Coty",
       "leader_title": "President"
     },
     "BR": {

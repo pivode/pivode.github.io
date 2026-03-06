@@ -65,8 +65,8 @@
       "fiction_bestseller_author": "James Michener",
       "nonfiction_bestseller": "The Total Woman",
       "nonfiction_bestseller_author": "Marabel Morgan",
-      "pulitzer_fiction": "The Dolphin",
-      "pulitzer_fiction_author": "Robert Lowell"
+      "pulitzer_fiction": null,
+      "pulitzer_fiction_author": null
     },
     "sports": {
       "super_bowl_winner": "Miami Dolphins",

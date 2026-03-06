@@ -117,10 +117,8 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Millie Bobby Brown", "month": 2, "field": "Film/Television"},
-    {"name": "Jeon Jung-kook (BTS)", "month": 9, "field": "Music"},
-    {"name": "Jacob Sartorius", "month": 10, "field": "Music/Social Media"},
-    {"name": "Sophie Turner", "month": 2, "field": "Film/Television"},
+    {"name": "Shawn Mendes", "month": 8, "field": "Music"},
+    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
     {"name": "Odessa A'zion", "month": 5, "field": "Film"}
   ],
   "countries": {

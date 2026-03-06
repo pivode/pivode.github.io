@@ -34,7 +34,7 @@
     "music": {
       "billboard_no1_song": "Mack the Knife",
       "billboard_no1_artist": "Bobby Darin",
-      "grammy_record": "Midnight Flyer",
+      "grammy_record": "Mack the Knife",
       "grammy_record_artist": "Bobby Darin",
       "grammy_album": "Come Dance with Me!",
       "grammy_album_artist": "Frank Sinatra",
@@ -118,10 +118,10 @@
   },
   "notable_births": [
     {"name": "Magic Johnson", "month": 8, "field": "Basketball"},
-    {"name": "Siouxsie Sioux", "month": 5, "field": "Music"},
+    {"name": "Bryan Adams", "month": 11, "field": "Music"},
     {"name": "Emma Thompson", "month": 4, "field": "Film"},
     {"name": "John McEnroe", "month": 2, "field": "Tennis"},
-    {"name": "Nick Lowe", "month": 3, "field": "Music"}
+    {"name": "Weird Al Yankovic", "month": 10, "field": "Music"}
   ],
   "countries": {
     "US": {

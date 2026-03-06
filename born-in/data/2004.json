@@ -117,11 +117,9 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Jaylen Brown", "month": 10, "field": "Basketball"},
-    {"name": "Asher Angel", "month": 6, "field": "Television/Music"},
-    {"name": "Gracie Abrams", "month": 7, "field": "Music"},
     {"name": "Coco Gauff", "month": 3, "field": "Tennis"},
-    {"name": "Valentina Zenere", "month": 1, "field": "Television"}
+    {"name": "Millie Bobby Brown", "month": 2, "field": "Television/Film"},
+    {"name": "Noah Schnapp", "month": 10, "field": "Television"}
   ],
   "countries": {
     "US": {

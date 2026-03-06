@@ -85,7 +85,7 @@
     "milestone": "Echo 1, the world's first communications satellite, launched by NASA",
     "top_computer": "IBM 7090",
     "top_computer_price_usd": 2900000,
-    "avg_hard_drive_mb": 0,
+    "avg_hard_drive_mb": 5,
     "mobile_subscribers_millions": 0,
     "notable_releases": [
       "Echo 1 communications satellite launched by NASA",
@@ -100,7 +100,7 @@
     {"month": 9, "event": "First televised presidential debate between John F. Kennedy and Richard Nixon, a landmark in political history"},
     {"month": 10, "event": "Nigeria gains independence from Britain, part of the 'Year of Africa' as 17 nations gain independence"},
     {"month": 11, "event": "John F. Kennedy elected 35th US President, defeating Richard Nixon in one of the closest elections in history"},
-    {"month": 12, "event": "OPEC founded by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela to coordinate global oil production policy"}
+    {"month": 9, "event": "OPEC founded by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela to coordinate global oil production policy"}
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",

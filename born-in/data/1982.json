@@ -32,8 +32,8 @@
   },
   "culture": {
     "music": {
-      "billboard_no1_song": "Physical",
-      "billboard_no1_artist": "Olivia Newton-John",
+      "billboard_no1_song": "I Love Rock 'n' Roll",
+      "billboard_no1_artist": "Joan Jett & the Blackhearts",
       "grammy_record": "Bette Davis Eyes",
       "grammy_record_artist": "Kim Carnes",
       "grammy_album": "Double Fantasy",
@@ -120,8 +120,8 @@
     {"name": "Prince William", "month": 6, "field": "Royalty"},
     {"name": "Anne Hathaway", "month": 11, "field": "Film"},
     {"name": "Kelly Clarkson", "month": 4, "field": "Music"},
-    {"name": "Scarlett Johansson", "month": 11, "field": "Film"},
-    {"name": "John Legend", "month": 12, "field": "Music"}
+    {"name": "Kirsten Dunst", "month": 4, "field": "Film"},
+    {"name": "LeAnn Rimes", "month": 8, "field": "Music"}
   ],
   "countries": {
     "US": {

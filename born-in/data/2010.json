@@ -116,13 +116,7 @@
     "un_secretary": "Ban Ki-moon",
     "pope": "Pope Benedict XVI"
   },
-  "notable_births": [
-    {"name": "Stormi Webster", "month": 2, "field": "Entertainment"},
-    {"name": "Sienna Princess Kumar", "month": 1, "field": "Entertainment"},
-    {"name": "Alaia McBroom", "month": 6, "field": "Social Media"},
-    {"name": "Penelope Disick", "month": 7, "field": "Entertainment"},
-    {"name": "Mason Disick", "month": 12, "field": "Entertainment"}
-  ],
+  "notable_births": [],
   "countries": {
     "US": {
       "population_millions": 309.3,

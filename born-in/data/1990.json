@@ -118,10 +118,10 @@
   },
   "notable_births": [
     {"name": "Emma Watson", "month": 4, "field": "Film"},
-    {"name": "Usain Bolt", "month": 8, "field": "Athletics"},
-    {"name": "Nicki Minaj", "month": 12, "field": "Music"},
+    {"name": "Jennifer Lawrence", "month": 8, "field": "Film"},
+    {"name": "The Weeknd", "month": 2, "field": "Music"},
     {"name": "Kristen Stewart", "month": 4, "field": "Film"},
-    {"name": "Chris Brown", "month": 5, "field": "Music"}
+    {"name": "Rita Ora", "month": 11, "field": "Music"}
   ],
   "countries": {
     "US": {

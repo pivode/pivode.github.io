@@ -112,16 +112,15 @@
     "japan_pm": "Junichiro Koizumi",
     "australia_pm": "John Howard",
     "canada_pm": "Jean Chrétien",
-    "brazil_president": "Luiz Inácio Lula da Silva",
+    "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "JoJo Siwa", "month": 5, "field": "Entertainment"},
-    {"name": "Millie Bobby Brown", "month": 2, "field": "Television"},
-    {"name": "Neymar Jr.", "month": 2, "field": "Football"},
-    {"name": "Chloe Kim", "month": 4, "field": "Snowboarding"},
-    {"name": "Marshmello", "month": 5, "field": "Music"}
+    {"name": "Finn Wolfhard", "month": 12, "field": "Television/Music"},
+    {"name": "Gaten Matarazzo", "month": 9, "field": "Television"},
+    {"name": "Skai Jackson", "month": 4, "field": "Television"},
+    {"name": "Sadie Sink", "month": 4, "field": "Television/Film"}
   ],
   "countries": {
     "US": {
@@ -170,7 +169,7 @@
       "population_millions": 179.9,
       "life_expectancy": 71.0,
       "gdp_per_capita_usd": 2830,
-      "leader": "Luiz Inácio Lula da Silva",
+      "leader": "Fernando Henrique Cardoso",
       "leader_title": "President"
     },
     "CN": {

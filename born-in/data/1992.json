@@ -117,11 +117,11 @@
     "pope": "Pope John Paul II"
   },
   "notable_births": [
-    {"name": "Zayn Malik", "month": 1, "field": "Music"},
     {"name": "Miley Cyrus", "month": 11, "field": "Music/Film"},
     {"name": "Demi Lovato", "month": 8, "field": "Music"},
     {"name": "Selena Gomez", "month": 7, "field": "Music/Film"},
-    {"name": "Ed Sheeran", "month": 2, "field": "Music"}
+    {"name": "Nick Jonas", "month": 9, "field": "Music"},
+    {"name": "Cara Delevingne", "month": 8, "field": "Modelling/Film"}
   ],
   "countries": {
     "US": {
