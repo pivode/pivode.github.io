@@ -275,6 +275,9 @@
     }
 
     .price {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
       font-size: 1rem;
       font-weight: 700;
       color: var(--text);
@@ -285,7 +288,6 @@
       font-size: 0.72rem;
       font-weight: 400;
       color: var(--muted);
-      margin-left: 4px;
     }
 
     .btn {
@@ -509,7 +511,7 @@
             Player-level statistics across 30 seasons of the top 8 European leagues - goals, assists, market value, nationality, club history, and more. Deep enough to track careers, compare eras, or build models.
           </div>
           <div class="card-footer">
-            <div class="price">$3.99 <span class="price-note">pay what you want</span></div>
+            <div class="price"><span>$3.99</span><span class="price-note">pay what you want</span></div>
             <a class="btn" href="https://seangularity.gumroad.com/l/football-data-set" target="_blank" rel="noopener">
               Get dataset <span class="btn-arrow">&rarr;</span>
             </a>
