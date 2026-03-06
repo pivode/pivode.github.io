@@ -38,8 +38,9 @@
       "grammy_record_artist": "Sheryl Crow",
       "grammy_album": "MTV Unplugged in New York",
       "grammy_album_artist": "Tony Bennett",
-      "uk_no1_jan": "Cotton Eye Joe",
-      "uk_no1_jan_artist": "Rednex"
+      "uk_no1_jan": "Stay Another Day",
+      "uk_no1_jan_artist": "Rednex",
+      "uk_no1_artist": "East 17"
     },
     "film": {
       "box_office_no1": "Toy Story",
@@ -257,7 +258,7 @@
     "KR": {
       "population_millions": 44.9,
       "life_expectancy": 74.9,
-      "gdp_per_capita_usd": 24870,
+      "gdp_per_capita_usd": 12565,
       "leader": "Kim Young-sam",
       "leader_title": "President"
     },

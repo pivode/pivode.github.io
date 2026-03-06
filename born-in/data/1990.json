@@ -38,8 +38,9 @@
       "grammy_record_artist": "Bette Midler",
       "grammy_album": "Nick of Time",
       "grammy_album_artist": "Bonnie Raitt",
-      "uk_no1_jan": "Hangin' Tough",
-      "uk_no1_jan_artist": "New Kids on the Block"
+      "uk_no1_jan": "Do They Know It's Christmas?",
+      "uk_no1_jan_artist": "New Kids on the Block",
+      "uk_no1_artist": "Band Aid II"
     },
     "film": {
       "box_office_no1": "Home Alone",
@@ -257,7 +258,7 @@
     "KR": {
       "population_millions": 43.4,
       "life_expectancy": 72.9,
-      "gdp_per_capita_usd": 16610,
+      "gdp_per_capita_usd": 6147,
       "leader": "Roh Tae-woo",
       "leader_title": "President"
     },

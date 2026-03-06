@@ -38,8 +38,9 @@
       "grammy_record_artist": "Kings of Leon",
       "grammy_album": "Fearless",
       "grammy_album_artist": "Taylor Swift",
-      "uk_no1_jan": "You Are Not Alone",
-      "uk_no1_jan_artist": "Joe McElderry"
+      "uk_no1_jan": "Killing in the Name",
+      "uk_no1_jan_artist": "Joe McElderry",
+      "uk_no1_artist": "Rage Against the Machine"
     },
     "film": {
       "box_office_no1": "Toy Story 3",
@@ -233,7 +234,7 @@
     "KR": {
       "population_millions": 49.4,
       "life_expectancy": 80.5,
-      "gdp_per_capita_usd": 43226,
+      "gdp_per_capita_usd": 22151,
       "leader": "Lee Myung-bak",
       "leader_title": "President"
     },

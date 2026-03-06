@@ -138,9 +138,9 @@
     "un_secretary": "Boutros Boutros-Ghali",
     "pope": "Pope John Paul II",
     "russia_leader": "Boris Yeltsin",
-    "mexico_president": "Ernesto Zedillo",
+    "mexico_president": "Carlos Salinas de Gortari",
     "south_korea_president": "Kim Young-sam",
-    "ireland_taoiseach": "John Bruton"
+    "ireland_taoiseach": "Albert Reynolds"
   },
   "notable_births": [
     {
@@ -246,13 +246,13 @@
       "population_millions": 100.3,
       "life_expectancy": 71.1,
       "gdp_per_capita_usd": 6750,
-      "leader": "Ernesto Zedillo",
+      "leader": "Carlos Salinas de Gortari",
       "leader_title": "President"
     },
     "KR": {
       "population_millions": 44.5,
       "life_expectancy": 74.5,
-      "gdp_per_capita_usd": 22650,
+      "gdp_per_capita_usd": 10074,
       "leader": "Kim Young-sam",
       "leader_title": "President"
     },
@@ -260,7 +260,7 @@
       "population_millions": 3.63,
       "life_expectancy": 76.4,
       "gdp_per_capita_usd": 18800,
-      "leader": "John Bruton",
+      "leader": "Albert Reynolds",
       "leader_title": "Taoiseach"
     }
   }

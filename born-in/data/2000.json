@@ -32,8 +32,8 @@
   },
   "culture": {
     "music": {
-      "billboard_no1_song": "Breathe",
-      "billboard_no1_artist": "Faith Hill",
+      "billboard_no1_song": "Maria Maria",
+      "billboard_no1_artist": "Santana",
       "grammy_record": "Smooth",
       "grammy_record_artist": "Santana featuring Rob Thomas",
       "grammy_album": "Supernatural",
@@ -139,7 +139,7 @@
     "un_secretary": "Kofi Annan",
     "pope": "Pope John Paul II",
     "russia_leader": "Vladimir Putin",
-    "mexico_president": "Vicente Fox",
+    "mexico_president": "Ernesto Zedillo",
     "south_korea_president": "Kim Dae-jung",
     "ireland_taoiseach": "Bertie Ahern"
   },
@@ -242,13 +242,13 @@
       "population_millions": 111.3,
       "life_expectancy": 73.0,
       "gdp_per_capita_usd": 8070,
-      "leader": "Vicente Fox",
+      "leader": "Ernesto Zedillo",
       "leader_title": "President"
     },
     "KR": {
       "population_millions": 46.7,
       "life_expectancy": 76.5,
-      "gdp_per_capita_usd": 27810,
+      "gdp_per_capita_usd": 11948,
       "leader": "Kim Dae-jung",
       "leader_title": "President"
     },

@@ -17,7 +17,7 @@
     "sp500_year_end": 135.76,
     "dow_jones_year_end": 963.99,
     "gold_oz_usd": 594.92,
-    "oil_barrel_usd": 32.5
+    "oil_barrel_usd": 35.69
   },
   "prices_us": {
     "gallon_gas_usd": 1.19,
@@ -38,8 +38,9 @@
       "grammy_record_artist": "The Doobie Brothers",
       "grammy_album": "52nd Street",
       "grammy_album_artist": "Billy Joel",
-      "uk_no1_jan": "There's No One Quite Like Grandma",
-      "uk_no1_jan_artist": "St Winifred's School Choir"
+      "uk_no1_jan": "Brass in Pocket",
+      "uk_no1_jan_artist": "St Winifred's School Choir",
+      "uk_no1_artist": "The Pretenders"
     },
     "film": {
       "box_office_no1": "The Empire Strikes Back",
@@ -260,7 +261,7 @@
     "KR": {
       "population_millions": 38.1,
       "life_expectancy": 66.2,
-      "gdp_per_capita_usd": 6432,
+      "gdp_per_capita_usd": 1715,
       "leader": "Chun Doo-hwan",
       "leader_title": "President"
     },

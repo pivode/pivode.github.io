@@ -127,7 +127,7 @@
     "us_president": "George W. Bush",
     "uk_pm": "Tony Blair",
     "france_president": "Jacques Chirac",
-    "germany_chancellor": "Angela Merkel",
+    "germany_chancellor": "Gerhard Schröder",
     "ussr_leader": "N/A (USSR dissolved)",
     "china_leader": "Hu Jintao",
     "india_pm": "Manmohan Singh",
@@ -175,7 +175,7 @@
       "population_millions": 82.4,
       "life_expectancy": 78.8,
       "gdp_per_capita_usd": 34060,
-      "leader": "Angela Merkel",
+      "leader": "Gerhard Schröder",
       "leader_title": "Chancellor"
     },
     "JP": {
@@ -237,7 +237,7 @@
     "KR": {
       "population_millions": 48.5,
       "life_expectancy": 78.7,
-      "gdp_per_capita_usd": 37120,
+      "gdp_per_capita_usd": 18641,
       "leader": "Roh Moo-hyun",
       "leader_title": "President"
     },
