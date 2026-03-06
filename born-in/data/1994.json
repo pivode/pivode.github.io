@@ -17,7 +17,7 @@
     "sp500_year_end": 459.27,
     "dow_jones_year_end": 3834.44,
     "gold_oz_usd": 383.25,
-    "oil_barrel_usd": 17.20
+    "oil_barrel_usd": 17.2
   },
   "prices_us": {
     "gallon_gas_usd": 1.11,
@@ -28,7 +28,7 @@
     "new_car_avg_usd": 17900,
     "median_home_usd": 107200,
     "first_class_stamp_cents": 29,
-    "big_mac_usd": 2.30
+    "big_mac_usd": 2.3
   },
   "culture": {
     "music": {
@@ -57,8 +57,15 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Picket Fences",
       "emmy_comedy": "Frasier",
-      "notable_premieres": ["Friends", "ER", "The Late Show with David Letterman (CBS)"],
-      "notable_finales": ["Cheers", "Star Trek: The Next Generation"]
+      "notable_premieres": [
+        "Friends",
+        "ER",
+        "The Late Show with David Letterman (CBS)"
+      ],
+      "notable_finales": [
+        "Cheers",
+        "Star Trek: The Next Generation"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Celestine Prophecy",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 4, "event": "Rwandan Genocide begins - approximately 800,000 Tutsi and moderate Hutu are killed over 100 days"},
-    {"month": 5, "event": "Nelson Mandela inaugurated as South Africa's first Black president following the country's first fully democratic election"},
-    {"month": 5, "event": "The Channel Tunnel officially opens, linking the UK and France beneath the English Channel for the first time"},
-    {"month": 6, "event": "O. J. Simpson murder case begins with low-speed Bronco chase watched by 95 million Americans on live TV"},
-    {"month": 12, "event": "First Chechen War begins as Russian forces invade Chechnya, starting a brutal conflict that lasts nearly two years"}
+    {
+      "month": 4,
+      "event": "Rwandan Genocide begins - approximately 800,000 Tutsi and moderate Hutu are killed over 100 days"
+    },
+    {
+      "month": 5,
+      "event": "Nelson Mandela inaugurated as South Africa's first Black president following the country's first fully democratic election"
+    },
+    {
+      "month": 5,
+      "event": "The Channel Tunnel officially opens, linking the UK and France beneath the English Channel for the first time"
+    },
+    {
+      "month": 6,
+      "event": "O. J. Simpson murder case begins with low-speed Bronco chase watched by 95 million Americans on live TV"
+    },
+    {
+      "month": 12,
+      "event": "First Chechen War begins as Russian forces invade Chechnya, starting a brutal conflict that lasts nearly two years"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,13 +136,33 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Itamar Franco (to Jan), then Fernando Henrique Cardoso",
     "un_secretary": "Boutros Boutros-Ghali",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Ernesto Zedillo",
+    "south_korea_president": "Kim Young-sam",
+    "ireland_taoiseach": "John Bruton"
   },
   "notable_births": [
-    {"name": "Justin Bieber", "month": 3, "field": "Music"},
-    {"name": "Harry Styles", "month": 2, "field": "Music"},
-    {"name": "Halsey", "month": 9, "field": "Music"},
-    {"name": "Ansel Elgort", "month": 3, "field": "Film"}
+    {
+      "name": "Justin Bieber",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Harry Styles",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Halsey",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Ansel Elgort",
+      "month": 3,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -192,6 +234,34 @@
       "gdp_per_capita_usd": 19570,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 147.9,
+      "life_expectancy": 60.2,
+      "gdp_per_capita_usd": 2654,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 100.3,
+      "life_expectancy": 71.1,
+      "gdp_per_capita_usd": 6750,
+      "leader": "Ernesto Zedillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 44.5,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 22650,
+      "leader": "Kim Young-sam",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.63,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 18800,
+      "leader": "John Bruton",
+      "leader_title": "Taoiseach"
     }
   }
 }

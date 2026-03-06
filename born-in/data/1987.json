@@ -20,7 +20,7 @@
     "oil_barrel_usd": 18.33
   },
   "prices_us": {
-    "gallon_gas_usd": 0.90,
+    "gallon_gas_usd": 0.9,
     "gallon_milk_usd": 2.28,
     "dozen_eggs_usd": 0.78,
     "loaf_bread_usd": 0.58,
@@ -28,7 +28,7 @@
     "new_car_avg_usd": 12264,
     "median_home_usd": 104500,
     "first_class_stamp_cents": 22,
-    "big_mac_usd": 1.60
+    "big_mac_usd": 1.6
   },
   "culture": {
     "music": {
@@ -57,8 +57,15 @@
       "most_watched_network": "NBC",
       "emmy_drama": "L.A. Law",
       "emmy_comedy": "The Golden Girls",
-      "notable_premieres": ["Star Trek: The Next Generation", "Full House", "Married... with Children"],
-      "notable_finales": ["The Colbys", "Magnum P.I."]
+      "notable_premieres": [
+        "Star Trek: The Next Generation",
+        "Full House",
+        "Married... with Children"
+      ],
+      "notable_finales": [
+        "The Colbys",
+        "Magnum P.I."
+      ]
     },
     "books": {
       "fiction_bestseller": "Misery",
@@ -95,12 +102,30 @@
     ]
   },
   "world_events": [
-    {"month": 3, "event": "Herald of Free Enterprise ferry capsizes off Belgium killing 193"},
-    {"month": 5, "event": "Iran-Contra hearings begin in US Congress"},
-    {"month": 6, "event": "Reagan delivers 'Tear down this wall' speech at Brandenburg Gate"},
-    {"month": 8, "event": "Dow Jones hits all-time high of 2,722 before the fall"},
-    {"month": 10, "event": "Black Monday - Dow Jones drops 22.6% in a single day, the largest one-day crash in history"},
-    {"month": 12, "event": "INF Treaty signed by Reagan and Gorbachev, eliminating nuclear missiles"}
+    {
+      "month": 3,
+      "event": "Herald of Free Enterprise ferry capsizes off Belgium killing 193"
+    },
+    {
+      "month": 5,
+      "event": "Iran-Contra hearings begin in US Congress"
+    },
+    {
+      "month": 6,
+      "event": "Reagan delivers 'Tear down this wall' speech at Brandenburg Gate"
+    },
+    {
+      "month": 8,
+      "event": "Dow Jones hits all-time high of 2,722 before the fall"
+    },
+    {
+      "month": 10,
+      "event": "Black Monday - Dow Jones drops 22.6% in a single day, the largest one-day crash in history"
+    },
+    {
+      "month": 12,
+      "event": "INF Treaty signed by Reagan and Gorbachev, eliminating nuclear missiles"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -115,14 +140,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "José Sarney",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Mikhail Gorbachev",
+    "mexico_president": "Miguel de la Madrid",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Lionel Messi", "month": 6, "field": "Football"},
-    {"name": "Kendrick Lamar", "month": 6, "field": "Music"},
-    {"name": "Novak Djokovic", "month": 5, "field": "Tennis"},
-    {"name": "Zac Efron", "month": 10, "field": "Film"},
-    {"name": "Blake Lively", "month": 8, "field": "Film"}
+    {
+      "name": "Lionel Messi",
+      "month": 6,
+      "field": "Football"
+    },
+    {
+      "name": "Kendrick Lamar",
+      "month": 6,
+      "field": "Music"
+    },
+    {
+      "name": "Novak Djokovic",
+      "month": 5,
+      "field": "Tennis"
+    },
+    {
+      "name": "Zac Efron",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Blake Lively",
+      "month": 8,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +243,34 @@
       "gdp_per_capita_usd": 16427,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 145.6,
+      "life_expectancy": 65.9,
+      "gdp_per_capita_usd": 6650,
+      "leader": "Mikhail Gorbachev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 86.5,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 4780,
+      "leader": "Miguel de la Madrid",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 42.1,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 12050,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.53,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 11600,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

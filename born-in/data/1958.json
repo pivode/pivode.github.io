@@ -13,14 +13,14 @@
     "us_median_household_income_usd": 5100,
     "us_inflation_pct": 2.73,
     "us_unemployment_pct": 6.8,
-    "us_minimum_wage_usd": 1.00,
+    "us_minimum_wage_usd": 1.0,
     "sp500_year_end": 55.21,
     "dow_jones_year_end": 583.65,
-    "gold_oz_usd": 35.00,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.87
   },
   "prices_us": {
-    "gallon_gas_usd": 0.30,
+    "gallon_gas_usd": 0.3,
     "gallon_milk_usd": 1.01,
     "dozen_eggs_usd": 0.65,
     "loaf_bread_usd": 0.19,
@@ -57,7 +57,10 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The Alcoa Hour / Goodyear Playhouse",
       "emmy_comedy": "The Phil Silvers Show",
-      "notable_premieres": ["The Donna Reed Show", "77 Sunset Strip"],
+      "notable_premieres": [
+        "The Donna Reed Show",
+        "77 Sunset Strip"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Explorer 1, the first successful US satellite, launched - marking America's entry into the Space Race"},
-    {"month": 3, "event": "Nikita Khrushchev becomes Soviet Premier as well as First Secretary, consolidating power"},
-    {"month": 7, "event": "US Congress establishes NASA in response to Soviet space achievements"},
-    {"month": 9, "event": "Charles de Gaulle becomes President of France; new Fifth Republic constitution adopted"},
-    {"month": 10, "event": "Pope Pius XII dies; Cardinal Angelo Roncalli elected as Pope John XXIII"}
+    {
+      "month": 1,
+      "event": "Explorer 1, the first successful US satellite, launched - marking America's entry into the Space Race"
+    },
+    {
+      "month": 3,
+      "event": "Nikita Khrushchev becomes Soviet Premier as well as First Secretary, consolidating power"
+    },
+    {
+      "month": 7,
+      "event": "US Congress establishes NASA in response to Soviet space achievements"
+    },
+    {
+      "month": 9,
+      "event": "Charles de Gaulle becomes President of France; new Fifth Republic constitution adopted"
+    },
+    {
+      "month": 10,
+      "event": "Pope Pius XII dies; Cardinal Angelo Roncalli elected as Pope John XXIII"
+    }
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
@@ -114,14 +132,38 @@
     "canada_pm": "John Diefenbaker",
     "brazil_president": "Juscelino Kubitschek",
     "un_secretary": "Dag Hammarskjöld",
-    "pope": "Pope John XXIII"
+    "pope": "Pope John XXIII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo López Mateos",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "Éamon de Valera"
   },
   "notable_births": [
-    {"name": "Michael Jackson", "month": 8, "field": "Music"},
-    {"name": "Madonna", "month": 8, "field": "Music"},
-    {"name": "Prince", "month": 6, "field": "Music"},
-    {"name": "Tim Burton", "month": 8, "field": "Film"},
-    {"name": "Alec Baldwin", "month": 4, "field": "Film"}
+    {
+      "name": "Michael Jackson",
+      "month": 8,
+      "field": "Music"
+    },
+    {
+      "name": "Madonna",
+      "month": 8,
+      "field": "Music"
+    },
+    {
+      "name": "Prince",
+      "month": 6,
+      "field": "Music"
+    },
+    {
+      "name": "Tim Burton",
+      "month": 8,
+      "field": "Film"
+    },
+    {
+      "name": "Alec Baldwin",
+      "month": 4,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 2107,
       "leader": "John Diefenbaker",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 112.7,
+      "life_expectancy": 64.8,
+      "gdp_per_capita_usd": 2600,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 35.2,
+      "life_expectancy": 55.7,
+      "gdp_per_capita_usd": 2300,
+      "leader": "Adolfo López Mateos",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 24.4,
+      "life_expectancy": 53.8,
+      "gdp_per_capita_usd": 1250,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.88,
+      "life_expectancy": 69.4,
+      "gdp_per_capita_usd": 3200,
+      "leader": "Éamon de Valera",
+      "leader_title": "Taoiseach"
     }
   }
 }

@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 3.35,
     "sp500_year_end": 164.93,
     "dow_jones_year_end": 1258.64,
-    "gold_oz_usd": 381.50,
+    "gold_oz_usd": 381.5,
     "oil_barrel_usd": 29.55
   },
   "prices_us": {
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Hill Street Blues",
       "emmy_comedy": "Cheers",
-      "notable_premieres": ["The A-Team", "Wheel of Fortune (daytime)", "Night Court"],
-      "notable_finales": ["M*A*S*H (farewell, 106 million viewers)"]
+      "notable_premieres": [
+        "The A-Team",
+        "Wheel of Fortune (daytime)",
+        "Night Court"
+      ],
+      "notable_finales": [
+        "M*A*S*H (farewell, 106 million viewers)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Poland",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Final episode of M*A*S*H watched by a record 106 million Americans, the highest-rated US television broadcast ever"},
-    {"month": 3, "event": "President Reagan proposes the Strategic Defense Initiative (Star Wars), aiming to build a missile defense shield"},
-    {"month": 9, "event": "Korean Air Lines Flight 007 shot down by a Soviet fighter jet after straying into Soviet airspace, killing all 269 aboard"},
-    {"month": 10, "event": "US Marines headquarters bombed in Beirut, killing 241; simultaneous attack kills 58 French paratroopers"},
-    {"month": 10, "event": "US invades Grenada to oust Marxist government; Soviet early-warning system nearly triggers nuclear war by mistake (Able Archer 83)"}
+    {
+      "month": 2,
+      "event": "Final episode of M*A*S*H watched by a record 106 million Americans, the highest-rated US television broadcast ever"
+    },
+    {
+      "month": 3,
+      "event": "President Reagan proposes the Strategic Defense Initiative (Star Wars), aiming to build a missile defense shield"
+    },
+    {
+      "month": 9,
+      "event": "Korean Air Lines Flight 007 shot down by a Soviet fighter jet after straying into Soviet airspace, killing all 269 aboard"
+    },
+    {
+      "month": 10,
+      "event": "US Marines headquarters bombed in Beirut, killing 241; simultaneous attack kills 58 French paratroopers"
+    },
+    {
+      "month": 10,
+      "event": "US invades Grenada to oust Marxist government; Soviet early-warning system nearly triggers nuclear war by mistake (Able Archer 83)"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "João Figueiredo",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Yuri Andropov",
+    "mexico_president": "Miguel de la Madrid",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Garret FitzGerald"
   },
   "notable_births": [
-    {"name": "Carrie Underwood", "month": 3, "field": "Music"},
-    {"name": "Mila Kunis", "month": 8, "field": "Film/Television"},
-    {"name": "Jesse Eisenberg", "month": 10, "field": "Film"},
-    {"name": "Jonah Hill", "month": 12, "field": "Film"},
-    {"name": "Amy Winehouse", "month": 9, "field": "Music"}
+    {
+      "name": "Carrie Underwood",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Mila Kunis",
+      "month": 8,
+      "field": "Film/Television"
+    },
+    {
+      "name": "Jesse Eisenberg",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Jonah Hill",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Amy Winehouse",
+      "month": 9,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 13706,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 142.3,
+      "life_expectancy": 65.8,
+      "gdp_per_capita_usd": 6000,
+      "leader": "Yuri Andropov",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 77.7,
+      "life_expectancy": 68.0,
+      "gdp_per_capita_usd": 4890,
+      "leader": "Miguel de la Madrid",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 39.9,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 8200,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.5,
+      "life_expectancy": 74.2,
+      "gdp_per_capita_usd": 10700,
+      "leader": "Garret FitzGerald",
+      "leader_title": "Taoiseach"
     }
   }
 }

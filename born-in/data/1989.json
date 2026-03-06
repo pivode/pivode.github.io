@@ -14,8 +14,8 @@
     "us_inflation_pct": 4.83,
     "us_unemployment_pct": 5.3,
     "us_minimum_wage_usd": 3.35,
-    "sp500_year_end": 353.40,
-    "dow_jones_year_end": 2753.20,
+    "sp500_year_end": 353.4,
+    "dow_jones_year_end": 2753.2,
     "gold_oz_usd": 381.44,
     "oil_barrel_usd": 18.33
   },
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "L.A. Law",
       "emmy_comedy": "Cheers",
-      "notable_premieres": ["Seinfeld", "Baywatch", "The Simpsons (series)"],
-      "notable_finales": ["Dynasty"]
+      "notable_premieres": [
+        "Seinfeld",
+        "Baywatch",
+        "The Simpsons (series)"
+      ],
+      "notable_finales": [
+        "Dynasty"
+      ]
     },
     "books": {
       "fiction_bestseller": "Clear and Present Danger",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 3, "event": "Exxon Valdez oil tanker runs aground in Prince William Sound, Alaska, spilling 11 million gallons in America's worst oil spill"},
-    {"month": 4, "event": "Tiananmen Square protests in Beijing grow to hundreds of thousands; government declares martial law"},
-    {"month": 6, "event": "Tiananmen Square massacre: Chinese military kills hundreds or thousands of democracy protesters"},
-    {"month": 11, "event": "Berlin Wall falls after East Germany opens its borders; crowds tear down the wall amid celebrations across Germany"},
-    {"month": 12, "event": "Romanian Revolution: Nicolae Ceausescu overthrown and executed on Christmas Day, ending communist rule"}
+    {
+      "month": 3,
+      "event": "Exxon Valdez oil tanker runs aground in Prince William Sound, Alaska, spilling 11 million gallons in America's worst oil spill"
+    },
+    {
+      "month": 4,
+      "event": "Tiananmen Square protests in Beijing grow to hundreds of thousands; government declares martial law"
+    },
+    {
+      "month": 6,
+      "event": "Tiananmen Square massacre: Chinese military kills hundreds or thousands of democracy protesters"
+    },
+    {
+      "month": 11,
+      "event": "Berlin Wall falls after East Germany opens its borders; crowds tear down the wall amid celebrations across Germany"
+    },
+    {
+      "month": 12,
+      "event": "Romanian Revolution: Nicolae Ceausescu overthrown and executed on Christmas Day, ending communist rule"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan (to Jan), then George H. W. Bush",
@@ -114,14 +135,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "José Sarney",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Mikhail Gorbachev",
+    "mexico_president": "Carlos Salinas de Gortari",
+    "south_korea_president": "Roh Tae-woo",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Taylor Swift", "month": 12, "field": "Music"},
-    {"name": "Jordin Sparks", "month": 12, "field": "Music"},
-    {"name": "Brie Larson", "month": 10, "field": "Film"},
-    {"name": "Daniel Radcliffe", "month": 7, "field": "Film"},
-    {"name": "Nina Dobrev", "month": 1, "field": "Television"}
+    {
+      "name": "Taylor Swift",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Jordin Sparks",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Brie Larson",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Daniel Radcliffe",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Nina Dobrev",
+      "month": 1,
+      "field": "Television"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 19983,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 147.2,
+      "life_expectancy": 65.9,
+      "gdp_per_capita_usd": 6840,
+      "leader": "Mikhail Gorbachev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 90.6,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 5600,
+      "leader": "Carlos Salinas de Gortari",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 43.0,
+      "life_expectancy": 72.3,
+      "gdp_per_capita_usd": 15160,
+      "leader": "Roh Tae-woo",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.51,
+      "life_expectancy": 75.4,
+      "gdp_per_capita_usd": 13600,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

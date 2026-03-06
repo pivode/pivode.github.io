@@ -14,9 +14,9 @@
     "us_inflation_pct": 3.2,
     "us_unemployment_pct": 4.6,
     "us_minimum_wage_usd": 5.15,
-    "sp500_year_end": 1418.30,
+    "sp500_year_end": 1418.3,
     "dow_jones_year_end": 12463.15,
-    "gold_oz_usd": 636.30,
+    "gold_oz_usd": 636.3,
     "oil_barrel_usd": 66.05
   },
   "prices_us": {
@@ -57,8 +57,16 @@
       "most_watched_network": "Fox",
       "emmy_drama": "24",
       "emmy_comedy": "The Office",
-      "notable_premieres": ["Heroes", "30 Rock", "Dexter", "Friday Night Lights"],
-      "notable_finales": ["The West Wing", "Charmed"]
+      "notable_premieres": [
+        "Heroes",
+        "30 Rock",
+        "Dexter",
+        "Friday Night Lights"
+      ],
+      "notable_finales": [
+        "The West Wing",
+        "Charmed"
+      ]
     },
     "books": {
       "fiction_bestseller": "For One More Day",
@@ -95,11 +103,26 @@
     ]
   },
   "world_events": [
-    {"month": 7, "event": "Israel-Lebanon war erupts after Hezbollah captures two Israeli soldiers; 34-day conflict kills over 1,200 Lebanese and 165 Israelis"},
-    {"month": 10, "event": "North Korea conducts its first nuclear weapons test, claiming successful underground detonation and escalating tensions"},
-    {"month": 12, "event": "Saddam Hussein executed by hanging on December 30 in Baghdad for crimes against humanity"},
-    {"month": 6, "event": "FIFA World Cup held in Germany; Italy beats France on penalties in the final after Zidane's infamous headbutt"},
-    {"month": 5, "event": "Montenegro declares independence from Serbia following a referendum, becoming Europe's newest state"}
+    {
+      "month": 7,
+      "event": "Israel-Lebanon war erupts after Hezbollah captures two Israeli soldiers; 34-day conflict kills over 1,200 Lebanese and 165 Israelis"
+    },
+    {
+      "month": 10,
+      "event": "North Korea conducts its first nuclear weapons test, claiming successful underground detonation and escalating tensions"
+    },
+    {
+      "month": 12,
+      "event": "Saddam Hussein executed by hanging on December 30 in Baghdad for crimes against humanity"
+    },
+    {
+      "month": 6,
+      "event": "FIFA World Cup held in Germany; Italy beats France on penalties in the final after Zidane's infamous headbutt"
+    },
+    {
+      "month": 5,
+      "event": "Montenegro declares independence from Serbia following a referendum, becoming Europe's newest state"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,10 +137,18 @@
     "canada_pm": "Stephen Harper",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Ban Ki-moon",
-    "pope": "Pope Benedict XVI"
+    "pope": "Pope Benedict XVI",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Felipe Calderón",
+    "south_korea_president": "Roh Moo-hyun",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Xochitl Gomez", "month": 4, "field": "Film"}
+    {
+      "name": "Xochitl Gomez",
+      "month": 4,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -189,6 +220,34 @@
       "gdp_per_capita_usd": 36940,
       "leader": "Stephen Harper",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 142.0,
+      "life_expectancy": 66.3,
+      "gdp_per_capita_usd": 14140,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 121.7,
+      "life_expectancy": 74.9,
+      "gdp_per_capita_usd": 10124,
+      "leader": "Felipe Calderón",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 48.7,
+      "life_expectancy": 79.1,
+      "gdp_per_capita_usd": 39640,
+      "leader": "Roh Moo-hyun",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.34,
+      "life_expectancy": 79.0,
+      "gdp_per_capita_usd": 57700,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

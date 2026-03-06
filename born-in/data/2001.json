@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1148.08,
     "dow_jones_year_end": 10021.57,
-    "gold_oz_usd": 276.50,
+    "gold_oz_usd": 276.5,
     "oil_barrel_usd": 19.84
   },
   "prices_us": {
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "The West Wing",
       "emmy_comedy": "Sex and the City",
-      "notable_premieres": ["24", "Scrubs", "Smallville"],
-      "notable_finales": ["Buffy the Vampire Slayer (move to UPN)"]
+      "notable_premieres": [
+        "24",
+        "Scrubs",
+        "Smallville"
+      ],
+      "notable_finales": [
+        "Buffy the Vampire Slayer (move to UPN)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Desecration",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 9, "event": "September 11 terrorist attacks kill 2,977 people in New York, Washington DC, and Pennsylvania, reshaping global security and foreign policy"},
-    {"month": 10, "event": "US and coalition forces launch Operation Enduring Freedom in Afghanistan, targeting the Taliban regime and al-Qaeda"},
-    {"month": 1, "event": "Wikipedia launches on January 15 as a free online encyclopedia; space station Mir deorbits and burns up over the Pacific in March after 15 years in orbit"},
-    {"month": 4, "event": "US-China diplomatic crisis as EP-3 spy plane collides with Chinese fighter jet over the South China Sea, pilot killed"},
-    {"month": 12, "event": "Enron Corporation files for bankruptcy in the largest corporate collapse in US history up to that point, exposing massive accounting fraud"}
+    {
+      "month": 9,
+      "event": "September 11 terrorist attacks kill 2,977 people in New York, Washington DC, and Pennsylvania, reshaping global security and foreign policy"
+    },
+    {
+      "month": 10,
+      "event": "US and coalition forces launch Operation Enduring Freedom in Afghanistan, targeting the Taliban regime and al-Qaeda"
+    },
+    {
+      "month": 1,
+      "event": "Wikipedia launches on January 15 as a free online encyclopedia; space station Mir deorbits and burns up over the Pacific in March after 15 years in orbit"
+    },
+    {
+      "month": 4,
+      "event": "US-China diplomatic crisis as EP-3 spy plane collides with Chinese fighter jet over the South China Sea, pilot killed"
+    },
+    {
+      "month": 12,
+      "event": "Enron Corporation files for bankruptcy in the largest corporate collapse in US history up to that point, exposing massive accounting fraud"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,13 +135,33 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Vicente Fox",
+    "south_korea_president": "Kim Dae-jung",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Billie Eilish", "month": 12, "field": "Music"},
-    {"name": "Emma Chamberlain", "month": 5, "field": "Social Media"},
-    {"name": "Isabela Merced", "month": 7, "field": "Film"},
-    {"name": "Sasha Obama", "month": 6, "field": "Public Figure"}
+    {
+      "name": "Billie Eilish",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Emma Chamberlain",
+      "month": 5,
+      "field": "Social Media"
+    },
+    {
+      "name": "Isabela Merced",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Sasha Obama",
+      "month": 6,
+      "field": "Public Figure"
+    }
   ],
   "countries": {
     "US": {
@@ -192,6 +233,34 @@
       "gdp_per_capita_usd": 23526,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 145.5,
+      "life_expectancy": 65.1,
+      "gdp_per_capita_usd": 5560,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 113.1,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 7970,
+      "leader": "Vicente Fox",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 47.1,
+      "life_expectancy": 77.0,
+      "gdp_per_capita_usd": 28560,
+      "leader": "Kim Dae-jung",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.97,
+      "life_expectancy": 77.8,
+      "gdp_per_capita_usd": 40500,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

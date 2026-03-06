@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 16461,
     "us_inflation_pct": 11.35,
     "us_unemployment_pct": 5.8,
-    "us_minimum_wage_usd": 2.90,
+    "us_minimum_wage_usd": 2.9,
     "sp500_year_end": 107.94,
     "dow_jones_year_end": 838.74,
-    "gold_oz_usd": 307.80,
+    "gold_oz_usd": 307.8,
     "oil_barrel_usd": 31.61
   },
   "prices_us": {
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Lou Grant",
       "emmy_comedy": "Taxi",
-      "notable_premieres": ["Knots Landing", "The Dukes of Hazzard", "Benson"],
-      "notable_finales": ["Welcome Back, Kotter"]
+      "notable_premieres": [
+        "Knots Landing",
+        "The Dukes of Hazzard",
+        "Benson"
+      ],
+      "notable_finales": [
+        "Welcome Back, Kotter"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Matarese Circle",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Iranian Revolution: Shah Mohammad Reza Pahlavi flees Iran; Ayatollah Khomeini returns from exile to establish an Islamic republic"},
-    {"month": 3, "event": "Three Mile Island nuclear accident in Pennsylvania - the worst nuclear incident in US history triggers global alarm"},
-    {"month": 6, "event": "OPEC announces another major oil price increase, deepening the energy crisis and stagflation across Western economies"},
-    {"month": 11, "event": "Iranian militants seize the US Embassy in Tehran, taking 66 Americans hostage in a crisis lasting 444 days"},
-    {"month": 12, "event": "Soviet Union invades Afghanistan, beginning a decade-long war that will contribute to the USSR's eventual collapse"}
+    {
+      "month": 1,
+      "event": "Iranian Revolution: Shah Mohammad Reza Pahlavi flees Iran; Ayatollah Khomeini returns from exile to establish an Islamic republic"
+    },
+    {
+      "month": 3,
+      "event": "Three Mile Island nuclear accident in Pennsylvania - the worst nuclear incident in US history triggers global alarm"
+    },
+    {
+      "month": 6,
+      "event": "OPEC announces another major oil price increase, deepening the energy crisis and stagflation across Western economies"
+    },
+    {
+      "month": 11,
+      "event": "Iranian militants seize the US Embassy in Tehran, taking 66 Americans hostage in a crisis lasting 444 days"
+    },
+    {
+      "month": 12,
+      "event": "Soviet Union invades Afghanistan, beginning a decade-long war that will contribute to the USSR's eventual collapse"
+    }
   ],
   "leaders": {
     "us_president": "Jimmy Carter",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "João Figueiredo",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "José López Portillo",
+    "south_korea_president": "Choi Kyu-hah",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Heath Ledger", "month": 4, "field": "Film"},
-    {"name": "Kate Hudson", "month": 4, "field": "Film"},
-    {"name": "Norah Jones", "month": 3, "field": "Music"},
-    {"name": "Adam Levine", "month": 3, "field": "Music"},
-    {"name": "Pink", "month": 9, "field": "Music"}
+    {
+      "name": "Heath Ledger",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Kate Hudson",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Norah Jones",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Adam Levine",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Pink",
+      "month": 9,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 11659,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 138.9,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 5650,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 69.1,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 5650,
+      "leader": "José López Portillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 38.1,
+      "life_expectancy": 69.1,
+      "gdp_per_capita_usd": 7100,
+      "leader": "Choi Kyu-hah",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.36,
+      "life_expectancy": 73.6,
+      "gdp_per_capita_usd": 11400,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

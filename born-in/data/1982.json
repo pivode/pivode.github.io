@@ -20,10 +20,10 @@
     "oil_barrel_usd": 33.65
   },
   "prices_us": {
-    "gallon_gas_usd": 1.30,
+    "gallon_gas_usd": 1.3,
     "gallon_milk_usd": 2.24,
     "dozen_eggs_usd": 0.88,
-    "loaf_bread_usd": 0.50,
+    "loaf_bread_usd": 0.5,
     "movie_ticket_usd": 2.94,
     "new_car_avg_usd": 8000,
     "median_home_usd": 67800,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Hill Street Blues",
       "emmy_comedy": "Barney Miller",
-      "notable_premieres": ["Late Night with David Letterman", "Cheers", "Family Ties"],
-      "notable_finales": ["M*A*S*H (finale set record with 106 million viewers in 1983)"]
+      "notable_premieres": [
+        "Late Night with David Letterman",
+        "Cheers",
+        "Family Ties"
+      ],
+      "notable_finales": [
+        "M*A*S*H (finale set record with 106 million viewers in 1983)"
+      ]
     },
     "books": {
       "fiction_bestseller": "E.T. the Extra-Terrestrial",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 4, "event": "Falklands War begins as Argentina invades the British Falkland Islands; Britain sends a naval task force 8,000 miles south"},
-    {"month": 6, "event": "Falklands War ends with British victory; Argentina surrenders after 74 days of fighting"},
-    {"month": 6, "event": "Israel invades Lebanon, beginning an 18-year occupation and triggering the Lebanese Civil War's worst phase"},
-    {"month": 9, "event": "Sabra and Shatila massacre: Lebanese Christian militias kill hundreds of Palestinian refugees in Beirut camps under Israeli watch"},
-    {"month": 11, "event": "Leonid Brezhnev dies after 18 years as Soviet leader; Yuri Andropov succeeds him"}
+    {
+      "month": 4,
+      "event": "Falklands War begins as Argentina invades the British Falkland Islands; Britain sends a naval task force 8,000 miles south"
+    },
+    {
+      "month": 6,
+      "event": "Falklands War ends with British victory; Argentina surrenders after 74 days of fighting"
+    },
+    {
+      "month": 6,
+      "event": "Israel invades Lebanon, beginning an 18-year occupation and triggering the Lebanese Civil War's worst phase"
+    },
+    {
+      "month": 9,
+      "event": "Sabra and Shatila massacre: Lebanese Christian militias kill hundreds of Palestinian refugees in Beirut camps under Israeli watch"
+    },
+    {
+      "month": 11,
+      "event": "Leonid Brezhnev dies after 18 years as Soviet leader; Yuri Andropov succeeds him"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "João Figueiredo",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Yuri Andropov",
+    "mexico_president": "Miguel de la Madrid",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Prince William", "month": 6, "field": "Royalty"},
-    {"name": "Anne Hathaway", "month": 11, "field": "Film"},
-    {"name": "Kelly Clarkson", "month": 4, "field": "Music"},
-    {"name": "Kirsten Dunst", "month": 4, "field": "Film"},
-    {"name": "LeAnn Rimes", "month": 8, "field": "Music"}
+    {
+      "name": "Prince William",
+      "month": 6,
+      "field": "Royalty"
+    },
+    {
+      "name": "Anne Hathaway",
+      "month": 11,
+      "field": "Film"
+    },
+    {
+      "name": "Kelly Clarkson",
+      "month": 4,
+      "field": "Music"
+    },
+    {
+      "name": "Kirsten Dunst",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "LeAnn Rimes",
+      "month": 8,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 12584,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 141.5,
+      "life_expectancy": 65.9,
+      "gdp_per_capita_usd": 5900,
+      "leader": "Yuri Andropov",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 75.5,
+      "life_expectancy": 67.8,
+      "gdp_per_capita_usd": 5340,
+      "leader": "Miguel de la Madrid",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 39.3,
+      "life_expectancy": 68.3,
+      "gdp_per_capita_usd": 7300,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.48,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 10900,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

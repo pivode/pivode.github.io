@@ -57,8 +57,16 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The Sopranos",
       "emmy_comedy": "Will & Grace",
-      "notable_premieres": ["Survivor", "Big Brother (US)", "CSI: Crime Scene Investigation", "Gilmore Girls"],
-      "notable_finales": ["Beverly Hills, 90210 (series)", "Who Wants to Be a Millionaire? (original run peak)"]
+      "notable_premieres": [
+        "Survivor",
+        "Big Brother (US)",
+        "CSI: Crime Scene Investigation",
+        "Gilmore Girls"
+      ],
+      "notable_finales": [
+        "Beverly Hills, 90210 (series)",
+        "Who Wants to Be a Millionaire? (original run peak)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Brethren",
@@ -95,11 +103,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Y2K computer bug passes without catastrophe, ending a global scare that cost $300-600 billion to remediate"},
-    {"month": 3, "event": "NASDAQ composite peaks at 5,048 before the dot-com bubble bursts, erasing $5 trillion in market value over two years"},
-    {"month": 10, "event": "USS Cole bombing in Yemen kills 17 US sailors in an Al-Qaeda attack, foreshadowing 9/11"},
-    {"month": 10, "event": "Concorde Air France Flight 4590 crashes in Paris killing 113, marking the beginning of Concorde's end"},
-    {"month": 11, "event": "US presidential election between George W. Bush and Al Gore produces an unprecedented 36-day recount battle in Florida"}
+    {
+      "month": 1,
+      "event": "Y2K computer bug passes without catastrophe, ending a global scare that cost $300-600 billion to remediate"
+    },
+    {
+      "month": 3,
+      "event": "NASDAQ composite peaks at 5,048 before the dot-com bubble bursts, erasing $5 trillion in market value over two years"
+    },
+    {
+      "month": 10,
+      "event": "USS Cole bombing in Yemen kills 17 US sailors in an Al-Qaeda attack, foreshadowing 9/11"
+    },
+    {
+      "month": 10,
+      "event": "Concorde Air France Flight 4590 crashes in Paris killing 113, marking the beginning of Concorde's end"
+    },
+    {
+      "month": 11,
+      "event": "US presidential election between George W. Bush and Al Gore produces an unprecedented 36-day recount battle in Florida"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,12 +137,28 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Vicente Fox",
+    "south_korea_president": "Kim Dae-jung",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Zion Williamson", "month": 7, "field": "Basketball"},
-    {"name": "Addison Rae", "month": 10, "field": "Social Media"},
-    {"name": "Noah Cyrus", "month": 1, "field": "Music"}
+    {
+      "name": "Zion Williamson",
+      "month": 7,
+      "field": "Basketball"
+    },
+    {
+      "name": "Addison Rae",
+      "month": 10,
+      "field": "Social Media"
+    },
+    {
+      "name": "Noah Cyrus",
+      "month": 1,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -191,6 +230,34 @@
       "gdp_per_capita_usd": 24080,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 146.0,
+      "life_expectancy": 64.9,
+      "gdp_per_capita_usd": 4780,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 111.3,
+      "life_expectancy": 73.0,
+      "gdp_per_capita_usd": 8070,
+      "leader": "Vicente Fox",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 46.7,
+      "life_expectancy": 76.5,
+      "gdp_per_capita_usd": 27810,
+      "leader": "Kim Dae-jung",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.94,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 39600,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

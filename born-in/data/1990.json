@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 29943,
     "us_inflation_pct": 5.4,
     "us_unemployment_pct": 5.6,
-    "us_minimum_wage_usd": 3.80,
+    "us_minimum_wage_usd": 3.8,
     "sp500_year_end": 330.22,
     "dow_jones_year_end": 2633.66,
     "gold_oz_usd": 383.51,
@@ -22,8 +22,8 @@
   "prices_us": {
     "gallon_gas_usd": 1.16,
     "gallon_milk_usd": 2.78,
-    "dozen_eggs_usd": 1.00,
-    "loaf_bread_usd": 0.70,
+    "dozen_eggs_usd": 1.0,
+    "loaf_bread_usd": 0.7,
     "movie_ticket_usd": 4.23,
     "new_car_avg_usd": 15900,
     "median_home_usd": 97300,
@@ -57,8 +57,15 @@
       "most_watched_network": "NBC",
       "emmy_drama": "L.A. Law",
       "emmy_comedy": "Murphy Brown",
-      "notable_premieres": ["Twin Peaks", "The Simpsons (series)", "Law & Order"],
-      "notable_finales": ["ALF", "The Wonder Years (season 3)"]
+      "notable_premieres": [
+        "Twin Peaks",
+        "The Simpsons (series)",
+        "Law & Order"
+      ],
+      "notable_finales": [
+        "ALF",
+        "The Wonder Years (season 3)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Plains of Passage",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Nelson Mandela released from Victor Verster Prison after 27 years, signaling the end of apartheid in South Africa"},
-    {"month": 8, "event": "Iraq invades Kuwait, triggering the Gulf Crisis and a US-led international coalition response"},
-    {"month": 10, "event": "German reunification - East and West Germany officially reunify after 45 years of division"},
-    {"month": 11, "event": "Margaret Thatcher resigns as UK Prime Minister after 11 years, succeeded by John Major"},
-    {"month": 12, "event": "Lech Walesa elected President of Poland in the country's first popular presidential election"}
+    {
+      "month": 2,
+      "event": "Nelson Mandela released from Victor Verster Prison after 27 years, signaling the end of apartheid in South Africa"
+    },
+    {
+      "month": 8,
+      "event": "Iraq invades Kuwait, triggering the Gulf Crisis and a US-led international coalition response"
+    },
+    {
+      "month": 10,
+      "event": "German reunification - East and West Germany officially reunify after 45 years of division"
+    },
+    {
+      "month": 11,
+      "event": "Margaret Thatcher resigns as UK Prime Minister after 11 years, succeeded by John Major"
+    },
+    {
+      "month": 12,
+      "event": "Lech Walesa elected President of Poland in the country's first popular presidential election"
+    }
   ],
   "leaders": {
     "us_president": "George H. W. Bush",
@@ -114,14 +136,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "Fernando Collor de Mello",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Mikhail Gorbachev",
+    "mexico_president": "Carlos Salinas de Gortari",
+    "south_korea_president": "Roh Tae-woo",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Emma Watson", "month": 4, "field": "Film"},
-    {"name": "Jennifer Lawrence", "month": 8, "field": "Film"},
-    {"name": "The Weeknd", "month": 2, "field": "Music"},
-    {"name": "Kristen Stewart", "month": 4, "field": "Film"},
-    {"name": "Rita Ora", "month": 11, "field": "Music"}
+    {
+      "name": "Emma Watson",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "month": 8,
+      "field": "Film"
+    },
+    {
+      "name": "The Weeknd",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Kristen Stewart",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Rita Ora",
+      "month": 11,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +239,34 @@
       "gdp_per_capita_usd": 20998,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 147.9,
+      "life_expectancy": 65.3,
+      "gdp_per_capita_usd": 6446,
+      "leader": "Mikhail Gorbachev",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 92.6,
+      "life_expectancy": 69.8,
+      "gdp_per_capita_usd": 5960,
+      "leader": "Carlos Salinas de Gortari",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 43.4,
+      "life_expectancy": 72.9,
+      "gdp_per_capita_usd": 16610,
+      "leader": "Roh Tae-woo",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.51,
+      "life_expectancy": 75.6,
+      "gdp_per_capita_usd": 15100,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

@@ -14,17 +14,17 @@
     "us_inflation_pct": -0.4,
     "us_unemployment_pct": 9.3,
     "us_minimum_wage_usd": 7.25,
-    "sp500_year_end": 1115.10,
+    "sp500_year_end": 1115.1,
     "dow_jones_year_end": 10428.05,
-    "gold_oz_usd": 1087.50,
+    "gold_oz_usd": 1087.5,
     "oil_barrel_usd": 79.36
   },
   "prices_us": {
     "gallon_gas_usd": 2.35,
     "gallon_milk_usd": 3.09,
-    "dozen_eggs_usd": 1.60,
+    "dozen_eggs_usd": 1.6,
     "loaf_bread_usd": 1.37,
-    "movie_ticket_usd": 7.50,
+    "movie_ticket_usd": 7.5,
     "new_car_avg_usd": 26785,
     "median_home_usd": 214000,
     "first_class_stamp_cents": 44,
@@ -57,8 +57,16 @@
       "most_watched_network": "Fox",
       "emmy_drama": "Mad Men",
       "emmy_comedy": "30 Rock",
-      "notable_premieres": ["Modern Family", "Parks and Recreation", "Glee", "Community"],
-      "notable_finales": ["ER", "Battlestar Galactica"]
+      "notable_premieres": [
+        "Modern Family",
+        "Parks and Recreation",
+        "Glee",
+        "Community"
+      ],
+      "notable_finales": [
+        "ER",
+        "Battlestar Galactica"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Lost Symbol",
@@ -95,11 +103,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Barack Obama inaugurated as the 44th US President on January 20 before 1.8 million people on the National Mall - the largest crowd in Washington DC history"},
-    {"month": 6, "event": "H1N1 swine flu pandemic declared by WHO in June, eventually infecting 700 million people worldwide by August"},
-    {"month": 6, "event": "Michael Jackson dies suddenly on June 25 at age 50 from acute propofol intoxication, triggering global mourning"},
-    {"month": 4, "event": "Somali pirates seize the US cargo ship Maersk Alabama; Captain Richard Phillips held hostage before Navy SEAL rescue"},
-    {"month": 12, "event": "Copenhagen climate summit ends without a binding agreement, disappointing climate activists but establishing a voluntary framework"}
+    {
+      "month": 1,
+      "event": "Barack Obama inaugurated as the 44th US President on January 20 before 1.8 million people on the National Mall - the largest crowd in Washington DC history"
+    },
+    {
+      "month": 6,
+      "event": "H1N1 swine flu pandemic declared by WHO in June, eventually infecting 700 million people worldwide by August"
+    },
+    {
+      "month": 6,
+      "event": "Michael Jackson dies suddenly on June 25 at age 50 from acute propofol intoxication, triggering global mourning"
+    },
+    {
+      "month": 4,
+      "event": "Somali pirates seize the US cargo ship Maersk Alabama; Captain Richard Phillips held hostage before Navy SEAL rescue"
+    },
+    {
+      "month": 12,
+      "event": "Copenhagen climate summit ends without a binding agreement, disappointing climate activists but establishing a voluntary framework"
+    }
   ],
   "leaders": {
     "us_president": "Barack Obama",
@@ -114,14 +137,38 @@
     "canada_pm": "Stephen Harper",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Ban Ki-moon",
-    "pope": "Pope Benedict XVI"
+    "pope": "Pope Benedict XVI",
+    "russia_leader": "Dmitry Medvedev",
+    "mexico_president": "Felipe Calderón",
+    "south_korea_president": "Lee Myung-bak",
+    "ireland_taoiseach": "Brian Cowen"
   },
   "notable_births": [
-    {"name": "North West", "month": 6, "field": "Entertainment"},
-    {"name": "Saint-West", "month": 12, "field": "Entertainment"},
-    {"name": "Chicago West", "month": 1, "field": "Entertainment"},
-    {"name": "Psalm West", "month": 5, "field": "Entertainment"},
-    {"name": "Kim Possible (character revival era child)", "month": 1, "field": "Entertainment"}
+    {
+      "name": "North West",
+      "month": 6,
+      "field": "Entertainment"
+    },
+    {
+      "name": "Saint-West",
+      "month": 12,
+      "field": "Entertainment"
+    },
+    {
+      "name": "Chicago West",
+      "month": 1,
+      "field": "Entertainment"
+    },
+    {
+      "name": "Psalm West",
+      "month": 5,
+      "field": "Entertainment"
+    },
+    {
+      "name": "Kim Possible (character revival era child)",
+      "month": 1,
+      "field": "Entertainment"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +240,34 @@
       "gdp_per_capita_usd": 40317,
       "leader": "Stephen Harper",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 141.0,
+      "life_expectancy": 68.4,
+      "gdp_per_capita_usd": 15422,
+      "leader": "Dmitry Medvedev",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 126.4,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 8956,
+      "leader": "Felipe Calderón",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 49.2,
+      "life_expectancy": 80.1,
+      "gdp_per_capita_usd": 38610,
+      "leader": "Lee Myung-bak",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.54,
+      "life_expectancy": 80.0,
+      "gdp_per_capita_usd": 48900,
+      "leader": "Brian Cowen",
+      "leader_title": "Taoiseach"
     }
   }
 }

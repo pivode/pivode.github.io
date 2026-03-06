@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "The Fugitive",
       "emmy_comedy": "The Dick Van Dyke Show",
-      "notable_premieres": ["Lost in Space", "Get Smart", "I Dream of Jeannie"],
-      "notable_finales": ["The Danny Thomas Show"]
+      "notable_premieres": [
+        "Lost in Space",
+        "Get Smart",
+        "I Dream of Jeannie"
+      ],
+      "notable_finales": [
+        "The Danny Thomas Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Source",
@@ -95,12 +101,30 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "US begins sustained bombing campaign of North Vietnam (Operation Rolling Thunder), escalating the Vietnam War"},
-    {"month": 3, "event": "First US combat troops - 3,500 Marines - land at Da Nang, Vietnam, marking direct military involvement"},
-    {"month": 3, "event": "Bloody Sunday in Selma, Alabama - civil rights marchers beaten by police on Edmund Pettus Bridge"},
-    {"month": 8, "event": "Voting Rights Act signed by President Johnson, outlawing discriminatory voting practices"},
-    {"month": 9, "event": "Indo-Pakistani War of 1965 erupts over Kashmir, largest tank battles since WWII"},
-    {"month": 11, "event": "Rhodesia unilaterally declares independence from Britain under Ian Smith, triggering international sanctions"}
+    {
+      "month": 2,
+      "event": "US begins sustained bombing campaign of North Vietnam (Operation Rolling Thunder), escalating the Vietnam War"
+    },
+    {
+      "month": 3,
+      "event": "First US combat troops - 3,500 Marines - land at Da Nang, Vietnam, marking direct military involvement"
+    },
+    {
+      "month": 3,
+      "event": "Bloody Sunday in Selma, Alabama - civil rights marchers beaten by police on Edmund Pettus Bridge"
+    },
+    {
+      "month": 8,
+      "event": "Voting Rights Act signed by President Johnson, outlawing discriminatory voting practices"
+    },
+    {
+      "month": 9,
+      "event": "Indo-Pakistani War of 1965 erupts over Kashmir, largest tank battles since WWII"
+    },
+    {
+      "month": 11,
+      "event": "Rhodesia unilaterally declares independence from Britain under Ian Smith, triggering international sanctions"
+    }
   ],
   "leaders": {
     "us_president": "Lyndon B. Johnson",
@@ -115,14 +139,38 @@
     "canada_pm": "Lester B. Pearson",
     "brazil_president": "Humberto Castelo Branco",
     "un_secretary": "U Thant",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Gustavo Díaz Ordaz",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Seán Lemass"
   },
   "notable_births": [
-    {"name": "Robert Downey Jr.", "month": 4, "field": "Film"},
-    {"name": "J.K. Rowling", "month": 7, "field": "Literature"},
-    {"name": "Dr. Dre", "month": 2, "field": "Music"},
-    {"name": "Scottie Pippen", "month": 9, "field": "Basketball"},
-    {"name": "Sarah Jessica Parker", "month": 3, "field": "Television"}
+    {
+      "name": "Robert Downey Jr.",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "J.K. Rowling",
+      "month": 7,
+      "field": "Literature"
+    },
+    {
+      "name": "Dr. Dre",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Scottie Pippen",
+      "month": 9,
+      "field": "Basketball"
+    },
+    {
+      "name": "Sarah Jessica Parker",
+      "month": 3,
+      "field": "Television"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +242,34 @@
       "gdp_per_capita_usd": 2773,
       "leader": "Lester B. Pearson",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 126.9,
+      "life_expectancy": 66.8,
+      "gdp_per_capita_usd": 3600,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 43.8,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 3100,
+      "leader": "Gustavo Díaz Ordaz",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 27.8,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 1780,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.88,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 4850,
+      "leader": "Seán Lemass",
+      "leader_title": "Taoiseach"
     }
   }
 }

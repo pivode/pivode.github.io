@@ -2,7 +2,7 @@
   "year": 2003,
   "schema_version": 1,
   "world": {
-    "population_billions": 6.30,
+    "population_billions": 6.3,
     "births_millions": 132,
     "life_expectancy_global": 67.6,
     "countries_count": 194,
@@ -57,8 +57,15 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The West Wing",
       "emmy_comedy": "Everybody Loves Raymond",
-      "notable_premieres": ["The O.C.", "Arrested Development", "Two and a Half Men"],
-      "notable_finales": ["Dawson's Creek", "Buffy the Vampire Slayer"]
+      "notable_premieres": [
+        "The O.C.",
+        "Arrested Development",
+        "Two and a Half Men"
+      ],
+      "notable_finales": [
+        "Dawson's Creek",
+        "Buffy the Vampire Slayer"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Da Vinci Code",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 3, "event": "US-led coalition invades Iraq in Operation Iraqi Freedom, toppling Saddam Hussein's government within weeks"},
-    {"month": 3, "event": "SARS (Severe Acute Respiratory Syndrome) outbreak spreads across Asia and beyond, killing 774 people in 17 countries"},
-    {"month": 12, "event": "Saddam Hussein captured by US forces hiding in a small underground bunker near Tikrit, Iraq"},
-    {"month": 2, "event": "Space Shuttle Columbia disintegrates on re-entry over Texas and Louisiana, killing all seven crew members"},
-    {"month": 8, "event": "Northeastern US and Canada blackout - the largest in North American history - leaves 55 million without power"}
+    {
+      "month": 3,
+      "event": "US-led coalition invades Iraq in Operation Iraqi Freedom, toppling Saddam Hussein's government within weeks"
+    },
+    {
+      "month": 3,
+      "event": "SARS (Severe Acute Respiratory Syndrome) outbreak spreads across Asia and beyond, killing 774 people in 17 countries"
+    },
+    {
+      "month": 12,
+      "event": "Saddam Hussein captured by US forces hiding in a small underground bunker near Tikrit, Iraq"
+    },
+    {
+      "month": 2,
+      "event": "Space Shuttle Columbia disintegrates on re-entry over Texas and Louisiana, killing all seven crew members"
+    },
+    {
+      "month": 8,
+      "event": "Northeastern US and Canada blackout - the largest in North American history - leaves 55 million without power"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,12 +136,28 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Vicente Fox",
+    "south_korea_president": "Roh Moo-hyun",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Olivia Rodrigo", "month": 2, "field": "Music/Film"},
-    {"name": "JoJo Siwa", "month": 5, "field": "Entertainment"},
-    {"name": "Gracie Abrams", "month": 9, "field": "Music"}
+    {
+      "name": "Olivia Rodrigo",
+      "month": 2,
+      "field": "Music/Film"
+    },
+    {
+      "name": "JoJo Siwa",
+      "month": 5,
+      "field": "Entertainment"
+    },
+    {
+      "name": "Gracie Abrams",
+      "month": 9,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -191,6 +229,34 @@
       "gdp_per_capita_usd": 27748,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 144.3,
+      "life_expectancy": 65.0,
+      "gdp_per_capita_usd": 7940,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 116.6,
+      "life_expectancy": 74.0,
+      "gdp_per_capita_usd": 8190,
+      "leader": "Vicente Fox",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 47.9,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 32230,
+      "leader": "Roh Moo-hyun",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.09,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 45200,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

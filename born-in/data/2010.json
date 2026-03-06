@@ -57,8 +57,17 @@
       "most_watched_network": "Fox",
       "emmy_drama": "Mad Men",
       "emmy_comedy": "Modern Family",
-      "notable_premieres": ["The Walking Dead", "Boardwalk Empire", "Downton Abbey", "Justified"],
-      "notable_finales": ["Lost", "24", "Law & Order (original)"]
+      "notable_premieres": [
+        "The Walking Dead",
+        "Boardwalk Empire",
+        "Downton Abbey",
+        "Justified"
+      ],
+      "notable_finales": [
+        "Lost",
+        "24",
+        "Law & Order (original)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Girl with the Dragon Tattoo",
@@ -95,11 +104,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Haiti earthquake kills over 160,000 people and devastates Port-au-Prince on January 12, triggering the largest humanitarian response in history"},
-    {"month": 4, "event": "Deepwater Horizon oil rig explodes in the Gulf of Mexico, killing 11 workers and causing the largest marine oil spill in US history over 87 days"},
-    {"month": 7, "event": "FIFA World Cup in South Africa ends with Spain winning its first-ever title, defeating Netherlands 1-0 in extra time in Johannesburg"},
-    {"month": 12, "event": "WikiLeaks begins publishing 250,000 classified US diplomatic cables, causing an international diplomatic crisis"},
-    {"month": 8, "event": "Pakistani floods affect 20 million people in the worst flooding in the country's history, submerging one-fifth of the country"}
+    {
+      "month": 1,
+      "event": "Haiti earthquake kills over 160,000 people and devastates Port-au-Prince on January 12, triggering the largest humanitarian response in history"
+    },
+    {
+      "month": 4,
+      "event": "Deepwater Horizon oil rig explodes in the Gulf of Mexico, killing 11 workers and causing the largest marine oil spill in US history over 87 days"
+    },
+    {
+      "month": 7,
+      "event": "FIFA World Cup in South Africa ends with Spain winning its first-ever title, defeating Netherlands 1-0 in extra time in Johannesburg"
+    },
+    {
+      "month": 12,
+      "event": "WikiLeaks begins publishing 250,000 classified US diplomatic cables, causing an international diplomatic crisis"
+    },
+    {
+      "month": 8,
+      "event": "Pakistani floods affect 20 million people in the worst flooding in the country's history, submerging one-fifth of the country"
+    }
   ],
   "leaders": {
     "us_president": "Barack Obama",
@@ -114,7 +138,11 @@
     "canada_pm": "Stephen Harper",
     "brazil_president": "Dilma Rousseff",
     "un_secretary": "Ban Ki-moon",
-    "pope": "Pope Benedict XVI"
+    "pope": "Pope Benedict XVI",
+    "russia_leader": "Dmitry Medvedev",
+    "mexico_president": "Felipe Calderón",
+    "south_korea_president": "Lee Myung-bak",
+    "ireland_taoiseach": "Brian Cowen"
   },
   "notable_births": [],
   "countries": {
@@ -187,6 +215,34 @@
       "gdp_per_capita_usd": 47447,
       "leader": "Stephen Harper",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 142.4,
+      "life_expectancy": 68.8,
+      "gdp_per_capita_usd": 16736,
+      "leader": "Dmitry Medvedev",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 127.8,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 10067,
+      "leader": "Felipe Calderón",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 49.4,
+      "life_expectancy": 80.5,
+      "gdp_per_capita_usd": 43226,
+      "leader": "Lee Myung-bak",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.55,
+      "life_expectancy": 80.3,
+      "gdp_per_capita_usd": 48200,
+      "leader": "Brian Cowen",
+      "leader_title": "Taoiseach"
     }
   }
 }

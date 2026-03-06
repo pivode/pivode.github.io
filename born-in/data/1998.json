@@ -16,12 +16,12 @@
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1229.23,
     "dow_jones_year_end": 9181.43,
-    "gold_oz_usd": 287.80,
+    "gold_oz_usd": 287.8,
     "oil_barrel_usd": 13.07
   },
   "prices_us": {
     "gallon_gas_usd": 1.03,
-    "gallon_milk_usd": 3.30,
+    "gallon_milk_usd": 3.3,
     "dozen_eggs_usd": 1.04,
     "loaf_bread_usd": 0.87,
     "movie_ticket_usd": 4.69,
@@ -57,8 +57,15 @@
       "most_watched_network": "NBC",
       "emmy_drama": "The Practice",
       "emmy_comedy": "Ally McBeal",
-      "notable_premieres": ["Sex and the City", "Will & Grace", "That '70s Show"],
-      "notable_finales": ["Seinfeld (series finale, 76 million viewers)", "Home Improvement (season 7)"]
+      "notable_premieres": [
+        "Sex and the City",
+        "Will & Grace",
+        "That '70s Show"
+      ],
+      "notable_finales": [
+        "Seinfeld (series finale, 76 million viewers)",
+        "Home Improvement (season 7)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Street Lawyer",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "The Monica Lewinsky scandal breaks publicly, leading to Bill Clinton's impeachment later in the year"},
-    {"month": 8, "event": "US Embassy bombings in Kenya and Tanzania kill 224 people in Al-Qaeda attacks, signaling a new era of global terrorism"},
-    {"month": 8, "event": "Russia's financial crisis causes the ruble to collapse, defaulting on $40 billion in domestic debt"},
-    {"month": 12, "event": "US House of Representatives impeaches President Clinton on charges of perjury and obstruction of justice"},
-    {"month": 5, "event": "India conducts nuclear tests (Pokhran-II), followed by Pakistan's nuclear tests, dramatically escalating South Asian tensions"}
+    {
+      "month": 1,
+      "event": "The Monica Lewinsky scandal breaks publicly, leading to Bill Clinton's impeachment later in the year"
+    },
+    {
+      "month": 8,
+      "event": "US Embassy bombings in Kenya and Tanzania kill 224 people in Al-Qaeda attacks, signaling a new era of global terrorism"
+    },
+    {
+      "month": 8,
+      "event": "Russia's financial crisis causes the ruble to collapse, defaulting on $40 billion in domestic debt"
+    },
+    {
+      "month": 12,
+      "event": "US House of Representatives impeaches President Clinton on charges of perjury and obstruction of justice"
+    },
+    {
+      "month": 5,
+      "event": "India conducts nuclear tests (Pokhran-II), followed by Pakistan's nuclear tests, dramatically escalating South Asian tensions"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,12 +136,28 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Ernesto Zedillo",
+    "south_korea_president": "Kim Dae-jung",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Shawn Mendes", "month": 8, "field": "Music"},
-    {"name": "Jaden Smith", "month": 7, "field": "Film/Music"},
-    {"name": "Odessa A'zion", "month": 5, "field": "Film"}
+    {
+      "name": "Shawn Mendes",
+      "month": 8,
+      "field": "Music"
+    },
+    {
+      "name": "Jaden Smith",
+      "month": 7,
+      "field": "Film/Music"
+    },
+    {
+      "name": "Odessa A'zion",
+      "month": 5,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -191,6 +229,34 @@
       "gdp_per_capita_usd": 20186,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 146.5,
+      "life_expectancy": 62.7,
+      "gdp_per_capita_usd": 2824,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 107.7,
+      "life_expectancy": 72.3,
+      "gdp_per_capita_usd": 6820,
+      "leader": "Ernesto Zedillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 45.8,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 21430,
+      "leader": "Kim Dae-jung",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.8,
+      "life_expectancy": 77.2,
+      "gdp_per_capita_usd": 30800,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

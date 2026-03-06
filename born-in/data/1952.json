@@ -15,16 +15,16 @@
     "us_unemployment_pct": 3.0,
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
-    "dow_jones_year_end": 291.90,
-    "gold_oz_usd": 35.00,
+    "dow_jones_year_end": 291.9,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.75
   },
   "prices_us": {
     "gallon_gas_usd": 0.27,
-    "gallon_milk_usd": 0.90,
+    "gallon_milk_usd": 0.9,
     "dozen_eggs_usd": 0.54,
     "loaf_bread_usd": 0.16,
-    "movie_ticket_usd": 0.50,
+    "movie_ticket_usd": 0.5,
     "new_car_avg_usd": 1754,
     "median_home_usd": 9050,
     "first_class_stamp_cents": 3,
@@ -57,7 +57,10 @@
       "most_watched_network": "CBS",
       "emmy_drama": null,
       "emmy_comedy": "I Love Lucy",
-      "notable_premieres": ["The Today Show", "American Bandstand (local)"],
+      "notable_premieres": [
+        "The Today Show",
+        "American Bandstand (local)"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "King George VI of Britain dies; Elizabeth II ascends to the throne at age 25"},
-    {"month": 7, "event": "Egypt's King Farouk overthrown in military coup led by General Muhammad Naguib"},
-    {"month": 10, "event": "United Kingdom tests its first atomic bomb at Monte Bello Islands, becoming the third nuclear power"},
-    {"month": 11, "event": "Dwight D. Eisenhower elected US President in a landslide, ending 20 years of Democratic rule"},
-    {"month": 11, "event": "US detonates first hydrogen bomb, 'Ivy Mike', vastly more powerful than atomic bombs"}
+    {
+      "month": 2,
+      "event": "King George VI of Britain dies; Elizabeth II ascends to the throne at age 25"
+    },
+    {
+      "month": 7,
+      "event": "Egypt's King Farouk overthrown in military coup led by General Muhammad Naguib"
+    },
+    {
+      "month": 10,
+      "event": "United Kingdom tests its first atomic bomb at Monte Bello Islands, becoming the third nuclear power"
+    },
+    {
+      "month": 11,
+      "event": "Dwight D. Eisenhower elected US President in a landslide, ending 20 years of Democratic rule"
+    },
+    {
+      "month": 11,
+      "event": "US detonates first hydrogen bomb, 'Ivy Mike', vastly more powerful than atomic bombs"
+    }
   ],
   "leaders": {
     "us_president": "Harry S. Truman",
@@ -113,15 +131,39 @@
     "australia_pm": "Robert Menzies",
     "canada_pm": "Louis St. Laurent",
     "brazil_president": "Getúlio Vargas",
+    "mexico_president": "Adolfo Ruiz Cortines",
     "un_secretary": "Trygve Lie",
-    "pope": "Pope Pius XII"
+    "pope": "Pope Pius XII",
+    "russia_leader": "Joseph Stalin",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "Éamon de Valera"
   },
   "notable_births": [
-    {"name": "Liam Neeson", "month": 6, "field": "Film"},
-    {"name": "Mr. T", "month": 5, "field": "Film/TV"},
-    {"name": "Jimmy Connors", "month": 9, "field": "Tennis"},
-    {"name": "Roseanne Barr", "month": 11, "field": "Comedy/TV"},
-    {"name": "Jeff Goldblum", "month": 10, "field": "Film"}
+    {
+      "name": "Liam Neeson",
+      "month": 6,
+      "field": "Film"
+    },
+    {
+      "name": "Mr. T",
+      "month": 5,
+      "field": "Film/TV"
+    },
+    {
+      "name": "Jimmy Connors",
+      "month": 9,
+      "field": "Tennis"
+    },
+    {
+      "name": "Roseanne Barr",
+      "month": 11,
+      "field": "Comedy/TV"
+    },
+    {
+      "name": "Jeff Goldblum",
+      "month": 10,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 1622,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 104.5,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 1700,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 29.4,
+      "life_expectancy": 50.9,
+      "gdp_per_capita_usd": 1800,
+      "leader": "Adolfo Ruiz Cortines",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 21.2,
+      "life_expectancy": 47.5,
+      "gdp_per_capita_usd": 920,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 67.5,
+      "gdp_per_capita_usd": 3000,
+      "leader": "Éamon de Valera",
+      "leader_title": "Taoiseach"
     }
   }
 }

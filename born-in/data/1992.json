@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 4.25,
     "sp500_year_end": 435.71,
     "dow_jones_year_end": 3301.11,
-    "gold_oz_usd": 333.00,
+    "gold_oz_usd": 333.0,
     "oil_barrel_usd": 19.25
   },
   "prices_us": {
@@ -57,8 +57,15 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Northern Exposure (pilot)",
       "emmy_comedy": "Murphy Brown",
-      "notable_premieres": ["The Real World (MTV)", "Melrose Place", "Seinfeld (season 3 surge)"],
-      "notable_finales": ["Designing Women (CBS run)", "The Cosby Show"]
+      "notable_premieres": [
+        "The Real World (MTV)",
+        "Melrose Place",
+        "Seinfeld (season 3 surge)"
+      ],
+      "notable_finales": [
+        "Designing Women (CBS run)",
+        "The Cosby Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "Dolores Claiborne",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Soviet Union formally dissolved - 15 independent republics emerge from the former superpower, ending the Cold War era"},
-    {"month": 4, "event": "Los Angeles riots erupt after the acquittal of officers who beat Rodney King, killing 63 and causing $1 billion in damage"},
-    {"month": 6, "event": "Earth Summit held in Rio de Janeiro - 172 countries attend the largest environmental conference in history"},
-    {"month": 8, "event": "Hurricane Andrew devastates South Florida and Louisiana, causing $27 billion in damage and killing 65"},
-    {"month": 11, "event": "Bill Clinton defeats George H. W. Bush in the US presidential election, ending 12 years of Republican presidency"}
+    {
+      "month": 1,
+      "event": "Soviet Union formally dissolved - 15 independent republics emerge from the former superpower, ending the Cold War era"
+    },
+    {
+      "month": 4,
+      "event": "Los Angeles riots erupt after the acquittal of officers who beat Rodney King, killing 63 and causing $1 billion in damage"
+    },
+    {
+      "month": 6,
+      "event": "Earth Summit held in Rio de Janeiro - 172 countries attend the largest environmental conference in history"
+    },
+    {
+      "month": 8,
+      "event": "Hurricane Andrew devastates South Florida and Louisiana, causing $27 billion in damage and killing 65"
+    },
+    {
+      "month": 11,
+      "event": "Bill Clinton defeats George H. W. Bush in the US presidential election, ending 12 years of Republican presidency"
+    }
   ],
   "leaders": {
     "us_president": "George H. W. Bush",
@@ -114,14 +136,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "Fernando Collor de Mello (to Dec), then Itamar Franco",
     "un_secretary": "Boutros Boutros-Ghali",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Carlos Salinas de Gortari",
+    "south_korea_president": "Roh Tae-woo",
+    "ireland_taoiseach": "Albert Reynolds"
   },
   "notable_births": [
-    {"name": "Miley Cyrus", "month": 11, "field": "Music/Film"},
-    {"name": "Demi Lovato", "month": 8, "field": "Music"},
-    {"name": "Selena Gomez", "month": 7, "field": "Music/Film"},
-    {"name": "Nick Jonas", "month": 9, "field": "Music"},
-    {"name": "Cara Delevingne", "month": 8, "field": "Modelling/Film"}
+    {
+      "name": "Miley Cyrus",
+      "month": 11,
+      "field": "Music/Film"
+    },
+    {
+      "name": "Demi Lovato",
+      "month": 8,
+      "field": "Music"
+    },
+    {
+      "name": "Selena Gomez",
+      "month": 7,
+      "field": "Music/Film"
+    },
+    {
+      "name": "Nick Jonas",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Cara Delevingne",
+      "month": 8,
+      "field": "Modelling/Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +239,34 @@
       "gdp_per_capita_usd": 20635,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 148.5,
+      "life_expectancy": 63.6,
+      "gdp_per_capita_usd": 3480,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 96.5,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 6600,
+      "leader": "Carlos Salinas de Gortari",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 44.0,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 19420,
+      "leader": "Roh Tae-woo",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.56,
+      "life_expectancy": 76.0,
+      "gdp_per_capita_usd": 16500,
+      "leader": "Albert Reynolds",
+      "leader_title": "Taoiseach"
     }
   }
 }

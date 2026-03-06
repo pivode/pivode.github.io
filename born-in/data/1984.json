@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Hill Street Blues",
       "emmy_comedy": "Cheers",
-      "notable_premieres": ["The Cosby Show", "Miami Vice", "Murder, She Wrote"],
-      "notable_finales": ["Magnum, P.I. (season 4)"]
+      "notable_premieres": [
+        "The Cosby Show",
+        "Miami Vice",
+        "Murder, She Wrote"
+      ],
+      "notable_finales": [
+        "Magnum, P.I. (season 4)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Talisman",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Apple Computer launches the Macintosh in a famous Super Bowl commercial, revolutionizing personal computing"},
-    {"month": 6, "event": "Sikh militants occupying the Golden Temple in Amritsar stormed by Indian Army in Operation Blue Star"},
-    {"month": 10, "event": "Indian Prime Minister Indira Gandhi assassinated by her own Sikh bodyguards, triggering anti-Sikh riots killing 3,000"},
-    {"month": 11, "event": "Ronald Reagan wins 49-state landslide reelection over Walter Mondale"},
-    {"month": 12, "event": "Union Carbide gas leak in Bhopal, India kills thousands immediately; ultimately causes 15,000-20,000 deaths"}
+    {
+      "month": 1,
+      "event": "Apple Computer launches the Macintosh in a famous Super Bowl commercial, revolutionizing personal computing"
+    },
+    {
+      "month": 6,
+      "event": "Sikh militants occupying the Golden Temple in Amritsar stormed by Indian Army in Operation Blue Star"
+    },
+    {
+      "month": 10,
+      "event": "Indian Prime Minister Indira Gandhi assassinated by her own Sikh bodyguards, triggering anti-Sikh riots killing 3,000"
+    },
+    {
+      "month": 11,
+      "event": "Ronald Reagan wins 49-state landslide reelection over Walter Mondale"
+    },
+    {
+      "month": 12,
+      "event": "Union Carbide gas leak in Bhopal, India kills thousands immediately; ultimately causes 15,000-20,000 deaths"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau (to Jun), then John Turner",
     "brazil_president": "João Figueiredo",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Konstantin Chernenko",
+    "mexico_president": "Miguel de la Madrid",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Garret FitzGerald"
   },
   "notable_births": [
-    {"name": "Katy Perry", "month": 10, "field": "Music"},
-    {"name": "LeBron James", "month": 12, "field": "Basketball"},
-    {"name": "Scarlett Johansson", "month": 11, "field": "Film"},
-    {"name": "Mandy Moore", "month": 4, "field": "Music/Film"},
-    {"name": "Mark Zuckerberg", "month": 5, "field": "Technology"}
+    {
+      "name": "Katy Perry",
+      "month": 10,
+      "field": "Music"
+    },
+    {
+      "name": "LeBron James",
+      "month": 12,
+      "field": "Basketball"
+    },
+    {
+      "name": "Scarlett Johansson",
+      "month": 11,
+      "field": "Film"
+    },
+    {
+      "name": "Mandy Moore",
+      "month": 4,
+      "field": "Music/Film"
+    },
+    {
+      "name": "Mark Zuckerberg",
+      "month": 5,
+      "field": "Technology"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 14017,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 143.2,
+      "life_expectancy": 65.7,
+      "gdp_per_capita_usd": 6150,
+      "leader": "Konstantin Chernenko",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 79.9,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 5200,
+      "leader": "Miguel de la Madrid",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 40.5,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 8800,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.52,
+      "life_expectancy": 74.4,
+      "gdp_per_capita_usd": 11100,
+      "leader": "Garret FitzGerald",
+      "leader_title": "Taoiseach"
     }
   }
 }

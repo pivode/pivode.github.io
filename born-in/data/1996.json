@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 4.75,
     "sp500_year_end": 740.74,
     "dow_jones_year_end": 6448.27,
-    "gold_oz_usd": 369.00,
+    "gold_oz_usd": 369.0,
     "oil_barrel_usd": 22.16
   },
   "prices_us": {
@@ -57,8 +57,15 @@
       "most_watched_network": "NBC",
       "emmy_drama": "ER",
       "emmy_comedy": "Frasier",
-      "notable_premieres": ["7th Heaven", "Everybody Loves Raymond", "Sabrina the Teenage Witch"],
-      "notable_finales": ["Roseanne (season finale)", "Grace Under Fire"]
+      "notable_premieres": [
+        "7th Heaven",
+        "Everybody Loves Raymond",
+        "Sabrina the Teenage Witch"
+      ],
+      "notable_finales": [
+        "Roseanne (season finale)",
+        "Grace Under Fire"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Runaway Jury",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 3, "event": "Dunblane school massacre in Scotland kills 16 children and 1 teacher, leading to UK handgun ban"},
-    {"month": 7, "event": "TWA Flight 800 explodes off Long Island killing 230, triggering the longest aviation investigation in US history"},
-    {"month": 7, "event": "Summer Olympics open in Atlanta; Centennial Olympic Park bombing kills 2 during the Games"},
-    {"month": 9, "event": "Taliban capture Kabul, imposing strict Islamic law and banning women from schools and work across Afghanistan"},
-    {"month": 11, "event": "Bill Clinton re-elected US President, defeating Bob Dole with 379 electoral votes"}
+    {
+      "month": 3,
+      "event": "Dunblane school massacre in Scotland kills 16 children and 1 teacher, leading to UK handgun ban"
+    },
+    {
+      "month": 7,
+      "event": "TWA Flight 800 explodes off Long Island killing 230, triggering the longest aviation investigation in US history"
+    },
+    {
+      "month": 7,
+      "event": "Summer Olympics open in Atlanta; Centennial Olympic Park bombing kills 2 during the Games"
+    },
+    {
+      "month": 9,
+      "event": "Taliban capture Kabul, imposing strict Islamic law and banning women from schools and work across Afghanistan"
+    },
+    {
+      "month": 11,
+      "event": "Bill Clinton re-elected US President, defeating Bob Dole with 379 electoral votes"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,14 +136,38 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Boutros Boutros-Ghali (to Dec), then Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Ernesto Zedillo",
+    "south_korea_president": "Kim Young-sam",
+    "ireland_taoiseach": "John Bruton"
   },
   "notable_births": [
-    {"name": "Zendaya", "month": 9, "field": "Film/Music"},
-    {"name": "Lorde", "month": 11, "field": "Music"},
-    {"name": "Hailee Steinfeld", "month": 12, "field": "Film/Music"},
-    {"name": "Sophie Turner", "month": 2, "field": "Film/Television"},
-    {"name": "Bella Hadid", "month": 10, "field": "Modelling"}
+    {
+      "name": "Zendaya",
+      "month": 9,
+      "field": "Film/Music"
+    },
+    {
+      "name": "Lorde",
+      "month": 11,
+      "field": "Music"
+    },
+    {
+      "name": "Hailee Steinfeld",
+      "month": 12,
+      "field": "Film/Music"
+    },
+    {
+      "name": "Sophie Turner",
+      "month": 2,
+      "field": "Film/Television"
+    },
+    {
+      "name": "Bella Hadid",
+      "month": 10,
+      "field": "Modelling"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +239,34 @@
       "gdp_per_capita_usd": 20464,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 147.2,
+      "life_expectancy": 61.8,
+      "gdp_per_capita_usd": 3078,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 104.0,
+      "life_expectancy": 71.7,
+      "gdp_per_capita_usd": 5870,
+      "leader": "Ernesto Zedillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 45.2,
+      "life_expectancy": 75.3,
+      "gdp_per_capita_usd": 26950,
+      "leader": "Kim Young-sam",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.71,
+      "life_expectancy": 76.8,
+      "gdp_per_capita_usd": 23600,
+      "leader": "John Bruton",
+      "leader_title": "Taoiseach"
     }
   }
 }

@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 10512,
     "us_inflation_pct": 6.22,
     "us_unemployment_pct": 4.9,
-    "us_minimum_wage_usd": 1.60,
+    "us_minimum_wage_usd": 1.6,
     "sp500_year_end": 97.55,
     "dow_jones_year_end": 850.86,
     "gold_oz_usd": 97.32,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The Waltons",
       "emmy_comedy": "All in the Family",
-      "notable_premieres": ["Kojak", "The Six Million Dollar Man", "Schoolhouse Rock!"],
-      "notable_finales": ["Rowan & Martin's Laugh-In"]
+      "notable_premieres": [
+        "Kojak",
+        "The Six Million Dollar Man",
+        "Schoolhouse Rock!"
+      ],
+      "notable_finales": [
+        "Rowan & Martin's Laugh-In"
+      ]
     },
     "books": {
       "fiction_bestseller": "Jonathan Livingston Seagull",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Paris Peace Accords signed, ending direct US military involvement in Vietnam after a decade of conflict"},
-    {"month": 3, "event": "Last US combat troops withdraw from Vietnam following the Paris Peace Accords"},
-    {"month": 9, "event": "US-backed military coup overthrows Chile's democratically elected President Salvador Allende, Augusto Pinochet seizes power"},
-    {"month": 10, "event": "Yom Kippur War: Egypt and Syria launch surprise attack on Israel; Arab oil embargo begins targeting US and Western nations"},
-    {"month": 10, "event": "Saturday Night Massacre: Nixon fires Watergate special prosecutor Archibald Cox, triggering constitutional crisis"}
+    {
+      "month": 1,
+      "event": "Paris Peace Accords signed, ending direct US military involvement in Vietnam after a decade of conflict"
+    },
+    {
+      "month": 3,
+      "event": "Last US combat troops withdraw from Vietnam following the Paris Peace Accords"
+    },
+    {
+      "month": 9,
+      "event": "US-backed military coup overthrows Chile's democratically elected President Salvador Allende, Augusto Pinochet seizes power"
+    },
+    {
+      "month": 10,
+      "event": "Yom Kippur War: Egypt and Syria launch surprise attack on Israel; Arab oil embargo begins targeting US and Western nations"
+    },
+    {
+      "month": 10,
+      "event": "Saturday Night Massacre: Nixon fires Watergate special prosecutor Archibald Cox, triggering constitutional crisis"
+    }
   ],
   "leaders": {
     "us_president": "Richard Nixon",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Emílio Garrastazu Médici",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Luis Echeverría",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Liam Cosgrave"
   },
   "notable_births": [
-    {"name": "Pharrell Williams", "month": 4, "field": "Music"},
-    {"name": "Monica Lewinsky", "month": 7, "field": "Culture"},
-    {"name": "Heidi Klum", "month": 6, "field": "Modelling"},
-    {"name": "Tyra Banks", "month": 12, "field": "Television"},
-    {"name": "Carson Daly", "month": 6, "field": "Television"}
+    {
+      "name": "Pharrell Williams",
+      "month": 4,
+      "field": "Music"
+    },
+    {
+      "name": "Monica Lewinsky",
+      "month": 7,
+      "field": "Culture"
+    },
+    {
+      "name": "Heidi Klum",
+      "month": 6,
+      "field": "Modelling"
+    },
+    {
+      "name": "Tyra Banks",
+      "month": 12,
+      "field": "Television"
+    },
+    {
+      "name": "Carson Daly",
+      "month": 6,
+      "field": "Television"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 5369,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 133.5,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 4700,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 57.0,
+      "life_expectancy": 65.0,
+      "gdp_per_capita_usd": 4400,
+      "leader": "Luis Echeverría",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 33.9,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 4300,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.07,
+      "life_expectancy": 73.1,
+      "gdp_per_capita_usd": 8200,
+      "leader": "Liam Cosgrave",
+      "leader_title": "Taoiseach"
     }
   }
 }

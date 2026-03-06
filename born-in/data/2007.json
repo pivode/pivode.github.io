@@ -2,7 +2,7 @@
   "year": 2007,
   "schema_version": 1,
   "world": {
-    "population_billions": 6.60,
+    "population_billions": 6.6,
     "births_millions": 136,
     "life_expectancy_global": 68.8,
     "countries_count": 195,
@@ -16,12 +16,12 @@
     "us_minimum_wage_usd": 5.85,
     "sp500_year_end": 1468.36,
     "dow_jones_year_end": 13264.82,
-    "gold_oz_usd": 838.00,
+    "gold_oz_usd": 838.0,
     "oil_barrel_usd": 95.98
   },
   "prices_us": {
-    "gallon_gas_usd": 2.80,
-    "gallon_milk_usd": 3.80,
+    "gallon_gas_usd": 2.8,
+    "gallon_milk_usd": 3.8,
     "dozen_eggs_usd": 1.68,
     "loaf_bread_usd": 1.28,
     "movie_ticket_usd": 6.88,
@@ -57,8 +57,16 @@
       "most_watched_network": "Fox",
       "emmy_drama": "The Sopranos",
       "emmy_comedy": "30 Rock",
-      "notable_premieres": ["Mad Men", "Breaking Bad", "Chuck", "Gossip Girl"],
-      "notable_finales": ["The Sopranos", "Scrubs (NBC)"]
+      "notable_premieres": [
+        "Mad Men",
+        "Breaking Bad",
+        "Chuck",
+        "Gossip Girl"
+      ],
+      "notable_finales": [
+        "The Sopranos",
+        "Scrubs (NBC)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Harry Potter and the Deathly Hallows",
@@ -95,11 +103,26 @@
     ]
   },
   "world_events": [
-    {"month": 6, "event": "Apple iPhone unveiled and launched by Steve Jobs, transforming the mobile phone industry and creating the modern smartphone era"},
-    {"month": 8, "event": "US subprime mortgage crisis deepens as major banks report billions in losses, signaling the coming global financial meltdown"},
-    {"month": 4, "event": "Virginia Tech massacre - gunman kills 32 students and faculty in the deadliest mass shooting in US history at the time"},
-    {"month": 10, "event": "Southern California wildfires force evacuation of 500,000 people in San Diego area, the largest US evacuation since Hurricane Katrina"},
-    {"month": 12, "event": "Pakistan opposition leader Benazir Bhutto assassinated at a campaign rally in Rawalpindi, two months after returning from exile"}
+    {
+      "month": 6,
+      "event": "Apple iPhone unveiled and launched by Steve Jobs, transforming the mobile phone industry and creating the modern smartphone era"
+    },
+    {
+      "month": 8,
+      "event": "US subprime mortgage crisis deepens as major banks report billions in losses, signaling the coming global financial meltdown"
+    },
+    {
+      "month": 4,
+      "event": "Virginia Tech massacre - gunman kills 32 students and faculty in the deadliest mass shooting in US history at the time"
+    },
+    {
+      "month": 10,
+      "event": "Southern California wildfires force evacuation of 500,000 people in San Diego area, the largest US evacuation since Hurricane Katrina"
+    },
+    {
+      "month": 12,
+      "event": "Pakistan opposition leader Benazir Bhutto assassinated at a campaign rally in Rawalpindi, two months after returning from exile"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,10 +137,18 @@
     "canada_pm": "Stephen Harper",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Ban Ki-moon",
-    "pope": "Pope Benedict XVI"
+    "pope": "Pope Benedict XVI",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Felipe Calderón",
+    "south_korea_president": "Roh Moo-hyun",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Lamine Yamal", "month": 7, "field": "Football"}
+    {
+      "name": "Lamine Yamal",
+      "month": 7,
+      "field": "Football"
+    }
   ],
   "countries": {
     "US": {
@@ -189,6 +220,34 @@
       "gdp_per_capita_usd": 43681,
       "leader": "Stephen Harper",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 141.7,
+      "life_expectancy": 67.2,
+      "gdp_per_capita_usd": 16163,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 123.3,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 10660,
+      "leader": "Felipe Calderón",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 48.9,
+      "life_expectancy": 79.5,
+      "gdp_per_capita_usd": 42840,
+      "leader": "Roh Moo-hyun",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.46,
+      "life_expectancy": 79.4,
+      "gdp_per_capita_usd": 62400,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

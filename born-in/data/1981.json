@@ -15,8 +15,8 @@
     "us_unemployment_pct": 7.6,
     "us_minimum_wage_usd": 3.35,
     "sp500_year_end": 122.55,
-    "dow_jones_year_end": 875.00,
-    "gold_oz_usd": 460.00,
+    "dow_jones_year_end": 875.0,
+    "gold_oz_usd": 460.0,
     "oil_barrel_usd": 35.69
   },
   "prices_us": {
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Hill Street Blues",
       "emmy_comedy": "Taxi",
-      "notable_premieres": ["Hill Street Blues", "Dynasty", "The Greatest American Hero"],
-      "notable_finales": ["The Dukes of Hazzard (season 3)"]
+      "notable_premieres": [
+        "Hill Street Blues",
+        "Dynasty",
+        "The Greatest American Hero"
+      ],
+      "notable_finales": [
+        "The Dukes of Hazzard (season 3)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Noble House",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "52 American hostages released from Iran after 444 days in captivity, moments after Ronald Reagan is inaugurated"},
-    {"month": 3, "event": "President Reagan shot and wounded in assassination attempt by John Hinckley Jr. outside a Washington hotel"},
-    {"month": 5, "event": "Pope John Paul II shot and gravely wounded in St. Peter's Square by Turkish gunman Mehmet Ali Agca"},
-    {"month": 7, "event": "Charles and Diana's royal wedding watched by 750 million people worldwide in BBC's most-watched broadcast"},
-    {"month": 10, "event": "Egyptian President Anwar Sadat assassinated by Islamic fundamentalists during a military parade in Cairo"}
+    {
+      "month": 1,
+      "event": "52 American hostages released from Iran after 444 days in captivity, moments after Ronald Reagan is inaugurated"
+    },
+    {
+      "month": 3,
+      "event": "President Reagan shot and wounded in assassination attempt by John Hinckley Jr. outside a Washington hotel"
+    },
+    {
+      "month": 5,
+      "event": "Pope John Paul II shot and gravely wounded in St. Peter's Square by Turkish gunman Mehmet Ali Agca"
+    },
+    {
+      "month": 7,
+      "event": "Charles and Diana's royal wedding watched by 750 million people worldwide in BBC's most-watched broadcast"
+    },
+    {
+      "month": 10,
+      "event": "Egyptian President Anwar Sadat assassinated by Islamic fundamentalists during a military parade in Cairo"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "João Figueiredo",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "José López Portillo",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Garret FitzGerald"
   },
   "notable_births": [
-    {"name": "Beyoncé", "month": 9, "field": "Music"},
-    {"name": "Justin Timberlake", "month": 1, "field": "Music"},
-    {"name": "Britney Spears", "month": 12, "field": "Music"},
-    {"name": "Paris Hilton", "month": 2, "field": "Media/Entertainment"},
-    {"name": "Elijah Wood", "month": 1, "field": "Film"}
+    {
+      "name": "Beyoncé",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Justin Timberlake",
+      "month": 1,
+      "field": "Music"
+    },
+    {
+      "name": "Britney Spears",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Paris Hilton",
+      "month": 2,
+      "field": "Media/Entertainment"
+    },
+    {
+      "name": "Elijah Wood",
+      "month": 1,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 12077,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 140.6,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 5800,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 73.3,
+      "life_expectancy": 67.6,
+      "gdp_per_capita_usd": 6700,
+      "leader": "José López Portillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 38.7,
+      "life_expectancy": 67.5,
+      "gdp_per_capita_usd": 7000,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.44,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 11300,
+      "leader": "Garret FitzGerald",
+      "leader_title": "Taoiseach"
     }
   }
 }

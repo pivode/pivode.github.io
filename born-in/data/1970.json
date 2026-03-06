@@ -2,7 +2,7 @@
   "year": 1970,
   "schema_version": 1,
   "world": {
-    "population_billions": 3.70,
+    "population_billions": 3.7,
     "births_millions": 122,
     "life_expectancy_global": 59.6,
     "countries_count": 135,
@@ -13,11 +13,11 @@
     "us_median_household_income_usd": 8734,
     "us_inflation_pct": 5.72,
     "us_unemployment_pct": 4.9,
-    "us_minimum_wage_usd": 1.60,
+    "us_minimum_wage_usd": 1.6,
     "sp500_year_end": 92.15,
     "dow_jones_year_end": 838.92,
     "gold_oz_usd": 36.02,
-    "oil_barrel_usd": 1.80
+    "oil_barrel_usd": 1.8
   },
   "prices_us": {
     "gallon_gas_usd": 0.35,
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Marcus Welby, M.D.",
       "emmy_comedy": "My World and Welcome to It",
-      "notable_premieres": ["Monday Night Football", "The Mary Tyler Moore Show", "The Odd Couple"],
-      "notable_finales": ["The Smothers Brothers Comedy Hour"]
+      "notable_premieres": [
+        "Monday Night Football",
+        "The Mary Tyler Moore Show",
+        "The Odd Couple"
+      ],
+      "notable_finales": [
+        "The Smothers Brothers Comedy Hour"
+      ]
     },
     "books": {
       "fiction_bestseller": "Love Story",
@@ -95,12 +101,30 @@
     ]
   },
   "world_events": [
-    {"month": 4, "event": "Apollo 13 oxygen tank explodes en route to the Moon; crew safely returns to Earth"},
-    {"month": 4, "event": "First Earth Day celebrated on April 22, marking birth of the modern environmental movement"},
-    {"month": 5, "event": "National Guard kills four student protesters at Kent State University during Vietnam War protest"},
-    {"month": 9, "event": "Jimi Hendrix dies at age 27 in London; Janis Joplin dies the same month"},
-    {"month": 11, "event": "Salvador Allende inaugurated as the world's first democratically elected Marxist president in Chile"},
-    {"month": 12, "event": "Willy Brandt kneels at Warsaw Ghetto Memorial in spontaneous gesture of atonement for Nazi crimes"}
+    {
+      "month": 4,
+      "event": "Apollo 13 oxygen tank explodes en route to the Moon; crew safely returns to Earth"
+    },
+    {
+      "month": 4,
+      "event": "First Earth Day celebrated on April 22, marking birth of the modern environmental movement"
+    },
+    {
+      "month": 5,
+      "event": "National Guard kills four student protesters at Kent State University during Vietnam War protest"
+    },
+    {
+      "month": 9,
+      "event": "Jimi Hendrix dies at age 27 in London; Janis Joplin dies the same month"
+    },
+    {
+      "month": 11,
+      "event": "Salvador Allende inaugurated as the world's first democratically elected Marxist president in Chile"
+    },
+    {
+      "month": 12,
+      "event": "Willy Brandt kneels at Warsaw Ghetto Memorial in spontaneous gesture of atonement for Nazi crimes"
+    }
   ],
   "leaders": {
     "us_president": "Richard Nixon",
@@ -115,14 +139,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Emílio Garrastazu Médici",
     "un_secretary": "U Thant",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Luis Echeverría",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Matt Damon", "month": 10, "field": "Film"},
-    {"name": "Mariah Carey", "month": 3, "field": "Music"},
-    {"name": "Queen Latifah", "month": 3, "field": "Music"},
-    {"name": "Andre Agassi", "month": 4, "field": "Tennis"},
-    {"name": "Christopher Nolan", "month": 7, "field": "Film"}
+    {
+      "name": "Matt Damon",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Mariah Carey",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Queen Latifah",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Andre Agassi",
+      "month": 4,
+      "field": "Tennis"
+    },
+    {
+      "name": "Christopher Nolan",
+      "month": 7,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +242,34 @@
       "gdp_per_capita_usd": 3957,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 130.4,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 4280,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 51.5,
+      "life_expectancy": 63.8,
+      "gdp_per_capita_usd": 3774,
+      "leader": "Luis Echeverría",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 31.5,
+      "life_expectancy": 64.3,
+      "gdp_per_capita_usd": 2954,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 6450,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

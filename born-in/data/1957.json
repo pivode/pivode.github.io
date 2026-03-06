@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 4900,
     "us_inflation_pct": 3.31,
     "us_unemployment_pct": 4.3,
-    "us_minimum_wage_usd": 1.00,
+    "us_minimum_wage_usd": 1.0,
     "sp500_year_end": 44.06,
     "dow_jones_year_end": 435.69,
-    "gold_oz_usd": 35.00,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.88
   },
   "prices_us": {
@@ -57,7 +57,10 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Requiem for a Heavyweight",
       "emmy_comedy": "The Phil Silvers Show",
-      "notable_premieres": ["Leave It to Beaver", "Perry Mason"],
+      "notable_premieres": [
+        "Leave It to Beaver",
+        "Perry Mason"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Eisenhower Doctrine announced, pledging US military aid to Middle Eastern countries threatened by communism"},
-    {"month": 3, "event": "Ghana becomes the first sub-Saharan African country to gain independence from Britain"},
-    {"month": 3, "event": "Treaty of Rome signed, establishing the European Economic Community (predecessor to the EU)"},
-    {"month": 10, "event": "Soviet Union launches Sputnik 1, the world's first artificial satellite, shocking the West"},
-    {"month": 11, "event": "Sputnik 2 launched with dog Laika aboard, the first living creature in orbit"}
+    {
+      "month": 1,
+      "event": "Eisenhower Doctrine announced, pledging US military aid to Middle Eastern countries threatened by communism"
+    },
+    {
+      "month": 3,
+      "event": "Ghana becomes the first sub-Saharan African country to gain independence from Britain"
+    },
+    {
+      "month": 3,
+      "event": "Treaty of Rome signed, establishing the European Economic Community (predecessor to the EU)"
+    },
+    {
+      "month": 10,
+      "event": "Soviet Union launches Sputnik 1, the world's first artificial satellite, shocking the West"
+    },
+    {
+      "month": 11,
+      "event": "Sputnik 2 launched with dog Laika aboard, the first living creature in orbit"
+    }
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
@@ -114,14 +132,38 @@
     "canada_pm": "John Diefenbaker",
     "brazil_president": "Juscelino Kubitschek",
     "un_secretary": "Dag Hammarskjöld",
-    "pope": "Pope Pius XII"
+    "pope": "Pope Pius XII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo Ruiz Cortines",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "Éamon de Valera"
   },
   "notable_births": [
-    {"name": "Osama bin Laden", "month": 3, "field": "Terrorism/Politics"},
-    {"name": "Nick Faldo", "month": 7, "field": "Golf"},
-    {"name": "Caroline Kennedy", "month": 11, "field": "Politics"},
-    {"name": "Gloria Estefan", "month": 9, "field": "Music"},
-    {"name": "Donny Osmond", "month": 12, "field": "Music"}
+    {
+      "name": "Osama bin Laden",
+      "month": 3,
+      "field": "Terrorism/Politics"
+    },
+    {
+      "name": "Nick Faldo",
+      "month": 7,
+      "field": "Golf"
+    },
+    {
+      "name": "Caroline Kennedy",
+      "month": 11,
+      "field": "Politics"
+    },
+    {
+      "name": "Gloria Estefan",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Donny Osmond",
+      "month": 12,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 2054,
       "leader": "John Diefenbaker",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 111.3,
+      "life_expectancy": 64.3,
+      "gdp_per_capita_usd": 2450,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 34.1,
+      "life_expectancy": 54.9,
+      "gdp_per_capita_usd": 2250,
+      "leader": "Adolfo Ruiz Cortines",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 23.9,
+      "life_expectancy": 52.8,
+      "gdp_per_capita_usd": 1190,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.89,
+      "life_expectancy": 69.1,
+      "gdp_per_capita_usd": 3080,
+      "leader": "Éamon de Valera",
+      "leader_title": "Taoiseach"
     }
   }
 }

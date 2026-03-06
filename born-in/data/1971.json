@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 9028,
     "us_inflation_pct": 3.27,
     "us_unemployment_pct": 5.9,
-    "us_minimum_wage_usd": 1.60,
+    "us_minimum_wage_usd": 1.6,
     "sp500_year_end": 102.09,
-    "dow_jones_year_end": 890.20,
-    "gold_oz_usd": 40.80,
+    "dow_jones_year_end": 890.2,
+    "gold_oz_usd": 40.8,
     "oil_barrel_usd": 3.39
   },
   "prices_us": {
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "The Bold Ones: The Senator",
       "emmy_comedy": "All in the Family",
-      "notable_premieres": ["All in the Family", "The Electric Company", "The Mary Tyler Moore Show (season 2)"],
-      "notable_finales": ["The Ed Sullivan Show"]
+      "notable_premieres": [
+        "All in the Family",
+        "The Electric Company",
+        "The Mary Tyler Moore Show (season 2)"
+      ],
+      "notable_finales": [
+        "The Ed Sullivan Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "Wheels",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "US and South Vietnamese forces launch Operation Lam Son 719, a large-scale incursion into Laos"},
-    {"month": 6, "event": "New York Times begins publishing the Pentagon Papers, revealing decades of government deception about Vietnam"},
-    {"month": 8, "event": "President Nixon ends the Bretton Woods system by suspending US dollar convertibility to gold, ending the gold standard"},
-    {"month": 10, "event": "The People's Republic of China admitted to the United Nations, replacing Taiwan's Republic of China in the Security Council"},
-    {"month": 12, "event": "Bangladesh Liberation War ends - India defeats Pakistan, creating the new nation of Bangladesh with 75 million people"}
+    {
+      "month": 2,
+      "event": "US and South Vietnamese forces launch Operation Lam Son 719, a large-scale incursion into Laos"
+    },
+    {
+      "month": 6,
+      "event": "New York Times begins publishing the Pentagon Papers, revealing decades of government deception about Vietnam"
+    },
+    {
+      "month": 8,
+      "event": "President Nixon ends the Bretton Woods system by suspending US dollar convertibility to gold, ending the gold standard"
+    },
+    {
+      "month": 10,
+      "event": "The People's Republic of China admitted to the United Nations, replacing Taiwan's Republic of China in the Security Council"
+    },
+    {
+      "month": 12,
+      "event": "Bangladesh Liberation War ends - India defeats Pakistan, creating the new nation of Bangladesh with 75 million people"
+    }
   ],
   "leaders": {
     "us_president": "Richard Nixon",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Emílio Garrastazu Médici",
     "un_secretary": "U Thant",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Luis Echeverría",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Tupac Shakur", "month": 6, "field": "Music"},
-    {"name": "Winona Ryder", "month": 10, "field": "Film"},
-    {"name": "Vin Diesel", "month": 7, "field": "Film"},
-    {"name": "Sean Combs", "month": 11, "field": "Music"},
-    {"name": "Snoop Dogg", "month": 10, "field": "Music"}
+    {
+      "name": "Tupac Shakur",
+      "month": 6,
+      "field": "Music"
+    },
+    {
+      "name": "Winona Ryder",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Vin Diesel",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Sean Combs",
+      "month": 11,
+      "field": "Music"
+    },
+    {
+      "name": "Snoop Dogg",
+      "month": 10,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 4197,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 131.5,
+      "life_expectancy": 67.2,
+      "gdp_per_capita_usd": 4400,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 53.3,
+      "life_expectancy": 64.2,
+      "gdp_per_capita_usd": 3850,
+      "leader": "Luis Echeverría",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 32.3,
+      "life_expectancy": 65.0,
+      "gdp_per_capita_usd": 3250,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.98,
+      "life_expectancy": 72.7,
+      "gdp_per_capita_usd": 6900,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

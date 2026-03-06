@@ -11,10 +11,10 @@
   "economy": {
     "us_gdp_per_capita_usd": 9451,
     "us_median_household_income_usd": 13572,
-    "us_inflation_pct": 6.50,
+    "us_inflation_pct": 6.5,
     "us_unemployment_pct": 7.1,
-    "us_minimum_wage_usd": 2.30,
-    "sp500_year_end": 95.10,
+    "us_minimum_wage_usd": 2.3,
+    "sp500_year_end": 95.1,
     "dow_jones_year_end": 831.17,
     "gold_oz_usd": 147.84,
     "oil_barrel_usd": 13.92
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Upstairs, Downstairs",
       "emmy_comedy": "The Mary Tyler Moore Show",
-      "notable_premieres": ["Roots", "The Love Boat", "Eight Is Enough"],
-      "notable_finales": ["The Mary Tyler Moore Show"]
+      "notable_premieres": [
+        "Roots",
+        "The Love Boat",
+        "Eight Is Enough"
+      ],
+      "notable_finales": [
+        "The Mary Tyler Moore Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Silmarillion",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Jimmy Carter inaugurated as US President, beginning his administration with a pardon for Vietnam War draft evaders"},
-    {"month": 1, "event": "Roots miniseries airs on ABC, watched by 130 million Americans, reshaping public understanding of slavery"},
-    {"month": 5, "event": "Star Wars released in cinemas, transforming popular culture and cinema and becoming a global phenomenon"},
-    {"month": 8, "event": "Elvis Presley dies at Graceland at age 42, triggering worldwide mourning"},
-    {"month": 11, "event": "Egyptian President Anwar Sadat makes a historic visit to Israel, the first Arab leader to do so, beginning peace negotiations"}
+    {
+      "month": 1,
+      "event": "Jimmy Carter inaugurated as US President, beginning his administration with a pardon for Vietnam War draft evaders"
+    },
+    {
+      "month": 1,
+      "event": "Roots miniseries airs on ABC, watched by 130 million Americans, reshaping public understanding of slavery"
+    },
+    {
+      "month": 5,
+      "event": "Star Wars released in cinemas, transforming popular culture and cinema and becoming a global phenomenon"
+    },
+    {
+      "month": 8,
+      "event": "Elvis Presley dies at Graceland at age 42, triggering worldwide mourning"
+    },
+    {
+      "month": 11,
+      "event": "Egyptian President Anwar Sadat makes a historic visit to Israel, the first Arab leader to do so, beginning peace negotiations"
+    }
   ],
   "leaders": {
     "us_president": "Jimmy Carter",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Ernesto Geisel",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "José López Portillo",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Kanye West", "month": 6, "field": "Music"},
-    {"name": "Liv Tyler", "month": 7, "field": "Film"},
-    {"name": "Orlando Bloom", "month": 1, "field": "Film"},
-    {"name": "Shakira", "month": 2, "field": "Music"},
-    {"name": "Diddy (Sean Combs)", "month": 11, "field": "Music"}
+    {
+      "name": "Kanye West",
+      "month": 6,
+      "field": "Music"
+    },
+    {
+      "name": "Liv Tyler",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Orlando Bloom",
+      "month": 1,
+      "field": "Film"
+    },
+    {
+      "name": "Shakira",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Diddy (Sean Combs)",
+      "month": 11,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 9614,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 137.1,
+      "life_expectancy": 66.3,
+      "gdp_per_capita_usd": 5350,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 65.0,
+      "life_expectancy": 66.4,
+      "gdp_per_capita_usd": 4650,
+      "leader": "José López Portillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 36.7,
+      "life_expectancy": 68.3,
+      "gdp_per_capita_usd": 6100,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.27,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 9700,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

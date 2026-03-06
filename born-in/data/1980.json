@@ -11,13 +11,13 @@
   "economy": {
     "us_gdp_per_capita_usd": 12575,
     "us_median_household_income_usd": 17710,
-    "us_inflation_pct": 13.50,
+    "us_inflation_pct": 13.5,
     "us_unemployment_pct": 7.1,
-    "us_minimum_wage_usd": 3.10,
+    "us_minimum_wage_usd": 3.1,
     "sp500_year_end": 135.76,
     "dow_jones_year_end": 963.99,
     "gold_oz_usd": 594.92,
-    "oil_barrel_usd": 32.50
+    "oil_barrel_usd": 32.5
   },
   "prices_us": {
     "gallon_gas_usd": 1.19,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Lou Grant",
       "emmy_comedy": "Taxi",
-      "notable_premieres": ["CNN", "Magnum P.I.", "Nightline"],
-      "notable_finales": ["The Waltons"]
+      "notable_premieres": [
+        "CNN",
+        "Magnum P.I.",
+        "Nightline"
+      ],
+      "notable_finales": [
+        "The Waltons"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Covenant",
@@ -95,12 +101,30 @@
     ]
   },
   "world_events": [
-    {"month": 4, "event": "US hostage rescue mission in Iran (Operation Eagle Claw) fails, killing eight American servicemen"},
-    {"month": 5, "event": "Mount St. Helens volcano erupts in Washington state, killing 57 people in the deadliest volcanic event in US history"},
-    {"month": 8, "event": "Solidarity trade union founded by Lech Walesa in Poland, challenging Soviet-backed communist rule"},
-    {"month": 9, "event": "Iraq invades Iran, beginning the Iran-Iraq War that will last eight years and kill over a million people"},
-    {"month": 11, "event": "Ronald Reagan wins US presidential election in a landslide over incumbent Jimmy Carter"},
-    {"month": 12, "event": "John Lennon shot and killed outside his apartment building in New York City"}
+    {
+      "month": 4,
+      "event": "US hostage rescue mission in Iran (Operation Eagle Claw) fails, killing eight American servicemen"
+    },
+    {
+      "month": 5,
+      "event": "Mount St. Helens volcano erupts in Washington state, killing 57 people in the deadliest volcanic event in US history"
+    },
+    {
+      "month": 8,
+      "event": "Solidarity trade union founded by Lech Walesa in Poland, challenging Soviet-backed communist rule"
+    },
+    {
+      "month": 9,
+      "event": "Iraq invades Iran, beginning the Iran-Iraq War that will last eight years and kill over a million people"
+    },
+    {
+      "month": 11,
+      "event": "Ronald Reagan wins US presidential election in a landslide over incumbent Jimmy Carter"
+    },
+    {
+      "month": 12,
+      "event": "John Lennon shot and killed outside his apartment building in New York City"
+    }
   ],
   "leaders": {
     "us_president": "Jimmy Carter",
@@ -115,14 +139,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "João Figueiredo",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "José López Portillo",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Kim Kardashian", "month": 10, "field": "Media"},
-    {"name": "Venus Williams", "month": 6, "field": "Tennis"},
-    {"name": "Christina Aguilera", "month": 12, "field": "Music"},
-    {"name": "Jake Gyllenhaal", "month": 12, "field": "Film"},
-    {"name": "Macaulay Culkin", "month": 8, "field": "Film"}
+    {
+      "name": "Kim Kardashian",
+      "month": 10,
+      "field": "Media"
+    },
+    {
+      "name": "Venus Williams",
+      "month": 6,
+      "field": "Tennis"
+    },
+    {
+      "name": "Christina Aguilera",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Jake Gyllenhaal",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Macaulay Culkin",
+      "month": 8,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +242,34 @@
       "gdp_per_capita_usd": 11416,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 139.8,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 5765,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 71.2,
+      "life_expectancy": 67.3,
+      "gdp_per_capita_usd": 6024,
+      "leader": "José López Portillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 38.1,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 6432,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.4,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 11600,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

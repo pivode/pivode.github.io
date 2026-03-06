@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "Law & Order",
       "emmy_comedy": "Frasier",
-      "notable_premieres": ["Buffy the Vampire Slayer", "South Park", "Ally McBeal"],
-      "notable_finales": ["Mad About You (season 6)"]
+      "notable_premieres": [
+        "Buffy the Vampire Slayer",
+        "South Park",
+        "Ally McBeal"
+      ],
+      "notable_finales": [
+        "Mad About You (season 6)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Partner",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Scientists in Scotland announce Dolly the sheep, the world's first cloned mammal from an adult cell, raising ethical questions globally"},
-    {"month": 7, "event": "Hong Kong transferred from British to Chinese sovereignty after 156 years as a colony, in a ceremony watched worldwide"},
-    {"month": 8, "event": "Princess Diana killed in a car crash in Paris; her death triggers an unprecedented global outpouring of grief"},
-    {"month": 9, "event": "Mother Teresa dies in Calcutta just days after Princess Diana, closing a remarkable chapter in 20th century history"},
-    {"month": 10, "event": "Asian financial crisis spreads from Thailand across Southeast Asia, wiping out trillions in market value"}
+    {
+      "month": 2,
+      "event": "Scientists in Scotland announce Dolly the sheep, the world's first cloned mammal from an adult cell, raising ethical questions globally"
+    },
+    {
+      "month": 7,
+      "event": "Hong Kong transferred from British to Chinese sovereignty after 156 years as a colony, in a ceremony watched worldwide"
+    },
+    {
+      "month": 8,
+      "event": "Princess Diana killed in a car crash in Paris; her death triggers an unprecedented global outpouring of grief"
+    },
+    {
+      "month": 9,
+      "event": "Mother Teresa dies in Calcutta just days after Princess Diana, closing a remarkable chapter in 20th century history"
+    },
+    {
+      "month": 10,
+      "event": "Asian financial crisis spreads from Thailand across Southeast Asia, wiping out trillions in market value"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,14 +135,38 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Ernesto Zedillo",
+    "south_korea_president": "Kim Young-sam",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Simone Biles", "month": 3, "field": "Gymnastics"},
-    {"name": "Chloe Grace Moretz", "month": 2, "field": "Film"},
-    {"name": "Malala Yousafzai", "month": 7, "field": "Activism"},
-    {"name": "Zara Larsson", "month": 12, "field": "Music"},
-    {"name": "Maisie Williams", "month": 4, "field": "Television/Film"}
+    {
+      "name": "Simone Biles",
+      "month": 3,
+      "field": "Gymnastics"
+    },
+    {
+      "name": "Chloe Grace Moretz",
+      "month": 2,
+      "field": "Film"
+    },
+    {
+      "name": "Malala Yousafzai",
+      "month": 7,
+      "field": "Activism"
+    },
+    {
+      "name": "Zara Larsson",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Maisie Williams",
+      "month": 4,
+      "field": "Television/Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 20263,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 146.8,
+      "life_expectancy": 62.6,
+      "gdp_per_capita_usd": 3286,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 105.9,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 6620,
+      "leader": "Ernesto Zedillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 45.5,
+      "life_expectancy": 75.7,
+      "gdp_per_capita_usd": 27180,
+      "leader": "Kim Young-sam",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.75,
+      "life_expectancy": 77.0,
+      "gdp_per_capita_usd": 27100,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

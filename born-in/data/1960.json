@@ -13,17 +13,17 @@
     "us_median_household_income_usd": 5600,
     "us_inflation_pct": 1.72,
     "us_unemployment_pct": 5.5,
-    "us_minimum_wage_usd": 1.00,
+    "us_minimum_wage_usd": 1.0,
     "sp500_year_end": 58.03,
     "dow_jones_year_end": 615.89,
     "gold_oz_usd": 35.27,
-    "oil_barrel_usd": 1.90
+    "oil_barrel_usd": 1.9
   },
   "prices_us": {
     "gallon_gas_usd": 0.31,
     "gallon_milk_usd": 1.04,
     "dozen_eggs_usd": 0.57,
-    "loaf_bread_usd": 0.20,
+    "loaf_bread_usd": 0.2,
     "movie_ticket_usd": 0.69,
     "new_car_avg_usd": 2600,
     "median_home_usd": 12700,
@@ -57,8 +57,13 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Playhouse 90",
       "emmy_comedy": "The Jack Benny Program",
-      "notable_premieres": ["The Flintstones", "The Andy Griffith Show"],
-      "notable_finales": ["What's My Line (season)"]
+      "notable_premieres": [
+        "The Flintstones",
+        "The Andy Griffith Show"
+      ],
+      "notable_finales": [
+        "What's My Line (season)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Advise and Consent",
@@ -95,12 +100,30 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Sit-in protests begin at Woolworth lunch counter in Greensboro, North Carolina, sparking the Civil Rights movement"},
-    {"month": 5, "event": "U-2 spy plane incident - Soviet Union shoots down American reconnaissance aircraft, pilot Francis Gary Powers captured"},
-    {"month": 9, "event": "First televised presidential debate between John F. Kennedy and Richard Nixon, a landmark in political history"},
-    {"month": 10, "event": "Nigeria gains independence from Britain, part of the 'Year of Africa' as 17 nations gain independence"},
-    {"month": 11, "event": "John F. Kennedy elected 35th US President, defeating Richard Nixon in one of the closest elections in history"},
-    {"month": 9, "event": "OPEC founded by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela to coordinate global oil production policy"}
+    {
+      "month": 2,
+      "event": "Sit-in protests begin at Woolworth lunch counter in Greensboro, North Carolina, sparking the Civil Rights movement"
+    },
+    {
+      "month": 5,
+      "event": "U-2 spy plane incident - Soviet Union shoots down American reconnaissance aircraft, pilot Francis Gary Powers captured"
+    },
+    {
+      "month": 9,
+      "event": "First televised presidential debate between John F. Kennedy and Richard Nixon, a landmark in political history"
+    },
+    {
+      "month": 10,
+      "event": "Nigeria gains independence from Britain, part of the 'Year of Africa' as 17 nations gain independence"
+    },
+    {
+      "month": 11,
+      "event": "John F. Kennedy elected 35th US President, defeating Richard Nixon in one of the closest elections in history"
+    },
+    {
+      "month": 9,
+      "event": "OPEC founded by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela to coordinate global oil production policy"
+    }
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
@@ -115,14 +138,38 @@
     "canada_pm": "John Diefenbaker",
     "brazil_president": "Juscelino Kubitschek",
     "un_secretary": "Dag Hammarskjöld",
-    "pope": "Pope John XXIII"
+    "pope": "Pope John XXIII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo López Mateos",
+    "south_korea_president": "Yun Po-sun",
+    "ireland_taoiseach": "Seán Lemass"
   },
   "notable_births": [
-    {"name": "Bono", "month": 5, "field": "Music"},
-    {"name": "Diego Maradona", "month": 10, "field": "Football"},
-    {"name": "Daryl Hannah", "month": 12, "field": "Film"},
-    {"name": "Colin Firth", "month": 9, "field": "Film"},
-    {"name": "Ayrton Senna", "month": 3, "field": "Motorsport"}
+    {
+      "name": "Bono",
+      "month": 5,
+      "field": "Music"
+    },
+    {
+      "name": "Diego Maradona",
+      "month": 10,
+      "field": "Football"
+    },
+    {
+      "name": "Daryl Hannah",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Colin Firth",
+      "month": 9,
+      "field": "Film"
+    },
+    {
+      "name": "Ayrton Senna",
+      "month": 3,
+      "field": "Motorsport"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +241,34 @@
       "gdp_per_capita_usd": 2294,
       "leader": "John Diefenbaker",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 119.9,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 2940,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 37.2,
+      "life_expectancy": 57.3,
+      "gdp_per_capita_usd": 2490,
+      "leader": "Adolfo López Mateos",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 25.0,
+      "life_expectancy": 55.3,
+      "gdp_per_capita_usd": 1296,
+      "leader": "Yun Po-sun",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.83,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 3630,
+      "leader": "Seán Lemass",
+      "leader_title": "Taoiseach"
     }
   }
 }

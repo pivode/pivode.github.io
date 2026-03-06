@@ -17,10 +17,10 @@
     "sp500_year_end": 75.02,
     "dow_jones_year_end": 762.95,
     "gold_oz_usd": 35.09,
-    "oil_barrel_usd": 1.80
+    "oil_barrel_usd": 1.8
   },
   "prices_us": {
-    "gallon_gas_usd": 0.30,
+    "gallon_gas_usd": 0.3,
     "gallon_milk_usd": 1.04,
     "dozen_eggs_usd": 0.55,
     "loaf_bread_usd": 0.21,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The Defenders",
       "emmy_comedy": "The Dick Van Dyke Show",
-      "notable_premieres": ["The Fugitive", "My Favorite Martian", "General Hospital"],
-      "notable_finales": ["The Danny Kaye Show (season)"]
+      "notable_premieres": [
+        "The Fugitive",
+        "My Favorite Martian",
+        "General Hospital"
+      ],
+      "notable_finales": [
+        "The Danny Kaye Show (season)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Shoes of the Fisherman",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 6, "event": "Valentina Tereshkova becomes the first woman in space, orbiting Earth 48 times over nearly three days in Vostok 6"},
-    {"month": 8, "event": "Martin Luther King Jr. delivers his 'I Have a Dream' speech to 250,000 people at the March on Washington"},
-    {"month": 8, "event": "Partial Nuclear Test Ban Treaty signed by the US, USSR, and UK, prohibiting nuclear tests in the atmosphere"},
-    {"month": 11, "event": "President John F. Kennedy assassinated in Dallas, Texas; Lyndon B. Johnson sworn in as president"},
-    {"month": 11, "event": "Lee Harvey Oswald, suspected Kennedy assassin, shot and killed by Jack Ruby in Dallas police headquarters"}
+    {
+      "month": 6,
+      "event": "Valentina Tereshkova becomes the first woman in space, orbiting Earth 48 times over nearly three days in Vostok 6"
+    },
+    {
+      "month": 8,
+      "event": "Martin Luther King Jr. delivers his 'I Have a Dream' speech to 250,000 people at the March on Washington"
+    },
+    {
+      "month": 8,
+      "event": "Partial Nuclear Test Ban Treaty signed by the US, USSR, and UK, prohibiting nuclear tests in the atmosphere"
+    },
+    {
+      "month": 11,
+      "event": "President John F. Kennedy assassinated in Dallas, Texas; Lyndon B. Johnson sworn in as president"
+    },
+    {
+      "month": 11,
+      "event": "Lee Harvey Oswald, suspected Kennedy assassin, shot and killed by Jack Ruby in Dallas police headquarters"
+    }
   ],
   "leaders": {
     "us_president": "John F. Kennedy (to Nov), then Lyndon B. Johnson",
@@ -114,14 +135,38 @@
     "canada_pm": "Lester B. Pearson",
     "brazil_president": "João Goulart",
     "un_secretary": "U Thant",
-    "pope": "Pope John XXIII (to Jun), then Pope Paul VI"
+    "pope": "Pope John XXIII (to Jun), then Pope Paul VI",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo López Mateos",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Seán Lemass"
   },
   "notable_births": [
-    {"name": "Michael Jordan", "month": 2, "field": "Basketball"},
-    {"name": "Johnny Depp", "month": 6, "field": "Film"},
-    {"name": "Brad Pitt", "month": 12, "field": "Film"},
-    {"name": "Quentin Tarantino", "month": 3, "field": "Film"},
-    {"name": "Whitney Houston", "month": 8, "field": "Music"}
+    {
+      "name": "Michael Jordan",
+      "month": 2,
+      "field": "Basketball"
+    },
+    {
+      "name": "Johnny Depp",
+      "month": 6,
+      "field": "Film"
+    },
+    {
+      "name": "Brad Pitt",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Quentin Tarantino",
+      "month": 3,
+      "field": "Film"
+    },
+    {
+      "name": "Whitney Houston",
+      "month": 8,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 2637,
       "leader": "Lester B. Pearson",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 124.1,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 3250,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 41.0,
+      "life_expectancy": 59.4,
+      "gdp_per_capita_usd": 2750,
+      "leader": "Adolfo López Mateos",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 26.6,
+      "life_expectancy": 58.5,
+      "gdp_per_capita_usd": 1580,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.83,
+      "life_expectancy": 70.9,
+      "gdp_per_capita_usd": 4250,
+      "leader": "Seán Lemass",
+      "leader_title": "Taoiseach"
     }
   }
 }

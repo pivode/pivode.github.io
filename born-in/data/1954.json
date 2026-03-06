@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
     "dow_jones_year_end": 404.39,
-    "gold_oz_usd": 35.00,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.75
   },
   "prices_us": {
@@ -24,7 +24,7 @@
     "gallon_milk_usd": 0.92,
     "dozen_eggs_usd": 0.55,
     "loaf_bread_usd": 0.17,
-    "movie_ticket_usd": 0.50,
+    "movie_ticket_usd": 0.5,
     "new_car_avg_usd": 1900,
     "median_home_usd": 9525,
     "first_class_stamp_cents": 3,
@@ -57,7 +57,10 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The United States Steel Hour",
       "emmy_comedy": "I Love Lucy",
-      "notable_premieres": ["Tonight Show with Steve Allen", "Lassie"],
+      "notable_premieres": [
+        "Tonight Show with Steve Allen",
+        "Lassie"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 4, "event": "Army-McCarthy hearings televised nationally; Senator McCarthy's anti-communist crusade begins to collapse under public scrutiny"},
-    {"month": 5, "event": "Roger Bannister breaks the four-minute mile at Oxford, running 3:59.4"},
-    {"month": 5, "event": "French forces defeated at Dien Bien Phu, ending French colonial rule in Indochina"},
-    {"month": 7, "event": "Geneva Accords temporarily divide Vietnam at the 17th parallel"},
-    {"month": 12, "event": "US Senate censures Joseph McCarthy, effectively ending the Red Scare witch hunts"}
+    {
+      "month": 4,
+      "event": "Army-McCarthy hearings televised nationally; Senator McCarthy's anti-communist crusade begins to collapse under public scrutiny"
+    },
+    {
+      "month": 5,
+      "event": "Roger Bannister breaks the four-minute mile at Oxford, running 3:59.4"
+    },
+    {
+      "month": 5,
+      "event": "French forces defeated at Dien Bien Phu, ending French colonial rule in Indochina"
+    },
+    {
+      "month": 7,
+      "event": "Geneva Accords temporarily divide Vietnam at the 17th parallel"
+    },
+    {
+      "month": 12,
+      "event": "US Senate censures Joseph McCarthy, effectively ending the Red Scare witch hunts"
+    }
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
@@ -114,14 +132,38 @@
     "canada_pm": "Louis St. Laurent",
     "brazil_president": "Getúlio Vargas",
     "un_secretary": "Dag Hammarskjöld",
-    "pope": "Pope Pius XII"
+    "pope": "Pope Pius XII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo Ruiz Cortines",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "John A. Costello"
   },
   "notable_births": [
-    {"name": "Oprah Winfrey", "month": 1, "field": "TV/Media"},
-    {"name": "Jerry Seinfeld", "month": 4, "field": "Comedy"},
-    {"name": "John Travolta", "month": 2, "field": "Film"},
-    {"name": "Jackie Chan", "month": 4, "field": "Film"},
-    {"name": "Denzel Washington", "month": 12, "field": "Film"}
+    {
+      "name": "Oprah Winfrey",
+      "month": 1,
+      "field": "TV/Media"
+    },
+    {
+      "name": "Jerry Seinfeld",
+      "month": 4,
+      "field": "Comedy"
+    },
+    {
+      "name": "John Travolta",
+      "month": 2,
+      "field": "Film"
+    },
+    {
+      "name": "Jackie Chan",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Denzel Washington",
+      "month": 12,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 1784,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 107.2,
+      "life_expectancy": 63.0,
+      "gdp_per_capita_usd": 1900,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 31.2,
+      "life_expectancy": 52.5,
+      "gdp_per_capita_usd": 1950,
+      "leader": "Adolfo Ruiz Cortines",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 22.3,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 1050,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.93,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 3150,
+      "leader": "John A. Costello",
+      "leader_title": "Taoiseach"
     }
   }
 }

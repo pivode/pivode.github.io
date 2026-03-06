@@ -21,7 +21,7 @@
   },
   "prices_us": {
     "gallon_gas_usd": 0.95,
-    "gallon_milk_usd": 2.30,
+    "gallon_milk_usd": 2.3,
     "dozen_eggs_usd": 0.84,
     "loaf_bread_usd": 0.68,
     "movie_ticket_usd": 4.11,
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "thirtysomething",
       "emmy_comedy": "The Wonder Years",
-      "notable_premieres": ["Roseanne", "The Wonder Years", "Murphy Brown"],
-      "notable_finales": ["Highway to Heaven (season 4)"]
+      "notable_premieres": [
+        "Roseanne",
+        "The Wonder Years",
+        "Murphy Brown"
+      ],
+      "notable_finales": [
+        "Highway to Heaven (season 4)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Sands of Time",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Winter Olympics in Calgary feature Eddie 'The Eagle' Edwards and the Jamaican bobsled team, captivating the world"},
-    {"month": 7, "event": "Iran Air Flight 655 shot down by US Navy over the Persian Gulf, killing all 290 aboard"},
-    {"month": 8, "event": "Iran-Iraq War ends after eight years with over one million dead, with no clear winner and borders unchanged"},
-    {"month": 12, "event": "Pan Am Flight 103 bombed over Lockerbie, Scotland, killing all 259 aboard and 11 on the ground"},
-    {"month": 12, "event": "Armenian earthquake kills 25,000; Gorbachev addresses UN, announcing unilateral Soviet troop reductions"}
+    {
+      "month": 2,
+      "event": "Winter Olympics in Calgary feature Eddie 'The Eagle' Edwards and the Jamaican bobsled team, captivating the world"
+    },
+    {
+      "month": 7,
+      "event": "Iran Air Flight 655 shot down by US Navy over the Persian Gulf, killing all 290 aboard"
+    },
+    {
+      "month": 8,
+      "event": "Iran-Iraq War ends after eight years with over one million dead, with no clear winner and borders unchanged"
+    },
+    {
+      "month": 12,
+      "event": "Pan Am Flight 103 bombed over Lockerbie, Scotland, killing all 259 aboard and 11 on the ground"
+    },
+    {
+      "month": 12,
+      "event": "Armenian earthquake kills 25,000; Gorbachev addresses UN, announcing unilateral Soviet troop reductions"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -114,14 +135,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "José Sarney",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Mikhail Gorbachev",
+    "mexico_president": "Carlos Salinas de Gortari",
+    "south_korea_president": "Roh Tae-woo",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Rihanna", "month": 2, "field": "Music"},
-    {"name": "Adele", "month": 5, "field": "Music"},
-    {"name": "Hayley Williams", "month": 12, "field": "Music"},
-    {"name": "Conor McGregor", "month": 7, "field": "Sports"},
-    {"name": "Rupert Grint", "month": 8, "field": "Film"}
+    {
+      "name": "Rihanna",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Adele",
+      "month": 5,
+      "field": "Music"
+    },
+    {
+      "name": "Hayley Williams",
+      "month": 12,
+      "field": "Music"
+    },
+    {
+      "name": "Conor McGregor",
+      "month": 7,
+      "field": "Sports"
+    },
+    {
+      "name": "Rupert Grint",
+      "month": 8,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 19007,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 146.4,
+      "life_expectancy": 65.9,
+      "gdp_per_capita_usd": 6750,
+      "leader": "Mikhail Gorbachev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 88.6,
+      "life_expectancy": 69.2,
+      "gdp_per_capita_usd": 5200,
+      "leader": "Carlos Salinas de Gortari",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 42.6,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 14010,
+      "leader": "Roh Tae-woo",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.53,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 12400,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

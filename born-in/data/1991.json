@@ -17,13 +17,13 @@
     "sp500_year_end": 417.09,
     "dow_jones_year_end": 3168.83,
     "gold_oz_usd": 353.35,
-    "oil_barrel_usd": 21.50
+    "oil_barrel_usd": 21.5
   },
   "prices_us": {
     "gallon_gas_usd": 1.14,
     "gallon_milk_usd": 2.78,
     "dozen_eggs_usd": 1.01,
-    "loaf_bread_usd": 0.70,
+    "loaf_bread_usd": 0.7,
     "movie_ticket_usd": 4.21,
     "new_car_avg_usd": 16000,
     "median_home_usd": 97000,
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "L.A. Law",
       "emmy_comedy": "Cheers",
-      "notable_premieres": ["Home Improvement", "Seinfeld (season 3)", "Clarissa Explains It All"],
-      "notable_finales": ["Dallas"]
+      "notable_premieres": [
+        "Home Improvement",
+        "Seinfeld (season 3)",
+        "Clarissa Explains It All"
+      ],
+      "notable_finales": [
+        "Dallas"
+      ]
     },
     "books": {
       "fiction_bestseller": "Scarlett",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Gulf War: US-led coalition launches Operation Desert Storm, liberating Kuwait from Iraq in 100 hours of ground combat"},
-    {"month": 6, "event": "Yugoslavia begins to break apart as Slovenia and Croatia declare independence, starting a decade of Balkan wars"},
-    {"month": 8, "event": "Failed coup against Gorbachev in Moscow; Boris Yeltsin stands on a tank to defend democracy"},
-    {"month": 11, "event": "Magic Johnson announces he is HIV-positive, transforming public understanding of the AIDS epidemic"},
-    {"month": 12, "event": "Soviet Union formally dissolved on Christmas Day; Gorbachev resigns; 15 independent nations emerge"}
+    {
+      "month": 1,
+      "event": "Gulf War: US-led coalition launches Operation Desert Storm, liberating Kuwait from Iraq in 100 hours of ground combat"
+    },
+    {
+      "month": 6,
+      "event": "Yugoslavia begins to break apart as Slovenia and Croatia declare independence, starting a decade of Balkan wars"
+    },
+    {
+      "month": 8,
+      "event": "Failed coup against Gorbachev in Moscow; Boris Yeltsin stands on a tank to defend democracy"
+    },
+    {
+      "month": 11,
+      "event": "Magic Johnson announces he is HIV-positive, transforming public understanding of the AIDS epidemic"
+    },
+    {
+      "month": 12,
+      "event": "Soviet Union formally dissolved on Christmas Day; Gorbachev resigns; 15 independent nations emerge"
+    }
   ],
   "leaders": {
     "us_president": "George H. W. Bush",
@@ -114,13 +135,33 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "Fernando Collor de Mello",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Carlos Salinas de Gortari",
+    "south_korea_president": "Roh Tae-woo",
+    "ireland_taoiseach": "Charles Haughey"
   },
   "notable_births": [
-    {"name": "Ed Sheeran", "month": 2, "field": "Music"},
-    {"name": "Emma Roberts", "month": 2, "field": "Film/Television"},
-    {"name": "Kygo", "month": 9, "field": "Music"},
-    {"name": "Kevin De Bruyne", "month": 6, "field": "Football"}
+    {
+      "name": "Ed Sheeran",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Emma Roberts",
+      "month": 2,
+      "field": "Film/Television"
+    },
+    {
+      "name": "Kygo",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "month": 6,
+      "field": "Football"
+    }
   ],
   "countries": {
     "US": {
@@ -192,6 +233,34 @@
       "gdp_per_capita_usd": 21396,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 148.5,
+      "life_expectancy": 64.6,
+      "gdp_per_capita_usd": 5930,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 94.6,
+      "life_expectancy": 70.1,
+      "gdp_per_capita_usd": 6200,
+      "leader": "Carlos Salinas de Gortari",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 43.7,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 18080,
+      "leader": "Roh Tae-woo",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.53,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 15600,
+      "leader": "Charles Haughey",
+      "leader_title": "Taoiseach"
     }
   }
 }

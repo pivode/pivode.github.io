@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 11800,
     "us_inflation_pct": 9.13,
     "us_unemployment_pct": 8.5,
-    "us_minimum_wage_usd": 2.10,
+    "us_minimum_wage_usd": 2.1,
     "sp500_year_end": 90.19,
     "dow_jones_year_end": 852.41,
     "gold_oz_usd": 160.86,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Upstairs, Downstairs",
       "emmy_comedy": "The Mary Tyler Moore Show",
-      "notable_premieres": ["Saturday Night Live", "Wheel of Fortune", "Baretta"],
-      "notable_finales": ["The Odd Couple"]
+      "notable_premieres": [
+        "Saturday Night Live",
+        "Wheel of Fortune",
+        "Baretta"
+      ],
+      "notable_finales": [
+        "The Odd Couple"
+      ]
     },
     "books": {
       "fiction_bestseller": "Ragtime",
@@ -95,12 +101,30 @@
     ]
   },
   "world_events": [
-    {"month": 4, "event": "Fall of Saigon - South Vietnam surrenders to North Vietnam, ending the Vietnam War after 20 years"},
-    {"month": 4, "event": "Khmer Rouge seizes Phnom Penh, beginning the Cambodian genocide under Pol Pot"},
-    {"month": 6, "event": "India's Prime Minister Indira Gandhi declares state of emergency, suspending civil liberties"},
-    {"month": 7, "event": "Apollo-Soyuz Test Project - first US-Soviet joint space mission, symbolizing detente"},
-    {"month": 11, "event": "Australian constitutional crisis - Governor-General dismisses Prime Minister Gough Whitlam"},
-    {"month": 11, "event": "Spain transitions to democracy after General Francisco Franco dies after 36 years in power"}
+    {
+      "month": 4,
+      "event": "Fall of Saigon - South Vietnam surrenders to North Vietnam, ending the Vietnam War after 20 years"
+    },
+    {
+      "month": 4,
+      "event": "Khmer Rouge seizes Phnom Penh, beginning the Cambodian genocide under Pol Pot"
+    },
+    {
+      "month": 6,
+      "event": "India's Prime Minister Indira Gandhi declares state of emergency, suspending civil liberties"
+    },
+    {
+      "month": 7,
+      "event": "Apollo-Soyuz Test Project - first US-Soviet joint space mission, symbolizing detente"
+    },
+    {
+      "month": 11,
+      "event": "Australian constitutional crisis - Governor-General dismisses Prime Minister Gough Whitlam"
+    },
+    {
+      "month": 11,
+      "event": "Spain transitions to democracy after General Francisco Franco dies after 36 years in power"
+    }
   ],
   "leaders": {
     "us_president": "Gerald Ford",
@@ -115,14 +139,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Ernesto Geisel",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Luis Echeverría",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Liam Cosgrave"
   },
   "notable_births": [
-    {"name": "Tiger Woods", "month": 12, "field": "Golf"},
-    {"name": "Angelina Jolie", "month": 6, "field": "Film"},
-    {"name": "David Beckham", "month": 5, "field": "Football"},
-    {"name": "Kate Winslet", "month": 10, "field": "Film"},
-    {"name": "Lauryn Hill", "month": 5, "field": "Music"}
+    {
+      "name": "Tiger Woods",
+      "month": 12,
+      "field": "Golf"
+    },
+    {
+      "name": "Angelina Jolie",
+      "month": 6,
+      "field": "Film"
+    },
+    {
+      "name": "David Beckham",
+      "month": 5,
+      "field": "Football"
+    },
+    {
+      "name": "Kate Winslet",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Lauryn Hill",
+      "month": 5,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +242,34 @@
       "gdp_per_capita_usd": 7548,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 135.3,
+      "life_expectancy": 66.6,
+      "gdp_per_capita_usd": 5050,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 60.9,
+      "life_expectancy": 65.8,
+      "gdp_per_capita_usd": 4850,
+      "leader": "Luis Echeverría",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 35.3,
+      "life_expectancy": 67.3,
+      "gdp_per_capita_usd": 4840,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.18,
+      "life_expectancy": 73.3,
+      "gdp_per_capita_usd": 8400,
+      "leader": "Liam Cosgrave",
+      "leader_title": "Taoiseach"
     }
   }
 }

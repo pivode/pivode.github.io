@@ -15,14 +15,14 @@
     "us_unemployment_pct": 5.1,
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1248.29,
-    "dow_jones_year_end": 10717.50,
-    "gold_oz_usd": 513.00,
+    "dow_jones_year_end": 10717.5,
+    "gold_oz_usd": 513.0,
     "oil_barrel_usd": 61.04
   },
   "prices_us": {
-    "gallon_gas_usd": 2.30,
+    "gallon_gas_usd": 2.3,
     "gallon_milk_usd": 3.22,
-    "dozen_eggs_usd": 1.00,
+    "dozen_eggs_usd": 1.0,
     "loaf_bread_usd": 1.03,
     "movie_ticket_usd": 6.41,
     "new_car_avg_usd": 28399,
@@ -57,8 +57,15 @@
       "most_watched_network": "Fox",
       "emmy_drama": "Lost",
       "emmy_comedy": "Everybody Loves Raymond",
-      "notable_premieres": ["The Office (US)", "How I Met Your Mother", "My Name Is Earl"],
-      "notable_finales": ["Everybody Loves Raymond", "Sex and the City (HBO)"]
+      "notable_premieres": [
+        "The Office (US)",
+        "How I Met Your Mother",
+        "My Name Is Earl"
+      ],
+      "notable_finales": [
+        "Everybody Loves Raymond",
+        "Sex and the City (HBO)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Broker",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 8, "event": "Hurricane Katrina strikes the US Gulf Coast on August 29, devastating New Orleans and killing 1,833 people in the deadliest US natural disaster in 75 years"},
-    {"month": 7, "event": "London bombings on July 7 kill 52 people on the city's transport network in coordinated al-Qaeda-inspired attacks"},
-    {"month": 4, "event": "Pope John Paul II dies on April 2 after 26 years as pope; Joseph Ratzinger elected Pope Benedict XVI on April 19"},
-    {"month": 10, "event": "Kashmir earthquake kills over 73,000 people in Pakistan and India, leaving 3.5 million homeless as winter approaches"},
-    {"month": 12, "event": "Iraqi legislative elections held; millions vote to elect a permanent government under the new constitution"}
+    {
+      "month": 8,
+      "event": "Hurricane Katrina strikes the US Gulf Coast on August 29, devastating New Orleans and killing 1,833 people in the deadliest US natural disaster in 75 years"
+    },
+    {
+      "month": 7,
+      "event": "London bombings on July 7 kill 52 people on the city's transport network in coordinated al-Qaeda-inspired attacks"
+    },
+    {
+      "month": 4,
+      "event": "Pope John Paul II dies on April 2 after 26 years as pope; Joseph Ratzinger elected Pope Benedict XVI on April 19"
+    },
+    {
+      "month": 10,
+      "event": "Kashmir earthquake kills over 73,000 people in Pakistan and India, leaving 3.5 million homeless as winter approaches"
+    },
+    {
+      "month": 12,
+      "event": "Iraqi legislative elections held; millions vote to elect a permanent government under the new constitution"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,10 +136,18 @@
     "canada_pm": "Paul Martin",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope Benedict XVI"
+    "pope": "Pope Benedict XVI",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Vicente Fox",
+    "south_korea_president": "Roh Moo-hyun",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Noah Jupe", "month": 2, "field": "Film"}
+    {
+      "name": "Noah Jupe",
+      "month": 2,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -189,6 +219,34 @@
       "gdp_per_capita_usd": 35078,
       "leader": "Paul Martin",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 142.7,
+      "life_expectancy": 65.4,
+      "gdp_per_capita_usd": 11740,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 120.0,
+      "life_expectancy": 74.6,
+      "gdp_per_capita_usd": 9330,
+      "leader": "Vicente Fox",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 48.5,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 37120,
+      "leader": "Roh Moo-hyun",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.23,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 52600,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

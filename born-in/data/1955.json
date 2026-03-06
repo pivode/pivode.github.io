@@ -15,8 +15,8 @@
     "us_unemployment_pct": 4.4,
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
-    "dow_jones_year_end": 488.40,
-    "gold_oz_usd": 35.00,
+    "dow_jones_year_end": 488.4,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.77
   },
   "prices_us": {
@@ -24,7 +24,7 @@
     "gallon_milk_usd": 0.93,
     "dozen_eggs_usd": 0.57,
     "loaf_bread_usd": 0.18,
-    "movie_ticket_usd": 0.50,
+    "movie_ticket_usd": 0.5,
     "new_car_avg_usd": 2000,
     "median_home_usd": 10000,
     "first_class_stamp_cents": 3,
@@ -57,7 +57,10 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Producer's Showcase",
       "emmy_comedy": "The Phil Silvers Show",
-      "notable_premieres": ["The Mickey Mouse Club", "Gunsmoke"],
+      "notable_premieres": [
+        "The Mickey Mouse Club",
+        "Gunsmoke"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Afro-Asian Bandung Conference held in Indonesia; 29 newly independent nations assert independence from Cold War blocs"},
-    {"month": 7, "event": "Disneyland opens in Anaheim, California, revolutionizing entertainment and theme park culture"},
-    {"month": 8, "event": "West Germany joins NATO as a sovereign state, reintegrating into the Western alliance"},
-    {"month": 9, "event": "James Dean killed in car accident at age 24, becoming an enduring cultural icon"},
-    {"month": 12, "event": "Rosa Parks refuses to give up her bus seat in Montgomery, Alabama, sparking the Montgomery Bus Boycott"}
+    {
+      "month": 2,
+      "event": "Afro-Asian Bandung Conference held in Indonesia; 29 newly independent nations assert independence from Cold War blocs"
+    },
+    {
+      "month": 7,
+      "event": "Disneyland opens in Anaheim, California, revolutionizing entertainment and theme park culture"
+    },
+    {
+      "month": 8,
+      "event": "West Germany joins NATO as a sovereign state, reintegrating into the Western alliance"
+    },
+    {
+      "month": 9,
+      "event": "James Dean killed in car accident at age 24, becoming an enduring cultural icon"
+    },
+    {
+      "month": 12,
+      "event": "Rosa Parks refuses to give up her bus seat in Montgomery, Alabama, sparking the Montgomery Bus Boycott"
+    }
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
@@ -114,14 +132,38 @@
     "canada_pm": "Louis St. Laurent",
     "brazil_president": "João Café Filho",
     "un_secretary": "Dag Hammarskjöld",
-    "pope": "Pope Pius XII"
+    "pope": "Pope Pius XII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo Ruiz Cortines",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "John A. Costello"
   },
   "notable_births": [
-    {"name": "Steve Jobs", "month": 2, "field": "Technology"},
-    {"name": "Bill Gates", "month": 10, "field": "Technology"},
-    {"name": "Bruce Willis", "month": 3, "field": "Film"},
-    {"name": "Kevin Costner", "month": 1, "field": "Film"},
-    {"name": "Whoopi Goldberg", "month": 11, "field": "Film/Comedy"}
+    {
+      "name": "Steve Jobs",
+      "month": 2,
+      "field": "Technology"
+    },
+    {
+      "name": "Bill Gates",
+      "month": 10,
+      "field": "Technology"
+    },
+    {
+      "name": "Bruce Willis",
+      "month": 3,
+      "field": "Film"
+    },
+    {
+      "name": "Kevin Costner",
+      "month": 1,
+      "field": "Film"
+    },
+    {
+      "name": "Whoopi Goldberg",
+      "month": 11,
+      "field": "Film/Comedy"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 1872,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 108.5,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 2100,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 32.1,
+      "life_expectancy": 53.3,
+      "gdp_per_capita_usd": 2050,
+      "leader": "Adolfo Ruiz Cortines",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 22.8,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 1085,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.92,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 3200,
+      "leader": "John A. Costello",
+      "leader_title": "Taoiseach"
     }
   }
 }

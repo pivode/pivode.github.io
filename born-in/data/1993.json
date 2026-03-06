@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Picket Fences",
       "emmy_comedy": "Seinfeld",
-      "notable_premieres": ["The X-Files", "Late Show with David Letterman", "Frasier"],
-      "notable_finales": ["Cheers"]
+      "notable_premieres": [
+        "The X-Files",
+        "Late Show with David Letterman",
+        "Frasier"
+      ],
+      "notable_finales": [
+        "Cheers"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Bridges of Madison County",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Bill Clinton inaugurated as 42nd US President; the White House launches a website for the first time"},
-    {"month": 2, "event": "World Trade Center bombed by Islamic terrorists, killing 6 and injuring 1,000 in a parking garage explosion"},
-    {"month": 4, "event": "Branch Davidian compound near Waco, Texas stormed by FBI; fire kills 76 including cult leader David Koresh"},
-    {"month": 9, "event": "Oslo Accords signed by Yasser Arafat and Yitzhak Rabin on the White House lawn, creating a framework for Palestinian-Israeli peace"},
-    {"month": 10, "event": "Battle of Mogadishu: US soldiers killed in Somalia in the 'Black Hawk Down' incident, shown live on CNN"}
+    {
+      "month": 1,
+      "event": "Bill Clinton inaugurated as 42nd US President; the White House launches a website for the first time"
+    },
+    {
+      "month": 2,
+      "event": "World Trade Center bombed by Islamic terrorists, killing 6 and injuring 1,000 in a parking garage explosion"
+    },
+    {
+      "month": 4,
+      "event": "Branch Davidian compound near Waco, Texas stormed by FBI; fire kills 76 including cult leader David Koresh"
+    },
+    {
+      "month": 9,
+      "event": "Oslo Accords signed by Yasser Arafat and Yitzhak Rabin on the White House lawn, creating a framework for Palestinian-Israeli peace"
+    },
+    {
+      "month": 10,
+      "event": "Battle of Mogadishu: US soldiers killed in Somalia in the 'Black Hawk Down' incident, shown live on CNN"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,14 +135,38 @@
     "canada_pm": "Brian Mulroney (to Jun), then Kim Campbell",
     "brazil_president": "Itamar Franco",
     "un_secretary": "Boutros Boutros-Ghali",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Carlos Salinas de Gortari",
+    "south_korea_president": "Kim Young-sam",
+    "ireland_taoiseach": "Albert Reynolds"
   },
   "notable_births": [
-    {"name": "Ariana Grande", "month": 6, "field": "Music"},
-    {"name": "Zayn Malik", "month": 1, "field": "Music"},
-    {"name": "Niall Horan", "month": 9, "field": "Music"},
-    {"name": "Perrie Edwards", "month": 7, "field": "Music"},
-    {"name": "Liam Payne", "month": 8, "field": "Music"}
+    {
+      "name": "Ariana Grande",
+      "month": 6,
+      "field": "Music"
+    },
+    {
+      "name": "Zayn Malik",
+      "month": 1,
+      "field": "Music"
+    },
+    {
+      "name": "Niall Horan",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Perrie Edwards",
+      "month": 7,
+      "field": "Music"
+    },
+    {
+      "name": "Liam Payne",
+      "month": 8,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 19889,
       "leader": "Kim Campbell",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 148.3,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 2830,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 98.4,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 6640,
+      "leader": "Carlos Salinas de Gortari",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 44.2,
+      "life_expectancy": 74.1,
+      "gdp_per_capita_usd": 20530,
+      "leader": "Kim Young-sam",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.6,
+      "life_expectancy": 76.2,
+      "gdp_per_capita_usd": 17200,
+      "leader": "Albert Reynolds",
+      "leader_title": "Taoiseach"
     }
   }
 }

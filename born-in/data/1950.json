@@ -16,13 +16,13 @@
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
     "dow_jones_year_end": 235.41,
-    "gold_oz_usd": 35.00,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.71
   },
   "prices_us": {
     "gallon_gas_usd": 0.27,
     "gallon_milk_usd": 0.83,
-    "dozen_eggs_usd": 0.60,
+    "dozen_eggs_usd": 0.6,
     "loaf_bread_usd": 0.14,
     "movie_ticket_usd": 0.46,
     "new_car_avg_usd": 1510,
@@ -57,7 +57,10 @@
       "most_watched_network": "NBC",
       "emmy_drama": null,
       "emmy_comedy": null,
-      "notable_premieres": ["What's My Line?", "Your Show of Shows"],
+      "notable_premieres": [
+        "What's My Line?",
+        "Your Show of Shows"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "President Truman authorizes development of the hydrogen bomb, escalating the nuclear arms race with the Soviet Union"},
-    {"month": 6, "event": "North Korea invades South Korea, triggering the Korean War and US-led UN military intervention"},
-    {"month": 2, "event": "US Senator Joseph McCarthy claims to have a list of 205 Communists in the State Department, launching the Red Scare"},
-    {"month": 9, "event": "UN forces led by General MacArthur land at Inchon, turning the tide of the Korean War"},
-    {"month": 11, "event": "China enters the Korean War, pushing UN forces back below the 38th parallel"}
+    {
+      "month": 1,
+      "event": "President Truman authorizes development of the hydrogen bomb, escalating the nuclear arms race with the Soviet Union"
+    },
+    {
+      "month": 6,
+      "event": "North Korea invades South Korea, triggering the Korean War and US-led UN military intervention"
+    },
+    {
+      "month": 2,
+      "event": "US Senator Joseph McCarthy claims to have a list of 205 Communists in the State Department, launching the Red Scare"
+    },
+    {
+      "month": 9,
+      "event": "UN forces led by General MacArthur land at Inchon, turning the tide of the Korean War"
+    },
+    {
+      "month": 11,
+      "event": "China enters the Korean War, pushing UN forces back below the 38th parallel"
+    }
   ],
   "leaders": {
     "us_president": "Harry S. Truman",
@@ -113,15 +131,39 @@
     "australia_pm": "Robert Menzies",
     "canada_pm": "Louis St. Laurent",
     "brazil_president": "Eurico Gaspar Dutra",
+    "mexico_president": "Miguel Alemán Valdés",
     "un_secretary": "Trygve Lie",
-    "pope": "Pope Pius XII"
+    "pope": "Pope Pius XII",
+    "russia_leader": "Joseph Stalin",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "John A. Costello"
   },
   "notable_births": [
-    {"name": "Stevie Wonder", "month": 5, "field": "Music"},
-    {"name": "Peter Gabriel", "month": 2, "field": "Music"},
-    {"name": "Bill Murray", "month": 9, "field": "Film"},
-    {"name": "Cybill Shepherd", "month": 2, "field": "Film"},
-    {"name": "Robbie Coltrane", "month": 3, "field": "Film"}
+    {
+      "name": "Stevie Wonder",
+      "month": 5,
+      "field": "Music"
+    },
+    {
+      "name": "Peter Gabriel",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Bill Murray",
+      "month": 9,
+      "field": "Film"
+    },
+    {
+      "name": "Cybill Shepherd",
+      "month": 2,
+      "field": "Film"
+    },
+    {
+      "name": "Robbie Coltrane",
+      "month": 3,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 1307,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 102.7,
+      "life_expectancy": 60.9,
+      "gdp_per_capita_usd": 1488,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 27.7,
+      "life_expectancy": 49.6,
+      "gdp_per_capita_usd": 1696,
+      "leader": "Miguel Alemán Valdés",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 20.0,
+      "life_expectancy": 45.5,
+      "gdp_per_capita_usd": 854,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.97,
+      "life_expectancy": 66.9,
+      "gdp_per_capita_usd": 2840,
+      "leader": "John A. Costello",
+      "leader_title": "Taoiseach"
     }
   }
 }

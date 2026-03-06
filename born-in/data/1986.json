@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 3.35,
     "sp500_year_end": 242.17,
     "dow_jones_year_end": 1895.95,
-    "gold_oz_usd": 395.00,
+    "gold_oz_usd": 395.0,
     "oil_barrel_usd": 14.44
   },
   "prices_us": {
@@ -28,7 +28,7 @@
     "new_car_avg_usd": 9500,
     "median_home_usd": 80300,
     "first_class_stamp_cents": 22,
-    "big_mac_usd": 1.60
+    "big_mac_usd": 1.6
   },
   "culture": {
     "music": {
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "Cagney & Lacey",
       "emmy_comedy": "The Golden Girls",
-      "notable_premieres": ["ALF", "L.A. Law", "Pee-wee's Playhouse"],
-      "notable_finales": ["Miami Vice (season 2)"]
+      "notable_premieres": [
+        "ALF",
+        "L.A. Law",
+        "Pee-wee's Playhouse"
+      ],
+      "notable_finales": [
+        "Miami Vice (season 2)"
+      ]
     },
     "books": {
       "fiction_bestseller": "It",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Space Shuttle Challenger explodes 73 seconds after launch, killing all seven crew members including teacher Christa McAuliffe"},
-    {"month": 4, "event": "Chernobyl nuclear plant reactor 4 explodes in Ukraine, releasing radiation across Europe in worst nuclear accident in history"},
-    {"month": 6, "event": "Diego Maradona scores 'Hand of God' goal and then 'Goal of the Century' against England in the World Cup quarter-finals"},
-    {"month": 10, "event": "Reagan and Gorbachev meet in Reykjavik; talks collapse over Reagan's refusal to abandon Star Wars SDI"},
-    {"month": 11, "event": "Iran-Contra affair revealed: Reagan administration secretly sold weapons to Iran and funneled proceeds to Nicaraguan rebels"}
+    {
+      "month": 1,
+      "event": "Space Shuttle Challenger explodes 73 seconds after launch, killing all seven crew members including teacher Christa McAuliffe"
+    },
+    {
+      "month": 4,
+      "event": "Chernobyl nuclear plant reactor 4 explodes in Ukraine, releasing radiation across Europe in worst nuclear accident in history"
+    },
+    {
+      "month": 6,
+      "event": "Diego Maradona scores 'Hand of God' goal and then 'Goal of the Century' against England in the World Cup quarter-finals"
+    },
+    {
+      "month": 10,
+      "event": "Reagan and Gorbachev meet in Reykjavik; talks collapse over Reagan's refusal to abandon Star Wars SDI"
+    },
+    {
+      "month": 11,
+      "event": "Iran-Contra affair revealed: Reagan administration secretly sold weapons to Iran and funneled proceeds to Nicaraguan rebels"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -114,14 +135,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "José Sarney",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Mikhail Gorbachev",
+    "mexico_president": "Miguel de la Madrid",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Garret FitzGerald"
   },
   "notable_births": [
-    {"name": "Usain Bolt", "month": 8, "field": "Athletics"},
-    {"name": "Lady Gaga", "month": 3, "field": "Music"},
-    {"name": "Megan Fox", "month": 5, "field": "Film"},
-    {"name": "Drake", "month": 10, "field": "Music"},
-    {"name": "Rafael Nadal", "month": 6, "field": "Tennis"}
+    {
+      "name": "Usain Bolt",
+      "month": 8,
+      "field": "Athletics"
+    },
+    {
+      "name": "Lady Gaga",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Megan Fox",
+      "month": 5,
+      "field": "Film"
+    },
+    {
+      "name": "Drake",
+      "month": 10,
+      "field": "Music"
+    },
+    {
+      "name": "Rafael Nadal",
+      "month": 6,
+      "field": "Tennis"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 14545,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 144.9,
+      "life_expectancy": 65.8,
+      "gdp_per_capita_usd": 6500,
+      "leader": "Mikhail Gorbachev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 84.3,
+      "life_expectancy": 68.7,
+      "gdp_per_capita_usd": 4800,
+      "leader": "Miguel de la Madrid",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 41.6,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 10600,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.54,
+      "life_expectancy": 74.8,
+      "gdp_per_capita_usd": 11200,
+      "leader": "Garret FitzGerald",
+      "leader_title": "Taoiseach"
     }
   }
 }

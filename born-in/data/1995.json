@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 4.25,
     "sp500_year_end": 615.93,
     "dow_jones_year_end": 5117.12,
-    "gold_oz_usd": 387.00,
+    "gold_oz_usd": 387.0,
     "oil_barrel_usd": 17.02
   },
   "prices_us": {
@@ -57,8 +57,15 @@
       "most_watched_network": "NBC",
       "emmy_drama": "NYPD Blue",
       "emmy_comedy": "Frasier",
-      "notable_premieres": ["Xena: Warrior Princess", "The WB network launches", "JAG"],
-      "notable_finales": ["Roseanne (season 8)", "Murder, She Wrote"]
+      "notable_premieres": [
+        "Xena: Warrior Princess",
+        "The WB network launches",
+        "JAG"
+      ],
+      "notable_finales": [
+        "Roseanne (season 8)",
+        "Murder, She Wrote"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Rainmaker",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Kobe earthquake kills 6,434 people in Japan and causes $100 billion in damage, exposing disaster preparedness failures"},
-    {"month": 3, "event": "Tokyo subway sarin attack by Aum Shinrikyo kills 13 and injures thousands in the worst terrorist attack on Japan's soil"},
-    {"month": 4, "event": "Oklahoma City bombing kills 168 people in the deadliest domestic terrorist attack in US history at that time"},
-    {"month": 11, "event": "Israeli Prime Minister Yitzhak Rabin assassinated by a right-wing Israeli extremist after a peace rally in Tel Aviv"},
-    {"month": 12, "event": "Dayton Peace Agreement signed, ending nearly four years of war in Bosnia and Herzegovina"}
+    {
+      "month": 1,
+      "event": "Kobe earthquake kills 6,434 people in Japan and causes $100 billion in damage, exposing disaster preparedness failures"
+    },
+    {
+      "month": 3,
+      "event": "Tokyo subway sarin attack by Aum Shinrikyo kills 13 and injures thousands in the worst terrorist attack on Japan's soil"
+    },
+    {
+      "month": 4,
+      "event": "Oklahoma City bombing kills 168 people in the deadliest domestic terrorist attack in US history at that time"
+    },
+    {
+      "month": 11,
+      "event": "Israeli Prime Minister Yitzhak Rabin assassinated by a right-wing Israeli extremist after a peace rally in Tel Aviv"
+    },
+    {
+      "month": 12,
+      "event": "Dayton Peace Agreement signed, ending nearly four years of war in Bosnia and Herzegovina"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,14 +136,38 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Boutros Boutros-Ghali",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Ernesto Zedillo",
+    "south_korea_president": "Kim Young-sam",
+    "ireland_taoiseach": "John Bruton"
   },
   "notable_births": [
-    {"name": "Kendall Jenner", "month": 11, "field": "Modelling/Media"},
-    {"name": "Troye Sivan", "month": 6, "field": "Music"},
-    {"name": "Gigi Hadid", "month": 4, "field": "Modelling"},
-    {"name": "Dua Lipa", "month": 8, "field": "Music"},
-    {"name": "Post Malone", "month": 7, "field": "Music"}
+    {
+      "name": "Kendall Jenner",
+      "month": 11,
+      "field": "Modelling/Media"
+    },
+    {
+      "name": "Troye Sivan",
+      "month": 6,
+      "field": "Music"
+    },
+    {
+      "name": "Gigi Hadid",
+      "month": 4,
+      "field": "Modelling"
+    },
+    {
+      "name": "Dua Lipa",
+      "month": 8,
+      "field": "Music"
+    },
+    {
+      "name": "Post Malone",
+      "month": 7,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +239,34 @@
       "gdp_per_capita_usd": 20030,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 147.6,
+      "life_expectancy": 61.5,
+      "gdp_per_capita_usd": 2965,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 102.2,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 5180,
+      "leader": "Ernesto Zedillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 44.9,
+      "life_expectancy": 74.9,
+      "gdp_per_capita_usd": 24870,
+      "leader": "Kim Young-sam",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.67,
+      "life_expectancy": 76.6,
+      "gdp_per_capita_usd": 21000,
+      "leader": "John Bruton",
+      "leader_title": "Taoiseach"
     }
   }
 }

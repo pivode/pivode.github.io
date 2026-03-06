@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1211.92,
     "dow_jones_year_end": 10783.01,
-    "gold_oz_usd": 438.10,
+    "gold_oz_usd": 438.1,
     "oil_barrel_usd": 41.51
   },
   "prices_us": {
@@ -28,7 +28,7 @@
     "new_car_avg_usd": 27958,
     "median_home_usd": 221000,
     "first_class_stamp_cents": 37,
-    "big_mac_usd": 2.90
+    "big_mac_usd": 2.9
   },
   "culture": {
     "music": {
@@ -57,8 +57,16 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The Sopranos",
       "emmy_comedy": "Arrested Development",
-      "notable_premieres": ["Lost", "Desperate Housewives", "House M.D.", "Deadwood"],
-      "notable_finales": ["Friends", "Frasier"]
+      "notable_premieres": [
+        "Lost",
+        "Desperate Housewives",
+        "House M.D.",
+        "Deadwood"
+      ],
+      "notable_finales": [
+        "Friends",
+        "Frasier"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Da Vinci Code",
@@ -95,11 +103,26 @@
     ]
   },
   "world_events": [
-    {"month": 12, "event": "Indian Ocean tsunami triggered by a 9.1-magnitude earthquake kills 227,898 people across 14 countries - one of the deadliest natural disasters in history"},
-    {"month": 3, "event": "Madrid train bombings kill 191 people and wound 2,050, the deadliest terrorist attack in European history since Lockerbie"},
-    {"month": 5, "event": "Abu Ghraib torture and prisoner abuse photos published, causing global outrage and damaging US credibility in the Iraq War"},
-    {"month": 11, "event": "George W. Bush re-elected US president, defeating John Kerry in a campaign dominated by the Iraq War and national security"},
-    {"month": 5, "event": "European Union expands by 10 countries on May 1, the largest single expansion in EU history, including former communist states"}
+    {
+      "month": 12,
+      "event": "Indian Ocean tsunami triggered by a 9.1-magnitude earthquake kills 227,898 people across 14 countries - one of the deadliest natural disasters in history"
+    },
+    {
+      "month": 3,
+      "event": "Madrid train bombings kill 191 people and wound 2,050, the deadliest terrorist attack in European history since Lockerbie"
+    },
+    {
+      "month": 5,
+      "event": "Abu Ghraib torture and prisoner abuse photos published, causing global outrage and damaging US credibility in the Iraq War"
+    },
+    {
+      "month": 11,
+      "event": "George W. Bush re-elected US president, defeating John Kerry in a campaign dominated by the Iraq War and national security"
+    },
+    {
+      "month": 5,
+      "event": "European Union expands by 10 countries on May 1, the largest single expansion in EU history, including former communist states"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,12 +137,28 @@
     "canada_pm": "Paul Martin",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Vicente Fox",
+    "south_korea_president": "Roh Moo-hyun",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Coco Gauff", "month": 3, "field": "Tennis"},
-    {"name": "Millie Bobby Brown", "month": 2, "field": "Television/Film"},
-    {"name": "Noah Schnapp", "month": 10, "field": "Television"}
+    {
+      "name": "Coco Gauff",
+      "month": 3,
+      "field": "Tennis"
+    },
+    {
+      "name": "Millie Bobby Brown",
+      "month": 2,
+      "field": "Television/Film"
+    },
+    {
+      "name": "Noah Schnapp",
+      "month": 10,
+      "field": "Television"
+    }
   ],
   "countries": {
     "US": {
@@ -191,6 +230,34 @@
       "gdp_per_capita_usd": 31629,
       "leader": "Paul Martin",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 143.5,
+      "life_expectancy": 65.3,
+      "gdp_per_capita_usd": 9620,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 118.3,
+      "life_expectancy": 74.3,
+      "gdp_per_capita_usd": 8940,
+      "leader": "Vicente Fox",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 48.2,
+      "life_expectancy": 78.3,
+      "gdp_per_capita_usd": 35360,
+      "leader": "Roh Moo-hyun",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.16,
+      "life_expectancy": 78.5,
+      "gdp_per_capita_usd": 48400,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

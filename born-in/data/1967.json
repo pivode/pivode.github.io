@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 7700,
     "us_inflation_pct": 2.77,
     "us_unemployment_pct": 3.8,
-    "us_minimum_wage_usd": 1.40,
+    "us_minimum_wage_usd": 1.4,
     "sp500_year_end": 96.47,
     "dow_jones_year_end": 905.11,
     "gold_oz_usd": 35.18,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Mission: Impossible",
       "emmy_comedy": "The Monkees",
-      "notable_premieres": ["The Smothers Brothers Comedy Hour", "Flying Nun", "The Carol Burnett Show"],
-      "notable_finales": ["The Andy Griffith Show (season 7)"]
+      "notable_premieres": [
+        "The Smothers Brothers Comedy Hour",
+        "Flying Nun",
+        "The Carol Burnett Show"
+      ],
+      "notable_finales": [
+        "The Andy Griffith Show (season 7)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Arrangement",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Super Bowl I played in Los Angeles - Green Bay Packers defeat Kansas City Chiefs 35-10 in the first AFL-NFL Championship Game"},
-    {"month": 6, "event": "Six-Day War: Israel defeats Egypt, Jordan, and Syria in six days, capturing the Sinai Peninsula, West Bank, Gaza Strip, and Golan Heights"},
-    {"month": 7, "event": "Detroit race riot leaves 43 dead and over 2,000 buildings burned in one of the worst urban uprisings in US history"},
-    {"month": 10, "event": "Che Guevara killed by Bolivian forces, becoming a worldwide symbol of revolution"},
-    {"month": 12, "event": "Dr. Christiaan Barnard performs the world's first human heart transplant in Cape Town, South Africa"}
+    {
+      "month": 1,
+      "event": "Super Bowl I played in Los Angeles - Green Bay Packers defeat Kansas City Chiefs 35-10 in the first AFL-NFL Championship Game"
+    },
+    {
+      "month": 6,
+      "event": "Six-Day War: Israel defeats Egypt, Jordan, and Syria in six days, capturing the Sinai Peninsula, West Bank, Gaza Strip, and Golan Heights"
+    },
+    {
+      "month": 7,
+      "event": "Detroit race riot leaves 43 dead and over 2,000 buildings burned in one of the worst urban uprisings in US history"
+    },
+    {
+      "month": 10,
+      "event": "Che Guevara killed by Bolivian forces, becoming a worldwide symbol of revolution"
+    },
+    {
+      "month": 12,
+      "event": "Dr. Christiaan Barnard performs the world's first human heart transplant in Cape Town, South Africa"
+    }
   ],
   "leaders": {
     "us_president": "Lyndon B. Johnson",
@@ -114,14 +135,38 @@
     "canada_pm": "Lester B. Pearson",
     "brazil_president": "Artur da Costa e Silva",
     "un_secretary": "U Thant",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Gustavo Díaz Ordaz",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Kurt Cobain", "month": 2, "field": "Music"},
-    {"name": "Will Smith", "month": 9, "field": "Music/Film"},
-    {"name": "Julia Roberts", "month": 10, "field": "Film"},
-    {"name": "Vin Diesel", "month": 7, "field": "Film"},
-    {"name": "Jamie Foxx", "month": 12, "field": "Music/Film"}
+    {
+      "name": "Kurt Cobain",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Will Smith",
+      "month": 9,
+      "field": "Music/Film"
+    },
+    {
+      "name": "Julia Roberts",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Vin Diesel",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Jamie Foxx",
+      "month": 12,
+      "field": "Music/Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 3123,
       "leader": "Lester B. Pearson",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 129.6,
+      "life_expectancy": 67.1,
+      "gdp_per_capita_usd": 3900,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 46.8,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 3380,
+      "leader": "Gustavo Díaz Ordaz",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 29.1,
+      "life_expectancy": 62.1,
+      "gdp_per_capita_usd": 2200,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.92,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 5350,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

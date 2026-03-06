@@ -11,20 +11,20 @@
   "economy": {
     "us_gdp_per_capita_usd": 3244,
     "us_median_household_income_usd": 5900,
-    "us_inflation_pct": 1.20,
+    "us_inflation_pct": 1.2,
     "us_unemployment_pct": 5.5,
     "us_minimum_wage_usd": 1.15,
-    "sp500_year_end": 63.10,
-    "dow_jones_year_end": 652.10,
-    "gold_oz_usd": 35.00,
-    "oil_barrel_usd": 1.80
+    "sp500_year_end": 63.1,
+    "dow_jones_year_end": 652.1,
+    "gold_oz_usd": 35.0,
+    "oil_barrel_usd": 1.8
   },
   "prices_us": {
     "gallon_gas_usd": 0.31,
     "gallon_milk_usd": 1.04,
     "dozen_eggs_usd": 0.55,
     "loaf_bread_usd": 0.21,
-    "movie_ticket_usd": 0.70,
+    "movie_ticket_usd": 0.7,
     "new_car_avg_usd": 2700,
     "median_home_usd": 12500,
     "first_class_stamp_cents": 4,
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "The Defenders",
       "emmy_comedy": "The Bob Hope Show",
-      "notable_premieres": ["The Beverly Hillbillies", "The Virginian", "The Tonight Show with Johnny Carson"],
-      "notable_finales": ["Naked City (season)"]
+      "notable_premieres": [
+        "The Beverly Hillbillies",
+        "The Virginian",
+        "The Tonight Show with Johnny Carson"
+      ],
+      "notable_finales": [
+        "Naked City (season)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Ship of Fools",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "John Glenn becomes the first American to orbit Earth, completing three orbits in Friendship 7 in under five hours"},
-    {"month": 7, "event": "Algeria gains independence from France after an eight-year war, ending 132 years of French colonial rule"},
-    {"month": 10, "event": "Cuban Missile Crisis brings the world to the brink of nuclear war as the US and USSR confront each other over Soviet missiles in Cuba"},
-    {"month": 11, "event": "China defeats India in the Sino-Indian War, reshaping Asian geopolitics"},
-    {"month": 12, "event": "US involvement in Vietnam deepens as the first US military helicopters arrive and American advisors take a more active combat role"}
+    {
+      "month": 2,
+      "event": "John Glenn becomes the first American to orbit Earth, completing three orbits in Friendship 7 in under five hours"
+    },
+    {
+      "month": 7,
+      "event": "Algeria gains independence from France after an eight-year war, ending 132 years of French colonial rule"
+    },
+    {
+      "month": 10,
+      "event": "Cuban Missile Crisis brings the world to the brink of nuclear war as the US and USSR confront each other over Soviet missiles in Cuba"
+    },
+    {
+      "month": 11,
+      "event": "China defeats India in the Sino-Indian War, reshaping Asian geopolitics"
+    },
+    {
+      "month": 12,
+      "event": "US involvement in Vietnam deepens as the first US military helicopters arrive and American advisors take a more active combat role"
+    }
   ],
   "leaders": {
     "us_president": "John F. Kennedy",
@@ -114,14 +135,38 @@
     "canada_pm": "John Diefenbaker",
     "brazil_president": "João Goulart",
     "un_secretary": "U Thant",
-    "pope": "Pope John XXIII"
+    "pope": "Pope John XXIII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo López Mateos",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Seán Lemass"
   },
   "notable_births": [
-    {"name": "Tom Cruise", "month": 7, "field": "Film"},
-    {"name": "Demi Moore", "month": 11, "field": "Film"},
-    {"name": "Jim Carrey", "month": 1, "field": "Comedy/Film"},
-    {"name": "Jodie Foster", "month": 11, "field": "Film"},
-    {"name": "Wesley Snipes", "month": 7, "field": "Film"}
+    {
+      "name": "Tom Cruise",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Demi Moore",
+      "month": 11,
+      "field": "Film"
+    },
+    {
+      "name": "Jim Carrey",
+      "month": 1,
+      "field": "Comedy/Film"
+    },
+    {
+      "name": "Jodie Foster",
+      "month": 11,
+      "field": "Film"
+    },
+    {
+      "name": "Wesley Snipes",
+      "month": 7,
+      "field": "Film"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 2538,
       "leader": "John Diefenbaker",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 122.8,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 3200,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 39.7,
+      "life_expectancy": 58.7,
+      "gdp_per_capita_usd": 2640,
+      "leader": "Adolfo López Mateos",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 26.1,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 1430,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.82,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 4050,
+      "leader": "Seán Lemass",
+      "leader_title": "Taoiseach"
     }
   }
 }

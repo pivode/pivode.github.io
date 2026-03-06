@@ -13,18 +13,18 @@
     "us_median_household_income_usd": 4700,
     "us_inflation_pct": 1.49,
     "us_unemployment_pct": 4.1,
-    "us_minimum_wage_usd": 1.00,
+    "us_minimum_wage_usd": 1.0,
     "sp500_year_end": null,
     "dow_jones_year_end": 499.47,
-    "gold_oz_usd": 35.00,
+    "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.83
   },
   "prices_us": {
-    "gallon_gas_usd": 0.30,
+    "gallon_gas_usd": 0.3,
     "gallon_milk_usd": 0.97,
-    "dozen_eggs_usd": 0.60,
+    "dozen_eggs_usd": 0.6,
     "loaf_bread_usd": 0.18,
-    "movie_ticket_usd": 0.50,
+    "movie_ticket_usd": 0.5,
     "new_car_avg_usd": 2100,
     "median_home_usd": 11700,
     "first_class_stamp_cents": 3,
@@ -57,7 +57,10 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Requiem for a Heavyweight",
       "emmy_comedy": "The Phil Silvers Show",
-      "notable_premieres": ["The Price Is Right", "As the World Turns"],
+      "notable_premieres": [
+        "The Price Is Right",
+        "As the World Turns"
+      ],
       "notable_finales": []
     },
     "books": {
@@ -95,11 +98,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Khrushchev delivers 'Secret Speech' denouncing Stalin's cult of personality at the 20th Party Congress"},
-    {"month": 7, "event": "Egypt nationalizes the Suez Canal, triggering the Suez Crisis with Britain, France, and Israel"},
-    {"month": 10, "event": "Hungarian Revolution begins; Soviet tanks crush the uprising within weeks"},
-    {"month": 10, "event": "Suez Crisis: Britain and France invade Egypt to retake the canal, forced to withdraw under US and UN pressure"},
-    {"month": 11, "event": "Dwight D. Eisenhower re-elected US President in a landslide over Adlai Stevenson"}
+    {
+      "month": 2,
+      "event": "Khrushchev delivers 'Secret Speech' denouncing Stalin's cult of personality at the 20th Party Congress"
+    },
+    {
+      "month": 7,
+      "event": "Egypt nationalizes the Suez Canal, triggering the Suez Crisis with Britain, France, and Israel"
+    },
+    {
+      "month": 10,
+      "event": "Hungarian Revolution begins; Soviet tanks crush the uprising within weeks"
+    },
+    {
+      "month": 10,
+      "event": "Suez Crisis: Britain and France invade Egypt to retake the canal, forced to withdraw under US and UN pressure"
+    },
+    {
+      "month": 11,
+      "event": "Dwight D. Eisenhower re-elected US President in a landslide over Adlai Stevenson"
+    }
   ],
   "leaders": {
     "us_president": "Dwight D. Eisenhower",
@@ -114,14 +132,38 @@
     "canada_pm": "Louis St. Laurent",
     "brazil_president": "Juscelino Kubitschek",
     "un_secretary": "Dag Hammarskjöld",
-    "pope": "Pope Pius XII"
+    "pope": "Pope Pius XII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo Ruiz Cortines",
+    "south_korea_president": "Syngman Rhee",
+    "ireland_taoiseach": "John A. Costello"
   },
   "notable_births": [
-    {"name": "Tom Hanks", "month": 7, "field": "Film"},
-    {"name": "Mel Gibson", "month": 1, "field": "Film"},
-    {"name": "Larry Bird", "month": 12, "field": "Basketball"},
-    {"name": "Björn Borg", "month": 6, "field": "Tennis"},
-    {"name": "Joe Montana", "month": 6, "field": "American Football"}
+    {
+      "name": "Tom Hanks",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Mel Gibson",
+      "month": 1,
+      "field": "Film"
+    },
+    {
+      "name": "Larry Bird",
+      "month": 12,
+      "field": "Basketball"
+    },
+    {
+      "name": "Björn Borg",
+      "month": 6,
+      "field": "Tennis"
+    },
+    {
+      "name": "Joe Montana",
+      "month": 6,
+      "field": "American Football"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +235,34 @@
       "gdp_per_capita_usd": 1963,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 109.9,
+      "life_expectancy": 64.0,
+      "gdp_per_capita_usd": 2300,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 33.1,
+      "life_expectancy": 54.1,
+      "gdp_per_capita_usd": 2150,
+      "leader": "Adolfo Ruiz Cortines",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 23.3,
+      "life_expectancy": 51.8,
+      "gdp_per_capita_usd": 1120,
+      "leader": "Syngman Rhee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.9,
+      "life_expectancy": 68.8,
+      "gdp_per_capita_usd": 3100,
+      "leader": "John A. Costello",
+      "leader_title": "Taoiseach"
     }
   }
 }

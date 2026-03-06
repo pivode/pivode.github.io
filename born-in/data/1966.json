@@ -22,7 +22,7 @@
   "prices_us": {
     "gallon_gas_usd": 0.32,
     "gallon_milk_usd": 1.06,
-    "dozen_eggs_usd": 0.60,
+    "dozen_eggs_usd": 0.6,
     "loaf_bread_usd": 0.22,
     "movie_ticket_usd": 1.09,
     "new_car_avg_usd": 2700,
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "The Fugitive",
       "emmy_comedy": "The Dick Van Dyke Show",
-      "notable_premieres": ["Star Trek", "Batman", "The Monkees"],
-      "notable_finales": ["The Dick Van Dyke Show"]
+      "notable_premieres": [
+        "Star Trek",
+        "Batman",
+        "The Monkees"
+      ],
+      "notable_finales": [
+        "The Dick Van Dyke Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "Valley of the Dolls",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Indira Gandhi elected Prime Minister of India, becoming the first woman to lead the world's largest democracy"},
-    {"month": 5, "event": "Mao Zedong launches the Cultural Revolution in China with the May 16 Notification, unleashing mass political persecution and social upheaval"},
-    {"month": 7, "event": "England wins the FIFA World Cup on home soil, defeating West Germany 4-2 in extra time at Wembley"},
-    {"month": 11, "event": "Florence, Italy devastated by catastrophic flooding of the Arno River, damaging thousands of irreplaceable artworks and manuscripts"},
-    {"month": 12, "event": "US troop strength in Vietnam reaches 385,000 as the war escalates dramatically"}
+    {
+      "month": 1,
+      "event": "Indira Gandhi elected Prime Minister of India, becoming the first woman to lead the world's largest democracy"
+    },
+    {
+      "month": 5,
+      "event": "Mao Zedong launches the Cultural Revolution in China with the May 16 Notification, unleashing mass political persecution and social upheaval"
+    },
+    {
+      "month": 7,
+      "event": "England wins the FIFA World Cup on home soil, defeating West Germany 4-2 in extra time at Wembley"
+    },
+    {
+      "month": 11,
+      "event": "Florence, Italy devastated by catastrophic flooding of the Arno River, damaging thousands of irreplaceable artworks and manuscripts"
+    },
+    {
+      "month": 12,
+      "event": "US troop strength in Vietnam reaches 385,000 as the war escalates dramatically"
+    }
   ],
   "leaders": {
     "us_president": "Lyndon B. Johnson",
@@ -114,14 +135,38 @@
     "canada_pm": "Lester B. Pearson",
     "brazil_president": "Humberto Castelo Branco",
     "un_secretary": "U Thant",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Gustavo Díaz Ordaz",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Janet Jackson", "month": 5, "field": "Music"},
-    {"name": "Adam Sandler", "month": 9, "field": "Comedy/Film"},
-    {"name": "Halle Berry", "month": 8, "field": "Film"},
-    {"name": "Helena Bonham Carter", "month": 5, "field": "Film"},
-    {"name": "Mike Tyson", "month": 6, "field": "Boxing"}
+    {
+      "name": "Janet Jackson",
+      "month": 5,
+      "field": "Music"
+    },
+    {
+      "name": "Adam Sandler",
+      "month": 9,
+      "field": "Comedy/Film"
+    },
+    {
+      "name": "Halle Berry",
+      "month": 8,
+      "field": "Film"
+    },
+    {
+      "name": "Helena Bonham Carter",
+      "month": 5,
+      "field": "Film"
+    },
+    {
+      "name": "Mike Tyson",
+      "month": 6,
+      "field": "Boxing"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 2979,
       "leader": "Lester B. Pearson",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 128.3,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 3750,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 45.3,
+      "life_expectancy": 61.4,
+      "gdp_per_capita_usd": 3250,
+      "leader": "Gustavo Díaz Ordaz",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 28.5,
+      "life_expectancy": 61.3,
+      "gdp_per_capita_usd": 2000,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.9,
+      "life_expectancy": 71.6,
+      "gdp_per_capita_usd": 5050,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

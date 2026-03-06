@@ -57,8 +57,15 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The West Wing",
       "emmy_comedy": "Friends",
-      "notable_premieres": ["American Idol", "The Wire", "Without a Trace"],
-      "notable_finales": ["Ally McBeal", "Once and Again"]
+      "notable_premieres": [
+        "American Idol",
+        "The Wire",
+        "Without a Trace"
+      ],
+      "notable_finales": [
+        "Ally McBeal",
+        "Once and Again"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Summons",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 10, "event": "Bali bombings kill 202 people, mostly foreign tourists, in the deadliest terrorist attack in Indonesian history"},
-    {"month": 10, "event": "Washington DC sniper attacks leave 10 dead over three weeks, paralyzing the US capital region with fear"},
-    {"month": 3, "event": "US presents case at UN that Iraq possesses WMDs, setting stage for military conflict and global debate"},
-    {"month": 6, "event": "FIFA World Cup held in South Korea and Japan - Brazil wins their fifth title, defeating Germany 2-0 in the final"},
-    {"month": 11, "event": "Department of Homeland Security established in the US as the largest government reorganization since 1947, post-9/11"}
+    {
+      "month": 10,
+      "event": "Bali bombings kill 202 people, mostly foreign tourists, in the deadliest terrorist attack in Indonesian history"
+    },
+    {
+      "month": 10,
+      "event": "Washington DC sniper attacks leave 10 dead over three weeks, paralyzing the US capital region with fear"
+    },
+    {
+      "month": 3,
+      "event": "US presents case at UN that Iraq possesses WMDs, setting stage for military conflict and global debate"
+    },
+    {
+      "month": 6,
+      "event": "FIFA World Cup held in South Korea and Japan - Brazil wins their fifth title, defeating Germany 2-0 in the final"
+    },
+    {
+      "month": 11,
+      "event": "Department of Homeland Security established in the US as the largest government reorganization since 1947, post-9/11"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,13 +136,33 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Vicente Fox",
+    "south_korea_president": "Kim Dae-jung",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Finn Wolfhard", "month": 12, "field": "Television/Music"},
-    {"name": "Gaten Matarazzo", "month": 9, "field": "Television"},
-    {"name": "Skai Jackson", "month": 4, "field": "Television"},
-    {"name": "Sadie Sink", "month": 4, "field": "Television/Film"}
+    {
+      "name": "Finn Wolfhard",
+      "month": 12,
+      "field": "Television/Music"
+    },
+    {
+      "name": "Gaten Matarazzo",
+      "month": 9,
+      "field": "Television"
+    },
+    {
+      "name": "Skai Jackson",
+      "month": 4,
+      "field": "Television"
+    },
+    {
+      "name": "Sadie Sink",
+      "month": 4,
+      "field": "Television/Film"
+    }
   ],
   "countries": {
     "US": {
@@ -192,6 +234,34 @@
       "gdp_per_capita_usd": 23539,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 144.9,
+      "life_expectancy": 65.3,
+      "gdp_per_capita_usd": 6183,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 114.9,
+      "life_expectancy": 73.6,
+      "gdp_per_capita_usd": 8100,
+      "leader": "Vicente Fox",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 47.5,
+      "life_expectancy": 77.5,
+      "gdp_per_capita_usd": 31470,
+      "leader": "Kim Dae-jung",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.03,
+      "life_expectancy": 78.0,
+      "gdp_per_capita_usd": 42900,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

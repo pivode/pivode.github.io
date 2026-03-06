@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 12686,
     "us_inflation_pct": 5.75,
     "us_unemployment_pct": 7.7,
-    "us_minimum_wage_usd": 2.30,
+    "us_minimum_wage_usd": 2.3,
     "sp500_year_end": 107.46,
     "dow_jones_year_end": 1004.65,
     "gold_oz_usd": 134.74,
@@ -23,7 +23,7 @@
     "gallon_gas_usd": 0.59,
     "gallon_milk_usd": 1.68,
     "dozen_eggs_usd": 0.84,
-    "loaf_bread_usd": 0.30,
+    "loaf_bread_usd": 0.3,
     "movie_ticket_usd": 2.13,
     "new_car_avg_usd": 4800,
     "median_home_usd": 38100,
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Police Story",
       "emmy_comedy": "The Mary Tyler Moore Show",
-      "notable_premieres": ["Charlie's Angels", "Family Feud", "The Muppet Show"],
-      "notable_finales": ["The Mary Tyler Moore Show (season 6)"]
+      "notable_premieres": [
+        "Charlie's Angels",
+        "Family Feud",
+        "The Muppet Show"
+      ],
+      "notable_finales": [
+        "The Mary Tyler Moore Show (season 6)"
+      ]
     },
     "books": {
       "fiction_bestseller": "Trinity",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "Mao Zedong's Gang of Four loses power struggle following his death; Hua Guofeng becomes Chinese leader"},
-    {"month": 3, "event": "Military coup in Argentina overthrows Isabel Perón, beginning a brutal dictatorship that disappears 30,000 people"},
-    {"month": 7, "event": "US Bicentennial celebrated across America on July 4th with the tallest tall ships gathering in New York Harbor"},
-    {"month": 9, "event": "Mao Zedong dies at age 82, ending an era that transformed China and affected a quarter of humanity"},
-    {"month": 11, "event": "Jimmy Carter defeats incumbent Gerald Ford in US presidential election, ending Republican rule after Watergate"}
+    {
+      "month": 2,
+      "event": "Mao Zedong's Gang of Four loses power struggle following his death; Hua Guofeng becomes Chinese leader"
+    },
+    {
+      "month": 3,
+      "event": "Military coup in Argentina overthrows Isabel Perón, beginning a brutal dictatorship that disappears 30,000 people"
+    },
+    {
+      "month": 7,
+      "event": "US Bicentennial celebrated across America on July 4th with the tallest tall ships gathering in New York Harbor"
+    },
+    {
+      "month": 9,
+      "event": "Mao Zedong dies at age 82, ending an era that transformed China and affected a quarter of humanity"
+    },
+    {
+      "month": 11,
+      "event": "Jimmy Carter defeats incumbent Gerald Ford in US presidential election, ending Republican rule after Watergate"
+    }
   ],
   "leaders": {
     "us_president": "Gerald Ford",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Ernesto Geisel",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "José López Portillo",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Liam Cosgrave"
   },
   "notable_births": [
-    {"name": "Reese Witherspoon", "month": 3, "field": "Film"},
-    {"name": "Alicia Silverstone", "month": 10, "field": "Film"},
-    {"name": "Ryan Reynolds", "month": 10, "field": "Film"},
-    {"name": "Colin Farrell", "month": 5, "field": "Film"},
-    {"name": "Candace Cameron Bure", "month": 4, "field": "Television"}
+    {
+      "name": "Reese Witherspoon",
+      "month": 3,
+      "field": "Film"
+    },
+    {
+      "name": "Alicia Silverstone",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Ryan Reynolds",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Colin Farrell",
+      "month": 5,
+      "field": "Film"
+    },
+    {
+      "name": "Candace Cameron Bure",
+      "month": 4,
+      "field": "Television"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 8562,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 136.2,
+      "life_expectancy": 66.4,
+      "gdp_per_capita_usd": 5200,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 62.9,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 4780,
+      "leader": "José López Portillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 36.0,
+      "life_expectancy": 67.8,
+      "gdp_per_capita_usd": 5520,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.23,
+      "life_expectancy": 73.4,
+      "gdp_per_capita_usd": 8900,
+      "leader": "Liam Cosgrave",
+      "leader_title": "Taoiseach"
     }
   }
 }

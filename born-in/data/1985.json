@@ -22,7 +22,7 @@
   "prices_us": {
     "gallon_gas_usd": 1.12,
     "gallon_milk_usd": 2.18,
-    "dozen_eggs_usd": 0.80,
+    "dozen_eggs_usd": 0.8,
     "loaf_bread_usd": 0.78,
     "movie_ticket_usd": 3.55,
     "new_car_avg_usd": 9005,
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "Cagney & Lacey",
       "emmy_comedy": "The Cosby Show",
-      "notable_premieres": ["The Golden Girls", "Growing Pains", "Moonlighting"],
-      "notable_finales": ["Simon & Simon (season)"]
+      "notable_premieres": [
+        "The Golden Girls",
+        "Growing Pains",
+        "Moonlighting"
+      ],
+      "notable_finales": [
+        "Simon & Simon (season)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Mammoth Hunters",
@@ -95,12 +101,30 @@
     ]
   },
   "world_events": [
-    {"month": 3, "event": "Mikhail Gorbachev becomes Soviet leader, beginning reforms of glasnost and perestroika that will reshape the world"},
-    {"month": 6, "event": "TWA Flight 847 hijacked by Hezbollah; 17-day hostage ordeal grips the world"},
-    {"month": 7, "event": "Live Aid concerts held simultaneously in London and Philadelphia, raising $127 million for Ethiopian famine relief"},
-    {"month": 9, "event": "Wreck of the Titanic located by Robert Ballard at the bottom of the North Atlantic, 73 years after sinking"},
-    {"month": 11, "event": "Reagan and Gorbachev hold their first summit in Geneva, easing Cold War tensions after eight years of no US-Soviet summits"},
-    {"month": 11, "event": "Colombia's Nevado del Ruiz volcano erupts, destroying the town of Armero and killing over 23,000 people"}
+    {
+      "month": 3,
+      "event": "Mikhail Gorbachev becomes Soviet leader, beginning reforms of glasnost and perestroika that will reshape the world"
+    },
+    {
+      "month": 6,
+      "event": "TWA Flight 847 hijacked by Hezbollah; 17-day hostage ordeal grips the world"
+    },
+    {
+      "month": 7,
+      "event": "Live Aid concerts held simultaneously in London and Philadelphia, raising $127 million for Ethiopian famine relief"
+    },
+    {
+      "month": 9,
+      "event": "Wreck of the Titanic located by Robert Ballard at the bottom of the North Atlantic, 73 years after sinking"
+    },
+    {
+      "month": 11,
+      "event": "Reagan and Gorbachev hold their first summit in Geneva, easing Cold War tensions after eight years of no US-Soviet summits"
+    },
+    {
+      "month": 11,
+      "event": "Colombia's Nevado del Ruiz volcano erupts, destroying the town of Armero and killing over 23,000 people"
+    }
   ],
   "leaders": {
     "us_president": "Ronald Reagan",
@@ -115,14 +139,38 @@
     "canada_pm": "Brian Mulroney",
     "brazil_president": "José Sarney",
     "un_secretary": "Javier Pérez de Cuéllar",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Mikhail Gorbachev",
+    "mexico_president": "Miguel de la Madrid",
+    "south_korea_president": "Chun Doo-hwan",
+    "ireland_taoiseach": "Garret FitzGerald"
   },
   "notable_births": [
-    {"name": "Cristiano Ronaldo", "month": 2, "field": "Football"},
-    {"name": "Michael Phelps", "month": 6, "field": "Swimming"},
-    {"name": "Keira Knightley", "month": 3, "field": "Film"},
-    {"name": "Lewis Hamilton", "month": 1, "field": "Motorsport"},
-    {"name": "Bruno Mars", "month": 10, "field": "Music"}
+    {
+      "name": "Cristiano Ronaldo",
+      "month": 2,
+      "field": "Football"
+    },
+    {
+      "name": "Michael Phelps",
+      "month": 6,
+      "field": "Swimming"
+    },
+    {
+      "name": "Keira Knightley",
+      "month": 3,
+      "field": "Film"
+    },
+    {
+      "name": "Lewis Hamilton",
+      "month": 1,
+      "field": "Motorsport"
+    },
+    {
+      "name": "Bruno Mars",
+      "month": 10,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -194,6 +242,34 @@
       "gdp_per_capita_usd": 14088,
       "leader": "Brian Mulroney",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 144.0,
+      "life_expectancy": 65.6,
+      "gdp_per_capita_usd": 6300,
+      "leader": "Mikhail Gorbachev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 82.1,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 5300,
+      "leader": "Miguel de la Madrid",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 41.1,
+      "life_expectancy": 70.1,
+      "gdp_per_capita_usd": 9200,
+      "leader": "Chun Doo-hwan",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.54,
+      "life_expectancy": 74.6,
+      "gdp_per_capita_usd": 11400,
+      "leader": "Garret FitzGerald",
+      "leader_title": "Taoiseach"
     }
   }
 }

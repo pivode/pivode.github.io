@@ -21,7 +21,7 @@
   },
   "prices_us": {
     "gallon_gas_usd": 3.27,
-    "gallon_milk_usd": 3.80,
+    "gallon_milk_usd": 3.8,
     "dozen_eggs_usd": 1.97,
     "loaf_bread_usd": 1.37,
     "movie_ticket_usd": 7.18,
@@ -57,8 +57,15 @@
       "most_watched_network": "Fox",
       "emmy_drama": "Mad Men",
       "emmy_comedy": "30 Rock",
-      "notable_premieres": ["Breaking Bad", "True Blood", "The Big Bang Theory (S2)"],
-      "notable_finales": ["The Wire", "The Shield"]
+      "notable_premieres": [
+        "Breaking Bad",
+        "True Blood",
+        "The Big Bang Theory (S2)"
+      ],
+      "notable_finales": [
+        "The Wire",
+        "The Shield"
+      ]
     },
     "books": {
       "fiction_bestseller": "Twilight",
@@ -95,11 +102,26 @@
     ]
   },
   "world_events": [
-    {"month": 9, "event": "Global financial crisis erupts as Lehman Brothers collapses on September 15 - the largest bankruptcy in US history - triggering a worldwide recession"},
-    {"month": 11, "event": "Barack Obama elected as the 44th President of the United States, becoming the first African American president in US history"},
-    {"month": 8, "event": "Beijing Summer Olympics open with a spectacular ceremony; Michael Phelps wins 8 gold medals, Usain Bolt sets 100m and 200m world records"},
-    {"month": 11, "event": "Mumbai terrorist attacks kill 166 people across the city over four days, executed by Pakistani militant group Lashkar-e-Taiba"},
-    {"month": 8, "event": "Russia invades Georgia in a brief war over the breakaway regions of South Ossetia and Abkhazia, reshaping Eastern European security"}
+    {
+      "month": 9,
+      "event": "Global financial crisis erupts as Lehman Brothers collapses on September 15 - the largest bankruptcy in US history - triggering a worldwide recession"
+    },
+    {
+      "month": 11,
+      "event": "Barack Obama elected as the 44th President of the United States, becoming the first African American president in US history"
+    },
+    {
+      "month": 8,
+      "event": "Beijing Summer Olympics open with a spectacular ceremony; Michael Phelps wins 8 gold medals, Usain Bolt sets 100m and 200m world records"
+    },
+    {
+      "month": 11,
+      "event": "Mumbai terrorist attacks kill 166 people across the city over four days, executed by Pakistani militant group Lashkar-e-Taiba"
+    },
+    {
+      "month": 8,
+      "event": "Russia invades Georgia in a brief war over the breakaway regions of South Ossetia and Abkhazia, reshaping Eastern European security"
+    }
   ],
   "leaders": {
     "us_president": "George W. Bush",
@@ -114,7 +136,11 @@
     "canada_pm": "Stephen Harper",
     "brazil_president": "Luiz Inácio Lula da Silva",
     "un_secretary": "Ban Ki-moon",
-    "pope": "Pope Benedict XVI"
+    "pope": "Pope Benedict XVI",
+    "russia_leader": "Dmitry Medvedev",
+    "mexico_president": "Felipe Calderón",
+    "south_korea_president": "Lee Myung-bak",
+    "ireland_taoiseach": "Brian Cowen"
   },
   "notable_births": [],
   "countries": {
@@ -187,6 +213,34 @@
       "gdp_per_capita_usd": 45552,
       "leader": "Stephen Harper",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 141.4,
+      "life_expectancy": 67.7,
+      "gdp_per_capita_usd": 19840,
+      "leader": "Dmitry Medvedev",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 124.9,
+      "life_expectancy": 75.5,
+      "gdp_per_capita_usd": 10234,
+      "leader": "Felipe Calderón",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 49.1,
+      "life_expectancy": 79.8,
+      "gdp_per_capita_usd": 39960,
+      "leader": "Lee Myung-bak",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.54,
+      "life_expectancy": 79.7,
+      "gdp_per_capita_usd": 57700,
+      "leader": "Brian Cowen",
+      "leader_title": "Taoiseach"
     }
   }
 }

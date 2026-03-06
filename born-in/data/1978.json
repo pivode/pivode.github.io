@@ -2,7 +2,7 @@
   "year": 1978,
   "schema_version": 1,
   "world": {
-    "population_billions": 4.30,
+    "population_billions": 4.3,
     "births_millions": 132,
     "life_expectancy_global": 62.8,
     "countries_count": 151,
@@ -57,8 +57,14 @@
       "most_watched_network": "ABC",
       "emmy_drama": "The Rockford Files",
       "emmy_comedy": "All in the Family",
-      "notable_premieres": ["Mork & Mindy", "Dallas", "Battlestar Galactica"],
-      "notable_finales": ["All in the Family"]
+      "notable_premieres": [
+        "Mork & Mindy",
+        "Dallas",
+        "Battlestar Galactica"
+      ],
+      "notable_finales": [
+        "All in the Family"
+      ]
     },
     "books": {
       "fiction_bestseller": "Chesapeake",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 9, "event": "Camp David Accords signed by Egypt and Israel brokered by President Carter, the first Arab-Israeli peace agreement"},
-    {"month": 8, "event": "Pope Paul VI dies; Pope John Paul I elected but dies after only 33 days - the shortest papacy in modern history"},
-    {"month": 10, "event": "Pope John Paul II elected, the first non-Italian pope in 455 years and first ever Polish pope"},
-    {"month": 11, "event": "Jonestown massacre: 918 people die in Guyana after cult leader Jim Jones orders mass poisoning, the largest US civilian death toll before 9/11"},
-    {"month": 12, "event": "China and the United States announce formal diplomatic recognition of each other"}
+    {
+      "month": 9,
+      "event": "Camp David Accords signed by Egypt and Israel brokered by President Carter, the first Arab-Israeli peace agreement"
+    },
+    {
+      "month": 8,
+      "event": "Pope Paul VI dies; Pope John Paul I elected but dies after only 33 days - the shortest papacy in modern history"
+    },
+    {
+      "month": 10,
+      "event": "Pope John Paul II elected, the first non-Italian pope in 455 years and first ever Polish pope"
+    },
+    {
+      "month": 11,
+      "event": "Jonestown massacre: 918 people die in Guyana after cult leader Jim Jones orders mass poisoning, the largest US civilian death toll before 9/11"
+    },
+    {
+      "month": 12,
+      "event": "China and the United States announce formal diplomatic recognition of each other"
+    }
   ],
   "leaders": {
     "us_president": "Jimmy Carter",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Ernesto Geisel",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "José López Portillo",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Kobe Bryant", "month": 8, "field": "Basketball"},
-    {"name": "Ashton Kutcher", "month": 2, "field": "Television/Film"},
-    {"name": "Usher", "month": 10, "field": "Music"},
-    {"name": "James Franco", "month": 4, "field": "Film"},
-    {"name": "Nelly Furtado", "month": 12, "field": "Music"}
+    {
+      "name": "Kobe Bryant",
+      "month": 8,
+      "field": "Basketball"
+    },
+    {
+      "name": "Ashton Kutcher",
+      "month": 2,
+      "field": "Television/Film"
+    },
+    {
+      "name": "Usher",
+      "month": 10,
+      "field": "Music"
+    },
+    {
+      "name": "James Franco",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Nelly Furtado",
+      "month": 12,
+      "field": "Music"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 10673,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 138.0,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 5500,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 67.0,
+      "life_expectancy": 66.7,
+      "gdp_per_capita_usd": 5100,
+      "leader": "José López Portillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 37.4,
+      "life_expectancy": 68.7,
+      "gdp_per_capita_usd": 6900,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.31,
+      "life_expectancy": 73.6,
+      "gdp_per_capita_usd": 10600,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

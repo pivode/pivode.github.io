@@ -23,7 +23,7 @@
     "gallon_gas_usd": 1.17,
     "gallon_milk_usd": 2.88,
     "dozen_eggs_usd": 0.97,
-    "loaf_bread_usd": 0.90,
+    "loaf_bread_usd": 0.9,
     "movie_ticket_usd": 5.08,
     "new_car_avg_usd": 20450,
     "median_home_usd": 134500,
@@ -57,8 +57,14 @@
       "most_watched_network": "NBC",
       "emmy_drama": "The Practice",
       "emmy_comedy": "Ally McBeal",
-      "notable_premieres": ["The Sopranos", "Family Guy", "SpongeBob SquarePants"],
-      "notable_finales": ["Seinfeld (2nd highest rated US series finale)"]
+      "notable_premieres": [
+        "The Sopranos",
+        "Family Guy",
+        "SpongeBob SquarePants"
+      ],
+      "notable_finales": [
+        "Seinfeld (2nd highest rated US series finale)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Testament",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "Euro currency introduced across 11 European nations, the largest monetary union in history"},
-    {"month": 3, "event": "NATO begins bombing Yugoslavia over Kosovo, the first major military action in Europe since WWII"},
-    {"month": 4, "event": "Columbine High School massacre: two students kill 13 and injure 21 before killing themselves in Colorado"},
-    {"month": 12, "event": "Panama Canal officially transferred from US to Panamanian sovereignty, fulfilling the 1977 treaty"},
-    {"month": 12, "event": "World holds its breath for Y2K - feared computer bug causes only minor disruptions as the millennium turns"}
+    {
+      "month": 1,
+      "event": "Euro currency introduced across 11 European nations, the largest monetary union in history"
+    },
+    {
+      "month": 3,
+      "event": "NATO begins bombing Yugoslavia over Kosovo, the first major military action in Europe since WWII"
+    },
+    {
+      "month": 4,
+      "event": "Columbine High School massacre: two students kill 13 and injure 21 before killing themselves in Colorado"
+    },
+    {
+      "month": 12,
+      "event": "Panama Canal officially transferred from US to Panamanian sovereignty, fulfilling the 1977 treaty"
+    },
+    {
+      "month": 12,
+      "event": "World holds its breath for Y2K - feared computer bug causes only minor disruptions as the millennium turns"
+    }
   ],
   "leaders": {
     "us_president": "Bill Clinton",
@@ -114,12 +135,28 @@
     "canada_pm": "Jean Chrétien",
     "brazil_president": "Fernando Henrique Cardoso",
     "un_secretary": "Kofi Annan",
-    "pope": "Pope John Paul II"
+    "pope": "Pope John Paul II",
+    "russia_leader": "Boris Yeltsin",
+    "mexico_president": "Ernesto Zedillo",
+    "south_korea_president": "Kim Dae-jung",
+    "ireland_taoiseach": "Bertie Ahern"
   },
   "notable_births": [
-    {"name": "Lil Nas X", "month": 4, "field": "Music"},
-    {"name": "Madison Beer", "month": 3, "field": "Music"},
-    {"name": "Hunter Schafer", "month": 12, "field": "Film/Modelling"}
+    {
+      "name": "Lil Nas X",
+      "month": 4,
+      "field": "Music"
+    },
+    {
+      "name": "Madison Beer",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Hunter Schafer",
+      "month": 12,
+      "field": "Film/Modelling"
+    }
   ],
   "countries": {
     "US": {
@@ -191,6 +228,34 @@
       "gdp_per_capita_usd": 22178,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 146.3,
+      "life_expectancy": 63.4,
+      "gdp_per_capita_usd": 3441,
+      "leader": "Boris Yeltsin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 109.5,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 7060,
+      "leader": "Ernesto Zedillo",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 46.1,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 24840,
+      "leader": "Kim Dae-jung",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.86,
+      "life_expectancy": 77.4,
+      "gdp_per_capita_usd": 35000,
+      "leader": "Bertie Ahern",
+      "leader_title": "Taoiseach"
     }
   }
 }

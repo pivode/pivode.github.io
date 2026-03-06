@@ -16,11 +16,11 @@
     "us_minimum_wage_usd": 1.25,
     "sp500_year_end": 84.75,
     "dow_jones_year_end": 874.13,
-    "gold_oz_usd": 35.10,
-    "oil_barrel_usd": 1.80
+    "gold_oz_usd": 35.1,
+    "oil_barrel_usd": 1.8
   },
   "prices_us": {
-    "gallon_gas_usd": 0.30,
+    "gallon_gas_usd": 0.3,
     "gallon_milk_usd": 1.04,
     "dozen_eggs_usd": 0.54,
     "loaf_bread_usd": 0.21,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "The Defenders",
       "emmy_comedy": "The Dick Van Dyke Show",
-      "notable_premieres": ["Gilligan's Island", "The Munsters", "Bewitched"],
-      "notable_finales": ["The Danny Thomas Show"]
+      "notable_premieres": [
+        "Gilligan's Island",
+        "The Munsters",
+        "Bewitched"
+      ],
+      "notable_finales": [
+        "The Danny Thomas Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Spy Who Came in from the Cold",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "24th Amendment to the US Constitution ratified, abolishing poll taxes that had disenfranchised Black voters in the South"},
-    {"month": 7, "event": "Civil Rights Act of 1964 signed into law by President Johnson, outlawing discrimination based on race, color, religion, sex, or national origin"},
-    {"month": 8, "event": "Gulf of Tonkin incident leads US Congress to authorize military force in Vietnam, dramatically escalating American involvement"},
-    {"month": 10, "event": "Nikita Khrushchev ousted as Soviet leader, replaced by Leonid Brezhnev as General Secretary"},
-    {"month": 10, "event": "China conducts its first successful nuclear weapons test in the Gobi Desert, becoming the fifth nuclear power"}
+    {
+      "month": 1,
+      "event": "24th Amendment to the US Constitution ratified, abolishing poll taxes that had disenfranchised Black voters in the South"
+    },
+    {
+      "month": 7,
+      "event": "Civil Rights Act of 1964 signed into law by President Johnson, outlawing discrimination based on race, color, religion, sex, or national origin"
+    },
+    {
+      "month": 8,
+      "event": "Gulf of Tonkin incident leads US Congress to authorize military force in Vietnam, dramatically escalating American involvement"
+    },
+    {
+      "month": 10,
+      "event": "Nikita Khrushchev ousted as Soviet leader, replaced by Leonid Brezhnev as General Secretary"
+    },
+    {
+      "month": 10,
+      "event": "China conducts its first successful nuclear weapons test in the Gobi Desert, becoming the fifth nuclear power"
+    }
   ],
   "leaders": {
     "us_president": "Lyndon B. Johnson",
@@ -114,14 +135,38 @@
     "canada_pm": "Lester B. Pearson",
     "brazil_president": "Humberto Castelo Branco",
     "un_secretary": "U Thant",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Gustavo Díaz Ordaz",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Seán Lemass"
   },
   "notable_births": [
-    {"name": "Nicolas Cage", "month": 1, "field": "Film"},
-    {"name": "Courteney Cox", "month": 6, "field": "Television"},
-    {"name": "Keanu Reeves", "month": 9, "field": "Film"},
-    {"name": "Sandra Bullock", "month": 7, "field": "Film"},
-    {"name": "Rob Lowe", "month": 3, "field": "Film/Television"}
+    {
+      "name": "Nicolas Cage",
+      "month": 1,
+      "field": "Film"
+    },
+    {
+      "name": "Courteney Cox",
+      "month": 6,
+      "field": "Television"
+    },
+    {
+      "name": "Keanu Reeves",
+      "month": 9,
+      "field": "Film"
+    },
+    {
+      "name": "Sandra Bullock",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Rob Lowe",
+      "month": 3,
+      "field": "Film/Television"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 2750,
       "leader": "Lester B. Pearson",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 125.5,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 3400,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 42.4,
+      "life_expectancy": 60.1,
+      "gdp_per_capita_usd": 3000,
+      "leader": "Gustavo Díaz Ordaz",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 27.2,
+      "life_expectancy": 59.5,
+      "gdp_per_capita_usd": 1680,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.86,
+      "life_expectancy": 71.2,
+      "gdp_per_capita_usd": 4600,
+      "leader": "Seán Lemass",
+      "leader_title": "Taoiseach"
     }
   }
 }

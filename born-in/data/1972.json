@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 9697,
     "us_inflation_pct": 3.27,
     "us_unemployment_pct": 5.6,
-    "us_minimum_wage_usd": 1.60,
+    "us_minimum_wage_usd": 1.6,
     "sp500_year_end": 118.05,
     "dow_jones_year_end": 1020.02,
     "gold_oz_usd": 58.16,
@@ -24,7 +24,7 @@
     "gallon_milk_usd": 1.25,
     "dozen_eggs_usd": 0.61,
     "loaf_bread_usd": 0.25,
-    "movie_ticket_usd": 1.70,
+    "movie_ticket_usd": 1.7,
     "new_car_avg_usd": 3800,
     "median_home_usd": 27600,
     "first_class_stamp_cents": 8,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Elizabeth R",
       "emmy_comedy": "All in the Family",
-      "notable_premieres": ["M*A*S*H", "The Bob Newhart Show", "Maude"],
-      "notable_finales": ["The Ed Sullivan Show"]
+      "notable_premieres": [
+        "M*A*S*H",
+        "The Bob Newhart Show",
+        "Maude"
+      ],
+      "notable_finales": [
+        "The Ed Sullivan Show"
+      ]
     },
     "books": {
       "fiction_bestseller": "Jonathan Livingston Seagull",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 2, "event": "President Nixon visits China, meeting Mao Zedong and beginning normalization of US-China relations after 25 years"},
-    {"month": 5, "event": "Nixon and Brezhnev sign SALT I arms limitation treaty in Moscow, the first major agreement limiting nuclear weapons"},
-    {"month": 6, "event": "Five men arrested for breaking into Democratic National Committee headquarters at the Watergate complex in Washington"},
-    {"month": 9, "event": "Palestinian group Black September kills 11 Israeli athletes at the Munich Olympics in a hostage siege"},
-    {"month": 12, "event": "Apollo 17 returns from the Moon - the last humans to walk on the lunar surface, ending the Apollo program"}
+    {
+      "month": 2,
+      "event": "President Nixon visits China, meeting Mao Zedong and beginning normalization of US-China relations after 25 years"
+    },
+    {
+      "month": 5,
+      "event": "Nixon and Brezhnev sign SALT I arms limitation treaty in Moscow, the first major agreement limiting nuclear weapons"
+    },
+    {
+      "month": 6,
+      "event": "Five men arrested for breaking into Democratic National Committee headquarters at the Watergate complex in Washington"
+    },
+    {
+      "month": 9,
+      "event": "Palestinian group Black September kills 11 Israeli athletes at the Munich Olympics in a hostage siege"
+    },
+    {
+      "month": 12,
+      "event": "Apollo 17 returns from the Moon - the last humans to walk on the lunar surface, ending the Apollo program"
+    }
   ],
   "leaders": {
     "us_president": "Richard Nixon",
@@ -114,14 +135,38 @@
     "canada_pm": "Pierre Trudeau",
     "brazil_president": "Emílio Garrastazu Médici",
     "un_secretary": "Kurt Waldheim",
-    "pope": "Pope Paul VI"
+    "pope": "Pope Paul VI",
+    "russia_leader": "Leonid Brezhnev",
+    "mexico_president": "Luis Echeverría",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Jack Lynch"
   },
   "notable_births": [
-    {"name": "Eminem", "month": 10, "field": "Music"},
-    {"name": "Gwyneth Paltrow", "month": 9, "field": "Film"},
-    {"name": "Cameron Diaz", "month": 8, "field": "Film"},
-    {"name": "Ben Affleck", "month": 8, "field": "Film"},
-    {"name": "Shaquille O'Neal", "month": 3, "field": "Basketball"}
+    {
+      "name": "Eminem",
+      "month": 10,
+      "field": "Music"
+    },
+    {
+      "name": "Gwyneth Paltrow",
+      "month": 9,
+      "field": "Film"
+    },
+    {
+      "name": "Cameron Diaz",
+      "month": 8,
+      "field": "Film"
+    },
+    {
+      "name": "Ben Affleck",
+      "month": 8,
+      "field": "Film"
+    },
+    {
+      "name": "Shaquille O'Neal",
+      "month": 3,
+      "field": "Basketball"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 4639,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 132.5,
+      "life_expectancy": 67.1,
+      "gdp_per_capita_usd": 4500,
+      "leader": "Leonid Brezhnev",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 55.1,
+      "life_expectancy": 64.6,
+      "gdp_per_capita_usd": 4050,
+      "leader": "Luis Echeverría",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 33.1,
+      "life_expectancy": 65.6,
+      "gdp_per_capita_usd": 3520,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 3.03,
+      "life_expectancy": 72.9,
+      "gdp_per_capita_usd": 7500,
+      "leader": "Jack Lynch",
+      "leader_title": "Taoiseach"
     }
   }
 }

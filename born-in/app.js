@@ -35,6 +35,10 @@ const COUNTRIES = [
   { code: 'CN', name: 'China',          flag: '🇨🇳' },
   { code: 'AU', name: 'Australia',      flag: '🇦🇺' },
   { code: 'CA', name: 'Canada',         flag: '🇨🇦' },
+  { code: 'RU', name: 'Russia',         flag: '🇷🇺' },
+  { code: 'MX', name: 'Mexico',         flag: '🇲🇽' },
+  { code: 'KR', name: 'South Korea',    flag: '🇰🇷' },
+  { code: 'IE', name: 'Ireland',        flag: '🇮🇪' },
 ];
 
 const COUNTRY_MAP = Object.fromEntries(COUNTRIES.map(c => [c.code, c]));
@@ -50,6 +54,10 @@ const LEADER_KEYS = {
   CN: { key: 'china_leader',       title: 'Leader' },
   AU: { key: 'australia_pm',       title: 'Prime Minister' },
   CA: { key: 'canada_pm',          title: 'Prime Minister' },
+  RU: { key: 'russia_leader',         title: 'Leader' },
+  MX: { key: 'mexico_president',      title: 'President' },
+  KR: { key: 'south_korea_president', title: 'President' },
+  IE: { key: 'ireland_taoiseach',     title: 'Taoiseach' },
 };
 
 const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];

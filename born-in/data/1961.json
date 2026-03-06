@@ -14,16 +14,16 @@
     "us_inflation_pct": 1.07,
     "us_unemployment_pct": 6.7,
     "us_minimum_wage_usd": 1.15,
-    "sp500_year_end": 66.20,
+    "sp500_year_end": 66.2,
     "dow_jones_year_end": 731.14,
-    "gold_oz_usd": 35.00,
-    "oil_barrel_usd": 1.80
+    "gold_oz_usd": 35.0,
+    "oil_barrel_usd": 1.8
   },
   "prices_us": {
     "gallon_gas_usd": 0.31,
     "gallon_milk_usd": 1.04,
     "dozen_eggs_usd": 0.55,
-    "loaf_bread_usd": 0.20,
+    "loaf_bread_usd": 0.2,
     "movie_ticket_usd": 0.69,
     "new_car_avg_usd": 2650,
     "median_home_usd": 12500,
@@ -57,8 +57,14 @@
       "most_watched_network": "CBS",
       "emmy_drama": "Macbeth (Hallmark Hall of Fame)",
       "emmy_comedy": "The Jack Benny Program",
-      "notable_premieres": ["The Defenders", "Ben Casey", "Hazel"],
-      "notable_finales": ["The Real McCoys (season)"]
+      "notable_premieres": [
+        "The Defenders",
+        "Ben Casey",
+        "Hazel"
+      ],
+      "notable_finales": [
+        "The Real McCoys (season)"
+      ]
     },
     "books": {
       "fiction_bestseller": "The Agony and the Ecstasy",
@@ -95,11 +101,26 @@
     ]
   },
   "world_events": [
-    {"month": 1, "event": "John F. Kennedy inaugurated as the 35th US President, delivering his famous 'Ask not what your country can do for you' speech"},
-    {"month": 4, "event": "Yuri Gagarin becomes the first human in space, completing one orbit of Earth in the Soviet Vostok 1 spacecraft"},
-    {"month": 4, "event": "Bay of Pigs invasion fails as CIA-backed Cuban exiles attempt to overthrow Fidel Castro's government"},
-    {"month": 8, "event": "East Germany begins construction of the Berlin Wall, dividing the city and sealing the Iron Curtain"},
-    {"month": 9, "event": "Non-Aligned Movement founded at the Belgrade Conference with 25 member nations, a major Cold War development"}
+    {
+      "month": 1,
+      "event": "John F. Kennedy inaugurated as the 35th US President, delivering his famous 'Ask not what your country can do for you' speech"
+    },
+    {
+      "month": 4,
+      "event": "Yuri Gagarin becomes the first human in space, completing one orbit of Earth in the Soviet Vostok 1 spacecraft"
+    },
+    {
+      "month": 4,
+      "event": "Bay of Pigs invasion fails as CIA-backed Cuban exiles attempt to overthrow Fidel Castro's government"
+    },
+    {
+      "month": 8,
+      "event": "East Germany begins construction of the Berlin Wall, dividing the city and sealing the Iron Curtain"
+    },
+    {
+      "month": 9,
+      "event": "Non-Aligned Movement founded at the Belgrade Conference with 25 member nations, a major Cold War development"
+    }
   ],
   "leaders": {
     "us_president": "John F. Kennedy",
@@ -114,14 +135,38 @@
     "canada_pm": "John Diefenbaker",
     "brazil_president": "Jânio Quadros",
     "un_secretary": "U Thant",
-    "pope": "Pope John XXIII"
+    "pope": "Pope John XXIII",
+    "russia_leader": "Nikita Khrushchev",
+    "mexico_president": "Adolfo López Mateos",
+    "south_korea_president": "Park Chung-hee",
+    "ireland_taoiseach": "Seán Lemass"
   },
   "notable_births": [
-    {"name": "Barack Obama", "month": 8, "field": "Politics"},
-    {"name": "Princess Diana", "month": 7, "field": "Royalty"},
-    {"name": "Eddie Murphy", "month": 4, "field": "Comedy/Film"},
-    {"name": "George Clooney", "month": 5, "field": "Film"},
-    {"name": "Nadia Comaneci", "month": 11, "field": "Gymnastics"}
+    {
+      "name": "Barack Obama",
+      "month": 8,
+      "field": "Politics"
+    },
+    {
+      "name": "Princess Diana",
+      "month": 7,
+      "field": "Royalty"
+    },
+    {
+      "name": "Eddie Murphy",
+      "month": 4,
+      "field": "Comedy/Film"
+    },
+    {
+      "name": "George Clooney",
+      "month": 5,
+      "field": "Film"
+    },
+    {
+      "name": "Nadia Comaneci",
+      "month": 11,
+      "field": "Gymnastics"
+    }
   ],
   "countries": {
     "US": {
@@ -193,6 +238,34 @@
       "gdp_per_capita_usd": 2424,
       "leader": "John Diefenbaker",
       "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 121.4,
+      "life_expectancy": 66.7,
+      "gdp_per_capita_usd": 3100,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "MX": {
+      "population_millions": 38.5,
+      "life_expectancy": 58.0,
+      "gdp_per_capita_usd": 2580,
+      "leader": "Adolfo López Mateos",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 25.5,
+      "life_expectancy": 56.3,
+      "gdp_per_capita_usd": 1360,
+      "leader": "Park Chung-hee",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.82,
+      "life_expectancy": 70.3,
+      "gdp_per_capita_usd": 3850,
+      "leader": "Seán Lemass",
+      "leader_title": "Taoiseach"
     }
   }
 }
