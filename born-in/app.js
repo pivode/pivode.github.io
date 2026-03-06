@@ -45,18 +45,18 @@ const SOCIAL_MEDIA_TIMELINE = [
 const BABY_NAMES_US = {
   1950: { boys: ['James','Robert','John'],          girls: ['Linda','Mary','Patricia'] },
   1952: { boys: ['James','Robert','John'],          girls: ['Linda','Mary','Patricia'] },
-  1954: { boys: ['Michael','Robert','James'],       girls: ['Mary','Linda','Patricia'] },
-  1955: { boys: ['Michael','David','James'],        girls: ['Mary','Linda','Patricia'] },
-  1956: { boys: ['Michael','David','James'],        girls: ['Mary','Linda','Patricia'] },
-  1957: { boys: ['Michael','David','Robert'],       girls: ['Mary','Linda','Patricia'] },
-  1958: { boys: ['Michael','David','Robert'],       girls: ['Mary','Linda','Patricia'] },
-  1959: { boys: ['Michael','David','Robert'],       girls: ['Mary','Linda','Susan'] },
+  1954: { boys: ['Michael','Robert','James'],       girls: ['Mary','Linda','Deborah'] },
+  1955: { boys: ['Michael','David','James'],        girls: ['Mary','Deborah','Linda'] },
+  1956: { boys: ['Michael','David','James'],        girls: ['Mary','Debra','Linda'] },
+  1957: { boys: ['Michael','James','David'],        girls: ['Mary','Susan','Linda'] },
+  1958: { boys: ['Michael','David','James'],        girls: ['Mary','Susan','Linda'] },
+  1959: { boys: ['Michael','David','James'],        girls: ['Mary','Susan','Linda'] },
   1960: { boys: ['David','Michael','James'],        girls: ['Mary','Susan','Linda'] },
-  1961: { boys: ['Michael','David','James'],        girls: ['Mary','Susan','Lisa'] },
-  1962: { boys: ['Michael','David','James'],        girls: ['Lisa','Mary','Susan'] },
-  1963: { boys: ['Michael','David','James'],        girls: ['Lisa','Mary','Karen'] },
-  1964: { boys: ['Michael','David','James'],        girls: ['Lisa','Mary','Karen'] },
-  1965: { boys: ['Michael','David','James'],        girls: ['Lisa','Sandra','Mary'] },
+  1961: { boys: ['Michael','David','John'],         girls: ['Mary','Lisa','Susan'] },
+  1962: { boys: ['Michael','David','John'],         girls: ['Lisa','Mary','Susan'] },
+  1963: { boys: ['Michael','John','David'],         girls: ['Lisa','Mary','Susan'] },
+  1964: { boys: ['Michael','John','David'],         girls: ['Lisa','Mary','Susan'] },
+  1965: { boys: ['Michael','John','David'],         girls: ['Lisa','Mary','Karen'] },
   1966: { boys: ['Michael','David','James'],        girls: ['Lisa','Kimberly','Karen'] },
   1967: { boys: ['Michael','David','James'],        girls: ['Lisa','Kimberly','Karen'] },
   1968: { boys: ['Michael','David','James'],        girls: ['Lisa','Michelle','Kimberly'] },
@@ -89,7 +89,7 @@ const BABY_NAMES_US = {
   1995: { boys: ['Michael','Matthew','Tyler'],      girls: ['Jessica','Ashley','Emily'] },
   1996: { boys: ['Michael','Matthew','Tyler'],      girls: ['Emily','Jessica','Ashley'] },
   1997: { boys: ['Michael','Tyler','Matthew'],      girls: ['Emily','Jessica','Sarah'] },
-  1998: { boys: ['Michael','Jacob','Matthew'],      girls: ['Emily','Hannah','Alexis'] },
+  1998: { boys: ['Michael','Jacob','Matthew'],      girls: ['Emily','Hannah','Samantha'] },
   1999: { boys: ['Jacob','Michael','Matthew'],      girls: ['Emily','Sarah','Hannah'] },
   2000: { boys: ['Jacob','Michael','Matthew'],      girls: ['Emily','Hannah','Madison'] },
   2001: { boys: ['Jacob','Michael','Matthew'],      girls: ['Emily','Madison','Hannah'] },
@@ -149,8 +149,8 @@ const BABY_NAMES_UK = {
   1993: { boys: ['Thomas','Daniel','Matthew'],       girls: ['Rebecca','Lauren','Amy'] },
   1994: { boys: ['Thomas','Daniel','Matthew'],       girls: ['Rebecca','Lauren','Sophie'] },
   1995: { boys: ['Thomas','James','Jack'],           girls: ['Rebecca','Lauren','Charlotte'] },
-  1996: { boys: ['Jack','Thomas','James'],           girls: ['Sophie','Charlotte','Emily'] },
-  1997: { boys: ['Jack','Thomas','James'],           girls: ['Emily','Charlotte','Sophie'] },
+  1996: { boys: ['Jack','Daniel','Thomas'],          girls: ['Sophie','Chloe','Emily'] },
+  1997: { boys: ['Jack','James','Thomas'],           girls: ['Emily','Charlotte','Sophie'] },
   1998: { boys: ['Jack','Thomas','James'],           girls: ['Emily','Charlotte','Chloe'] },
   1999: { boys: ['Jack','Thomas','James'],           girls: ['Emily','Chloe','Megan'] },
   2000: { boys: ['Jack','Thomas','Joshua'],          girls: ['Emily','Chloe','Megan'] },
@@ -319,7 +319,7 @@ const SPORTS_CA = {
   1994:'New York Rangers',1995:'New Jersey Devils',1996:'Colorado Avalanche',
   1997:'Detroit Red Wings',1998:'Detroit Red Wings',1999:'Dallas Stars',
   2000:'New Jersey Devils',2001:'Colorado Avalanche',2002:'Detroit Red Wings',
-  2003:'New Jersey Devils',2004:'Tampa Bay Lightning',2006:'Carolina Hurricanes',
+  2003:'New Jersey Devils',2004:'Tampa Bay Lightning',2005:'Lockout',2006:'Carolina Hurricanes',
   2007:'Anaheim Ducks',2008:'Detroit Red Wings',2009:'Pittsburgh Penguins',
   2010:'Chicago Blackhawks',
 };
@@ -451,7 +451,7 @@ const COUNTRY_EVENTS = {
     1981:'Prince Charles marries Lady Diana',
     1982:'Falklands War, Britain defeats Argentina',
     1984:'Miners strike, Thatcher breaks unions',
-    1988:'Lockerbie bombing kills 259',
+    1988:'Lockerbie bombing kills 270',
     1990:'Thatcher ousted by own party, Major becomes PM',
     1997:'Tony Blair wins landslide, Diana dies in Paris',
     1998:'Good Friday Agreement signed',
@@ -673,7 +673,7 @@ const MUSIC_FR_NO1 = {
 const MUSIC_AU_NO1 = {
   1975:{s:'Jive Talkin\'',a:'Bee Gees'},1976:{s:'Fernando',a:'ABBA'},
   1978:{s:'Night Fever',a:'Bee Gees'},1981:{s:'Physical',a:'Olivia Newton-John'},
-  1983:{s:'Karma Chameleon',a:'Culture Club'},1986:{s:'Don\'t Dream It\'s Over',a:'Crowded House'},
+  1983:{s:'Karma Chameleon',a:'Culture Club'},1986:{s:'You\'re the Voice',a:'John Farnham'},
   1988:{s:'Don\'t Worry Be Happy',a:'Bobby McFerrin'},
   1990:{s:'Nothing Compares 2 U',a:'Sinead O\'Connor'},
   1991:{s:'(Everything I Do) I Do It for You',a:'Bryan Adams'},
@@ -788,6 +788,7 @@ let selectedCountry = COUNTRIES[0]; // default US
 let typewriterTimer = null;
 let typewriterIndex = 0;
 let observer = null;
+let countUpObs = null;
 
 // ---------------------------------------------------------------------------
 // DOM REFS
@@ -816,9 +817,14 @@ const $sharePopover     = document.getElementById('share-popover');
 const $copyLinkBtn      = document.getElementById('copy-link-btn');
 const $tweetBtn         = document.getElementById('tweet-btn');
 const $newYearBtn       = document.getElementById('new-year-btn');
+const $saveCardBtn      = document.getElementById('save-card-btn');
+const $shareCard        = document.getElementById('share-card');
 const $dataError        = document.getElementById('data-error');
 const $errorMessage     = document.getElementById('error-message');
 const $errorBackBtn     = document.getElementById('error-back-btn');
+
+// Stores last rendered state so share card can access it
+let _lastRender = null;
 
 // ---------------------------------------------------------------------------
 // ACCENT COLOR
@@ -928,6 +934,7 @@ function renderCountryList(filter = '') {
       role="option"
       data-code="${c.code}"
       aria-selected="${c.code === selectedCountry.code}"
+      tabindex="-1"
     >
       <span class="flag">${c.flag}</span>
       <span>${c.name}</span>
@@ -984,7 +991,33 @@ document.addEventListener('click', (e) => {
 });
 
 $countrySearch.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeDropdown();
+  if (e.key === 'Escape') {
+    closeDropdown();
+    $countryBtn.focus();
+  } else if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    const items = $countryList.querySelectorAll('[data-code]');
+    if (items.length > 0) items[0].focus();
+  }
+});
+
+$countryList.addEventListener('keydown', (e) => {
+  const items = Array.from($countryList.querySelectorAll('[data-code]'));
+  const idx = items.indexOf(document.activeElement);
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    if (idx < items.length - 1) items[idx + 1].focus();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    if (idx > 0) items[idx - 1].focus();
+    else $countrySearch.focus();
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (idx >= 0) items[idx].click();
+  } else if (e.key === 'Escape') {
+    closeDropdown();
+    $countryBtn.focus();
+  }
 });
 
 // ---------------------------------------------------------------------------
@@ -1074,6 +1107,7 @@ async function loadAndRender(year, countryCode) {
 // ---------------------------------------------------------------------------
 
 function renderInfograpic(year, countryCode, data) {
+  _lastRender = { year, countryCode, data };
   const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
   const name = getUserName();
 
@@ -1538,7 +1572,7 @@ function renderActV(year, countryCode, data) {
   const worldBirths = data.world?.births_millions;
 
   const births   = (data.notable_births || []).slice(0, 5);
-  const doublings  = Math.round((2024 - year) / 2);
+  const doublings  = Math.round((CURRENT_YEAR - year) / 2);
   const multiplier = Math.pow(2, doublings).toLocaleString();
 
   const popFmt = !popMillions ? null
@@ -1924,11 +1958,11 @@ function initRevealObserver() {
 function initCountUpObserver() {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const countUpObserver = new IntersectionObserver((entries) => {
+  countUpObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       const el = entry.target;
-      countUpObserver.unobserve(el);
+      countUpObs.unobserve(el);
 
       const target   = parseFloat(el.dataset.target);
       const decimals = parseInt(el.dataset.decimals || '0', 10);
@@ -1957,7 +1991,7 @@ function initCountUpObserver() {
     });
   }, { threshold: 0.3 });
 
-  document.querySelectorAll('.count-up').forEach(el => countUpObserver.observe(el));
+  document.querySelectorAll('.count-up').forEach(el => countUpObs.observe(el));
 }
 
 // ---------------------------------------------------------------------------
@@ -1967,6 +2001,7 @@ function initCountUpObserver() {
 $shareBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   $sharePopover.classList.toggle('hidden');
+  $shareBtn.setAttribute('aria-expanded', !$sharePopover.classList.contains('hidden'));
 });
 
 document.addEventListener('click', (e) => {
@@ -1994,6 +2029,130 @@ $tweetBtn.addEventListener('click', () => {
   $sharePopover.classList.add('hidden');
 });
 
+// ---------------------------------------------------------------------------
+// SHARE CARD (Spotify Wrapped-style downloadable image)
+// ---------------------------------------------------------------------------
+
+function buildShareCard() {
+  if (!_lastRender) return;
+  const { year, countryCode, data } = _lastRender;
+  const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
+  const name = getUserName();
+  const accent = getAccentForYear(year);
+
+  // Gather key facts
+  const pop = data.world?.population_billions;
+  const leaderInfo = LEADER_KEYS[countryCode] || LEADER_KEYS.US;
+  const leader = data.leaders?.[leaderInfo.key] || '';
+  const song = data.culture?.music?.billboard_no1_song || '';
+  const artist = data.culture?.music?.billboard_no1_artist || '';
+  const oscar = data.culture?.movies?.best_picture || '';
+  const avgGas = data.economy?.us_prices?.gas_gallon;
+  const lifeExp = data.country_stats?.life_expectancy;
+  const worldEvents = (data.world_events || []).slice(0, 2);
+
+  // UK-specific music for GB
+  let musicLine = '';
+  if (countryCode === 'GB') {
+    const ukSong = data.culture?.music?.uk_no1_jan;
+    const ukArtist = data.culture?.music?.uk_no1_jan_artist;
+    if (ukSong) musicLine = `${ukSong}${ukArtist ? ' - ' + ukArtist : ''}`;
+  }
+  if (!musicLine && song) musicLine = `${song}${artist ? ' - ' + artist : ''}`;
+
+  const headline = name ? `The World When ${escHtml(name)} Was Born` : `The World in ${year}`;
+
+  // Build stat rows
+  const stats = [
+    pop && { icon: '\uD83C\uDF0D', label: 'World Population', value: `${pop.toFixed(1)}B` },
+    leader && { icon: '\uD83C\uDFDB\uFE0F', label: leaderInfo.title, value: leader },
+    musicLine && { icon: '\uD83C\uDFB5', label: '#1 Song', value: musicLine },
+    oscar && { icon: '\uD83C\uDFAC', label: 'Best Picture', value: oscar },
+    lifeExp && { icon: '\u2764\uFE0F', label: 'Life Expectancy', value: `${lifeExp} years` },
+    avgGas && { icon: '\u26FD', label: 'Gas per Gallon', value: `$${avgGas.toFixed(2)}` },
+  ].filter(Boolean).slice(0, 5);
+
+  const statsHTML = stats.map(s => `
+    <div class="sc-stat">
+      <span class="sc-icon">${s.icon}</span>
+      <div class="sc-stat-body">
+        <span class="sc-stat-label">${escHtml(s.label)}</span>
+        <span class="sc-stat-value">${escHtml(s.value)}</span>
+      </div>
+    </div>
+  `).join('');
+
+  const eventsHTML = worldEvents.length ? `
+    <div class="sc-events">
+      ${worldEvents.map(ev => `<p class="sc-event">${escHtml(ev)}</p>`).join('')}
+    </div>
+  ` : '';
+
+  $shareCard.style.setProperty('--sc-accent', accent);
+  $shareCard.innerHTML = `
+    <div class="sc-inner">
+      <div class="sc-header">
+        <p class="sc-flag">${country.flag}</p>
+        <p class="sc-year">${year}</p>
+        <p class="sc-headline">${headline}</p>
+      </div>
+      <div class="sc-stats">${statsHTML}</div>
+      ${eventsHTML}
+      <div class="sc-footer">
+        <span class="sc-brand">pivode.github.io/born-in</span>
+      </div>
+    </div>
+  `;
+}
+
+async function downloadShareCard() {
+  if (typeof html2canvas === 'undefined') {
+    showToast('Image library still loading. Try again.');
+    return;
+  }
+
+  buildShareCard();
+
+  // Temporarily show the card so html2canvas can capture it
+  $shareCard.style.display = 'block';
+
+  try {
+    const canvas = await html2canvas($shareCard, {
+      scale: 2,
+      backgroundColor: null,
+      useCORS: true,
+      logging: false,
+      width: 540,
+      height: $shareCard.offsetHeight,
+    });
+
+    $shareCard.style.display = '';
+
+    // Convert to blob and download
+    canvas.toBlob((blob) => {
+      if (!blob) { showToast('Could not generate image.'); return; }
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      const params = getURLParams();
+      a.download = `born-in-${params?.year || 'card'}.png`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Card saved!');
+    }, 'image/png');
+  } catch (err) {
+    $shareCard.style.display = '';
+    showToast('Could not generate image.');
+  }
+}
+
+$saveCardBtn.addEventListener('click', () => {
+  $sharePopover.classList.add('hidden');
+  downloadShareCard();
+});
+
 $newYearBtn.addEventListener('click', () => resetToLanding());
 
 $errorBackBtn.addEventListener('click', () => resetToLanding());
@@ -2001,6 +2160,7 @@ $errorBackBtn.addEventListener('click', () => resetToLanding());
 function resetToLanding() {
   // Disconnect any active observer
   if (observer) { observer.disconnect(); observer = null; }
+  if (countUpObs) { countUpObs.disconnect(); countUpObs = null; }
 
   // Hide infographic, error state
   $infographic.classList.add('hidden');
@@ -2031,6 +2191,7 @@ function resetToLanding() {
   window.scrollTo(0, 0);
 
   // Restart typewriter
+  stopTypewriter();
   typewriterIndex = 0;
   $typewriter.textContent = TYPEWRITER_PHRASES[0];
   $typewriter.classList.remove('fading');
@@ -2057,7 +2218,8 @@ function buildShareURL() {
 function getURLParams() {
   const params = new URLSearchParams(window.location.search);
   const year    = parseInt(params.get('year'), 10);
-  const country = params.get('country') || 'US';
+  const rawCountry = params.get('country') || 'US';
+  const country = COUNTRY_MAP[rawCountry] ? rawCountry : 'US';
   if (!isNaN(year) && year >= YEAR_MIN && year <= YEAR_MAX && !YEAR_GAPS.has(year)) {
     return { year, country };
   }
@@ -2081,7 +2243,7 @@ function checkURLOnLoad() {
 
   // Show loading state while fetching
   $infographic.classList.remove('hidden');
-  $infoContent.innerHTML = `<div class="loading-state"><div class="loading-spinner"></div></div>`;
+  $infoContent.innerHTML = `<div class="loading-state" role="status" aria-label="Loading"><div class="loading-spinner" aria-hidden="true"></div></div>`;
   $headerYear.textContent = params.year;
   $headerCountry.innerHTML = `<span class="flag">${country.flag}</span><span class="country-name-full">&nbsp;${country.name}</span>`;
 

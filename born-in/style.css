@@ -31,7 +31,6 @@
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +47,18 @@ body {
 /* UTILITIES */
 .hidden {
   display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* =========================================================
@@ -255,6 +266,9 @@ body {
   z-index: 100;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  max-height: min(300px, 50vh);
+  display: flex;
+  flex-direction: column;
 }
 
 .country-dropdown.hidden {
@@ -289,9 +303,10 @@ body {
 
 .country-list {
   list-style: none;
-  max-height: 240px;
+  flex: 1 1 auto;
   overflow-y: auto;
   padding: 8px 0;
+  min-height: 0;
 }
 
 .country-list::-webkit-scrollbar {
@@ -503,7 +518,7 @@ body {
 /* SHARE POPOVER */
 .share-popover {
   position: absolute;
-  top: calc(56px + 8px);
+  top: calc(100% + 8px);
   right: 24px;
   background: var(--bg-raised);
   border: 1px solid var(--border);
@@ -1050,7 +1065,7 @@ body.era-60s {
   --border:     rgba(0, 137, 123, 0.13);
   --text-secondary: #8898a8;
   --text-tertiary:  #4e6070;
-  --accent:     #00897b;
+  --accent:     #26a69a;
   --radius-card: 4px;
 }
 
@@ -1098,7 +1113,7 @@ body.era-00s {
   --border:     rgba(30, 64, 175, 0.15);
   --text-secondary: #8090b0;
   --text-tertiary:  #4a5878;
-  --accent:     #1e40af;
+  --accent:     #5b8def;
   --radius-card: 12px;
 }
 
@@ -1111,6 +1126,10 @@ body.era-00s {
 }
 
 @keyframes collapseScreen {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
   to {
     opacity: 0;
     transform: scale(0.97);
@@ -1430,4 +1449,137 @@ body.era-00s {
   .milestone-ages {
     font-size: 14px;
   }
+}
+
+/* =========================================================
+   SHARE CARD (downloadable Spotify Wrapped-style image)
+   ========================================================= */
+
+.share-card {
+  display: none;
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  width: 540px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sc-inner {
+  width: 540px;
+  padding: 48px 40px 32px;
+  background: linear-gradient(160deg, #0a0a14 0%, #12122a 40%, #151428 100%);
+  background: linear-gradient(160deg, #0a0a14 0%, #12122a 40%, color-mix(in srgb, var(--sc-accent, #a78bfa) 15%, #0a0a14) 100%);
+  border-radius: 24px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #f0f0f5;
+}
+
+.sc-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.sc-flag {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.sc-year {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  color: var(--sc-accent, #a78bfa);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.sc-headline {
+  font-size: 16px;
+  font-weight: 500;
+  color: #9090a8;
+  letter-spacing: 0.02em;
+}
+
+.sc-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.sc-stat {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sc-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.sc-stat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.sc-stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5a5a72;
+}
+
+.sc-stat-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f0f0f5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sc-events {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 28px;
+}
+
+.sc-event {
+  font-size: 13px;
+  color: #9090a8;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.sc-event:last-child {
+  margin-bottom: 0;
+}
+
+.sc-footer {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sc-brand {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--sc-accent, #a78bfa);
+  opacity: 0.7;
 }
