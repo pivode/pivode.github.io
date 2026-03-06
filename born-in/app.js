@@ -338,7 +338,7 @@ function renderInfograpic(year, countryCode, data) {
   // Build all acts
   $infoContent.innerHTML = [
     renderActI(year, countryCode, data),
-    renderActII(year, data),
+    renderActII(year, countryCode, data),
     renderActIII(year, countryCode, data),
     renderActIV(data),
     renderActV(year, countryCode, data),
@@ -434,19 +434,23 @@ function renderActI(year, countryCode, data) {
 // ACT II — THE ECONOMY
 // ---------------------------------------------------------------------------
 
-function renderActII(year, data) {
+function renderActII(year, countryCode, data) {
+  const isUS        = countryCode === 'US';
+  const country     = COUNTRY_MAP[countryCode] || COUNTRIES[0];
+  const countryData = data.countries?.[countryCode];
+
+  // US-specific data
   const income      = data.economy?.us_median_household_income_usd;
   const homePrice   = data.prices_us?.median_home_usd;
   const ratioThen   = (income && homePrice) ? (homePrice / income).toFixed(1) : null;
   const ratioToday  = TODAY.home_salary_ratio;
 
-  // Inflation-adjusted salary (CPI-U, base 2024)
+  // Inflation-adjusted salary (CPI-U, base 2024) - US only
   const cpiMult     = CPI_TO_2024[year] || 1;
   const incomeAdj   = income ? Math.round(income * cpiMult) : null;
   const incomeAdjK  = incomeAdj ? Math.round(incomeAdj / 1000) : null;
   const todayK      = Math.round(TODAY.us_median_income / 1000);
 
-  // Verdict: how does adjusted ${year} salary compare to today?
   let verdictDesc = `Current US median household income`;
   if (incomeAdj) {
     const diff = incomeAdj - TODAY.us_median_income;
@@ -465,12 +469,40 @@ function renderActII(year, data) {
     { emoji: '🍔', label: 'Big Mac',         value: data.prices_us?.big_mac_usd },
   ].filter(p => p.value != null);
 
+  // Country GDP per capita (for non-US)
+  const countryGdp    = countryData?.gdp_per_capita_usd;
+  const usGdp         = data.economy?.us_gdp_per_capita_usd;
+
+  // Cross-country comparison card
+  let gdpCompareCard = '';
+  if (!isUS && countryGdp && usGdp) {
+    const ratio = (countryGdp / usGdp * 100).toFixed(0);
+    const compDesc = countryGdp < usGdp
+      ? `${country.name} GDP per capita was ${(100 - ratio)}% below the US in ${year}`
+      : `${country.name} GDP per capita was ${(ratio - 100)}% above the US in ${year}`;
+    gdpCompareCard = patternB({
+      eyebrow: 'Economic Comparison',
+      headline: `${country.name} vs. the United States`,
+      left: {
+        label: `${country.flag} ${country.name}`,
+        value: formatCurrency(countryGdp),
+        desc: `GDP per capita in ${year}`,
+      },
+      right: {
+        label: '🇺🇸 United States',
+        labelMuted: true,
+        value: formatCurrency(usGdp),
+        desc: compDesc,
+      },
+    });
+  }
+
   return `
     <div class="act" id="act-2">
       <p class="act-label">Act II</p>
       <div class="act-sections">
 
-        ${patternA({
+        ${isUS ? patternA({
           eyebrow: 'Average Annual Salary',
           headline: 'What workers took home',
           number: income ? formatCurrency(income) : '—',
@@ -480,9 +512,18 @@ function renderActII(year, data) {
           countUp: income,
           countUpPrefix: '$',
           countUpAbbrev: true,
+        }) : patternA({
+          eyebrow: `${country.name} Economy`,
+          headline: `What the economy looked like`,
+          number: countryGdp ? formatCurrency(countryGdp) : '—',
+          unit: `${country.name} GDP per capita`,
+          context: `The US was at ${usGdp ? formatCurrency(usGdp) : '—'} the same year.`,
+          countUp: countryGdp,
+          countUpPrefix: '$',
+          countUpAbbrev: true,
         })}
 
-        ${incomeAdj ? patternB({
+        ${isUS && incomeAdj ? patternB({
           eyebrow: 'Purchasing Power',
           headline: 'Are we actually better off today?',
           left: {
@@ -498,13 +539,15 @@ function renderActII(year, data) {
           },
         }) : ''}
 
+        ${!isUS ? gdpCompareCard : ''}
+
         ${patternE({
-          eyebrow: 'Everyday Prices',
-          headline: 'What things cost in the US',
+          eyebrow: isUS ? 'Everyday Prices' : 'Everyday Prices in the US',
+          headline: isUS ? 'What things cost' : 'What things cost in America',
           prices,
         })}
 
-        ${patternB({
+        ${isUS ? patternB({
           eyebrow: 'Housing',
           headline: 'Homes vs. salaries - then and now',
           left: {
@@ -518,7 +561,7 @@ function renderActII(year, data) {
             value: `${ratioToday}×`,
             desc: `Median home now costs ${ratioToday}x the average annual salary`,
           },
-        })}
+        }) : ''}
 
       </div>
     </div>
