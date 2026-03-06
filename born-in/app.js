@@ -1655,6 +1655,32 @@ function renderActII(year, countryCode, data) {
     });
   }
 
+  // Life expectancy comparison card (non-US only)
+  const countryLifeExp = countryData?.life_expectancy;
+  const globalLifeExp  = data.world?.life_expectancy_global;
+
+  let lifeExpCard = '';
+  if (!isUS && countryLifeExp && globalLifeExp) {
+    const diff = (countryLifeExp - globalLifeExp).toFixed(1);
+    const diffAbs = Math.abs(diff);
+    const aboveBelow = diff > 0 ? `${diffAbs} years above the global average` : `${diffAbs} years below the global average`;
+    lifeExpCard = patternB({
+      eyebrow: 'Health',
+      headline: 'How long people lived',
+      left: {
+        label: `${country.flag} ${country.name}`,
+        value: `${countryLifeExp}`,
+        desc: 'years life expectancy at birth',
+      },
+      right: {
+        label: '🌍 World Average',
+        labelMuted: true,
+        value: `${globalLifeExp}`,
+        desc: aboveBelow,
+      },
+    });
+  }
+
   return `
     <div class="act" id="act-2">
       <p class="act-label">Act II</p>
@@ -1699,9 +1725,11 @@ function renderActII(year, countryCode, data) {
 
         ${!isUS ? gdpCompareCard : ''}
 
+        ${!isUS ? lifeExpCard : ''}
+
         ${patternE({
-          eyebrow: isUS ? 'Everyday Prices' : 'Everyday Prices in the US',
-          headline: isUS ? 'What things cost' : 'What things cost in America',
+          eyebrow: isUS ? 'Everyday Prices' : 'Meanwhile in America',
+          headline: isUS ? 'What things cost' : 'What things cost in the US',
           prices,
         })}
 
