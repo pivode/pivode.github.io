@@ -362,6 +362,33 @@
 
     .footer-link:hover { color: var(--text); }
 
+    .footer-secondary {
+      max-width: 1100px;
+      margin: 16px auto 0;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-secondary-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-secondary-link {
+      color: var(--muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.15s;
+    }
+
+    .footer-secondary-link:hover { color: var(--text); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 600px) {
       .hero { padding: 64px 1.25rem 60px; }
@@ -377,7 +404,10 @@
 
   <nav>
     <a href="/" class="nav-logo">piv<span>ode</span></a>
-    <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="nav-link">All datasets &rarr;</a>
+    <div class="nav-links">
+      <a href="/games/" class="nav-link">Game Codebases</a>
+      <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="nav-link">All datasets &rarr;</a>
+    </div>
   </nav>
 
   <section class="hero">
@@ -495,6 +525,9 @@
       <a href="/" class="footer-logo">piv<span>ode</span></a>
       <span class="footer-text">Clean data, no fuss.</span>
       <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="footer-link">seangularity.gumroad.com</a>
+    </div>
+    <div class="footer-secondary">
+      <span class="footer-secondary-text">Building a game? Browse our <a href="/games/" class="footer-secondary-link">production-ready game codebases &rarr;</a></span>
     </div>
   </footer>
 
