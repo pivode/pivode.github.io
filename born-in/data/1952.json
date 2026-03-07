@@ -163,6 +163,16 @@
       "name": "Jeff Goldblum",
       "month": 10,
       "field": "Film"
+    },
+    {
+      "name": "Viv Richards",
+      "month": 3,
+      "field": "Cricket"
+    },
+    {
+      "name": "Imran Khan",
+      "month": 10,
+      "field": "Cricket"
     }
   ],
   "countries": {

@@ -164,6 +164,11 @@
       "name": "Weird Al Yankovic",
       "month": 10,
       "field": "Music"
+    },
+    {
+      "name": "Kapil Dev",
+      "month": 1,
+      "field": "Cricket"
     }
   ],
   "countries": {

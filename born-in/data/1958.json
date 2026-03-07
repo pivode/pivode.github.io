@@ -163,6 +163,11 @@
       "name": "Alec Baldwin",
       "month": 4,
       "field": "Film"
+    },
+    {
+      "name": "Andrea Bocelli",
+      "month": 9,
+      "field": "Opera"
     }
   ],
   "countries": {

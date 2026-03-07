@@ -166,6 +166,11 @@
       "name": "Wesley Snipes",
       "month": 7,
       "field": "Film"
+    },
+    {
+      "name": "Ruud Gullit",
+      "month": 9,
+      "field": "Football"
     }
   ],
   "countries": {

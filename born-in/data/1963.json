@@ -166,6 +166,11 @@
       "name": "Whitney Houston",
       "month": 8,
       "field": "Music"
+    },
+    {
+      "name": "Jet Li",
+      "month": 4,
+      "field": "Martial Arts/Film"
     }
   ],
   "countries": {

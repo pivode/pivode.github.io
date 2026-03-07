@@ -170,6 +170,16 @@
       "name": "Sarah Jessica Parker",
       "month": 3,
       "field": "Television"
+    },
+    {
+      "name": "Shah Rukh Khan",
+      "month": 11,
+      "field": "Film"
+    },
+    {
+      "name": "Aamir Khan",
+      "month": 3,
+      "field": "Film"
     }
   ],
   "countries": {

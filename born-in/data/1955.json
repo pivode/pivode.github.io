@@ -163,6 +163,16 @@
       "name": "Whoopi Goldberg",
       "month": 11,
       "field": "Film/Comedy"
+    },
+    {
+      "name": "Yo-Yo Ma",
+      "month": 10,
+      "field": "Classical Music"
+    },
+    {
+      "name": "Indra Nooyi",
+      "month": 10,
+      "field": "Business"
     }
   ],
   "countries": {

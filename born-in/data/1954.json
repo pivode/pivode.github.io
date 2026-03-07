@@ -163,6 +163,11 @@
       "name": "Denzel Washington",
       "month": 12,
       "field": "Film"
+    },
+    {
+      "name": "Hugo Chavez",
+      "month": 7,
+      "field": "Politics"
     }
   ],
   "countries": {

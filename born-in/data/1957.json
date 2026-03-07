@@ -163,6 +163,16 @@
       "name": "Donny Osmond",
       "month": 12,
       "field": "Music"
+    },
+    {
+      "name": "Javed Miandad",
+      "month": 6,
+      "field": "Cricket"
+    },
+    {
+      "name": "Seve Ballesteros",
+      "month": 4,
+      "field": "Golf"
     }
   ],
   "countries": {

@@ -166,6 +166,16 @@
       "name": "Jamie Foxx",
       "month": 12,
       "field": "Music/Film"
+    },
+    {
+      "name": "Madhuri Dixit",
+      "month": 5,
+      "field": "Film"
+    },
+    {
+      "name": "Roberto Baggio",
+      "month": 2,
+      "field": "Football"
     }
   ],
   "countries": {

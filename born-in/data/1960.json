@@ -169,6 +169,11 @@
       "name": "Ayrton Senna",
       "month": 3,
       "field": "Motorsport"
+    },
+    {
+      "name": "Antonio Banderas",
+      "month": 8,
+      "field": "Film"
     }
   ],
   "countries": {

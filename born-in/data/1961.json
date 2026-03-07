@@ -166,6 +166,11 @@
       "name": "Nadia Comaneci",
       "month": 11,
       "field": "Gymnastics"
+    },
+    {
+      "name": "Alfonso Cuaron",
+      "month": 11,
+      "field": "Film"
     }
   ],
   "countries": {

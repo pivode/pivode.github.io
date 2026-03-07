@@ -166,6 +166,16 @@
       "name": "Mike Tyson",
       "month": 6,
       "field": "Boxing"
+    },
+    {
+      "name": "Wasim Akram",
+      "month": 6,
+      "field": "Cricket"
+    },
+    {
+      "name": "Romario",
+      "month": 1,
+      "field": "Football"
     }
   ],
   "countries": {

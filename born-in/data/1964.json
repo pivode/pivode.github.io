@@ -166,6 +166,11 @@
       "name": "Rob Lowe",
       "month": 3,
       "field": "Film/Television"
+    },
+    {
+      "name": "Jack Ma",
+      "month": 9,
+      "field": "Business"
     }
   ],
   "countries": {

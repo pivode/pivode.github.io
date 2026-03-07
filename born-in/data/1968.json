@@ -166,6 +166,11 @@
       "name": "LL Cool J",
       "month": 1,
       "field": "Music"
+    },
+    {
+      "name": "Kylie Minogue",
+      "month": 5,
+      "field": "Music"
     }
   ],
   "countries": {
