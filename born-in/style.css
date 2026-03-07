@@ -1267,8 +1267,9 @@ body.era-00s {
    ========================================================= */
 
 .explore-more {
-  margin: 0 0 48px;
-  padding: 0;
+  max-width: 860px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
 }
 
 .explore-more-label {
