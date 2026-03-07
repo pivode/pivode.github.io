@@ -3485,7 +3485,9 @@ function renderActII(year, countryCode, data) {
   if (!isUS && countryLifeExp && globalLifeExp) {
     const diff = (countryLifeExp - globalLifeExp).toFixed(1);
     const diffAbs = Math.abs(diff);
-    const aboveBelow = diff > 0 ? `${diffAbs} years above the global average` : `${diffAbs} years below the global average`;
+    const aboveBelow = diff > 0
+      ? `${diffAbs} years above the world average`
+      : `${diffAbs} years below the world average`;
     const lifeCommentary = diff > 5
       ? `Well above the global average. ${country.name} was ahead of most of the world.`
       : diff > 0
@@ -3499,13 +3501,13 @@ function renderActII(year, countryCode, data) {
       left: {
         label: `${country.flag} ${country.name}`,
         value: `${countryLifeExp}`,
-        desc: 'years life expectancy at birth',
+        desc: aboveBelow,
       },
       right: {
         label: '🌍 World Average',
         labelMuted: true,
         value: `${globalLifeExp}`,
-        desc: aboveBelow,
+        desc: `life expectancy at birth in ${year}`,
       },
       commentary: lifeCommentary,
     });
