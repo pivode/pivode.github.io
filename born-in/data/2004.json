@@ -158,6 +158,16 @@
       "name": "Noah Schnapp",
       "month": 10,
       "field": "Television"
+    },
+    {
+      "name": "Charli D'Amelio",
+      "month": 5,
+      "field": "Social Media"
+    },
+    {
+      "name": "Gavi",
+      "month": 8,
+      "field": "Football"
     }
   ],
   "countries": {

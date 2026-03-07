@@ -158,6 +158,16 @@
       "name": "Noah Cyrus",
       "month": 1,
       "field": "Music"
+    },
+    {
+      "name": "Chloe Kim",
+      "month": 4,
+      "field": "Snowboard"
+    },
+    {
+      "name": "Halle Bailey",
+      "month": 3,
+      "field": "Music/Acting"
     }
   ],
   "countries": {

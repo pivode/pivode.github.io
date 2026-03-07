@@ -157,6 +157,16 @@
       "name": "Gracie Abrams",
       "month": 9,
       "field": "Music"
+    },
+    {
+      "name": "Greta Thunberg",
+      "month": 1,
+      "field": "Activism"
+    },
+    {
+      "name": "Sunisa Lee",
+      "month": 3,
+      "field": "Gymnastics"
     }
   ],
   "countries": {

@@ -148,6 +148,21 @@
       "name": "Xochitl Gomez",
       "month": 4,
       "field": "Film"
+    },
+    {
+      "name": "Gukesh D",
+      "month": 5,
+      "field": "Chess"
+    },
+    {
+      "name": "Javon Walton",
+      "month": 7,
+      "field": "Acting"
+    },
+    {
+      "name": "Shiloh Jolie-Pitt",
+      "month": 5,
+      "field": "Public Figure"
     }
   ],
   "countries": {

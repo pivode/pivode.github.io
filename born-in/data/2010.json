@@ -145,7 +145,23 @@
     "south_korea_president": "Lee Myung-bak",
     "ireland_taoiseach": "Brian Cowen"
   },
-  "notable_births": [],
+  "notable_births": [
+    {
+      "name": "Ryan Kiera Armstrong",
+      "month": 3,
+      "field": "Acting"
+    },
+    {
+      "name": "Jude Hill",
+      "month": 8,
+      "field": "Acting"
+    },
+    {
+      "name": "Frankie Corio",
+      "month": 7,
+      "field": "Acting"
+    }
+  ],
   "countries": {
     "US": {
       "population_millions": 309.3,

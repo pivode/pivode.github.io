@@ -142,7 +142,23 @@
     "south_korea_president": "Lee Myung-bak",
     "ireland_taoiseach": "Brian Cowen"
   },
-  "notable_births": [],
+  "notable_births": [
+    {
+      "name": "Iain Armitage",
+      "month": 7,
+      "field": "Acting"
+    },
+    {
+      "name": "Chloe Coleman",
+      "month": 11,
+      "field": "Acting"
+    },
+    {
+      "name": "Madeleine McGraw",
+      "month": 12,
+      "field": "Acting"
+    }
+  ],
   "countries": {
     "US": {
       "population_millions": 304.1,
