@@ -1364,6 +1364,16 @@ const MUSIC_AU_NO1 = {
 const LOCAL_MUSIC = { DE: MUSIC_DE_NO1, FR: MUSIC_FR_NO1, AU: MUSIC_AU_NO1 };
 const LOCAL_MUSIC_LABEL = { DE: 'German Chart #1', FR: 'French Chart #1', AU: 'Australian Chart #1' };
 
+const VOICE_THEN = {
+  1950: 'recording your voice meant a reel-to-reel tape recorder',
+  1960: 'hearing a new voice meant tuning into the radio',
+  1970: 'recording your voice meant pressing play+record on a cassette',
+  1980: 'your voice lived on answering machines and camcorder tapes',
+  1990: 'capturing your voice meant a voicemail or a camcorder',
+  2000: 'recording your voice meant GarageBand or a cheap USB mic',
+  2010: 'sharing your voice meant voice notes and YouTube vlogs',
+};
+
 const DECADE_ACCENTS = {
   1950: '#e8b86d',
   1960: '#7ec8e3',
@@ -1864,6 +1874,7 @@ function renderInfograpic(year, countryCode, data) {
     renderActIV(year, data),
     renderActV(year, countryCode, data),
     renderOutro(year, countryCode, data),
+    renderVoiceCard(year),
   ].join('');
 
   // Apply era-mode aesthetics before infographic becomes visible
@@ -2635,6 +2646,24 @@ function renderOutro(year, countryCode, data) {
   return `
     <div class="infographic-outro" data-reveal>
       <p class="outro-text">${openLine}${leaderLine}${songLine} ${escHtml(closing)}</p>
+    </div>
+  `;
+}
+
+// ---------------------------------------------------------------------------
+// ELEVENLABS CONTEXTUAL CARD
+// ---------------------------------------------------------------------------
+
+function renderVoiceCard(year) {
+  const decade = Math.floor(year / 10) * 10;
+  const then = VOICE_THEN[decade];
+  if (!then) return '';
+
+  return `
+    <div class="voice-then-now" data-reveal>
+      <p class="voice-then">In ${year}, ${then}.</p>
+      <p class="voice-now">In 2026, AI turns any text into a human voice in seconds.</p>
+      <a href="https://try.elevenlabs.io/pivode" class="voice-cta" target="_blank" rel="noopener">Try ElevenLabs <span class="voice-cta-arrow">\u2192</span></a>
     </div>
   `;
 }
