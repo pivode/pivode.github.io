@@ -336,6 +336,118 @@
       "gdp_per_capita_usd": 1379,
       "leader": "Bulent Ecevit",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 73.2,
+      "life_expectancy": 55.8,
+      "gdp_per_capita_usd": 268,
+      "leader": "Muhammad Zia-ul-Haq",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 80.0,
+      "life_expectancy": 51.6,
+      "gdp_per_capita_usd": 127,
+      "leader": "Ziaur Rahman",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 35.2,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 1250,
+      "leader": "Edward Gierek",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 8.28,
+      "life_expectancy": 76.3,
+      "gdp_per_capita_usd": 11450,
+      "leader": "Ola Ullsten",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 46.3,
+      "life_expectancy": 63.3,
+      "gdp_per_capita_usd": 530,
+      "leader": "Kriangsak Chamanan",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 51.7,
+      "life_expectancy": 58.5,
+      "gdp_per_capita_usd": 105,
+      "leader": "Ton Duc Thang",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 28.3,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 1100,
+      "leader": "Julio Cesar Turbay Ayala",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 17.5,
+      "life_expectancy": 54.0,
+      "gdp_per_capita_usd": 368,
+      "leader": "Daniel arap Moi",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 8.5,
+      "life_expectancy": 53.7,
+      "gdp_per_capita_usd": 6100,
+      "leader": "Khalid bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 3.7,
+      "life_expectancy": 74.4,
+      "gdp_per_capita_usd": 4180,
+      "leader": "Menachem Begin",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 9.6,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 2270,
+      "leader": "Mario Soares",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 11.1,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 1440,
+      "leader": "Augusto Pinochet",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 13.5,
+      "life_expectancy": 62.5,
+      "gdp_per_capita_usd": 1110,
+      "leader": "Hussein Onn",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 50.1,
+      "life_expectancy": 69.2,
+      "gdp_per_capita_usd": 2020,
+      "leader": "Volodymyr Shcherbytsky",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 12.1,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 410,
+      "leader": "Fred Akuffo",
+      "leader_title": "Head of State"
+    },
+    "PE": {
+      "population_millions": 16.2,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 900,
+      "leader": "Francisco Morales Bermudez",
+      "leader_title": "President"
     }
   }
 }

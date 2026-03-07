@@ -333,6 +333,118 @@
       "gdp_per_capita_usd": 425,
       "leader": "Adnan Menderes",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 45.2,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 78,
+      "leader": "Huseyn Shaheed Suhrawardy",
+      "leader_title": "Prime Minister"
+    },
+    "BD": {
+      "population_millions": 48.4,
+      "life_expectancy": 41.0,
+      "gdp_per_capita_usd": 62,
+      "leader": "Huseyn Shaheed Suhrawardy",
+      "leader_title": "Prime Minister of Pakistan"
+    },
+    "PL": {
+      "population_millions": 28.1,
+      "life_expectancy": 65.5,
+      "gdp_per_capita_usd": 335,
+      "leader": "Wladyslaw Gomulka",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 7.4,
+      "life_expectancy": 73.4,
+      "gdp_per_capita_usd": 1720,
+      "leader": "Tage Erlander",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 25.1,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 97,
+      "leader": "Thanom Kittikachorn",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 31.7,
+      "life_expectancy": 45.5,
+      "gdp_per_capita_usd": 64,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "CO": {
+      "population_millions": 15.1,
+      "life_expectancy": 53.5,
+      "gdp_per_capita_usd": 290,
+      "leader": "Gustavo Rojas Pinilla",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 8.0,
+      "life_expectancy": 43.5,
+      "gdp_per_capita_usd": 88,
+      "leader": "Evelyn Baring",
+      "leader_title": "Governor"
+    },
+    "SA": {
+      "population_millions": 3.7,
+      "life_expectancy": 41.7,
+      "gdp_per_capita_usd": 400,
+      "leader": "Saud bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 1.9,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 660,
+      "leader": "David Ben-Gurion",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 8.7,
+      "life_expectancy": 61.9,
+      "gdp_per_capita_usd": 325,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 7.2,
+      "life_expectancy": 57.4,
+      "gdp_per_capita_usd": 440,
+      "leader": "Carlos Ibanez del Campo",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 7.4,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Tunku Abdul Rahman",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 41.6,
+      "life_expectancy": 65.5,
+      "gdp_per_capita_usd": 800,
+      "leader": "Oleksiy Kyrychenko",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 6.3,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 225,
+      "leader": "Kwame Nkrumah",
+      "leader_title": "Prime Minister"
+    },
+    "PE": {
+      "population_millions": 9.2,
+      "life_expectancy": 47.2,
+      "gdp_per_capita_usd": 290,
+      "leader": "Manuel Prado Ugarteche",
+      "leader_title": "President"
     }
   }
 }

@@ -336,6 +336,118 @@
       "gdp_per_capita_usd": 614,
       "leader": "Ismet Inonu",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 55.7,
+      "life_expectancy": 47.5,
+      "gdp_per_capita_usd": 100,
+      "leader": "Ayub Khan",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 56.9,
+      "life_expectancy": 45.0,
+      "gdp_per_capita_usd": 74,
+      "leader": "Ayub Khan",
+      "leader_title": "President of Pakistan"
+    },
+    "PL": {
+      "population_millions": 31.3,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 445,
+      "leader": "Wladyslaw Gomulka",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 7.75,
+      "life_expectancy": 74.2,
+      "gdp_per_capita_usd": 2480,
+      "leader": "Tage Erlander",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 31.3,
+      "life_expectancy": 55.8,
+      "gdp_per_capita_usd": 135,
+      "leader": "Thanom Kittikachorn",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 37.7,
+      "life_expectancy": 50.0,
+      "gdp_per_capita_usd": 78,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "CO": {
+      "population_millions": 18.9,
+      "life_expectancy": 58.4,
+      "gdp_per_capita_usd": 365,
+      "leader": "Guillermo Leon Valencia",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 10.1,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 112,
+      "leader": "Jomo Kenyatta",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 4.7,
+      "life_expectancy": 45.0,
+      "gdp_per_capita_usd": 560,
+      "leader": "Faisal bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 2.5,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 1220,
+      "leader": "Levi Eshkol",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 8.9,
+      "life_expectancy": 64.6,
+      "gdp_per_capita_usd": 500,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 8.6,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 570,
+      "leader": "Eduardo Frei Montalva",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 9.3,
+      "life_expectancy": 55.5,
+      "gdp_per_capita_usd": 390,
+      "leader": "Tunku Abdul Rahman",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 45.4,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 1080,
+      "leader": "Petro Shelest",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 7.9,
+      "life_expectancy": 46.3,
+      "gdp_per_capita_usd": 275,
+      "leader": "Kwame Nkrumah",
+      "leader_title": "President"
+    },
+    "PE": {
+      "population_millions": 11.3,
+      "life_expectancy": 50.7,
+      "gdp_per_capita_usd": 400,
+      "leader": "Fernando Belaunde Terry",
+      "leader_title": "President"
     }
   }
 }

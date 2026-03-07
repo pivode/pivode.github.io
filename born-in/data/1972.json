@@ -336,6 +336,118 @@
       "gdp_per_capita_usd": 668,
       "leader": "Ferit Melen",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 61.3,
+      "life_expectancy": 52.2,
+      "gdp_per_capita_usd": 158,
+      "leader": "Zulfikar Ali Bhutto",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 69.5,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 78,
+      "leader": "Sheikh Mujibur Rahman",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 33.4,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 680,
+      "leader": "Edward Gierek",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 8.15,
+      "life_expectancy": 75.7,
+      "gdp_per_capita_usd": 5200,
+      "leader": "Olof Palme",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 39.9,
+      "life_expectancy": 60.4,
+      "gdp_per_capita_usd": 241,
+      "leader": "Thanom Kittikachorn",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 45.1,
+      "life_expectancy": 54.0,
+      "gdp_per_capita_usd": 92,
+      "leader": "Ton Duc Thang",
+      "leader_title": "President of DRV"
+    },
+    "CO": {
+      "population_millions": 24.2,
+      "life_expectancy": 63.0,
+      "gdp_per_capita_usd": 530,
+      "leader": "Misael Pastrana Borrero",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 13.7,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 168,
+      "leader": "Jomo Kenyatta",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 6.3,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 1050,
+      "leader": "Faisal bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 3.1,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 2460,
+      "leader": "Golda Meir",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 8.6,
+      "life_expectancy": 67.8,
+      "gdp_per_capita_usd": 1020,
+      "leader": "Marcelo Caetano",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 10.2,
+      "life_expectancy": 64.3,
+      "gdp_per_capita_usd": 940,
+      "leader": "Salvador Allende",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 11.5,
+      "life_expectancy": 59.5,
+      "gdp_per_capita_usd": 470,
+      "leader": "Abdul Razak Hussein",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 48.6,
+      "life_expectancy": 70.3,
+      "gdp_per_capita_usd": 1540,
+      "leader": "Volodymyr Shcherbytsky",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 10.2,
+      "life_expectancy": 49.0,
+      "gdp_per_capita_usd": 260,
+      "leader": "Ignatius Kutu Acheampong",
+      "leader_title": "Head of State"
+    },
+    "PE": {
+      "population_millions": 14.0,
+      "life_expectancy": 54.5,
+      "gdp_per_capita_usd": 590,
+      "leader": "Juan Velasco Alvarado",
+      "leader_title": "President"
     }
   }
 }

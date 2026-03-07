@@ -333,6 +333,118 @@
       "gdp_per_capita_usd": 359,
       "leader": "Adnan Menderes",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 41.7,
+      "life_expectancy": 42.6,
+      "gdp_per_capita_usd": 72,
+      "leader": "Muhammad Ali Bogra",
+      "leader_title": "Prime Minister"
+    },
+    "BD": {
+      "population_millions": 45.4,
+      "life_expectancy": 39.5,
+      "gdp_per_capita_usd": 59,
+      "leader": "Muhammad Ali Bogra",
+      "leader_title": "Prime Minister of Pakistan"
+    },
+    "PL": {
+      "population_millions": 26.5,
+      "life_expectancy": 63.7,
+      "gdp_per_capita_usd": 300,
+      "leader": "Boleslaw Bierut",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 7.23,
+      "life_expectancy": 72.7,
+      "gdp_per_capita_usd": 1520,
+      "leader": "Tage Erlander",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 23.0,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 88,
+      "leader": "Plaek Phibunsongkhram",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 29.7,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 58,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "CO": {
+      "population_millions": 13.8,
+      "life_expectancy": 51.4,
+      "gdp_per_capita_usd": 260,
+      "leader": "Gustavo Rojas Pinilla",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 7.2,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 78,
+      "leader": "Evelyn Baring",
+      "leader_title": "Governor"
+    },
+    "SA": {
+      "population_millions": 3.4,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 340,
+      "leader": "Saud bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 1.7,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 520,
+      "leader": "Moshe Sharett",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 8.6,
+      "life_expectancy": 60.7,
+      "gdp_per_capita_usd": 280,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 6.7,
+      "life_expectancy": 56.1,
+      "gdp_per_capita_usd": 410,
+      "leader": "Carlos Ibanez del Campo",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 6.8,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 310,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "UA": {
+      "population_millions": 39.5,
+      "life_expectancy": 62.5,
+      "gdp_per_capita_usd": 700,
+      "leader": "Oleksiy Kyrychenko",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 5.7,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 200,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "PE": {
+      "population_millions": 8.5,
+      "life_expectancy": 45.7,
+      "gdp_per_capita_usd": 260,
+      "leader": "Manuel Odria",
+      "leader_title": "President"
     }
   }
 }

@@ -333,6 +333,118 @@
       "gdp_per_capita_usd": 357,
       "leader": "Adnan Menderes",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 46.5,
+      "life_expectancy": 44.5,
+      "gdp_per_capita_usd": 80,
+      "leader": "Ayub Khan",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 49.5,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 63,
+      "leader": "Ayub Khan",
+      "leader_title": "President of Pakistan"
+    },
+    "PL": {
+      "population_millions": 28.6,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 350,
+      "leader": "Wladyslaw Gomulka",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 7.45,
+      "life_expectancy": 73.6,
+      "gdp_per_capita_usd": 1780,
+      "leader": "Tage Erlander",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 25.9,
+      "life_expectancy": 52.5,
+      "gdp_per_capita_usd": 100,
+      "leader": "Sarit Thanarat",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 32.4,
+      "life_expectancy": 46.0,
+      "gdp_per_capita_usd": 66,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "CO": {
+      "population_millions": 15.5,
+      "life_expectancy": 54.2,
+      "gdp_per_capita_usd": 300,
+      "leader": "Alberto Lleras Camargo",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 8.3,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 91,
+      "leader": "Evelyn Baring",
+      "leader_title": "Governor"
+    },
+    "SA": {
+      "population_millions": 3.8,
+      "life_expectancy": 42.1,
+      "gdp_per_capita_usd": 410,
+      "leader": "Saud bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 2.0,
+      "life_expectancy": 68.6,
+      "gdp_per_capita_usd": 700,
+      "leader": "David Ben-Gurion",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 8.8,
+      "life_expectancy": 62.3,
+      "gdp_per_capita_usd": 340,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 7.4,
+      "life_expectancy": 57.9,
+      "gdp_per_capita_usd": 450,
+      "leader": "Jorge Alessandri",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 7.6,
+      "life_expectancy": 52.5,
+      "gdp_per_capita_usd": 310,
+      "leader": "Tunku Abdul Rahman",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 42.2,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 840,
+      "leader": "Oleksiy Kyrychenko",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 6.5,
+      "life_expectancy": 44.3,
+      "gdp_per_capita_usd": 230,
+      "leader": "Kwame Nkrumah",
+      "leader_title": "Prime Minister"
+    },
+    "PE": {
+      "population_millions": 9.5,
+      "life_expectancy": 47.7,
+      "gdp_per_capita_usd": 295,
+      "leader": "Manuel Prado Ugarteche",
+      "leader_title": "President"
     }
   }
 }

@@ -337,6 +337,118 @@
       "gdp_per_capita_usd": 2826,
       "leader": "Suleyman Demirel",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 115.2,
+      "life_expectancy": 63.0,
+      "gdp_per_capita_usd": 455,
+      "leader": "Nawaz Sharif",
+      "leader_title": "Prime Minister"
+    },
+    "BD": {
+      "population_millions": 111.5,
+      "life_expectancy": 60.6,
+      "gdp_per_capita_usd": 280,
+      "leader": "Khaleda Zia",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 38.4,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 2390,
+      "leader": "Lech Walesa",
+      "leader_title": "President"
+    },
+    "SE": {
+      "population_millions": 8.67,
+      "life_expectancy": 78.0,
+      "gdp_per_capita_usd": 29100,
+      "leader": "Carl Bildt",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 58.6,
+      "life_expectancy": 68.8,
+      "gdp_per_capita_usd": 1891,
+      "leader": "Chuan Leekpai",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 69.2,
+      "life_expectancy": 67.5,
+      "gdp_per_capita_usd": 138,
+      "leader": "Le Duc Anh",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 37.1,
+      "life_expectancy": 70.9,
+      "gdp_per_capita_usd": 1622,
+      "leader": "Cesar Gaviria",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 30.0,
+      "life_expectancy": 57.8,
+      "gdp_per_capita_usd": 345,
+      "leader": "Daniel arap Moi",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 17.3,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 7700,
+      "leader": "Fahd bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 5.1,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 13260,
+      "leader": "Yitzhak Rabin",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 10.0,
+      "life_expectancy": 74.6,
+      "gdp_per_capita_usd": 9140,
+      "leader": "Anibal Cavaco Silva",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 13.6,
+      "life_expectancy": 72.8,
+      "gdp_per_capita_usd": 3230,
+      "leader": "Patricio Aylwin",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 19.1,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 3160,
+      "leader": "Mahathir Mohamad",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 52.1,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 1430,
+      "leader": "Leonid Kravchuk",
+      "leader_title": "President"
+    },
+    "GH": {
+      "population_millions": 16.2,
+      "life_expectancy": 55.6,
+      "gdp_per_capita_usd": 400,
+      "leader": "Jerry Rawlings",
+      "leader_title": "President"
+    },
+    "PE": {
+      "population_millions": 21.9,
+      "life_expectancy": 64.5,
+      "gdp_per_capita_usd": 1050,
+      "leader": "Alberto Fujimori",
+      "leader_title": "President"
     }
   }
 }

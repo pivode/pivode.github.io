@@ -332,6 +332,118 @@
       "gdp_per_capita_usd": 3558,
       "leader": "Bulent Ecevit",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 151.5,
+      "life_expectancy": 65.4,
+      "gdp_per_capita_usd": 483,
+      "leader": "Pervez Musharraf",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 133.5,
+      "life_expectancy": 66.3,
+      "gdp_per_capita_usd": 378,
+      "leader": "Khaleda Zia",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 38.6,
+      "life_expectancy": 74.3,
+      "gdp_per_capita_usd": 5184,
+      "leader": "Aleksander Kwasniewski",
+      "leader_title": "President"
+    },
+    "SE": {
+      "population_millions": 8.94,
+      "life_expectancy": 80.0,
+      "gdp_per_capita_usd": 27650,
+      "leader": "Goran Persson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 63.5,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 2075,
+      "leader": "Thaksin Shinawatra",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 80.0,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 434,
+      "leader": "Tran Duc Luong",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 42.1,
+      "life_expectancy": 72.9,
+      "gdp_per_capita_usd": 2358,
+      "leader": "Alvaro Uribe",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 38.5,
+      "life_expectancy": 52.5,
+      "gdp_per_capita_usd": 413,
+      "leader": "Mwai Kibaki",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 22.6,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 8530,
+      "leader": "Fahd bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 6.6,
+      "life_expectancy": 79.5,
+      "gdp_per_capita_usd": 18400,
+      "leader": "Ariel Sharon",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 10.4,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 12430,
+      "leader": "Jose Manuel Barroso",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 15.6,
+      "life_expectancy": 76.6,
+      "gdp_per_capita_usd": 4340,
+      "leader": "Ricardo Lagos",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 24.0,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 3820,
+      "leader": "Mahathir Mohamad",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 48.5,
+      "life_expectancy": 68.1,
+      "gdp_per_capita_usd": 879,
+      "leader": "Leonid Kuchma",
+      "leader_title": "President"
+    },
+    "GH": {
+      "population_millions": 20.6,
+      "life_expectancy": 58.4,
+      "gdp_per_capita_usd": 305,
+      "leader": "John Kufuor",
+      "leader_title": "President"
+    },
+    "PE": {
+      "population_millions": 26.3,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 1690,
+      "leader": "Alejandro Toledo",
+      "leader_title": "President"
     }
   }
 }

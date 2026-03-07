@@ -112,6 +112,46 @@
       "code": "CA",
       "name": "Canada",
       "flag": "🇨🇦"
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "flag": "🇸🇦"
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "flag": "🇮🇱"
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "flag": "🇵🇹"
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "flag": "🇨🇱"
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "flag": "🇲🇾"
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "flag": "🇺🇦"
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "flag": "🇬🇭"
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "flag": "🇵🇪"
     }
   ]
 }

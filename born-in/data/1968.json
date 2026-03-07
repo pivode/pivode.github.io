@@ -336,6 +336,118 @@
       "gdp_per_capita_usd": 686,
       "leader": "Suleyman Demirel",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 63.2,
+      "life_expectancy": 49.8,
+      "gdp_per_capita_usd": 128,
+      "leader": "Ayub Khan",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 62.9,
+      "life_expectancy": 47.4,
+      "gdp_per_capita_usd": 85,
+      "leader": "Ayub Khan",
+      "leader_title": "President of Pakistan"
+    },
+    "PL": {
+      "population_millions": 32.3,
+      "life_expectancy": 69.2,
+      "gdp_per_capita_usd": 535,
+      "leader": "Wladyslaw Gomulka",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 7.98,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 3250,
+      "leader": "Tage Erlander",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 35.5,
+      "life_expectancy": 58.2,
+      "gdp_per_capita_usd": 178,
+      "leader": "Thanom Kittikachorn",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 41.6,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 86,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "CO": {
+      "population_millions": 21.5,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 430,
+      "leader": "Carlos Lleras Restrepo",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 11.8,
+      "life_expectancy": 49.0,
+      "gdp_per_capita_usd": 135,
+      "leader": "Jomo Kenyatta",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 5.4,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 720,
+      "leader": "Faisal bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 2.8,
+      "life_expectancy": 72.2,
+      "gdp_per_capita_usd": 1600,
+      "leader": "Levi Eshkol",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 8.7,
+      "life_expectancy": 66.2,
+      "gdp_per_capita_usd": 660,
+      "leader": "Marcelo Caetano",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 9.4,
+      "life_expectancy": 62.5,
+      "gdp_per_capita_usd": 720,
+      "leader": "Eduardo Frei Montalva",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 10.3,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 440,
+      "leader": "Tunku Abdul Rahman",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 47.1,
+      "life_expectancy": 70.4,
+      "gdp_per_capita_usd": 1300,
+      "leader": "Petro Shelest",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 9.0,
+      "life_expectancy": 47.6,
+      "gdp_per_capita_usd": 255,
+      "leader": "Joseph Arthur Ankrah",
+      "leader_title": "Head of State"
+    },
+    "PE": {
+      "population_millions": 12.6,
+      "life_expectancy": 52.7,
+      "gdp_per_capita_usd": 500,
+      "leader": "Juan Velasco Alvarado",
+      "leader_title": "President"
     }
   }
 }

@@ -311,6 +311,118 @@
       "gdp_per_capita_usd": 10444,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 173.2,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 1019,
+      "leader": "Asif Ali Zardari",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 144.6,
+      "life_expectancy": 69.4,
+      "gdp_per_capita_usd": 571,
+      "leader": "Fakhruddin Ahmed",
+      "leader_title": "Chief Adviser"
+    },
+    "PL": {
+      "population_millions": 38.5,
+      "life_expectancy": 75.6,
+      "gdp_per_capita_usd": 13886,
+      "leader": "Lech Kaczynski",
+      "leader_title": "President"
+    },
+    "SE": {
+      "population_millions": 9.22,
+      "life_expectancy": 81.2,
+      "gdp_per_capita_usd": 52800,
+      "leader": "Fredrik Reinfeldt",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 65.6,
+      "life_expectancy": 72.6,
+      "gdp_per_capita_usd": 4115,
+      "leader": "Abhisit Vejjajiva",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 86.2,
+      "life_expectancy": 73.9,
+      "gdp_per_capita_usd": 1024,
+      "leader": "Nguyen Minh Triet",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 44.5,
+      "life_expectancy": 74.1,
+      "gdp_per_capita_usd": 5433,
+      "leader": "Alvaro Uribe",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 43.2,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 859,
+      "leader": "Mwai Kibaki",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 26.2,
+      "life_expectancy": 73.0,
+      "gdp_per_capita_usd": 19110,
+      "leader": "Abdullah bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 7.3,
+      "life_expectancy": 81.2,
+      "gdp_per_capita_usd": 28500,
+      "leader": "Ehud Olmert",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 10.6,
+      "life_expectancy": 79.4,
+      "gdp_per_capita_usd": 23820,
+      "leader": "Jose Socrates",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 16.7,
+      "life_expectancy": 78.4,
+      "gdp_per_capita_usd": 10710,
+      "leader": "Michelle Bachelet",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 27.1,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 8460,
+      "leader": "Abdullah Ahmad Badawi",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 46.1,
+      "life_expectancy": 68.7,
+      "gdp_per_capita_usd": 3891,
+      "leader": "Viktor Yushchenko",
+      "leader_title": "President"
+    },
+    "GH": {
+      "population_millions": 23.8,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 820,
+      "leader": "John Kufuor",
+      "leader_title": "President"
+    },
+    "PE": {
+      "population_millions": 28.6,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 4210,
+      "leader": "Alan Garcia",
+      "leader_title": "President"
     }
   }
 }

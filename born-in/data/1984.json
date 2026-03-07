@@ -336,6 +336,118 @@
       "gdp_per_capita_usd": 1168,
       "leader": "Turgut Ozal",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 88.9,
+      "life_expectancy": 59.5,
+      "gdp_per_capita_usd": 389,
+      "leader": "Muhammad Zia-ul-Haq",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 92.3,
+      "life_expectancy": 55.8,
+      "gdp_per_capita_usd": 194,
+      "leader": "Hussain Muhammad Ershad",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 36.9,
+      "life_expectancy": 70.5,
+      "gdp_per_capita_usd": 1080,
+      "leader": "Wojciech Jaruzelski",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 8.34,
+      "life_expectancy": 77.0,
+      "gdp_per_capita_usd": 11850,
+      "leader": "Olof Palme",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 52.3,
+      "life_expectancy": 65.7,
+      "gdp_per_capita_usd": 802,
+      "leader": "Prem Tinsulanonda",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 58.9,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 127,
+      "leader": "Truong Chinh",
+      "leader_title": "Chairman of State Council"
+    },
+    "CO": {
+      "population_millions": 32.3,
+      "life_expectancy": 68.6,
+      "gdp_per_capita_usd": 1420,
+      "leader": "Belisario Betancur",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 22.3,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 355,
+      "leader": "Daniel arap Moi",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 12.0,
+      "life_expectancy": 57.9,
+      "gdp_per_capita_usd": 8780,
+      "leader": "Fahd bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 4.2,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 5960,
+      "leader": "Shimon Peres",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 10.0,
+      "life_expectancy": 72.2,
+      "gdp_per_capita_usd": 2380,
+      "leader": "Mario Soares",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 12.1,
+      "life_expectancy": 69.6,
+      "gdp_per_capita_usd": 1620,
+      "leader": "Augusto Pinochet",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 15.7,
+      "life_expectancy": 65.5,
+      "gdp_per_capita_usd": 2210,
+      "leader": "Mahathir Mohamad",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 51.0,
+      "life_expectancy": 68.6,
+      "gdp_per_capita_usd": 2460,
+      "leader": "Volodymyr Shcherbytsky",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 13.8,
+      "life_expectancy": 53.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Jerry Rawlings",
+      "leader_title": "Head of State"
+    },
+    "PE": {
+      "population_millions": 18.5,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 990,
+      "leader": "Fernando Belaunde Terry",
+      "leader_title": "President"
     }
   }
 }

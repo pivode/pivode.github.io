@@ -340,6 +340,118 @@
       "gdp_per_capita_usd": 1154,
       "leader": "Suleyman Demirel",
       "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 66.9,
+      "life_expectancy": 54.0,
+      "gdp_per_capita_usd": 218,
+      "leader": "Zulfikar Ali Bhutto",
+      "leader_title": "Prime Minister"
+    },
+    "BD": {
+      "population_millions": 74.9,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 130,
+      "leader": "Khondaker Mostaq Ahmad",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 34.3,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 950,
+      "leader": "Edward Gierek",
+      "leader_title": "First Secretary"
+    },
+    "SE": {
+      "population_millions": 8.22,
+      "life_expectancy": 76.0,
+      "gdp_per_capita_usd": 8700,
+      "leader": "Olof Palme",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 43.3,
+      "life_expectancy": 61.9,
+      "gdp_per_capita_usd": 372,
+      "leader": "Kukrit Pramoj",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 48.0,
+      "life_expectancy": 56.0,
+      "gdp_per_capita_usd": 98,
+      "leader": "Ton Duc Thang",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 26.3,
+      "life_expectancy": 64.5,
+      "gdp_per_capita_usd": 720,
+      "leader": "Alfonso Lopez Michelsen",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 15.5,
+      "life_expectancy": 52.5,
+      "gdp_per_capita_usd": 252,
+      "leader": "Jomo Kenyatta",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 7.3,
+      "life_expectancy": 51.6,
+      "gdp_per_capita_usd": 4650,
+      "leader": "Khalid bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 3.4,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 3530,
+      "leader": "Yitzhak Rabin",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 9.1,
+      "life_expectancy": 69.0,
+      "gdp_per_capita_usd": 1670,
+      "leader": "Vasco Goncalves",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 10.7,
+      "life_expectancy": 65.7,
+      "gdp_per_capita_usd": 870,
+      "leader": "Augusto Pinochet",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 12.5,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 780,
+      "leader": "Abdul Razak Hussein",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 49.5,
+      "life_expectancy": 69.7,
+      "gdp_per_capita_usd": 1780,
+      "leader": "Volodymyr Shcherbytsky",
+      "leader_title": "First Secretary"
+    },
+    "GH": {
+      "population_millions": 11.1,
+      "life_expectancy": 50.0,
+      "gdp_per_capita_usd": 370,
+      "leader": "Ignatius Kutu Acheampong",
+      "leader_title": "Head of State"
+    },
+    "PE": {
+      "population_millions": 15.1,
+      "life_expectancy": 56.0,
+      "gdp_per_capita_usd": 910,
+      "leader": "Francisco Morales Bermudez",
+      "leader_title": "President"
     }
   }
 }
