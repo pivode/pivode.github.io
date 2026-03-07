@@ -2839,6 +2839,15 @@ const TODAY = {
     PK:67.3, BD:72.4, PL:77.5, SE:83.1, TH:78.7, VN:75.4, CO:77.3, KE:61.4,
     SA:77.6, IL:82.6, PT:81.1, CL:80.2, MY:76.2, UA:73.6, GH:64.1, PE:76.5,
   },
+  // 2024 nominal GDP per capita in USD (IMF/Worldometers)
+  gdp_per_capita: {
+    US:85810, GB:52637, IN:2697, DE:55800, JP:32476, FR:46150, BR:10280,
+    CN:13303, AU:64407, CA:54283, RU:14889, MX:14158, KR:36239, IE:107316,
+    IT:40226, ES:35297, NL:68219, ID:4925, TR:15473, NG:807,
+    ZA:6253, AR:13858, PH:3985, EG:3338,
+    PK:1485, BD:2593, PL:25023, SE:57723, TH:7345, VN:4717, CO:7914, KE:2206,
+    SA:35057, IL:54177, PT:28844, CL:16710, MY:11867, UA:5389, GH:2406, PE:8452,
+  },
   home_salary_ratio: (420000 / 80000).toFixed(1),
   // Current US prices (2024 averages, BLS/USDA/industry sources)
   prices: {
@@ -3430,34 +3439,33 @@ function renderActII(year, countryCode, data) {
   const countryGdp    = countryData?.gdp_per_capita_usd;
   const usGdp         = data.economy?.us_gdp_per_capita_usd;
 
-  // Cross-country comparison card
+  // Then vs. now GDP comparison card
   let gdpCompareCard = '';
-  if (!isUS && countryGdp && usGdp) {
-    const ratio = (countryGdp / usGdp * 100).toFixed(0);
-    const compDesc = countryGdp < usGdp
-      ? `${country.name} GDP per capita was ${(100 - ratio)}% below the US in ${year}`
-      : `${country.name} GDP per capita was ${(ratio - 100)}% above the US in ${year}`;
-    const incomeMultiple = Math.round(usGdp / countryGdp);
-    const gdpCommentary = countryGdp < usGdp
-      ? (incomeMultiple >= 10
-        ? `A ${incomeMultiple}x gap. A dollar bought very different things in ${country.name} versus the US.`
-        : incomeMultiple >= 3
-        ? `Americans earned about ${incomeMultiple}x more on paper. What that actually meant for daily life is a different story.`
-        : `A gap, but a narrower one than many would expect.`)
-      : `${country.name} was already among the world's wealthiest nations per person.`;
+  const todayGdp = TODAY.gdp_per_capita[countryCode];
+  if (countryGdp && todayGdp) {
+    const growthMultiple = (todayGdp / countryGdp).toFixed(1);
+    const displayName = displayCountryName(country, year);
+    const gdpCommentary = growthMultiple >= 50
+      ? `A ${Math.round(growthMultiple)}x increase. ${displayName} has been transformed.`
+      : growthMultiple >= 10
+      ? `${Math.round(growthMultiple)}x growth in a generation. A fundamentally different economy.`
+      : growthMultiple >= 3
+      ? `${growthMultiple}x growth since ${year}. Steady and significant.`
+      : growthMultiple >= 1.5
+      ? `Modest growth in real terms. The world economy shifted around ${displayName}.`
+      : `GDP per capita has barely budged in nominal terms. A sobering picture.`;
     gdpCompareCard = patternB({
-      eyebrow: 'Economic Comparison',
-      headline: `${country.name} vs. the United States`,
+      eyebrow: `${displayName} Economy`,
+      headline: 'Then vs. now',
       left: {
-        label: `${country.flag} ${country.name}`,
+        label: `${country.flag} ${year}`,
         value: formatCurrency(countryGdp),
-        desc: `GDP per capita in ${year}`,
+        desc: `GDP per capita when you were born`,
       },
       right: {
-        label: '🇺🇸 United States',
-        labelMuted: true,
-        value: formatCurrency(usGdp),
-        desc: compDesc,
+        label: `${country.flag} Today`,
+        value: formatCurrency(todayGdp),
+        desc: `${Math.round(growthMultiple)}x growth since ${year}`,
       },
       commentary: gdpCommentary,
     });
@@ -3514,11 +3522,11 @@ function renderActII(year, countryCode, data) {
           countUpPrefix: '$',
           countUpAbbrev: true,
         }) : patternA({
-          eyebrow: `${country.name} Economy`,
+          eyebrow: `${displayCountryName(country, year)} Economy`,
           headline: `What people earned`,
           number: countryGdp ? formatCurrency(countryGdp) : '-',
-          unit: `${country.name} GDP per capita`,
-          context: `The US was at ${usGdp ? formatCurrency(usGdp) : '-'} the same year.`,
+          unit: `${displayCountryName(country, year)} GDP per capita`,
+          context: '',
           countUp: countryGdp,
           countUpPrefix: '$',
           countUpAbbrev: true,
