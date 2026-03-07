@@ -3293,8 +3293,8 @@ function renderActI(year, countryCode, data) {
   const co2Pct = co2Then ? Math.round((co2Gain / co2Then) * 100) : 0;
   const co2Commentary = co2Then
     ? (co2Pct > 30
-      ? `The atmosphere has ${co2Pct}% more CO\u2082 than the day you were born. Most of that increase happened in your lifetime.`
-      : `CO\u2082 has climbed ${co2Pct}% since your birth. The Keeling Curve has never gone down.`)
+      ? `The air has ${co2Pct}% more CO\u2082 now than the day you took your first breath.`
+      : `CO\u2082 has climbed ${co2Pct}% since ${year}. It's one of the few numbers that only goes up.`)
     : '';
   const co2Card = co2Then ? patternB({
     eyebrow: 'Atmosphere',
@@ -3331,6 +3331,7 @@ function renderActI(year, countryCode, data) {
   return `
     <div class="act" id="act-1">
       <p class="act-label">Act I</p>
+      <p class="act-subtitle">The World Stage</p>
       <div class="act-sections">
 
         <div>
@@ -3349,7 +3350,7 @@ function renderActI(year, countryCode, data) {
 
         ${patternF({
           eyebrow: 'World Leaders',
-          headline: 'Who held the reins',
+          headline: 'Who was in charge',
           stats: [
             {
               label: `${displayCountryName(country, year)} ${data.countries?.[countryCode]?.leader_title || leaderInfo.title}`,
@@ -3439,10 +3440,10 @@ function renderActII(year, countryCode, data) {
     const incomeMultiple = Math.round(usGdp / countryGdp);
     const gdpCommentary = countryGdp < usGdp
       ? (incomeMultiple >= 10
-        ? `The average American earned roughly ${incomeMultiple}x more. A reflection of the global economy at the time - not the full story of growing up in ${country.name}.`
+        ? `A ${incomeMultiple}x gap. A dollar bought very different things in ${country.name} versus the US.`
         : incomeMultiple >= 3
-        ? `Americans earned about ${incomeMultiple}x more on paper, though cost of living differed enormously.`
-        : `A meaningful gap, though the numbers don't capture differences in cost of living and quality of life.`)
+        ? `Americans earned about ${incomeMultiple}x more on paper. What that actually meant for daily life is a different story.`
+        : `A gap, but a narrower one than many would expect.`)
       : `${country.name} was already among the world's wealthiest nations per person.`;
     gdpCompareCard = patternB({
       eyebrow: 'Economic Comparison',
@@ -3472,12 +3473,12 @@ function renderActII(year, countryCode, data) {
     const diffAbs = Math.abs(diff);
     const aboveBelow = diff > 0 ? `${diffAbs} years above the global average` : `${diffAbs} years below the global average`;
     const lifeCommentary = diff > 5
-      ? `Well above the global average. Healthcare and living standards in ${country.name} were ahead of most of the world.`
+      ? `Well above the global average. ${country.name} was ahead of most of the world.`
       : diff > 0
-      ? `Slightly above the world average. Not bad, but far from the longest-living nations.`
+      ? `Slightly above the world average at the time.`
       : diff > -5
-      ? `Below the global average at the time - but ${country.name} has made real strides since.`
-      : `Well below the global average in ${year}. The gains since then tell a story of resilience.`;
+      ? `Below the global average then. The gap has narrowed since.`
+      : `Well below the global average in ${year}. Life expectancy in ${country.name} has risen substantially since.`;
     lifeExpCard = patternB({
       eyebrow: 'Health',
       headline: 'How long people lived',
@@ -3499,6 +3500,7 @@ function renderActII(year, countryCode, data) {
   return `
     <div class="act" id="act-2">
       <p class="act-label">Act II</p>
+      <p class="act-subtitle">What Things Cost</p>
       <div class="act-sections">
 
         ${isUS ? patternA({
@@ -3513,7 +3515,7 @@ function renderActII(year, countryCode, data) {
           countUpAbbrev: true,
         }) : patternA({
           eyebrow: `${country.name} Economy`,
-          headline: `What the economy looked like`,
+          headline: `What people earned`,
           number: countryGdp ? formatCurrency(countryGdp) : '-',
           unit: `${country.name} GDP per capita`,
           context: `The US was at ${usGdp ? formatCurrency(usGdp) : '-'} the same year.`,
@@ -3537,7 +3539,7 @@ function renderActII(year, countryCode, data) {
             desc: verdictDesc,
           },
           commentary: incomeAdj > TODAY.us_median_income
-            ? 'Your parents\' generation had more buying power on paper. But they didn\'t have smartphones, streaming, or same-day delivery.'
+            ? 'Your parents\' generation had more purchasing power per dollar. What they couldn\'t buy was an answer to any question in three seconds.'
             : 'Wages have grown, but housing, healthcare, and education have grown faster. The math isn\'t in your favor.',
         }) : ''}
 
@@ -3626,6 +3628,7 @@ function renderActIII(year, countryCode, data) {
   return `
     <div class="act" id="act-3">
       <p class="act-label">Act III</p>
+      <p class="act-subtitle">What Was Playing</p>
       <div class="act-sections">
 
         ${localMusic && localMusicLabel ? patternC({
@@ -3704,12 +3707,13 @@ function renderActIV(year, data) {
   return `
     <div class="act" id="act-4">
       <p class="act-label">Act IV</p>
+      <p class="act-subtitle">The State of Technology</p>
       <div class="act-sections">
 
         <div class="pattern-a" data-reveal>
           <p class="eyebrow">Technology Milestone</p>
-          <p class="section-headline">State of the machine</p>
-          <p class="focal-context" style="font-size:17px; color: var(--text-primary); max-width:600px; line-height:1.6;">${escHtml(milestone)}</p>
+          <p class="section-headline">Where technology stood</p>
+          <p class="focal-context focal-context--prominent">${escHtml(milestone)}</p>
         </div>
 
         ${patternD({
@@ -3783,6 +3787,7 @@ function renderActV(year, countryCode, data) {
   return `
     <div class="act" id="act-5">
       <p class="act-label">Act V</p>
+      <p class="act-subtitle">Your Place in Time</p>
       <div class="act-sections">
 
         ${countryStats.length > 0 ? patternF({
@@ -3790,6 +3795,19 @@ function renderActV(year, countryCode, data) {
           headline: `Your country the year you arrived`,
           stats: countryStats,
         }) : ''}
+
+        ${temporalShockLine(year) ? `<p class="temporal-shock">${escHtml(temporalShockLine(year))}</p>` : ''}
+
+        ${births.length > 0 ? `<div class="pattern-a" data-reveal>
+          <p class="eyebrow">Notable Births</p>
+          <p class="section-headline">Born the same year as you</p>
+          <p class="notable-births-list">
+            ${births.map((b, i) => {
+              const sep = i < births.length - 1 ? '<span class="birth-sep">·</span>' : '';
+              return `<span>${escHtml(b.name)}</span>${sep}`;
+            }).join('')}
+          </p>
+        </div>` : ''}
 
         ${patternB({
           eyebrow: 'Life Expectancy',
@@ -3810,34 +3828,21 @@ function renderActV(year, countryCode, data) {
               ? `That's ${(lifeExpTodayLocal - lifeExpThen).toFixed(0)} more years of life gained in a single generation. Vaccines, antibiotics, and cleaner water changed everything.`
               : (lifeExpTodayLocal - lifeExpThen) > 3
               ? `${(lifeExpTodayLocal - lifeExpThen).toFixed(0)} years of progress. Steady gains from better medicine, nutrition, and public health.`
-              : 'Progress has slowed in recent decades. The easy wins are behind us.'
+              : 'A small gain, but every year counts.'
             : null,
         })}
 
-        ${births.length > 0 ? `<div class="pattern-a" data-reveal>
-          <p class="eyebrow">Notable Births</p>
-          <p class="section-headline">Born the same year as you</p>
-          <p class="notable-births-list">
-            ${births.map((b, i) => {
-              const sep = i < births.length - 1 ? '<span class="birth-sep">·</span>' : '';
-              return `<span>${escHtml(b.name)}</span>${sep}`;
-            }).join('')}
-          </p>
-        </div>` : ''}
-
         ${patternA({
           eyebrow: 'Computing Power',
-          headline: 'The machines have come a long way',
+          headline: 'How much faster the machines have gotten',
           number: multiplier,
           unit: 'times more powerful',
-          context: `In your lifetime, computing power has multiplied by ${multiplier}× - roughly doubling every 2 years (Moore's Law).`,
+          context: `Computing power has roughly doubled every two years since you were born. That adds up to ${multiplier}×.`,
           comparison: `${doublings} doublings since ${year}`,
           countUp: null,
         })}
 
         ${patternMilestones(year)}
-
-        ${temporalShockLine(year) ? `<p class="temporal-shock">${escHtml(temporalShockLine(year))}</p>` : ''}
 
       </div>
     </div>
@@ -3890,7 +3895,7 @@ function patternMilestones(year) {
   return `
     <div class="pattern-a" data-reveal>
       <p class="eyebrow">Milestone Years</p>
-      <p class="section-headline">Dates to look forward to</p>
+      <p class="section-headline">Your milestone birthdays</p>
       <p class="milestone-ages">${parts}</p>
     </div>
   `;
@@ -3928,7 +3933,7 @@ function socialMediaSection(year) {
   return `
     <div class="pattern-a" data-reveal>
       <p class="eyebrow">Social Media Timeline</p>
-      <p class="section-headline">The platforms that defined the internet, relative to you</p>
+      <p class="section-headline">How old were you when these launched?</p>
       <div class="social-timeline">${rows}</div>
     </div>
   `;
@@ -4012,13 +4017,13 @@ function renderOutro(year, countryCode, data) {
   // Closing line by decade
   const decade = Math.floor(year / 10) * 10;
   const closingLines = {
-    1950: "You've witnessed more change than almost any generation in human history.",
-    1960: "You've witnessed more change than almost any generation in human history.",
-    1970: "You grew up as the world shifted from analogue certainty to digital possibility.",
+    1950: "The world you were born into would be unrecognizable today. Television was new, air travel was rare, and your parents had never heard the word 'computer.'",
+    1960: "You arrived in a decade of upheaval. Civil rights, the space race, a world on the brink. And somehow, here you are.",
+    1970: "You grew up in the last decade where being unreachable was normal. No pagers, no cell phones, just the world right in front of you.",
     1980: "You're part of the last generation that remembers a world without the internet.",
     1990: "You came of age as the internet rewired everything - and you were young enough to adapt.",
     2000: "You've never known a world without Google. The smartphone arrived in your childhood.",
-    2010: "You've never known a world without smartphones. You and the internet grew up together.",
+    2010: "You've never known a world without smartphones. The internet was already old when you arrived, but you're the first generation raised inside it.",
   };
   const closing = closingLines[decade] || "You've seen the world change in ways few generations could have imagined.";
 
@@ -4043,8 +4048,8 @@ function renderVoiceCard(year) {
   return `
     <div class="voice-then-now" data-reveal>
       <p class="voice-then">In ${year}, ${then}.</p>
-      <p class="voice-now">In 2026, AI turns any text into a human voice in seconds.</p>
-      <a href="https://try.elevenlabs.io/pivode" class="voice-cta" target="_blank" rel="noopener">Try ElevenLabs <span class="voice-cta-arrow">\u2192</span></a>
+      <p class="voice-now">Today, you can clone your own voice with a few minutes of audio.</p>
+      <a href="https://try.elevenlabs.io/pivode" class="voice-cta" target="_blank" rel="noopener">Hear what that sounds like <span class="voice-cta-arrow">\u2192</span></a>
     </div>
   `;
 }
@@ -4398,6 +4403,11 @@ $saveCardBtn.addEventListener('click', () => {
 });
 
 $newYearBtn.addEventListener('click', () => resetToLanding());
+
+const $bottomNewYearBtn = document.getElementById('bottom-new-year-btn');
+if ($bottomNewYearBtn) {
+  $bottomNewYearBtn.addEventListener('click', resetToLanding);
+}
 
 $errorBackBtn.addEventListener('click', () => resetToLanding());
 

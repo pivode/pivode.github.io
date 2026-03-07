@@ -12,6 +12,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The World When You Were Born">
   <meta name="twitter:description" content="Discover what the world looked like the year you were born.">
+  <meta name="theme-color" content="#080810">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://pivode.github.io/born-in/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,13 +38,14 @@
       <form id="input-form" class="input-row" novalidate>
         <div class="input-group">
           <label for="year-input" class="input-label">Birth Year</label>
+          <span class="input-hint">1950 - 2010</span>
           <input
             id="year-input"
-            type="number"
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]*"
             class="year-input"
             placeholder="1987"
-            min="1950"
-            max="2010"
             autocomplete="off"
           >
           <span id="year-error" class="input-error" role="alert"></span>
@@ -71,6 +74,7 @@
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+          <span class="submit-text">Explore</span>
         </button>
       </form>
     </div>
@@ -145,12 +149,19 @@
         <a href="https://pivode.github.io" class="explore-card" target="_blank" rel="noopener">
           <span class="explore-card-icon">📊</span>
           <span class="explore-card-text">
-            <span class="explore-card-title">Browse our datasets</span>
-            <span class="explore-card-sub">Cleaned data on football, restaurants, flights, and more</span>
+            <span class="explore-card-title">More from Pivode</span>
+            <span class="explore-card-sub">Interactive experiences and datasets built from real-world data</span>
           </span>
           <span class="explore-card-arrow">→</span>
         </a>
       </div>
+    </div>
+
+    <!-- TRY ANOTHER YEAR (bottom CTA) -->
+    <div class="explore-more" style="text-align: center;">
+      <button id="bottom-new-year-btn" class="header-btn" style="font-size: 14px; padding: 12px 24px; border-radius: 8px;">
+        Try another year
+      </button>
     </div>
 
     <!-- FOOTER -->
