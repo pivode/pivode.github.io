@@ -3439,33 +3439,38 @@ function renderActII(year, countryCode, data) {
   const countryGdp    = countryData?.gdp_per_capita_usd;
   const usGdp         = data.economy?.us_gdp_per_capita_usd;
 
-  // Then vs. now GDP comparison card
+  // Then vs. now GDP comparison card (inflation-adjusted)
   let gdpCompareCard = '';
   const todayGdp = TODAY.gdp_per_capita[countryCode];
+  const cpiMultiplier = CPI_TO_2024[year] || 1;
   if (countryGdp && todayGdp) {
-    const growthMultiple = (todayGdp / countryGdp).toFixed(1);
+    // Adjust birth-year GDP to 2024 dollars using US CPI (all figures are in USD)
+    const adjustedGdp = Math.round(countryGdp * cpiMultiplier);
+    const realGrowth = (todayGdp / adjustedGdp).toFixed(1);
     const displayName = displayCountryName(country, year);
-    const gdpCommentary = growthMultiple >= 50
-      ? `A ${Math.round(growthMultiple)}x increase. ${displayName} has been transformed.`
-      : growthMultiple >= 10
-      ? `${Math.round(growthMultiple)}x growth in a generation. A fundamentally different economy.`
-      : growthMultiple >= 3
-      ? `${growthMultiple}x growth since ${year}. Steady and significant.`
-      : growthMultiple >= 1.5
-      ? `Modest growth in real terms. The world economy shifted around ${displayName}.`
-      : `GDP per capita has barely budged in nominal terms. A sobering picture.`;
+    const gdpCommentary = realGrowth >= 20
+      ? `A ${Math.round(realGrowth)}x increase in real terms. ${displayName} has been transformed.`
+      : realGrowth >= 5
+      ? `${Math.round(realGrowth)}x real growth in a generation. A fundamentally different economy.`
+      : realGrowth >= 2
+      ? `${realGrowth}x real growth since ${year}. Steady and significant.`
+      : realGrowth >= 1.2
+      ? `Modest real growth since ${year}. The economy grew, but not dramatically.`
+      : realGrowth >= 0.8
+      ? `Roughly flat in real terms. ${displayName}'s economy has held steady but not surged.`
+      : `GDP per capita has actually fallen in real terms. A difficult period for ${displayName}.`;
     gdpCompareCard = patternB({
       eyebrow: `${displayName} Economy`,
       headline: 'Then vs. now',
       left: {
         label: `${country.flag} ${year}`,
-        value: formatCurrency(countryGdp),
-        desc: `GDP per capita when you were born`,
+        value: formatCurrency(adjustedGdp),
+        desc: `GDP per capita in today's dollars`,
       },
       right: {
         label: `${country.flag} Today`,
         value: formatCurrency(todayGdp),
-        desc: `${Math.round(growthMultiple)}x growth since ${year}`,
+        desc: `${realGrowth}x real growth since ${year}`,
       },
       commentary: gdpCommentary,
     });
