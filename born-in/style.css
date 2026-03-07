@@ -1496,6 +1496,29 @@ body.era-00s {
 }
 
 /* =========================================================
+   WORDS THAT DIDN'T EXIST YET
+   ========================================================= */
+
+.word-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.word-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--bg-raised);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+/* =========================================================
    FEATURE 2 + 6: MILESTONE AGES + TEMPORAL SHOCK
    ========================================================= */
 

@@ -13,6 +13,32 @@ const YEAR_MAX = 2010;
 // Years with no data (gaps): 1951, 1953
 const YEAR_GAPS = new Set([1951, 1953]);
 
+// Ancient living things - verified alive in 2026, born before the coverage range (1950-2010)
+// Sources: Guinness World Records (Jonathan), USFS Inyo NF (Methuselah), Uppsala Univ. (Old Tjikko)
+const ANCIENT_LIVING = [
+  {
+    name: 'Jonathan the tortoise',
+    born: 1832,
+    type: 'animal',
+    detail: 'a Seychelles giant tortoise living on Saint Helena island. He was already {age} years old the year you were born. He\'s still alive today at {currentAge}.',
+    stillAlive: true,
+  },
+  {
+    name: 'Methuselah',
+    born: -2832,
+    type: 'tree',
+    detail: 'a bristlecone pine in California\'s White Mountains. Its rings trace back {age} years before you were born. It\'s still standing today.',
+    stillAlive: true,
+  },
+  {
+    name: 'Old Tjikko',
+    born: -7542,
+    type: 'tree',
+    detail: 'a Norway spruce in Sweden whose root system dates back {age} years before you were born. The roots are still alive today.',
+    stillAlive: true,
+  },
+];
+
 // Feature 1 + 6: Temporal shock anchors
 const TEMPORAL_ANCHORS = [
   { year: 1903, label: 'the Wright Brothers\' first flight' },
@@ -46,6 +72,77 @@ const SOCIAL_MEDIA_TIMELINE = [
   { name: 'Snapchat',  year: 2011 },
   { name: 'TikTok',    year: 2016 },
 ];
+
+// Feature: Words that didn't exist when you were born
+// Years reflect first documented / first common usage:
+//   internet (1974 RFC 675), email (1979 OED), download (1977 Merriam-Webster),
+//   GPS (1978 - system launch), FAQ (1983 Usenet), meme (1976 Dawkins),
+//   playlist (1984 first use), streaming (1995 - internet audio/video),
+//   texting (1995 - SMS popularised), spam/email (1993 - Usenet coinage),
+//   troll/internet (1992 - OED earliest), website (1991 Berners-Lee),
+//   SUV (1988 Merriam-Webster), USB (1996 - USB 1.0 released),
+//   Bluetooth (1998 - SIG formed), WiFi (1999 - Wi-Fi Alliance),
+//   blog (1999 Merriam-Webster), viral/internet (1999 first use),
+//   PayPal (1999 - company founded), DVD (1995 - format launched),
+//   emoji (1999 - Kurita/NTT DoCoMo), smartphone (1997 - Ericsson coined term),
+//   vlog (2000 first documented), selfie (2002 - Australian forum OED record),
+//   crowdfunding (2006 - Michael Sullivan coined term), tweet/social (2006 Twitter launch),
+//   cloud computing (2006 - Eric Schmidt Google), hashtag (2007 Chris Messina),
+//   cyberbullying (2003 first documented), podcast (2004 OED),
+//   photobomb (2008 first documented), app (2008 Apple App Store),
+//   unfriend (2009 Oxford Word of the Year), catfish/internet (2010 documentary),
+//   cryptocurrency (2009 - Bitcoin launch), binge-watch (2003 OED earliest evidence),
+//   drone/consumer (2010 Parrot AR.Drone), selfie (2002), influencer (2016 Merriam-Webster),
+//   deepfake (2017 - Reddit coinage)
+const WORD_ORIGINS = [
+  { word: 'internet',              year: 1974 },
+  { word: 'download',              year: 1977 },
+  { word: 'GPS',                   year: 1978 },
+  { word: 'email',                 year: 1979 },
+  { word: 'FAQ',                   year: 1983 },
+  { word: 'playlist',              year: 1984 },
+  { word: 'SUV',                   year: 1988 },
+  { word: 'website',               year: 1991 },
+  { word: 'troll (internet)',       year: 1992 },
+  { word: 'spam (email)',           year: 1993 },
+  { word: 'DVD',                   year: 1995 },
+  { word: 'streaming',             year: 1995 },
+  { word: 'texting',               year: 1995 },
+  { word: 'USB',                   year: 1996 },
+  { word: 'smartphone',            year: 1997 },
+  { word: 'Bluetooth',             year: 1998 },
+  { word: 'blog',                  year: 1999 },
+  { word: 'emoji',                 year: 1999 },
+  { word: 'PayPal',                year: 1999 },
+  { word: 'viral (internet)',       year: 1999 },
+  { word: 'WiFi',                  year: 1999 },
+  { word: 'vlog',                  year: 2000 },
+  { word: 'selfie',                year: 2002 },
+  { word: 'binge-watch',           year: 2003 },
+  { word: 'cyberbullying',         year: 2003 },
+  { word: 'Google (as a verb)',     year: 2004 },
+  { word: 'podcast',               year: 2004 },
+  { word: 'crowdfunding',          year: 2006 },
+  { word: 'cloud computing',        year: 2006 },
+  { word: 'tweet',                 year: 2006 },
+  { word: 'hashtag',               year: 2007 },
+  { word: 'app',                   year: 2008 },
+  { word: 'photobomb',             year: 2008 },
+  { word: 'cryptocurrency',        year: 2009 },
+  { word: 'unfriend',              year: 2009 },
+  { word: 'catfish (internet)',     year: 2010 },
+  { word: 'drone (consumer)',       year: 2010 },
+  { word: 'influencer',            year: 2016 },
+  { word: 'deepfake',              year: 2017 },
+];
+
+function getWordsAfterYear(birthYear) {
+  return WORD_ORIGINS
+    .filter(w => w.year > birthYear)
+    .sort((a, b) => a.year - b.year)
+    .slice(0, 7)
+    .map(w => w.word);
+}
 
 // Feature 2: Top baby names (SSA data for US, ONS data for UK)
 const BABY_NAMES_US = {
@@ -187,6 +284,16 @@ const CO2_PPM = {
   2006: 381.90, 2007: 383.79, 2008: 385.60, 2009: 387.43, 2010: 389.90,
 };
 const CO2_TODAY = 422.5; // 2024 NOAA annual average
+
+// Population milestone sentences - threshold is the first billion ABOVE birth year population
+const POPULATION_MILESTONES = [
+  { threshold: 3, text: 'You are among the last humans who will ever know a world with fewer than 3 billion people.' },
+  { threshold: 4, text: 'You arrived in a world with fewer than 4 billion. It has more than doubled since.' },
+  { threshold: 5, text: 'You are part of the last generation born into a world under 5 billion.' },
+  { threshold: 6, text: 'The world crossed 6 billion around the time you were born. It will likely never reach 12.' },
+  { threshold: 7, text: 'You were born into a world approaching 7 billion. Population growth has begun to slow.' },
+  { threshold: 8, text: 'You arrived in a world of nearly 8 billion. Humanity may be nearing its peak population.' },
+];
 
 // Feature 3: Confirmed exoplanets (NASA Exoplanet Archive, cumulative by year-end)
 const EXOPLANETS_BY_YEAR = {
@@ -3336,7 +3443,18 @@ function renderActI(year, countryCode, data) {
     ? `<p class="birth-cohort-callout">1 in ${oneInX.toLocaleString()} people alive today was born in ${year}.</p>`
     : '';
 
-  const popEyebrow = name ? `${name}'s birth year` : 'World Population';
+  // Population milestone framing
+  const popMilestone = pop
+    ? POPULATION_MILESTONES.find(m => m.threshold > pop) || POPULATION_MILESTONES[POPULATION_MILESTONES.length - 1]
+    : null;
+  const peopleSince = pop ? (TODAY.population_billions - pop).toFixed(1) : null;
+  const popCard = pop ? patternB({
+    eyebrow: name ? `${name}'s birth year` : 'World Population',
+    headline: 'How many people shared the planet',
+    left:  { label: String(year), value: `${pop.toFixed(1)}B`, desc: 'people on Earth when you were born' },
+    right: { label: 'Today', labelMuted: true, value: `${TODAY.population_billions}B`, desc: `${peopleSince} billion more people have arrived since` },
+    commentary: popMilestone ? popMilestone.text : '',
+  }) : '';
 
   return `
     <div class="act" id="act-1">
@@ -3345,16 +3463,7 @@ function renderActI(year, countryCode, data) {
       <div class="act-sections">
 
         <div>
-          ${patternA({
-            eyebrow: popEyebrow,
-            headline: 'How many people shared the planet',
-            number: pop ? pop.toFixed(1) : '-',
-            unit: 'billion people',
-            context: popDiff ? `The world has grown by ${popDiff} billion since then.` : '',
-            comparison: `Today: ${TODAY.population_billions}B`,
-            countUp: pop,
-            countUpDecimals: 1,
-          })}
+          ${popCard}
           ${cohortCallout}
         </div>
 
@@ -3513,6 +3622,53 @@ function renderActII(year, countryCode, data) {
     });
   }
 
+  // Birth lottery card - highest vs. lowest life expectancy among all countries in the data
+  let birthLotteryCard = '';
+  {
+    const countryEntries = Object.entries(data.countries || {})
+      .filter(([code, info]) => info.life_expectancy)
+      .map(([code, info]) => ({
+        code,
+        le: info.life_expectancy,
+        countryObj: COUNTRY_MAP[code] || null,
+      }))
+      .filter(e => e.countryObj);
+    countryEntries.sort((a, b) => b.le - a.le);
+    const highest = countryEntries[0];
+    const lowest  = countryEntries[countryEntries.length - 1];
+    if (highest && lowest && highest.code !== lowest.code) {
+      const gap = (highest.le - lowest.le).toFixed(1);
+      const userIsHighest = countryCode === highest.code;
+      const userIsLowest  = countryCode === lowest.code;
+      const highestName = displayCountryName(highest.countryObj, year);
+      const lowestName  = displayCountryName(lowest.countryObj, year);
+      let lotteryCommentary;
+      if (userIsHighest) {
+        lotteryCommentary = `You were born in one of the longest-lived countries on Earth that year. A ${gap}-year gap separated you from the bottom of the table.`;
+      } else if (userIsLowest) {
+        lotteryCommentary = `A ${gap}-year gap separated ${lowestName} from the top of the table. Geography shaped life chances more than almost anything else.`;
+      } else {
+        lotteryCommentary = `A ${gap}-year gap, decided entirely by where you happened to be born. Same year, different world.`;
+      }
+      birthLotteryCard = patternB({
+        eyebrow: 'The Birth Lottery',
+        headline: 'Same year. Different world.',
+        left: {
+          label: `${highest.countryObj.flag} ${highestName}`,
+          value: `${highest.le} yrs`,
+          desc: `life expectancy at birth in ${year}`,
+        },
+        right: {
+          label: `${lowest.countryObj.flag} ${lowestName}`,
+          labelMuted: true,
+          value: `${lowest.le} yrs`,
+          desc: `life expectancy at birth in ${year}`,
+        },
+        commentary: lotteryCommentary,
+      });
+    }
+  }
+
   return `
     <div class="act" id="act-2">
       <p class="act-label">Act II</p>
@@ -3562,6 +3718,8 @@ function renderActII(year, countryCode, data) {
         ${!isUS ? gdpCompareCard : ''}
 
         ${!isUS ? lifeExpCard : ''}
+
+        ${birthLotteryCard}
 
         ${patternE({
           eyebrow: isUS ? 'Everyday Prices' : 'Meanwhile in America',
@@ -3860,6 +4018,10 @@ function renderActV(year, countryCode, data) {
 
         ${patternMilestones(year)}
 
+        ${wordsSection(year)}
+
+        ${ancientLivingSection(year)}
+
       </div>
     </div>
   `;
@@ -3888,6 +4050,31 @@ function temporalShockLine(year) {
 
   if (!bestAnchor) return null;
   return `Your birth year is closer to ${bestAnchor.label} than to today.`;
+}
+
+// ---------------------------------------------------------------------------
+// ANCIENT LIVING THING
+// ---------------------------------------------------------------------------
+
+function ancientLivingSection(year) {
+  // Pick the most emotionally resonant organism visible to this birth year.
+  // Jonathan wins every time for 1950-2010 - he is an animal with a name.
+  // Fall back to trees only if needed.
+  const candidate = ANCIENT_LIVING.find(org => org.born < year && org.stillAlive);
+  if (!candidate) return '';
+
+  const ageAtBirth  = year - candidate.born;
+  const currentAge  = CURRENT_YEAR - candidate.born;
+
+  const detail = candidate.detail
+    .replace('{age}', ageAtBirth)
+    .replace('{currentAge}', currentAge);
+
+  return patternC({
+    eyebrow: 'Still Alive',
+    title: `${candidate.name} was already ${ageAtBirth} years old`,
+    detail,
+  });
 }
 
 // ---------------------------------------------------------------------------
@@ -3951,6 +4138,29 @@ function socialMediaSection(year) {
       <p class="eyebrow">Social Media Timeline</p>
       <p class="section-headline">How old were you when these launched?</p>
       <div class="social-timeline">${rows}</div>
+    </div>
+  `;
+}
+
+// ---------------------------------------------------------------------------
+// FEATURE: WORDS THAT DIDN'T EXIST YET
+// ---------------------------------------------------------------------------
+
+function wordsSection(year) {
+  // Skip if born 2005 or later - most everyday digital words already existed
+  if (year >= 2005) return '';
+
+  const words = getWordsAfterYear(year);
+
+  if (words.length < 3) return '';
+
+  const pillsHtml = words.map(w => `<span class="word-pill">${escHtml(w)}</span>`).join('');
+
+  return `
+    <div class="pattern-a" data-reveal>
+      <p class="eyebrow">Language</p>
+      <p class="section-headline">Words that didn't exist when you were born</p>
+      <div class="word-pills">${pillsHtml}</div>
     </div>
   `;
 }
