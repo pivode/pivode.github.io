@@ -1063,6 +1063,12 @@ const TODAY = {
   us_median_home: 420000,
   global_life_expectancy: 72.3,
   us_life_expectancy: 78.5,
+  life_expectancy: {
+    US:78.5, GB:81.2, IN:70.8, DE:81.0, JP:84.6, FR:82.5, BR:75.5,
+    CN:78.2, AU:83.3, CA:82.7, RU:73.4, MX:75.0, KR:83.7, IE:82.0,
+    IT:83.5, ES:83.2, NL:82.0, ID:71.8, TR:76.0, NG:53.9,
+    ZA:64.1, AR:76.5, PH:71.4, EG:72.0,
+  },
   home_salary_ratio: (420000 / 80000).toFixed(1),
   // Current US prices (2024 averages, BLS/USDA/industry sources)
   prices: {
@@ -1626,13 +1632,14 @@ function renderActII(year, countryCode, data) {
       : `${pct}% less purchasing power than today's median`;
   }
 
+  const todayTag = isUS ? 'today' : 'US today';
   const prices = [
-    { emoji: '⛽', label: 'Gallon of gas',   value: data.prices_us?.gallon_gas_usd,   todayValue: TODAY.prices.gallon_gas_usd },
-    { emoji: '🥛', label: 'Gallon of milk',  value: data.prices_us?.gallon_milk_usd,  todayValue: TODAY.prices.gallon_milk_usd },
-    { emoji: '🥚', label: 'Dozen eggs',      value: data.prices_us?.dozen_eggs_usd,   todayValue: TODAY.prices.dozen_eggs_usd },
-    { emoji: '🍞', label: 'Loaf of bread',   value: data.prices_us?.loaf_bread_usd,   todayValue: TODAY.prices.loaf_bread_usd },
-    { emoji: '🎬', label: 'Movie ticket',    value: data.prices_us?.movie_ticket_usd, todayValue: TODAY.prices.movie_ticket_usd },
-    { emoji: '🍔', label: 'Big Mac',         value: data.prices_us?.big_mac_usd,      todayValue: TODAY.prices.big_mac_usd },
+    { emoji: '⛽', label: 'Gallon of gas',   value: data.prices_us?.gallon_gas_usd,   todayValue: TODAY.prices.gallon_gas_usd,   todayLabel: todayTag },
+    { emoji: '🥛', label: 'Gallon of milk',  value: data.prices_us?.gallon_milk_usd,  todayValue: TODAY.prices.gallon_milk_usd,  todayLabel: todayTag },
+    { emoji: '🥚', label: 'Dozen eggs',      value: data.prices_us?.dozen_eggs_usd,   todayValue: TODAY.prices.dozen_eggs_usd,   todayLabel: todayTag },
+    { emoji: '🍞', label: 'Loaf of bread',   value: data.prices_us?.loaf_bread_usd,   todayValue: TODAY.prices.loaf_bread_usd,   todayLabel: todayTag },
+    { emoji: '🎬', label: 'Movie ticket',    value: data.prices_us?.movie_ticket_usd, todayValue: TODAY.prices.movie_ticket_usd, todayLabel: todayTag },
+    { emoji: '🍔', label: 'Big Mac',         value: data.prices_us?.big_mac_usd,      todayValue: TODAY.prices.big_mac_usd,      todayLabel: todayTag },
   ].filter(p => p.value != null);
 
   // Country GDP per capita (for non-US)
@@ -1946,8 +1953,8 @@ function renderActV(year, countryCode, data) {
   const country     = COUNTRY_MAP[countryCode] || COUNTRIES[0];
   const name        = getUserName();
   const lifeExpThen = countryData.life_expectancy || data.world?.life_expectancy_global;
-  const lifeExpTodayLocal = countryCode === 'US' ? TODAY.us_life_expectancy : TODAY.global_life_expectancy;
-  const lifeLabel   = countryCode === 'US' ? 'US' : 'Global avg';
+  const lifeExpTodayLocal = TODAY.life_expectancy[countryCode] || TODAY.global_life_expectancy;
+  const lifeLabel   = country.name;
 
   const popMillions = countryData.population_millions;
   const gdpPerCap   = countryData.gdp_per_capita_usd;
@@ -2286,7 +2293,7 @@ function patternD({ eyebrow, headline, items }) {
 function patternE({ eyebrow, headline, prices }) {
   const pillsHtml = prices.map(p => {
     const todayHtml = p.todayValue != null
-      ? `<span class="price-pill-today">$${formatPriceValue(p.todayValue)} today</span>`
+      ? `<span class="price-pill-today">$${formatPriceValue(p.todayValue)} ${p.todayLabel || 'today'}</span>`
       : '';
     return `
     <div class="price-pill">
