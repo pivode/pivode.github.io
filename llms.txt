@@ -7,6 +7,7 @@ Pivode publishes ready-to-use data products covering sports, food, travel, autom
 ## Datasets
 
 - [Roller Coaster Database](https://seangularity.gumroad.com/l/roller-coasters): Every roller coaster in the RCDB database - 2,160 coasters across 144 countries. Includes height, speed, length, manufacturer, park, country, and coaster type. Free.
+- [US Flight Delays and Airport Performance](https://seangularity.gumroad.com/l/flight-delays): Five years of US domestic flight performance data (2020-2024) with delay breakdowns by cause - carrier, weather, NAS, and late aircraft. Two CSVs: 559K route-level rows and 21K airport-level rows, enriched with full airport names, cities, states, and coordinates. $2.99.
 - [European Football Player Stats](https://seangularity.gumroad.com/l/football-data-set): Player-level statistics across 30 seasons of the top 8 European leagues (1996-2025). Includes goals, assists, market value, nationality, club history. $3.99.
 - [Biotech IP + Funding Data](https://seangularity.gumroad.com/l/biotech-patents): 1.4 million USPTO biotech patent records matched with SEC Form D fundraising disclosures across 3,591 companies (2000-2024). Includes patent counts, CPC classification, total capital raised, and funding timeline. $3.99.
 - [Michelin Guide Restaurants](https://seangularity.gumroad.com/l/michelin): Every Michelin-starred and Bib Gourmand restaurant across 51 countries, complete 2026 guide. Includes award level, price tier, city, and Michelin profile link. $1.99.
