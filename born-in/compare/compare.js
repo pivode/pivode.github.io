@@ -1618,19 +1618,20 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     musicLabelC = childCountryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
   }
 
-  const musicHeadline = (musicLabelP === musicLabelC) ? musicLabelP : (musicLabelP + ' / ' + musicLabelC);
+  const sameCountryMusic = (musicLabelP === musicLabelC);
+  const musicHeadline = sameCountryMusic ? musicLabelP : 'The song each generation grew up with';
 
   if (songP && songC) {
     sections.push(compareCard({
       eyebrow: '\uD83C\uDFB5 Music',
       headline: musicHeadline,
       parent: {
-        label: String(parentYear),
+        label: sameCountryMusic ? String(parentYear) : String(parentYear) + ' \u00B7 ' + musicLabelP,
         value: songP,
         desc: artistP ? 'by ' + artistP : '',
       },
       child: {
-        label: String(childYear),
+        label: sameCountryMusic ? String(childYear) : String(childYear) + ' \u00B7 ' + musicLabelC,
         value: songC,
         desc: artistC ? 'by ' + artistC : '',
       },
@@ -1663,19 +1664,20 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     filmLabelC = 'Oscar Best Picture';
   }
 
-  const filmHeadline = (filmLabelP === filmLabelC) ? filmLabelP : (filmLabelP + ' / ' + filmLabelC);
+  const sameCountryFilm = (filmLabelP === filmLabelC);
+  const filmHeadline = sameCountryFilm ? filmLabelP : 'The film that defined each generation';
 
   if (filmTitleP && filmTitleC) {
     sections.push(compareCard({
       eyebrow: '\uD83C\uDFC6 Film',
       headline: filmHeadline,
       parent: {
-        label: String(parentYear),
+        label: sameCountryFilm ? String(parentYear) : String(parentYear) + ' \u00B7 ' + filmLabelP,
         value: filmTitleP,
         desc: filmDirP ? 'dir. ' + filmDirP : '',
       },
       child: {
-        label: String(childYear),
+        label: sameCountryFilm ? String(childYear) : String(childYear) + ' \u00B7 ' + filmLabelC,
         value: filmTitleC,
         desc: filmDirC ? 'dir. ' + filmDirC : '',
       },
@@ -1684,7 +1686,7 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
 
   const tvP = parentData.culture?.television?.most_watched_show;
   const tvC = childData.culture?.television?.most_watched_show;
-  const tvLabel = (parentCountryCode === 'US' && childCountryCode === 'US') ? 'Most-watched TV show' : 'Most-watched American TV show';
+  const tvLabel = (parentCountryCode === childCountryCode) ? 'Most-watched TV show' : 'What was on TV';
 
   if (tvP && tvC) {
     sections.push(compareCard({
