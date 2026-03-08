@@ -411,19 +411,49 @@ const MUSIC_NL_NO1 = {
   2010:{s:'Drank & Drugs',a:'Lil Kleine & Ronnie Flex'},
 };
 
+const MUSIC_GB_NO1 = {
+  1952:{s:'Here in My Heart',a:'Al Martino'},
+  1955:{s:'Rose Marie',a:'Slim Whitman'},
+  1960:{s:'It\'s Now or Never',a:'Elvis Presley'},
+  1963:{s:'She Loves You',a:'The Beatles'},
+  1965:{s:'Tears',a:'Ken Dodd'},
+  1967:{s:'Release Me',a:'Engelbert Humperdinck'},
+  1970:{s:'In the Summertime',a:'Mungo Jerry'},
+  1975:{s:'Bohemian Rhapsody',a:'Queen'},
+  1978:{s:'Rivers of Babylon',a:'Boney M.'},
+  1980:{s:'Don\'t Stand So Close to Me',a:'The Police'},
+  1983:{s:'Karma Chameleon',a:'Culture Club'},
+  1984:{s:'Do They Know It\'s Christmas?',a:'Band Aid'},
+  1986:{s:'Every Loser Wins',a:'Nick Berry'},
+  1988:{s:'Mistletoe and Wine',a:'Cliff Richard'},
+  1990:{s:'Unchained Melody',a:'The Righteous Brothers'},
+  1991:{s:'(Everything I Do) I Do It for You',a:'Bryan Adams'},
+  1993:{s:'I\'d Do Anything for Love',a:'Meat Loaf'},
+  1995:{s:'Unchained Melody',a:'Robson & Jerome'},
+  1997:{s:'Candle in the Wind 1997',a:'Elton John'},
+  1998:{s:'Believe',a:'Cher'},
+  1999:{s:'...Baby One More Time',a:'Britney Spears'},
+  2000:{s:'Can We Fix It?',a:'Bob the Builder'},
+  2003:{s:'Where Is the Love?',a:'Black Eyed Peas'},
+  2005:{s:'Is This the Way to Amarillo',a:'Tony Christie ft. Peter Kay'},
+  2007:{s:'Bleeding Love',a:'Leona Lewis'},
+  2009:{s:'Killing in the Name',a:'Rage Against the Machine'},
+  2010:{s:'Love the Way You Lie',a:'Eminem ft. Rihanna'},
+};
+
 const LOCAL_MUSIC = {
   DE: MUSIC_DE_NO1, FR: MUSIC_FR_NO1, AU: MUSIC_AU_NO1,
   IT: MUSIC_IT_NO1, ES: MUSIC_ES_NO1, BR: MUSIC_BR_NO1,
   JP: MUSIC_JP_NO1, KR: MUSIC_KR_NO1, IN: MUSIC_IN_NO1,
   TR: MUSIC_TR_NO1, SE: MUSIC_SE_NO1, PT: MUSIC_PT_NO1,
-  NL: MUSIC_NL_NO1,
+  NL: MUSIC_NL_NO1, GB: MUSIC_GB_NO1,
 };
 const LOCAL_MUSIC_LABEL = {
   DE: 'German Chart #1', FR: 'French Chart #1', AU: 'Australian Chart #1',
   IT: 'Italian Chart #1', ES: 'Spanish Chart #1', BR: 'Brazilian Chart #1',
   JP: 'Japanese Oricon #1', KR: 'Korean Chart #1', IN: 'Indian Chart #1',
   TR: 'Turkish Chart #1', SE: 'Swedish Chart #1', PT: 'Portuguese Chart #1',
-  NL: 'Dutch Chart #1',
+  NL: 'Dutch Chart #1', GB: 'UK Chart #1',
 };
 
 // ---------------------------------------------------------------------------
@@ -1821,15 +1851,18 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
   const cpiP18 = CPI_TO_2024[parentAt18] || 1;
   const cpiC18 = CPI_TO_2024[childAt18]  || 1;
 
-  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid, countryCode) {
+  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid, countryCode, isChild) {
     if (!isValid || !data) {
+      const fallbackText = isChild
+        ? 'You turned 18 in ' + year + ' - recent enough to remember!'
+        : 'They turned 18 in ' + year + ' - too far back for our data.';
       return `<div class="at18-col">
       <div class="at18-col-header">
         <span class="gen-pill ${pillClass}">${escHtml(pillLabel)}</span>
         <p class="at18-year" style="color:${accentColor}">${year}</p>
-        <p class="at18-age-caption">When they turned 18</p>
+        <p class="at18-age-caption">${isChild ? 'When you turned 18' : 'When they turned 18'}</p>
       </div>
-      <div class="at18-rows"><div class="at18-row"><span class="at18-row-value" style="color:#888;font-style:italic">You turned 18 in ${year} - recent enough to remember!</span></div></div>
+      <div class="at18-rows"><div class="at18-row"><span class="at18-row-value" style="color:#888;font-style:italic">${fallbackText}</span></div></div>
     </div>`;
     }
 
@@ -1902,14 +1935,14 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
       <div class="at18-col-header">
         <span class="gen-pill ${pillClass}">${escHtml(pillLabel)}</span>
         <p class="at18-year" style="color:${accentColor}">${year}</p>
-        <p class="at18-age-caption">When they turned 18</p>
+        <p class="at18-age-caption">${isChild ? 'When you turned 18' : 'When they turned 18'}</p>
       </div>
       <div class="at18-rows">${rows}</div>
     </div>`;
   }
 
-  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid, parentCountryCode);
-  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid,  childCountryCode);
+  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid, parentCountryCode, false);
+  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid,  childCountryCode, true);
 
   const sectionHtml = `
     <div class="at18-section" data-reveal>
@@ -2291,7 +2324,10 @@ $form.addEventListener('submit', async (e) => {
     return;
   }
 
-  const [py, cy] = parentYear < childYear ? [parentYear, childYear] : [childYear, parentYear];
+  const needsSwap = parentYear > childYear;
+  const [py, cy] = needsSwap ? [childYear, parentYear] : [parentYear, childYear];
+  const pCountry = needsSwap ? selectedChildCountry : selectedParentCountry;
+  const cCountry = needsSwap ? selectedParentCountry : selectedChildCountry;
 
   const submitBtn = document.getElementById('cmp-submit-btn');
   if (submitBtn) {
@@ -2301,8 +2337,8 @@ $form.addEventListener('submit', async (e) => {
 
   try {
     const { parentData, childData } = await loadBothYears(py, cy);
-    updateUrl(py, cy, selectedParentCountry.code, selectedChildCountry.code);
-    showResult(py, cy, selectedParentCountry.code, selectedChildCountry.code, parentData, childData);
+    updateUrl(py, cy, pCountry.code, cCountry.code);
+    showResult(py, cy, pCountry.code, cCountry.code, parentData, childData);
   } catch (err) {
     showError('Could not load data. ' + (err.message || 'Please try again.'));
   } finally {
@@ -2344,6 +2380,7 @@ async function readUrlParams() {
 
   if (isNaN(py) || isNaN(cy)) return;
   if (py < YEAR_MIN || py > YEAR_MAX || cy < YEAR_MIN || cy > YEAR_MAX) return;
+  if (YEAR_GAPS.has(py) || YEAR_GAPS.has(cy)) return;
   if (Math.abs(cy - py) < 15) return;
 
   // Resolve parent country

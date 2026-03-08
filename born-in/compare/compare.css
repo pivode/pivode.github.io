@@ -2027,3 +2027,276 @@ body {
     margin-bottom: 40px;
   }
 }
+
+/* =========================================================
+   SHARE CARD INNER STYLES (sc-*)
+   Rendered offscreen and captured via html2canvas.
+   Dark card with accent colours supplied by JS via
+   --sc-accent (parent) and --sc-accent-child (child).
+   ========================================================= */
+
+.sc-inner {
+  background: #0d0d1a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #f0f0f5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sc-header {
+  padding: 28px 32px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sc-flag {
+  font-size: 36px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sc-year {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  display: block;
+}
+
+.sc-vs {
+  font-size: 16px;
+  color: rgba(255,255,255,0.3);
+  font-weight: 400;
+  margin: 0 6px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+}
+
+.sc-headline {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 8px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.sc-stats {
+  padding: 20px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sc-stat {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sc-icon {
+  font-size: 16px;
+  line-height: 1.4;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.sc-stat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  min-width: 0;
+}
+
+.sc-stat-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.4;
+}
+
+.sc-stat-value {
+  font-size: 14px;
+  color: #f0f0f5;
+  line-height: 1.45;
+}
+
+.sc-footer {
+  padding: 14px 32px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.02);
+}
+
+.sc-brand {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sc-accent, #a78bfa);
+  opacity: 0.8;
+}
+
+/* =========================================================
+   COMPARE CARD
+   Wrapper for compare-mode content sections.
+   Matches .cmp-section rhythm and border system.
+   ========================================================= */
+
+.compare-card {
+  padding: 72px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-card:last-child {
+  border-bottom: none;
+}
+
+/* =========================================================
+   COMPARE DELTA
+   Inline delta/change badge shown below two-up cards.
+   ========================================================= */
+
+.compare-delta {
+  text-align: center;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+}
+
+.compare-delta--positive {
+  background: rgba(52,211,153,0.1);
+  color: #34d399;
+  border: 1px solid rgba(52,211,153,0.2);
+}
+
+.compare-delta--negative {
+  background: rgba(248,113,113,0.1);
+  color: #f87171;
+  border: 1px solid rgba(248,113,113,0.2);
+}
+
+.compare-delta--neutral {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+/* =========================================================
+   DUAL TIMELINE
+   Two-column side-by-side event timelines.
+   ========================================================= */
+
+.dual-timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.dual-timeline-col {
+  /* Column wrapper - no additional layout needed */
+}
+
+.dual-timeline-year {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.dual-timeline-year--parent {
+  color: var(--accent-parent);
+}
+
+.dual-timeline-year--child {
+  color: var(--accent-child);
+}
+
+/* =========================================================
+   TIMELINE EMPTY
+   Shown when a year has no timeline events.
+   ========================================================= */
+
+.timeline-empty {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  font-style: italic;
+  padding: 16px 0;
+}
+
+/* =========================================================
+   STAT ITEM
+   Flex column wrapper used inside patternF stat trio.
+   ========================================================= */
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   TWO-UP CARD ACCENT VARIANTS (compare mode)
+   Top accent strip + label colour for parent / child sides.
+   ========================================================= */
+
+.two-up-card--parent {
+  position: relative;
+  border-top: 2px solid var(--accent-parent);
+}
+
+.two-up-card--parent .two-up-label {
+  color: var(--accent-parent);
+}
+
+.two-up-card--child {
+  position: relative;
+  border-top: 2px solid var(--accent-child);
+}
+
+.two-up-card--child .two-up-label {
+  color: var(--accent-child);
+}
+
+/* =========================================================
+   TIMELINE ITEM ACCENT DOTS (dual timeline)
+   Parent / child colour applied to the timeline dot.
+   ========================================================= */
+
+.timeline-item--parent .timeline-dot {
+  background: var(--accent-parent);
+}
+
+.timeline-item--child .timeline-dot {
+  background: var(--accent-child);
+}
+
+/* =========================================================
+   RESPONSIVE - compare additions (640px)
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .dual-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-card {
+    padding: 48px 0;
+  }
+}

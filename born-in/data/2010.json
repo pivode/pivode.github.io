@@ -137,7 +137,7 @@
     "japan_pm": "Naoto Kan",
     "australia_pm": "Julia Gillard",
     "canada_pm": "Stephen Harper",
-    "brazil_president": "Dilma Rousseff",
+    "brazil_president": "Luiz Inacio Lula da Silva",
     "un_secretary": "Ban Ki-moon",
     "pope": "Pope Benedict XVI",
     "russia_leader": "Dmitry Medvedev",
@@ -209,7 +209,7 @@
       "population_millions": 195.0,
       "life_expectancy": 73.5,
       "gdp_per_capita_usd": 11121,
-      "leader": "Dilma Rousseff",
+      "leader": "Luiz Inacio Lula da Silva",
       "leader_title": "President"
     },
     "CN": {
@@ -265,7 +265,7 @@
       "population_millions": 166.6,
       "life_expectancy": 51.3,
       "gdp_per_capita_usd": 2280,
-      "leader": "Umaru Yar'Adua",
+      "leader": "Goodluck Jonathan",
       "leader_title": "President"
     },
     "ZA": {
@@ -286,7 +286,7 @@
       "population_millions": 96.3,
       "life_expectancy": 68.9,
       "gdp_per_capita_usd": 2217,
-      "leader": "Gloria Macapagal Arroyo",
+      "leader": "Gloria Macapagal Arroyo / Benigno Aquino III",
       "leader_title": "President"
     },
     "EG": {
