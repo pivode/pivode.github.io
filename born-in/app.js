@@ -3167,11 +3167,20 @@ function openDropdown() {
   $countryBtn.setAttribute('aria-expanded', 'true');
   $countrySearch.value = '';
   renderCountryList();
+  const rect = $countryBtn.getBoundingClientRect();
+  const dropdownHeight = Math.min(300, window.innerHeight * 0.5);
+  const spaceBelow = window.innerHeight - rect.bottom;
+  if (spaceBelow < dropdownHeight) {
+    $countryDropdown.classList.add('dropdown-flip');
+  } else {
+    $countryDropdown.classList.remove('dropdown-flip');
+  }
   setTimeout(() => $countrySearch.focus(), 50);
 }
 
 function closeDropdown() {
   $countryDropdown.classList.add('hidden');
+  $countryDropdown.classList.remove('dropdown-flip');
   $countryBtn.setAttribute('aria-expanded', 'false');
 }
 

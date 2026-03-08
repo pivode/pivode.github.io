@@ -280,6 +280,11 @@ body {
   display: none !important;
 }
 
+.country-dropdown.dropdown-flip {
+  bottom: calc(100% + 8px);
+  top: auto;
+}
+
 .country-search-wrap {
   padding: 12px;
   border-bottom: 1px solid var(--border);
@@ -1257,9 +1262,9 @@ body.era-00s {
 
   .header-btn {
     gap: 0;
-    padding: 10px;
-    min-width: 40px;
-    min-height: 40px;
+    padding: 12px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .info-content {

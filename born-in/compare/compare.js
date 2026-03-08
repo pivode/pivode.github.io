@@ -863,10 +863,12 @@ function signedRaw(val, decimals) {
 // Life expectancy horizontal bar chart
 // Three bars: parent country LE, child country LE, today's LE
 function svgLifeExpChart(parentLE, childLE, todayLE, parentYear, childYear, accentParent, accentChild) {
-  const W = 600;
+  const mobile = window.innerWidth <= 640;
+  const W = mobile ? 380 : 600;
+  const scale = W / 600;
   const H = 220;
-  const padL = 20;
-  const padR = 116;
+  const padL = Math.round(20 * scale);
+  const padR = Math.round(116 * scale);
   const padT = 32;
   const padB = 20;
   const barH = 32;
@@ -909,13 +911,16 @@ function svgLifeExpChart(parentLE, childLE, todayLE, parentYear, childYear, acce
 function svgPriceChart(priceItems, accentParent, accentChild) {
   if (!priceItems || priceItems.length === 0) return '';
 
+  const mobile = window.innerWidth <= 640;
+  const W = mobile ? 380 : 600;
+  const scale = W / 600;
+
   const itemCount = priceItems.length;
-  const W = 600;
   const groupH = 56;
   const padT   = 12;
   const padB   = 30;
-  const padL   = 130;
-  const padR   = 20;
+  const padL   = Math.round(130 * scale);
+  const padR   = Math.round(20 * scale);
   const H = padT + itemCount * groupH + padB;
 
   const chartW = W - padL - padR;
@@ -951,13 +956,14 @@ function svgPriceChart(priceItems, accentParent, accentChild) {
   <text x="${padL + wC + 5}" y="${yC + barH - 4}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${textColor}">${valLabelC}</text>`;
   });
 
-  // Legend at bottom
+  // Legend at bottom - second legend item offset scaled proportionally from original 130px gap
+  const legendGap = Math.round(130 * scale);
   const legendY = padT + itemCount * groupH + 8;
   const legend  = `
   <rect x="${padL}" y="${legendY}" width="10" height="10" rx="2" fill="${accentParent}" opacity="0.8"/>
   <text x="${padL + 14}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${labelColor}">Their generation</text>
-  <rect x="${padL + 130}" y="${legendY}" width="10" height="10" rx="2" fill="${accentChild}" opacity="0.8"/>
-  <text x="${padL + 144}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${labelColor}">Your generation</text>`;
+  <rect x="${padL + legendGap}" y="${legendY}" width="10" height="10" rx="2" fill="${accentChild}" opacity="0.8"/>
+  <text x="${padL + legendGap + 14}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${labelColor}">Your generation</text>`;
 
   return `<svg viewBox="0 0 ${W} ${H + 20}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">${bars}${legend}
 </svg>`;
@@ -965,10 +971,12 @@ function svgPriceChart(priceItems, accentParent, accentChild) {
 
 // Population timeline: 3 points on a simple line
 function svgPopulationChart(parentPop, childPop, todayPop, parentYear, childYear) {
-  const W   = 600;
+  const mobile = window.innerWidth <= 640;
+  const W   = mobile ? 380 : 600;
+  const scale = W / 600;
   const H   = 180;
-  const padL = 72;
-  const padR = 72;
+  const padL = Math.round(72 * scale);
+  const padR = Math.round(72 * scale);
   const padT = 44;
   const padB = 36;
 
@@ -1028,10 +1036,12 @@ function svgPopulationChart(parentPop, childPop, todayPop, parentYear, childYear
 
 // GDP growth two-bar chart
 function svgGdpChart(parentGdpAdj, childGdpAdj, parentYear, childYear, accentParent, accentChild) {
-  const W    = 600;
+  const mobile = window.innerWidth <= 640;
+  const W    = mobile ? 380 : 600;
+  const scale = W / 600;
   const H    = 180;
-  const padL = 40;
-  const padR = 40;
+  const padL = Math.round(40 * scale);
+  const padR = Math.round(40 * scale);
   const padT = 18;
   const padB = 42;
 
@@ -2280,11 +2290,20 @@ function openParentCountryDropdown() {
   $parentCountryDropdown.classList.remove('hidden');
   $parentCountryBtn.setAttribute('aria-expanded', 'true');
   $parentCountryList.innerHTML = buildCountryListHTML(selectedParentCountry.code, '');
+  const rect = $parentCountryBtn.getBoundingClientRect();
+  const dropdownHeight = Math.min(300, window.innerHeight * 0.5);
+  const spaceBelow = window.innerHeight - rect.bottom;
+  if (spaceBelow < dropdownHeight) {
+    $parentCountryDropdown.classList.add('dropdown-flip');
+  } else {
+    $parentCountryDropdown.classList.remove('dropdown-flip');
+  }
   $parentCountrySearch.focus();
 }
 
 function closeParentCountryDropdown() {
   $parentCountryDropdown.classList.add('hidden');
+  $parentCountryDropdown.classList.remove('dropdown-flip');
   $parentCountryBtn.setAttribute('aria-expanded', 'false');
   $parentCountrySearch.value = '';
 }
@@ -2321,11 +2340,20 @@ function openChildCountryDropdown() {
   $childCountryDropdown.classList.remove('hidden');
   $childCountryBtn.setAttribute('aria-expanded', 'true');
   $childCountryList.innerHTML = buildCountryListHTML(selectedChildCountry.code, '');
+  const rect = $childCountryBtn.getBoundingClientRect();
+  const dropdownHeight = Math.min(300, window.innerHeight * 0.5);
+  const spaceBelow = window.innerHeight - rect.bottom;
+  if (spaceBelow < dropdownHeight) {
+    $childCountryDropdown.classList.add('dropdown-flip');
+  } else {
+    $childCountryDropdown.classList.remove('dropdown-flip');
+  }
   $childCountrySearch.focus();
 }
 
 function closeChildCountryDropdown() {
   $childCountryDropdown.classList.add('hidden');
+  $childCountryDropdown.classList.remove('dropdown-flip');
   $childCountryBtn.setAttribute('aria-expanded', 'false');
   $childCountrySearch.value = '';
 }

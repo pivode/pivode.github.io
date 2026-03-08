@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 3031,
     "us_inflation_pct": 14.65,
     "us_unemployment_pct": 3.9,
-    "us_minimum_wage_usd": 0.40,
+    "us_minimum_wage_usd": 0.4,
     "sp500_year_end": null,
     "dow_jones_year_end": 181.16,
     "gold_oz_usd": 34.71,
@@ -22,9 +22,9 @@
   "prices_us": {
     "gallon_gas_usd": 0.23,
     "gallon_milk_usd": 0.78,
-    "dozen_eggs_usd": 0.70,
+    "dozen_eggs_usd": 0.7,
     "loaf_bread_usd": 0.12,
-    "movie_ticket_usd": 0.40,
+    "movie_ticket_usd": 0.4,
     "new_car_avg_usd": 1313,
     "median_home_usd": 7450,
     "first_class_stamp_cents": 3,
@@ -45,7 +45,7 @@
       "box_office_no1": "Welcome Stranger",
       "box_office_no1_gross_m": 6.1,
       "oscar_best_picture": "The Best Years of Our Lives",
-      "oscar_best_director": "Best Director",
+      "oscar_best_director": "The Best Years of Our Lives",
       "oscar_best_director_name": "William Wyler",
       "oscar_best_actor": "Fredric March",
       "oscar_best_actor_film": "The Best Years of Our Lives",
@@ -349,7 +349,7 @@
       "leader_title": "Prime Minister"
     },
     "SE": {
-      "population_millions": 6.80,
+      "population_millions": 6.8,
       "life_expectancy": 70.8,
       "gdp_per_capita_usd": 1180,
       "leader": "Tage Erlander",

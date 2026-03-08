@@ -20,8 +20,8 @@
     "oil_barrel_usd": 1.18
   },
   "prices_us": {
-    "gallon_gas_usd": 0.20,
-    "gallon_milk_usd": 0.50,
+    "gallon_gas_usd": 0.2,
+    "gallon_milk_usd": 0.5,
     "dozen_eggs_usd": 0.44,
     "loaf_bread_usd": 0.09,
     "movie_ticket_usd": 0.25,
@@ -45,7 +45,7 @@
       "box_office_no1": "Snow White and the Seven Dwarfs",
       "box_office_no1_gross_m": 8.5,
       "oscar_best_picture": "The Great Ziegfeld",
-      "oscar_best_director": "Best Director",
+      "oscar_best_director": "Mr. Deeds Goes to Town",
       "oscar_best_director_name": "Frank Capra",
       "oscar_best_actor": "Paul Muni",
       "oscar_best_actor_film": "The Story of Louis Pasteur",

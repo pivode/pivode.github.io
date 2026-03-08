@@ -525,6 +525,11 @@ body {
   display: none !important;
 }
 
+.country-dropdown.dropdown-flip {
+  bottom: calc(100% + 8px);
+  top: auto;
+}
+
 .country-search-wrap {
   padding: 12px;
   border-bottom: 1px solid var(--border);
@@ -1843,9 +1848,9 @@ body {
 
   .header-btn {
     gap: 0;
-    padding: 10px;
-    min-width: 40px;
-    min-height: 40px;
+    padding: 12px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .info-content,
@@ -1858,7 +1863,7 @@ body {
   }
 
   .cmp-section {
-    padding: 48px 0;
+    padding: 36px 0;
   }
 
   .act-sections {
@@ -2474,7 +2479,7 @@ body {
   }
 
   .compare-card {
-    padding: 48px 0;
+    padding: 36px 0;
   }
 }
 

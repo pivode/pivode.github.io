@@ -2,7 +2,7 @@
   "year": 1931,
   "schema_version": 1,
   "world": {
-    "population_billions": 2.10,
+    "population_billions": 2.1,
     "births_millions": 71,
     "life_expectancy_global": 48.7,
     "countries_count": 74,
@@ -15,7 +15,7 @@
     "us_unemployment_pct": 15.9,
     "us_minimum_wage_usd": null,
     "sp500_year_end": null,
-    "dow_jones_year_end": 77.90,
+    "dow_jones_year_end": 77.9,
     "gold_oz_usd": 17.06,
     "oil_barrel_usd": 0.65
   },
@@ -45,7 +45,7 @@
       "box_office_no1": "Frankenstein",
       "box_office_no1_gross_m": 12.0,
       "oscar_best_picture": "Cimarron",
-      "oscar_best_director": "Best Director",
+      "oscar_best_director": "Skippy",
       "oscar_best_director_name": "Norman Taurog",
       "oscar_best_actor": "Lionel Barrymore",
       "oscar_best_actor_film": "A Free Soul",

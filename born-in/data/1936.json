@@ -15,7 +15,7 @@
     "us_unemployment_pct": 16.9,
     "us_minimum_wage_usd": null,
     "sp500_year_end": null,
-    "dow_jones_year_end": 179.90,
+    "dow_jones_year_end": 179.9,
     "gold_oz_usd": 35.0,
     "oil_barrel_usd": 1.09
   },
@@ -45,7 +45,7 @@
       "box_office_no1": "San Francisco",
       "box_office_no1_gross_m": 6.5,
       "oscar_best_picture": "Mutiny on the Bounty",
-      "oscar_best_director": "Best Director",
+      "oscar_best_director": "The Informer",
       "oscar_best_director_name": "John Ford",
       "oscar_best_actor": "Victor McLaglen",
       "oscar_best_actor_film": "The Informer",

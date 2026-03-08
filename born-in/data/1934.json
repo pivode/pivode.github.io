@@ -16,8 +16,8 @@
     "us_minimum_wage_usd": null,
     "sp500_year_end": null,
     "dow_jones_year_end": 104.04,
-    "gold_oz_usd": 35.00,
-    "oil_barrel_usd": 1.00
+    "gold_oz_usd": 35.0,
+    "oil_barrel_usd": 1.0
   },
   "prices_us": {
     "gallon_gas_usd": 0.19,
@@ -45,7 +45,7 @@
       "box_office_no1": "It Happened One Night",
       "box_office_no1_gross_m": 2.9,
       "oscar_best_picture": "It Happened One Night",
-      "oscar_best_director": "Best Director",
+      "oscar_best_director": "It Happened One Night",
       "oscar_best_director_name": "Frank Capra",
       "oscar_best_actor": "Clark Gable",
       "oscar_best_actor_film": "It Happened One Night",
