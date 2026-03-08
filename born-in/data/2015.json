@@ -1,0 +1,430 @@
+{
+  "year": 2015,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 7.38,
+    "births_millions": 141,
+    "life_expectancy_global": 72.0,
+    "countries_count": 195,
+    "internet_users": 3174000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 56803,
+    "us_median_household_income_usd": 56516,
+    "us_inflation_pct": 0.1,
+    "us_unemployment_pct": 5.3,
+    "us_minimum_wage_usd": 7.25,
+    "sp500_year_end": 2043.94,
+    "dow_jones_year_end": 17425.03,
+    "gold_oz_usd": 1060.00,
+    "oil_barrel_usd": 37.04
+  },
+  "prices_us": {
+    "gallon_gas_usd": 2.43,
+    "gallon_milk_usd": 3.39,
+    "dozen_eggs_usd": 2.75,
+    "loaf_bread_usd": 1.98,
+    "movie_ticket_usd": 8.61,
+    "new_car_avg_usd": 33543,
+    "median_home_usd": 222400,
+    "first_class_stamp_cents": 49,
+    "big_mac_usd": 4.79
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Uptown Funk",
+      "billboard_no1_artist": "Mark Ronson featuring Bruno Mars",
+      "grammy_record": "Stay With Me",
+      "grammy_record_artist": "Sam Smith",
+      "grammy_album": "Morning Phase",
+      "grammy_album_artist": "Beck",
+      "uk_no1_jan": "Uptown Funk",
+      "uk_no1_jan_artist": "Mark Ronson featuring Bruno Mars"
+    },
+    "film": {
+      "box_office_no1": "Star Wars: The Force Awakens",
+      "box_office_no1_gross_m": 936.7,
+      "oscar_best_picture": "Birdman",
+      "oscar_best_director": "Birdman",
+      "oscar_best_director_name": "Alejandro G. Inarritu",
+      "oscar_best_actor": "Eddie Redmayne",
+      "oscar_best_actor_film": "The Theory of Everything",
+      "oscar_best_actress": "Julianne Moore",
+      "oscar_best_actress_film": "Still Alice"
+    },
+    "television": {
+      "most_watched_show": "The Big Bang Theory",
+      "most_watched_network": "CBS",
+      "emmy_drama": "Game of Thrones",
+      "emmy_comedy": "Veep",
+      "notable_premieres": [
+        "Better Call Saul",
+        "Daredevil (Netflix)",
+        "Mr. Robot",
+        "Narcos"
+      ],
+      "notable_finales": [
+        "Mad Men",
+        "Parks and Recreation",
+        "The Daily Show with Jon Stewart"
+      ]
+    },
+    "books": {
+      "fiction_bestseller": "Go Set a Watchman",
+      "fiction_bestseller_author": "Harper Lee",
+      "nonfiction_bestseller": "The Girl on the Train",
+      "nonfiction_bestseller_author": "Paula Hawkins",
+      "pulitzer_fiction": "All the Light We Cannot See",
+      "pulitzer_fiction_author": "Anthony Doerr"
+    },
+    "sports": {
+      "super_bowl_winner": "New England Patriots",
+      "super_bowl_score": "28-24 vs Seattle Seahawks",
+      "super_bowl_mvp": "Tom Brady",
+      "world_series_winner": "Kansas City Royals",
+      "nba_champion": "Golden State Warriors",
+      "nba_mvp": "Stephen Curry",
+      "wimbledon_mens": "Novak Djokovic",
+      "wimbledon_womens": "Serena Williams",
+      "f1_champion": "Lewis Hamilton",
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Apple Watch launches in April as the most ambitious new product category from Apple since the iPad, while streaming overtakes physical media and Netflix reaches 70 million subscribers worldwide",
+    "top_computer": "Apple Watch",
+    "top_computer_price_usd": 349,
+    "avg_hard_drive_mb": 2000000,
+    "mobile_subscribers_millions": 7522,
+    "notable_releases": [
+      "Apple Watch launches April 24 as Apple's first new product category since the iPad, with over a million sold on day one",
+      "Apple Music launches June 30 with 30 million songs, challenging Spotify as the streaming era fully arrives",
+      "Microsoft releases Windows 10 as a free upgrade on July 29, the biggest Windows release since Windows 95",
+      "Star Wars: The Force Awakens breaks the all-time domestic opening weekend record with $248 million"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 1,
+      "event": "Terrorists attack the offices of French satirical magazine Charlie Hebdo in Paris on January 7, killing 12 people; a related attack kills 5 at a kosher supermarket, prompting global rallies in support of press freedom"
+    },
+    {
+      "month": 6,
+      "event": "The US Supreme Court rules 5-4 in Obergefell v. Hodges on June 26 that same-sex marriage is a constitutional right nationwide, legalizing it across all 50 states"
+    },
+    {
+      "month": 11,
+      "event": "ISIS coordinated attacks on six locations in Paris on November 13 kill 130 people - the deadliest attack in France since World War II - including gunmen at the Bataclan concert hall"
+    },
+    {
+      "month": 9,
+      "event": "Over one million migrants and refugees enter Europe in 2015, the largest movement of people since World War II; images of three-year-old Alan Kurdi's body on a Turkish beach shock the world"
+    },
+    {
+      "month": 7,
+      "event": "The US, UK, France, Germany, China and Russia reach the Iran nuclear deal (JCPOA) on July 14, freezing Iran's nuclear program in exchange for lifting economic sanctions"
+    }
+  ],
+  "leaders": {
+    "us_president": "Barack Obama",
+    "uk_pm": "David Cameron",
+    "france_president": "Francois Hollande",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Xi Jinping",
+    "india_pm": "Narendra Modi",
+    "japan_pm": "Shinzo Abe",
+    "australia_pm": "Tony Abbott / Malcolm Turnbull",
+    "canada_pm": "Stephen Harper / Justin Trudeau",
+    "brazil_president": "Dilma Rousseff",
+    "un_secretary": "Ban Ki-moon",
+    "pope": "Pope Francis",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Enrique Pena Nieto",
+    "south_korea_president": "Park Geun-hye",
+    "ireland_taoiseach": "Enda Kenny"
+  },
+  "notable_births": [],
+  "countries": {
+    "US": {
+      "population_millions": 320.9,
+      "life_expectancy": 78.7,
+      "gdp_per_capita_usd": 56803,
+      "leader": "Barack Obama",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 65.1,
+      "life_expectancy": 81.1,
+      "gdp_per_capita_usd": 44305,
+      "leader": "David Cameron",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1282.4,
+      "life_expectancy": 68.9,
+      "gdp_per_capita_usd": 1605,
+      "leader": "Narendra Modi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 82.2,
+      "life_expectancy": 81.0,
+      "gdp_per_capita_usd": 41369,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 126.9,
+      "life_expectancy": 83.7,
+      "gdp_per_capita_usd": 34523,
+      "leader": "Shinzo Abe",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 64.4,
+      "life_expectancy": 82.4,
+      "gdp_per_capita_usd": 36248,
+      "leader": "Francois Hollande",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 204.5,
+      "life_expectancy": 75.3,
+      "gdp_per_capita_usd": 8757,
+      "leader": "Dilma Rousseff",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1376.0,
+      "life_expectancy": 76.3,
+      "gdp_per_capita_usd": 8048,
+      "leader": "Xi Jinping",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 23.8,
+      "life_expectancy": 82.7,
+      "gdp_per_capita_usd": 56554,
+      "leader": "Malcolm Turnbull",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 35.8,
+      "life_expectancy": 81.7,
+      "gdp_per_capita_usd": 43596,
+      "leader": "Justin Trudeau",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 144.1,
+      "life_expectancy": 71.5,
+      "gdp_per_capita_usd": 9329,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 119.9,
+      "life_expectancy": 77.6,
+      "gdp_per_capita_usd": 9606,
+      "leader": "Enrique Pena Nieto",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 50.6,
+      "life_expectancy": 82.4,
+      "gdp_per_capita_usd": 27105,
+      "leader": "Park Geun-hye",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 4.69,
+      "life_expectancy": 81.4,
+      "gdp_per_capita_usd": 61606,
+      "leader": "Enda Kenny",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 184.6,
+      "life_expectancy": 54.8,
+      "gdp_per_capita_usd": 2719,
+      "leader": "Muhammadu Buhari",
+      "leader_title": "President"
+    },
+    "ZA": {
+      "population_millions": 56.0,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 6481,
+      "leader": "Jacob Zuma",
+      "leader_title": "President"
+    },
+    "AR": {
+      "population_millions": 43.6,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 13560,
+      "leader": "Cristina Fernandez de Kirchner / Mauricio Macri",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 102.3,
+      "life_expectancy": 71.0,
+      "gdp_per_capita_usd": 2925,
+      "leader": "Benigno Aquino III",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 88.5,
+      "life_expectancy": 71.5,
+      "gdp_per_capita_usd": 3536,
+      "leader": "Abdel Fattah el-Sisi",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 60.8,
+      "life_expectancy": 82.9,
+      "gdp_per_capita_usd": 30126,
+      "leader": "Matteo Renzi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 46.4,
+      "life_expectancy": 82.8,
+      "gdp_per_capita_usd": 25749,
+      "leader": "Mariano Rajoy",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 16.9,
+      "life_expectancy": 81.6,
+      "gdp_per_capita_usd": 44293,
+      "leader": "Mark Rutte",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 261.1,
+      "life_expectancy": 71.3,
+      "gdp_per_capita_usd": 3834,
+      "leader": "Joko Widodo",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 78.2,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 10994,
+      "leader": "Recep Tayyip Erdogan",
+      "leader_title": "President"
+    },
+    "PK": {
+      "population_millions": 193.2,
+      "life_expectancy": 68.2,
+      "gdp_per_capita_usd": 1435,
+      "leader": "Mamnoon Hussain",
+      "leader_title": "President"
+    },
+    "BD": {
+      "population_millions": 162.5,
+      "life_expectancy": 72.8,
+      "gdp_per_capita_usd": 1211,
+      "leader": "Sheikh Hasina",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 38.5,
+      "life_expectancy": 77.8,
+      "gdp_per_capita_usd": 12667,
+      "leader": "Andrzej Duda",
+      "leader_title": "President"
+    },
+    "SE": {
+      "population_millions": 9.80,
+      "life_expectancy": 82.4,
+      "gdp_per_capita_usd": 50273,
+      "leader": "Stefan Lofven",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 68.7,
+      "life_expectancy": 75.6,
+      "gdp_per_capita_usd": 5836,
+      "leader": "Prayuth Chan-ocha",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 93.6,
+      "life_expectancy": 76.3,
+      "gdp_per_capita_usd": 2109,
+      "leader": "Truong Tan Sang",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 48.2,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 6056,
+      "leader": "Juan Manuel Santos",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 47.9,
+      "life_expectancy": 65.2,
+      "gdp_per_capita_usd": 1374,
+      "leader": "Uhuru Kenyatta",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 31.6,
+      "life_expectancy": 74.9,
+      "gdp_per_capita_usd": 20481,
+      "leader": "Salman bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 8.38,
+      "life_expectancy": 82.5,
+      "gdp_per_capita_usd": 35728,
+      "leader": "Benjamin Netanyahu",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 10.3,
+      "life_expectancy": 81.0,
+      "gdp_per_capita_usd": 19218,
+      "leader": "Anibal Cavaco Silva",
+      "leader_title": "President"
+    },
+    "CL": {
+      "population_millions": 18.0,
+      "life_expectancy": 80.1,
+      "gdp_per_capita_usd": 13643,
+      "leader": "Michelle Bachelet",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 31.2,
+      "life_expectancy": 76.0,
+      "gdp_per_capita_usd": 9766,
+      "leader": "Najib Razak",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 44.9,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 2115,
+      "leader": "Petro Poroshenko",
+      "leader_title": "President"
+    },
+    "GH": {
+      "population_millions": 28.3,
+      "life_expectancy": 65.2,
+      "gdp_per_capita_usd": 1987,
+      "leader": "John Mahama",
+      "leader_title": "President"
+    },
+    "PE": {
+      "population_millions": 31.8,
+      "life_expectancy": 75.9,
+      "gdp_per_capita_usd": 6121,
+      "leader": "Ollanta Humala",
+      "leader_title": "President"
+    }
+  }
+}

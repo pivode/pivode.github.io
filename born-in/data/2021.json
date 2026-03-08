@@ -1,0 +1,431 @@
+{
+  "year": 2021,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 7.90,
+    "births_millions": 140,
+    "life_expectancy_global": 71.0,
+    "countries_count": 195,
+    "internet_users": 4900000000
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 71318,
+    "us_median_household_income_usd": 70784,
+    "us_inflation_pct": 4.7,
+    "us_unemployment_pct": 5.4,
+    "us_minimum_wage_usd": 7.25,
+    "sp500_year_end": 4766.18,
+    "dow_jones_year_end": 36338.30,
+    "gold_oz_usd": 1799.37,
+    "oil_barrel_usd": 68.14
+  },
+  "prices_us": {
+    "gallon_gas_usd": 3.01,
+    "gallon_milk_usd": 3.69,
+    "dozen_eggs_usd": 1.82,
+    "loaf_bread_usd": 1.64,
+    "movie_ticket_usd": 9.57,
+    "new_car_avg_usd": 45031,
+    "median_home_usd": 346900,
+    "first_class_stamp_cents": 55,
+    "big_mac_usd": 5.65
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Levitating",
+      "billboard_no1_artist": "Dua Lipa",
+      "grammy_record": "Everything I Wanted",
+      "grammy_record_artist": "Billie Eilish",
+      "grammy_album": "Folklore",
+      "grammy_album_artist": "Taylor Swift",
+      "uk_no1_jan": "Last Christmas",
+      "uk_no1_jan_artist": "Wham!",
+      "uk_no1_artist": "Wham!"
+    },
+    "film": {
+      "box_office_no1": "Spider-Man: No Way Home",
+      "box_office_no1_gross_m": 804.8,
+      "oscar_best_picture": "Nomadland",
+      "oscar_best_director": "Nomadland",
+      "oscar_best_director_name": "Chloe Zhao",
+      "oscar_best_actor": "Anthony Hopkins",
+      "oscar_best_actor_film": "The Father",
+      "oscar_best_actress": "Frances McDormand",
+      "oscar_best_actress_film": "Nomadland"
+    },
+    "television": {
+      "most_watched_show": "Sunday Night Football",
+      "most_watched_network": "NBC",
+      "emmy_drama": "The Crown",
+      "emmy_comedy": "Ted Lasso",
+      "notable_premieres": [
+        "Squid Game",
+        "Ted Lasso Season 2",
+        "Succession Season 3",
+        "Only Murders in the Building"
+      ],
+      "notable_finales": [
+        "WandaVision",
+        "Brooklyn Nine-Nine",
+        "Black-ish (penultimate season)"
+      ]
+    },
+    "books": {
+      "fiction_bestseller": "The Four Winds",
+      "fiction_bestseller_author": "Kristin Hannah",
+      "nonfiction_bestseller": "A Promised Land",
+      "nonfiction_bestseller_author": "Barack Obama",
+      "pulitzer_fiction": "The Night Watchman",
+      "pulitzer_fiction_author": "Louise Erdrich"
+    },
+    "sports": {
+      "super_bowl_winner": "Tampa Bay Buccaneers",
+      "super_bowl_score": "31-9 vs Kansas City Chiefs",
+      "super_bowl_mvp": "Tom Brady",
+      "world_series_winner": "Atlanta Braves",
+      "nba_champion": "Milwaukee Bucks",
+      "nba_mvp": "Nikola Jokic",
+      "wimbledon_mens": "Novak Djokovic",
+      "wimbledon_womens": "Ashleigh Barty",
+      "f1_champion": "Max Verstappen",
+      "fifa_world_cup": "N/A (no World Cup in 2021)"
+    }
+  },
+  "technology": {
+    "milestone": "COVID vaccine rollout transforms public health; Zoom fatigue sets in; NFT mania peaks; SpaceX launches civilians to orbit for the first time",
+    "top_computer": "Apple M1 MacBook Pro (14-inch)",
+    "top_computer_price_usd": 1999,
+    "avg_hard_drive_mb": 2000000,
+    "mobile_subscribers_millions": 8300,
+    "notable_releases": [
+      "Apple M1 Pro chip launches in redesigned MacBook Pro, ushering in a new era of laptop performance",
+      "NFT market explodes - Beeple's digital art sells for $69 million at Christie's in March",
+      "SpaceX Inspiration4 mission in September becomes first all-civilian orbital spaceflight",
+      "Windows 11 launches in October with redesigned interface and Android app support"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 1,
+      "event": "US Capitol stormed by a mob on January 6 as Congress certifies the 2020 election results, leaving five dead and prompting Trump's second impeachment"
+    },
+    {
+      "month": 1,
+      "event": "Joe Biden inaugurated as 46th US President on January 20; Kamala Harris becomes first woman, first Black, and first South Asian Vice President"
+    },
+    {
+      "month": 3,
+      "event": "COVID-19 vaccination campaigns accelerate globally; the US reaches 100 million doses administered in under 100 days"
+    },
+    {
+      "month": 8,
+      "event": "US military withdraws from Afghanistan after 20 years; Taliban rapidly retakes Kabul as the Afghan government collapses"
+    },
+    {
+      "month": 11,
+      "event": "COP26 climate summit held in Glasgow; leaders commit to cutting methane and ending deforestation, though ambitions fall short of 1.5C target"
+    }
+  ],
+  "leaders": {
+    "us_president": "Joe Biden",
+    "uk_pm": "Boris Johnson",
+    "france_president": "Emmanuel Macron",
+    "germany_chancellor": "Angela Merkel",
+    "ussr_leader": "N/A (USSR dissolved)",
+    "china_leader": "Xi Jinping",
+    "india_pm": "Narendra Modi",
+    "japan_pm": "Yoshihide Suga / Fumio Kishida",
+    "australia_pm": "Scott Morrison",
+    "canada_pm": "Justin Trudeau",
+    "brazil_president": "Jair Bolsonaro",
+    "un_secretary": "Antonio Guterres",
+    "pope": "Pope Francis",
+    "russia_leader": "Vladimir Putin",
+    "mexico_president": "Andres Manuel Lopez Obrador",
+    "south_korea_president": "Moon Jae-in",
+    "ireland_taoiseach": "Micheal Martin"
+  },
+  "notable_births": [],
+  "countries": {
+    "US": {
+      "population_millions": 332.0,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 71318,
+      "leader": "Joe Biden",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 67.2,
+      "life_expectancy": 80.4,
+      "gdp_per_capita_usd": 47334,
+      "leader": "Boris Johnson",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 1393.4,
+      "life_expectancy": 67.2,
+      "gdp_per_capita_usd": 2277,
+      "leader": "Narendra Modi",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 83.2,
+      "life_expectancy": 81.1,
+      "gdp_per_capita_usd": 51204,
+      "leader": "Angela Merkel",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 125.7,
+      "life_expectancy": 84.3,
+      "gdp_per_capita_usd": 39340,
+      "leader": "Fumio Kishida",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 67.7,
+      "life_expectancy": 82.3,
+      "gdp_per_capita_usd": 44853,
+      "leader": "Emmanuel Macron",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 214.3,
+      "life_expectancy": 72.8,
+      "gdp_per_capita_usd": 7507,
+      "leader": "Jair Bolsonaro",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 1412.0,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 12556,
+      "leader": "Xi Jinping",
+      "leader_title": "General Secretary"
+    },
+    "AU": {
+      "population_millions": 25.8,
+      "life_expectancy": 83.3,
+      "gdp_per_capita_usd": 60443,
+      "leader": "Scott Morrison",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 38.2,
+      "life_expectancy": 82.3,
+      "gdp_per_capita_usd": 51988,
+      "leader": "Justin Trudeau",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 144.1,
+      "life_expectancy": 70.1,
+      "gdp_per_capita_usd": 12195,
+      "leader": "Vladimir Putin",
+      "leader_title": "President"
+    },
+    "MX": {
+      "population_millions": 130.3,
+      "life_expectancy": 75.0,
+      "gdp_per_capita_usd": 10045,
+      "leader": "Andres Manuel Lopez Obrador",
+      "leader_title": "President"
+    },
+    "KR": {
+      "population_millions": 51.7,
+      "life_expectancy": 83.6,
+      "gdp_per_capita_usd": 35196,
+      "leader": "Moon Jae-in",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 5.06,
+      "life_expectancy": 82.3,
+      "gdp_per_capita_usd": 99013,
+      "leader": "Micheal Martin",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 213.4,
+      "life_expectancy": 54.7,
+      "gdp_per_capita_usd": 2065,
+      "leader": "Muhammadu Buhari",
+      "leader_title": "President"
+    },
+    "ZA": {
+      "population_millions": 59.9,
+      "life_expectancy": 64.4,
+      "gdp_per_capita_usd": 7055,
+      "leader": "Cyril Ramaphosa",
+      "leader_title": "President"
+    },
+    "AR": {
+      "population_millions": 45.6,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 10636,
+      "leader": "Alberto Fernandez",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 111.0,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 3460,
+      "leader": "Rodrigo Duterte",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 104.3,
+      "life_expectancy": 72.0,
+      "gdp_per_capita_usd": 3699,
+      "leader": "Abdel Fattah el-Sisi",
+      "leader_title": "President"
+    },
+    "IT": {
+      "population_millions": 60.4,
+      "life_expectancy": 82.9,
+      "gdp_per_capita_usd": 35657,
+      "leader": "Mario Draghi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 47.4,
+      "life_expectancy": 83.3,
+      "gdp_per_capita_usd": 30116,
+      "leader": "Pedro Sanchez",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 17.6,
+      "life_expectancy": 81.7,
+      "gdp_per_capita_usd": 58061,
+      "leader": "Mark Rutte",
+      "leader_title": "Prime Minister"
+    },
+    "ID": {
+      "population_millions": 273.8,
+      "life_expectancy": 71.7,
+      "gdp_per_capita_usd": 4292,
+      "leader": "Joko Widodo",
+      "leader_title": "President"
+    },
+    "TR": {
+      "population_millions": 84.7,
+      "life_expectancy": 77.7,
+      "gdp_per_capita_usd": 9661,
+      "leader": "Recep Tayyip Erdogan",
+      "leader_title": "President"
+    },
+    "PK": {
+      "population_millions": 225.2,
+      "life_expectancy": 67.7,
+      "gdp_per_capita_usd": 1505,
+      "leader": "Imran Khan",
+      "leader_title": "Prime Minister"
+    },
+    "BD": {
+      "population_millions": 166.3,
+      "life_expectancy": 72.8,
+      "gdp_per_capita_usd": 2457,
+      "leader": "Sheikh Hasina",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 37.8,
+      "life_expectancy": 76.2,
+      "gdp_per_capita_usd": 17999,
+      "leader": "Andrzej Duda",
+      "leader_title": "President"
+    },
+    "SE": {
+      "population_millions": 10.4,
+      "life_expectancy": 83.0,
+      "gdp_per_capita_usd": 60233,
+      "leader": "Stefan Lofven",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 71.6,
+      "life_expectancy": 77.3,
+      "gdp_per_capita_usd": 7066,
+      "leader": "Prayuth Chan-ocha",
+      "leader_title": "Prime Minister"
+    },
+    "VN": {
+      "population_millions": 97.3,
+      "life_expectancy": 73.7,
+      "gdp_per_capita_usd": 3593,
+      "leader": "Nguyen Xuan Phuc",
+      "leader_title": "President"
+    },
+    "CO": {
+      "population_millions": 51.3,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 6104,
+      "leader": "Ivan Duque",
+      "leader_title": "President"
+    },
+    "KE": {
+      "population_millions": 54.0,
+      "life_expectancy": 66.7,
+      "gdp_per_capita_usd": 2006,
+      "leader": "Uhuru Kenyatta",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 35.0,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 23186,
+      "leader": "Salman bin Abdulaziz",
+      "leader_title": "King"
+    },
+    "IL": {
+      "population_millions": 9.3,
+      "life_expectancy": 82.6,
+      "gdp_per_capita_usd": 53223,
+      "leader": "Naftali Bennett",
+      "leader_title": "Prime Minister"
+    },
+    "PT": {
+      "population_millions": 10.3,
+      "life_expectancy": 81.7,
+      "gdp_per_capita_usd": 24208,
+      "leader": "Antonio Costa",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 19.2,
+      "life_expectancy": 80.2,
+      "gdp_per_capita_usd": 16078,
+      "leader": "Sebastian Pinera",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 32.7,
+      "life_expectancy": 76.1,
+      "gdp_per_capita_usd": 11371,
+      "leader": "Ismail Sabri Yaakob",
+      "leader_title": "Prime Minister"
+    },
+    "UA": {
+      "population_millions": 41.9,
+      "life_expectancy": 72.1,
+      "gdp_per_capita_usd": 4836,
+      "leader": "Volodymyr Zelensky",
+      "leader_title": "President"
+    },
+    "GH": {
+      "population_millions": 32.4,
+      "life_expectancy": 64.1,
+      "gdp_per_capita_usd": 2361,
+      "leader": "Nana Akufo-Addo",
+      "leader_title": "President"
+    },
+    "PE": {
+      "population_millions": 33.0,
+      "life_expectancy": 73.5,
+      "gdp_per_capita_usd": 6622,
+      "leader": "Pedro Castillo",
+      "leader_title": "President"
+    }
+  }
+}

@@ -10,6 +10,7 @@
 
 const YEAR_MIN = 1930;
 const YEAR_MAX = 2010;
+const AT18_YEAR_MAX = 2025;
 const YEAR_GAPS = new Set([1951, 1953]);
 
 const DECADE_ACCENTS = {
@@ -1959,8 +1960,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
   const childAt18  = childYear  + 18;
 
   // Only show the section when both sides have data - asymmetric cards look bad
-  const parentAt18Valid = parentAt18 >= YEAR_MIN && parentAt18 <= YEAR_MAX && !YEAR_GAPS.has(parentAt18);
-  const childAt18Valid  = childAt18  >= YEAR_MIN && childAt18  <= YEAR_MAX && !YEAR_GAPS.has(childAt18);
+  const parentAt18Valid = parentAt18 >= YEAR_MIN && parentAt18 <= AT18_YEAR_MAX && !YEAR_GAPS.has(parentAt18);
+  const childAt18Valid  = childAt18  >= YEAR_MIN && childAt18  <= AT18_YEAR_MAX && !YEAR_GAPS.has(childAt18);
   if (!parentAt18Valid || !childAt18Valid) return;
 
   let parentAt18Data = null, childAt18Data = null;
