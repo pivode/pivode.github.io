@@ -1961,3 +1961,58 @@ body {
     padding: 10px 16px;
   }
 }
+
+/* =========================================================
+   VOICE THEN/NOW (ElevenLabs affiliate card)
+   ========================================================= */
+
+.voice-then-now {
+  margin: 0 0 56px;
+  padding: 32px 32px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+
+.voice-then {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.voice-now {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.voice-cta {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity var(--transition-base);
+}
+
+.voice-cta:hover {
+  opacity: 0.8;
+}
+
+.voice-cta-arrow {
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.voice-cta:hover .voice-cta-arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 600px) {
+  .voice-then-now {
+    padding: 24px 20px;
+    margin-bottom: 40px;
+  }
+}

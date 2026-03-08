@@ -170,6 +170,544 @@ const CPI_TO_2024 = {
 
 const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+const VOICE_THEN = {
+  1930: 'recording your voice meant a phonograph cylinder or gramophone disc',
+  1940: 'recording your voice required a wire recorder or a radio studio',
+  1950: 'recording your voice meant a reel-to-reel tape recorder',
+  1960: 'hearing a new voice meant tuning into the radio',
+  1970: 'recording your voice meant pressing play+record on a cassette',
+  1980: 'your voice lived on answering machines and camcorder tapes',
+  1990: 'capturing your voice meant a voicemail or a camcorder',
+  2000: 'recording your voice meant GarageBand or a cheap USB mic',
+  2010: 'sharing your voice meant voice notes and YouTube vlogs',
+};
+
+// ---------------------------------------------------------------------------
+// LOCAL MUSIC CHARTS (copied from parent app.js)
+// Each entry: {s: 'song', a: 'artist'}
+// ---------------------------------------------------------------------------
+
+const MUSIC_DE_NO1 = {
+  1968:{s:'Mama',a:'Heintje'},1976:{s:'Fernando',a:'ABBA'},
+  1977:{s:'Yes Sir, I Can Boogie',a:'Baccara'},1978:{s:'Rivers of Babylon',a:'Boney M.'},
+  1982:{s:'Ein bisschen Frieden',a:'Nicole'},1983:{s:'Flashdance',a:'Irene Cara'},
+  1984:{s:'Big in Japan',a:'Alphaville'},1985:{s:'Live Is Life',a:'Opus'},
+  1986:{s:'Jeanny',a:'Falco'},1987:{s:'Voyage Voyage',a:'Desireless'},
+  1988:{s:'Girl You Know It\'s True',a:'Milli Vanilli'},
+  1990:{s:'Verdammt ich lieb\' dich',a:'Matthias Reim'},
+  1991:{s:'Wind of Change',a:'Scorpions'},1993:{s:'What Is Love',a:'Haddaway'},
+  1996:{s:'Macarena',a:'Los Del Rio'},
+  1997:{s:'Time to Say Goodbye',a:'Sarah Brightman & Andrea Bocelli'},
+  1998:{s:'My Heart Will Go On',a:'Celine Dion'},
+  1999:{s:'Mambo No. 5',a:'Lou Bega'},2001:{s:'Daylight in Your Eyes',a:'No Angels'},
+  2004:{s:'Dragostea Din Tei',a:'O-Zone'},2009:{s:'Poker Face',a:'Lady Gaga'},
+};
+
+const MUSIC_FR_NO1 = {
+  1969:{s:'Je t\'aime... moi non plus',a:'Serge Gainsbourg & Jane Birkin'},
+  1987:{s:'Joe le Taxi',a:'Vanessa Paradis'},1989:{s:'Lambada',a:'Kaoma'},
+  1995:{s:'Pour que tu m\'aimes encore',a:'Celine Dion'},
+  1996:{s:'Macarena',a:'Los Del Rio'},1997:{s:'Candle in the Wind 1997',a:'Elton John'},
+  1998:{s:'My Heart Will Go On',a:'Celine Dion'},1999:{s:'Mambo No. 5',a:'Lou Bega'},
+  2004:{s:'Dragostea Din Tei',a:'O-Zone'},2009:{s:'Poker Face',a:'Lady Gaga'},
+  2010:{s:'Baby',a:'Justin Bieber ft. Ludacris'},
+};
+
+const MUSIC_AU_NO1 = {
+  1975:{s:'Jive Talkin\'',a:'Bee Gees'},1976:{s:'Fernando',a:'ABBA'},
+  1978:{s:'Night Fever',a:'Bee Gees'},1981:{s:'Physical',a:'Olivia Newton-John'},
+  1983:{s:'Karma Chameleon',a:'Culture Club'},1986:{s:'You\'re the Voice',a:'John Farnham'},
+  1988:{s:'Don\'t Worry Be Happy',a:'Bobby McFerrin'},
+  1990:{s:'Nothing Compares 2 U',a:'Sinead O\'Connor'},
+  1991:{s:'(Everything I Do) I Do It for You',a:'Bryan Adams'},
+  1995:{s:'Gangsta\'s Paradise',a:'Coolio ft. L.V.'},
+  1996:{s:'Macarena',a:'Los Del Rio'},1998:{s:'My Heart Will Go On',a:'Celine Dion'},
+  1999:{s:'Mambo No. 5',a:'Lou Bega'},2008:{s:'Low',a:'Flo Rida ft. T-Pain'},
+  2009:{s:'I Gotta Feeling',a:'Black Eyed Peas'},
+  2010:{s:'Love the Way You Lie',a:'Eminem ft. Rihanna'},
+};
+
+const MUSIC_IT_NO1 = {
+  1958:{s:'Nel blu dipinto di blu (Volare)',a:'Domenico Modugno'},
+  1962:{s:'Quando Quando Quando',a:'Tony Renis'},
+  1964:{s:'Non ho l\'eta',a:'Gigliola Cinquetti'},
+  1968:{s:'Azzurro',a:'Adriano Celentano'},
+  1970:{s:'L\'ora dell\'amore',a:'Adriano Celentano'},
+  1977:{s:'Ti amo',a:'Umberto Tozzi'},
+  1979:{s:'Gloria',a:'Umberto Tozzi'},
+  1982:{s:'Felicita',a:'Al Bano & Romina Power'},
+  1986:{s:'Adesso tu',a:'Eros Ramazzotti'},
+  1990:{s:'Uomini soli',a:'Pooh'},
+  1993:{s:'La solitudine',a:'Laura Pausini'},
+  1995:{s:'Con te partiro',a:'Andrea Bocelli'},
+  1999:{s:'Senza una donna',a:'Zucchero'},
+  2001:{s:'Luce (Tramonti a Nord Est)',a:'Elisa'},
+  2005:{s:'Angelo',a:'Francesco Renga'},
+  2008:{s:'Ti credo',a:'Gianni Morandi'},
+};
+
+const MUSIC_ES_NO1 = {
+  1956:{s:'Me lo dijo Perez',a:'Gloria Lasso'},
+  1962:{s:'El porompompero',a:'Manolo Escobar'},
+  1968:{s:'La la la',a:'Massiel'},
+  1970:{s:'Gwendolyne',a:'Julio Iglesias'},
+  1975:{s:'Eres tu',a:'Mocedades'},
+  1981:{s:'Quiereme mucho',a:'Julio Iglesias'},
+  1984:{s:'Me cuesta tanto olvidarte',a:'Mecano'},
+  1988:{s:'Hijo de la luna',a:'Mecano'},
+  1991:{s:'Corazon partio',a:'Alejandro Sanz'},
+  1996:{s:'Macarena',a:'Los Del Rio'},
+  1999:{s:'Livin\' la Vida Loca',a:'Ricky Martin'},
+  2001:{s:'Wherever, Whenever',a:'Shakira'},
+  2004:{s:'Tu calorro',a:'Estopa'},
+  2006:{s:'Hips Don\'t Lie',a:'Shakira'},
+  2008:{s:'Waka Waka',a:'Shakira'},
+  2010:{s:'Loca',a:'Shakira ft. El Cata'},
+};
+
+const MUSIC_BR_NO1 = {
+  1959:{s:'A felicidade',a:'Tom Jobim & Vinicius de Moraes'},
+  1962:{s:'Garota de Ipanema',a:'Tom Jobim & Vinicius de Moraes'},
+  1967:{s:'Alegria, Alegria',a:'Caetano Veloso'},
+  1970:{s:'Detalhes',a:'Roberto Carlos'},
+  1973:{s:'Eu te amo',a:'Roberto Carlos'},
+  1977:{s:'Exagerado',a:'Cazuza'},
+  1980:{s:'Menino do Rio',a:'Baby Consuelo'},
+  1984:{s:'Como uma onda',a:'Lulu Santos'},
+  1988:{s:'Brasil',a:'Cazuza'},
+  1991:{s:'Pais e filhos',a:'Legiao Urbana'},
+  1995:{s:'Sera',a:'Legiao Urbana'},
+  1997:{s:'Sozinho',a:'Caetano Veloso'},
+  2000:{s:'Velha infancia',a:'Tribalistas'},
+  2003:{s:'Ainda lembro',a:'Marisa Monte'},
+  2005:{s:'Vai chover',a:'Ivete Sangalo'},
+  2008:{s:'Balanca Brasil',a:'Ivete Sangalo'},
+};
+
+const MUSIC_JP_NO1 = {
+  1952:{s:'Ringo Oiwake',a:'Hibari Misora'},
+  1956:{s:'Kawa no nagare no you ni',a:'Hibari Misora'},
+  1963:{s:'Konnichiwa Akachan',a:'Michiyo Azusa'},
+  1970:{s:'Kuroneko no Tango',a:'Minako Yoshida'},
+  1975:{s:'Oyoge! Taiyaki-kun',a:'Masato Shimon'},
+  1978:{s:'UFO',a:'Pink Lady'},
+  1983:{s:'Nagai aida',a:'Kiroro'},
+  1985:{s:'Tenshi no You ni',a:'Hideaki Tokunaga'},
+  1988:{s:'Paradise Ginga',a:'Hikaru Genji'},
+  1991:{s:'Oh! Yeah!',a:'Dreams Come True'},
+  1994:{s:'Innocent World',a:'Mr. Children'},
+  1998:{s:'Automatic',a:'Utada Hikaru'},
+  2000:{s:'Tsunami',a:'Southern All Stars'},
+  2003:{s:'Sekai ni Hitotsu Dake no Hana',a:'SMAP'},
+  2006:{s:'Real Face',a:'KAT-TUN'},
+  2009:{s:'Believe',a:'Arashi'},
+};
+
+const MUSIC_KR_NO1 = {
+  1961:{s:'Dongbaek Agassi',a:'Lee Mija'},
+  1975:{s:'Dora-wa-yo Busan-hang-e',a:'Cho Yong-pil'},
+  1980:{s:'Changbakk-eui Yeoja',a:'Cho Yong-pil'},
+  1985:{s:'Seoul ui Dal',a:'Lee Moon-sae'},
+  1989:{s:'Sarang-eul Wihayeo',a:'Byun Jin-sub'},
+  1992:{s:'Nan Arayo',a:'Seo Taiji and Boys'},
+  1996:{s:'Couple',a:'SECHSKIES'},
+  1998:{s:'Dasi Mannayo',a:'Kim Gun-mo'},
+  2000:{s:'ID; Peace B',a:'BoA'},
+  2003:{s:'Rising Sun',a:'TVXQ'},
+  2005:{s:'Love Love Love',a:'FT Island'},
+  2007:{s:'Tell Me',a:'Wonder Girls'},
+  2009:{s:'Gee',a:'Girls\' Generation'},
+  2010:{s:'Bad Boy',a:'Big Bang'},
+};
+
+const MUSIC_IN_NO1 = {
+  1951:{s:'Awaara Hoon',a:'Mukesh (Awaara)'},
+  1955:{s:'Mera Joota Hai Japani',a:'Mukesh (Shree 420)'},
+  1960:{s:'Pyar Hua Ikraar Hua',a:'Lata & Manna Dey (Shree 420)'},
+  1965:{s:'Mere Sapno Ki Rani',a:'Kishore Kumar'},
+  1971:{s:'Dum Maro Dum',a:'Asha Bhosle (Hare Rama Hare Krishna)'},
+  1975:{s:'Sholay Theme - Mehbooba',a:'R.D. Burman (Sholay)'},
+  1981:{s:'Om Shanti Om',a:'Kishore Kumar (Karz)'},
+  1988:{s:'Ek Do Teen',a:'Alka Yagnik (Tezaab)'},
+  1992:{s:'Dhak Dhak Karne Laga',a:'Udit Narayan (Beta)'},
+  1995:{s:'Tu Cheez Badi Hai Mast',a:'Udit Narayan (Mohra)'},
+  1998:{s:'Chaiyya Chaiyya',a:'Sukhwinder Singh (Dil Se)'},
+  1999:{s:'Taal Se Taal Mila',a:'A.R. Rahman (Taal)'},
+  2002:{s:'Kal Ho Naa Ho',a:'Sonu Nigam'},
+  2004:{s:'Kajra Re',a:'Alisha Chinai (Bunty Aur Babli)'},
+  2007:{s:'Jai Ho',a:'A.R. Rahman (Slumdog Millionaire)'},
+  2010:{s:'Munni Badnaam Hui',a:'Mamta Sharma (Dabangg)'},
+};
+
+const MUSIC_TR_NO1 = {
+  1960:{s:'Yesil Yesil',a:'Zeki Muren'},
+  1967:{s:'Yalan Dunya',a:'Orhan Gencebay'},
+  1975:{s:'Kara Sevda',a:'Ajda Pekkan'},
+  1978:{s:'Petrol',a:'Ajda Pekkan'},
+  1982:{s:'Firuze',a:'Sezen Aksu'},
+  1985:{s:'Git',a:'Sezen Aksu'},
+  1988:{s:'Hadi Bakalim',a:'Sezen Aksu'},
+  1992:{s:'Yalnizlik Senfonisi',a:'Ibrahim Tatlises'},
+  1995:{s:'Dom Dom Kursunu',a:'Ibrahim Tatlises'},
+  1997:{s:'Simarik',a:'Tarkan'},
+  1999:{s:'Sikidim',a:'Tarkan'},
+  2003:{s:'Dudu',a:'Tarkan'},
+  2006:{s:'Sor',a:'Hadise'},
+  2008:{s:'Deli',a:'Tarkan'},
+  2010:{s:'Isyan',a:'Manga'},
+};
+
+const MUSIC_SE_NO1 = {
+  1958:{s:'Sommaren ar kort',a:'Anita Lindblom'},
+  1966:{s:'Harliga sommardag',a:'Lill-Babs'},
+  1974:{s:'Waterloo',a:'ABBA'},
+  1976:{s:'Fernando',a:'ABBA'},
+  1979:{s:'Gimme! Gimme! Gimme!',a:'ABBA'},
+  1982:{s:'Flickan och Kransen',a:'Carola'},
+  1986:{s:'The Look',a:'Roxette'},
+  1988:{s:'Listen to Your Heart',a:'Roxette'},
+  1991:{s:'Joyride',a:'Roxette'},
+  1993:{s:'The Sign',a:'Ace of Base'},
+  1995:{s:'All That She Wants',a:'Ace of Base'},
+  1999:{s:'Livet ar',a:'Markoolio'},
+  2004:{s:'Toxic',a:'Britney Spears'},
+  2006:{s:'Hej Moansen',a:'Markoolio'},
+  2009:{s:'Nar vindarna viskar mitt namn',a:'Lisa Nilsson'},
+};
+
+const MUSIC_PT_NO1 = {
+  1955:{s:'Uma Casa Portuguesa',a:'Amalia Rodrigues'},
+  1959:{s:'Tudo Isto e Fado',a:'Amalia Rodrigues'},
+  1965:{s:'Barco Negro',a:'Amalia Rodrigues'},
+  1970:{s:'E Depois do Adeus',a:'Paulo de Carvalho'},
+  1974:{s:'Grandola, Vila Morena',a:'Zeca Afonso'},
+  1980:{s:'Cavaleiro Monge',a:'Carlos Paredes'},
+  1985:{s:'O Corpo e que Paga',a:'Rui Veloso'},
+  1990:{s:'Lisboa Menina e Moca',a:'Carlos do Carmo'},
+  1994:{s:'O Pastor',a:'Madredeus'},
+  1998:{s:'Mar Portugues',a:'Dulce Pontes'},
+  2001:{s:'Flor de Lis',a:'Da Vinci'},
+  2005:{s:'Conquistador',a:'Da Vinci'},
+  2008:{s:'Senhora do Mar',a:'Vitorino'},
+  2010:{s:'Ha Dias Assim',a:'Mariza'},
+};
+
+const MUSIC_NL_NO1 = {
+  1960:{s:'Kom van dat dak af',a:'Peter Koelewijn'},
+  1966:{s:'Venus',a:'Shocking Blue'},
+  1969:{s:'Radar Love',a:'Golden Earring'},
+  1973:{s:'Waterloo',a:'Golden Earring'},
+  1977:{s:'Ma Belle Amie',a:'Tee Set'},
+  1980:{s:'De Vlieger',a:'Andre Hazes'},
+  1984:{s:'Zij Gelooft in Mij',a:'Andre Hazes'},
+  1987:{s:'Het Land van Maansen en Mansen',a:'Herman van Veen'},
+  1989:{s:'Bloed, Zweet en Tranen',a:'Andre Hazes'},
+  1993:{s:'Leef',a:'Andre Hazes'},
+  1997:{s:'Hoe het danst',a:'Marco Borsato'},
+  1999:{s:'Dromen zijn bedrog',a:'Marco Borsato'},
+  2002:{s:'Leven zonder jou',a:'Marco Borsato'},
+  2005:{s:'Afscheid nemen bestaat niet',a:'Marco Borsato'},
+  2007:{s:'Watermensen',a:'Within Temptation'},
+  2010:{s:'Drank & Drugs',a:'Lil Kleine & Ronnie Flex'},
+};
+
+const LOCAL_MUSIC = {
+  DE: MUSIC_DE_NO1, FR: MUSIC_FR_NO1, AU: MUSIC_AU_NO1,
+  IT: MUSIC_IT_NO1, ES: MUSIC_ES_NO1, BR: MUSIC_BR_NO1,
+  JP: MUSIC_JP_NO1, KR: MUSIC_KR_NO1, IN: MUSIC_IN_NO1,
+  TR: MUSIC_TR_NO1, SE: MUSIC_SE_NO1, PT: MUSIC_PT_NO1,
+  NL: MUSIC_NL_NO1,
+};
+const LOCAL_MUSIC_LABEL = {
+  DE: 'German Chart #1', FR: 'French Chart #1', AU: 'Australian Chart #1',
+  IT: 'Italian Chart #1', ES: 'Spanish Chart #1', BR: 'Brazilian Chart #1',
+  JP: 'Japanese Oricon #1', KR: 'Korean Chart #1', IN: 'Indian Chart #1',
+  TR: 'Turkish Chart #1', SE: 'Swedish Chart #1', PT: 'Portuguese Chart #1',
+  NL: 'Dutch Chart #1',
+};
+
+// ---------------------------------------------------------------------------
+// LOCAL FILM (copied from parent app.js)
+// Each entry: {t: 'title', d: 'director'}
+// ---------------------------------------------------------------------------
+
+const FILM_IN_NO1 = {
+  1950:{t:'Awaara',d:'Raj Kapoor'},
+  1952:{t:'Baiju Bawra',d:'Vijay Bhatt'},
+  1954:{t:'Boot Polish',d:'Prakash Arora'},
+  1955:{t:'Shree 420',d:'Raj Kapoor'},
+  1957:{t:'Mother India',d:'Mehboob Khan'},
+  1958:{t:'Chalti Ka Naam Gaadi',d:'Satyen Bose'},
+  1960:{t:'Mughal-E-Azam',d:'K. Asif'},
+  1962:{t:'Sahib Bibi Aur Ghulam',d:'Abrar Alvi'},
+  1964:{t:'Sangam',d:'Raj Kapoor'},
+  1966:{t:'Guide',d:'Vijay Anand'},
+  1969:{t:'Aradhana',d:'Shakti Samanta'},
+  1971:{t:'Hare Rama Hare Krishna',d:'Dev Anand'},
+  1973:{t:'Bobby',d:'Raj Kapoor'},
+  1975:{t:'Sholay',d:'Ramesh Sippy'},
+  1978:{t:'Don',d:'Chandra Barot'},
+  1979:{t:'Suhaag',d:'Manmohan Desai'},
+  1981:{t:'Naseeb',d:'Manmohan Desai'},
+  1983:{t:'Coolie',d:'Manmohan Desai'},
+  1986:{t:'Nagina',d:'Harmesh Malhotra'},
+  1988:{t:'Tezaab',d:'N. Chandra'},
+  1989:{t:'Maine Pyar Kiya',d:'Sooraj Barjatya'},
+  1991:{t:'Lamhe',d:'Yash Chopra'},
+  1993:{t:'Damini',d:'Rajkumar Santoshi'},
+  1994:{t:'Hum Aapke Hain Koun',d:'Sooraj Barjatya'},
+  1995:{t:'Dilwale Dulhania Le Jayenge',d:'Aditya Chopra'},
+  1997:{t:'Dil To Pagal Hai',d:'Yash Chopra'},
+  1998:{t:'Kuch Kuch Hota Hai',d:'Karan Johar'},
+  2000:{t:'Mission Kashmir',d:'Vidhu Vinod Chopra'},
+  2001:{t:'Lagaan',d:'Ashutosh Gowariker'},
+  2002:{t:'Devdas',d:'Sanjay Leela Bhansali'},
+  2003:{t:'Kal Ho Naa Ho',d:'Nikkhil Advani'},
+  2004:{t:'Veer-Zaara',d:'Yash Chopra'},
+  2006:{t:'Rang De Basanti',d:'Rakeysh Omprakash Mehra'},
+  2007:{t:'Om Shanti Om',d:'Farah Khan'},
+  2008:{t:'Ghajini',d:'A.R. Murugadoss'},
+  2009:{t:'3 Idiots',d:'Rajkumar Hirani'},
+  2010:{t:'Dabangg',d:'Abhinav Kashyap'},
+};
+
+const FILM_JP_NO1 = {
+  1950:{t:'Rashomon',d:'Akira Kurosawa'},
+  1952:{t:'Ikiru',d:'Akira Kurosawa'},
+  1954:{t:'Seven Samurai',d:'Akira Kurosawa'},
+  1956:{t:'The Burmese Harp',d:'Kon Ichikawa'},
+  1958:{t:'The Hidden Fortress',d:'Akira Kurosawa'},
+  1960:{t:'Yojimbo',d:'Akira Kurosawa'},
+  1962:{t:'Harakiri',d:'Masaki Kobayashi'},
+  1964:{t:'Woman in the Dunes',d:'Hiroshi Teshigahara'},
+  1966:{t:'The Face of Another',d:'Hiroshi Teshigahara'},
+  1969:{t:'Boy',d:'Nagisa Oshima'},
+  1971:{t:'The Ceremony',d:'Nagisa Oshima'},
+  1974:{t:'Sandakan No. 8',d:'Kei Kumai'},
+  1976:{t:'In the Realm of the Senses',d:'Nagisa Oshima'},
+  1980:{t:'Kagemusha',d:'Akira Kurosawa'},
+  1983:{t:'The Ballad of Narayama',d:'Shohei Imamura'},
+  1985:{t:'Ran',d:'Akira Kurosawa'},
+  1987:{t:'The Funeral',d:'Juzo Itami'},
+  1991:{t:'A Scene at the Sea',d:'Takeshi Kitano'},
+  1993:{t:'Sonatine',d:'Takeshi Kitano'},
+  1995:{t:'Maborosi',d:'Hirokazu Kore-eda'},
+  1997:{t:'Hana-bi',d:'Takeshi Kitano'},
+  1998:{t:'Ring',d:'Hideo Nakata'},
+  2001:{t:'Spirited Away',d:'Hayao Miyazaki'},
+  2002:{t:'The Twilight Samurai',d:'Yoji Yamada'},
+  2004:{t:'Nobody Knows',d:'Hirokazu Kore-eda'},
+  2007:{t:'Always: Sunset on Third Street 2',d:'Takashi Yamazaki'},
+  2008:{t:'Departures',d:'Yojiro Takita'},
+  2009:{t:'Air Doll',d:'Hirokazu Kore-eda'},
+  2010:{t:'Confessions',d:'Tetsuya Nakashima'},
+};
+
+const FILM_KR_NO1 = {
+  1961:{t:'Obaltan',d:'Yoo Hyun-mok'},
+  1967:{t:'The Merciless',d:'Im Kwon-taek'},
+  1971:{t:'Hwannyeo',d:'Kim Ki-young'},
+  1982:{t:'Madame Aema',d:'Jung In-yeop'},
+  1987:{t:'Surrogate Mother',d:'Im Kwon-taek'},
+  1989:{t:'Why Has Bodhi-Dharma Left for the East?',d:'Bae Yong-kyun'},
+  1993:{t:'Sopyonje',d:'Im Kwon-taek'},
+  1998:{t:'The Contact',d:'Chang Youn-hyun'},
+  1999:{t:'Shiri',d:'Kang Je-gyu'},
+  2000:{t:'Joint Security Area',d:'Park Chan-wook'},
+  2001:{t:'Friend',d:'Kwak Kyung-taek'},
+  2002:{t:'Oasis',d:'Lee Chang-dong'},
+  2003:{t:'Oldboy',d:'Park Chan-wook'},
+  2004:{t:'A Tale of Two Sisters',d:'Kim Jee-woon'},
+  2005:{t:'Welcome to Dongmakgol',d:'Park Kwang-hyun'},
+  2006:{t:'The Host',d:'Bong Joon-ho'},
+  2007:{t:'Secret Sunshine',d:'Lee Chang-dong'},
+  2008:{t:'The Good, the Bad, the Weird',d:'Kim Jee-woon'},
+  2009:{t:'Mother',d:'Bong Joon-ho'},
+  2010:{t:'I Saw the Devil',d:'Kim Jee-woon'},
+};
+
+const FILM_FR_NO1 = {
+  1950:{t:'Justice est faite',d:'Andre Cayatte'},
+  1952:{t:'Fanfan la Tulipe',d:'Christian-Jaque'},
+  1954:{t:'Gervaise',d:'Rene Clement'},
+  1956:{t:'And God Created Woman',d:'Roger Vadim'},
+  1958:{t:'Mon oncle',d:'Jacques Tati'},
+  1959:{t:'The 400 Blows',d:'Francois Truffaut'},
+  1960:{t:'Breathless',d:'Jean-Luc Godard'},
+  1961:{t:'Leon Morin, Priest',d:'Jean-Pierre Melville'},
+  1963:{t:'Le Mepris',d:'Jean-Luc Godard'},
+  1964:{t:'The Umbrellas of Cherbourg',d:'Jacques Demy'},
+  1966:{t:'A Man and a Woman',d:'Claude Lelouch'},
+  1969:{t:'Z',d:'Costa-Gavras'},
+  1970:{t:'Le Cercle rouge',d:'Jean-Pierre Melville'},
+  1974:{t:'The Clockmaker of Saint-Paul',d:'Bertrand Tavernier'},
+  1975:{t:'The Judge and the Assassin',d:'Bertrand Tavernier'},
+  1978:{t:'Get Out Your Handkerchiefs',d:'Bertrand Blier'},
+  1980:{t:'The Last Metro',d:'Francois Truffaut'},
+  1981:{t:'Diva',d:'Jean-Jacques Beineix'},
+  1983:{t:'Entre nous',d:'Diane Kurys'},
+  1985:{t:'Three Men and a Cradle',d:'Coline Serreau'},
+  1986:{t:'Betty Blue',d:'Jean-Jacques Beineix'},
+  1988:{t:'Au revoir les enfants',d:'Louis Malle'},
+  1990:{t:'Cyrano de Bergerac',d:'Jean-Paul Rappeneau'},
+  1992:{t:'Un coeur en hiver',d:'Claude Sautet'},
+  1994:{t:'The Wild Reeds',d:'Andre Techine'},
+  1995:{t:'La Haine',d:'Mathieu Kassovitz'},
+  1996:{t:'Ridicule',d:'Patrice Leconte'},
+  1997:{t:'The Fifth Element',d:'Luc Besson'},
+  1999:{t:'The Dreamlife of Angels',d:'Erick Zonca'},
+  2000:{t:'The Taste of Others',d:'Agnes Jaoui'},
+  2001:{t:'Amelie',d:'Jean-Pierre Jeunet'},
+  2002:{t:'The Piano Teacher',d:'Michael Haneke'},
+  2003:{t:'Swimming Pool',d:'Francois Ozon'},
+  2004:{t:'The Chorus',d:'Christophe Barratier'},
+  2005:{t:'Cache',d:'Michael Haneke'},
+  2006:{t:'The Science of Sleep',d:'Michel Gondry'},
+  2007:{t:'The Diving Bell and the Butterfly',d:'Julian Schnabel'},
+  2008:{t:'The Class',d:'Laurent Cantet'},
+  2009:{t:'A Prophet',d:'Jacques Audiard'},
+  2010:{t:'Of Gods and Men',d:'Xavier Beauvois'},
+};
+
+const FILM_IT_NO1 = {
+  1950:{t:'Bitter Rice',d:'Giuseppe De Santis'},
+  1952:{t:'Umberto D.',d:'Vittorio De Sica'},
+  1954:{t:'La Strada',d:'Federico Fellini'},
+  1957:{t:'Nights of Cabiria',d:'Federico Fellini'},
+  1959:{t:'Big Deal on Madonna Street',d:'Mario Monicelli'},
+  1960:{t:'La Dolce Vita',d:'Federico Fellini'},
+  1961:{t:'Divorce Italian Style',d:'Pietro Germi'},
+  1963:{t:'8 1/2',d:'Federico Fellini'},
+  1965:{t:'For a Few Dollars More',d:'Sergio Leone'},
+  1966:{t:'The Good, the Bad and the Ugly',d:'Sergio Leone'},
+  1968:{t:'Once Upon a Time in the West',d:'Sergio Leone'},
+  1970:{t:'The Bird with the Crystal Plumage',d:'Dario Argento'},
+  1972:{t:'The Working Class Goes to Heaven',d:'Elio Petri'},
+  1974:{t:'Amarcord',d:'Federico Fellini'},
+  1976:{t:'The Innocent',d:'Luchino Visconti'},
+  1978:{t:'The Tree of Wooden Clogs',d:'Ermanno Olmi'},
+  1980:{t:'La Terrazza',d:'Ettore Scola'},
+  1982:{t:'The Night of the Shooting Stars',d:'Paolo & Vittorio Taviani'},
+  1984:{t:'Once Upon a Time in America',d:'Sergio Leone'},
+  1986:{t:'The Name of the Rose',d:'Jean-Jacques Annaud'},
+  1988:{t:'Cinema Paradiso',d:'Giuseppe Tornatore'},
+  1990:{t:'The Postman',d:'Michael Radford'},
+  1992:{t:'The Stolen Children',d:'Gianni Amelio'},
+  1994:{t:'Caro Diario',d:'Nanni Moretti'},
+  1997:{t:'Life is Beautiful',d:'Roberto Benigni'},
+  2000:{t:'Malena',d:'Giuseppe Tornatore'},
+  2001:{t:"The Son's Room",d:'Nanni Moretti'},
+  2003:{t:'The Best of Youth',d:'Marco Tullio Giordana'},
+  2006:{t:'Caos calmo',d:'Antonello Grimaldi'},
+  2008:{t:'Gomorra',d:'Matteo Garrone'},
+  2009:{t:'Il Divo',d:'Paolo Sorrentino'},
+  2010:{t:'The Great Beauty',d:'Paolo Sorrentino'},
+};
+
+const FILM_BR_NO1 = {
+  1962:{t:'Barravento',d:'Glauber Rocha'},
+  1964:{t:'Black God, White Devil',d:'Glauber Rocha'},
+  1967:{t:'Land in Anguish',d:'Glauber Rocha'},
+  1969:{t:'Macunaima',d:'Joaquim Pedro de Andrade'},
+  1971:{t:'Como era gostoso o meu frances',d:'Nelson Pereira dos Santos'},
+  1976:{t:'Bye Bye Brasil',d:'Carlos Diegues'},
+  1981:{t:'Pixote',d:'Hector Babenco'},
+  1984:{t:'Quilombo',d:'Carlos Diegues'},
+  1986:{t:'A hora da estrela',d:'Suzana Amaral'},
+  1991:{t:'O que e isso, companheiro?',d:'Bruno Barreto'},
+  1995:{t:'Carlota Joaquina',d:'Carla Camurati'},
+  1998:{t:'Central Station',d:'Walter Salles'},
+  2000:{t:'Behind the Sun',d:'Walter Salles'},
+  2002:{t:'City of God',d:'Fernando Meirelles'},
+  2004:{t:'The Motorcycle Diaries',d:'Walter Salles'},
+  2006:{t:'The Year My Parents Went on Vacation',d:'Cao Hamburger'},
+  2007:{t:'Elite Squad',d:'Jose Padilha'},
+  2008:{t:'Blindness',d:'Fernando Meirelles'},
+  2010:{t:'Elite Squad: The Enemy Within',d:'Jose Padilha'},
+};
+
+const FILM_GB_NO1 = {
+  1950:{t:'The Blue Lamp',d:'Basil Dearden'},
+  1952:{t:'The Importance of Being Earnest',d:'Anthony Asquith'},
+  1955:{t:'The Ladykillers',d:'Alexander Mackendrick'},
+  1957:{t:'The Bridge on the River Kwai',d:'David Lean'},
+  1959:{t:'Room at the Top',d:'Jack Clayton'},
+  1960:{t:'Saturday Night and Sunday Morning',d:'Karel Reisz'},
+  1962:{t:'Lawrence of Arabia',d:'David Lean'},
+  1963:{t:'Tom Jones',d:'Tony Richardson'},
+  1965:{t:'The Knack ...and How to Get It',d:'Richard Lester'},
+  1966:{t:'Alfie',d:'Lewis Gilbert'},
+  1968:{t:'If....',d:'Lindsay Anderson'},
+  1969:{t:'Kes',d:'Ken Loach'},
+  1971:{t:'A Clockwork Orange',d:'Stanley Kubrick'},
+  1976:{t:'The Man Who Fell to Earth',d:'Nicolas Roeg'},
+  1981:{t:'Chariots of Fire',d:'Hugh Hudson'},
+  1984:{t:'Another Country',d:'Marek Kanievska'},
+  1985:{t:'My Beautiful Laundrette',d:'Stephen Frears'},
+  1987:{t:'Full Metal Jacket',d:'Stanley Kubrick'},
+  1988:{t:'A Fish Called Wanda',d:'Charles Crichton'},
+  1990:{t:'The Krays',d:'Peter Medak'},
+  1992:{t:'Howards End',d:'James Ivory'},
+  1994:{t:'Four Weddings and a Funeral',d:'Mike Newell'},
+  1995:{t:'Sense and Sensibility',d:'Ang Lee'},
+  1996:{t:'Trainspotting',d:'Danny Boyle'},
+  1997:{t:'The Full Monty',d:'Peter Cattaneo'},
+  1999:{t:'Notting Hill',d:'Roger Michell'},
+  2000:{t:'Billy Elliot',d:'Stephen Daldry'},
+  2001:{t:'Gosford Park',d:'Robert Altman'},
+  2002:{t:'28 Days Later',d:'Danny Boyle'},
+  2003:{t:'Love Actually',d:'Richard Curtis'},
+  2004:{t:'Vera Drake',d:'Mike Leigh'},
+  2005:{t:'Pride and Prejudice',d:'Joe Wright'},
+  2006:{t:'The Queen',d:'Stephen Frears'},
+  2007:{t:'Atonement',d:'Joe Wright'},
+  2008:{t:'Slumdog Millionaire',d:'Danny Boyle'},
+  2009:{t:'In the Loop',d:'Armando Iannucci'},
+  2010:{t:"The King's Speech",d:'Tom Hooper'},
+};
+
+const FILM_DE_NO1 = {
+  1951:{t:'Der Hauptmann von Koepenick',d:'Helmut Kautner'},
+  1954:{t:'The Last Bridge',d:'Helmut Kautner'},
+  1959:{t:'The Bridge',d:'Bernhard Wicki'},
+  1966:{t:'Abschied von gestern',d:'Alexander Kluge'},
+  1968:{t:'Artists at the Top of the Big Top',d:'Alexander Kluge'},
+  1971:{t:'Beware of a Holy Whore',d:'Rainer Werner Fassbinder'},
+  1972:{t:'The Bitter Tears of Petra von Kant',d:'Rainer Werner Fassbinder'},
+  1975:{t:'Fear of Fear',d:'Rainer Werner Fassbinder'},
+  1978:{t:'The Marriage of Maria Braun',d:'Rainer Werner Fassbinder'},
+  1979:{t:'The Tin Drum',d:'Volker Schlondorff'},
+  1981:{t:'Das Boot',d:'Wolfgang Petersen'},
+  1982:{t:'Fitzcarraldo',d:'Werner Herzog'},
+  1984:{t:'Paris, Texas',d:'Wim Wenders'},
+  1987:{t:'Wings of Desire',d:'Wim Wenders'},
+  1992:{t:'Schtonk!',d:'Helmut Dietl'},
+  1998:{t:'Run Lola Run',d:'Tom Tykwer'},
+  1999:{t:'Sonnenallee',d:'Leander Haussmann'},
+  2003:{t:'Good Bye, Lenin!',d:'Wolfgang Becker'},
+  2004:{t:'Der Untergang',d:'Oliver Hirschbiegel'},
+  2006:{t:'The Lives of Others',d:'Florian Henckel von Donnersmarck'},
+  2007:{t:'The Counterfeiters',d:'Stefan Ruzowitzky'},
+  2009:{t:'The White Ribbon',d:'Michael Haneke'},
+  2010:{t:'Soul Kitchen',d:'Fatih Akin'},
+};
+
+const LOCAL_FILM = {
+  IN: FILM_IN_NO1, JP: FILM_JP_NO1, KR: FILM_KR_NO1,
+  FR: FILM_FR_NO1, IT: FILM_IT_NO1, BR: FILM_BR_NO1,
+  GB: FILM_GB_NO1, DE: FILM_DE_NO1,
+};
+const LOCAL_FILM_LABEL = {
+  IN: 'Bollywood Hit',
+  JP: 'Japanese Cinema',
+  KR: 'Korean Cinema',
+  FR: 'French Cinema',
+  IT: 'Italian Cinema',
+  BR: 'Brazilian Cinema',
+  GB: 'British Cinema',
+  DE: 'German Cinema',
+};
+
 // ---------------------------------------------------------------------------
 // STATE
 // ---------------------------------------------------------------------------
@@ -1002,15 +1540,39 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
 
   const musicP = parentData.culture?.music;
   const musicC = childData.culture?.music;
-  const songP = musicP?.billboard_no1_song || musicP?.uk_no1_jan;
-  const songC = musicC?.billboard_no1_song || musicC?.uk_no1_jan;
-  const artistP = musicP?.billboard_no1_artist || musicP?.uk_no1_jan_artist;
-  const artistC = musicC?.billboard_no1_artist || musicC?.uk_no1_jan_artist;
+
+  // Use local chart data if available for the selected country, otherwise fall back to US Billboard
+  const localMusicData = LOCAL_MUSIC[countryCode];
+  const localMusicLabel = LOCAL_MUSIC_LABEL[countryCode];
+
+  let songP, artistP, musicLabelP;
+  if (localMusicData && localMusicData[parentYear]) {
+    songP = localMusicData[parentYear].s;
+    artistP = localMusicData[parentYear].a;
+    musicLabelP = localMusicLabel;
+  } else {
+    songP = musicP?.billboard_no1_song || musicP?.uk_no1_jan;
+    artistP = musicP?.billboard_no1_artist || musicP?.uk_no1_jan_artist;
+    musicLabelP = countryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
+  }
+
+  let songC, artistC, musicLabelC;
+  if (localMusicData && localMusicData[childYear]) {
+    songC = localMusicData[childYear].s;
+    artistC = localMusicData[childYear].a;
+    musicLabelC = localMusicLabel;
+  } else {
+    songC = musicC?.billboard_no1_song || musicC?.uk_no1_jan;
+    artistC = musicC?.billboard_no1_artist || musicC?.uk_no1_jan_artist;
+    musicLabelC = countryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
+  }
+
+  const musicHeadline = (musicLabelP === musicLabelC) ? musicLabelP : (musicLabelP + ' / ' + musicLabelC);
 
   if (songP && songC) {
     sections.push(compareCard({
       eyebrow: '\uD83C\uDFB5 Music',
-      headline: 'Billboard #1 that year',
+      headline: musicHeadline,
       parent: {
         label: String(parentYear),
         value: songP,
@@ -1024,33 +1586,59 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
     }));
   }
 
-  const oscarP = parentData.culture?.film?.oscar_best_picture;
-  const oscarC = childData.culture?.film?.oscar_best_picture;
+  // Use local film data if available for the selected country, otherwise fall back to Oscars
+  const localFilmData = LOCAL_FILM[countryCode];
+  const localFilmLabel = LOCAL_FILM_LABEL[countryCode];
 
-  if (oscarP && oscarC) {
+  let filmTitleP, filmDirP, filmLabelP;
+  if (localFilmData && localFilmData[parentYear]) {
+    filmTitleP = localFilmData[parentYear].t;
+    filmDirP = localFilmData[parentYear].d;
+    filmLabelP = localFilmLabel;
+  } else {
+    filmTitleP = parentData.culture?.film?.oscar_best_picture;
+    filmDirP = parentData.culture?.film?.oscar_best_director_name;
+    filmLabelP = 'Oscar Best Picture';
+  }
+
+  let filmTitleC, filmDirC, filmLabelC;
+  if (localFilmData && localFilmData[childYear]) {
+    filmTitleC = localFilmData[childYear].t;
+    filmDirC = localFilmData[childYear].d;
+    filmLabelC = localFilmLabel;
+  } else {
+    filmTitleC = childData.culture?.film?.oscar_best_picture;
+    filmDirC = childData.culture?.film?.oscar_best_director_name;
+    filmLabelC = 'Oscar Best Picture';
+  }
+
+  const filmHeadline = (filmLabelP === filmLabelC) ? filmLabelP : (filmLabelP + ' / ' + filmLabelC);
+
+  if (filmTitleP && filmTitleC) {
     sections.push(compareCard({
       eyebrow: '\uD83C\uDFC6 Film',
-      headline: 'Oscar Best Picture',
+      headline: filmHeadline,
       parent: {
         label: String(parentYear),
-        value: oscarP,
-        desc: parentData.culture?.film?.oscar_best_director_name ? 'dir. ' + parentData.culture.film.oscar_best_director_name : '',
+        value: filmTitleP,
+        desc: filmDirP ? 'dir. ' + filmDirP : '',
       },
       child: {
         label: String(childYear),
-        value: oscarC,
-        desc: childData.culture?.film?.oscar_best_director_name ? 'dir. ' + childData.culture.film.oscar_best_director_name : '',
+        value: filmTitleC,
+        desc: filmDirC ? 'dir. ' + filmDirC : '',
       },
     }));
   }
 
   const tvP = parentData.culture?.television?.most_watched_show;
   const tvC = childData.culture?.television?.most_watched_show;
+  const tvLabel = countryCode === 'US' ? 'Most-watched TV show' : 'Most-watched American TV show';
 
   if (tvP && tvC) {
     sections.push(compareCard({
       eyebrow: '\uD83D\uDCFA Television',
-      headline: 'Most-watched TV show',
+      headline: tvLabel,
       parent: {
         label: String(parentYear),
         value: tvP,
@@ -1133,6 +1721,26 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
   }
 
   // -----------------------------------------------------------------------
+  // VOICE THEN vs NOW (ElevenLabs affiliate)
+  // -----------------------------------------------------------------------
+
+  const decadeP = Math.floor(parentYear / 10) * 10;
+  const decadeC = Math.floor(childYear / 10) * 10;
+  const voiceP = VOICE_THEN[decadeP];
+  const voiceC = VOICE_THEN[decadeC];
+
+  if (voiceP || voiceC) {
+    sections.push(`
+      <div class="voice-then-now" data-reveal>
+        ${voiceP ? `<p class="voice-then">In ${parentYear}, ${voiceP}.</p>` : ''}
+        ${voiceC ? `<p class="voice-then">In ${childYear}, ${voiceC}.</p>` : ''}
+        <p class="voice-now">Today, you can clone your own voice with a few minutes of audio.</p>
+        <a href="https://try.elevenlabs.io/pivode" class="voice-cta" target="_blank" rel="noopener">Hear what that sounds like <span class="voice-cta-arrow">\u2192</span></a>
+      </div>
+    `);
+  }
+
+  // -----------------------------------------------------------------------
   // SECTION 7: WORLD EVENTS
   // -----------------------------------------------------------------------
 
@@ -1172,20 +1780,19 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
   const parentAt18 = parentYear + 18;
   const childAt18  = childYear  + 18;
 
-  // Both years must fall within data range and not be in gaps
-  if (
-    parentAt18 < YEAR_MIN || parentAt18 > YEAR_MAX || YEAR_GAPS.has(parentAt18) ||
-    childAt18  < YEAR_MIN || childAt18  > YEAR_MAX || YEAR_GAPS.has(childAt18)
-  ) {
-    return; // Skip gracefully if outside range
-  }
+  // Show the section if at least one of the two at-18 years has valid data
+  const parentAt18Valid = parentAt18 >= YEAR_MIN && parentAt18 <= YEAR_MAX && !YEAR_GAPS.has(parentAt18);
+  const childAt18Valid  = childAt18  >= YEAR_MIN && childAt18  <= YEAR_MAX && !YEAR_GAPS.has(childAt18);
+  if (!parentAt18Valid && !childAt18Valid) return; // skip only if both are invalid
 
-  let parentAt18Data, childAt18Data;
+  let parentAt18Data = null, childAt18Data = null;
   try {
-    [parentAt18Data, childAt18Data] = await Promise.all([
-      fetch('../data/' + parentAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }),
-      fetch('../data/' + childAt18  + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }),
-    ]);
+    const fetches = [];
+    if (parentAt18Valid) fetches.push(fetch('../data/' + parentAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }));
+    else fetches.push(Promise.resolve(null));
+    if (childAt18Valid) fetches.push(fetch('../data/' + childAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }));
+    else fetches.push(Promise.resolve(null));
+    [parentAt18Data, childAt18Data] = await Promise.all(fetches);
   } catch (_) {
     return; // Silently skip if data unavailable
   }
@@ -1194,7 +1801,18 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
   const cpiP18  = CPI_TO_2024[parentAt18] || 1;
   const cpiC18  = CPI_TO_2024[childAt18]  || 1;
 
-  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel) {
+  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid) {
+    if (!isValid || !data) {
+      return `<div class="at18-col">
+      <div class="at18-col-header">
+        <span class="gen-pill ${pillClass}">${escHtml(pillLabel)}</span>
+        <p class="at18-year" style="color:${accentColor}">${year}</p>
+        <p class="at18-age-caption">When they turned 18</p>
+      </div>
+      <div class="at18-rows"><div class="at18-row"><span class="at18-row-value" style="color:#888;font-style:italic">You turned 18 in ${year} - recent enough to remember!</span></div></div>
+    </div>`;
+    }
+
     const music   = data.culture?.music;
     const film    = data.culture?.film;
     const tv      = data.culture?.television;
@@ -1210,9 +1828,28 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
     const gasRaw   = data.prices_us?.gallon_gas_usd;
     const gasFinal = gasRaw ? ('$' + (gasRaw * cpiYear).toFixed(2)) : null;
 
-    const song    = music?.billboard_no1_song  || music?.uk_no1_jan;
-    const artist  = music?.billboard_no1_artist || music?.uk_no1_jan_artist;
-    const movie   = film?.box_office_no1        || film?.oscar_best_picture;
+    // Use local chart data if available, otherwise fall back to US/UK
+    const localMusicEntry = LOCAL_MUSIC[countryCode] && LOCAL_MUSIC[countryCode][year];
+    let song, artist;
+    if (localMusicEntry) {
+      song   = localMusicEntry.s;
+      artist = localMusicEntry.a;
+    } else {
+      song   = music?.billboard_no1_song  || music?.uk_no1_jan;
+      artist = music?.billboard_no1_artist || music?.uk_no1_jan_artist;
+    }
+
+    // Use local film data if available, otherwise fall back to Oscar/box office
+    const localFilmEntry = LOCAL_FILM[countryCode] && LOCAL_FILM[countryCode][year];
+    let movie, movieDir;
+    if (localFilmEntry) {
+      movie    = localFilmEntry.t;
+      movieDir = localFilmEntry.d;
+    } else {
+      movie    = film?.box_office_no1 || film?.oscar_best_picture;
+      movieDir = null;
+    }
+
     const tvShow  = tv?.most_watched_show;
     const techMil = tech?.milestone;
 
@@ -1228,9 +1865,12 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
       </div>`;
     }
 
+    const songDisplay = song ? song + (artist ? ' - ' + artist : '') : null;
+    const movieDisplay = movie ? movie + (movieDir ? ' (dir. ' + movieDir + ')' : '') : null;
+
     const rows = [
-      row('\uD83C\uDFB5', '#1 Song',      song   ? song + (artist ? ' - ' + artist : '') : null),
-      row('\uD83C\uDFAC', 'Biggest Film', movie),
+      row('\uD83C\uDFB5', '#1 Song',      songDisplay),
+      row('\uD83C\uDFAC', 'Biggest Film', movieDisplay),
       row('\uD83D\uDCFA', 'Top TV Show',  tvShow),
       row('\uD83D\uDCBB', 'Technology',   techMil ? techMil.slice(0, 90) + (techMil.length > 90 ? '...' : '') : null),
       row('\uD83C\uDF0D', 'World Event',  bigEvent ? bigEvent.slice(0, 100) + (bigEvent.length > 100 ? '...' : '') : null),
@@ -1248,8 +1888,8 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
     </div>`;
   }
 
-  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th');
-  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th');
+  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid);
+  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid);
 
   const sectionHtml = `
     <div class="at18-section" data-reveal>
