@@ -1332,44 +1332,47 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   // SECTION 2: COUNTRY LEADERS - each side uses its own country
   // -----------------------------------------------------------------------
 
-  const parentLeaderInfo = LEADER_KEYS[parentCountryCode] || LEADER_KEYS.US;
-  const childLeaderInfo  = LEADER_KEYS[childCountryCode]  || LEADER_KEYS.US;
+  let parentLeaderInfo = LEADER_KEYS[parentCountryCode] || LEADER_KEYS.US;
+  let childLeaderInfo  = LEADER_KEYS[childCountryCode]  || LEADER_KEYS.US;
 
   const leaderP = parentData.leaders?.[parentLeaderInfo.key]
     || parentCountryData.leader
-    || 'Unknown';
+    || null;
   const leaderC = childData.leaders?.[childLeaderInfo.key]
     || childCountryData.leader
-    || 'Unknown';
+    || null;
 
   const countryDisplayP = displayCountryName(parentCountry, parentYear);
   const countryDisplayC = displayCountryName(childCountry, childYear);
 
   const leaderEyebrow = parentCountryCode === childCountryCode
-    ? parentCountry.flag + ' ' + parentCountry.name + ' Leadership'
-    : parentCountry.flag + ' ' + parentCountry.name + ' / ' + childCountry.flag + ' ' + childCountry.name + ' Leadership';
+    ? parentCountry.flag + ' ' + countryDisplayP + ' Leadership'
+    : parentCountry.flag + ' ' + countryDisplayP + ' / ' + childCountry.flag + ' ' + countryDisplayC + ' Leadership';
 
-  sections.push(compareCard({
-    eyebrow: leaderEyebrow,
-    headline: 'Who was in charge',
-    parent: {
-      label: String(parentYear),
-      value: leaderP,
-      desc: parentLeaderInfo.title + ' of ' + countryDisplayP,
-    },
-    child: {
-      label: String(childYear),
-      value: leaderC,
-      desc: childLeaderInfo.title + ' of ' + countryDisplayC,
-    },
-  }));
+  if (leaderP && leaderC) {
+    sections.push(compareCard({
+      eyebrow: leaderEyebrow,
+      headline: 'Who was in charge',
+      parent: {
+        label: String(parentYear),
+        value: leaderP,
+        desc: parentLeaderInfo.title + ' of ' + countryDisplayP,
+      },
+      child: {
+        label: String(childYear),
+        value: leaderC,
+        desc: childLeaderInfo.title + ' of ' + countryDisplayC,
+      },
+    }));
+  }
 
   // -----------------------------------------------------------------------
   // SECTION 3: LIFE EXPECTANCY - each side uses its own country
+  // Do not fall back to world average - it would be presented as country-specific data
   // -----------------------------------------------------------------------
 
-  const lifeP = parentCountryData.life_expectancy || parentData.world?.life_expectancy_global;
-  const lifeC = childCountryData.life_expectancy  || childData.world?.life_expectancy_global;
+  const lifeP = parentCountryData.life_expectancy || null;
+  const lifeC = childCountryData.life_expectancy  || null;
 
   const sameCountryLE = (parentCountryCode === childCountryCode);
 
@@ -1676,10 +1679,19 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     songP = localMusicDataP[parentYear].s;
     artistP = localMusicDataP[parentYear].a;
     musicLabelP = LOCAL_MUSIC_LABEL[parentCountryCode];
+  } else if (localMusicDataP) {
+    // Country has local music data but not for this year - skip rather than show US fallback
+    songP = null;
+    artistP = null;
+    musicLabelP = LOCAL_MUSIC_LABEL[parentCountryCode];
+  } else if (parentCountryCode === 'GB') {
+    songP = musicP?.uk_no1_jan || musicP?.billboard_no1_song;
+    artistP = musicP?.uk_no1_jan_artist || musicP?.billboard_no1_artist;
+    musicLabelP = 'UK #1 Song';
   } else {
     songP = musicP?.billboard_no1_song || musicP?.uk_no1_jan;
     artistP = musicP?.billboard_no1_artist || musicP?.uk_no1_jan_artist;
-    musicLabelP = parentCountryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
+    musicLabelP = 'Top Song';
   }
 
   let songC, artistC, musicLabelC;
@@ -1687,10 +1699,18 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     songC = localMusicDataC[childYear].s;
     artistC = localMusicDataC[childYear].a;
     musicLabelC = LOCAL_MUSIC_LABEL[childCountryCode];
+  } else if (localMusicDataC) {
+    songC = null;
+    artistC = null;
+    musicLabelC = LOCAL_MUSIC_LABEL[childCountryCode];
+  } else if (childCountryCode === 'GB') {
+    songC = musicC?.uk_no1_jan || musicC?.billboard_no1_song;
+    artistC = musicC?.uk_no1_jan_artist || musicC?.billboard_no1_artist;
+    musicLabelC = 'UK #1 Song';
   } else {
     songC = musicC?.billboard_no1_song || musicC?.uk_no1_jan;
     artistC = musicC?.billboard_no1_artist || musicC?.uk_no1_jan_artist;
-    musicLabelC = childCountryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
+    musicLabelC = 'Top Song';
   }
 
   const sameCountryMusic = (musicLabelP === musicLabelC);
@@ -1722,6 +1742,11 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     filmTitleP = localFilmDataP[parentYear].t;
     filmDirP = localFilmDataP[parentYear].d;
     filmLabelP = LOCAL_FILM_LABEL[parentCountryCode];
+  } else if (localFilmDataP) {
+    // Country has local film data but not for this year - skip rather than show Oscar fallback
+    filmTitleP = null;
+    filmDirP = null;
+    filmLabelP = LOCAL_FILM_LABEL[parentCountryCode];
   } else {
     filmTitleP = parentData.culture?.film?.oscar_best_picture;
     filmDirP = parentData.culture?.film?.oscar_best_director_name;
@@ -1732,6 +1757,10 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   if (localFilmDataC && localFilmDataC[childYear]) {
     filmTitleC = localFilmDataC[childYear].t;
     filmDirC = localFilmDataC[childYear].d;
+    filmLabelC = LOCAL_FILM_LABEL[childCountryCode];
+  } else if (localFilmDataC) {
+    filmTitleC = null;
+    filmDirC = null;
     filmLabelC = LOCAL_FILM_LABEL[childCountryCode];
   } else {
     filmTitleC = childData.culture?.film?.oscar_best_picture;
@@ -1964,9 +1993,9 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
     const events  = data.world_events || [];
     const countryD = data.countries?.[countryCode] || {};
 
-    // Leader: check country-level first, then leaders lookup
+    // Leader: check country-level first, then leaders lookup (skip if unknown)
     const leaderInfo = LEADER_KEYS[countryCode] || LEADER_KEYS.US;
-    const leader = data.leaders?.[leaderInfo.key] || countryD.leader || 'Unknown';
+    const leader = data.leaders?.[leaderInfo.key] || countryD.leader || null;
 
     // Gas price inflation-adjusted to 2024 dollars
     const gasRaw   = data.prices_us?.gallon_gas_usd;
@@ -1978,6 +2007,9 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
     if (localMusicEntry) {
       song   = localMusicEntry.s;
       artist = localMusicEntry.a;
+    } else if (countryCode === 'GB') {
+      song   = music?.uk_no1_jan  || music?.billboard_no1_song;
+      artist = music?.uk_no1_jan_artist || music?.billboard_no1_artist;
     } else {
       song   = music?.billboard_no1_song  || music?.uk_no1_jan;
       artist = music?.billboard_no1_artist || music?.uk_no1_jan_artist;
@@ -2074,11 +2106,11 @@ function buildCompareShareCard() {
   const cpiP = CPI_TO_2024[parentYear] || 1;
   const cpiC = CPI_TO_2024[childYear] || 1;
 
-  // Life expectancy delta - each side uses its own country
+  // Life expectancy delta - each side uses its own country (no world avg fallback)
   const parentCountryData = parentData.countries?.[parentCountryCode] || {};
   const childCountryData  = childData.countries?.[childCountryCode]   || {};
-  const lifeP = parentCountryData.life_expectancy || parentData.world?.life_expectancy_global;
-  const lifeC = childCountryData.life_expectancy  || childData.world?.life_expectancy_global;
+  const lifeP = parentCountryData.life_expectancy || null;
+  const lifeC = childCountryData.life_expectancy  || null;
   const lifeDelta = (lifeP && lifeC) ? (lifeC - lifeP).toFixed(1) : null;
 
   // GDP real change - no US fallback for non-US countries; no cross-country delta
@@ -2557,7 +2589,7 @@ $tweetBtn.addEventListener('click', () => {
   if (_lastCompare && _lastCompare.parentData && _lastCompare.childData) {
     const pLE = _lastCompare.parentData.countries?.[_lastCompare.parentCountryCode]?.life_expectancy;
     const cLE = _lastCompare.childData.countries?.[_lastCompare.childCountryCode]?.life_expectancy;
-    if (pLE && cLE) {
+    if (pLE && cLE && _lastCompare.parentCountryCode === _lastCompare.childCountryCode) {
       const delta = Math.abs(cLE - pLE).toFixed(1);
       tweetHook = ' Life expectancy shifted by ' + delta + ' years between these generations.';
     }
