@@ -866,7 +866,7 @@ function svgLifeExpChart(parentLE, childLE, todayLE, parentYear, childYear, acce
   const W = 600;
   const H = 220;
   const padL = 20;
-  const padR = 130; // increased from 110 to accommodate larger value labels
+  const padR = 116;
   const padT = 32;
   const padB = 20;
   const barH = 32;
@@ -889,20 +889,18 @@ function svgLifeExpChart(parentLE, childLE, todayLE, parentYear, childYear, acce
   const textColor    = '#e8e5e0';
   const labelColor   = '#9898b0';
 
-  // Font sizes increased so text remains readable after SVG scales to ~330px on mobile:
-  // 11 -> 18, 14 -> 22
   return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
-  <text x="${padL}" y="${y0 - 8}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}" letter-spacing="0.08em" text-transform="uppercase">THEIR BIRTH YEAR (${parentYear})</text>
+  <text x="${padL}" y="${y0 - 8}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" letter-spacing="0.08em" text-transform="uppercase">THEIR BIRTH YEAR (${parentYear})</text>
   <rect x="${padL}" y="${y0}" width="${bw0}" height="${barH}" rx="4" fill="${accentParent}" opacity="0.85"/>
-  <text x="${padL + bw0 + 8}" y="${y0 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="${textColor}">${parentLE} yrs</text>
+  <text x="${padL + bw0 + 8}" y="${y0 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}">${parentLE} yrs</text>
 
-  <text x="${padL}" y="${y1 - 8}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}" letter-spacing="0.08em">YOUR BIRTH YEAR (${childYear})</text>
+  <text x="${padL}" y="${y1 - 8}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" letter-spacing="0.08em">YOUR BIRTH YEAR (${childYear})</text>
   <rect x="${padL}" y="${y1}" width="${bw1}" height="${barH}" rx="4" fill="${accentChild}" opacity="0.85"/>
-  <text x="${padL + bw1 + 8}" y="${y1 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="${textColor}">${childLE} yrs</text>
+  <text x="${padL + bw1 + 8}" y="${y1 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}">${childLE} yrs</text>
 
-  <text x="${padL}" y="${y2 - 8}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}" letter-spacing="0.08em">TODAY (2024)</text>
+  <text x="${padL}" y="${y2 - 8}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" letter-spacing="0.08em">TODAY (2024)</text>
   <rect x="${padL}" y="${y2}" width="${bw2}" height="${barH}" rx="4" fill="${neutralColor}" opacity="0.7"/>
-  <text x="${padL + bw2 + 8}" y="${y2 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="${textColor}">${todayLE} yrs</text>
+  <text x="${padL + bw2 + 8}" y="${y2 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}">${todayLE} yrs</text>
 </svg>`;
 }
 
@@ -913,11 +911,11 @@ function svgPriceChart(priceItems, accentParent, accentChild) {
 
   const itemCount = priceItems.length;
   const W = 600;
-  const groupH = 62; // increased to accommodate larger fonts
+  const groupH = 56;
   const padT   = 12;
   const padB   = 30;
-  const padL   = 173; // increased from 108 (~60%) to accommodate larger label text
-  const padR   = 26;  // increased from 16 (~60%)
+  const padL   = 130;
+  const padR   = 20;
   const H = padT + itemCount * groupH + padB;
 
   const chartW = W - padL - padR;
@@ -930,8 +928,6 @@ function svgPriceChart(priceItems, accentParent, accentChild) {
   const textColor  = '#e8e5e0';
   const labelColor = '#9898b0';
 
-  // Font sizes increased so text remains readable after SVG scales to ~330px on mobile:
-  // 11 -> 18, 12 -> 19
   let bars = '';
   priceItems.forEach((item, i) => {
     const yBase = padT + i * groupH;
@@ -948,20 +944,20 @@ function svgPriceChart(priceItems, accentParent, accentChild) {
     const labelText = item.label.length > 14 ? item.label.slice(0, 13) + '.' : item.label;
 
     bars += `
-  <text x="${padL - 8}" y="${yBase + barH + barGap / 2 + 4}" font-family="Inter,system-ui,sans-serif" font-size="19" fill="${labelColor}" text-anchor="end">${labelText}</text>
+  <text x="${padL - 8}" y="${yBase + barH + barGap / 2 + 4}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" text-anchor="end">${labelText}</text>
   <rect x="${padL}" y="${yP}" width="${wP}" height="${barH}" rx="3" fill="${accentParent}" opacity="0.8"/>
-  <text x="${padL + wP + 5}" y="${yP + barH - 4}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${textColor}">${valLabelP}</text>
+  <text x="${padL + wP + 5}" y="${yP + barH - 4}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${textColor}">${valLabelP}</text>
   <rect x="${padL}" y="${yC}" width="${wC}" height="${barH}" rx="3" fill="${accentChild}" opacity="0.8"/>
-  <text x="${padL + wC + 5}" y="${yC + barH - 4}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${textColor}">${valLabelC}</text>`;
+  <text x="${padL + wC + 5}" y="${yC + barH - 4}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${textColor}">${valLabelC}</text>`;
   });
 
   // Legend at bottom
   const legendY = padT + itemCount * groupH + 8;
   const legend  = `
   <rect x="${padL}" y="${legendY}" width="10" height="10" rx="2" fill="${accentParent}" opacity="0.8"/>
-  <text x="${padL + 14}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}">Their generation</text>
-  <rect x="${padL + 155}" y="${legendY}" width="10" height="10" rx="2" fill="${accentChild}" opacity="0.8"/>
-  <text x="${padL + 169}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}">Your generation</text>`;
+  <text x="${padL + 14}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${labelColor}">Their generation</text>
+  <rect x="${padL + 130}" y="${legendY}" width="10" height="10" rx="2" fill="${accentChild}" opacity="0.8"/>
+  <text x="${padL + 144}" y="${legendY + 9}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${labelColor}">Your generation</text>`;
 
   return `<svg viewBox="0 0 ${W} ${H + 20}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">${bars}${legend}
 </svg>`;
@@ -971,9 +967,9 @@ function svgPriceChart(priceItems, accentParent, accentChild) {
 function svgPopulationChart(parentPop, childPop, todayPop, parentYear, childYear) {
   const W   = 600;
   const H   = 180;
-  const padL = 96;  // increased from 60 (~60%) to accommodate larger text
-  const padR = 96;  // increased from 60 (~60%)
-  const padT = 50;  // increased for larger value labels above dots
+  const padL = 72;
+  const padR = 72;
+  const padT = 44;
   const padB = 36;
 
   const chartW = W - padL - padR;
@@ -1008,15 +1004,13 @@ function svgPopulationChart(parentPop, childPop, todayPop, parentYear, childYear
   // Area fill
   const areaD = `${pathD} L ${xs[2]} ${padT + chartH} L ${xs[0]} ${padT + chartH} Z`;
 
-  // Font sizes increased so text remains readable after SVG scales to ~330px on mobile:
-  // 11 -> 18, 13 -> 20
   let dotsSvg = '';
   points.forEach((p, i) => {
     const labelY = ys[i] > padT + 25 ? ys[i] - 12 : ys[i] + 24;
     dotsSvg += `
   <circle cx="${xs[i]}" cy="${ys[i]}" r="5" fill="${dotColor}"/>
-  <text x="${xs[i]}" y="${labelY}" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="600" fill="${textColor}" text-anchor="middle">${p.label}</text>
-  <text x="${xs[i]}" y="${padT + chartH + 22}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}" text-anchor="middle">${p.year}</text>`;
+  <text x="${xs[i]}" y="${labelY}" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="600" fill="${textColor}" text-anchor="middle">${p.label}</text>
+  <text x="${xs[i]}" y="${padT + chartH + 18}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" text-anchor="middle">${p.year}</text>`;
   });
 
   return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
@@ -1035,11 +1029,11 @@ function svgPopulationChart(parentPop, childPop, todayPop, parentYear, childYear
 // GDP growth two-bar chart
 function svgGdpChart(parentGdpAdj, childGdpAdj, parentYear, childYear, accentParent, accentChild) {
   const W    = 600;
-  const H    = 190;  // increased height to accommodate larger fonts
-  const padL = 51;   // increased from 32 (~60%)
-  const padR = 51;   // increased from 32 (~60%)
-  const padT = 22;   // increased from 16 to give more room above bars for value labels
-  const padB = 50;   // increased from 36 to accommodate larger x-axis labels
+  const H    = 180;
+  const padL = 40;
+  const padR = 40;
+  const padT = 18;
+  const padB = 42;
 
   const chartW = W - padL - padR;
   const chartH = H - padT - padB;
@@ -1066,19 +1060,17 @@ function svgGdpChart(parentGdpAdj, childGdpAdj, parentYear, childYear, accentPar
   const textColor  = '#e8e5e0';
   const labelColor = '#9898b0';
 
-  // Font sizes increased so text remains readable after SVG scales to ~330px on mobile:
-  // 11 -> 18, 12 -> 19, 15 -> 22
   return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
   <rect x="${xP}" y="${yP}" width="${barW}" height="${hP}" rx="4" fill="${accentParent}" opacity="0.85"/>
-  <text x="${xP + barW / 2}" y="${yP - 8}" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="${textColor}" text-anchor="middle">${valP}</text>
-  <text x="${xP + barW / 2}" y="${yBL + 22}" font-family="Inter,system-ui,sans-serif" font-size="19" fill="${labelColor}" text-anchor="middle">${parentYear}</text>
+  <text x="${xP + barW / 2}" y="${yP - 8}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}" text-anchor="middle">${valP}</text>
+  <text x="${xP + barW / 2}" y="${yBL + 18}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" text-anchor="middle">${parentYear}</text>
 
   <rect x="${xC}" y="${yC}" width="${barW}" height="${hC}" rx="4" fill="${accentChild}" opacity="0.85"/>
-  <text x="${xC + barW / 2}" y="${yC - 8}" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="${textColor}" text-anchor="middle">${valC}</text>
-  <text x="${xC + barW / 2}" y="${yBL + 22}" font-family="Inter,system-ui,sans-serif" font-size="19" fill="${labelColor}" text-anchor="middle">${childYear}</text>
+  <text x="${xC + barW / 2}" y="${yC - 8}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}" text-anchor="middle">${valC}</text>
+  <text x="${xC + barW / 2}" y="${yBL + 18}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" text-anchor="middle">${childYear}</text>
 
   <line x1="${padL}" y1="${yBL}" x2="${W - padR}" y2="${yBL}" stroke="#2d2d40" stroke-width="1"/>
-  <text x="${W / 2}" y="${yBL + 44}" font-family="Inter,system-ui,sans-serif" font-size="18" fill="${labelColor}" text-anchor="middle">GDP per capita - inflation-adjusted to 2024 dollars</text>
+  <text x="${W / 2}" y="${yBL + 36}" font-family="Inter,system-ui,sans-serif" font-size="13" fill="${labelColor}" text-anchor="middle">GDP per capita - inflation-adjusted to 2024 dollars</text>
 </svg>`;
 }
 
@@ -1961,7 +1953,7 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
         <p class="at18-year" style="color:${accentColor}">${year}</p>
         <p class="at18-age-caption">${isChild ? 'When you turned 18' : 'When they turned 18'}</p>
       </div>
-      <div class="at18-rows"><div class="at18-row"><span class="at18-row-value" style="color:#888;font-style:italic">${fallbackText}</span></div></div>
+      <div class="at18-rows"><div class="at18-row" style="display:block"><span class="at18-row-value" style="color:#888;font-style:italic">${fallbackText}</span></div></div>
     </div>`;
     }
 
