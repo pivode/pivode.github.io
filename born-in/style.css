@@ -291,7 +291,7 @@ body {
   border-radius: 6px;
   color: var(--text-primary);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px; /* must be >=16px to prevent iOS Safari auto-zoom on focus */
   padding: 8px 12px;
   width: 100%;
   outline: none;
@@ -396,6 +396,27 @@ body {
 }
 
 /* =========================================================
+   BOTTOM CTA BUTTON
+   Standalone button not subject to header-btn mobile overrides.
+   ========================================================= */
+
+.bottom-cta {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 12px 24px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.bottom-cta:hover {
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+/* =========================================================
    REVEAL OVERLAY
    ========================================================= */
 
@@ -459,7 +480,7 @@ body {
 /* STICKY HEADER */
 .info-header {
   position: sticky;
-  top: 0;
+  top: env(safe-area-inset-top, 0px);
   z-index: 50;
   height: 56px;
   background: rgba(8, 8, 16, 0.85);
@@ -470,6 +491,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
   max-width: 100%;
 }
 
