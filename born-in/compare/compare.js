@@ -1958,10 +1958,10 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
   const parentAt18 = parentYear + 18;
   const childAt18  = childYear  + 18;
 
-  // Show the section if at least one of the two at-18 years has valid data
+  // Only show the section when both sides have data - asymmetric cards look bad
   const parentAt18Valid = parentAt18 >= YEAR_MIN && parentAt18 <= YEAR_MAX && !YEAR_GAPS.has(parentAt18);
   const childAt18Valid  = childAt18  >= YEAR_MIN && childAt18  <= YEAR_MAX && !YEAR_GAPS.has(childAt18);
-  if (!parentAt18Valid && !childAt18Valid) return; // skip only if both are invalid
+  if (!parentAt18Valid || !childAt18Valid) return;
 
   let parentAt18Data = null, childAt18Data = null;
   const fetches = [];
