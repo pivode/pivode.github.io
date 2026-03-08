@@ -162,30 +162,30 @@
           <span>New comparison</span>
         </button>
       </div>
-    </header>
 
-    <!-- SHARE POPOVER -->
-    <div id="cmp-share-popover" class="share-popover hidden" role="dialog" aria-label="Share options">
-      <button id="cmp-copy-link-btn" class="share-option">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
-          <path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-        Copy link
-      </button>
-      <button id="cmp-tweet-btn" class="share-option">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-          <path d="M12.6 1h2.4l-5.2 5.9L16 15h-4.8l-3.7-4.9L3 15H.6l5.5-6.3L0 1h4.9l3.4 4.4L12.6 1zm-.8 12.6h1.3L4.3 2.3H2.9l8.9 11.3z"/>
-        </svg>
-        Share on X
-      </button>
-      <button id="cmp-save-card-btn" class="share-option">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M8 2v8m0 0L5 7m3 3l3-3M3 12v1.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Save card
-      </button>
-    </div>
+      <!-- SHARE POPOVER - inside header so position:absolute resolves to header height -->
+      <div id="cmp-share-popover" class="share-popover hidden" role="dialog" aria-label="Share options">
+        <button id="cmp-copy-link-btn" class="share-option">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          Copy link
+        </button>
+        <button id="cmp-tweet-btn" class="share-option">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M12.6 1h2.4l-5.2 5.9L16 15h-4.8l-3.7-4.9L3 15H.6l5.5-6.3L0 1h4.9l3.4 4.4L12.6 1zm-.8 12.6h1.3L4.3 2.3H2.9l8.9 11.3z"/>
+          </svg>
+          Share on X
+        </button>
+        <button id="cmp-save-card-btn" class="share-option">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 2v8m0 0L5 7m3 3l3-3M3 12v1.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Save card
+        </button>
+      </div>
+    </header>
 
     <!-- SHARE CARD (hidden, rendered to PNG by html2canvas) -->
     <div id="cmp-share-card" class="share-card" aria-hidden="true"></div>

@@ -44,13 +44,13 @@
     "film": {
       "box_office_no1": "Going My Way",
       "box_office_no1_gross_m": 6.5,
-      "oscar_best_picture": "Going My Way",
+      "oscar_best_picture": "Casablanca",
       "oscar_best_director": "Best Director",
-      "oscar_best_director_name": "Leo McCarey",
-      "oscar_best_actor": "Bing Crosby",
-      "oscar_best_actor_film": "Going My Way",
-      "oscar_best_actress": "Ingrid Bergman",
-      "oscar_best_actress_film": "Gaslight"
+      "oscar_best_director_name": "Michael Curtiz",
+      "oscar_best_actor": "Paul Lukas",
+      "oscar_best_actor_film": "Watch on the Rhine",
+      "oscar_best_actress": "Jennifer Jones",
+      "oscar_best_actress_film": "The Song of Bernadette"
     },
     "television": {
       "most_watched_show": "Bob Hope's Pepsodent Show",

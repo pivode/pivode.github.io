@@ -680,7 +680,8 @@ body {
 }
 
 .cmp-header {
-  /* Same as info-header - no overrides needed; class is additive */
+  /* position:relative so the share popover (position:absolute) resolves to the header, not the section */
+  position: relative;
 }
 
 .header-left {
@@ -1831,7 +1832,7 @@ body {
     padding: 0 16px;
   }
 
-  .header-country .country-name-full {
+  .header-country .country-name {
     display: none;
   }
 
@@ -2437,5 +2438,60 @@ body {
 
   .compare-card {
     padding: 48px 0;
+  }
+}
+
+/* =========================================================
+   COMPACT LANDING - short viewports (iPhone SE = 375x667)
+   Goal: Compare button visible without scrolling at 375x667
+   ========================================================= */
+
+@media (max-height: 700px) and (max-width: 640px) {
+  .cmp-landing {
+    align-items: flex-start;
+    padding: 16px 16px;
+  }
+
+  .cmp-landing-inner {
+    gap: 20px;
+    padding-top: 8px;
+  }
+
+  .cmp-tagline {
+    font-size: clamp(17px, 5vw, 22px);
+    margin-bottom: 6px;
+  }
+
+  .cmp-tagline-sub {
+    font-size: 12px;
+  }
+
+  .cmp-form {
+    gap: 16px;
+  }
+
+  .cmp-input-block {
+    gap: 16px;
+  }
+
+  .cmp-inline-country {
+    margin-top: 10px;
+  }
+
+  .cmp-input-group {
+    gap: 4px;
+  }
+
+  .year-input {
+    font-size: 24px;
+    padding: 4px 0 8px;
+  }
+
+  .cmp-submit-btn {
+    height: 44px;
+  }
+
+  .cmp-solo-link {
+    display: none;
   }
 }

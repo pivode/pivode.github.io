@@ -44,13 +44,13 @@
     "film": {
       "box_office_no1": "This Is Cinerama",
       "box_office_no1_gross_m": 32.0,
-      "oscar_best_picture": "The Greatest Show on Earth",
+      "oscar_best_picture": "An American in Paris",
       "oscar_best_director": "Best Director",
-      "oscar_best_director_name": "John Ford",
-      "oscar_best_actor": "Gary Cooper",
-      "oscar_best_actor_film": "High Noon",
-      "oscar_best_actress": "Shirley Booth",
-      "oscar_best_actress_film": "Come Back, Little Sheba"
+      "oscar_best_director_name": "George Stevens",
+      "oscar_best_actor": "Humphrey Bogart",
+      "oscar_best_actor_film": "The African Queen",
+      "oscar_best_actress": "Vivien Leigh",
+      "oscar_best_actress_film": "A Streetcar Named Desire"
     },
     "television": {
       "most_watched_show": "I Love Lucy",

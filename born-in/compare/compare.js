@@ -334,8 +334,8 @@ const MUSIC_IN_NO1 = {
   1998:{s:'Chaiyya Chaiyya',a:'Sukhwinder Singh (Dil Se)'},
   1999:{s:'Taal Se Taal Mila',a:'A.R. Rahman (Taal)'},
   2002:{s:'Kal Ho Naa Ho',a:'Sonu Nigam'},
-  2004:{s:'Kajra Re',a:'Alisha Chinai (Bunty Aur Babli)'},
-  2007:{s:'Jai Ho',a:'A.R. Rahman (Slumdog Millionaire)'},
+  2005:{s:'Kajra Re',a:'Alisha Chinai (Bunty Aur Babli)'},
+  2008:{s:'Jai Ho',a:'A.R. Rahman (Slumdog Millionaire)'},
   2010:{s:'Munni Badnaam Hui',a:'Mamta Sharma (Dabangg)'},
 };
 
@@ -483,7 +483,7 @@ const FILM_IN_NO1 = {
   1986:{t:'Nagina',d:'Harmesh Malhotra'},
   1988:{t:'Tezaab',d:'N. Chandra'},
   1989:{t:'Maine Pyar Kiya',d:'Sooraj Barjatya'},
-  1991:{t:'Lamhe',d:'Yash Chopra'},
+  1991:{t:'Saajan',d:'Lawrence D\'Souza'},
   1993:{t:'Damini',d:'Rajkumar Santoshi'},
   1994:{t:'Hum Aapke Hain Koun',d:'Sooraj Barjatya'},
   1995:{t:'Dilwale Dulhania Le Jayenge',d:'Aditya Chopra'},
@@ -1368,21 +1368,38 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   const lifeP = parentCountryData.life_expectancy || parentData.world?.life_expectancy_global;
   const lifeC = childCountryData.life_expectancy  || childData.world?.life_expectancy_global;
 
-  if (lifeP && lifeC) {
-    const lifeDelta = (lifeC - lifeP).toFixed(1);
-    const betterOrWorse = parseFloat(lifeDelta) >= 0 ? 'longer' : 'shorter';
-    const absLifeDelta = Math.abs(parseFloat(lifeDelta));
+  const sameCountryLE = (parentCountryCode === childCountryCode);
 
-    // Birth lottery: highest vs lowest country gap
+  if (lifeP && lifeC) {
+    // Birth lottery: highest vs lowest country gap (always useful regardless of country comparison)
     const allCountries = Object.keys(parentData.countries || {});
     const lifeValsP = allCountries.map(k => parentData.countries[k].life_expectancy).filter(Boolean);
     const lifeValsC = allCountries.map(k => childData.countries?.[k]?.life_expectancy).filter(Boolean);
     const gapP = lifeValsP.length >= 2 ? (Math.max(...lifeValsP) - Math.min(...lifeValsP)).toFixed(1) : null;
     const gapC = lifeValsC.length >= 2 ? (Math.max(...lifeValsC) - Math.min(...lifeValsC)).toFixed(1) : null;
 
-    let commentary = absLifeDelta > 0
-      ? 'Your generation can expect ' + absLifeDelta + ' years ' + betterOrWorse + ' on average than the previous one.'
-      : 'Life expectancy stayed roughly flat between these generations.';
+    // Only compute a "generational change" delta when both sides represent the same country
+    // Cross-country LE difference is a geography gap, not a generational improvement/decline
+    let lifeDeltaObj = null;
+    let commentary = '';
+
+    if (sameCountryLE) {
+      const lifeDelta = (lifeC - lifeP).toFixed(1);
+      const betterOrWorse = parseFloat(lifeDelta) >= 0 ? 'longer' : 'shorter';
+      const absLifeDelta = Math.abs(parseFloat(lifeDelta));
+
+      commentary = absLifeDelta > 0
+        ? 'Your generation can expect ' + absLifeDelta + ' years ' + betterOrWorse + ' on average than the previous one.'
+        : 'Life expectancy stayed roughly flat between these generations.';
+
+      lifeDeltaObj = {
+        text: signedRaw(parseFloat(lifeDelta)) + ' years between generations',
+        type: parseFloat(lifeDelta) >= 0 ? 'positive' : 'negative',
+      };
+    } else {
+      // Cross-country: describe each country's figure independently, no delta language
+      commentary = countryDisplayP + ' life expectancy at birth in ' + parentYear + ' was ' + lifeP + ' years. ' + countryDisplayC + ' life expectancy at birth in ' + childYear + ' was ' + lifeC + ' years. These reflect different countries, not generational change.';
+    }
 
     if (gapP && gapC) {
       const gapChange = (parseFloat(gapC) - parseFloat(gapP)).toFixed(1);
@@ -1390,7 +1407,7 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
       commentary += ' The gap between the longest- and shortest-lived countries ' + gapDir + ' from ' + gapP + ' years to ' + gapC + ' years.';
     }
 
-    const lifeEyebrow = parentCountryCode === childCountryCode
+    const lifeEyebrow = sameCountryLE
       ? parentCountry.flag + ' Life Expectancy'
       : parentCountry.flag + ' / ' + childCountry.flag + ' Life Expectancy';
 
@@ -1407,10 +1424,7 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
         value: lifeC + ' yrs',
         desc: 'at birth in ' + countryDisplayC,
       },
-      delta: {
-        text: signedRaw(parseFloat(lifeDelta)) + ' years between generations',
-        type: parseFloat(lifeDelta) >= 0 ? 'positive' : 'negative',
-      },
+      delta: lifeDeltaObj,
       commentary,
     }));
 
@@ -1425,38 +1439,87 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   // SECTION 4: THE ECONOMY (all inflation-adjusted)
   // -----------------------------------------------------------------------
 
-  // GDP per capita - each side uses its own country's data
-  const gdpRawP = parentCountryData.gdp_per_capita_usd || parentData.economy?.us_gdp_per_capita_usd;
-  const gdpRawC = childCountryData.gdp_per_capita_usd  || childData.economy?.us_gdp_per_capita_usd;
+  // GDP per capita - each side uses its own country's data only (no US fallback for non-US countries)
+  // gdpRawP/C are null if the country has no data (e.g. pre-independence Bangladesh) - do not silently fall back to US GDP
+  const gdpRawP = parentCountryData.gdp_per_capita_usd != null
+    ? parentCountryData.gdp_per_capita_usd
+    : (parentCountryCode === 'US' ? parentData.economy?.us_gdp_per_capita_usd : null);
+  const gdpRawC = childCountryData.gdp_per_capita_usd != null
+    ? childCountryData.gdp_per_capita_usd
+    : (childCountryCode === 'US' ? childData.economy?.us_gdp_per_capita_usd : null);
+
+  // Only show GDP section when both sides have real data
+  const sameCountryGdp = (parentCountryCode === childCountryCode);
 
   if (gdpRawP && gdpRawC) {
     const gdpP = Math.round(gdpRawP * cpiP);
     const gdpC = Math.round(gdpRawC * cpiC);
-    const gdpChangePct = ((gdpC - gdpP) / gdpP * 100).toFixed(1);
-    const betterOrWorse = parseFloat(gdpChangePct) >= 0 ? 'richer' : 'poorer';
+
+    // Only compute and show a delta when both sides represent the same country
+    // Cross-country GDP comparison is meaningless (different countries have different baselines)
+    const gdpDelta = sameCountryGdp
+      ? (() => {
+          const pct = ((gdpC - gdpP) / gdpP * 100).toFixed(1);
+          const betterOrWorse = parseFloat(pct) >= 0 ? 'richer' : 'poorer';
+          return {
+            text: signedPct(parseFloat(pct)) + ' real change - your generation was born into a ' + betterOrWorse + ' economy',
+            type: parseFloat(pct) >= 0 ? 'positive' : 'negative',
+          };
+        })()
+      : null; // no cross-country delta
+
+    const gdpEyebrow = sameCountryGdp
+      ? parentCountry.flag + ' Economy - GDP Per Capita'
+      : parentCountry.flag + ' / ' + childCountry.flag + ' Economy - GDP Per Capita';
 
     sections.push(compareCard({
-      eyebrow: 'Economy - GDP Per Capita',
-      headline: 'Real purchasing power across generations',
+      eyebrow: gdpEyebrow,
+      headline: 'Real purchasing power at birth',
       parent: {
         label: String(parentYear),
         value: '$' + Math.round(gdpP).toLocaleString(),
-        desc: 'in today\'s dollars',
+        desc: countryDisplayP + ' - in today\'s dollars',
       },
       child: {
         label: String(childYear),
         value: '$' + Math.round(gdpC).toLocaleString(),
-        desc: 'in today\'s dollars',
+        desc: countryDisplayC + ' - in today\'s dollars',
       },
-      delta: {
-        text: signedPct(parseFloat(gdpChangePct)) + ' real change - your generation was born into a ' + betterOrWorse + ' economy',
-        type: parseFloat(gdpChangePct) >= 0 ? 'positive' : 'negative',
-      },
-      commentary: 'All figures adjusted to 2024 dollars. A positive shift means real economic growth, not just inflation.',
+      delta: gdpDelta,
+      commentary: sameCountryGdp
+        ? 'All figures adjusted to 2024 dollars. A positive shift means real economic growth, not just inflation.'
+        : 'Figures adjusted to 2024 dollars. Each country\'s GDP shown independently - cross-country comparison reflects different economies, not generational change.',
     }));
 
     // GDP SVG chart
     sections.push(`<div class="chart-container" data-reveal>${svgGdpChart(gdpP, gdpC, parentYear, childYear, accentP, accentC)}</div>`);
+  } else if (gdpRawP || gdpRawC) {
+    // One side has GDP data, the other doesn't (e.g. pre-independence country)
+    const availableGdpRaw = gdpRawP || gdpRawC;
+    const availableGdp = Math.round(availableGdpRaw * (gdpRawP ? cpiP : cpiC));
+    const availableYear = gdpRawP ? parentYear : childYear;
+    const availableCountry = gdpRawP ? countryDisplayP : countryDisplayC;
+    const unavailableCountry = gdpRawP ? countryDisplayC : countryDisplayP;
+    const unavailableYear = gdpRawP ? childYear : parentYear;
+
+    sections.push(`
+      <div class="compare-card" data-reveal>
+        <p class="eyebrow">${escHtml((gdpRawP ? parentCountry.flag : childCountry.flag) + ' Economy - GDP Per Capita')}</p>
+        <p class="section-headline">Real purchasing power at birth</p>
+        <div class="two-up">
+          <div class="two-up-card">
+            <span class="two-up-label">${escHtml(String(availableYear))}</span>
+            <span class="two-up-value">$${Math.round(availableGdp).toLocaleString()}</span>
+            <p class="two-up-desc">${escHtml(availableCountry + ' - in today\'s dollars')}</p>
+          </div>
+          <div class="two-up-card">
+            <span class="two-up-label muted">${escHtml(String(unavailableYear))}</span>
+            <span class="two-up-value" style="color:#666">N/A</span>
+            <p class="two-up-desc">${escHtml('GDP data not available for ' + unavailableCountry + ' in this period')}</p>
+          </div>
+        </div>
+      </div>
+    `);
   }
 
   // US median household income (only when both sides are US)
@@ -1525,11 +1588,14 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     }
   }
 
-  // Price comparison grid (inflation-adjusted, US prices - global/US data, same for both)
+  // Price comparison grid (inflation-adjusted, US prices only)
+  // Only show when at least one side is US; when neither is US, skip entirely (prices are US-specific)
+  const eitherIsUS = (parentCountryCode === 'US' || childCountryCode === 'US');
+  const bothAreUS  = (parentCountryCode === 'US' && childCountryCode === 'US');
   const pricesP = parentData.prices_us;
   const pricesC = childData.prices_us;
 
-  if (pricesP && pricesC) {
+  if (eitherIsUS && pricesP && pricesC) {
     const priceItems = [
       { emoji: '\u26FD', label: 'Gallon of gas',   keyP: 'gallon_gas_usd',    keyC: 'gallon_gas_usd' },
       { emoji: '\uD83E\uDD5B', label: 'Gallon of milk',  keyP: 'gallon_milk_usd',   keyC: 'gallon_milk_usd' },
@@ -1562,11 +1628,17 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
       .filter(Boolean);
 
     if (gridItems.length > 0) {
+      // When comparing across countries, clearly label these as US prices
+      const pricesEyebrow = bothAreUS ? 'Everyday Prices' : 'Everyday Prices (US)';
+      const pricesNote = bothAreUS
+        ? 'All prices adjusted to 2024 dollars. A negative change means something got cheaper in real terms.'
+        : 'US prices only - adjusted to 2024 dollars. These reflect the American cost of living, not ' + (parentCountryCode !== 'US' ? countryDisplayP : countryDisplayC) + '.';
+
       sections.push(priceCompareGrid({
-        eyebrow: 'Everyday Prices',
-        headline: 'What things cost - in today\'s dollars',
+        eyebrow: pricesEyebrow,
+        headline: 'What things cost in the US - in today\'s dollars',
         items: gridItems,
-        note: 'All prices adjusted to 2024 dollars. A negative change means something got cheaper in real terms.',
+        note: pricesNote,
       }));
 
       // Price SVG chart - same items mapped for chart function
@@ -1684,23 +1756,34 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     }));
   }
 
-  const tvP = parentData.culture?.television?.most_watched_show;
-  const tvC = childData.culture?.television?.most_watched_show;
-  const tvLabel = (parentCountryCode === childCountryCode) ? 'Most-watched TV show' : 'What was on TV';
+  // TV data in the JSON files is US-only (US ratings/networks)
+  // Only show TV for the US side; for non-US sides show "not available"
+  const parentIsUS = (parentCountryCode === 'US');
+  const childIsUS  = (childCountryCode  === 'US');
+  const tvP = parentIsUS ? parentData.culture?.television?.most_watched_show : null;
+  const tvC = childIsUS  ? childData.culture?.television?.most_watched_show  : null;
 
-  if (tvP && tvC) {
+  // Show TV section only when at least one side is US
+  if (parentIsUS || childIsUS) {
+    const tvEyebrow = (parentIsUS && childIsUS) ? '\uD83D\uDCFA Television' : '\uD83D\uDCFA Television (US)';
+    const tvHeadline = (parentIsUS && childIsUS) ? 'Most-watched TV show' : 'Most-watched US TV show';
+
     sections.push(compareCard({
-      eyebrow: '\uD83D\uDCFA Television',
-      headline: tvLabel,
+      eyebrow: tvEyebrow,
+      headline: tvHeadline,
       parent: {
         label: String(parentYear),
-        value: tvP,
-        desc: parentData.culture?.television?.most_watched_network || '',
+        value: tvP || 'Not available',
+        desc: tvP
+          ? (parentData.culture?.television?.most_watched_network || '')
+          : 'TV data covers US only',
       },
       child: {
         label: String(childYear),
-        value: tvC,
-        desc: childData.culture?.television?.most_watched_network || '',
+        value: tvC || 'Not available',
+        desc: tvC
+          ? (childData.culture?.television?.most_watched_network || '')
+          : 'TV data covers US only',
       },
     }));
   }
@@ -1903,7 +1986,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
       movieDir = null;
     }
 
-    const tvShow  = tv?.most_watched_show;
+    // TV data is US-only; only show it for US cards
+    const tvShow  = (countryCode === 'US') ? tv?.most_watched_show : null;
     const techMil = tech?.milestone;
 
     // Pick one notable world event
@@ -1989,12 +2073,21 @@ function buildCompareShareCard() {
   const lifeC = childCountryData.life_expectancy  || childData.world?.life_expectancy_global;
   const lifeDelta = (lifeP && lifeC) ? (lifeC - lifeP).toFixed(1) : null;
 
-  // GDP real change - each side uses its own country
-  const gdpRawP = parentCountryData.gdp_per_capita_usd || parentData.economy?.us_gdp_per_capita_usd;
-  const gdpRawC = childCountryData.gdp_per_capita_usd  || childData.economy?.us_gdp_per_capita_usd;
-  const gdpChangePct = (gdpRawP && gdpRawC)
-    ? (((gdpRawC * cpiC) - (gdpRawP * cpiP)) / (gdpRawP * cpiP) * 100).toFixed(1)
+  // GDP real change - no US fallback for non-US countries; no cross-country delta
+  const shareGdpRawP = parentCountryData.gdp_per_capita_usd != null
+    ? parentCountryData.gdp_per_capita_usd
+    : (parentCountryCode === 'US' ? parentData.economy?.us_gdp_per_capita_usd : null);
+  const shareGdpRawC = childCountryData.gdp_per_capita_usd != null
+    ? childCountryData.gdp_per_capita_usd
+    : (childCountryCode === 'US' ? childData.economy?.us_gdp_per_capita_usd : null);
+  const sameCountryShare = (parentCountryCode === childCountryCode);
+  // Only show a GDP delta stat when same country (cross-country is not a generational comparison)
+  const gdpChangePct = (shareGdpRawP && shareGdpRawC && sameCountryShare)
+    ? (((shareGdpRawC * cpiC) - (shareGdpRawP * cpiP)) / (shareGdpRawP * cpiP) * 100).toFixed(1)
     : null;
+
+  // Life expectancy delta only meaningful within the same country
+  const lifeDeltaForShare = (lifeP && lifeC && sameCountryShare) ? lifeDelta : null;
 
   // Population change (world-level, same for both)
   const popP = parentData.world?.population_billions;
@@ -2002,8 +2095,8 @@ function buildCompareShareCard() {
   const popChangePct = (popP && popC) ? ((popC - popP) / popP * 100).toFixed(1) : null;
 
   const stats = [
-    lifeP    && lifeC    && { icon: '\u2764\uFE0F', label: 'Life expectancy',        value: signedRaw(parseFloat(lifeDelta)) + ' yrs between generations' },
-    gdpRawP  && gdpRawC  && { icon: '\uD83D\uDCB0', label: 'GDP per capita (real)',  value: signedPct(parseFloat(gdpChangePct)) + ' change (2024 dollars)' },
+    lifeP    && lifeC    && lifeDeltaForShare && { icon: '\u2764\uFE0F', label: 'Life expectancy',        value: signedRaw(parseFloat(lifeDeltaForShare)) + ' yrs between generations' },
+    shareGdpRawP && shareGdpRawC && gdpChangePct && { icon: '\uD83D\uDCB0', label: 'GDP per capita (real)',  value: signedPct(parseFloat(gdpChangePct)) + ' change (2024 dollars)' },
     popP     && popC     && { icon: '\uD83C\uDF0D', label: 'World population',       value: popP.toFixed(2) + 'B to ' + popC.toFixed(2) + 'B (' + signedPct(parseFloat(popChangePct)) + ')' },
   ].filter(Boolean);
 
@@ -2278,9 +2371,10 @@ function showResult(parentYear, childYear, parentCountryCode, childCountryCode, 
   $headerLabel.textContent = parentYear + ' vs ' + childYear;
 
   if (parentCountryCode === childCountryCode) {
-    $headerCountries.textContent = parentCountry.flag + ' ' + parentCountry.name;
+    $headerCountries.innerHTML = parentCountry.flag + ' <span class="country-name">' + escHtml(parentCountry.name) + '</span>';
   } else {
-    $headerCountries.textContent = parentCountry.flag + ' ' + parentCountry.name + ' / ' + childCountry.flag + ' ' + childCountry.name;
+    $headerCountries.innerHTML = parentCountry.flag + ' <span class="country-name">' + escHtml(parentCountry.name) + '</span>' +
+      ' / ' + childCountry.flag + ' <span class="country-name">' + escHtml(childCountry.name) + '</span>';
   }
 
   renderComparison(parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData);

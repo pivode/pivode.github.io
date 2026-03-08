@@ -44,13 +44,13 @@
     "film": {
       "box_office_no1": "Cinderella",
       "box_office_no1_gross_m": 41.0,
-      "oscar_best_picture": "All About Eve",
+      "oscar_best_picture": "All the King's Men",
       "oscar_best_director": "Best Director",
       "oscar_best_director_name": "Joseph L. Mankiewicz",
-      "oscar_best_actor": "Jose Ferrer",
-      "oscar_best_actor_film": "Cyrano de Bergerac",
-      "oscar_best_actress": "Judy Holliday",
-      "oscar_best_actress_film": "Born Yesterday"
+      "oscar_best_actor": "Broderick Crawford",
+      "oscar_best_actor_film": "All the King's Men",
+      "oscar_best_actress": "Olivia de Havilland",
+      "oscar_best_actress_film": "The Heiress"
     },
     "television": {
       "most_watched_show": "Texaco Star Theatre",
