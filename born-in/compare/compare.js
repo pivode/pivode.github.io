@@ -1216,7 +1216,7 @@ function priceCompareGrid({ eyebrow, headline, items, note }) {
 // Dual-column event timeline
 function dualTimeline({ eyebrow, headline, parentYear, childYear, parentEvents, childEvents }) {
   function eventsHtml(events, cssClass) {
-    if (!events || events.length === 0) return '<p class="timeline-empty">No major events recorded</p>';
+    if (!events || events.length === 0) return '<p class="timeline-empty">A quieter year in the history books.</p>';
     return events.map(ev => {
       const month = ev.month ? MONTH_ABBR[(ev.month - 1)] || ev.month : '';
       return `
@@ -1716,13 +1716,13 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
       headline: 'The defining tech moment',
       parent: {
         label: String(parentYear),
-        value: techP?.top_computer || 'See below',
-        desc: techP?.milestone ? techP.milestone.slice(0, 80) + (techP.milestone.length > 80 ? '...' : '') : 'No milestone recorded',
+        value: techP?.top_computer || '-',
+        desc: techP?.milestone ? techP.milestone.slice(0, 80) + (techP.milestone.length > 80 ? '...' : '') : '',
       },
       child: {
         label: String(childYear),
-        value: techC?.top_computer || 'See below',
-        desc: techC?.milestone ? techC.milestone.slice(0, 80) + (techC.milestone.length > 80 ? '...' : '') : 'No milestone recorded',
+        value: techC?.top_computer || '-',
+        desc: techC?.milestone ? techC.milestone.slice(0, 80) + (techC.milestone.length > 80 ? '...' : '') : '',
       },
     }));
   }
@@ -1785,8 +1785,8 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
       <div class="voice-then-now" data-reveal>
         ${voiceP ? `<p class="voice-then">In ${parentYear}, ${voiceP}.</p>` : ''}
         ${voiceC ? `<p class="voice-then">In ${childYear}, ${voiceC}.</p>` : ''}
-        <p class="voice-now">Today, you can clone your own voice with a few minutes of audio.</p>
-        <a href="https://try.elevenlabs.io/pivode" class="voice-cta" target="_blank" rel="noopener">Hear what that sounds like <span class="voice-cta-arrow">\u2192</span></a>
+        <p class="voice-now">Today, AI can recreate anyone's voice from a few minutes of audio, including yours.</p>
+        <a href="https://try.elevenlabs.io/pivode" class="voice-cta" target="_blank" rel="noopener">Try it with ElevenLabs <span class="voice-cta-arrow">\u2192</span></a>
       </div>
     `);
   }
@@ -1837,16 +1837,14 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
   if (!parentAt18Valid && !childAt18Valid) return; // skip only if both are invalid
 
   let parentAt18Data = null, childAt18Data = null;
-  try {
-    const fetches = [];
-    if (parentAt18Valid) fetches.push(fetch('../data/' + parentAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }));
-    else fetches.push(Promise.resolve(null));
-    if (childAt18Valid) fetches.push(fetch('../data/' + childAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }));
-    else fetches.push(Promise.resolve(null));
-    [parentAt18Data, childAt18Data] = await Promise.all(fetches);
-  } catch (_) {
-    return; // Silently skip if data unavailable
-  }
+  const fetches = [];
+  if (parentAt18Valid) fetches.push(fetch('../data/' + parentAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }));
+  else fetches.push(Promise.resolve(null));
+  if (childAt18Valid) fetches.push(fetch('../data/' + childAt18 + '.json').then(r => { if (!r.ok) throw new Error(); return r.json(); }));
+  else fetches.push(Promise.resolve(null));
+  const results = await Promise.allSettled(fetches);
+  parentAt18Data = results[0].status === 'fulfilled' ? results[0].value : null;
+  childAt18Data  = results[1].status === 'fulfilled' ? results[1].value : null;
 
   const cpiP18 = CPI_TO_2024[parentAt18] || 1;
   const cpiC18 = CPI_TO_2024[childAt18]  || 1;
@@ -1854,8 +1852,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
   function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid, countryCode, isChild) {
     if (!isValid || !data) {
       const fallbackText = isChild
-        ? 'You turned 18 in ' + year + ' - recent enough to remember!'
-        : 'They turned 18 in ' + year + ' - too far back for our data.';
+        ? 'You turned 18 in ' + year + ' - a year you know well.'
+        : 'They turned 18 in ' + year + ' - a formative year from another era.';
       return `<div class="at18-col">
       <div class="at18-col-header">
         <span class="gen-pill ${pillClass}">${escHtml(pillLabel)}</span>
@@ -2393,12 +2391,18 @@ async function readUrlParams() {
     ? COUNTRY_MAP[ccountryParam]
     : (legacyCountry && COUNTRY_MAP[legacyCountry]) ? COUNTRY_MAP[legacyCountry] : COUNTRIES[0];
 
-  selectedParentCountry = resolvedPCountry;
-  selectedChildCountry  = resolvedCCountry;
+  const needsSwap = py > cy;
+  const [parentYear, childYear] = needsSwap ? [cy, py] : [py, cy];
+  if (needsSwap) {
+    // Swap the resolved countries too
+    selectedParentCountry = resolvedCCountry;
+    selectedChildCountry  = resolvedPCountry;
+  } else {
+    selectedParentCountry = resolvedPCountry;
+    selectedChildCountry  = resolvedCCountry;
+  }
   setCountryDisplay($parentCountryDisplay, selectedParentCountry);
   setCountryDisplay($childCountryDisplay,  selectedChildCountry);
-
-  const [parentYear, childYear] = py < cy ? [py, cy] : [cy, py];
 
   try {
     const { parentData, childData } = await loadBothYears(parentYear, childYear);
@@ -2445,7 +2449,16 @@ $copyLinkBtn.addEventListener('click', () => {
 $tweetBtn.addEventListener('click', () => {
   if (!_lastCompare) return;
   const { parentYear, childYear } = _lastCompare;
-  const text = 'How different was the world between ' + parentYear + ' and ' + childYear + '? I compared two generations with this tool.';
+  let tweetHook = '';
+  if (_lastCompare && _lastCompare.parentData && _lastCompare.childData) {
+    const pLE = _lastCompare.parentData.countries?.[_lastCompare.parentCountryCode]?.life_expectancy;
+    const cLE = _lastCompare.childData.countries?.[_lastCompare.childCountryCode]?.life_expectancy;
+    if (pLE && cLE) {
+      const delta = Math.abs(cLE - pLE).toFixed(1);
+      tweetHook = ' Life expectancy shifted by ' + delta + ' years between these generations.';
+    }
+  }
+  const text = 'Born in ' + parentYear + ' vs ' + childYear + '.' + tweetHook + ' What changed?';
   const url  = window.location.href;
   window.open('https://x.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank', 'noopener');
   $sharePopover.classList.add('hidden');
