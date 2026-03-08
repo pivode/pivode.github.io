@@ -18,6 +18,11 @@ Pivode publishes ready-to-use data products covering sports, food, travel, autom
 - [The Frontier - Race to AGI](https://seangularity.gumroad.com/l/the-frontier): Production-ready browser game codebase. AI startup simulation with 32 interconnected systems. 44,000 lines of TypeScript, 860 passing tests. $1,999.
 - [Golden Era - FC Barcelona Manager](https://seangularity.gumroad.com/l/golden-era): Browser-based football manager simulation. 5 real Barcelona seasons (2017-2022), platform builds for CrazyGames, Poki, and GameDistribution. 22,354 lines of code, 656 passing tests. $1,999.
 
+## Interactive Tools
+
+- [The World When You Were Born](https://pivode.github.io/born-in/): Enter your birth year and country to see a personalized infographic of what the world looked like when you were born. Covers population, prices, leaders, music, movies, technology, and more for years 1950-2010 across 20+ countries. All prices inflation-adjusted to 2024 dollars.
+- [Compare Generations](https://pivode.github.io/born-in/compare/): Enter two birth years to see how the world changed between generations. Compare life expectancy, GDP, prices, and culture side by side. Supports different countries for each generation.
+
 ## Links
 
 - Homepage: https://pivode.github.io

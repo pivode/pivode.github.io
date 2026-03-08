@@ -3341,6 +3341,11 @@ function renderInfograpic(year, countryCode, data) {
   }
   $headerCountry.innerHTML = `<span class="flag">${country.flag}</span><span class="country-name-full">&nbsp;${displayCountryName(country, year)}</span>`;
 
+  // Update document title for SEO and social sharing
+  document.title = name
+    ? `The World When ${name} Was Born (${year}) - Pivode`
+    : `The World in ${year} - What Life Was Like - Pivode`;
+
   // Build all acts
   $infoContent.innerHTML = [
     renderActI(year, countryCode, data),
@@ -4685,6 +4690,9 @@ function resetToLanding() {
   $typewriter.classList.remove('fading');
   startTypewriter();
 
+  // Reset document title
+  document.title = 'The World When You Were Born';
+
   // Clear URL params
   history.pushState({}, '', '/born-in');
 }
@@ -4807,6 +4815,25 @@ function init() {
   initNameField();
   startTypewriter();
   checkURLOnLoad();
+
+  // Handle browser back/forward navigation
+  window.addEventListener('popstate', () => {
+    const params = getURLParams();
+    if (params) {
+      const country = COUNTRY_MAP[params.country] || COUNTRIES[0];
+      selectedCountry = country;
+      updateCountryDisplay();
+      $yearInput.value = params.year;
+      applyAccent(params.year);
+      applyDecadeTheme(params.year);
+      $landing.classList.add('hidden');
+      $infographic.classList.remove('hidden');
+      $infoContent.innerHTML = `<div class="loading-state" role="status" aria-label="Loading"><div class="loading-spinner" aria-hidden="true"></div></div>`;
+      loadAndRender(params.year, country.code);
+    } else {
+      resetToLanding();
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', init);
