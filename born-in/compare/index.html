@@ -36,7 +36,7 @@
 
       <form id="cmp-form" class="cmp-form" novalidate>
 
-        <!-- Parent birth year -->
+        <!-- Parent and child birth years, each with their own country selector -->
         <div class="cmp-input-block">
           <div class="cmp-input-group cmp-input-group--parent">
             <label for="parent-year-input" class="input-label cmp-input-label--parent">
@@ -54,6 +54,28 @@
               autocomplete="off"
             >
             <span id="parent-year-error" class="input-error" role="alert"></span>
+
+            <!-- Parent country selector -->
+            <div class="cmp-inline-country">
+              <label class="input-label cmp-inline-country-label">Their country</label>
+              <div class="country-select-wrap">
+                <button type="button" id="parent-country-btn" class="country-btn cmp-country-btn--inline" aria-haspopup="listbox" aria-expanded="false" aria-controls="parent-country-list">
+                  <span id="parent-country-display">
+                    <span class="flag">🇺🇸</span>
+                    <span class="country-name">United States</span>
+                  </span>
+                  <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div id="parent-country-dropdown" class="country-dropdown hidden">
+                  <div class="country-search-wrap">
+                    <input type="text" id="parent-country-search" class="country-search" placeholder="Search..." autocomplete="off">
+                  </div>
+                  <ul id="parent-country-list" class="country-list" role="listbox" aria-label="Select parent country"></ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Child birth year -->
@@ -73,27 +95,27 @@
               autocomplete="off"
             >
             <span id="child-year-error" class="input-error" role="alert"></span>
-          </div>
-        </div>
 
-        <!-- Country selector -->
-        <div class="input-group cmp-country-group">
-          <label for="cmp-country-btn" class="input-label">Country</label>
-          <div class="country-select-wrap">
-            <button type="button" id="cmp-country-btn" class="country-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="cmp-country-list">
-              <span id="cmp-country-display">
-                <span class="flag">🇺🇸</span>
-                <span class="country-name">United States</span>
-              </span>
-              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div id="cmp-country-dropdown" class="country-dropdown hidden">
-              <div class="country-search-wrap">
-                <input type="text" id="cmp-country-search" class="country-search" placeholder="Search..." autocomplete="off">
+            <!-- Child country selector -->
+            <div class="cmp-inline-country">
+              <label class="input-label cmp-inline-country-label">Your country</label>
+              <div class="country-select-wrap">
+                <button type="button" id="child-country-btn" class="country-btn cmp-country-btn--inline" aria-haspopup="listbox" aria-expanded="false" aria-controls="child-country-list">
+                  <span id="child-country-display">
+                    <span class="flag">🇺🇸</span>
+                    <span class="country-name">United States</span>
+                  </span>
+                  <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div id="child-country-dropdown" class="country-dropdown hidden">
+                  <div class="country-search-wrap">
+                    <input type="text" id="child-country-search" class="country-search" placeholder="Search..." autocomplete="off">
+                  </div>
+                  <ul id="child-country-list" class="country-list" role="listbox" aria-label="Select your country"></ul>
+                </div>
               </div>
-              <ul id="cmp-country-list" class="country-list" role="listbox" aria-label="Select country"></ul>
             </div>
           </div>
         </div>
@@ -123,7 +145,7 @@
       <div class="header-left">
         <span id="cmp-header-label" class="cmp-header-label"></span>
         <span class="header-sep">·</span>
-        <span id="cmp-header-country" class="header-country"></span>
+        <span id="cmp-header-countries" class="header-country"></span>
       </div>
       <div class="header-right">
         <button id="cmp-share-btn" class="header-btn" aria-label="Share" aria-expanded="false">

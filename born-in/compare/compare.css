@@ -268,9 +268,18 @@ body {
   position: relative;
 }
 
-/* Country group reuses .input-group but full-width */
-.cmp-country-group {
-  width: 100%;
+/* Inline country selector inside each year input group */
+.cmp-inline-country {
+  margin-top: 20px;
+}
+
+.cmp-inline-country-label {
+  margin-bottom: 6px;
+}
+
+/* Smaller font size for inline country button to fit the column */
+.cmp-country-btn--inline {
+  font-size: 16px;
 }
 
 /* Submit button: full-width pill for this form */
@@ -478,7 +487,9 @@ body {
   transition: transform 200ms ease;
 }
 
-#cmp-country-display {
+#cmp-country-display,
+#parent-country-display,
+#child-country-display {
   display: flex;
   align-items: center;
   gap: 10px;

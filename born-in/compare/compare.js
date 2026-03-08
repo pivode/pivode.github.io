@@ -712,40 +712,48 @@ const LOCAL_FILM_LABEL = {
 // STATE
 // ---------------------------------------------------------------------------
 
-let selectedCountry = COUNTRIES[0]; // default US
+let selectedParentCountry = COUNTRIES[0]; // default US
+let selectedChildCountry  = COUNTRIES[0]; // default US
 let revealObserver = null;
-let _lastCompare = null; // { parentYear, childYear, countryCode, parentData, childData }
+let _lastCompare = null; // { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData }
 
 // ---------------------------------------------------------------------------
 // DOM REFS
 // ---------------------------------------------------------------------------
 
-const $landing         = document.getElementById('cmp-landing');
-const $form            = document.getElementById('cmp-form');
-const $parentYearInput = document.getElementById('parent-year-input');
-const $childYearInput  = document.getElementById('child-year-input');
-const $parentYearError = document.getElementById('parent-year-error');
-const $childYearError  = document.getElementById('child-year-error');
-const $countryBtn      = document.getElementById('cmp-country-btn');
-const $countryDropdown = document.getElementById('cmp-country-dropdown');
-const $countrySearch   = document.getElementById('cmp-country-search');
-const $countryList     = document.getElementById('cmp-country-list');
-const $countryDisplay  = document.getElementById('cmp-country-display');
-const $result          = document.getElementById('cmp-result');
-const $headerLabel     = document.getElementById('cmp-header-label');
-const $headerCountry   = document.getElementById('cmp-header-country');
-const $shareBtn        = document.getElementById('cmp-share-btn');
-const $sharePopover    = document.getElementById('cmp-share-popover');
-const $copyLinkBtn     = document.getElementById('cmp-copy-link-btn');
-const $tweetBtn        = document.getElementById('cmp-tweet-btn');
-const $saveCardBtn     = document.getElementById('cmp-save-card-btn');
-const $shareCard       = document.getElementById('cmp-share-card');
-const $content         = document.getElementById('cmp-content');
-const $newBtn          = document.getElementById('cmp-new-btn');
-const $bottomNewBtn    = document.getElementById('cmp-bottom-new-btn');
-const $errorPanel      = document.getElementById('cmp-error');
-const $errorMessage    = document.getElementById('cmp-error-message');
-const $errorBackBtn    = document.getElementById('cmp-error-back-btn');
+const $landing              = document.getElementById('cmp-landing');
+const $form                 = document.getElementById('cmp-form');
+const $parentYearInput      = document.getElementById('parent-year-input');
+const $childYearInput       = document.getElementById('child-year-input');
+const $parentYearError      = document.getElementById('parent-year-error');
+const $childYearError       = document.getElementById('child-year-error');
+// Parent country dropdown refs
+const $parentCountryBtn      = document.getElementById('parent-country-btn');
+const $parentCountryDropdown = document.getElementById('parent-country-dropdown');
+const $parentCountrySearch   = document.getElementById('parent-country-search');
+const $parentCountryList     = document.getElementById('parent-country-list');
+const $parentCountryDisplay  = document.getElementById('parent-country-display');
+// Child country dropdown refs
+const $childCountryBtn       = document.getElementById('child-country-btn');
+const $childCountryDropdown  = document.getElementById('child-country-dropdown');
+const $childCountrySearch    = document.getElementById('child-country-search');
+const $childCountryList      = document.getElementById('child-country-list');
+const $childCountryDisplay   = document.getElementById('child-country-display');
+const $result               = document.getElementById('cmp-result');
+const $headerLabel          = document.getElementById('cmp-header-label');
+const $headerCountries      = document.getElementById('cmp-header-countries');
+const $shareBtn             = document.getElementById('cmp-share-btn');
+const $sharePopover         = document.getElementById('cmp-share-popover');
+const $copyLinkBtn          = document.getElementById('cmp-copy-link-btn');
+const $tweetBtn             = document.getElementById('cmp-tweet-btn');
+const $saveCardBtn          = document.getElementById('cmp-save-card-btn');
+const $shareCard            = document.getElementById('cmp-share-card');
+const $content              = document.getElementById('cmp-content');
+const $newBtn               = document.getElementById('cmp-new-btn');
+const $bottomNewBtn         = document.getElementById('cmp-bottom-new-btn');
+const $errorPanel           = document.getElementById('cmp-error');
+const $errorMessage         = document.getElementById('cmp-error-message');
+const $errorBackBtn         = document.getElementById('cmp-error-back-btn');
 
 // ---------------------------------------------------------------------------
 // UTILITY FUNCTIONS
@@ -1234,14 +1242,14 @@ async function loadBothYears(parentYear, childYear) {
 // MAIN RENDER FUNCTION
 // ---------------------------------------------------------------------------
 
-function renderComparison(parentYear, childYear, countryCode, parentData, childData) {
-  const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
-  const countryFlag = country.flag;
+function renderComparison(parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData) {
+  const parentCountry = COUNTRY_MAP[parentCountryCode] || COUNTRIES[0];
+  const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
   const cpiP = CPI_TO_2024[parentYear] || 1;
   const cpiC = CPI_TO_2024[childYear] || 1;
 
-  const parentCountryData = parentData.countries?.[countryCode] || {};
-  const childCountryData  = childData.countries?.[countryCode]  || {};
+  const parentCountryData = parentData.countries?.[parentCountryCode] || {};
+  const childCountryData  = childData.countries?.[childCountryCode]   || {};
 
   const accentP = getAccentForYear(parentYear);
   const accentC = getAccentForYear(childYear);
@@ -1288,36 +1296,43 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
   }
 
   // -----------------------------------------------------------------------
-  // SECTION 2: COUNTRY LEADERS
+  // SECTION 2: COUNTRY LEADERS - each side uses its own country
   // -----------------------------------------------------------------------
 
-  const leaderInfo = LEADER_KEYS[countryCode] || LEADER_KEYS.US;
-  const leaderP = parentData.leaders?.[leaderInfo.key]
+  const parentLeaderInfo = LEADER_KEYS[parentCountryCode] || LEADER_KEYS.US;
+  const childLeaderInfo  = LEADER_KEYS[childCountryCode]  || LEADER_KEYS.US;
+
+  const leaderP = parentData.leaders?.[parentLeaderInfo.key]
     || parentCountryData.leader
     || 'Unknown';
-  const leaderC = childData.leaders?.[leaderInfo.key]
+  const leaderC = childData.leaders?.[childLeaderInfo.key]
     || childCountryData.leader
     || 'Unknown';
-  const countryDisplayP = displayCountryName(country, parentYear);
-  const countryDisplayC = displayCountryName(country, childYear);
+
+  const countryDisplayP = displayCountryName(parentCountry, parentYear);
+  const countryDisplayC = displayCountryName(childCountry, childYear);
+
+  const leaderEyebrow = parentCountryCode === childCountryCode
+    ? parentCountry.flag + ' ' + parentCountry.name + ' Leadership'
+    : parentCountry.flag + ' ' + parentCountry.name + ' / ' + childCountry.flag + ' ' + childCountry.name + ' Leadership';
 
   sections.push(compareCard({
-    eyebrow: countryFlag + ' ' + country.name + ' Leadership',
+    eyebrow: leaderEyebrow,
     headline: 'Who was in charge',
     parent: {
       label: String(parentYear),
       value: leaderP,
-      desc: leaderInfo.title + ' of ' + countryDisplayP,
+      desc: parentLeaderInfo.title + ' of ' + countryDisplayP,
     },
     child: {
       label: String(childYear),
       value: leaderC,
-      desc: leaderInfo.title + ' of ' + countryDisplayC,
+      desc: childLeaderInfo.title + ' of ' + countryDisplayC,
     },
   }));
 
   // -----------------------------------------------------------------------
-  // SECTION 3: LIFE EXPECTANCY
+  // SECTION 3: LIFE EXPECTANCY - each side uses its own country
   // -----------------------------------------------------------------------
 
   const lifeP = parentCountryData.life_expectancy || parentData.world?.life_expectancy_global;
@@ -1345,8 +1360,12 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
       commentary += ' The gap between the longest- and shortest-lived countries ' + gapDir + ' from ' + gapP + ' years to ' + gapC + ' years.';
     }
 
+    const lifeEyebrow = parentCountryCode === childCountryCode
+      ? parentCountry.flag + ' Life Expectancy'
+      : parentCountry.flag + ' / ' + childCountry.flag + ' Life Expectancy';
+
     sections.push(compareCard({
-      eyebrow: countryFlag + ' Life Expectancy',
+      eyebrow: lifeEyebrow,
       headline: 'How long a generation could expect to live',
       parent: {
         label: String(parentYear),
@@ -1365,16 +1384,18 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
       commentary,
     }));
 
-    // Life expectancy SVG chart
-    const todayLE = TODAY.life_expectancy[countryCode] || TODAY.global_life_expectancy;
-    sections.push(`<div class="chart-container" data-reveal>${svgLifeExpChart(lifeP, lifeC, todayLE, parentYear, childYear, accentP, accentC)}</div>`);
+    // Life expectancy SVG chart - use each country's today value separately
+    const todayLEP = TODAY.life_expectancy[parentCountryCode] || TODAY.global_life_expectancy;
+    const todayLEC = TODAY.life_expectancy[childCountryCode]  || TODAY.global_life_expectancy;
+    // Chart uses child today LE as the "today" bar for reference
+    sections.push(`<div class="chart-container" data-reveal>${svgLifeExpChart(lifeP, lifeC, todayLEC, parentYear, childYear, accentP, accentC)}</div>`);
   }
 
   // -----------------------------------------------------------------------
   // SECTION 4: THE ECONOMY (all inflation-adjusted)
   // -----------------------------------------------------------------------
 
-  // GDP per capita
+  // GDP per capita - each side uses its own country's data
   const gdpRawP = parentCountryData.gdp_per_capita_usd || parentData.economy?.us_gdp_per_capita_usd;
   const gdpRawC = childCountryData.gdp_per_capita_usd  || childData.economy?.us_gdp_per_capita_usd;
 
@@ -1408,8 +1429,8 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
     sections.push(`<div class="chart-container" data-reveal>${svgGdpChart(gdpP, gdpC, parentYear, childYear, accentP, accentC)}</div>`);
   }
 
-  // US median household income (only for US)
-  if (countryCode === 'US') {
+  // US median household income (only when both sides are US)
+  if (parentCountryCode === 'US' && childCountryCode === 'US') {
     const incRawP = parentData.economy?.us_median_household_income_usd;
     const incRawC = childData.economy?.us_median_household_income_usd;
 
@@ -1439,7 +1460,7 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
       }));
     }
 
-    // Housing affordability ratio
+    // Housing affordability ratio (US only when both sides are US)
     const homeRawP = parentData.prices_us?.median_home_usd;
     const homeRawC = childData.prices_us?.median_home_usd;
     const incomeRawP = parentData.economy?.us_median_household_income_usd;
@@ -1474,7 +1495,7 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
     }
   }
 
-  // Price comparison grid (inflation-adjusted, US prices)
+  // Price comparison grid (inflation-adjusted, US prices - global/US data, same for both)
   const pricesP = parentData.prices_us;
   const pricesC = childData.prices_us;
 
@@ -1535,36 +1556,36 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
   }
 
   // -----------------------------------------------------------------------
-  // SECTION 5: CULTURE
+  // SECTION 5: CULTURE - each side uses its own country
   // -----------------------------------------------------------------------
 
   const musicP = parentData.culture?.music;
   const musicC = childData.culture?.music;
 
-  // Use local chart data if available for the selected country, otherwise fall back to US Billboard
-  const localMusicData = LOCAL_MUSIC[countryCode];
-  const localMusicLabel = LOCAL_MUSIC_LABEL[countryCode];
+  // Use local chart data for each side's respective country
+  const localMusicDataP = LOCAL_MUSIC[parentCountryCode];
+  const localMusicDataC = LOCAL_MUSIC[childCountryCode];
 
   let songP, artistP, musicLabelP;
-  if (localMusicData && localMusicData[parentYear]) {
-    songP = localMusicData[parentYear].s;
-    artistP = localMusicData[parentYear].a;
-    musicLabelP = localMusicLabel;
+  if (localMusicDataP && localMusicDataP[parentYear]) {
+    songP = localMusicDataP[parentYear].s;
+    artistP = localMusicDataP[parentYear].a;
+    musicLabelP = LOCAL_MUSIC_LABEL[parentCountryCode];
   } else {
     songP = musicP?.billboard_no1_song || musicP?.uk_no1_jan;
     artistP = musicP?.billboard_no1_artist || musicP?.uk_no1_jan_artist;
-    musicLabelP = countryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
+    musicLabelP = parentCountryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
   }
 
   let songC, artistC, musicLabelC;
-  if (localMusicData && localMusicData[childYear]) {
-    songC = localMusicData[childYear].s;
-    artistC = localMusicData[childYear].a;
-    musicLabelC = localMusicLabel;
+  if (localMusicDataC && localMusicDataC[childYear]) {
+    songC = localMusicDataC[childYear].s;
+    artistC = localMusicDataC[childYear].a;
+    musicLabelC = LOCAL_MUSIC_LABEL[childCountryCode];
   } else {
     songC = musicC?.billboard_no1_song || musicC?.uk_no1_jan;
     artistC = musicC?.billboard_no1_artist || musicC?.uk_no1_jan_artist;
-    musicLabelC = countryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
+    musicLabelC = childCountryCode === 'GB' ? 'UK #1 Song' : 'US Billboard #1';
   }
 
   const musicHeadline = (musicLabelP === musicLabelC) ? musicLabelP : (musicLabelP + ' / ' + musicLabelC);
@@ -1586,15 +1607,15 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
     }));
   }
 
-  // Use local film data if available for the selected country, otherwise fall back to Oscars
-  const localFilmData = LOCAL_FILM[countryCode];
-  const localFilmLabel = LOCAL_FILM_LABEL[countryCode];
+  // Use local film data for each side's respective country
+  const localFilmDataP = LOCAL_FILM[parentCountryCode];
+  const localFilmDataC = LOCAL_FILM[childCountryCode];
 
   let filmTitleP, filmDirP, filmLabelP;
-  if (localFilmData && localFilmData[parentYear]) {
-    filmTitleP = localFilmData[parentYear].t;
-    filmDirP = localFilmData[parentYear].d;
-    filmLabelP = localFilmLabel;
+  if (localFilmDataP && localFilmDataP[parentYear]) {
+    filmTitleP = localFilmDataP[parentYear].t;
+    filmDirP = localFilmDataP[parentYear].d;
+    filmLabelP = LOCAL_FILM_LABEL[parentCountryCode];
   } else {
     filmTitleP = parentData.culture?.film?.oscar_best_picture;
     filmDirP = parentData.culture?.film?.oscar_best_director_name;
@@ -1602,10 +1623,10 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
   }
 
   let filmTitleC, filmDirC, filmLabelC;
-  if (localFilmData && localFilmData[childYear]) {
-    filmTitleC = localFilmData[childYear].t;
-    filmDirC = localFilmData[childYear].d;
-    filmLabelC = localFilmLabel;
+  if (localFilmDataC && localFilmDataC[childYear]) {
+    filmTitleC = localFilmDataC[childYear].t;
+    filmDirC = localFilmDataC[childYear].d;
+    filmLabelC = LOCAL_FILM_LABEL[childCountryCode];
   } else {
     filmTitleC = childData.culture?.film?.oscar_best_picture;
     filmDirC = childData.culture?.film?.oscar_best_director_name;
@@ -1633,7 +1654,7 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
 
   const tvP = parentData.culture?.television?.most_watched_show;
   const tvC = childData.culture?.television?.most_watched_show;
-  const tvLabel = countryCode === 'US' ? 'Most-watched TV show' : 'Most-watched American TV show';
+  const tvLabel = (parentCountryCode === 'US' && childCountryCode === 'US') ? 'Most-watched TV show' : 'Most-watched American TV show';
 
   if (tvP && tvC) {
     sections.push(compareCard({
@@ -1769,14 +1790,14 @@ function renderComparison(parentYear, childYear, countryCode, parentData, childD
   // "WHEN YOU WERE 18" - async section appended after initial render
   // -----------------------------------------------------------------------
 
-  renderAt18Section(parentYear, childYear, countryCode, accentP, accentC);
+  renderAt18Section(parentYear, childYear, parentCountryCode, childCountryCode, accentP, accentC);
 }
 
 // ---------------------------------------------------------------------------
 // WHEN YOU WERE 18 - async section
 // ---------------------------------------------------------------------------
 
-async function renderAt18Section(parentYear, childYear, countryCode, accentP, accentC) {
+async function renderAt18Section(parentYear, childYear, parentCountryCode, childCountryCode, accentP, accentC) {
   const parentAt18 = parentYear + 18;
   const childAt18  = childYear  + 18;
 
@@ -1797,11 +1818,10 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
     return; // Silently skip if data unavailable
   }
 
-  const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
-  const cpiP18  = CPI_TO_2024[parentAt18] || 1;
-  const cpiC18  = CPI_TO_2024[childAt18]  || 1;
+  const cpiP18 = CPI_TO_2024[parentAt18] || 1;
+  const cpiC18 = CPI_TO_2024[childAt18]  || 1;
 
-  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid) {
+  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid, countryCode) {
     if (!isValid || !data) {
       return `<div class="at18-col">
       <div class="at18-col-header">
@@ -1828,7 +1848,7 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
     const gasRaw   = data.prices_us?.gallon_gas_usd;
     const gasFinal = gasRaw ? ('$' + (gasRaw * cpiYear).toFixed(2)) : null;
 
-    // Use local chart data if available, otherwise fall back to US/UK
+    // Use local chart data for this card's country
     const localMusicEntry = LOCAL_MUSIC[countryCode] && LOCAL_MUSIC[countryCode][year];
     let song, artist;
     if (localMusicEntry) {
@@ -1839,7 +1859,7 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
       artist = music?.billboard_no1_artist || music?.uk_no1_jan_artist;
     }
 
-    // Use local film data if available, otherwise fall back to Oscar/box office
+    // Use local film data for this card's country
     const localFilmEntry = LOCAL_FILM[countryCode] && LOCAL_FILM[countryCode][year];
     let movie, movieDir;
     if (localFilmEntry) {
@@ -1888,8 +1908,8 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
     </div>`;
   }
 
-  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid);
-  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid);
+  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid, parentCountryCode);
+  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid,  childCountryCode);
 
   const sectionHtml = `
     <div class="at18-section" data-reveal>
@@ -1920,29 +1940,30 @@ async function renderAt18Section(parentYear, childYear, countryCode, accentP, ac
 
 function buildCompareShareCard() {
   if (!_lastCompare) return;
-  const { parentYear, childYear, countryCode, parentData, childData } = _lastCompare;
+  const { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData } = _lastCompare;
 
-  const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
+  const parentCountry = COUNTRY_MAP[parentCountryCode] || COUNTRIES[0];
+  const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
   const accentP = getAccentForYear(parentYear);
   const accentC = getAccentForYear(childYear);
   const cpiP = CPI_TO_2024[parentYear] || 1;
   const cpiC = CPI_TO_2024[childYear] || 1;
 
-  // Life expectancy delta
-  const parentCountryData = parentData.countries?.[countryCode] || {};
-  const childCountryData  = childData.countries?.[countryCode]  || {};
+  // Life expectancy delta - each side uses its own country
+  const parentCountryData = parentData.countries?.[parentCountryCode] || {};
+  const childCountryData  = childData.countries?.[childCountryCode]   || {};
   const lifeP = parentCountryData.life_expectancy || parentData.world?.life_expectancy_global;
   const lifeC = childCountryData.life_expectancy  || childData.world?.life_expectancy_global;
   const lifeDelta = (lifeP && lifeC) ? (lifeC - lifeP).toFixed(1) : null;
 
-  // GDP real change
+  // GDP real change - each side uses its own country
   const gdpRawP = parentCountryData.gdp_per_capita_usd || parentData.economy?.us_gdp_per_capita_usd;
   const gdpRawC = childCountryData.gdp_per_capita_usd  || childData.economy?.us_gdp_per_capita_usd;
   const gdpChangePct = (gdpRawP && gdpRawC)
     ? (((gdpRawC * cpiC) - (gdpRawP * cpiP)) / (gdpRawP * cpiP) * 100).toFixed(1)
     : null;
 
-  // Population change
+  // Population change (world-level, same for both)
   const popP = parentData.world?.population_billions;
   const popC = childData.world?.population_billions;
   const popChangePct = (popP && popC) ? ((popC - popP) / popP * 100).toFixed(1) : null;
@@ -1963,12 +1984,17 @@ function buildCompareShareCard() {
     </div>
   `).join('');
 
+  // Show both flags; if same country, show once
+  const flagDisplay = parentCountryCode === childCountryCode
+    ? parentCountry.flag
+    : parentCountry.flag + ' ' + childCountry.flag;
+
   $shareCard.style.setProperty('--sc-accent', accentP);
   $shareCard.style.setProperty('--sc-accent-child', accentC);
   $shareCard.innerHTML = `
     <div class="sc-inner">
       <div class="sc-header">
-        <p class="sc-flag">${country.flag}</p>
+        <p class="sc-flag">${flagDisplay}</p>
         <p class="sc-year" style="color:${accentP}">${parentYear}</p>
         <p class="sc-vs">vs</p>
         <p class="sc-year" style="color:${accentC}">${childYear}</p>
@@ -2057,17 +2083,18 @@ function applyAccents(parentYear, childYear) {
 }
 
 // ---------------------------------------------------------------------------
-// COUNTRY SELECTOR
+// COUNTRY SELECTORS (parent and child, independent)
 // ---------------------------------------------------------------------------
 
-function renderCountryList(filter) {
+function buildCountryListHTML(selectedCode, filter) {
   const filtered = filter
     ? COUNTRIES.filter(c => c.name.toLowerCase().includes(filter.toLowerCase()))
     : COUNTRIES;
 
-  $countryList.innerHTML = filtered.map(c => `
+  return filtered.map(c => `
     <li role="option"
-        class="country-option${c.code === selectedCountry.code ? ' selected' : ''}"
+        class="country-option${c.code === selectedCode ? ' selected' : ''}"
+        aria-selected="${c.code === selectedCode ? 'true' : 'false'}"
         data-code="${escHtml(c.code)}">
       <span class="flag">${c.flag}</span>
       <span class="country-name">${escHtml(c.name)}</span>
@@ -2075,56 +2102,106 @@ function renderCountryList(filter) {
   `).join('');
 }
 
-function updateCountryDisplay(country) {
-  $countryDisplay.innerHTML = `
+function setCountryDisplay(displayEl, country) {
+  displayEl.innerHTML = `
     <span class="flag">${country.flag}</span>
     <span class="country-name">${escHtml(country.name)}</span>
   `;
 }
 
-function openCountryDropdown() {
-  $countryDropdown.classList.remove('hidden');
-  $countryBtn.setAttribute('aria-expanded', 'true');
-  renderCountryList('');
-  $countrySearch.focus();
+// Parent dropdown
+function openParentCountryDropdown() {
+  $parentCountryDropdown.classList.remove('hidden');
+  $parentCountryBtn.setAttribute('aria-expanded', 'true');
+  $parentCountryList.innerHTML = buildCountryListHTML(selectedParentCountry.code, '');
+  $parentCountrySearch.focus();
 }
 
-function closeCountryDropdown() {
-  $countryDropdown.classList.add('hidden');
-  $countryBtn.setAttribute('aria-expanded', 'false');
-  $countrySearch.value = '';
+function closeParentCountryDropdown() {
+  $parentCountryDropdown.classList.add('hidden');
+  $parentCountryBtn.setAttribute('aria-expanded', 'false');
+  $parentCountrySearch.value = '';
 }
 
-$countryBtn.addEventListener('click', (e) => {
+$parentCountryBtn.addEventListener('click', (e) => {
   e.stopPropagation();
-  if ($countryDropdown.classList.contains('hidden')) {
-    openCountryDropdown();
+  // Close child dropdown if open
+  closeChildCountryDropdown();
+  if ($parentCountryDropdown.classList.contains('hidden')) {
+    openParentCountryDropdown();
   } else {
-    closeCountryDropdown();
+    closeParentCountryDropdown();
   }
 });
 
-$countrySearch.addEventListener('input', () => {
-  renderCountryList($countrySearch.value);
+$parentCountrySearch.addEventListener('input', () => {
+  $parentCountryList.innerHTML = buildCountryListHTML(selectedParentCountry.code, $parentCountrySearch.value);
 });
 
-$countryList.addEventListener('click', (e) => {
+$parentCountryList.addEventListener('click', (e) => {
   const li = e.target.closest('.country-option');
   if (!li) return;
   const code = li.dataset.code;
   const match = COUNTRY_MAP[code];
   if (match) {
-    selectedCountry = match;
-    updateCountryDisplay(match);
-    closeCountryDropdown();
+    selectedParentCountry = match;
+    setCountryDisplay($parentCountryDisplay, match);
+    closeParentCountryDropdown();
   }
 });
 
+// Child dropdown
+function openChildCountryDropdown() {
+  $childCountryDropdown.classList.remove('hidden');
+  $childCountryBtn.setAttribute('aria-expanded', 'true');
+  $childCountryList.innerHTML = buildCountryListHTML(selectedChildCountry.code, '');
+  $childCountrySearch.focus();
+}
+
+function closeChildCountryDropdown() {
+  $childCountryDropdown.classList.add('hidden');
+  $childCountryBtn.setAttribute('aria-expanded', 'false');
+  $childCountrySearch.value = '';
+}
+
+$childCountryBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  // Close parent dropdown if open
+  closeParentCountryDropdown();
+  if ($childCountryDropdown.classList.contains('hidden')) {
+    openChildCountryDropdown();
+  } else {
+    closeChildCountryDropdown();
+  }
+});
+
+$childCountrySearch.addEventListener('input', () => {
+  $childCountryList.innerHTML = buildCountryListHTML(selectedChildCountry.code, $childCountrySearch.value);
+});
+
+$childCountryList.addEventListener('click', (e) => {
+  const li = e.target.closest('.country-option');
+  if (!li) return;
+  const code = li.dataset.code;
+  const match = COUNTRY_MAP[code];
+  if (match) {
+    selectedChildCountry = match;
+    setCountryDisplay($childCountryDisplay, match);
+    closeChildCountryDropdown();
+  }
+});
+
+// Click-outside closes whichever dropdown is open
 document.addEventListener('click', (e) => {
-  if (!$countryDropdown.classList.contains('hidden') &&
-      !$countryBtn.contains(e.target) &&
-      !$countryDropdown.contains(e.target)) {
-    closeCountryDropdown();
+  if (!$parentCountryDropdown.classList.contains('hidden') &&
+      !$parentCountryBtn.contains(e.target) &&
+      !$parentCountryDropdown.contains(e.target)) {
+    closeParentCountryDropdown();
+  }
+  if (!$childCountryDropdown.classList.contains('hidden') &&
+      !$childCountryBtn.contains(e.target) &&
+      !$childCountryDropdown.contains(e.target)) {
+    closeChildCountryDropdown();
   }
 });
 
@@ -2155,19 +2232,25 @@ function validateYear(raw, errorEl, label) {
 // SHOW / HIDE SCREENS
 // ---------------------------------------------------------------------------
 
-function showResult(parentYear, childYear, countryCode, parentData, childData) {
-  _lastCompare = { parentYear, childYear, countryCode, parentData, childData };
+function showResult(parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData) {
+  _lastCompare = { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData };
 
   applyAccents(parentYear, childYear);
 
   $landing.classList.add('hidden');
   $errorPanel.classList.add('hidden');
 
-  const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
+  const parentCountry = COUNTRY_MAP[parentCountryCode] || COUNTRIES[0];
+  const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
   $headerLabel.textContent = parentYear + ' vs ' + childYear;
-  $headerCountry.textContent = country.flag + ' ' + country.name;
 
-  renderComparison(parentYear, childYear, countryCode, parentData, childData);
+  if (parentCountryCode === childCountryCode) {
+    $headerCountries.textContent = parentCountry.flag + ' ' + parentCountry.name;
+  } else {
+    $headerCountries.textContent = parentCountry.flag + ' ' + parentCountry.name + ' / ' + childCountry.flag + ' ' + childCountry.name;
+  }
+
+  renderComparison(parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData);
 
   $result.classList.remove('hidden');
   window.scrollTo({ top: 0, behavior: 'instant' });
@@ -2218,8 +2301,8 @@ $form.addEventListener('submit', async (e) => {
 
   try {
     const { parentData, childData } = await loadBothYears(py, cy);
-    updateUrl(py, cy, selectedCountry.code);
-    showResult(py, cy, selectedCountry.code, parentData, childData);
+    updateUrl(py, cy, selectedParentCountry.code, selectedChildCountry.code);
+    showResult(py, cy, selectedParentCountry.code, selectedChildCountry.code, parentData, childData);
   } catch (err) {
     showError('Could not load data. ' + (err.message || 'Please try again.'));
   } finally {
@@ -2234,17 +2317,25 @@ $form.addEventListener('submit', async (e) => {
 // URL DEEP LINKING
 // ---------------------------------------------------------------------------
 
-function updateUrl(parentYear, childYear, countryCode) {
-  const params = new URLSearchParams({ parent: parentYear, child: childYear, country: countryCode });
+function updateUrl(parentYear, childYear, parentCountryCode, childCountryCode) {
+  const params = new URLSearchParams({
+    parent: parentYear,
+    child: childYear,
+    pcountry: parentCountryCode,
+    ccountry: childCountryCode,
+  });
   const newUrl = window.location.pathname + '?' + params.toString();
   history.replaceState(null, '', newUrl);
 }
 
 async function readUrlParams() {
   const params = new URLSearchParams(window.location.search);
-  const parentParam  = params.get('parent');
-  const childParam   = params.get('child');
-  const countryParam = params.get('country');
+  const parentParam   = params.get('parent');
+  const childParam    = params.get('child');
+  const pcountryParam = params.get('pcountry');
+  const ccountryParam = params.get('ccountry');
+  // Also support legacy single ?country= param
+  const legacyCountry = params.get('country');
 
   if (!parentParam || !childParam) return;
 
@@ -2255,16 +2346,26 @@ async function readUrlParams() {
   if (py < YEAR_MIN || py > YEAR_MAX || cy < YEAR_MIN || cy > YEAR_MAX) return;
   if (Math.abs(cy - py) < 15) return;
 
-  if (countryParam && COUNTRY_MAP[countryParam]) {
-    selectedCountry = COUNTRY_MAP[countryParam];
-    updateCountryDisplay(selectedCountry);
-  }
+  // Resolve parent country
+  const resolvedPCountry = (pcountryParam && COUNTRY_MAP[pcountryParam])
+    ? COUNTRY_MAP[pcountryParam]
+    : (legacyCountry && COUNTRY_MAP[legacyCountry]) ? COUNTRY_MAP[legacyCountry] : COUNTRIES[0];
+
+  // Resolve child country
+  const resolvedCCountry = (ccountryParam && COUNTRY_MAP[ccountryParam])
+    ? COUNTRY_MAP[ccountryParam]
+    : (legacyCountry && COUNTRY_MAP[legacyCountry]) ? COUNTRY_MAP[legacyCountry] : COUNTRIES[0];
+
+  selectedParentCountry = resolvedPCountry;
+  selectedChildCountry  = resolvedCCountry;
+  setCountryDisplay($parentCountryDisplay, selectedParentCountry);
+  setCountryDisplay($childCountryDisplay,  selectedChildCountry);
 
   const [parentYear, childYear] = py < cy ? [py, cy] : [cy, py];
 
   try {
     const { parentData, childData } = await loadBothYears(parentYear, childYear);
-    showResult(parentYear, childYear, selectedCountry.code, parentData, childData);
+    showResult(parentYear, childYear, selectedParentCountry.code, selectedChildCountry.code, parentData, childData);
   } catch (err) {
     // Silently fail on URL params - just show landing
   }
@@ -2324,6 +2425,8 @@ function handleNew() {
   $childYearInput.value = '';
   $parentYearError.textContent = '';
   $childYearError.textContent = '';
+  closeParentCountryDropdown();
+  closeChildCountryDropdown();
   history.replaceState(null, '', window.location.pathname);
 }
 
@@ -2335,6 +2438,6 @@ $errorBackBtn.addEventListener('click', handleNew);
 // INIT
 // ---------------------------------------------------------------------------
 
-updateCountryDisplay(selectedCountry);
-renderCountryList('');
+setCountryDisplay($parentCountryDisplay, selectedParentCountry);
+setCountryDisplay($childCountryDisplay,  selectedChildCountry);
 readUrlParams();
