@@ -1,0 +1,1963 @@
+/* =========================================================
+   COMPARE GENERATIONS - compare.css
+   Full design system inherited from born-in/style.css,
+   plus compare-specific components.
+   ========================================================= */
+
+/* CUSTOM PROPERTIES */
+:root {
+  --bg-void: #080810;
+  --bg-surface: #0f0f1a;
+  --bg-raised: #1a1a2e;
+  --border: rgba(255,255,255,0.08);
+  --text-primary: #f0f0f5;
+  --text-secondary: #9898b0;
+  --text-tertiary: #7a7a92;
+  --accent: #a78bfa; /* default, can be overridden by JS */
+
+  /* Compare-specific: two-accent system */
+  --accent-parent: #f59e0b; /* warm amber for the parent generation */
+  --accent-child:  #a78bfa; /* violet for the child's generation */
+
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --radius-card: 12px;
+  --radius-pill: 99px;
+  --transition-base: 200ms ease-out;
+}
+
+/* =========================================================
+   ERA / DECADE THEME OVERRIDES
+   Same as parent tool - applied to body via JS if needed.
+   ========================================================= */
+
+/* 1950s - warm, golden, slightly amber-tinted darkness */
+body.era-50s {
+  --bg-void:    #0d0b07;
+  --bg-surface: #131009;
+  --bg-raised:  #1e1a10;
+  --border:     rgba(200, 150, 58, 0.12);
+  --text-secondary: #9a9080;
+  --text-tertiary:  #8e8678;
+  --accent:     #c8963a;
+  --radius-card: 6px;
+}
+
+/* 1960s - cool, mod, crisp with teal clarity */
+body.era-60s {
+  --bg-void:    #080c10;
+  --bg-surface: #0c1118;
+  --bg-raised:  #141c24;
+  --border:     rgba(0, 137, 123, 0.13);
+  --text-secondary: #8898a8;
+  --text-tertiary:  #7e90a0;
+  --accent:     #26a69a;
+  --radius-card: 4px;
+}
+
+/* 1970s - warm earth tones, amber, organic */
+body.era-70s {
+  --bg-void:    #0c0a06;
+  --bg-surface: #120f08;
+  --bg-raised:  #1c170e;
+  --border:     rgba(181, 101, 29, 0.13);
+  --text-secondary: #988870;
+  --text-tertiary:  #8c8070;
+  --accent:     #c87a2d;
+  --radius-card: 8px;
+}
+
+/* 1980s - cool near-black with electric purple punch */
+body.era-80s {
+  --bg-void:    #080810;
+  --bg-surface: #0e0e1c;
+  --bg-raised:  #161628;
+  --border:     rgba(124, 58, 237, 0.15);
+  --text-secondary: #8888b0;
+  --text-tertiary:  #8080a0;
+  --accent:     #7c3aed;
+  --radius-card: 2px;
+}
+
+/* 1990s - neutral-dark, grunge undertone, muted green */
+body.era-90s {
+  --bg-void:    #070909;
+  --bg-surface: #0e1010;
+  --bg-raised:  #181c1a;
+  --border:     rgba(74, 124, 89, 0.12);
+  --text-secondary: #858e88;
+  --text-tertiary:  #7e8880;
+  --accent:     #5a9069;
+  --radius-card: 10px;
+}
+
+/* 2000s - clean cool-dark with tech blue */
+body.era-00s {
+  --bg-void:    #06080d;
+  --bg-surface: #0b0e18;
+  --bg-raised:  #131826;
+  --border:     rgba(30, 64, 175, 0.15);
+  --text-secondary: #8090b0;
+  --text-tertiary:  #7a88a8;
+  --accent:     #5b8def;
+  --radius-card: 12px;
+}
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.625;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================================
+   UTILITIES
+   ========================================================= */
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =========================================================
+   SCREEN 1: LANDING
+   ========================================================= */
+
+.screen-landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.landing-inner {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* =========================================================
+   COMPARE LANDING - headline
+   ========================================================= */
+
+.cmp-tagline-wrap {
+  text-align: center;
+}
+
+.cmp-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(22px, 4vw, 38px);
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.cmp-tagline-sub {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   COMPARE LANDING MODIFIERS
+   .cmp-landing and .cmp-landing-inner are additive classes
+   alongside .screen-landing / .landing-inner. They exist as
+   JS/CSS hooks with no layout overrides needed.
+   ========================================================= */
+
+.cmp-landing {
+  /* Inherits all of .screen-landing */
+}
+
+.cmp-landing-inner {
+  /* Inherits all of .landing-inner */
+}
+
+/* =========================================================
+   COMPARE INPUT GROUP MODIFIERS
+   Parent and child groups share .cmp-input-group but get
+   accent-colored bottom borders on their year inputs.
+   ========================================================= */
+
+.cmp-input-group--parent {
+  /* Left-side group - no additional layout needed */
+}
+
+.cmp-input-group--parent .year-input:focus {
+  border-bottom-color: var(--accent-parent);
+}
+
+.cmp-input-group--child {
+  /* Right-side group - no additional layout needed */
+}
+
+.cmp-input-group--child .year-input:focus {
+  border-bottom-color: var(--accent-child);
+}
+
+/* Label accent text for parent/child groups */
+.cmp-input-label--parent {
+  /* The gen-pill inside supplies colour; label itself is neutral */
+}
+
+.cmp-input-label--child {
+  /* Same as above */
+}
+
+/* =========================================================
+   COMPARE FORM
+   ========================================================= */
+
+.cmp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+/* The two year inputs stacked side by side */
+.cmp-input-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+.cmp-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+/* Country group reuses .input-group but full-width */
+.cmp-country-group {
+  width: 100%;
+}
+
+/* Submit button: full-width pill for this form */
+.cmp-submit-btn {
+  width: 100%;
+  border-radius: 10px;
+  height: 52px;
+  background: var(--accent-child);
+  border: none;
+  color: var(--bg-void);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.cmp-submit-btn:hover {
+  opacity: 0.88;
+  transform: scale(1.01);
+}
+
+.cmp-submit-btn:active {
+  transform: scale(0.98);
+}
+
+.cmp-submit-btn:focus-visible {
+  outline: 2px solid var(--accent-child);
+  outline-offset: 3px;
+}
+
+/* Subtle link below form */
+.cmp-solo-link {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+.cmp-link {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-base);
+}
+
+.cmp-link:hover {
+  color: var(--text-primary);
+}
+
+/* =========================================================
+   INPUT SHARED STYLES (mirrors style.css exactly)
+   ========================================================= */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  position: relative;
+}
+
+.input-label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-hint {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+.input-error {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #ff6b6b;
+  line-height: 1;
+}
+
+/* YEAR INPUT */
+.year-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 8px 0 12px;
+  width: 100%;
+  outline: none;
+  transition: border-color var(--transition-base);
+  -moz-appearance: textfield;
+}
+
+.year-input::-webkit-outer-spin-button,
+.year-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.year-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.year-input:focus {
+  border-bottom-color: var(--accent);
+}
+
+/* Parent year accent on focus */
+.cmp-year-input--parent:focus {
+  border-bottom-color: var(--accent-parent);
+}
+
+/* Child year accent on focus */
+.cmp-year-input--child:focus {
+  border-bottom-color: var(--accent-child);
+}
+
+/* =========================================================
+   GENERATION LABEL PILLS
+   ========================================================= */
+
+.gen-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  width: fit-content;
+  margin-bottom: 2px;
+}
+
+.gen-pill--parent {
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--accent-parent);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+}
+
+.gen-pill--child {
+  background: rgba(167, 139, 250, 0.12);
+  color: var(--accent-child);
+  border: 1px solid rgba(167, 139, 250, 0.22);
+}
+
+/* =========================================================
+   COUNTRY SELECT (mirrors style.css exactly)
+   ========================================================= */
+
+.country-select-wrap {
+  position: relative;
+}
+
+.country-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 20px;
+  padding: 8px 0 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  text-align: left;
+  transition: border-color var(--transition-base);
+  outline: none;
+}
+
+.country-btn:focus-visible {
+  border-bottom-color: var(--accent);
+}
+
+.country-btn[aria-expanded="true"] {
+  border-bottom-color: var(--accent);
+}
+
+.country-btn[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+}
+
+#cmp-country-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flag {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.country-name {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.country-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  z-index: 100;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  max-height: min(300px, 50vh);
+  display: flex;
+  flex-direction: column;
+}
+
+.country-dropdown.hidden {
+  display: none !important;
+}
+
+.country-search-wrap {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.country-search {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 8px 12px;
+  width: 100%;
+  outline: none;
+  transition: border-color var(--transition-base);
+}
+
+.country-search::placeholder {
+  color: var(--text-tertiary);
+}
+
+.country-search:focus {
+  border-color: var(--accent);
+}
+
+.country-list {
+  list-style: none;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 8px 0;
+  min-height: 0;
+}
+
+.country-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.country-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.country-list::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.country-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--text-primary);
+  transition: background var(--transition-base);
+}
+
+.country-option:hover,
+.country-option[aria-selected="true"] {
+  background: rgba(255,255,255,0.06);
+}
+
+.country-option[aria-selected="true"] {
+  color: var(--accent);
+}
+
+.country-option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.country-option .flag {
+  font-size: 18px;
+}
+
+/* =========================================================
+   SUBMIT BUTTON (base - overridden by .cmp-submit-btn)
+   ========================================================= */
+
+.submit-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  color: var(--bg-void);
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1px;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.88;
+  transform: scale(1.05);
+}
+
+.submit-btn:active {
+  transform: scale(0.96);
+}
+
+.submit-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.submit-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* =========================================================
+   SCREEN 2: COMPARISON RESULT
+   ========================================================= */
+
+.screen-infographic {
+  min-height: 100vh;
+}
+
+/* =========================================================
+   STICKY HEADER (mirrors style.css + compare-specific)
+   ========================================================= */
+
+.info-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 56px;
+  background: rgba(8, 8, 16, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  max-width: 100%;
+}
+
+.cmp-header {
+  /* Same as info-header - no overrides needed; class is additive */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* The "[parentYear] vs [childYear]" label in the header */
+.cmp-header-label {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The parent year part gets the parent accent - applied by JS via a <span> */
+.cmp-header-parent {
+  color: var(--accent-parent);
+}
+
+/* The child year part gets the child accent */
+.cmp-header-child {
+  color: var(--accent-child);
+}
+
+.header-sep {
+  color: var(--text-tertiary);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.header-country {
+  font-size: 15px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.header-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 8px 14px;
+  min-height: 36px;
+  transition: color var(--transition-base), border-color var(--transition-base), background var(--transition-base);
+  position: relative;
+}
+
+.header-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.04);
+}
+
+.header-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   SHARE POPOVER
+   ========================================================= */
+
+.share-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 24px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  z-index: 100;
+  min-width: 180px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+.share-option {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 12px 16px;
+  width: 100%;
+  text-align: left;
+  transition: background var(--transition-base);
+}
+
+.share-option:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.share-option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+/* =========================================================
+   SHARE CARD (hidden, rendered to PNG)
+   ========================================================= */
+
+.share-card {
+  display: none;
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  width: 540px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.info-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cmp-content {
+  /* Same as info-content */
+}
+
+/* =========================================================
+   SECTION STRUCTURE
+   ========================================================= */
+
+.act {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.act:last-child {
+  border-bottom: none;
+}
+
+.act-label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.act-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+
+.act-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* =========================================================
+   COMPARE SECTION HEADERS
+   (editorial, not "Act I/II" style)
+   ========================================================= */
+
+.cmp-section {
+  padding: 72px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cmp-section:last-child {
+  border-bottom: none;
+}
+
+.cmp-section-header {
+  margin-bottom: 40px;
+}
+
+.cmp-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+}
+
+.cmp-section-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(20px, 3.5vw, 30px);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.cmp-section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   EYEBROW + HEADLINE
+   ========================================================= */
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.section-headline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+/* =========================================================
+   PATTERN A - FOCAL NUMBER
+   ========================================================= */
+
+.focal-number {
+  font-family: var(--font-mono);
+  font-size: clamp(56px, 10vw, 120px);
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  display: block;
+}
+
+.focal-unit {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-top: 10px;
+  display: block;
+}
+
+.focal-context {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 12px;
+  max-width: 480px;
+}
+
+.focal-context--prominent {
+  font-size: 17px;
+  color: var(--text-primary);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.comparison-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 4px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 16px;
+}
+
+/* =========================================================
+   PATTERN B - TWO-UP COMPARISON
+   ========================================================= */
+
+.two-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.two-up-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 24px;
+}
+
+.two-up-label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.two-up-label.muted {
+  color: var(--text-tertiary);
+}
+
+.two-up-value {
+  font-family: var(--font-mono);
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.two-up-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.two-up-commentary {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 16px;
+  text-align: center;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================
+   PATTERN C - BILLBOARD CARD
+   ========================================================= */
+
+.billboard-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 28px 32px;
+}
+
+.billboard-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(24px, 4vw, 36px);
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.billboard-detail {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* =========================================================
+   PATTERN D - TIMELINE RIBBON
+   ========================================================= */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 24px 60px 1fr;
+  gap: 0 12px;
+  position: relative;
+}
+
+.timeline-dot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.timeline-line {
+  width: 1px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 4px;
+}
+
+.timeline-item:last-child .timeline-line {
+  display: none;
+}
+
+.timeline-month {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  padding-top: 2px;
+  line-height: 1.4;
+}
+
+.timeline-event {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  padding-bottom: 28px;
+}
+
+/* =========================================================
+   PATTERN E - PRICE ROW
+   ========================================================= */
+
+.price-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.price-pill {
+  background: var(--bg-raised);
+  border-radius: var(--radius-card);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 100px;
+}
+
+.price-pill-emoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.price-pill-value {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.price-pill-today {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+
+.price-pill-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* =========================================================
+   PATTERN F - STAT TRIO
+   ========================================================= */
+
+.stat-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.stat-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* =========================================================
+   COMPARE-SPECIFIC: PARENT / CHILD CARDS
+   Accented two-column cards for side-by-side data.
+   ========================================================= */
+
+.parent-card,
+.child-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  position: relative;
+}
+
+/* Top accent strip */
+.parent-card::before,
+.child-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+
+.parent-card::before {
+  background: var(--accent-parent);
+}
+
+.child-card::before {
+  background: var(--accent-child);
+}
+
+.parent-card .two-up-label,
+.parent-card .card-accent-label {
+  color: var(--accent-parent);
+}
+
+.child-card .two-up-label,
+.child-card .card-accent-label {
+  color: var(--accent-child);
+}
+
+/* Generation labels within cards */
+.card-gen-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.parent-card .card-gen-pill {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-parent);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.child-card .card-gen-pill {
+  background: rgba(167, 139, 250, 0.1);
+  color: var(--accent-child);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+.card-accent-label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card-value {
+  font-family: var(--font-mono);
+  font-size: clamp(26px, 4.5vw, 40px);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* =========================================================
+   DELTA BADGE
+   Shows percentage or absolute change between generations.
+   ========================================================= */
+
+.delta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.delta-badge--positive {
+  background: rgba(52, 211, 153, 0.1);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+.delta-badge--negative {
+  background: rgba(248, 113, 113, 0.1);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.delta-badge--neutral {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.delta-badge-arrow {
+  font-size: 11px;
+}
+
+/* =========================================================
+   PRICE COMPARE GRID
+   Side-by-side inflation-adjusted price pills.
+   ========================================================= */
+
+.price-compare-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.price-compare-pill {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+  flex: 1;
+}
+
+.price-compare-pill-emoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.price-compare-pill-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+.price-compare-pill-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+
+.price-compare-pill-year-label {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+}
+
+.price-compare-pill-amount {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.price-compare-pill-amount--parent {
+  color: var(--accent-parent);
+}
+
+.price-compare-pill-amount--child {
+  color: var(--accent-child);
+}
+
+.price-compare-pill-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: 2px 0;
+}
+
+/* =========================================================
+   LOADING STATE
+   ========================================================= */
+
+.loading-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* =========================================================
+   ERROR STATE
+   ========================================================= */
+
+.data-error {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-void);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+  z-index: 300;
+}
+
+.error-message {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(18px, 3vw, 28px);
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 480px;
+  line-height: 1.4;
+}
+
+.error-back-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: color var(--transition-base), border-color var(--transition-base);
+}
+
+.error-back-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* =========================================================
+   EXPLORE MORE
+   ========================================================= */
+
+.explore-more {
+  max-width: 860px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+
+.explore-more-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+}
+
+.explore-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.explore-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition-base), background var(--transition-base);
+}
+
+.explore-card:hover {
+  border-color: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.04);
+}
+
+.explore-card-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+
+.explore-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.explore-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.explore-card-sub {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  line-height: 1.4;
+}
+
+.explore-card-arrow {
+  font-size: 16px;
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.explore-card:hover .explore-card-arrow {
+  color: var(--text-secondary);
+  transform: translateX(2px);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 56px 24px;
+}
+
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--accent);
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+.footer-disclosure {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+
+/* =========================================================
+   COPY TOAST
+   ========================================================= */
+
+.copy-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 10px 20px;
+  font-size: 13px;
+  color: var(--text-primary);
+  z-index: 500;
+  opacity: 0;
+  transition: opacity 200ms ease, transform 200ms ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.copy-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================================================
+   LANDING COLLAPSE ANIMATION
+   ========================================================= */
+
+.screen-landing.collapsing {
+  animation: collapseScreen 200ms ease-out forwards;
+}
+
+@keyframes collapseScreen {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .stat-trio {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .act {
+    padding: 64px 0;
+  }
+
+  .cmp-section {
+    padding: 56px 0;
+  }
+
+  .price-compare-pill {
+    min-width: 100px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - MOBILE (640px)
+   ========================================================= */
+
+@media (max-width: 640px) {
+  /* Landing form - stack everything */
+  .cmp-input-block {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .cmp-submit-btn {
+    height: 52px;
+    border-radius: 10px;
+  }
+
+  .info-header {
+    padding: 0 16px;
+  }
+
+  .header-country .country-name-full {
+    display: none;
+  }
+
+  .header-btn span {
+    display: none;
+  }
+
+  .header-btn {
+    gap: 0;
+    padding: 10px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .info-content,
+  .cmp-content {
+    padding: 0 16px;
+  }
+
+  .act {
+    padding: 56px 0;
+  }
+
+  .cmp-section {
+    padding: 48px 0;
+  }
+
+  .act-sections {
+    gap: 36px;
+  }
+
+  .cmp-section-body {
+    gap: 24px;
+  }
+
+  .two-up {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-trio {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .price-grid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .price-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .price-pill {
+    flex-shrink: 0;
+  }
+
+  .price-compare-grid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .price-compare-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .price-compare-pill {
+    flex-shrink: 0;
+    min-width: 110px;
+  }
+
+  .share-popover {
+    right: 16px;
+  }
+
+  .site-footer {
+    padding: 48px 16px;
+  }
+
+  .explore-card {
+    padding: 14px 16px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE (480px)
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .header-sep {
+    display: none;
+  }
+
+  .cmp-tagline {
+    font-size: clamp(20px, 6vw, 26px);
+  }
+
+  .cmp-header-label {
+    font-size: 13px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* =========================================================
+   INLINE SVG CHART CONTAINER
+   ========================================================= */
+
+.chart-container {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 24px 20px 16px;
+  overflow: hidden;
+}
+
+.chart-container svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   WHEN YOU TURNED 18 - SECTION
+   ========================================================= */
+
+.at18-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+  position: relative;
+}
+
+/* Subtle background wash to make the section feel special */
+.at18-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(167, 139, 250, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.at18-subhead {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 560px;
+}
+
+/* Two-column grid for the side-by-side cards */
+.at18-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.at18-col {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.at18-col-header {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-raised);
+}
+
+.at18-year {
+  font-family: var(--font-mono);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 8px 0 4px;
+}
+
+.at18-age-caption {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+/* Rows of data inside each card */
+.at18-rows {
+  padding: 4px 0;
+}
+
+.at18-row {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.at18-row:last-child {
+  border-bottom: none;
+}
+
+.at18-row-icon {
+  font-size: 16px;
+  line-height: 1.4;
+  grid-row: span 2;
+  padding-top: 1px;
+}
+
+.at18-row-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  line-height: 1.4;
+}
+
+.at18-row-value {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+/* =========================================================
+   RESPONSIVE - at18 section
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .at18-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .at18-section {
+    padding: 56px 0;
+  }
+
+  .at18-year {
+    font-size: 28px;
+  }
+
+  .chart-container {
+    padding: 16px 12px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .at18-row {
+    padding: 10px 16px;
+  }
+}

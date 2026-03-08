@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Generations - How the World Changed Between You and Your Parents</title>
+  <meta name="description" content="See how life expectancy, prices, GDP, and culture changed between two generations. All prices inflation-adjusted to 2024 dollars.">
+  <meta property="og:title" content="Compare Generations - How the World Changed Between You and Your Parents">
+  <meta property="og:description" content="See how life expectancy, prices, GDP, and culture changed between two generations. All prices inflation-adjusted to 2024 dollars.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pivode.github.io/born-in/compare/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Compare Generations - How the World Changed Between You and Your Parents">
+  <meta name="twitter:description" content="See how life expectancy, prices, GDP, and culture changed between two generations. All prices inflation-adjusted to 2024 dollars.">
+  <meta name="theme-color" content="#080810">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://pivode.github.io/born-in/compare/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="compare.css">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer></script>
+  <script data-goatcounter="https://pivode.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+  <!-- SCREEN 1: LANDING -->
+  <section id="cmp-landing" class="screen-landing cmp-landing">
+    <div class="landing-inner cmp-landing-inner">
+
+      <div class="cmp-tagline-wrap">
+        <p class="cmp-tagline">How much did the world change<br>between your generation and your parents'?</p>
+        <p class="cmp-tagline-sub">Enter two birth years to find out. All prices are inflation-adjusted to 2024 dollars.</p>
+      </div>
+
+      <form id="cmp-form" class="cmp-form" novalidate>
+
+        <!-- Parent birth year -->
+        <div class="cmp-input-block">
+          <div class="cmp-input-group cmp-input-group--parent">
+            <label for="parent-year-input" class="input-label cmp-input-label--parent">
+              <span class="gen-pill gen-pill--parent">Their generation</span>
+              Parent's birth year
+            </label>
+            <span class="input-hint">1950 - 2010</span>
+            <input
+              id="parent-year-input"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              class="year-input cmp-year-input--parent"
+              placeholder="1960"
+              autocomplete="off"
+            >
+            <span id="parent-year-error" class="input-error" role="alert"></span>
+          </div>
+
+          <!-- Child birth year -->
+          <div class="cmp-input-group cmp-input-group--child">
+            <label for="child-year-input" class="input-label cmp-input-label--child">
+              <span class="gen-pill gen-pill--child">Your generation</span>
+              Your birth year
+            </label>
+            <span class="input-hint">1950 - 2010</span>
+            <input
+              id="child-year-input"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              class="year-input cmp-year-input--child"
+              placeholder="1988"
+              autocomplete="off"
+            >
+            <span id="child-year-error" class="input-error" role="alert"></span>
+          </div>
+        </div>
+
+        <!-- Country selector -->
+        <div class="input-group cmp-country-group">
+          <label for="cmp-country-btn" class="input-label">Country</label>
+          <div class="country-select-wrap">
+            <button type="button" id="cmp-country-btn" class="country-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="cmp-country-list">
+              <span id="cmp-country-display">
+                <span class="flag">🇺🇸</span>
+                <span class="country-name">United States</span>
+              </span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div id="cmp-country-dropdown" class="country-dropdown hidden">
+              <div class="country-search-wrap">
+                <input type="text" id="cmp-country-search" class="country-search" placeholder="Search..." autocomplete="off">
+              </div>
+              <ul id="cmp-country-list" class="country-list" role="listbox" aria-label="Select country"></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="cmp-submit-btn" class="submit-btn cmp-submit-btn" aria-label="Compare">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="submit-text">Compare</span>
+        </button>
+
+      </form>
+
+      <p class="cmp-solo-link">
+        Or <a href="../" class="cmp-link">explore just your birth year</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SCREEN 2: COMPARISON RESULT -->
+  <section id="cmp-result" class="screen-infographic hidden">
+
+    <!-- STICKY HEADER -->
+    <header id="cmp-header" class="info-header cmp-header">
+      <div class="header-left">
+        <span id="cmp-header-label" class="cmp-header-label"></span>
+        <span class="header-sep">·</span>
+        <span id="cmp-header-country" class="header-country"></span>
+      </div>
+      <div class="header-right">
+        <button id="cmp-share-btn" class="header-btn" aria-label="Share" aria-expanded="false">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M10 2.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-7.5 5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM10 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 7.5L10 4M3.5 7.5L10 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <span>Share</span>
+        </button>
+        <button id="cmp-new-btn" class="header-btn" aria-label="New comparison">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M7.5 1.5L3 6h3v5h3V6h3L7.5 1.5z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>New comparison</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- SHARE POPOVER -->
+    <div id="cmp-share-popover" class="share-popover hidden" role="dialog" aria-label="Share options">
+      <button id="cmp-copy-link-btn" class="share-option">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+          <path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        Copy link
+      </button>
+      <button id="cmp-tweet-btn" class="share-option">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M12.6 1h2.4l-5.2 5.9L16 15h-4.8l-3.7-4.9L3 15H.6l5.5-6.3L0 1h4.9l3.4 4.4L12.6 1zm-.8 12.6h1.3L4.3 2.3H2.9l8.9 11.3z"/>
+        </svg>
+        Share on X
+      </button>
+      <button id="cmp-save-card-btn" class="share-option">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2v8m0 0L5 7m3 3l3-3M3 12v1.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Save card
+      </button>
+    </div>
+
+    <!-- SHARE CARD (hidden, rendered to PNG by html2canvas) -->
+    <div id="cmp-share-card" class="share-card" aria-hidden="true"></div>
+
+    <!-- MAIN COMPARISON CONTENT -->
+    <div id="cmp-content" class="info-content cmp-content"></div>
+
+    <!-- EXPLORE MORE -->
+    <div class="explore-more" id="cmp-explore-more">
+      <p class="explore-more-label">keep exploring</p>
+      <div class="explore-cards">
+        <a href="https://runpod.io?ref=f5ifklhp" class="explore-card" target="_blank" rel="noopener">
+          <span class="explore-card-icon">🚀</span>
+          <span class="explore-card-text">
+            <span class="explore-card-title">RunPod - GPU Cloud</span>
+            <span class="explore-card-sub">The GPUs powering this project. Up to $500 free credits on signup.</span>
+          </span>
+          <span class="explore-card-arrow">→</span>
+        </a>
+        <a href="https://pivode.github.io" class="explore-card" target="_blank" rel="noopener">
+          <span class="explore-card-icon">📊</span>
+          <span class="explore-card-text">
+            <span class="explore-card-title">More from Pivode</span>
+            <span class="explore-card-sub">Interactive experiences and datasets built from real-world data</span>
+          </span>
+          <span class="explore-card-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- BOTTOM CTA -->
+    <div class="explore-more" style="text-align: center;">
+      <button id="cmp-bottom-new-btn" class="header-btn" style="font-size: 14px; padding: 12px 24px; border-radius: 8px;">
+        New comparison
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">pivode</p>
+        <p class="footer-copy">Data compiled and maintained by Pivode.</p>
+        <p class="footer-disclosure">Some links are affiliate links. We may earn a small commission at no extra cost to you.</p>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- ERROR STATE -->
+  <div id="cmp-error" class="data-error hidden" role="alert">
+    <p id="cmp-error-message" class="error-message"></p>
+    <button id="cmp-error-back-btn" class="error-back-btn">← Try again</button>
+  </div>
+
+  <!-- COPY TOAST -->
+  <div id="cmp-copy-toast" class="copy-toast" aria-live="polite"></div>
+
+  <script src="compare.js" defer></script>
+</body>
+</html>
