@@ -1,0 +1,377 @@
+{
+  "year": 1941,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.33,
+    "births_millions": 91,
+    "life_expectancy_global": 44.0,
+    "countries_count": 61,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1218,
+    "us_median_household_income_usd": 1900,
+    "us_inflation_pct": 5.0,
+    "us_unemployment_pct": 9.9,
+    "us_minimum_wage_usd": 0.30,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 116.10,
+    "gold_oz_usd": 33.85,
+    "oil_barrel_usd": 1.05
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.19,
+    "gallon_milk_usd": 0.28,
+    "dozen_eggs_usd": 0.36,
+    "loaf_bread_usd": 0.08,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 900,
+    "median_home_usd": 3100,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Chattanooga Choo Choo",
+      "billboard_no1_artist": "Glenn Miller and His Orchestra",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "There'll Always Be an England",
+      "uk_no1_jan_artist": "Vera Lynn"
+    },
+    "film": {
+      "box_office_no1": "Sergeant York",
+      "box_office_no1_gross_m": 6.1,
+      "oscar_best_picture": "How Green Was My Valley",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "John Ford",
+      "oscar_best_actor": "Gary Cooper",
+      "oscar_best_actor_film": "Sergeant York",
+      "oscar_best_actress": "Joan Fontaine",
+      "oscar_best_actress_film": "Suspicion"
+    },
+    "television": {
+      "most_watched_show": "Jack Benny Program",
+      "most_watched_network": "NBC Radio",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Citizen Kane released, widely hailed as a landmark in cinema",
+        "Glenn Miller's Chattanooga Choo Choo becomes first gold record"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The Keys of the Kingdom",
+      "fiction_bestseller_author": "A.J. Cronin",
+      "nonfiction_bestseller": "Berlin Diary",
+      "nonfiction_bestseller_author": "William L. Shirer",
+      "pulitzer_fiction": null,
+      "pulitzer_fiction_author": null
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": null,
+      "wimbledon_womens": null,
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Konrad Zuse completes the Z3, the world's first programmable, fully automatic digital computer, in Berlin",
+    "top_computer": "Zuse Z3 (programmable relay-based)",
+    "top_computer_price_usd": 60000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Konrad Zuse demonstrates the Z3 in Berlin - the first fully functional programmable computer",
+      "Penicillin successfully tested on humans for the first time at Oxford",
+      "Aerosol spray can patented by Lyle Goodhue and William Sullivan",
+      "First successful commercial helicopter flight by Igor Sikorsky"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 6,
+      "event": "Operation Barbarossa: Germany launches the largest military invasion in history against the Soviet Union, opening the Eastern Front with three million Axis troops"
+    },
+    {
+      "month": 8,
+      "event": "Churchill and Roosevelt sign the Atlantic Charter aboard HMS Prince of Wales, laying out Allied war aims and the principles of a postwar international order"
+    },
+    {
+      "month": 12,
+      "event": "Japan attacks the US naval base at Pearl Harbor on December 7, killing 2,403 Americans. The US and UK declare war on Japan the next day"
+    },
+    {
+      "month": 12,
+      "event": "Germany and Italy declare war on the United States on December 11, bringing the US fully into the European war"
+    },
+    {
+      "month": 11,
+      "event": "German forces reach the outskirts of Moscow before being halted by Soviet counterattacks and the Russian winter"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Winston Churchill",
+    "france_president": "Philippe Petain (Vichy)",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Hideki Tojo",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Manuel Avila Camacho",
+    "un_secretary": null,
+    "pope": "Pope Pius XII",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Bob Dylan",
+      "month": 5,
+      "field": "Music"
+    },
+    {
+      "name": "Faye Dunaway",
+      "month": 1,
+      "field": "Film"
+    },
+    {
+      "name": "Dick Cheney",
+      "month": 1,
+      "field": "Politics"
+    },
+    {
+      "name": "Jesse Jackson",
+      "month": 10,
+      "field": "Politics"
+    },
+    {
+      "name": "Neil Diamond",
+      "month": 1,
+      "field": "Music"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 133.4,
+      "life_expectancy": 64.8,
+      "gdp_per_capita_usd": 1218,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 47.4,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 1190,
+      "leader": "Winston Churchill",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 69.5,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 1500,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer"
+    },
+    "JP": {
+      "population_millions": 72.7,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 348,
+      "leader": "Hideki Tojo",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.0,
+      "life_expectancy": 56.0,
+      "gdp_per_capita_usd": 620,
+      "leader": "Philippe Petain",
+      "leader_title": "Head of State (Vichy)"
+    },
+    "BR": {
+      "population_millions": 42.3,
+      "life_expectancy": 42.5,
+      "gdp_per_capita_usd": 100,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 519.0,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 48,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 7.2,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 940,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 11.8,
+      "life_expectancy": 64.5,
+      "gdp_per_capita_usd": 1200,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 168.0,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 820,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 20.3,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 450,
+      "leader": "Manuel Avila Camacho",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.96,
+      "life_expectancy": 59.5,
+      "gdp_per_capita_usd": 530,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "ZA": {
+      "population_millions": 11.6,
+      "life_expectancy": 42.5,
+      "gdp_per_capita_usd": 295,
+      "leader": "Jan Smuts",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 14.4,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 875,
+      "leader": "Ramon Castillo",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 17.3,
+      "life_expectancy": 45.0,
+      "gdp_per_capita_usd": 115,
+      "leader": "Manuel Quezon",
+      "leader_title": "President (Commonwealth)"
+    },
+    "EG": {
+      "population_millions": 17.1,
+      "life_expectancy": 36.0,
+      "gdp_per_capita_usd": 102,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 44.5,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 540,
+      "leader": "Benito Mussolini",
+      "leader_title": "Il Duce"
+    },
+    "ES": {
+      "population_millions": 26.3,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 280,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 8.9,
+      "life_expectancy": 68.0,
+      "gdp_per_capita_usd": 600,
+      "leader": "Queen Wilhelmina (in exile)",
+      "leader_title": "Queen (Government in Exile)"
+    },
+    "TR": {
+      "population_millions": 18.2,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 235,
+      "leader": "Ismet Inonu",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 35.0,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 175,
+      "leader": "Wladyslaw Raczkiewicz (in exile)",
+      "leader_title": "President (Government in Exile)"
+    },
+    "SE": {
+      "population_millions": 6.45,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 1130,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 16.0,
+      "life_expectancy": 42.5,
+      "gdp_per_capita_usd": 92,
+      "leader": "Plaek Phibunsongkhram",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 9.4,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 220,
+      "leader": "Eduardo Santos",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.75,
+      "life_expectancy": 35.5,
+      "gdp_per_capita_usd": 145,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.8,
+      "life_expectancy": 51.5,
+      "gdp_per_capita_usd": 225,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 5.2,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 335,
+      "leader": "Pedro Aguirre Cerda",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 28.0,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 280,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 6.3,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 218,
+      "leader": "Manuel Prado",
+      "leader_title": "President"
+    },
+    "NG": {
+      "population_millions": 22.5,
+      "life_expectancy": 30.0,
+      "gdp_per_capita_usd": 60,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    }
+  }
+}

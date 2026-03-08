@@ -1,0 +1,377 @@
+{
+  "year": 1940,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.30,
+    "births_millions": 90,
+    "life_expectancy_global": 44.0,
+    "countries_count": 61,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1046,
+    "us_median_household_income_usd": 1725,
+    "us_inflation_pct": 0.72,
+    "us_unemployment_pct": 14.6,
+    "us_minimum_wage_usd": 0.30,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 131.13,
+    "gold_oz_usd": 33.85,
+    "oil_barrel_usd": 1.02
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.18,
+    "gallon_milk_usd": 0.26,
+    "dozen_eggs_usd": 0.33,
+    "loaf_bread_usd": 0.08,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 850,
+    "median_home_usd": 2938,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "I'll Never Smile Again",
+      "billboard_no1_artist": "Tommy Dorsey Orchestra feat. Frank Sinatra",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Run, Rabbit, Run",
+      "uk_no1_jan_artist": "Flanagan and Allen"
+    },
+    "film": {
+      "box_office_no1": "Fantasia",
+      "box_office_no1_gross_m": 3.0,
+      "oscar_best_picture": "Rebecca",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "John Ford",
+      "oscar_best_actor": "James Stewart",
+      "oscar_best_actor_film": "The Philadelphia Story",
+      "oscar_best_actress": "Ginger Rogers",
+      "oscar_best_actress_film": "Kitty Foyle"
+    },
+    "television": {
+      "most_watched_show": "Jack Benny Program",
+      "most_watched_network": "NBC Radio",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Billboard launches its first National Best Selling Retail Records chart (July 27)",
+        "Bugs Bunny debuts in A Wild Hare (Warner Bros.)"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "How Green Was My Valley",
+      "fiction_bestseller_author": "Richard Llewellyn",
+      "nonfiction_bestseller": "I Married Adventure",
+      "nonfiction_bestseller_author": "Osa Johnson",
+      "pulitzer_fiction": "The Grapes of Wrath",
+      "pulitzer_fiction_author": "John Steinbeck"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Cincinnati Reds",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": null,
+      "wimbledon_womens": null,
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Radar networks save Britain during the Battle of Britain, proving decisive in the first war where air power and electronics shaped the front line",
+    "top_computer": "Differential analyzer (mechanical analog)",
+    "top_computer_price_usd": 50000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Britain deploys Chain Home radar network to detect incoming Luftwaffe raids",
+      "Jeep prototype unveiled by Willys and Ford for US Army trials",
+      "Electron microscope demonstrated commercially by RCA",
+      "Nylon stockings go on sale across the United States for the first time"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 5,
+      "event": "Germany launches its Western offensive; the Netherlands, Belgium, and Luxembourg fall. Allied forces are encircled at Dunkirk, and 338,000 troops are evacuated in Operation Dynamo"
+    },
+    {
+      "month": 6,
+      "event": "France signs the Armistice with Germany on June 22. Marshal Petain establishes the Vichy regime. General de Gaulle broadcasts from London calling on the French to resist"
+    },
+    {
+      "month": 7,
+      "event": "The Battle of Britain begins as the Luftwaffe launches sustained air attacks on Britain. The RAF repels the assault and Hitler postpones Operation Sea Lion"
+    },
+    {
+      "month": 9,
+      "event": "Japan signs the Tripartite Pact with Germany and Italy, forming the Axis alliance. German bombing of London (the Blitz) intensifies"
+    },
+    {
+      "month": 11,
+      "event": "Franklin D. Roosevelt wins an unprecedented third presidential term, defeating Republican Wendell Willkie"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Winston Churchill",
+    "france_president": "Philippe Petain (Vichy)",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Fumimaro Konoe",
+    "australia_pm": "Robert Menzies",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Lazaro Cardenas",
+    "un_secretary": null,
+    "pope": "Pope Pius XII",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "John Lennon",
+      "month": 10,
+      "field": "Music"
+    },
+    {
+      "name": "Ringo Starr",
+      "month": 7,
+      "field": "Music"
+    },
+    {
+      "name": "Al Pacino",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Pele",
+      "month": 10,
+      "field": "Sport"
+    },
+    {
+      "name": "Jack Nicklaus",
+      "month": 1,
+      "field": "Sport"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 132.1,
+      "life_expectancy": 62.9,
+      "gdp_per_capita_usd": 1046,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 47.1,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 1100,
+      "leader": "Winston Churchill",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 69.8,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 1375,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer"
+    },
+    "JP": {
+      "population_millions": 71.9,
+      "life_expectancy": 47.5,
+      "gdp_per_capita_usd": 334,
+      "leader": "Fumimaro Konoe",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.3,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 800,
+      "leader": "Philippe Petain",
+      "leader_title": "Head of State (Vichy)"
+    },
+    "BR": {
+      "population_millions": 41.2,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 95,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 517.0,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 48,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 7.1,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 900,
+      "leader": "Robert Menzies",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 11.7,
+      "life_expectancy": 64.0,
+      "gdp_per_capita_usd": 1100,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 168.5,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 890,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 19.7,
+      "life_expectancy": 41.0,
+      "gdp_per_capita_usd": 420,
+      "leader": "Lazaro Cardenas",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.96,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 520,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "ZA": {
+      "population_millions": 11.4,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 285,
+      "leader": "Jan Smuts",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 14.2,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 860,
+      "leader": "Ramon Castillo",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 17.0,
+      "life_expectancy": 45.0,
+      "gdp_per_capita_usd": 115,
+      "leader": "Manuel Quezon",
+      "leader_title": "President (Commonwealth)"
+    },
+    "EG": {
+      "population_millions": 16.7,
+      "life_expectancy": 36.0,
+      "gdp_per_capita_usd": 100,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 44.3,
+      "life_expectancy": 60.0,
+      "gdp_per_capita_usd": 550,
+      "leader": "Benito Mussolini",
+      "leader_title": "Il Duce"
+    },
+    "ES": {
+      "population_millions": 26.0,
+      "life_expectancy": 50.0,
+      "gdp_per_capita_usd": 280,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 8.8,
+      "life_expectancy": 70.0,
+      "gdp_per_capita_usd": 750,
+      "leader": "Queen Wilhelmina (in exile)",
+      "leader_title": "Queen (Government in Exile)"
+    },
+    "TR": {
+      "population_millions": 17.8,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 230,
+      "leader": "Ismet Inonu",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 35.0,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 190,
+      "leader": "Wladyslaw Raczkiewicz (in exile)",
+      "leader_title": "President (Government in Exile)"
+    },
+    "SE": {
+      "population_millions": 6.4,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 1100,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 15.7,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 90,
+      "leader": "Plaek Phibunsongkhram",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 9.1,
+      "life_expectancy": 41.0,
+      "gdp_per_capita_usd": 215,
+      "leader": "Eduardo Santos",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.7,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 140,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.7,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 220,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 5.1,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Pedro Aguirre Cerda",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 31.0,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 380,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 6.2,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 215,
+      "leader": "Manuel Prado",
+      "leader_title": "President"
+    },
+    "NG": {
+      "population_millions": 22.0,
+      "life_expectancy": 30.0,
+      "gdp_per_capita_usd": 58,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    }
+  }
+}

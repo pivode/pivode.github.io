@@ -1,0 +1,377 @@
+{
+  "year": 1936,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.33,
+    "births_millions": 71,
+    "life_expectancy_global": 40.5,
+    "countries_count": 54,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 810,
+    "us_median_household_income_usd": 1160,
+    "us_inflation_pct": 1.4,
+    "us_unemployment_pct": 16.9,
+    "us_minimum_wage_usd": null,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 179.90,
+    "gold_oz_usd": 35.0,
+    "oil_barrel_usd": 1.09
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.19,
+    "gallon_milk_usd": 0.49,
+    "dozen_eggs_usd": 0.46,
+    "loaf_bread_usd": 0.09,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 640,
+    "median_home_usd": 5800,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Pennies from Heaven",
+      "billboard_no1_artist": "Bing Crosby",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "In the Chapel in the Moonlight",
+      "uk_no1_jan_artist": "Gracie Fields"
+    },
+    "film": {
+      "box_office_no1": "San Francisco",
+      "box_office_no1_gross_m": 6.5,
+      "oscar_best_picture": "Mutiny on the Bounty",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "John Ford",
+      "oscar_best_actor": "Victor McLaglen",
+      "oscar_best_actor_film": "The Informer",
+      "oscar_best_actress": "Bette Davis",
+      "oscar_best_actress_film": "Dangerous"
+    },
+    "television": {
+      "most_watched_show": null,
+      "most_watched_network": null,
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "BBC Television Service launches world's first regular high-definition TV broadcasts"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Gone with the Wind",
+      "fiction_bestseller_author": "Margaret Mitchell",
+      "nonfiction_bestseller": "The Flowering of New England",
+      "nonfiction_bestseller_author": "Van Wyck Brooks",
+      "pulitzer_fiction": "Honey in the Horn",
+      "pulitzer_fiction_author": "Harold L. Davis"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Fred Perry",
+      "wimbledon_womens": "Helen Jacobs",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "BBC Television Service launches in London on November 2, becoming the world's first regular high-definition public television broadcasts",
+    "top_computer": null,
+    "top_computer_price_usd": null,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "BBC Television Service in London begins world's first regular high-definition TV service",
+      "Edwin Armstrong demonstrates FM radio at the FCC, impressing engineers with its clarity",
+      "Alan Turing publishes 'On Computable Numbers', laying the theoretical foundation for modern computers",
+      "Fluorescent lamps introduced commercially by GE at the World's Fair"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 7,
+      "event": "Spanish Civil War begins as General Franco leads a military uprising against the elected Republican government, drawing in Nazi Germany and Fascist Italy as backers"
+    },
+    {
+      "month": 8,
+      "event": "Berlin Summer Olympics: Jesse Owens wins four gold medals, undermining Hitler's claims of Aryan athletic superiority before a global audience"
+    },
+    {
+      "month": 12,
+      "event": "King Edward VIII of Britain abdicates the throne to marry American divorcee Wallis Simpson; his brother ascends as King George VI"
+    },
+    {
+      "month": 3,
+      "event": "Nazi Germany remilitarizes the Rhineland, violating the Treaty of Versailles; France and Britain take no action"
+    },
+    {
+      "month": 11,
+      "event": "Franklin Roosevelt wins re-election in a historic landslide, carrying all but two states on the strength of New Deal support"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Stanley Baldwin",
+    "france_president": "Albert Lebrun",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Koki Hirota",
+    "australia_pm": "Joseph Lyons",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Lazaro Cardenas",
+    "un_secretary": null,
+    "pope": "Pope Pius XI",
+    "russia_leader": "Joseph Stalin",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Burt Reynolds",
+      "month": 2,
+      "field": "Film"
+    },
+    {
+      "name": "Wilt Chamberlain",
+      "month": 8,
+      "field": "Sports"
+    },
+    {
+      "name": "Pope Francis",
+      "month": 12,
+      "field": "Religion"
+    },
+    {
+      "name": "John McCain",
+      "month": 8,
+      "field": "Politics"
+    },
+    {
+      "name": "Jim Henson",
+      "month": 9,
+      "field": "Entertainment"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 128.2,
+      "life_expectancy": 63.3,
+      "gdp_per_capita_usd": 810,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 47.3,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 555,
+      "leader": "Stanley Baldwin",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 67.5,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 530,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer and Chancellor"
+    },
+    "JP": {
+      "population_millions": 70.1,
+      "life_expectancy": 47.5,
+      "gdp_per_capita_usd": 110,
+      "leader": "Koki Hirota",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.5,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 500,
+      "leader": "Albert Lebrun",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 40.3,
+      "life_expectancy": 41.0,
+      "gdp_per_capita_usd": 95,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 505.0,
+      "life_expectancy": 34.5,
+      "gdp_per_capita_usd": 42,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 6.7,
+      "life_expectancy": 64.0,
+      "gdp_per_capita_usd": 640,
+      "leader": "Joseph Lyons",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 11.2,
+      "life_expectancy": 62.5,
+      "gdp_per_capita_usd": 740,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 110.5,
+      "life_expectancy": 44.5,
+      "gdp_per_capita_usd": 480,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 18.7,
+      "life_expectancy": 39.5,
+      "gdp_per_capita_usd": 295,
+      "leader": "Lazaro Cardenas",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.96,
+      "life_expectancy": 59.5,
+      "gdp_per_capita_usd": 450,
+      "leader": "Eamon de Valera",
+      "leader_title": "President of the Executive Council"
+    },
+    "NG": {
+      "population_millions": 21.5,
+      "life_expectancy": 28.5,
+      "gdp_per_capita_usd": 52,
+      "leader": "British Colonial Administration",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 10.5,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 220,
+      "leader": "J. B. M. Hertzog",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 12.7,
+      "life_expectancy": 55.5,
+      "gdp_per_capita_usd": 520,
+      "leader": "Agustin Pedro Justo",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 15.6,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 125,
+      "leader": "Manuel Quezon",
+      "leader_title": "President (Commonwealth)"
+    },
+    "EG": {
+      "population_millions": 16.2,
+      "life_expectancy": 35.5,
+      "gdp_per_capita_usd": 83,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 42.9,
+      "life_expectancy": 56.0,
+      "gdp_per_capita_usd": 310,
+      "leader": "Benito Mussolini",
+      "leader_title": "Head of Government"
+    },
+    "ES": {
+      "population_millions": 24.5,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 155,
+      "leader": "Manuel Azana",
+      "leader_title": "President"
+    },
+    "NL": {
+      "population_millions": 8.6,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 450,
+      "leader": "Hendrikus Colijn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 16.4,
+      "life_expectancy": 38.5,
+      "gdp_per_capita_usd": 175,
+      "leader": "Mustafa Kemal Ataturk",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 34.0,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 190,
+      "leader": "Edward Smigly-Rydz",
+      "leader_title": "Marshal"
+    },
+    "SE": {
+      "population_millions": 6.3,
+      "life_expectancy": 65.5,
+      "gdp_per_capita_usd": 800,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 14.8,
+      "life_expectancy": 35.5,
+      "gdp_per_capita_usd": 63,
+      "leader": "Phraya Phahon Phonphayuhasena",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 8.9,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 150,
+      "leader": "Alfonso Lopez Pumarejo",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 3.6,
+      "life_expectancy": 33.5,
+      "gdp_per_capita_usd": 78,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.4,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 175,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 4.6,
+      "life_expectancy": 47.5,
+      "gdp_per_capita_usd": 260,
+      "leader": "Arturo Alessandri Palma",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 30.5,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 370,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary, Ukrainian Communist Party"
+    },
+    "PE": {
+      "population_millions": 6.4,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 145,
+      "leader": "Oscar Benavides",
+      "leader_title": "President"
+    }
+  }
+}

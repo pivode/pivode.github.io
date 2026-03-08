@@ -1,0 +1,377 @@
+{
+  "year": 1934,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.18,
+    "births_millions": 73,
+    "life_expectancy_global": 50.8,
+    "countries_count": 74,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 521,
+    "us_median_household_income_usd": 1160,
+    "us_inflation_pct": 3.08,
+    "us_unemployment_pct": 21.7,
+    "us_minimum_wage_usd": null,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 104.04,
+    "gold_oz_usd": 35.00,
+    "oil_barrel_usd": 1.00
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.19,
+    "gallon_milk_usd": 0.21,
+    "dozen_eggs_usd": 0.29,
+    "loaf_bread_usd": 0.08,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 580,
+    "median_home_usd": 3900,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Blue Moon",
+      "billboard_no1_artist": "Glen Gray and the Casa Loma Orchestra",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Everything I Have Is Yours",
+      "uk_no1_jan_artist": "Ray Noble and His Orchestra"
+    },
+    "film": {
+      "box_office_no1": "It Happened One Night",
+      "box_office_no1_gross_m": 2.9,
+      "oscar_best_picture": "It Happened One Night",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Frank Capra",
+      "oscar_best_actor": "Clark Gable",
+      "oscar_best_actor_film": "It Happened One Night",
+      "oscar_best_actress": "Claudette Colbert",
+      "oscar_best_actress_film": "It Happened One Night"
+    },
+    "television": {
+      "most_watched_show": "Amos 'n' Andy",
+      "most_watched_network": "NBC Radio",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Flash Gordon comic strip launches, inspiring science fiction serial films",
+        "Buck Rogers radio adaptation gains wide audiences"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Anthony Adverse",
+      "fiction_bestseller_author": "Hervey Allen",
+      "nonfiction_bestseller": "While Rome Burns",
+      "nonfiction_bestseller_author": "Alexander Woollcott",
+      "pulitzer_fiction": "Lamb in His Bosom",
+      "pulitzer_fiction_author": "Caroline Miller"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Fred Perry",
+      "wimbledon_womens": "Dorothy Round",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Nylon invented by Wallace Carothers at DuPont, launching the synthetic fibre industry and transforming clothing manufacturing worldwide",
+    "top_computer": "IBM tabulating machines (electromechanical)",
+    "top_computer_price_usd": 20000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Wallace Carothers at DuPont synthesises nylon, launching the era of synthetic textiles",
+      "Donald Glaser conceives the bubble chamber for detecting subatomic particles",
+      "The Securities Exchange Act creates the US Securities and Exchange Commission",
+      "Dionne quintuplets born in Canada - first quintuplets known to survive infancy"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 6,
+      "event": "The Night of the Long Knives: Hitler orders the SS to murder SA leader Ernst Rohm and dozens of political rivals, consolidating absolute control over the Nazi movement"
+    },
+    {
+      "month": 8,
+      "event": "Adolf Hitler merges the offices of Chancellor and President following Hindenburg's death, becoming Fuhrer and Commander-in-Chief of Germany with unchecked power"
+    },
+    {
+      "month": 5,
+      "event": "The Dionne quintuplets born near Callander, Ontario - the first quintuplets known to survive infancy, becoming a global media sensation during the Great Depression"
+    },
+    {
+      "month": 5,
+      "event": "Bonnie and Clyde ambushed and killed by law enforcement officers in Louisiana on May 23, ending their two-year crime spree across the American Southwest"
+    },
+    {
+      "month": 11,
+      "event": "Dust Bowl storms devastate the Great Plains, with Black Sunday on November 11 burying farms under drifts of topsoil and driving hundreds of thousands of families from their land"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Ramsay MacDonald",
+    "france_president": "Albert Lebrun",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Keisuke Okada",
+    "australia_pm": "Joseph Lyons",
+    "canada_pm": "Richard Bedford Bennett",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Lazaro Cardenas",
+    "un_secretary": null,
+    "pope": "Pope Pius XI",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Carl Sagan",
+      "month": 11,
+      "field": "Science"
+    },
+    {
+      "name": "Sophia Loren",
+      "month": 9,
+      "field": "Film"
+    },
+    {
+      "name": "Leonard Cohen",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Maggie Smith",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Ralph Nader",
+      "month": 2,
+      "field": "Politics"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 126.4,
+      "life_expectancy": 61.1,
+      "gdp_per_capita_usd": 521,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 46.6,
+      "life_expectancy": 61.5,
+      "gdp_per_capita_usd": 708,
+      "leader": "Ramsay MacDonald",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 66.3,
+      "life_expectancy": 58.0,
+      "gdp_per_capita_usd": 554,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer"
+    },
+    "JP": {
+      "population_millions": 67.2,
+      "life_expectancy": 46.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Keisuke Okada",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 42.1,
+      "life_expectancy": 57.7,
+      "gdp_per_capita_usd": 830,
+      "leader": "Gaston Doumergue",
+      "leader_title": "Prime Minister"
+    },
+    "BR": {
+      "population_millions": 36.4,
+      "life_expectancy": 38.2,
+      "gdp_per_capita_usd": 80,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 509.0,
+      "life_expectancy": 28.0,
+      "gdp_per_capita_usd": 40,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 6.8,
+      "life_expectancy": 64.2,
+      "gdp_per_capita_usd": 712,
+      "leader": "Joseph Lyons",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 10.7,
+      "life_expectancy": 61.3,
+      "gdp_per_capita_usd": 791,
+      "leader": "Richard Bedford Bennett",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 155.0,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 489,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 17.6,
+      "life_expectancy": 36.0,
+      "gdp_per_capita_usd": 335,
+      "leader": "Lazaro Cardenas",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 58.0,
+      "gdp_per_capita_usd": 468,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 21.8,
+      "life_expectancy": 28.0,
+      "gdp_per_capita_usd": 50,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 11.1,
+      "life_expectancy": 41.2,
+      "gdp_per_capita_usd": 228,
+      "leader": "J.B.M. Hertzog",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 13.1,
+      "life_expectancy": 54.0,
+      "gdp_per_capita_usd": 940,
+      "leader": "Agustin Pedro Justo",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 13.9,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 98,
+      "leader": "Frank Murphy",
+      "leader_title": "Governor-General"
+    },
+    "EG": {
+      "population_millions": 15.8,
+      "life_expectancy": 39.0,
+      "gdp_per_capita_usd": 72,
+      "leader": "King Fuad I",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 42.9,
+      "life_expectancy": 56.7,
+      "gdp_per_capita_usd": 433,
+      "leader": "Benito Mussolini",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 24.5,
+      "life_expectancy": 51.8,
+      "gdp_per_capita_usd": 245,
+      "leader": "Alejandro Lerroux",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 8.4,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 556,
+      "leader": "Hendrikus Colijn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 15.3,
+      "life_expectancy": 40.2,
+      "gdp_per_capita_usd": 210,
+      "leader": "Ismet Inonu",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 33.0,
+      "life_expectancy": 49.4,
+      "gdp_per_capita_usd": 162,
+      "leader": "Leon Kozlowski",
+      "leader_title": "Prime Minister"
+    },
+    "SE": {
+      "population_millions": 6.2,
+      "life_expectancy": 64.3,
+      "gdp_per_capita_usd": 810,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 12.7,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 56,
+      "leader": "Phraya Phahon",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 8.2,
+      "life_expectancy": 38.1,
+      "gdp_per_capita_usd": 153,
+      "leader": "Alfonso Lopez Pumarejo",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.7,
+      "life_expectancy": 32.8,
+      "gdp_per_capita_usd": 93,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.2,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 172,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 4.8,
+      "life_expectancy": 41.3,
+      "gdp_per_capita_usd": 244,
+      "leader": "Arturo Alessandri",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 29.0,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 275,
+      "leader": "Stanislav Kosior",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 6.1,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 182,
+      "leader": "Oscar R. Benavides",
+      "leader_title": "President"
+    }
+  }
+}

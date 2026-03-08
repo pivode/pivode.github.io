@@ -1,0 +1,401 @@
+{
+  "year": 1946,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.34,
+    "births_millions": 93,
+    "life_expectancy_global": 45.7,
+    "countries_count": 55,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1460,
+    "us_median_household_income_usd": 2544,
+    "us_inflation_pct": 8.33,
+    "us_unemployment_pct": 3.9,
+    "us_minimum_wage_usd": 0.40,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 177.20,
+    "gold_oz_usd": 34.71,
+    "oil_barrel_usd": 1.63
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.21,
+    "gallon_milk_usd": 0.70,
+    "dozen_eggs_usd": 0.70,
+    "loaf_bread_usd": 0.10,
+    "movie_ticket_usd": 0.40,
+    "new_car_avg_usd": 1125,
+    "median_home_usd": 7200,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Prisoner of Love",
+      "billboard_no1_artist": "Perry Como",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "It's a Pity to Say Goodnight",
+      "uk_no1_jan_artist": "Ella Fitzgerald"
+    },
+    "film": {
+      "box_office_no1": "The Best Years of Our Lives",
+      "box_office_no1_gross_m": 23.7,
+      "oscar_best_picture": "The Lost Weekend",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Billy Wilder",
+      "oscar_best_actor": "Ray Milland",
+      "oscar_best_actor_film": "The Lost Weekend",
+      "oscar_best_actress": "Joan Crawford",
+      "oscar_best_actress_film": "Mildred Pierce"
+    },
+    "television": {
+      "most_watched_show": null,
+      "most_watched_network": null,
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "BBC television service resumes after six-year wartime shutdown",
+        "RCA demonstrates all-electronic color television system"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The King's General",
+      "fiction_bestseller_author": "Daphne du Maurier",
+      "nonfiction_bestseller": "The Egg and I",
+      "nonfiction_bestseller_author": "Betty MacDonald",
+      "pulitzer_fiction": null,
+      "pulitzer_fiction_author": null
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Yvon Petra",
+      "wimbledon_womens": "Pauline Betz",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "ENIAC publicly unveiled at the University of Pennsylvania on February 15 - the first general-purpose electronic computer, hailed by the press as a 'Giant Brain'",
+    "top_computer": "ENIAC",
+    "top_computer_price_usd": 487000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "ENIAC formally dedicated February 15 at University of Pennsylvania - 18,000 vacuum tubes, 30 tons",
+      "Ballistic Research Laboratory begins using ENIAC for nuclear weapons calculations",
+      "First commercial television sets sold in the US; 6,500 TV sets in American homes by year end",
+      "Nuremberg Trials use IBM punch card machines to manage millions of documents"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 1,
+      "event": "First session of the UN General Assembly convenes in London with representatives of 51 nations, beginning the new international order"
+    },
+    {
+      "month": 10,
+      "event": "Nuremberg Trials conclude: 12 Nazi leaders sentenced to death, 7 imprisoned, for war crimes and crimes against humanity"
+    },
+    {
+      "month": 3,
+      "event": "Winston Churchill delivers his 'Iron Curtain' speech in Fulton, Missouri, warning of Soviet expansion across Eastern Europe and coining the Cold War's defining phrase"
+    },
+    {
+      "month": 7,
+      "event": "Philippines gains independence from the United States, becoming a sovereign republic after 48 years of American colonial rule"
+    },
+    {
+      "month": 6,
+      "event": "Baby boom reaches full swing as millions of returning veterans start families - US birth rate hits a 20-year high"
+    }
+  ],
+  "leaders": {
+    "us_president": "Harry S. Truman",
+    "uk_pm": "Clement Attlee",
+    "france_president": "Charles de Gaulle / Felix Gouin",
+    "germany_chancellor": "Allied Occupation (four zones)",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "india_pm": null,
+    "japan_pm": "Shigeru Yoshida",
+    "australia_pm": "Ben Chifley",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Eurico Gaspar Dutra",
+    "mexico_president": "Miguel Aleman Valdes",
+    "un_secretary": "Trygve Lie",
+    "pope": "Pope Pius XII",
+    "russia_leader": "Joseph Stalin",
+    "south_korea_president": null,
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Bill Clinton",
+      "month": 8,
+      "field": "Politics"
+    },
+    {
+      "name": "Freddie Mercury",
+      "month": 9,
+      "field": "Music"
+    },
+    {
+      "name": "Steven Spielberg",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Dolly Parton",
+      "month": 1,
+      "field": "Music"
+    },
+    {
+      "name": "Donald Trump",
+      "month": 6,
+      "field": "Politics"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 141.4,
+      "life_expectancy": 66.7,
+      "gdp_per_capita_usd": 1460,
+      "leader": "Harry S. Truman",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 49.5,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 748,
+      "leader": "Clement Attlee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 65.0,
+      "life_expectancy": 58.0,
+      "gdp_per_capita_usd": 230,
+      "leader": "Allied Military Government",
+      "leader_title": "Occupation Authority"
+    },
+    "JP": {
+      "population_millions": 72.1,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 115,
+      "leader": "Shigeru Yoshida",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 40.3,
+      "life_expectancy": 63.7,
+      "gdp_per_capita_usd": 640,
+      "leader": "Felix Gouin",
+      "leader_title": "President (Provisional)"
+    },
+    "BR": {
+      "population_millions": 47.5,
+      "life_expectancy": 46.2,
+      "gdp_per_capita_usd": 115,
+      "leader": "Eurico Gaspar Dutra",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 538.0,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 49,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 7.5,
+      "life_expectancy": 67.5,
+      "gdp_per_capita_usd": 900,
+      "leader": "Ben Chifley",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 12.3,
+      "life_expectancy": 66.8,
+      "gdp_per_capita_usd": 1120,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 100.0,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 920,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 23.9,
+      "life_expectancy": 46.8,
+      "gdp_per_capita_usd": 580,
+      "leader": "Miguel Aleman Valdes",
+      "leader_title": "President"
+    },
+    "ID": {
+      "population_millions": 64.4,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 29,
+      "leader": "Sukarno",
+      "leader_title": "President"
+    },
+    "VN": {
+      "population_millions": 23.6,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 45,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "IE": {
+      "population_millions": 2.96,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 435,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 30.5,
+      "life_expectancy": 33.5,
+      "gdp_per_capita_usd": 67,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 11.7,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 300,
+      "leader": "Jan Smuts",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 16.2,
+      "life_expectancy": 60.4,
+      "gdp_per_capita_usd": 640,
+      "leader": "Juan Peron",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 18.8,
+      "life_expectancy": 51.5,
+      "gdp_per_capita_usd": 150,
+      "leader": "Manuel Roxas",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 19.4,
+      "life_expectancy": 32.5,
+      "gdp_per_capita_usd": 103,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 45.8,
+      "life_expectancy": 60.0,
+      "gdp_per_capita_usd": 220,
+      "leader": "Alcide De Gasperi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 27.5,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 172,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 9.5,
+      "life_expectancy": 68.5,
+      "gdp_per_capita_usd": 380,
+      "leader": "Willem Drees",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 19.2,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 240,
+      "leader": "Ismet Inonu",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 23.6,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 175,
+      "leader": "Edward Osobka-Morawski",
+      "leader_title": "Prime Minister"
+    },
+    "SE": {
+      "population_millions": 6.74,
+      "life_expectancy": 70.2,
+      "gdp_per_capita_usd": 1140,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 17.9,
+      "life_expectancy": 46.5,
+      "gdp_per_capita_usd": 69,
+      "leader": "Pridi Phanomyong",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 11.2,
+      "life_expectancy": 46.5,
+      "gdp_per_capita_usd": 207,
+      "leader": "Mariano Ospina Perez",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.8,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 180,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 8.0,
+      "life_expectancy": 57.2,
+      "gdp_per_capita_usd": 195,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 5.7,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 352,
+      "leader": "Gabriel Gonzalez Videla",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 5.4,
+      "life_expectancy": 45.5,
+      "gdp_per_capita_usd": 220,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "UA": {
+      "population_millions": 34.5,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 7.1,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 200,
+      "leader": "Jose Luis Bustamante",
+      "leader_title": "President"
+    }
+  }
+}

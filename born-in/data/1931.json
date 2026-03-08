@@ -1,0 +1,377 @@
+{
+  "year": 1931,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.10,
+    "births_millions": 71,
+    "life_expectancy_global": 48.7,
+    "countries_count": 74,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 699,
+    "us_median_household_income_usd": 1180,
+    "us_inflation_pct": -9.02,
+    "us_unemployment_pct": 15.9,
+    "us_minimum_wage_usd": null,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 77.90,
+    "gold_oz_usd": 17.06,
+    "oil_barrel_usd": 0.65
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.17,
+    "gallon_milk_usd": 0.22,
+    "dozen_eggs_usd": 0.36,
+    "loaf_bread_usd": 0.08,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 610,
+    "median_home_usd": 4478,
+    "first_class_stamp_cents": 2,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Minnie the Moocher",
+      "billboard_no1_artist": "Cab Calloway & His Cotton Club Orchestra",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Goodnight Sweetheart",
+      "uk_no1_jan_artist": "Al Bowlly"
+    },
+    "film": {
+      "box_office_no1": "Frankenstein",
+      "box_office_no1_gross_m": 12.0,
+      "oscar_best_picture": "Cimarron",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Norman Taurog",
+      "oscar_best_actor": "Lionel Barrymore",
+      "oscar_best_actor_film": "A Free Soul",
+      "oscar_best_actress": "Marie Dressler",
+      "oscar_best_actress_film": "Min and Bill"
+    },
+    "television": {
+      "most_watched_show": "Amos 'n' Andy",
+      "most_watched_network": "NBC Radio",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "The Ed Sullivan forerunner Toast of the Town begins",
+        "Dick Tracy comic strip launches radio adaptation"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The Good Earth",
+      "fiction_bestseller_author": "Pearl S. Buck",
+      "nonfiction_bestseller": "Education of a Princess",
+      "nonfiction_bestseller_author": "Grand Duchess Marie",
+      "pulitzer_fiction": "Years of Grace",
+      "pulitzer_fiction_author": "Margaret Ayer Barnes"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Sidney Wood",
+      "wimbledon_womens": "Cilly Aussem",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Empire State Building completed in New York City, becoming the world's tallest structure at 443 metres and a symbol of American ambition during the Depression",
+    "top_computer": "IBM tabulating machines (electromechanical)",
+    "top_computer_price_usd": 20000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Empire State Building opens on May 1 as the world's tallest skyscraper",
+      "Ernst Ruska builds the first electron microscope lens",
+      "Karl Jansky of Bell Labs discovers radio waves from the Milky Way, founding radio astronomy",
+      "Electric razor commercially introduced in the United States"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 9,
+      "event": "Japan invades Manchuria following the staged Mukden Incident, beginning its expansion into mainland China and setting the stage for the Second Sino-Japanese War"
+    },
+    {
+      "month": 9,
+      "event": "Britain abandons the gold standard on September 21, triggering currency crises across Europe and accelerating the global banking collapse"
+    },
+    {
+      "month": 7,
+      "event": "Central European banking crisis reaches its peak as Austria's Credit-Anstalt bank collapses, spreading financial panic across Germany and Eastern Europe"
+    },
+    {
+      "month": 12,
+      "event": "Statute of Westminster formally grants legislative independence to Canada, Australia, New Zealand, South Africa and Ireland within the British Commonwealth"
+    },
+    {
+      "month": 10,
+      "event": "Al Capone convicted of tax evasion and sentenced to 11 years in federal prison, ending Chicago's most powerful criminal empire"
+    }
+  ],
+  "leaders": {
+    "us_president": "Herbert Hoover",
+    "uk_pm": "Ramsay MacDonald",
+    "france_president": "Paul Doumer",
+    "germany_chancellor": "Heinrich Bruning",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Reijiro Wakatsuki",
+    "australia_pm": "James Scullin",
+    "canada_pm": "Richard Bedford Bennett",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Pascual Ortiz Rubio",
+    "un_secretary": null,
+    "pope": "Pope Pius XI",
+    "ireland_taoiseach": "W.T. Cosgrave"
+  },
+  "notable_births": [
+    {
+      "name": "Mikhail Gorbachev",
+      "month": 3,
+      "field": "Politics"
+    },
+    {
+      "name": "James Dean",
+      "month": 2,
+      "field": "Film"
+    },
+    {
+      "name": "Willie Mays",
+      "month": 5,
+      "field": "Sports"
+    },
+    {
+      "name": "Toni Morrison",
+      "month": 2,
+      "field": "Literature"
+    },
+    {
+      "name": "Robert Duvall",
+      "month": 1,
+      "field": "Film"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 124.1,
+      "life_expectancy": 61.1,
+      "gdp_per_capita_usd": 699,
+      "leader": "Herbert Hoover",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 46.1,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 700,
+      "leader": "Ramsay MacDonald",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 65.5,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 597,
+      "leader": "Heinrich Bruning",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 65.0,
+      "life_expectancy": 44.8,
+      "gdp_per_capita_usd": 270,
+      "leader": "Reijiro Wakatsuki",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.7,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 1010,
+      "leader": "Pierre Laval",
+      "leader_title": "Prime Minister"
+    },
+    "BR": {
+      "population_millions": 34.3,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 98,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 494.0,
+      "life_expectancy": 26.5,
+      "gdp_per_capita_usd": 44,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 6.7,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 758,
+      "leader": "James Scullin",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 10.4,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 968,
+      "leader": "Richard Bedford Bennett",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 151.0,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 437,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 16.8,
+      "life_expectancy": 34.5,
+      "gdp_per_capita_usd": 375,
+      "leader": "Pascual Ortiz Rubio",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.96,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 500,
+      "leader": "W.T. Cosgrave",
+      "leader_title": "President of the Executive Council"
+    },
+    "NG": {
+      "population_millions": 20.5,
+      "life_expectancy": 27.5,
+      "gdp_per_capita_usd": 54,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 10.6,
+      "life_expectancy": 40.6,
+      "gdp_per_capita_usd": 250,
+      "leader": "J.B.M. Hertzog",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 12.2,
+      "life_expectancy": 53.0,
+      "gdp_per_capita_usd": 1088,
+      "leader": "Jose Felix Uriburu",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 13.3,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 112,
+      "leader": "Dwight F. Davis",
+      "leader_title": "Governor-General"
+    },
+    "EG": {
+      "population_millions": 14.6,
+      "life_expectancy": 38.2,
+      "gdp_per_capita_usd": 79,
+      "leader": "King Fuad I",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 41.7,
+      "life_expectancy": 55.5,
+      "gdp_per_capita_usd": 471,
+      "leader": "Benito Mussolini",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 23.7,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 289,
+      "leader": "Niceto Alcala-Zamora",
+      "leader_title": "President"
+    },
+    "NL": {
+      "population_millions": 8.0,
+      "life_expectancy": 65.9,
+      "gdp_per_capita_usd": 719,
+      "leader": "Hendrikus Colijn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 14.4,
+      "life_expectancy": 39.0,
+      "gdp_per_capita_usd": 223,
+      "leader": "Ismet Inonu",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 32.1,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 209,
+      "leader": "Walery Slawek",
+      "leader_title": "Prime Minister"
+    },
+    "SE": {
+      "population_millions": 6.2,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 826,
+      "leader": "Carl Gustaf Ekman",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 11.8,
+      "life_expectancy": 36.5,
+      "gdp_per_capita_usd": 62,
+      "leader": "Prajadhipok",
+      "leader_title": "King"
+    },
+    "CO": {
+      "population_millions": 7.6,
+      "life_expectancy": 37.2,
+      "gdp_per_capita_usd": 170,
+      "leader": "Enrique Olaya Herrera",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.6,
+      "life_expectancy": 32.2,
+      "gdp_per_capita_usd": 92,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 6.9,
+      "life_expectancy": 47.8,
+      "gdp_per_capita_usd": 182,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 4.5,
+      "life_expectancy": 40.4,
+      "gdp_per_capita_usd": 285,
+      "leader": "Juan Esteban Montero",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 30.5,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 295,
+      "leader": "Stanislav Kosior",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 5.8,
+      "life_expectancy": 34.2,
+      "gdp_per_capita_usd": 196,
+      "leader": "Luis Miguel Sanchez Cerro",
+      "leader_title": "President"
+    }
+  }
+}

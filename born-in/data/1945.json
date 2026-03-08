@@ -1,0 +1,401 @@
+{
+  "year": 1945,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.31,
+    "births_millions": 90,
+    "life_expectancy_global": 45.1,
+    "countries_count": 51,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1526,
+    "us_median_household_income_usd": 2379,
+    "us_inflation_pct": 2.27,
+    "us_unemployment_pct": 1.9,
+    "us_minimum_wage_usd": 0.40,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 192.91,
+    "gold_oz_usd": 34.71,
+    "oil_barrel_usd": 1.05
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.21,
+    "gallon_milk_usd": 0.62,
+    "dozen_eggs_usd": 0.58,
+    "loaf_bread_usd": 0.09,
+    "movie_ticket_usd": 0.35,
+    "new_car_avg_usd": 1020,
+    "median_home_usd": 6550,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Sentimental Journey",
+      "billboard_no1_artist": "Les Brown & Doris Day",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "I'm Walking Behind You",
+      "uk_no1_jan_artist": "Vera Lynn"
+    },
+    "film": {
+      "box_office_no1": "The Bells of St. Mary's",
+      "box_office_no1_gross_m": 21.3,
+      "oscar_best_picture": "Going My Way",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Leo McCarey",
+      "oscar_best_actor": "Bing Crosby",
+      "oscar_best_actor_film": "Going My Way",
+      "oscar_best_actress": "Ingrid Bergman",
+      "oscar_best_actress_film": "Gaslight"
+    },
+    "television": {
+      "most_watched_show": null,
+      "most_watched_network": null,
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Television broadcasting resumes in the UK after wartime shutdown",
+        "NBC and CBS expand experimental TV broadcasts in the US"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Forever Amber",
+      "fiction_bestseller_author": "Kathleen Winsor",
+      "nonfiction_bestseller": "Brave Men",
+      "nonfiction_bestseller_author": "Ernie Pyle",
+      "pulitzer_fiction": "A Bell for Adano",
+      "pulitzer_fiction_author": "John Hersey"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Detroit Tigers",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": null,
+      "wimbledon_womens": null,
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "ENIAC completed at the University of Pennsylvania - the world's first general-purpose electronic digital computer, capable of performing 5,000 additions per second",
+    "top_computer": "ENIAC (completed Dec 1945)",
+    "top_computer_price_usd": 487000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "ENIAC computer completed at University of Pennsylvania, first operational Dec 10, 1945",
+      "Microwave oven concept patented by Percy Spencer after accidental radar experiment melted chocolate bar",
+      "Vannevar Bush publishes 'As We May Think' in The Atlantic, envisioning hypertext and the internet",
+      "First atomic bombs detonated at Trinity test site in New Mexico, then used at Hiroshima and Nagasaki"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 4,
+      "event": "Germany's defeat in Europe becomes inevitable as Allied forces cross the Rhine and Soviet troops encircle Berlin; Hitler dies in his bunker on April 30"
+    },
+    {
+      "month": 5,
+      "event": "Germany signs unconditional surrender on May 8 (VE Day), ending the war in Europe after nearly six years and the deaths of tens of millions"
+    },
+    {
+      "month": 7,
+      "event": "The Potsdam Conference divides post-war Germany into four occupation zones controlled by the US, UK, France, and the Soviet Union"
+    },
+    {
+      "month": 8,
+      "event": "The United States drops atomic bombs on Hiroshima (Aug 6) and Nagasaki (Aug 9); Japan surrenders on August 15 (VJ Day), ending World War II"
+    },
+    {
+      "month": 10,
+      "event": "The United Nations formally established on October 24, replacing the League of Nations with 51 founding member states pledging to maintain international peace"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt / Harry S. Truman",
+    "uk_pm": "Winston Churchill / Clement Attlee",
+    "france_president": "Charles de Gaulle",
+    "germany_chancellor": "Allied Occupation (four zones)",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "india_pm": null,
+    "japan_pm": "Emperor Hirohito (nominal) / Gen. Douglas MacArthur (SCAP)",
+    "australia_pm": "Ben Chifley",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Getulio Vargas / Jose Linhares",
+    "mexico_president": "Manuel Avila Camacho",
+    "un_secretary": "Gladwyn Jebb (Acting)",
+    "pope": "Pope Pius XII",
+    "russia_leader": "Joseph Stalin",
+    "south_korea_president": null,
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Bob Marley",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Eric Clapton",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Steve Martin",
+      "month": 8,
+      "field": "Comedy"
+    },
+    {
+      "name": "Franz Beckenbauer",
+      "month": 9,
+      "field": "Sport"
+    },
+    {
+      "name": "Diane Sawyer",
+      "month": 12,
+      "field": "Journalism"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 139.9,
+      "life_expectancy": 65.9,
+      "gdp_per_capita_usd": 1526,
+      "leader": "Harry S. Truman",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 49.2,
+      "life_expectancy": 66.4,
+      "gdp_per_capita_usd": 740,
+      "leader": "Clement Attlee",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 65.9,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 190,
+      "leader": "Allied Military Government",
+      "leader_title": "Occupation Authority"
+    },
+    "JP": {
+      "population_millions": 71.9,
+      "life_expectancy": 50.1,
+      "gdp_per_capita_usd": 100,
+      "leader": "Emperor Hirohito",
+      "leader_title": "Emperor (under Allied occupation)"
+    },
+    "FR": {
+      "population_millions": 40.1,
+      "life_expectancy": 63.4,
+      "gdp_per_capita_usd": 620,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President (Provisional)"
+    },
+    "BR": {
+      "population_millions": 46.0,
+      "life_expectancy": 45.5,
+      "gdp_per_capita_usd": 110,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 535.0,
+      "life_expectancy": 36.0,
+      "gdp_per_capita_usd": 48,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 7.4,
+      "life_expectancy": 67.1,
+      "gdp_per_capita_usd": 870,
+      "leader": "Ben Chifley",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 12.1,
+      "life_expectancy": 66.3,
+      "gdp_per_capita_usd": 1100,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 99.0,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 850,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 23.1,
+      "life_expectancy": 46.0,
+      "gdp_per_capita_usd": 555,
+      "leader": "Manuel Avila Camacho",
+      "leader_title": "President"
+    },
+    "ID": {
+      "population_millions": 63.0,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 28,
+      "leader": "Sukarno",
+      "leader_title": "President"
+    },
+    "VN": {
+      "population_millions": 23.2,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 44,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 63.0,
+      "gdp_per_capita_usd": 420,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 29.8,
+      "life_expectancy": 33.0,
+      "gdp_per_capita_usd": 65,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 11.4,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 290,
+      "leader": "Jan Smuts",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 15.9,
+      "life_expectancy": 59.7,
+      "gdp_per_capita_usd": 620,
+      "leader": "Edelmiro Farrell",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 18.4,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 140,
+      "leader": "Sergio Osmena",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 19.1,
+      "life_expectancy": 32.0,
+      "gdp_per_capita_usd": 100,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 45.2,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 195,
+      "leader": "Ferruccio Parri",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 27.2,
+      "life_expectancy": 57.8,
+      "gdp_per_capita_usd": 168,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 9.3,
+      "life_expectancy": 68.0,
+      "gdp_per_capita_usd": 350,
+      "leader": "Willem Schermerhorn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 18.8,
+      "life_expectancy": 43.6,
+      "gdp_per_capita_usd": 230,
+      "leader": "Ismet Inonu",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 23.9,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 155,
+      "leader": "Edward Osobka-Morawski",
+      "leader_title": "Prime Minister"
+    },
+    "SE": {
+      "population_millions": 6.67,
+      "life_expectancy": 69.7,
+      "gdp_per_capita_usd": 1100,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 17.5,
+      "life_expectancy": 46.0,
+      "gdp_per_capita_usd": 67,
+      "leader": "Seni Pramoj",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 10.9,
+      "life_expectancy": 45.8,
+      "gdp_per_capita_usd": 200,
+      "leader": "Alberto Lleras Camargo",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.7,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 160,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.9,
+      "life_expectancy": 56.5,
+      "gdp_per_capita_usd": 190,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 5.6,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 345,
+      "leader": "Juan Antonio Rios",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 5.3,
+      "life_expectancy": 45.0,
+      "gdp_per_capita_usd": 210,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "UA": {
+      "population_millions": 34.0,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 280,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 7.0,
+      "life_expectancy": 41.0,
+      "gdp_per_capita_usd": 195,
+      "leader": "Jose Luis Bustamante",
+      "leader_title": "President"
+    }
+  }
+}

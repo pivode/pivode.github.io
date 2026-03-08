@@ -1,0 +1,377 @@
+{
+  "year": 1932,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.13,
+    "births_millions": 72,
+    "life_expectancy_global": 49.0,
+    "countries_count": 74,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 523,
+    "us_median_household_income_usd": 1063,
+    "us_inflation_pct": -10.27,
+    "us_unemployment_pct": 23.6,
+    "us_minimum_wage_usd": null,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 59.93,
+    "gold_oz_usd": 20.69,
+    "oil_barrel_usd": 0.87
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.18,
+    "gallon_milk_usd": 0.19,
+    "dozen_eggs_usd": 0.29,
+    "loaf_bread_usd": 0.07,
+    "movie_ticket_usd": 0.20,
+    "new_car_avg_usd": 590,
+    "median_home_usd": 4078,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Night and Day",
+      "billboard_no1_artist": "Fred Astaire with Leo Reisman and His Orchestra",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Stormy Weather",
+      "uk_no1_jan_artist": "Roy Fox and His Band"
+    },
+    "film": {
+      "box_office_no1": "Tarzan the Ape Man",
+      "box_office_no1_gross_m": 2.5,
+      "oscar_best_picture": "Grand Hotel",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Frank Borzage",
+      "oscar_best_actor": "Fredric March",
+      "oscar_best_actor_film": "Dr. Jekyll and Mr. Hyde",
+      "oscar_best_actress": "Helen Hayes",
+      "oscar_best_actress_film": "The Sin of Madelon Claudet"
+    },
+    "television": {
+      "most_watched_show": "The Eddie Cantor Show",
+      "most_watched_network": "NBC Radio",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Jack Benny Program debuts on NBC radio",
+        "George Burns and Gracie Allen radio show launches"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The Good Earth",
+      "fiction_bestseller_author": "Pearl S. Buck",
+      "nonfiction_bestseller": "The Epic of America",
+      "nonfiction_bestseller_author": "James Truslow Adams",
+      "pulitzer_fiction": "The Good Earth",
+      "pulitzer_fiction_author": "Pearl S. Buck"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Ellsworth Vines",
+      "wimbledon_womens": "Helen Wills Moody",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "James Chadwick discovers the neutron at Cambridge, completing the model of the atom and opening the road to nuclear energy",
+    "top_computer": "IBM tabulating machines (electromechanical)",
+    "top_computer_price_usd": 20000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "James Chadwick discovers the neutron, completing the model of atomic structure",
+      "Carl Anderson discovers the positron, first confirmed antimatter particle",
+      "RCA demonstrates experimental cathode-ray television sets",
+      "Amelia Earhart completes first solo transatlantic flight by a woman"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 3,
+      "event": "Charles Lindbergh Jr., 20-month-old son of aviation hero Charles Lindbergh, is kidnapped from the family home in New Jersey - dubbed the Crime of the Century"
+    },
+    {
+      "month": 7,
+      "event": "US Army under General Douglas MacArthur violently evicts the Bonus Army - 15,000 World War I veterans - from their Washington encampment, damaging Hoover's presidency"
+    },
+    {
+      "month": 11,
+      "event": "Franklin D. Roosevelt wins a landslide presidential election against Herbert Hoover, promising a New Deal to lift America out of the Great Depression"
+    },
+    {
+      "month": 7,
+      "event": "Dow Jones Industrial Average hits an all-time low of 41.22 on July 8, down 89% from its 1929 peak - the deepest trough of the Great Depression"
+    },
+    {
+      "month": 3,
+      "event": "Japan proclaims Manchuria an independent state called Manchukuo, installing the last Qing emperor Puyi as a puppet ruler"
+    }
+  ],
+  "leaders": {
+    "us_president": "Herbert Hoover",
+    "uk_pm": "Ramsay MacDonald",
+    "france_president": "Albert Lebrun",
+    "germany_chancellor": "Franz von Papen",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Inukai Tsuyoshi",
+    "australia_pm": "Joseph Lyons",
+    "canada_pm": "Richard Bedford Bennett",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Abelardo Rodriguez",
+    "un_secretary": null,
+    "pope": "Pope Pius XI",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Elizabeth Taylor",
+      "month": 2,
+      "field": "Film"
+    },
+    {
+      "name": "Johnny Cash",
+      "month": 2,
+      "field": "Music"
+    },
+    {
+      "name": "Debbie Reynolds",
+      "month": 4,
+      "field": "Film"
+    },
+    {
+      "name": "Sylvia Plath",
+      "month": 10,
+      "field": "Literature"
+    },
+    {
+      "name": "John Updike",
+      "month": 3,
+      "field": "Literature"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 124.8,
+      "life_expectancy": 61.5,
+      "gdp_per_capita_usd": 523,
+      "leader": "Herbert Hoover",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 46.3,
+      "life_expectancy": 61.2,
+      "gdp_per_capita_usd": 660,
+      "leader": "Ramsay MacDonald",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 65.7,
+      "life_expectancy": 57.5,
+      "gdp_per_capita_usd": 483,
+      "leader": "Franz von Papen",
+      "leader_title": "Chancellor"
+    },
+    "JP": {
+      "population_millions": 65.7,
+      "life_expectancy": 45.0,
+      "gdp_per_capita_usd": 274,
+      "leader": "Saitoji Kinmochi",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.9,
+      "life_expectancy": 57.3,
+      "gdp_per_capita_usd": 947,
+      "leader": "Edouard Herriot",
+      "leader_title": "Prime Minister"
+    },
+    "BR": {
+      "population_millions": 35.0,
+      "life_expectancy": 37.4,
+      "gdp_per_capita_usd": 88,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 499.0,
+      "life_expectancy": 27.0,
+      "gdp_per_capita_usd": 43,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 6.7,
+      "life_expectancy": 63.8,
+      "gdp_per_capita_usd": 672,
+      "leader": "Joseph Lyons",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 10.5,
+      "life_expectancy": 60.8,
+      "gdp_per_capita_usd": 812,
+      "leader": "Richard Bedford Bennett",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 152.0,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 452,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 17.0,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 350,
+      "leader": "Abelardo Rodriguez",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 57.7,
+      "gdp_per_capita_usd": 478,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 21.0,
+      "life_expectancy": 27.6,
+      "gdp_per_capita_usd": 52,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 10.8,
+      "life_expectancy": 40.8,
+      "gdp_per_capita_usd": 232,
+      "leader": "J.B.M. Hertzog",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 12.5,
+      "life_expectancy": 53.4,
+      "gdp_per_capita_usd": 933,
+      "leader": "Agustin Pedro Justo",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 13.5,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 105,
+      "leader": "Theodore Roosevelt Jr.",
+      "leader_title": "Governor-General"
+    },
+    "EG": {
+      "population_millions": 15.0,
+      "life_expectancy": 38.5,
+      "gdp_per_capita_usd": 76,
+      "leader": "King Fuad I",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 42.1,
+      "life_expectancy": 55.9,
+      "gdp_per_capita_usd": 442,
+      "leader": "Benito Mussolini",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 24.0,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 270,
+      "leader": "Manuel Azana",
+      "leader_title": "Prime Minister"
+    },
+    "NL": {
+      "population_millions": 8.2,
+      "life_expectancy": 66.1,
+      "gdp_per_capita_usd": 645,
+      "leader": "Hendrikus Colijn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 14.7,
+      "life_expectancy": 39.4,
+      "gdp_per_capita_usd": 217,
+      "leader": "Ismet Inonu",
+      "leader_title": "Prime Minister"
+    },
+    "PL": {
+      "population_millions": 32.4,
+      "life_expectancy": 48.8,
+      "gdp_per_capita_usd": 180,
+      "leader": "Aleksander Prystor",
+      "leader_title": "Prime Minister"
+    },
+    "SE": {
+      "population_millions": 6.2,
+      "life_expectancy": 63.8,
+      "gdp_per_capita_usd": 742,
+      "leader": "Felix Hamrin",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 12.1,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 60,
+      "leader": "Phraya Manopakorn",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 7.8,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 157,
+      "leader": "Enrique Olaya Herrera",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.6,
+      "life_expectancy": 32.4,
+      "gdp_per_capita_usd": 89,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.0,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 174,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 4.6,
+      "life_expectancy": 40.7,
+      "gdp_per_capita_usd": 225,
+      "leader": "Arturo Alessandri",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 30.8,
+      "life_expectancy": 32.0,
+      "gdp_per_capita_usd": 280,
+      "leader": "Stanislav Kosior",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 5.9,
+      "life_expectancy": 34.4,
+      "gdp_per_capita_usd": 183,
+      "leader": "Luis Miguel Sanchez Cerro",
+      "leader_title": "President"
+    }
+  }
+}

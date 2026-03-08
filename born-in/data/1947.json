@@ -1,0 +1,415 @@
+{
+  "year": 1947,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.37,
+    "births_millions": 95,
+    "life_expectancy_global": 46.0,
+    "countries_count": 57,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1527,
+    "us_median_household_income_usd": 3031,
+    "us_inflation_pct": 14.65,
+    "us_unemployment_pct": 3.9,
+    "us_minimum_wage_usd": 0.40,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 181.16,
+    "gold_oz_usd": 34.71,
+    "oil_barrel_usd": 2.16
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.23,
+    "gallon_milk_usd": 0.78,
+    "dozen_eggs_usd": 0.70,
+    "loaf_bread_usd": 0.12,
+    "movie_ticket_usd": 0.40,
+    "new_car_avg_usd": 1313,
+    "median_home_usd": 7450,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Near You",
+      "billboard_no1_artist": "Francis Craig",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Oh My Papa",
+      "uk_no1_jan_artist": "Eddie Fisher"
+    },
+    "film": {
+      "box_office_no1": "Welcome Stranger",
+      "box_office_no1_gross_m": 6.1,
+      "oscar_best_picture": "The Best Years of Our Lives",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "William Wyler",
+      "oscar_best_actor": "Fredric March",
+      "oscar_best_actor_film": "The Best Years of Our Lives",
+      "oscar_best_actress": "Olivia de Havilland",
+      "oscar_best_actress_film": "To Each His Own"
+    },
+    "television": {
+      "most_watched_show": null,
+      "most_watched_network": null,
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Howdy Doody debuts on NBC - one of first children's TV programs",
+        "Meet the Press premieres on NBC radio, later moves to TV"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Gentleman's Agreement",
+      "fiction_bestseller_author": "Laura Z. Hobson",
+      "nonfiction_bestseller": "Peace of Mind",
+      "nonfiction_bestseller_author": "Joshua Loth Liebman",
+      "pulitzer_fiction": "All the King's Men",
+      "pulitzer_fiction_author": "Robert Penn Warren"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": "Philadelphia Warriors",
+      "nba_mvp": null,
+      "wimbledon_mens": "Jack Kramer",
+      "wimbledon_womens": "Margaret Osborne duPont",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "The transistor invented by John Bardeen, Walter Brattain, and William Shockley at Bell Labs in December - the invention that would underpin all modern electronics",
+    "top_computer": "ENIAC / Harvard Mark II",
+    "top_computer_price_usd": 400000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Transistor invented at Bell Labs on December 23 by Bardeen, Brattain, and Shockley",
+      "Roswell UFO incident in New Mexico sparks decades of public interest in extraterrestrial life",
+      "Chuck Yeager breaks the sound barrier on October 14 in the Bell X-1 experimental aircraft",
+      "AK-47 assault rifle designed by Mikhail Kalashnikov and adopted by Soviet military"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 3,
+      "event": "President Truman announces the Truman Doctrine, pledging US support to nations threatened by communist takeover, beginning the formal Cold War strategy of containment"
+    },
+    {
+      "month": 6,
+      "event": "Secretary of State George Marshall proposes the European Recovery Program (Marshall Plan), offering US financial aid to rebuild war-devastated European economies"
+    },
+    {
+      "month": 8,
+      "event": "British India is partitioned into independent India and Pakistan on August 14-15, triggering one of history's largest mass migrations and communal violence killing over a million people"
+    },
+    {
+      "month": 4,
+      "event": "Dead Sea Scrolls discovered by a Bedouin shepherd in caves at Qumran - the oldest known manuscripts of the Hebrew Bible, dating back over 2,000 years"
+    },
+    {
+      "month": 11,
+      "event": "UN General Assembly passes Resolution 181, partitioning Mandatory Palestine into Jewish and Arab states, setting the stage for the founding of Israel"
+    }
+  ],
+  "leaders": {
+    "us_president": "Harry S. Truman",
+    "uk_pm": "Clement Attlee",
+    "france_president": "Vincent Auriol",
+    "germany_chancellor": "Allied Occupation (four zones)",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "india_pm": "Jawaharlal Nehru",
+    "japan_pm": "Tetsu Katayama",
+    "australia_pm": "Ben Chifley",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Eurico Gaspar Dutra",
+    "mexico_president": "Miguel Aleman Valdes",
+    "un_secretary": "Trygve Lie",
+    "pope": "Pope Pius XII",
+    "russia_leader": "Joseph Stalin",
+    "south_korea_president": null,
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "David Bowie",
+      "month": 1,
+      "field": "Music"
+    },
+    {
+      "name": "Elton John",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Arnold Schwarzenegger",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Hillary Clinton",
+      "month": 10,
+      "field": "Politics"
+    },
+    {
+      "name": "Carlos Santana",
+      "month": 7,
+      "field": "Music"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 144.1,
+      "life_expectancy": 67.2,
+      "gdp_per_capita_usd": 1527,
+      "leader": "Harry S. Truman",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 49.8,
+      "life_expectancy": 67.4,
+      "gdp_per_capita_usd": 755,
+      "leader": "Clement Attlee",
+      "leader_title": "Prime Minister"
+    },
+    "IN": {
+      "population_millions": 344.0,
+      "life_expectancy": 32.5,
+      "gdp_per_capita_usd": 60,
+      "leader": "Jawaharlal Nehru",
+      "leader_title": "Prime Minister"
+    },
+    "PK": {
+      "population_millions": 33.7,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 58,
+      "leader": "Liaquat Ali Khan",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 66.0,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 290,
+      "leader": "Allied Military Government",
+      "leader_title": "Occupation Authority"
+    },
+    "JP": {
+      "population_millions": 78.1,
+      "life_expectancy": 53.7,
+      "gdp_per_capita_usd": 130,
+      "leader": "Tetsu Katayama",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 40.7,
+      "life_expectancy": 64.0,
+      "gdp_per_capita_usd": 680,
+      "leader": "Vincent Auriol",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 48.9,
+      "life_expectancy": 46.8,
+      "gdp_per_capita_usd": 120,
+      "leader": "Eurico Gaspar Dutra",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 541.0,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 50,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 7.6,
+      "life_expectancy": 67.9,
+      "gdp_per_capita_usd": 930,
+      "leader": "Ben Chifley",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 12.6,
+      "life_expectancy": 67.1,
+      "gdp_per_capita_usd": 1150,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 101.5,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 980,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 24.7,
+      "life_expectancy": 47.5,
+      "gdp_per_capita_usd": 600,
+      "leader": "Miguel Aleman Valdes",
+      "leader_title": "President"
+    },
+    "ID": {
+      "population_millions": 65.8,
+      "life_expectancy": 38.5,
+      "gdp_per_capita_usd": 30,
+      "leader": "Sukarno",
+      "leader_title": "President"
+    },
+    "VN": {
+      "population_millions": 24.0,
+      "life_expectancy": 41.0,
+      "gdp_per_capita_usd": 46,
+      "leader": "Ho Chi Minh",
+      "leader_title": "President of DRV"
+    },
+    "IE": {
+      "population_millions": 2.97,
+      "life_expectancy": 64.0,
+      "gdp_per_capita_usd": 450,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 31.2,
+      "life_expectancy": 34.0,
+      "gdp_per_capita_usd": 69,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 11.9,
+      "life_expectancy": 42.5,
+      "gdp_per_capita_usd": 308,
+      "leader": "Jan Smuts",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 16.5,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 650,
+      "leader": "Juan Peron",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 19.2,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 160,
+      "leader": "Manuel Roxas",
+      "leader_title": "President"
+    },
+    "EG": {
+      "population_millions": 19.8,
+      "life_expectancy": 33.0,
+      "gdp_per_capita_usd": 105,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 46.3,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 270,
+      "leader": "Alcide De Gasperi",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 27.8,
+      "life_expectancy": 60.0,
+      "gdp_per_capita_usd": 178,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 9.6,
+      "life_expectancy": 69.2,
+      "gdp_per_capita_usd": 420,
+      "leader": "Willem Drees",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 19.7,
+      "life_expectancy": 44.5,
+      "gdp_per_capita_usd": 250,
+      "leader": "Ismet Inonu",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 23.8,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 200,
+      "leader": "Jozef Cyrankiewicz",
+      "leader_title": "Prime Minister"
+    },
+    "SE": {
+      "population_millions": 6.80,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 1180,
+      "leader": "Tage Erlander",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 18.4,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 71,
+      "leader": "Plaek Phibunsongkhram",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 11.5,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 213,
+      "leader": "Mariano Ospina Perez",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.9,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 210,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 8.1,
+      "life_expectancy": 57.8,
+      "gdp_per_capita_usd": 200,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 5.8,
+      "life_expectancy": 52.8,
+      "gdp_per_capita_usd": 358,
+      "leader": "Gabriel Gonzalez Videla",
+      "leader_title": "President"
+    },
+    "MY": {
+      "population_millions": 5.6,
+      "life_expectancy": 46.0,
+      "gdp_per_capita_usd": 230,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    },
+    "UA": {
+      "population_millions": 35.0,
+      "life_expectancy": 51.0,
+      "gdp_per_capita_usd": 380,
+      "leader": "Lazar Kaganovich",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 7.3,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 205,
+      "leader": "Jose Luis Bustamante",
+      "leader_title": "President"
+    }
+  }
+}

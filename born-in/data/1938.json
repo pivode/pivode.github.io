@@ -1,0 +1,375 @@
+{
+  "year": 1938,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.39,
+    "births_millions": 73,
+    "life_expectancy_global": 41.5,
+    "countries_count": 55,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 860,
+    "us_median_household_income_usd": 1231,
+    "us_inflation_pct": -2.8,
+    "us_unemployment_pct": 19.0,
+    "us_minimum_wage_usd": 0.25,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 154.76,
+    "gold_oz_usd": 35.0,
+    "oil_barrel_usd": 1.13
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.20,
+    "gallon_milk_usd": 0.50,
+    "dozen_eggs_usd": 0.43,
+    "loaf_bread_usd": 0.09,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 860,
+    "median_home_usd": 3900,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "A-Tisket, A-Tasket",
+      "billboard_no1_artist": "Ella Fitzgerald",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Begin the Beguine",
+      "uk_no1_jan_artist": "Artie Shaw"
+    },
+    "film": {
+      "box_office_no1": "Snow White and the Seven Dwarfs",
+      "box_office_no1_gross_m": 8.5,
+      "oscar_best_picture": "The Life of Emile Zola",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Leo McCarey",
+      "oscar_best_actor": "Spencer Tracy",
+      "oscar_best_actor_film": "Captains Courageous",
+      "oscar_best_actress": "Luise Rainer",
+      "oscar_best_actress_film": "The Good Earth"
+    },
+    "television": {
+      "most_watched_show": null,
+      "most_watched_network": null,
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "The Yearling",
+      "fiction_bestseller_author": "Marjorie Kinnan Rawlings",
+      "nonfiction_bestseller": "Listen! The Wind",
+      "nonfiction_bestseller_author": "Anne Morrow Lindbergh",
+      "pulitzer_fiction": "The Late George Apley",
+      "pulitzer_fiction_author": "John Phillips Marquand"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "New York Yankees",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Don Budge",
+      "wimbledon_womens": "Helen Wills Moody",
+      "f1_champion": null,
+      "fifa_world_cup": "Italy"
+    }
+  },
+  "technology": {
+    "milestone": "The Fair Labor Standards Act creates the first US federal minimum wage at $0.25 per hour; Laszlo Biro patents the ballpoint pen in France",
+    "top_computer": null,
+    "top_computer_price_usd": null,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Laszlo Biro patents the ballpoint pen in France, eventually replacing fountain pens worldwide",
+      "Nescafe instant coffee is launched by Nestle, transforming how the world drinks coffee",
+      "Chester Carlson invents electrophotography (later called xerography), the basis for modern photocopiers",
+      "Orson Welles broadcasts The War of the Worlds on CBS radio, causing widespread panic across the US"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 9,
+      "event": "The Munich Agreement: Britain and France allow Hitler to annex Czechoslovakia's Sudetenland in exchange for a pledge of peace; Chamberlain declares 'peace for our time'"
+    },
+    {
+      "month": 11,
+      "event": "Kristallnacht ('Night of Broken Glass'): Nazi forces and mobs destroy 7,500 Jewish businesses and 267 synagogues across Germany and Austria; 30,000 Jews are arrested"
+    },
+    {
+      "month": 6,
+      "event": "The Fair Labor Standards Act is signed by Roosevelt, establishing the first federal minimum wage in the US at 25 cents per hour and banning child labor"
+    },
+    {
+      "month": 3,
+      "event": "Germany annexes Austria (the Anschluss) without military resistance, merging the two German-speaking nations in violation of the Versailles Treaty"
+    },
+    {
+      "month": 6,
+      "event": "Joe Louis knocks out Max Schmeling in the first round, avenging his 1936 loss and winning a bout America framed as democracy versus fascism"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Neville Chamberlain",
+    "france_president": "Albert Lebrun",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Fumimaro Konoye",
+    "australia_pm": "Joseph Lyons",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Lazaro Cardenas",
+    "un_secretary": null,
+    "pope": "Pope Pius XI",
+    "russia_leader": "Joseph Stalin",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Jon Voight",
+      "month": 12,
+      "field": "Film"
+    },
+    {
+      "name": "Natalie Wood",
+      "month": 7,
+      "field": "Film"
+    },
+    {
+      "name": "Kenny Rogers",
+      "month": 8,
+      "field": "Music"
+    },
+    {
+      "name": "Ted Turner",
+      "month": 11,
+      "field": "Business"
+    },
+    {
+      "name": "Christopher Lloyd",
+      "month": 10,
+      "field": "Film"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 130.0,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 860,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 47.6,
+      "life_expectancy": 64.5,
+      "gdp_per_capita_usd": 620,
+      "leader": "Neville Chamberlain",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 69.0,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 680,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer and Chancellor"
+    },
+    "JP": {
+      "population_millions": 71.9,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 130,
+      "leader": "Fumimaro Konoye",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.8,
+      "life_expectancy": 58.5,
+      "gdp_per_capita_usd": 540,
+      "leader": "Albert Lebrun",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 41.8,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 105,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 513.0,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 40,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 6.9,
+      "life_expectancy": 65.0,
+      "gdp_per_capita_usd": 700,
+      "leader": "Joseph Lyons",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 11.4,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 790,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 112.0,
+      "life_expectancy": 45.5,
+      "gdp_per_capita_usd": 510,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 19.5,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 315,
+      "leader": "Lazaro Cardenas",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.94,
+      "life_expectancy": 60.5,
+      "gdp_per_capita_usd": 480,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "NG": {
+      "population_millions": 22.5,
+      "life_expectancy": 29.5,
+      "gdp_per_capita_usd": 56,
+      "leader": "British Colonial Administration",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 10.9,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 240,
+      "leader": "J. B. M. Hertzog",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 13.3,
+      "life_expectancy": 56.5,
+      "gdp_per_capita_usd": 550,
+      "leader": "Roberto Ortiz",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 16.4,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 135,
+      "leader": "Manuel Quezon",
+      "leader_title": "President (Commonwealth)"
+    },
+    "EG": {
+      "population_millions": 16.8,
+      "life_expectancy": 36.5,
+      "gdp_per_capita_usd": 87,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 43.6,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 340,
+      "leader": "Benito Mussolini",
+      "leader_title": "Head of Government"
+    },
+    "ES": {
+      "population_millions": 23.5,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 110,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State (Nationalist)"
+    },
+    "NL": {
+      "population_millions": 8.8,
+      "life_expectancy": 67.5,
+      "gdp_per_capita_usd": 490,
+      "leader": "Hendrikus Colijn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 17.0,
+      "life_expectancy": 39.5,
+      "gdp_per_capita_usd": 185,
+      "leader": "Mustafa Kemal Ataturk",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 35.0,
+      "life_expectancy": 50.5,
+      "gdp_per_capita_usd": 200,
+      "leader": "Edward Smigly-Rydz",
+      "leader_title": "Marshal"
+    },
+    "SE": {
+      "population_millions": 6.3,
+      "life_expectancy": 66.5,
+      "gdp_per_capita_usd": 870,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 15.4,
+      "life_expectancy": 36.5,
+      "gdp_per_capita_usd": 67,
+      "leader": "Plaek Phibunsongkhram",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 9.3,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 160,
+      "leader": "Eduardo Santos",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 3.8,
+      "life_expectancy": 34.5,
+      "gdp_per_capita_usd": 83,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.5,
+      "life_expectancy": 49.5,
+      "gdp_per_capita_usd": 185,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 4.8,
+      "life_expectancy": 48.5,
+      "gdp_per_capita_usd": 270,
+      "leader": "Arturo Alessandri Palma",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 30.8,
+      "life_expectancy": 41.5,
+      "gdp_per_capita_usd": 390,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary, Ukrainian Communist Party"
+    },
+    "PE": {
+      "population_millions": 6.6,
+      "life_expectancy": 38.5,
+      "gdp_per_capita_usd": 150,
+      "leader": "Oscar Benavides",
+      "leader_title": "President"
+    }
+  }
+}

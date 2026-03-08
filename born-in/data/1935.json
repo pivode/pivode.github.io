@@ -1,0 +1,375 @@
+{
+  "year": 1935,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.30,
+    "births_millions": 70,
+    "life_expectancy_global": 40.0,
+    "countries_count": 54,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 703,
+    "us_median_household_income_usd": 1160,
+    "us_inflation_pct": 3.0,
+    "us_unemployment_pct": 20.1,
+    "us_minimum_wage_usd": null,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 144.13,
+    "gold_oz_usd": 35.0,
+    "oil_barrel_usd": 0.97
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.19,
+    "gallon_milk_usd": 0.47,
+    "dozen_eggs_usd": 0.48,
+    "loaf_bread_usd": 0.08,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": 580,
+    "median_home_usd": 6300,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "Cheek to Cheek",
+      "billboard_no1_artist": "Fred Astaire",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Red Sails in the Sunset",
+      "uk_no1_jan_artist": "Ambrose and His Orchestra"
+    },
+    "film": {
+      "box_office_no1": "Top Hat",
+      "box_office_no1_gross_m": 3.0,
+      "oscar_best_picture": "It Happened One Night",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Frank Capra",
+      "oscar_best_actor": "Clark Gable",
+      "oscar_best_actor_film": "It Happened One Night",
+      "oscar_best_actress": "Claudette Colbert",
+      "oscar_best_actress_film": "It Happened One Night"
+    },
+    "television": {
+      "most_watched_show": null,
+      "most_watched_network": null,
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Green Light",
+      "fiction_bestseller_author": "Lloyd C. Douglas",
+      "nonfiction_bestseller": "North to the Orient",
+      "nonfiction_bestseller_author": "Anne Morrow Lindbergh",
+      "pulitzer_fiction": "Now in November",
+      "pulitzer_fiction_author": "Josephine Winslow Johnson"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "Detroit Tigers",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": "Fred Perry",
+      "wimbledon_womens": "Helen Wills Moody",
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "Radar technology demonstrated by Robert Watson-Watt in Britain; Edwin Armstrong presents FM radio to the Institute of Radio Engineers",
+    "top_computer": null,
+    "top_computer_price_usd": null,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Robert Watson-Watt demonstrates radar detection of aircraft for the British Air Ministry",
+      "Edwin Armstrong demonstrates FM radio transmission, revolutionizing broadcast quality",
+      "Alcoholics Anonymous founded by Bill Wilson and Bob Smith",
+      "Nylon first synthesized by Wallace Carothers at DuPont"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 8,
+      "event": "President Roosevelt signs the Social Security Act into law, creating the federal retirement and unemployment insurance programs"
+    },
+    {
+      "month": 9,
+      "event": "Germany enacts the Nuremberg Laws, stripping Jews of citizenship and forbidding marriage between Jews and non-Jewish Germans"
+    },
+    {
+      "month": 10,
+      "event": "Fascist Italy invades Ethiopia; the League of Nations fails to impose meaningful sanctions, exposing its weakness as a peacekeeping body"
+    },
+    {
+      "month": 5,
+      "event": "The Works Progress Administration (WPA) is established, employing millions of Americans to build roads, bridges, and public buildings"
+    },
+    {
+      "month": 11,
+      "event": "The Philippines is established as a Commonwealth under US oversight, moving toward eventual independence"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Stanley Baldwin",
+    "france_president": "Albert Lebrun",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Keisuke Okada",
+    "australia_pm": "Joseph Lyons",
+    "canada_pm": "R. B. Bennett (to Oct), then Mackenzie King",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Lazaro Cardenas",
+    "un_secretary": null,
+    "pope": "Pope Pius XI",
+    "russia_leader": "Joseph Stalin",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "Elvis Presley",
+      "month": 1,
+      "field": "Music"
+    },
+    {
+      "name": "Julie Andrews",
+      "month": 10,
+      "field": "Film"
+    },
+    {
+      "name": "Woody Allen",
+      "month": 11,
+      "field": "Film"
+    },
+    {
+      "name": "The 14th Dalai Lama (Tenzin Gyatso)",
+      "month": 7,
+      "field": "Religion"
+    },
+    {
+      "name": "Donald Sutherland",
+      "month": 7,
+      "field": "Film"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 127.3,
+      "life_expectancy": 61.7,
+      "gdp_per_capita_usd": 703,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 47.1,
+      "life_expectancy": 63.0,
+      "gdp_per_capita_usd": 520,
+      "leader": "Stanley Baldwin",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 66.0,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 460,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer and Chancellor"
+    },
+    "JP": {
+      "population_millions": 69.3,
+      "life_expectancy": 46.9,
+      "gdp_per_capita_usd": 100,
+      "leader": "Keisuke Okada",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 41.2,
+      "life_expectancy": 56.7,
+      "gdp_per_capita_usd": 480,
+      "leader": "Albert Lebrun",
+      "leader_title": "President"
+    },
+    "BR": {
+      "population_millions": 39.5,
+      "life_expectancy": 40.5,
+      "gdp_per_capita_usd": 90,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 500.0,
+      "life_expectancy": 34.0,
+      "gdp_per_capita_usd": 40,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 6.6,
+      "life_expectancy": 63.5,
+      "gdp_per_capita_usd": 600,
+      "leader": "Joseph Lyons",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 11.0,
+      "life_expectancy": 62.1,
+      "gdp_per_capita_usd": 700,
+      "leader": "R. B. Bennett",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 109.0,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 450,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 18.3,
+      "life_expectancy": 38.8,
+      "gdp_per_capita_usd": 280,
+      "leader": "Lazaro Cardenas",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 430,
+      "leader": "Eamon de Valera",
+      "leader_title": "President of the Executive Council"
+    },
+    "NG": {
+      "population_millions": 21.0,
+      "life_expectancy": 28.0,
+      "gdp_per_capita_usd": 50,
+      "leader": "British Colonial Administration",
+      "leader_title": "Colonial Government"
+    },
+    "ZA": {
+      "population_millions": 10.2,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 210,
+      "leader": "J. B. M. Hertzog",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 12.4,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 500,
+      "leader": "Agustin Pedro Justo",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 15.2,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 120,
+      "leader": "Manuel Quezon",
+      "leader_title": "President (Commonwealth)"
+    },
+    "EG": {
+      "population_millions": 15.9,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 80,
+      "leader": "King Fuad I",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 42.5,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 290,
+      "leader": "Benito Mussolini",
+      "leader_title": "Head of Government"
+    },
+    "ES": {
+      "population_millions": 24.2,
+      "life_expectancy": 50.0,
+      "gdp_per_capita_usd": 170,
+      "leader": "Niceto Alcala-Zamora",
+      "leader_title": "President"
+    },
+    "NL": {
+      "population_millions": 8.5,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 430,
+      "leader": "Hendrikus Colijn",
+      "leader_title": "Prime Minister"
+    },
+    "TR": {
+      "population_millions": 16.0,
+      "life_expectancy": 38.0,
+      "gdp_per_capita_usd": 170,
+      "leader": "Mustafa Kemal Ataturk",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 33.0,
+      "life_expectancy": 49.0,
+      "gdp_per_capita_usd": 185,
+      "leader": "Jozef Pilsudski (to May), then Edward Smigly-Rydz",
+      "leader_title": "Marshal"
+    },
+    "SE": {
+      "population_millions": 6.3,
+      "life_expectancy": 65.0,
+      "gdp_per_capita_usd": 760,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 14.5,
+      "life_expectancy": 35.0,
+      "gdp_per_capita_usd": 60,
+      "leader": "Phraya Phahon Phonphayuhasena",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 8.7,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 145,
+      "leader": "Alfonso Lopez Pumarejo",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 3.5,
+      "life_expectancy": 33.0,
+      "gdp_per_capita_usd": 75,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 7.3,
+      "life_expectancy": 48.0,
+      "gdp_per_capita_usd": 170,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 4.5,
+      "life_expectancy": 47.0,
+      "gdp_per_capita_usd": 250,
+      "leader": "Arturo Alessandri Palma",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 30.0,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 350,
+      "leader": "Vlas Chubar",
+      "leader_title": "Chairman, Council of People's Commissars"
+    },
+    "PE": {
+      "population_millions": 6.2,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 140,
+      "leader": "Oscar Benavides",
+      "leader_title": "President"
+    }
+  }
+}

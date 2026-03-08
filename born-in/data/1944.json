@@ -1,0 +1,377 @@
+{
+  "year": 1944,
+  "schema_version": 1,
+  "world": {
+    "population_billions": 2.40,
+    "births_millions": 93,
+    "life_expectancy_global": 43.5,
+    "countries_count": 61,
+    "internet_users": 0
+  },
+  "economy": {
+    "us_gdp_per_capita_usd": 1903,
+    "us_median_household_income_usd": 2900,
+    "us_inflation_pct": 1.73,
+    "us_unemployment_pct": 1.2,
+    "us_minimum_wage_usd": 0.30,
+    "sp500_year_end": null,
+    "dow_jones_year_end": 152.32,
+    "gold_oz_usd": 33.85,
+    "oil_barrel_usd": 1.15
+  },
+  "prices_us": {
+    "gallon_gas_usd": 0.21,
+    "gallon_milk_usd": 0.31,
+    "dozen_eggs_usd": 0.42,
+    "loaf_bread_usd": 0.10,
+    "movie_ticket_usd": 0.25,
+    "new_car_avg_usd": null,
+    "median_home_usd": 3400,
+    "first_class_stamp_cents": 3,
+    "big_mac_usd": null
+  },
+  "culture": {
+    "music": {
+      "billboard_no1_song": "I'll Be Seeing You",
+      "billboard_no1_artist": "Bing Crosby",
+      "grammy_record": null,
+      "grammy_record_artist": null,
+      "grammy_album": null,
+      "grammy_album_artist": null,
+      "uk_no1_jan": "Sweet Dreams, Sweetheart",
+      "uk_no1_jan_artist": "Jo Stafford"
+    },
+    "film": {
+      "box_office_no1": "Going My Way",
+      "box_office_no1_gross_m": 6.5,
+      "oscar_best_picture": "Going My Way",
+      "oscar_best_director": "Best Director",
+      "oscar_best_director_name": "Leo McCarey",
+      "oscar_best_actor": "Bing Crosby",
+      "oscar_best_actor_film": "Going My Way",
+      "oscar_best_actress": "Ingrid Bergman",
+      "oscar_best_actress_film": "Gaslight"
+    },
+    "television": {
+      "most_watched_show": "Bob Hope's Pepsodent Show",
+      "most_watched_network": "NBC Radio",
+      "emmy_drama": null,
+      "emmy_comedy": null,
+      "notable_premieres": [
+        "Meet Me in St. Louis premieres, launching Judy Garland to new stardom",
+        "Arsenic and Old Lace released, showcasing Cary Grant's comic range"
+      ],
+      "notable_finales": []
+    },
+    "books": {
+      "fiction_bestseller": "Strange Fruit",
+      "fiction_bestseller_author": "Lillian Smith",
+      "nonfiction_bestseller": "I Never Left Home",
+      "nonfiction_bestseller_author": "Bob Hope",
+      "pulitzer_fiction": "Journey in the Dark",
+      "pulitzer_fiction_author": "Martin Flavin"
+    },
+    "sports": {
+      "super_bowl_winner": null,
+      "super_bowl_score": null,
+      "super_bowl_mvp": null,
+      "world_series_winner": "St. Louis Cardinals",
+      "nba_champion": null,
+      "nba_mvp": null,
+      "wimbledon_mens": null,
+      "wimbledon_womens": null,
+      "f1_champion": null,
+      "fifa_world_cup": null
+    }
+  },
+  "technology": {
+    "milestone": "The V-2 rocket, the world's first long-range ballistic missile, begins operational attacks on London and Antwerp - pioneering the technology that will later reach space",
+    "top_computer": "Harvard Mark I (electromechanical)",
+    "top_computer_price_usd": 200000,
+    "avg_hard_drive_mb": 0,
+    "mobile_subscribers_millions": 0,
+    "notable_releases": [
+      "Harvard Mark I, the first large-scale electromechanical computer, completes construction and begins operation",
+      "Germany deploys the V-1 flying bomb and V-2 rocket against Britain, pioneering cruise and ballistic missile technology",
+      "Bretton Woods Conference establishes the IMF and World Bank, creating the post-war international monetary system",
+      "First operational jet fighter, the Messerschmitt Me 262, enters combat with the Luftwaffe"
+    ]
+  },
+  "world_events": [
+    {
+      "month": 6,
+      "event": "D-Day: 156,000 Allied troops land on the beaches of Normandy on June 6 in the largest seaborne invasion in history. Paris is liberated by August 25"
+    },
+    {
+      "month": 7,
+      "event": "The Bretton Woods Conference in New Hampshire establishes the International Monetary Fund and World Bank, shaping the global economic order for decades"
+    },
+    {
+      "month": 12,
+      "event": "Battle of the Bulge: Germany launches its last major western offensive through the Ardennes. Allied forces hold and the offensive collapses by January 1945"
+    },
+    {
+      "month": 7,
+      "event": "Operation Valkyrie: German officers attempt to assassinate Hitler with a bomb. The plot fails and conspirators are executed"
+    },
+    {
+      "month": 10,
+      "event": "General Douglas MacArthur returns to the Philippines as US forces begin the liberation of the archipelago from Japanese occupation"
+    }
+  ],
+  "leaders": {
+    "us_president": "Franklin D. Roosevelt",
+    "uk_pm": "Winston Churchill",
+    "france_president": "Charles de Gaulle (Free France)",
+    "germany_chancellor": "Adolf Hitler",
+    "ussr_leader": "Joseph Stalin",
+    "china_leader": "Chiang Kai-shek",
+    "japan_pm": "Kuniaki Koiso",
+    "australia_pm": "John Curtin",
+    "canada_pm": "William Lyon Mackenzie King",
+    "brazil_president": "Getulio Vargas",
+    "mexico_president": "Manuel Avila Camacho",
+    "un_secretary": null,
+    "pope": "Pope Pius XII",
+    "ireland_taoiseach": "Eamon de Valera"
+  },
+  "notable_births": [
+    {
+      "name": "George Lucas",
+      "month": 5,
+      "field": "Film"
+    },
+    {
+      "name": "Diana Ross",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Roger Daltrey",
+      "month": 3,
+      "field": "Music"
+    },
+    {
+      "name": "Michael Douglas",
+      "month": 9,
+      "field": "Film"
+    },
+    {
+      "name": "Angela Merkel",
+      "month": 7,
+      "field": "Politics"
+    }
+  ],
+  "countries": {
+    "US": {
+      "population_millions": 138.4,
+      "life_expectancy": 65.2,
+      "gdp_per_capita_usd": 1903,
+      "leader": "Franklin D. Roosevelt",
+      "leader_title": "President"
+    },
+    "GB": {
+      "population_millions": 47.9,
+      "life_expectancy": 60.0,
+      "gdp_per_capita_usd": 1400,
+      "leader": "Winston Churchill",
+      "leader_title": "Prime Minister"
+    },
+    "DE": {
+      "population_millions": 68.0,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 1450,
+      "leader": "Adolf Hitler",
+      "leader_title": "Fuhrer"
+    },
+    "JP": {
+      "population_millions": 74.4,
+      "life_expectancy": 46.5,
+      "gdp_per_capita_usd": 340,
+      "leader": "Kuniaki Koiso",
+      "leader_title": "Prime Minister"
+    },
+    "FR": {
+      "population_millions": 40.0,
+      "life_expectancy": 55.0,
+      "gdp_per_capita_usd": 600,
+      "leader": "Charles de Gaulle",
+      "leader_title": "President of GPRF"
+    },
+    "BR": {
+      "population_millions": 45.9,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 118,
+      "leader": "Getulio Vargas",
+      "leader_title": "President"
+    },
+    "CN": {
+      "population_millions": 524.0,
+      "life_expectancy": 38.5,
+      "gdp_per_capita_usd": 46,
+      "leader": "Chiang Kai-shek",
+      "leader_title": "Generalissimo"
+    },
+    "AU": {
+      "population_millions": 7.45,
+      "life_expectancy": 67.0,
+      "gdp_per_capita_usd": 1060,
+      "leader": "John Curtin",
+      "leader_title": "Prime Minister"
+    },
+    "CA": {
+      "population_millions": 12.1,
+      "life_expectancy": 66.0,
+      "gdp_per_capita_usd": 1500,
+      "leader": "William Lyon Mackenzie King",
+      "leader_title": "Prime Minister"
+    },
+    "RU": {
+      "population_millions": 157.0,
+      "life_expectancy": 40.0,
+      "gdp_per_capita_usd": 820,
+      "leader": "Joseph Stalin",
+      "leader_title": "General Secretary"
+    },
+    "MX": {
+      "population_millions": 22.4,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 510,
+      "leader": "Manuel Avila Camacho",
+      "leader_title": "President"
+    },
+    "IE": {
+      "population_millions": 2.95,
+      "life_expectancy": 61.0,
+      "gdp_per_capita_usd": 575,
+      "leader": "Eamon de Valera",
+      "leader_title": "Taoiseach"
+    },
+    "ZA": {
+      "population_millions": 12.2,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 330,
+      "leader": "Jan Smuts",
+      "leader_title": "Prime Minister"
+    },
+    "AR": {
+      "population_millions": 15.1,
+      "life_expectancy": 59.0,
+      "gdp_per_capita_usd": 940,
+      "leader": "Edelmiro Farrell",
+      "leader_title": "President"
+    },
+    "PH": {
+      "population_millions": 18.0,
+      "life_expectancy": 39.0,
+      "gdp_per_capita_usd": 70,
+      "leader": "Jose P. Laurel (Japanese-installed)",
+      "leader_title": "President (Occupied)"
+    },
+    "EG": {
+      "population_millions": 18.3,
+      "life_expectancy": 37.5,
+      "gdp_per_capita_usd": 112,
+      "leader": "King Farouk",
+      "leader_title": "King"
+    },
+    "IT": {
+      "population_millions": 44.2,
+      "life_expectancy": 57.0,
+      "gdp_per_capita_usd": 430,
+      "leader": "Pietro Badoglio",
+      "leader_title": "Prime Minister"
+    },
+    "ES": {
+      "population_millions": 27.3,
+      "life_expectancy": 52.0,
+      "gdp_per_capita_usd": 295,
+      "leader": "Francisco Franco",
+      "leader_title": "Head of State"
+    },
+    "NL": {
+      "population_millions": 9.2,
+      "life_expectancy": 62.0,
+      "gdp_per_capita_usd": 460,
+      "leader": "Queen Wilhelmina (in exile)",
+      "leader_title": "Queen (Government in Exile)"
+    },
+    "TR": {
+      "population_millions": 19.5,
+      "life_expectancy": 42.0,
+      "gdp_per_capita_usd": 250,
+      "leader": "Ismet Inonu",
+      "leader_title": "President"
+    },
+    "PL": {
+      "population_millions": 29.0,
+      "life_expectancy": 36.0,
+      "gdp_per_capita_usd": 120,
+      "leader": "Wladyslaw Raczkiewicz (in exile)",
+      "leader_title": "President (Government in Exile)"
+    },
+    "SE": {
+      "population_millions": 6.6,
+      "life_expectancy": 68.0,
+      "gdp_per_capita_usd": 1240,
+      "leader": "Per Albin Hansson",
+      "leader_title": "Prime Minister"
+    },
+    "TH": {
+      "population_millions": 16.9,
+      "life_expectancy": 44.0,
+      "gdp_per_capita_usd": 84,
+      "leader": "Khuang Aphaiwong",
+      "leader_title": "Prime Minister"
+    },
+    "CO": {
+      "population_millions": 10.3,
+      "life_expectancy": 43.0,
+      "gdp_per_capita_usd": 235,
+      "leader": "Alberto Lleras Camargo",
+      "leader_title": "President"
+    },
+    "SA": {
+      "population_millions": 2.9,
+      "life_expectancy": 37.0,
+      "gdp_per_capita_usd": 175,
+      "leader": "Abdulaziz ibn Saud",
+      "leader_title": "King"
+    },
+    "PT": {
+      "population_millions": 8.0,
+      "life_expectancy": 53.0,
+      "gdp_per_capita_usd": 238,
+      "leader": "Antonio de Oliveira Salazar",
+      "leader_title": "Prime Minister"
+    },
+    "CL": {
+      "population_millions": 5.6,
+      "life_expectancy": 50.0,
+      "gdp_per_capita_usd": 350,
+      "leader": "Juan Antonio Rios",
+      "leader_title": "President"
+    },
+    "UA": {
+      "population_millions": 29.0,
+      "life_expectancy": 33.0,
+      "gdp_per_capita_usd": 250,
+      "leader": "Nikita Khrushchev",
+      "leader_title": "First Secretary"
+    },
+    "PE": {
+      "population_millions": 6.6,
+      "life_expectancy": 39.0,
+      "gdp_per_capita_usd": 225,
+      "leader": "Manuel Prado",
+      "leader_title": "President"
+    },
+    "NG": {
+      "population_millions": 24.0,
+      "life_expectancy": 31.5,
+      "gdp_per_capita_usd": 65,
+      "leader": "British Colony",
+      "leader_title": "Colonial Government"
+    }
+  }
+}
