@@ -681,10 +681,9 @@ body {
   max-width: 100%;
 }
 
-.cmp-header {
-  /* position:relative so the share popover (position:absolute) resolves to the header, not the section */
-  position: relative;
-}
+/* .cmp-header inherits position:sticky from .info-header.
+   Sticky elements create a containing block for absolute children,
+   so the share popover positions correctly without overriding sticky. */
 
 .header-left {
   display: flex;
@@ -2222,8 +2221,9 @@ body {
   padding: 28px 32px 20px;
   border-bottom: 1px solid rgba(255,255,255,0.07);
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .sc-flag {
@@ -2255,9 +2255,11 @@ body {
 .sc-headline {
   font-size: 14px;
   color: rgba(255,255,255,0.5);
-  margin-top: 8px;
+  margin-top: 4px;
   line-height: 1.4;
   letter-spacing: 0.01em;
+  width: 100%;
+  flex-basis: 100%;
 }
 
 .sc-stats {
