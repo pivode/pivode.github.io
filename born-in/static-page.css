@@ -1,0 +1,61 @@
+/* =========================================================
+   STATIC PAGE STYLES
+   Shared by all pre-rendered born-in and compare pages.
+   ========================================================= */
+
+/* --- Internal links nav ---------------------------------- */
+
+.internal-links {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.internal-links h2 {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin: 0 0 12px;
+}
+
+.internal-links h2:not(:first-child) {
+  margin-top: 28px;
+}
+
+.internal-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.internal-links-list a {
+  display: inline-block;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.internal-links-list a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .internal-links {
+    padding: 32px 16px;
+  }
+  .internal-links-list a {
+    padding: 5px 11px;
+    font-size: 12px;
+  }
+}

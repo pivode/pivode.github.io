@@ -1782,3 +1782,63 @@ body.era-00s {
   letter-spacing: 0.04em;
   color: var(--sc-accent, #a78bfa);
 }
+
+/* ── Year Directory (SEO hub) ── */
+
+.year-directory {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  opacity: 0.65;
+  transition: opacity 0.3s;
+}
+
+.year-directory:hover { opacity: 1; }
+
+.directory-heading {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+}
+
+.directory-decade {
+  margin-bottom: 12px;
+}
+
+.directory-decade-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-bottom: 6px;
+}
+
+.directory-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.directory-links a {
+  display: inline-block;
+  padding: 4px 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.directory-links a:hover {
+  color: var(--text-primary);
+  border-color: var(--accent);
+}
