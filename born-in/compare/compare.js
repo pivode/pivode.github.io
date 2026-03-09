@@ -2290,6 +2290,35 @@ function setCountryDisplay(displayEl, country) {
   `;
 }
 
+// Update directory links when country selection changes
+function updateCompareDirectoryLinks() {
+  const dir = document.getElementById('compare-directory');
+  if (!dir) return;
+  const bothUS = selectedParentCountry.code === 'US' && selectedChildCountry.code === 'US';
+  dir.querySelectorAll('.directory-links a').forEach(a => {
+    const text = a.textContent.trim();
+    // Compare links: "YYYY vs YYYY"
+    const cmpMatch = text.match(/^(\d{4})\s+vs\s+(\d{4})$/);
+    if (cmpMatch) {
+      if (bothUS) {
+        a.href = `/born-in/compare/${cmpMatch[1]}-vs-${cmpMatch[2]}/`;
+      } else {
+        a.href = `/born-in/compare/?parent=${cmpMatch[1]}&child=${cmpMatch[2]}&pcountry=${selectedParentCountry.code}&ccountry=${selectedChildCountry.code}`;
+      }
+      return;
+    }
+    // Individual year links: "YYYY"
+    const yrMatch = text.match(/^(\d{4})$/);
+    if (yrMatch) {
+      if (selectedChildCountry.code === 'US') {
+        a.href = `/born-in/${yrMatch[1]}/`;
+      } else {
+        a.href = `/born-in/?year=${yrMatch[1]}&country=${selectedChildCountry.code}`;
+      }
+    }
+  });
+}
+
 // Parent dropdown
 function openParentCountryDropdown() {
   $parentCountryDropdown.classList.remove('hidden');
@@ -2337,6 +2366,7 @@ $parentCountryList.addEventListener('click', (e) => {
     selectedParentCountry = match;
     setCountryDisplay($parentCountryDisplay, match);
     closeParentCountryDropdown();
+    updateCompareDirectoryLinks();
   }
 });
 
@@ -2387,6 +2417,7 @@ $childCountryList.addEventListener('click', (e) => {
     selectedChildCountry = match;
     setCountryDisplay($childCountryDisplay, match);
     closeChildCountryDropdown();
+    updateCompareDirectoryLinks();
   }
 });
 
