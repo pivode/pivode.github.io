@@ -117,7 +117,7 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   padding: 12px 20px;
-  font-size: 15px;
+  font-size: 16px;
   font-family: var(--font-body);
   color: var(--text-primary);
   text-align: center;

@@ -88,7 +88,7 @@
       "wimbledon_mens": "Novak Djokovic",
       "wimbledon_womens": "Ashleigh Barty",
       "f1_champion": "Max Verstappen",
-      "fifa_world_cup": "N/A (no World Cup in 2021)"
+      "fifa_world_cup": null
     }
   },
   "technology": {

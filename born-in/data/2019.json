@@ -38,9 +38,8 @@
       "grammy_record_artist": "Childish Gambino",
       "grammy_album": "Golden Hour",
       "grammy_album_artist": "Kacey Musgraves",
-      "uk_no1_jan": "Without Me",
-      "uk_no1_jan_artist": "Halsey",
-      "uk_no1_artist": "Halsey"
+      "uk_no1_jan": "Sweet but Psycho",
+      "uk_no1_jan_artist": "Ava Max"
     },
     "film": {
       "box_office_no1": "Avengers: Endgame",
@@ -88,7 +87,7 @@
       "wimbledon_mens": "Novak Djokovic",
       "wimbledon_womens": "Simona Halep",
       "f1_champion": "Lewis Hamilton",
-      "fifa_world_cup": "N/A (not a World Cup year)"
+      "fifa_world_cup": null
     }
   },
   "technology": {
@@ -284,8 +283,8 @@
       "population_millions": 60.3,
       "life_expectancy": 83.5,
       "gdp_per_capita_usd": 33228,
-      "leader": "Sergio Mattarella",
-      "leader_title": "President"
+      "leader": "Giuseppe Conte",
+      "leader_title": "Prime Minister"
     },
     "ES": {
       "population_millions": 47.1,

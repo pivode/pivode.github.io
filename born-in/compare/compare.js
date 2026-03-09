@@ -167,6 +167,8 @@ const CPI_TO_2024 = {
   1992:2.24,1993:2.17,1994:2.12,1995:2.06,1996:2.0,1997:1.95,1998:1.92,
   1999:1.88,2000:1.82,2001:1.77,2002:1.74,2003:1.7,2004:1.66,2005:1.61,
   2006:1.56,2007:1.51,2008:1.46,2009:1.46,2010:1.44,
+  2011:1.39,2012:1.37,2013:1.35,2014:1.33,2015:1.32,2016:1.31,2017:1.28,
+  2018:1.25,2019:1.23,2020:1.21,2021:1.16,2022:1.07,2023:1.03,2024:1.0,2025:0.98,
 };
 
 const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -2526,7 +2528,11 @@ function updateUrl(parentYear, childYear, parentCountryCode, childCountryCode) {
     ccountry: childCountryCode,
   });
   const newUrl = window.location.pathname + '?' + params.toString();
-  history.replaceState(null, '', newUrl);
+  history.pushState({ parent: parentYear, child: childYear, pcountry: parentCountryCode, ccountry: childCountryCode }, '', newUrl);
+  // Track SPA page view in GoatCounter
+  if (window.goatcounter && window.goatcounter.count) {
+    window.goatcounter.count({ path: newUrl, event: false });
+  }
 }
 
 async function readUrlParams() {
@@ -2575,7 +2581,8 @@ async function readUrlParams() {
     const { parentData, childData } = await loadBothYears(parentYear, childYear);
     showResult(parentYear, childYear, selectedParentCountry.code, selectedChildCountry.code, parentData, childData);
   } catch (err) {
-    // Silently fail on URL params - just show landing
+    console.warn('Failed to load data from URL params:', err);
+    showLanding();
   }
 }
 
@@ -2622,7 +2629,8 @@ $tweetBtn.addEventListener('click', () => {
     const cLE = _lastCompare.childData.countries?.[_lastCompare.childCountryCode]?.life_expectancy;
     if (pLE && cLE && _lastCompare.parentCountryCode === _lastCompare.childCountryCode) {
       const delta = Math.abs(cLE - pLE).toFixed(1);
-      tweetHook = ' Life expectancy shifted by ' + delta + ' years between these generations.';
+      const dir = cLE > pLE ? 'up' : 'down';
+      tweetHook = ' Life expectancy went ' + dir + ' ' + delta + ' years between these generations.';
     }
   }
   const text = 'Born in ' + parentYear + ' vs ' + childYear + '.' + tweetHook + ' What changed?';
@@ -2644,12 +2652,25 @@ function handleNew() {
   $childYearError.textContent = '';
   closeParentCountryDropdown();
   closeChildCountryDropdown();
-  history.replaceState(null, '', window.location.pathname);
+  history.pushState(null, '', window.location.pathname);
 }
 
 $newBtn.addEventListener('click', handleNew);
 $bottomNewBtn.addEventListener('click', handleNew);
 $errorBackBtn.addEventListener('click', handleNew);
+
+// ---------------------------------------------------------------------------
+// BROWSER BACK/FORWARD
+// ---------------------------------------------------------------------------
+
+window.addEventListener('popstate', () => {
+  const params = new URLSearchParams(window.location.search);
+  if (!params.get('parent') || !params.get('child')) {
+    handleNew();
+    return;
+  }
+  readUrlParams();
+});
 
 // ---------------------------------------------------------------------------
 // INIT

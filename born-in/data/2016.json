@@ -88,7 +88,7 @@
       "wimbledon_mens": "Andy Murray",
       "wimbledon_womens": "Serena Williams",
       "f1_champion": "Nico Rosberg",
-      "fifa_world_cup": "N/A (not a World Cup year)"
+      "fifa_world_cup": null
     }
   },
   "technology": {

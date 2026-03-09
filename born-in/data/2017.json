@@ -83,11 +83,11 @@
       "super_bowl_mvp": "Tom Brady",
       "world_series_winner": "Houston Astros",
       "nba_champion": "Golden State Warriors",
-      "nba_mvp": "Kevin Durant",
+      "nba_mvp": "Russell Westbrook",
       "wimbledon_mens": "Roger Federer",
       "wimbledon_womens": "Garbine Muguruza",
       "f1_champion": "Lewis Hamilton",
-      "fifa_world_cup": "N/A (not a World Cup year)"
+      "fifa_world_cup": null
     }
   },
   "technology": {

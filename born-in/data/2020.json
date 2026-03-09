@@ -38,9 +38,8 @@
       "grammy_record_artist": "Billie Eilish",
       "grammy_album": "When We All Fall Asleep, Where Do We Go?",
       "grammy_album_artist": "Billie Eilish",
-      "uk_no1_jan": "Dance Monkey",
-      "uk_no1_jan_artist": "Tones and I",
-      "uk_no1_artist": "Tones and I"
+      "uk_no1_jan": "River",
+      "uk_no1_jan_artist": "Ellie Goulding"
     },
     "film": {
       "box_office_no1": "Bad Boys for Life",
@@ -84,11 +83,11 @@
       "super_bowl_mvp": "Patrick Mahomes",
       "world_series_winner": "Los Angeles Dodgers",
       "nba_champion": "Los Angeles Lakers",
-      "nba_mvp": "LeBron James",
+      "nba_mvp": "Giannis Antetokounmpo",
       "wimbledon_mens": "N/A (cancelled due to COVID-19)",
       "wimbledon_womens": "N/A (cancelled due to COVID-19)",
       "f1_champion": "Lewis Hamilton",
-      "fifa_world_cup": "N/A (not a World Cup year)"
+      "fifa_world_cup": null
     }
   },
   "technology": {
@@ -284,8 +283,8 @@
       "population_millions": 59.6,
       "life_expectancy": 82.5,
       "gdp_per_capita_usd": 31714,
-      "leader": "Sergio Mattarella",
-      "leader_title": "President"
+      "leader": "Giuseppe Conte",
+      "leader_title": "Prime Minister"
     },
     "ES": {
       "population_millions": 47.4,

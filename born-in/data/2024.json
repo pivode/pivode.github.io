@@ -88,7 +88,7 @@
       "wimbledon_mens": "Carlos Alcaraz",
       "wimbledon_womens": "Barbora Krejcikova",
       "f1_champion": "Max Verstappen",
-      "fifa_world_cup": "N/A (no World Cup in 2024)"
+      "fifa_world_cup": null
     }
   },
   "technology": {
@@ -106,7 +106,7 @@
   },
   "world_events": [
     {
-      "month": 2,
+      "month": 3,
       "event": "Baltimore's Francis Scott Key Bridge collapses after being struck by a container ship on March 26, killing six construction workers and disrupting a major US shipping route"
     },
     {
@@ -143,7 +143,7 @@
     "russia_leader": "Vladimir Putin",
     "mexico_president": "Claudia Sheinbaum",
     "south_korea_president": "Yoon Suk-yeol",
-    "ireland_taoiseach": "Micheal Martin"
+    "ireland_taoiseach": "Simon Harris"
   },
   "notable_births": [],
   "countries": {

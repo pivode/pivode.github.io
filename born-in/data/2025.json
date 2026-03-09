@@ -88,7 +88,7 @@
       "wimbledon_mens": "Jannik Sinner",
       "wimbledon_womens": "Iga Swiatek",
       "f1_champion": "Lando Norris",
-      "fifa_world_cup": "N/A (no World Cup in 2025)"
+      "fifa_world_cup": null
     }
   },
   "technology": {

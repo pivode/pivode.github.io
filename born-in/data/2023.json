@@ -88,7 +88,7 @@
       "wimbledon_mens": "Carlos Alcaraz",
       "wimbledon_womens": "Marketa Vondrousova",
       "f1_champion": "Max Verstappen",
-      "fifa_world_cup": "N/A (no World Cup in 2023)"
+      "fifa_world_cup": null
     }
   },
   "technology": {
