@@ -1043,6 +1043,8 @@ body {
   letter-spacing: -0.02em;
   display: block;
   margin-bottom: 8px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .two-up-desc {
@@ -2597,14 +2599,19 @@ body {
 /* ── Compare Directory (SEO hub) ── */
 
 .compare-directory {
-  max-width: 720px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 48px 24px 64px;
-  opacity: 0.65;
+  opacity: 0.8;
   transition: opacity 0.3s;
 }
 
-.compare-directory:hover { opacity: 1; }
+@media (hover: hover) {
+  .compare-directory:hover { opacity: 1; }
+}
+@media (hover: none) {
+  .compare-directory { opacity: 1; }
+}
 
 .directory-heading {
   font-family: var(--font-body, 'Inter', system-ui, sans-serif);
@@ -2637,7 +2644,7 @@ body {
 
 .directory-links a {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 6px 12px;
   font-family: var(--font-body, 'Inter', system-ui, sans-serif);
   font-size: 13px;
   font-weight: 400;
@@ -2652,4 +2659,16 @@ body {
 .directory-links a:hover {
   color: var(--text-primary, #f0f0f5);
   border-color: var(--accent, #a78bfa);
+}
+
+.directory-links a:focus-visible {
+  outline: 2px solid var(--accent, #a78bfa);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .directory-links a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
 }

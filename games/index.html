@@ -99,6 +99,7 @@
     }
 
     .nav-link:hover { color: var(--text); }
+    .nav-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     .nav-link.active { color: var(--text); font-weight: 600; }
 
     /* HERO */
@@ -348,6 +349,7 @@
     }
 
     .btn:hover { background: var(--accent-hover); }
+    .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     /* FOOTER */
     footer {
@@ -383,19 +385,22 @@
     }
 
     .footer-link:hover { color: var(--text); }
+    .footer-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     /* RESPONSIVE */
-    @media (max-width: 700px) {
+    @media (max-width: 600px) {
       .hero { padding: 64px 1.25rem 60px; }
       .products { padding: 0 1.25rem 80px; }
       nav { padding: 0 1.25rem; }
+      .nav-links { gap: 16px; }
+      .nav-link { font-size: 0.8rem; padding: 8px 0; }
       .stat-divider { display: none; }
       .hero-stats { gap: 20px; }
       .product-card { grid-template-columns: 1fr; }
       .product-cover { min-height: 180px; max-height: 200px; }
       .product-body { padding: 20px; }
       .product-footer { flex-direction: column; align-items: flex-start; gap: 16px; }
-      .footer-inner { justify-content: center; text-align: center; }
+      .footer-inner { flex-direction: column; align-items: center; text-align: center; }
     }
   </style>
 </head>
@@ -404,8 +409,9 @@
   <nav>
     <a href="/" class="nav-logo">piv<span>ode</span></a>
     <div class="nav-links">
-      <a href="/" class="nav-link">Datasets</a>
+      <a href="/born-in/" class="nav-link">Born in...&#10022;</a>
       <a href="/games/" class="nav-link active">Game Codebases</a>
+      <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="nav-link">All datasets &rarr;</a>
     </div>
   </nav>
 
@@ -527,7 +533,9 @@
   <footer>
     <div class="footer-inner">
       <a href="/" class="footer-logo">piv<span>ode</span></a>
+      <span class="footer-text">Clean data, no fuss.</span>
       <a href="/" class="footer-link">Browse datasets &rarr;</a>
+      <a href="/privacy.html" class="footer-link">Privacy</a>
     </div>
   </footer>
 

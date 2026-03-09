@@ -187,6 +187,7 @@
     }
 
     .nav-link:hover { color: var(--text); }
+    .nav-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     /* HERO */
     .hero {
@@ -283,7 +284,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
       gap: 20px;
     }
 
@@ -297,9 +298,11 @@
       flex-direction: column;
     }
 
-    .card:hover {
-      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
+    @media (hover: hover) {
+      .card:hover {
+        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+      }
     }
 
     .card-cover {
@@ -441,6 +444,7 @@
     }
 
     .btn:hover { background: var(--accent-hover); }
+    .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     .btn-arrow {
       font-size: 1rem;
@@ -498,6 +502,7 @@
     }
 
     .footer-link:hover { color: var(--text); }
+    .footer-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     .footer-secondary {
       max-width: 1100px;
@@ -544,6 +549,7 @@
       border-color: var(--accent);
       background: var(--accent-light);
     }
+    .pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
     .pill--muted { color: var(--muted); }
 
@@ -552,10 +558,13 @@
       .hero { padding: 64px 1.25rem 60px; }
       .datasets { padding: 0 1.25rem 80px; }
       nav { padding: 0 1.25rem; }
+      .nav-links { gap: 16px; }
+      .nav-link { font-size: 0.8rem; padding: 8px 0; }
       .stat-divider { display: none; }
       .hero-stats { gap: 20px; }
-      .footer-inner { justify-content: center; text-align: center; }
-      .pill { padding: 8px 14px; }
+      .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+      .footer-secondary { text-align: center; }
+      .pill { padding: 10px 16px; }
     }
   </style>
 </head>
@@ -570,6 +579,7 @@
     </div>
   </nav>
 
+  <main>
   <section class="hero">
     <div class="hero-badge">Ready to download</div>
     <h1>High quality datasets for analysts, researchers, and builders</h1>
@@ -795,13 +805,14 @@
       <a href="https://runpod.io?ref=f5ifklhp" target="_blank" rel="noopener" class="btn" style="flex-shrink: 0;">Try RunPod <span class="btn-arrow">&rarr;</span></a>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-inner">
       <a href="/" class="footer-logo">piv<span>ode</span></a>
       <span class="footer-text">Clean data, no fuss.</span>
       <a href="https://seangularity.gumroad.com" target="_blank" rel="noopener" class="footer-link">seangularity.gumroad.com</a>
-      <a href="/privacy.html" class="footer-link" style="margin-left: 16px;">Privacy</a>
+      <a href="/privacy.html" class="footer-link">Privacy</a>
     </div>
     <div class="footer-secondary">
       <span class="footer-secondary-text">Building a game? Browse our <a href="/games/" class="footer-secondary-link">production-ready game codebases &rarr;</a></span>

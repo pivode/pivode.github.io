@@ -1269,7 +1269,7 @@ function dualTimeline({ eyebrow, headline, parentYear, childYear, parentEvents, 
 // ---------------------------------------------------------------------------
 
 async function loadBothYears(parentYear, childYear) {
-  const [p, c] = await Promise.all([
+  const results = await Promise.allSettled([
     fetch('../data/' + parentYear + '.json').then(r => {
       if (!r.ok) throw new Error('No data for ' + parentYear);
       return r.json();
@@ -1279,7 +1279,9 @@ async function loadBothYears(parentYear, childYear) {
       return r.json();
     }),
   ]);
-  return { parentData: p, childData: c };
+  if (results[0].status === 'rejected') throw new Error(results[0].reason.message);
+  if (results[1].status === 'rejected') throw new Error(results[1].reason.message);
+  return { parentData: results[0].value, childData: results[1].value };
 }
 
 // ---------------------------------------------------------------------------
@@ -2437,7 +2439,7 @@ function showResult(parentYear, childYear, parentCountryCode, childCountryCode, 
 
   const parentCountry = COUNTRY_MAP[parentCountryCode] || COUNTRIES[0];
   const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
-  $headerLabel.textContent = parentYear + ' vs ' + childYear;
+  $headerLabel.innerHTML = '<span class="cmp-header-parent">' + escHtml(String(parentYear)) + '</span> vs <span class="cmp-header-child">' + escHtml(String(childYear)) + '</span>';
 
   if (parentCountryCode === childCountryCode) {
     $headerCountries.innerHTML = parentCountry.flag + ' <span class="country-name">' + escHtml(parentCountry.name) + '</span>';

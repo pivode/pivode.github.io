@@ -58,16 +58,19 @@
     tweetBtn.addEventListener('click', function () {
       var link = document.querySelector('link[rel="canonical"]');
       var url = link ? link.href : window.location.href;
-      var text = encodeURIComponent(document.title + '\n' + url);
-      window.open('https://twitter.com/intent/tweet?text=' + text, '_blank', 'width=550,height=420');
+      var title = encodeURIComponent(document.title);
+      var urlParam = encodeURIComponent(url);
+      window.open('https://x.com/intent/tweet?text=' + title + '&url=' + urlParam, '_blank', 'width=550,height=420');
       popover.classList.add('hidden');
     });
   }
 
+  var toastTimer;
   function showToast(msg) {
     if (!toast) return;
+    clearTimeout(toastTimer);
     toast.textContent = msg;
     toast.classList.add('visible');
-    setTimeout(function () { toast.classList.remove('visible'); }, 2000);
+    toastTimer = setTimeout(function () { toast.classList.remove('visible'); }, 2000);
   }
 })();

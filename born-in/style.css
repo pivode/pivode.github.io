@@ -506,12 +506,17 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .header-year {
   font-family: var(--font-mono);
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--accent);
   letter-spacing: -0.02em;
 }
@@ -533,6 +538,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
+  flex-shrink: 0;
 }
 
 .header-btn {
@@ -770,6 +776,8 @@ body {
   letter-spacing: -0.02em;
   display: block;
   margin-bottom: 8px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .two-up-desc {
@@ -1787,14 +1795,19 @@ body.era-00s {
 /* ── Year Directory (SEO hub) ── */
 
 .year-directory {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 48px 24px 64px;
-  opacity: 0.65;
+  opacity: 0.8;
   transition: opacity 0.3s;
 }
 
-.year-directory:hover { opacity: 1; }
+@media (hover: hover) {
+  .year-directory:hover { opacity: 1; }
+}
+@media (hover: none) {
+  .year-directory { opacity: 1; }
+}
 
 .directory-heading {
   font-family: var(--font-body);
@@ -1827,7 +1840,7 @@ body.era-00s {
 
 .directory-links a {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 6px 12px;
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 400;
@@ -1842,4 +1855,16 @@ body.era-00s {
 .directory-links a:hover {
   color: var(--text-primary);
   border-color: var(--accent);
+}
+
+.directory-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .directory-links a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
 }
