@@ -73,4 +73,16 @@
     toast.classList.add('visible');
     toastTimer = setTimeout(function () { toast.classList.remove('visible'); }, 2000);
   }
+
+  // --- Country bar "more" toggle ---
+  var moreBtn = document.getElementById('country-more-btn');
+  var extraPills = document.getElementById('country-extra');
+  if (moreBtn && extraPills) {
+    moreBtn.addEventListener('click', function () {
+      var isHidden = extraPills.classList.toggle('hidden');
+      moreBtn.textContent = isHidden ? moreBtn.dataset.count + ' more' : 'Show less';
+    });
+    // Store count for toggling text
+    moreBtn.dataset.count = moreBtn.textContent.replace(' more', '');
+  }
 })();
