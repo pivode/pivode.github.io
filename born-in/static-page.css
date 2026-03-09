@@ -3,105 +3,88 @@
    Shared by all pre-rendered born-in and compare pages.
    ========================================================= */
 
-/* --- Country selector bar ------------------------------- */
+/* --- "Change country" link in header -------------------- */
 
-.country-bar {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 12px 24px 16px;
+.header-country-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.country-bar-label {
-  font-family: var(--font-body);
-  font-size: 12px;
+.change-country {
+  font-size: 11px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--text-tertiary);
-  display: block;
-  margin-bottom: 8px;
-}
-
-.country-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
-}
-
-.country-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 5px 12px;
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--text-secondary);
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
-  white-space: nowrap;
-}
-
-.country-pill.active {
   color: var(--accent);
-  border-color: var(--accent);
-  background: rgba(var(--accent-rgb, 255,255,255), 0.08);
-  pointer-events: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
 
 @media (hover: hover) {
-  .country-pill:not(.active):hover {
-    color: var(--accent);
-    border-color: var(--accent);
+  .header-country-link:hover .change-country { opacity: 1; }
+}
+
+/* --- Internal links toggle + collapse ------------------- */
+
+.internal-links-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 32px auto 0;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--text-tertiary);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+@media (hover: hover) {
+  .internal-links-toggle:hover {
+    color: var(--text-secondary);
+    border-color: var(--text-tertiary);
   }
 }
 
-.country-pill:focus-visible {
+.internal-links-toggle:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-.country-more-btn {
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  background: transparent;
-  border: 1px dashed var(--border);
-  padding: 5px 14px;
+.directory-chevron {
+  transition: transform 0.2s;
+  flex-shrink: 0;
 }
 
-.country-extra {
-  margin-top: 8px;
+.internal-links-toggle[aria-expanded="true"] .directory-chevron {
+  transform: rotate(180deg);
 }
 
-.country-extra.hidden {
-  display: none;
+.directory-collapsed {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
 }
 
-@media (max-width: 640px) {
-  .country-bar {
-    padding: 10px 16px 14px;
-  }
-  .country-pill {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-  .country-pills {
-    gap: 6px;
-  }
+.directory-collapsed.expanded {
+  max-height: 3000px;
+  opacity: 1;
 }
 
-/* --- Internal links nav ---------------------------------- */
+/* --- Internal links nav (inside collapsed container) ---- */
 
 .internal-links {
   max-width: 860px;
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 24px 24px 48px;
   border-top: 1px solid var(--border);
 }
 
@@ -150,7 +133,7 @@
 
 @media (max-width: 640px) {
   .internal-links {
-    padding: 32px 16px;
+    padding: 20px 16px 32px;
   }
   .internal-links-list a {
     padding: 10px 14px;

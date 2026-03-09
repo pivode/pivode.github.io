@@ -61,29 +61,6 @@
         <p id="typewriter" class="typewriter"></p>
       </div>
 
-      <!-- STEP 1: Country -->
-      <div class="country-step">
-        <label class="step-label">Your country</label>
-        <div class="country-select-wrap">
-          <button type="button" id="country-btn" class="country-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="country-list">
-            <span id="country-display">
-              <span class="flag">🇺🇸</span>
-              <span class="country-name">United States</span>
-            </span>
-            <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div id="country-dropdown" class="country-dropdown hidden">
-            <div class="country-search-wrap">
-              <input type="text" id="country-search" class="country-search" placeholder="Search..." autocomplete="off">
-            </div>
-            <ul id="country-list" class="country-list" role="listbox" aria-label="Select country"></ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- STEP 2: Year + Name + Go -->
       <div class="name-field">
         <label for="name-input" class="sr-only">Your name (optional)</label>
         <input type="text" id="name-input" class="name-input" placeholder="Your name (optional)" maxlength="40" autocomplete="given-name" spellcheck="false">
@@ -103,6 +80,26 @@
           >
           <span id="year-error" class="input-error" role="alert"></span>
         </div>
+        <div class="input-group">
+          <label for="country-btn" class="input-label">Country</label>
+          <div class="country-select-wrap">
+            <button type="button" id="country-btn" class="country-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="country-list">
+              <span id="country-display">
+                <span class="flag">🇺🇸</span>
+                <span class="country-name">United States</span>
+              </span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div id="country-dropdown" class="country-dropdown hidden">
+              <div class="country-search-wrap">
+                <input type="text" id="country-search" class="country-search" placeholder="Search..." autocomplete="off">
+              </div>
+              <ul id="country-list" class="country-list" role="listbox" aria-label="Select country"></ul>
+            </div>
+          </div>
+        </div>
         <button type="submit" id="submit-btn" class="submit-btn" aria-label="Explore">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -112,8 +109,12 @@
       </form>
     </div>
 
-    <!-- YEAR DIRECTORY (SEO: provides crawl entry points to all static year pages) -->
-    <nav id="year-directory" class="year-directory" aria-label="Browse all years">
+    <!-- YEAR DIRECTORY (SEO: crawl entry points, collapsed by default) -->
+    <button id="directory-toggle" class="directory-toggle" aria-expanded="false" aria-controls="year-directory">
+      Browse all years
+      <svg class="directory-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <nav id="year-directory" class="year-directory directory-collapsed" aria-label="Browse all years">
     <h2 class="directory-heading">Browse by Year</h2>
     <div class="directory-decade">
       <h3 class="directory-decade-label">1950s</h3>

@@ -63,55 +63,13 @@
         <p class="cmp-tagline-sub">Enter two birth years to find out. All prices are inflation-adjusted to 2024 dollars.</p>
       </div>
 
-      <!-- STEP 1: Countries -->
-      <div class="cmp-countries-step">
-        <div class="cmp-country-col">
-          <label class="step-label"><span class="gen-pill gen-pill--parent">Their generation</span> Their country</label>
-          <div class="country-select-wrap">
-            <button type="button" id="parent-country-btn" class="country-btn cmp-country-btn--inline" aria-haspopup="listbox" aria-expanded="false" aria-controls="parent-country-list">
-              <span id="parent-country-display">
-                <span class="flag">🇺🇸</span>
-                <span class="country-name">United States</span>
-              </span>
-              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div id="parent-country-dropdown" class="country-dropdown hidden">
-              <div class="country-search-wrap">
-                <input type="text" id="parent-country-search" class="country-search" placeholder="Search..." autocomplete="off">
-              </div>
-              <ul id="parent-country-list" class="country-list" role="listbox" aria-label="Select parent country"></ul>
-            </div>
-          </div>
-        </div>
-        <div class="cmp-country-col">
-          <label class="step-label"><span class="gen-pill gen-pill--child">Your generation</span> Your country</label>
-          <div class="country-select-wrap">
-            <button type="button" id="child-country-btn" class="country-btn cmp-country-btn--inline" aria-haspopup="listbox" aria-expanded="false" aria-controls="child-country-list">
-              <span id="child-country-display">
-                <span class="flag">🇺🇸</span>
-                <span class="country-name">United States</span>
-              </span>
-              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div id="child-country-dropdown" class="country-dropdown hidden">
-              <div class="country-search-wrap">
-                <input type="text" id="child-country-search" class="country-search" placeholder="Search..." autocomplete="off">
-              </div>
-              <ul id="child-country-list" class="country-list" role="listbox" aria-label="Select your country"></ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- STEP 2: Years + Submit -->
       <form id="cmp-form" class="cmp-form" novalidate>
         <div class="cmp-input-block">
           <div class="cmp-input-group cmp-input-group--parent">
-            <label for="parent-year-input" class="input-label cmp-input-label--parent">Parent's birth year</label>
+            <label for="parent-year-input" class="input-label cmp-input-label--parent">
+              <span class="gen-pill gen-pill--parent">Their generation</span>
+              Parent's birth year
+            </label>
             <span class="input-hint">1930 - 2010</span>
             <input
               id="parent-year-input"
@@ -123,9 +81,32 @@
               autocomplete="off"
             >
             <span id="parent-year-error" class="input-error" role="alert"></span>
+            <div class="cmp-inline-country">
+              <label class="input-label cmp-inline-country-label">Their country</label>
+              <div class="country-select-wrap">
+                <button type="button" id="parent-country-btn" class="country-btn cmp-country-btn--inline" aria-haspopup="listbox" aria-expanded="false" aria-controls="parent-country-list">
+                  <span id="parent-country-display">
+                    <span class="flag">🇺🇸</span>
+                    <span class="country-name">United States</span>
+                  </span>
+                  <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div id="parent-country-dropdown" class="country-dropdown hidden">
+                  <div class="country-search-wrap">
+                    <input type="text" id="parent-country-search" class="country-search" placeholder="Search..." autocomplete="off">
+                  </div>
+                  <ul id="parent-country-list" class="country-list" role="listbox" aria-label="Select parent country"></ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="cmp-input-group cmp-input-group--child">
-            <label for="child-year-input" class="input-label cmp-input-label--child">Your birth year</label>
+            <label for="child-year-input" class="input-label cmp-input-label--child">
+              <span class="gen-pill gen-pill--child">Your generation</span>
+              Your birth year
+            </label>
             <span class="input-hint">1930 - 2010</span>
             <input
               id="child-year-input"
@@ -137,6 +118,26 @@
               autocomplete="off"
             >
             <span id="child-year-error" class="input-error" role="alert"></span>
+            <div class="cmp-inline-country">
+              <label class="input-label cmp-inline-country-label">Your country</label>
+              <div class="country-select-wrap">
+                <button type="button" id="child-country-btn" class="country-btn cmp-country-btn--inline" aria-haspopup="listbox" aria-expanded="false" aria-controls="child-country-list">
+                  <span id="child-country-display">
+                    <span class="flag">🇺🇸</span>
+                    <span class="country-name">United States</span>
+                  </span>
+                  <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div id="child-country-dropdown" class="country-dropdown hidden">
+                  <div class="country-search-wrap">
+                    <input type="text" id="child-country-search" class="country-search" placeholder="Search..." autocomplete="off">
+                  </div>
+                  <ul id="child-country-list" class="country-list" role="listbox" aria-label="Select your country"></ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <button type="submit" id="cmp-submit-btn" class="submit-btn cmp-submit-btn" aria-label="Compare">
@@ -153,8 +154,12 @@
 
     </div>
 
-    <!-- COMPARISON DIRECTORY (SEO: crawl entry points to all static compare pages) -->
-    <nav id="compare-directory" class="compare-directory" aria-label="Browse all comparisons">
+    <!-- COMPARISON DIRECTORY (SEO: crawl entry points, collapsed by default) -->
+    <button id="directory-toggle" class="directory-toggle" aria-expanded="false" aria-controls="compare-directory">
+      Browse all comparisons
+      <svg class="directory-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <nav id="compare-directory" class="compare-directory directory-collapsed" aria-label="Browse all comparisons">
     <h2 class="directory-heading">Browse All Comparisons</h2>
 
     <div class="directory-decade">

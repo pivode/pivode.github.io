@@ -2709,4 +2709,15 @@ window.addEventListener('popstate', () => {
 
 setCountryDisplay($parentCountryDisplay, selectedParentCountry);
 setCountryDisplay($childCountryDisplay,  selectedChildCountry);
+
+// Directory toggle
+const $dirToggle = document.getElementById('directory-toggle');
+const $dirNav = document.getElementById('compare-directory');
+if ($dirToggle && $dirNav) {
+  $dirToggle.addEventListener('click', () => {
+    const expanded = $dirNav.classList.toggle('expanded');
+    $dirToggle.setAttribute('aria-expanded', expanded);
+  });
+}
+
 readUrlParams();

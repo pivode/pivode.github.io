@@ -183,69 +183,7 @@ function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-// ─── Country data ────────────────────────────────────────────────────────────
-
-const COUNTRIES = [
-  { code: 'US', name: 'United States', flag: '\u{1F1FA}\u{1F1F8}' },
-  { code: 'GB', name: 'United Kingdom', flag: '\u{1F1EC}\u{1F1E7}' },
-  { code: 'IN', name: 'India', flag: '\u{1F1EE}\u{1F1F3}' },
-  { code: 'DE', name: 'Germany', flag: '\u{1F1E9}\u{1F1EA}' },
-  { code: 'JP', name: 'Japan', flag: '\u{1F1EF}\u{1F1F5}' },
-  { code: 'FR', name: 'France', flag: '\u{1F1EB}\u{1F1F7}' },
-  { code: 'BR', name: 'Brazil', flag: '\u{1F1E7}\u{1F1F7}' },
-  { code: 'AU', name: 'Australia', flag: '\u{1F1E6}\u{1F1FA}' },
-  { code: 'CA', name: 'Canada', flag: '\u{1F1E8}\u{1F1E6}' },
-  { code: 'CN', name: 'China', flag: '\u{1F1E8}\u{1F1F3}' },
-  { code: 'KR', name: 'South Korea', flag: '\u{1F1F0}\u{1F1F7}' },
-  { code: 'MX', name: 'Mexico', flag: '\u{1F1F2}\u{1F1FD}' },
-  { code: 'IT', name: 'Italy', flag: '\u{1F1EE}\u{1F1F9}' },
-  { code: 'ES', name: 'Spain', flag: '\u{1F1EA}\u{1F1F8}' },
-  { code: 'NL', name: 'Netherlands', flag: '\u{1F1F3}\u{1F1F1}' },
-  { code: 'RU', name: 'Russia', flag: '\u{1F1F7}\u{1F1FA}' },
-  { code: 'IE', name: 'Ireland', flag: '\u{1F1EE}\u{1F1EA}' },
-  { code: 'ID', name: 'Indonesia', flag: '\u{1F1EE}\u{1F1E9}' },
-  { code: 'TR', name: 'Turkey', flag: '\u{1F1F9}\u{1F1F7}' },
-  { code: 'NG', name: 'Nigeria', flag: '\u{1F1F3}\u{1F1EC}' },
-  { code: 'ZA', name: 'South Africa', flag: '\u{1F1FF}\u{1F1E6}' },
-  { code: 'AR', name: 'Argentina', flag: '\u{1F1E6}\u{1F1F7}' },
-  { code: 'PH', name: 'Philippines', flag: '\u{1F1F5}\u{1F1ED}' },
-  { code: 'EG', name: 'Egypt', flag: '\u{1F1EA}\u{1F1EC}' },
-  { code: 'PK', name: 'Pakistan', flag: '\u{1F1F5}\u{1F1F0}' },
-  { code: 'BD', name: 'Bangladesh', flag: '\u{1F1E7}\u{1F1E9}' },
-  { code: 'PL', name: 'Poland', flag: '\u{1F1F5}\u{1F1F1}' },
-  { code: 'SE', name: 'Sweden', flag: '\u{1F1F8}\u{1F1EA}' },
-  { code: 'TH', name: 'Thailand', flag: '\u{1F1F9}\u{1F1ED}' },
-  { code: 'VN', name: 'Vietnam', flag: '\u{1F1FB}\u{1F1F3}' },
-  { code: 'CO', name: 'Colombia', flag: '\u{1F1E8}\u{1F1F4}' },
-  { code: 'KE', name: 'Kenya', flag: '\u{1F1F0}\u{1F1EA}' },
-  { code: 'SA', name: 'Saudi Arabia', flag: '\u{1F1F8}\u{1F1E6}' },
-  { code: 'IL', name: 'Israel', flag: '\u{1F1EE}\u{1F1F1}' },
-  { code: 'PT', name: 'Portugal', flag: '\u{1F1F5}\u{1F1F9}' },
-  { code: 'CL', name: 'Chile', flag: '\u{1F1E8}\u{1F1F1}' },
-  { code: 'MY', name: 'Malaysia', flag: '\u{1F1F2}\u{1F1FE}' },
-  { code: 'UA', name: 'Ukraine', flag: '\u{1F1FA}\u{1F1E6}' },
-  { code: 'GH', name: 'Ghana', flag: '\u{1F1EC}\u{1F1ED}' },
-  { code: 'PE', name: 'Peru', flag: '\u{1F1F5}\u{1F1EA}' },
-];
-
-const TOP_COUNTRIES = ['US', 'GB', 'IN', 'DE', 'JP', 'FR', 'BR', 'AU', 'CA'];
-
-function countryBarHTML(year) {
-  const top = COUNTRIES.filter(c => TOP_COUNTRIES.includes(c.code));
-  const rest = COUNTRIES.filter(c => !TOP_COUNTRIES.includes(c.code));
-
-  return `
-    <div class="country-bar" data-year="${year}">
-      <span class="country-bar-label">View for</span>
-      <div class="country-pills">
-        ${top.map(c => `<a href="${c.code === 'US' ? '#' : `/born-in/?year=${year}&country=${c.code}`}" class="country-pill${c.code === 'US' ? ' active' : ''}" data-code="${c.code}" title="${c.name}">${c.flag} ${c.name}</a>`).join('\n        ')}
-        <button class="country-pill country-more-btn" id="country-more-btn">${rest.length} more</button>
-      </div>
-      <div class="country-pills country-extra hidden" id="country-extra">
-        ${rest.map(c => `<a href="/born-in/?year=${year}&country=${c.code}" class="country-pill" data-code="${c.code}" title="${c.name}">${c.flag} ${c.name}</a>`).join('\n        ')}
-      </div>
-    </div>`;
-}
+// (Country data removed - static pages use a subtle "change country" link instead)
 
 // ─── Shared HTML fragments ──────────────────────────────────────────────────
 
@@ -410,7 +348,7 @@ function bornInPageHTML(year, contentHTML, yearData, allYears, comparePairs) {
       <div class="header-left">
         <span class="header-year">${year}</span>
         <span class="header-sep">&middot;</span>
-        <span class="header-country">🇺🇸 United States</span>
+        <a href="/born-in/?year=${year}" class="header-country header-country-link">🇺🇸 United States <span class="change-country">Change</span></a>
       </div>
       <div class="header-right">
         <button id="share-btn" class="header-btn" aria-label="Share" aria-expanded="false">
@@ -425,13 +363,17 @@ function bornInPageHTML(year, contentHTML, yearData, allYears, comparePairs) {
       ${sharePopoverHTML()}
     </header>
 
-    ${countryBarHTML(year)}
-
     <div id="info-content" class="info-content">
 ${contentHTML}
     </div>
 
+    <button class="directory-toggle internal-links-toggle" id="links-toggle" aria-expanded="false" aria-controls="internal-links">
+      More years &amp; comparisons
+      <svg class="directory-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div id="internal-links" class="directory-collapsed">
     ${internalLinks}
+    </div>
 
     ${exploreCardsHTML('born-in')}
 
@@ -552,7 +494,7 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
       <div class="header-left">
         <span class="cmp-header-label">${parentYear} vs ${childYear}</span>
         <span class="header-sep">&middot;</span>
-        <span class="header-country">🇺🇸 United States</span>
+        <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}" class="header-country header-country-link">🇺🇸 United States <span class="change-country">Change</span></a>
       </div>
       <div class="header-right">
         <button id="share-btn" class="header-btn" aria-label="Share" aria-expanded="false">
@@ -571,7 +513,13 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
 ${contentHTML}
     </div>
 
+    <button class="directory-toggle internal-links-toggle" id="links-toggle" aria-expanded="false" aria-controls="internal-links">
+      More comparisons &amp; years
+      <svg class="directory-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div id="internal-links" class="directory-collapsed">
     ${internalLinks}
+    </div>
 
     ${exploreCardsHTML('compare')}
 

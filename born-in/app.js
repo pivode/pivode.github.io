@@ -4828,6 +4828,16 @@ function formatCountValue(n, decimals, abbrev) {
 // INIT
 // ---------------------------------------------------------------------------
 
+// Directory toggle
+const $dirToggle = document.getElementById('directory-toggle');
+const $dirNav = document.getElementById('year-directory');
+if ($dirToggle && $dirNav) {
+  $dirToggle.addEventListener('click', () => {
+    const expanded = $dirNav.classList.toggle('expanded');
+    $dirToggle.setAttribute('aria-expanded', expanded);
+  });
+}
+
 function init() {
   renderCountryList();
   initNameField();

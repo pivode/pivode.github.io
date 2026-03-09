@@ -74,15 +74,13 @@
     toastTimer = setTimeout(function () { toast.classList.remove('visible'); }, 2000);
   }
 
-  // --- Country bar "more" toggle ---
-  var moreBtn = document.getElementById('country-more-btn');
-  var extraPills = document.getElementById('country-extra');
-  if (moreBtn && extraPills) {
-    moreBtn.addEventListener('click', function () {
-      var isHidden = extraPills.classList.toggle('hidden');
-      moreBtn.textContent = isHidden ? moreBtn.dataset.count + ' more' : 'Show less';
+  // --- Internal links toggle ---
+  var linksToggle = document.getElementById('links-toggle');
+  var linksPanel = document.getElementById('internal-links');
+  if (linksToggle && linksPanel) {
+    linksToggle.addEventListener('click', function () {
+      var expanded = linksPanel.classList.toggle('expanded');
+      linksToggle.setAttribute('aria-expanded', expanded);
     });
-    // Store count for toggling text
-    moreBtn.dataset.count = moreBtn.textContent.replace(' more', '');
   }
 })();

@@ -106,22 +106,6 @@ body {
   opacity: 0;
 }
 
-/* COUNTRY STEP (standalone above form) */
-.country-step {
-  width: 100%;
-  max-width: 400px;
-}
-
-.step-label {
-  display: block;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
-  margin-bottom: 8px;
-}
-
 /* NAME FIELD */
 .name-field {
 }
@@ -1808,21 +1792,64 @@ body.era-00s {
   color: var(--sc-accent, #a78bfa);
 }
 
+/* ── Directory toggle + collapse ── */
+
+.directory-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 32px auto 0;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--text-tertiary);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+@media (hover: hover) {
+  .directory-toggle:hover {
+    color: var(--text-secondary);
+    border-color: var(--text-tertiary);
+  }
+}
+
+.directory-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.directory-chevron {
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.directory-toggle[aria-expanded="true"] .directory-chevron {
+  transform: rotate(180deg);
+}
+
+.directory-collapsed {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+.directory-collapsed.expanded {
+  max-height: 5000px;
+  opacity: 1;
+}
+
 /* ── Year Directory (SEO hub) ── */
 
 .year-directory {
   max-width: 640px;
   margin: 0 auto;
   padding: 48px 24px 64px;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-@media (hover: hover) {
-  .year-directory:hover { opacity: 1; }
-}
-@media (hover: none) {
-  .year-directory { opacity: 1; }
 }
 
 .directory-heading {
