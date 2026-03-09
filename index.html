@@ -526,6 +526,27 @@
       gap: 24px;
     }
 
+    /* YEAR PILLS */
+    .pill {
+      display: inline-block;
+      padding: 6px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .pill:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .pill--muted { color: var(--muted); }
+
     /* RESPONSIVE */
     @media (max-width: 600px) {
       .hero { padding: 64px 1.25rem 60px; }
@@ -534,6 +555,7 @@
       .stat-divider { display: none; }
       .hero-stats { gap: 20px; }
       .footer-inner { justify-content: center; text-align: center; }
+      .pill { padding: 8px 14px; }
     }
   </style>
 </head>
@@ -751,17 +773,17 @@
     <div style="margin-top: 48px;">
       <div class="section-label">Popular years</div>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
-        <a href="/born-in/1960/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1960</a>
-        <a href="/born-in/1970/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1970</a>
-        <a href="/born-in/1975/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1975</a>
-        <a href="/born-in/1980/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1980</a>
-        <a href="/born-in/1985/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1985</a>
-        <a href="/born-in/1990/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1990</a>
-        <a href="/born-in/1995/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1995</a>
-        <a href="/born-in/2000/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">2000</a>
-        <a href="/born-in/compare/1960-vs-1990/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--muted); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1960 vs 1990</a>
-        <a href="/born-in/compare/1950-vs-2000/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--muted); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1950 vs 2000</a>
-        <a href="/born-in/compare/1980-vs-2010/" style="padding: 6px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--muted); font-size: 0.875rem; font-weight: 500; transition: border-color 0.15s;">1980 vs 2010</a>
+        <a href="/born-in/1960/" class="pill">1960</a>
+        <a href="/born-in/1970/" class="pill">1970</a>
+        <a href="/born-in/1975/" class="pill">1975</a>
+        <a href="/born-in/1980/" class="pill">1980</a>
+        <a href="/born-in/1985/" class="pill">1985</a>
+        <a href="/born-in/1990/" class="pill">1990</a>
+        <a href="/born-in/1995/" class="pill">1995</a>
+        <a href="/born-in/2000/" class="pill">2000</a>
+        <a href="/born-in/compare/1960-vs-1990/" class="pill pill--muted">1960 vs 1990</a>
+        <a href="/born-in/compare/1950-vs-2000/" class="pill pill--muted">1950 vs 2000</a>
+        <a href="/born-in/compare/1980-vs-2010/" class="pill pill--muted">1980 vs 2010</a>
       </div>
     </div>
 
