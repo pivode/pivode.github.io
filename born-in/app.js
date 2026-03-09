@@ -3199,11 +3199,27 @@ $countrySearch.addEventListener('input', () => {
   renderCountryList($countrySearch.value);
 });
 
+function updateDirectoryLinks() {
+  const dir = document.getElementById('year-directory');
+  if (!dir) return;
+  dir.querySelectorAll('.directory-links a').forEach(a => {
+    const text = a.textContent.trim();
+    // Year links (4-digit numbers)
+    const m = text.match(/^(\d{4})$/);
+    if (m) {
+      a.href = selectedCountry.code === 'US'
+        ? `/born-in/${m[1]}/`
+        : `/born-in/?year=${m[1]}&country=${selectedCountry.code}`;
+    }
+  });
+}
+
 $countryList.addEventListener('click', (e) => {
   const option = e.target.closest('[data-code]');
   if (!option) return;
   selectedCountry = COUNTRY_MAP[option.dataset.code];
   updateCountryDisplay();
+  updateDirectoryLinks();
   closeDropdown();
   $yearInput.focus();
 });
