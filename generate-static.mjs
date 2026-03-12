@@ -235,10 +235,10 @@ function exploreCardsHTML(variant) {
       </span>
       <span class="explore-card-arrow">&rarr;</span>
     </a>
-    <a href="https://pivode.github.io" class="explore-card" target="_blank" rel="noopener">
+    <a href="/" class="explore-card">
       <span class="explore-card-icon">📊</span>
       <span class="explore-card-text">
-        <span class="explore-card-title">More from Pivode</span>
+        <span class="explore-card-title">Browse Datasets</span>
         <span class="explore-card-sub">Interactive experiences and datasets built from real-world data</span>
       </span>
       <span class="explore-card-arrow">&rarr;</span>
@@ -466,7 +466,7 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../compare.css">
-  <link rel="stylesheet" href="../static-page.css">
+  <link rel="stylesheet" href="../../static-page.css">
   <script data-goatcounter="https://pivode.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
   <script type="application/ld+json">
@@ -533,7 +533,7 @@ ${contentHTML}
   </section>
 
   <div id="copy-toast" class="copy-toast" aria-live="polite"></div>
-  <script src="../static-page.js" defer></script>
+  <script src="../../static-page.js" defer></script>
 </body>
 </html>`;
 }
