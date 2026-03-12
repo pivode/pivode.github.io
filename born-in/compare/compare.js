@@ -1200,14 +1200,15 @@ function textTimelineCard({ eyebrow, headline, parentYear, childYear, parentText
 }
 
 function localMusicSelection(year, countryCode, data) {
-  if (!countryCode || !data) return null;
+  if (!data) return null;
 
-  const localData = LOCAL_MUSIC[countryCode];
+  const localData = countryCode ? LOCAL_MUSIC[countryCode] : null;
   const music = data.culture?.music;
 
   if (localData && localData[year]) {
     return {
       label: LOCAL_MUSIC_LABEL[countryCode] || 'Local Chart #1',
+      rowLabel: '#1 Song',
       title: localData[year].s,
       detail: localData[year].a || '',
     };
@@ -1216,6 +1217,7 @@ function localMusicSelection(year, countryCode, data) {
   if (countryCode === 'GB' && (music?.uk_no1_jan || music?.billboard_no1_song)) {
     return {
       label: 'UK Chart #1',
+      rowLabel: 'UK #1 Song',
       title: music?.uk_no1_jan || music?.billboard_no1_song,
       detail: music?.uk_no1_jan_artist || music?.billboard_no1_artist || '',
     };
@@ -1224,8 +1226,30 @@ function localMusicSelection(year, countryCode, data) {
   if (countryCode === 'US' && (music?.billboard_no1_song || music?.uk_no1_jan)) {
     return {
       label: 'Billboard #1 Song',
+      rowLabel: 'Billboard #1',
       title: music?.billboard_no1_song || music?.uk_no1_jan,
       detail: music?.billboard_no1_artist || music?.uk_no1_jan_artist || '',
+    };
+  }
+
+  if (music?.uk_no1_jan || music?.billboard_no1_song) {
+    const useUk = Boolean(music?.uk_no1_jan) && countryCode !== 'US';
+    return {
+      label: useUk ? 'Chart-Topping Song' : 'Global Hit',
+      rowLabel: 'Hit Song',
+      title: useUk ? music.uk_no1_jan : music.billboard_no1_song || music.uk_no1_jan,
+      detail: useUk
+        ? (music.uk_no1_jan_artist || music.billboard_no1_artist || '')
+        : (music.billboard_no1_artist || music.uk_no1_jan_artist || ''),
+    };
+  }
+
+  if (music?.grammy_record) {
+    return {
+      label: 'Award-Winning Song',
+      rowLabel: 'Hit Song',
+      title: music.grammy_record,
+      detail: music.grammy_record_artist || '',
     };
   }
 
@@ -1233,14 +1257,15 @@ function localMusicSelection(year, countryCode, data) {
 }
 
 function localFilmSelection(year, countryCode, data) {
-  if (!countryCode || !data) return null;
+  if (!data) return null;
 
-  const localData = LOCAL_FILM[countryCode];
+  const localData = countryCode ? LOCAL_FILM[countryCode] : null;
   const film = data.culture?.film;
 
   if (localData && localData[year]) {
     return {
       label: LOCAL_FILM_LABEL[countryCode] || 'Local Film',
+      rowLabel: 'Biggest Film',
       title: localData[year].t,
       detail: localData[year].d ? 'dir. ' + localData[year].d : '',
     };
@@ -1249,8 +1274,18 @@ function localFilmSelection(year, countryCode, data) {
   if (countryCode === 'US' && (film?.box_office_no1 || film?.oscar_best_picture)) {
     return {
       label: film?.box_office_no1 ? 'Box Office #1' : 'Oscar Best Picture',
+      rowLabel: film?.box_office_no1 ? 'Box Office #1' : 'Best Picture',
       title: film?.box_office_no1 || film?.oscar_best_picture,
-      detail: film?.oscar_best_director_name ? 'dir. ' + film.oscar_best_director_name : '',
+      detail: '',
+    };
+  }
+
+  if (film?.box_office_no1 || film?.oscar_best_picture) {
+    return {
+      label: film?.box_office_no1 ? 'Global Blockbuster' : 'Award-Winning Film',
+      rowLabel: 'Biggest Film',
+      title: film?.box_office_no1 || film?.oscar_best_picture,
+      detail: '',
     };
   }
 
@@ -2347,50 +2382,6 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     }));
   }
 
-  const co2P = CO2_PPM[parentYear];
-  const co2C = CO2_PPM[childYear];
-  if (co2P && co2C) {
-    sections.push(compareCard({
-      eyebrow: 'Atmosphere',
-      headline: 'CO\u2082 in the air each generation first breathed',
-      parent: {
-        label: String(parentYear),
-        value: co2P + ' ppm',
-        desc: '+' + (CO2_TODAY - co2P).toFixed(1) + ' ppm to today',
-      },
-      child: {
-        label: String(childYear),
-        value: co2C + ' ppm',
-        desc: '+' + (CO2_TODAY - co2C).toFixed(1) + ' ppm to today',
-      },
-      delta: {
-        text: signedRaw(co2C - co2P, 1) + ' ppm between the two birth years',
-        type: 'negative',
-      },
-      commentary: 'Both sides use annual atmospheric CO\u2082 concentrations. This is one of the few numbers that only keeps rising.',
-    }));
-  }
-
-  const exoP = EXOPLANETS_BY_YEAR[parentYear];
-  const exoC = EXOPLANETS_BY_YEAR[childYear];
-  if (exoP != null && exoC != null) {
-    sections.push(compareCard({
-      eyebrow: 'The Universe',
-      headline: 'Worlds we had confirmed beyond our solar system',
-      parent: {
-        label: String(parentYear),
-        value: exoP > 0 ? String(exoP) : 'None',
-        desc: exoP > 0 ? 'confirmed exoplanets by then' : 'humanity had no confirmed exoplanets yet',
-      },
-      child: {
-        label: String(childYear),
-        value: exoC > 0 ? String(exoC) : 'None',
-        desc: exoC > 0 ? 'confirmed exoplanets by then' : 'humanity still had no confirmed exoplanets yet',
-      },
-      commentary: 'Today we know about ' + EXOPLANETS_TODAY.toLocaleString() + '+. The universe looks radically bigger now than it did at either birth year.',
-    }));
-  }
-
   const socialP = summarizeSocialTimeline(parentYear);
   const socialC = summarizeSocialTimeline(childYear);
   if (socialP && socialC) {
@@ -2534,8 +2525,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
     const gasRaw   = data.prices_us?.gallon_gas_usd;
     const gasFinal = (effectiveCountryCode === 'US' && gasRaw) ? ('$' + (gasRaw * cpiYear).toFixed(2)) : null;
 
-    const musicSelection = effectiveCountryCode ? localMusicSelection(year, effectiveCountryCode, data) : null;
-    const filmSelection = effectiveCountryCode ? localFilmSelection(year, effectiveCountryCode, data) : null;
+    const musicSelection = localMusicSelection(year, effectiveCountryCode, data);
+    const filmSelection = localFilmSelection(year, effectiveCountryCode, data);
     const countryEvent = effectiveCountryCode ? (COUNTRY_EVENTS[effectiveCountryCode]?.[year] || null) : null;
     const countrySnapshot = effectiveCountryCode && !countryEvent
       ? countrySnapshotLine(effectiveCountryCode, year, countryD)
@@ -2568,8 +2559,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
       : null;
 
     const rows = [
-      row('\uD83C\uDFB5', '#1 Song',      songDisplay),
-      row('\uD83C\uDFAC', 'Biggest Film', movieDisplay),
+      row('\uD83C\uDFB5', musicSelection?.rowLabel || '#1 Song', songDisplay),
+      row('\uD83C\uDFAC', filmSelection?.rowLabel || 'Biggest Film', movieDisplay),
       row('\uD83D\uDCFA', 'Top TV Show',  tvShow),
       row('\uD83C\uDFF3\uFE0F', 'Country Event', countryEvent),
       row('\uD83D\uDCCD', 'Country Context', countrySnapshot),

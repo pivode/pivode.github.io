@@ -494,14 +494,14 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
       <div class="header-left">
         <span class="cmp-header-label">${parentYear} vs ${childYear}</span>
         <span class="header-sep">&middot;</span>
-        <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}" class="header-country header-country-link">🌍 Global context <span class="change-country">Choose countries</span></a>
+        <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}&amp;pcountry=US&amp;ccountry=US" class="header-country header-country-link">🇺🇸 United States <span class="change-country">Change</span></a>
       </div>
       <div class="header-right">
         <button id="share-btn" class="header-btn" aria-label="Share" aria-expanded="false">
           ${SHARE_SVG}
           <span>Share</span>
         </button>
-        <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}" class="header-btn">
+        <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}&amp;pcountry=US&amp;ccountry=US" class="header-btn">
           ${INTERACTIVE_SVG}
           <span>Interactive version</span>
         </a>
@@ -524,7 +524,7 @@ ${contentHTML}
     ${exploreCardsHTML('compare')}
 
     <div class="explore-more" style="text-align:center">
-      <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}" class="bottom-cta" style="display:inline-block;text-decoration:none">Choose countries for this comparison</a>
+      <a href="/born-in/compare/?parent=${parentYear}&amp;child=${childYear}&amp;pcountry=US&amp;ccountry=US" class="bottom-cta" style="display:inline-block;text-decoration:none">Customize this comparison</a>
     </div>
 
     ${adUnitHTML()}
@@ -639,7 +639,7 @@ async function extractBornInPage(browser, year) {
 async function extractComparePage(browser, parentYear, childYear) {
   const page = await browser.newPage();
   try {
-    const url = `${BASE}/born-in/compare/?parent=${parentYear}&child=${childYear}`;
+    const url = `${BASE}/born-in/compare/?parent=${parentYear}&child=${childYear}&pcountry=US&ccountry=US`;
     await page.goto(url, { waitUntil: 'domcontentloaded' });
 
     // Wait for compare content
