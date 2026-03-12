@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2357143123208840" crossorigin="anonymous"></script>
-  <title>Pivode - High Quality Datasets for Analysts & Researchers</title>
-  <meta name="description" content="Clean, ready-to-use CSV datasets for analysts - roller coasters, flight delays, European football, Michelin restaurants, and more. Free to $3.99.">
+  <title>Pivode - The World When You Were Born & Clean Datasets</title>
+  <meta name="description" content="See what life looked like the year you were born - prices, culture, leaders, and more. Plus clean CSV datasets for analysts. Free to $3.99.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pivode.github.io/">
-  <meta property="og:title" content="Pivode - High Quality Datasets for Analysts & Researchers">
-  <meta property="og:description" content="Clean, ready-to-use CSV datasets for analysts - roller coasters, flight delays, European football, Michelin restaurants, and more. Free to $3.99.">
-  <meta property="og:image" content="https://pivode.github.io/images/michelin.jpg">
+  <meta property="og:title" content="Pivode - The World When You Were Born & Clean Datasets">
+  <meta property="og:description" content="See what life looked like the year you were born - prices, culture, leaders, and more. Plus clean CSV datasets for analysts.">
+  <meta property="og:image" content="https://pivode.github.io/born-in/og/born-in-og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Pivode - High Quality Datasets for Analysts & Researchers">
-  <meta name="twitter:description" content="Clean, ready-to-use CSV datasets for analysts - roller coasters, flight delays, European football, Michelin restaurants, and more. Free to $3.99.">
-  <meta name="twitter:image" content="https://pivode.github.io/images/michelin.jpg">
+  <meta name="twitter:title" content="Pivode - The World When You Were Born & Clean Datasets">
+  <meta name="twitter:description" content="See what life looked like the year you were born - prices, culture, leaders, and more. Plus clean CSV datasets for analysts.">
+  <meta name="twitter:image" content="https://pivode.github.io/born-in/og/born-in-og.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="canonical" href="https://pivode.github.io/">
   <script data-goatcounter="https://pivode.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -553,6 +553,14 @@
 
     .pill--muted { color: var(--muted); }
 
+    /* FEATURED BLOCK */
+    .featured-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 28px 24px;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 600px) {
       .hero { padding: 64px 1.25rem 60px; }
@@ -581,31 +589,49 @@
 
   <main>
   <section class="hero">
-    <div class="hero-badge">Ready to download</div>
-    <h1>High quality datasets for analysts, researchers, and builders</h1>
+    <h1>Data tools for the curious</h1>
     <p class="hero-sub">
-      Exhaustive, cleaned datasets formatted as CSV - ready to use immediately and push into pandas, R, or Excel.
+      Interactive explorations, generational comparisons, and clean datasets - all free or nearly free.
     </p>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-number">6</div>
-        <div class="stat-label">Datasets</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-number">Clean</div>
-        <div class="stat-label">Download & analyze</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-number">Free</div>
-        <div class="stat-label">Starting price</div>
-      </div>
-    </div>
   </section>
 
   <section class="datasets">
-    <div class="section-label">Available now</div>
+    <div class="section-label">Featured</div>
+    <div class="featured-block">
+      <div class="featured-text">
+        <div class="card-title" style="font-size: 1.15rem; margin-bottom: 8px;">The World When You Were Born</div>
+        <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px;">Pick any year from 1950 to 2010 and see what life looked like - prices, pop culture, world leaders, and more. Or compare two generations side by side.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+          <a href="/born-in/1960/" class="pill">1960</a>
+          <a href="/born-in/1970/" class="pill">1970</a>
+          <a href="/born-in/1975/" class="pill">1975</a>
+          <a href="/born-in/1980/" class="pill">1980</a>
+          <a href="/born-in/1985/" class="pill">1985</a>
+          <a href="/born-in/1990/" class="pill">1990</a>
+          <a href="/born-in/1995/" class="pill">1995</a>
+          <a href="/born-in/2000/" class="pill">2000</a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+          <a href="/born-in/compare/1960-vs-1990/" class="pill pill--muted">1960 vs 1990</a>
+          <a href="/born-in/compare/1950-vs-2000/" class="pill pill--muted">1950 vs 2000</a>
+          <a href="/born-in/compare/1980-vs-2010/" class="pill pill--muted">1980 vs 2010</a>
+          <a href="/born-in/compare/1946-vs-1980/" class="pill pill--muted">Boomers vs Millennials</a>
+        </div>
+        <a href="/born-in/" class="btn" style="display: inline-flex;">Explore all years <span class="btn-arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div style="margin-top: 32px; padding: 20px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div>
+        <div style="font-size: 0.875rem; font-weight: 600; color: var(--text); margin-bottom: 4px;">RunPod - GPU Cloud</div>
+        <div style="font-size: 0.8rem; color: var(--muted);">Affordable GPU cloud for ML and inference. Up to $500 free credits on signup.</div>
+      </div>
+      <a href="https://runpod.io?ref=f5ifklhp" target="_blank" rel="noopener" class="btn" style="flex-shrink: 0;">Try RunPod <span class="btn-arrow">&rarr;</span></a>
+    </div>
+
+    <div style="margin-top: 48px;">
+    <div class="section-label">Datasets</div>
+    </div>
     <div class="grid">
 
       <!-- ROLLER COASTERS -->
@@ -780,31 +806,6 @@
 
     </div>
 
-    <div style="margin-top: 48px;">
-      <div class="section-label">The World When You Were Born</div>
-      <p style="font-size: 0.85rem; color: var(--muted); margin: -8px 0 16px;">See what life looked like any year from 1950 to 2010, or compare two generations side by side.</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
-        <a href="/born-in/1960/" class="pill">1960</a>
-        <a href="/born-in/1970/" class="pill">1970</a>
-        <a href="/born-in/1975/" class="pill">1975</a>
-        <a href="/born-in/1980/" class="pill">1980</a>
-        <a href="/born-in/1985/" class="pill">1985</a>
-        <a href="/born-in/1990/" class="pill">1990</a>
-        <a href="/born-in/1995/" class="pill">1995</a>
-        <a href="/born-in/2000/" class="pill">2000</a>
-        <a href="/born-in/compare/1960-vs-1990/" class="pill pill--muted">1960 vs 1990</a>
-        <a href="/born-in/compare/1950-vs-2000/" class="pill pill--muted">1950 vs 2000</a>
-        <a href="/born-in/compare/1980-vs-2010/" class="pill pill--muted">1980 vs 2010</a>
-      </div>
-    </div>
-
-    <div style="padding: 20px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-      <div>
-        <div style="font-size: 0.875rem; font-weight: 600; color: var(--text); margin-bottom: 4px;">RunPod - GPU Cloud</div>
-        <div style="font-size: 0.8rem; color: var(--muted);">Affordable GPU cloud for ML and inference. Up to $500 free credits on signup.</div>
-      </div>
-      <a href="https://runpod.io?ref=f5ifklhp" target="_blank" rel="noopener" class="btn" style="flex-shrink: 0;">Try RunPod <span class="btn-arrow">&rarr;</span></a>
-    </div>
   </section>
   </main>
 
