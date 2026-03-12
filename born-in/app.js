@@ -4066,15 +4066,18 @@ function renderActV(year, countryCode, data) {
 function temporalShockLine(year) {
   const yearsToToday = CURRENT_YEAR - year;
   let bestAnchor = null;
-  let bestSurplus = -Infinity;
+  let bestDist = -1;
 
   for (const anchor of TEMPORAL_ANCHORS) {
-    const distToAnchor = Math.abs(year - anchor.year);
-    // Only qualify if birth year is closer to anchor than to today
-    if (distToAnchor < yearsToToday) {
-      const surplus = yearsToToday - distToAnchor;
-      if (surplus > bestSurplus) {
-        bestSurplus = surplus;
+    // Only events before the birth year (events after birth aren't surprising)
+    if (anchor.year >= year) continue;
+    const distToAnchor = year - anchor.year;
+    // Must be closer to birth than to today, and at least 10 years before birth
+    // to avoid trivially obvious statements
+    if (distToAnchor < yearsToToday && distToAnchor >= 10) {
+      // Pick the oldest qualifying event for maximum shock value
+      if (distToAnchor > bestDist) {
+        bestDist = distToAnchor;
         bestAnchor = anchor;
       }
     }
