@@ -1232,25 +1232,25 @@ function localMusicSelection(year, countryCode, data) {
     };
   }
 
-  if (music?.uk_no1_jan || music?.billboard_no1_song) {
-    const useUk = Boolean(music?.uk_no1_jan) && countryCode !== 'US';
-    return {
-      label: useUk ? 'Chart-Topping Song' : 'Global Hit',
-      rowLabel: 'Hit Song',
-      title: useUk ? music.uk_no1_jan : music.billboard_no1_song || music.uk_no1_jan,
-      detail: useUk
-        ? (music.uk_no1_jan_artist || music.billboard_no1_artist || '')
-        : (music.billboard_no1_artist || music.uk_no1_jan_artist || ''),
-    };
-  }
-
-  if (music?.grammy_record) {
-    return {
-      label: 'Award-Winning Song',
-      rowLabel: 'Hit Song',
-      title: music.grammy_record,
-      detail: music.grammy_record_artist || '',
-    };
+  // Only fall back to Billboard/UK/Grammy for global context (no country selected).
+  // For non-US/GB countries, Billboard/UK hits are culturally irrelevant.
+  if (!countryCode) {
+    if (music?.billboard_no1_song || music?.uk_no1_jan) {
+      return {
+        label: 'Global Hit',
+        rowLabel: 'Hit Song',
+        title: music.billboard_no1_song || music.uk_no1_jan,
+        detail: music.billboard_no1_artist || music.uk_no1_jan_artist || '',
+      };
+    }
+    if (music?.grammy_record) {
+      return {
+        label: 'Award-Winning Song',
+        rowLabel: 'Hit Song',
+        title: music.grammy_record,
+        detail: music.grammy_record_artist || '',
+      };
+    }
   }
 
   return null;
@@ -1280,13 +1280,17 @@ function localFilmSelection(year, countryCode, data) {
     };
   }
 
-  if (film?.box_office_no1 || film?.oscar_best_picture) {
-    return {
-      label: film?.box_office_no1 ? 'Global Blockbuster' : 'Award-Winning Film',
-      rowLabel: 'Biggest Film',
-      title: film?.box_office_no1 || film?.oscar_best_picture,
-      detail: '',
-    };
+  // Only fall back to Box Office/Oscar for global context (no country selected).
+  // For non-US countries, Hollywood box office is culturally irrelevant.
+  if (!countryCode) {
+    if (film?.box_office_no1 || film?.oscar_best_picture) {
+      return {
+        label: film?.box_office_no1 ? 'Global Blockbuster' : 'Award-Winning Film',
+        rowLabel: 'Biggest Film',
+        title: film?.box_office_no1 || film?.oscar_best_picture,
+        detail: '',
+      };
+    }
   }
 
   return null;
@@ -1849,7 +1853,7 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     const countryEventP = COUNTRY_EVENTS[parentCountryCode]?.[parentYear] || null;
     const countryEventC = COUNTRY_EVENTS[childCountryCode]?.[childYear] || null;
 
-    if (countryEventP || countryEventC) {
+    if (countryEventP && countryEventC) {
       sections.push(textTimelineCard({
         eyebrow: sameCountry
           ? parentCountry.flag + ' ' + countryDisplayP
@@ -1866,15 +1870,15 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     // SECTION 2: COUNTRY LEADERS - each side uses its own country
     // -----------------------------------------------------------------------
 
-    let parentLeaderInfo = LEADER_KEYS[parentCountryCode] || LEADER_KEYS.US;
-    let childLeaderInfo  = LEADER_KEYS[childCountryCode]  || LEADER_KEYS.US;
+    let parentLeaderInfo = LEADER_KEYS[parentCountryCode] || null;
+    let childLeaderInfo  = LEADER_KEYS[childCountryCode]  || null;
 
-    const leaderP = parentData.leaders?.[parentLeaderInfo.key]
-      || parentCountryData.leader
-      || null;
-    const leaderC = childData.leaders?.[childLeaderInfo.key]
-      || childCountryData.leader
-      || null;
+    const leaderP = parentLeaderInfo
+      ? (parentData.leaders?.[parentLeaderInfo.key] || parentCountryData.leader || null)
+      : (parentCountryData.leader || null);
+    const leaderC = childLeaderInfo
+      ? (childData.leaders?.[childLeaderInfo.key] || childCountryData.leader || null)
+      : (childCountryData.leader || null);
 
     const leaderEyebrow = parentCountryCode === childCountryCode
       ? parentCountry.flag + ' ' + countryDisplayP + ' Leadership'
@@ -1887,12 +1891,12 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
         parent: {
           label: String(parentYear),
           value: leaderP,
-          desc: parentLeaderInfo.title + ' of ' + countryDisplayP,
+          desc: (parentLeaderInfo ? parentLeaderInfo.title : 'Leader') + ' of ' + countryDisplayP,
         },
         child: {
           label: String(childYear),
           value: leaderC,
-          desc: childLeaderInfo.title + ' of ' + countryDisplayC,
+          desc: (childLeaderInfo ? childLeaderInfo.title : 'Leader') + ' of ' + countryDisplayC,
         },
       }));
     }
@@ -2518,7 +2522,7 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
     const countryD = effectiveCountryCode ? (data.countries?.[effectiveCountryCode] || {}) : {};
 
     // Leader: check country-level first, then leaders lookup (skip if unknown)
-    const leaderInfo = effectiveCountryCode ? (LEADER_KEYS[effectiveCountryCode] || LEADER_KEYS.US) : null;
+    const leaderInfo = effectiveCountryCode ? (LEADER_KEYS[effectiveCountryCode] || null) : null;
     const leader = leaderInfo ? (data.leaders?.[leaderInfo.key] || countryD.leader || null) : null;
 
     // Gas price inflation-adjusted to 2024 dollars
