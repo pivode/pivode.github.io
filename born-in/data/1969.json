@@ -28,7 +28,7 @@
     "new_car_avg_usd": 3100,
     "median_home_usd": 25600,
     "first_class_stamp_cents": 6,
-    "big_mac_usd": null
+    "big_mac_usd": 0.49
   },
   "culture": {
     "music": {
@@ -62,9 +62,7 @@
         "The Brady Bunch",
         "Monty Python's Flying Circus"
       ],
-      "notable_finales": [
-        "Mission: Impossible (season 3)"
-      ]
+      "notable_finales": []
     },
     "books": {
       "fiction_bestseller": "Portnoy's Complaint",
@@ -97,7 +95,7 @@
       "Apollo 11 lands on the Moon - Neil Armstrong takes the first steps on July 20",
       "ARPANET sends its first message between UCLA and Stanford Research Institute on October 29",
       "UNIX operating system created at Bell Labs by Ken Thompson and Dennis Ritchie",
-      "Boeing 747 'Jumbo Jet' makes its first commercial flight, transforming air travel"
+      "Boeing 747 'Jumbo Jet' makes its maiden flight, paving the way for mass air travel"
     ]
   },
   "world_events": [

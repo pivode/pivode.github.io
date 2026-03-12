@@ -1375,7 +1375,7 @@ function svgLifeExpChart(parentLE, childLE, todayLE, parentYear, childYear, acce
   <rect x="${padL}" y="${y1}" width="${bw1}" height="${barH}" rx="4" fill="${accentChild}" opacity="0.85"/>
   <text x="${padL + bw1 + 8}" y="${y1 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}">${childLE} yrs</text>
 
-  <text x="${padL}" y="${y2 - 8}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" letter-spacing="0.08em">TODAY (2024)</text>
+  <text x="${padL}" y="${y2 - 8}" font-family="Inter,system-ui,sans-serif" font-size="14" fill="${labelColor}" letter-spacing="0.08em">TODAY (${CURRENT_YEAR})</text>
   <rect x="${padL}" y="${y2}" width="${bw2}" height="${barH}" rx="4" fill="${neutralColor}" opacity="0.7"/>
   <text x="${padL + bw2 + 8}" y="${y2 + barH / 2 + 5}" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="600" fill="${textColor}">${todayLE} yrs</text>
 </svg>`;
@@ -1468,7 +1468,7 @@ function svgPopulationChart(parentPop, childPop, todayPop, parentYear, childYear
   const points = [
     { val: parentPop, year: parentYear, label: parentPop.toFixed(1) + 'B' },
     { val: childPop,  year: childYear,  label: childPop.toFixed(1) + 'B' },
-    { val: todayPop,  year: 2024,        label: todayPop.toFixed(1) + 'B' },
+    { val: todayPop,  year: CURRENT_YEAR, label: todayPop.toFixed(1) + 'B' },
   ];
 
   const xs = [0, 1, 2].map(xPos);

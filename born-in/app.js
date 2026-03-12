@@ -289,8 +289,8 @@ const CO2_TODAY = 422.5; // 2024 NOAA annual average
 const POPULATION_MILESTONES = [
   { threshold: 3, text: 'You are among the last humans who will ever know a world with fewer than 3 billion people.' },
   { threshold: 4, text: 'You arrived in a world with fewer than 4 billion. It has more than doubled since.' },
-  { threshold: 5, text: 'You are part of the last generation born into a world under 5 billion.' },
-  { threshold: 6, text: 'The world crossed 6 billion around the time you were born. It will likely never reach 12.' },
+  { threshold: 5, text: 'You arrived in a world with fewer than 5 billion. It has grown by billions since.' },
+  { threshold: 6, text: 'You arrived in a world with fewer than 6 billion. Population growth was beginning to slow.' },
   { threshold: 7, text: 'You were born into a world approaching 7 billion. Population growth has begun to slow.' },
   { threshold: 8, text: 'You arrived in a world of nearly 8 billion. Humanity may be nearing its peak population.' },
 ];
@@ -1803,7 +1803,7 @@ const COUNTRY_EVENTS = {
   },
   SE: {
     1950:'Sweden builds the welfare state, folkhemmet at its peak',
-    1952:'Stockholm hosts Summer Olympics',
+    1952:'Sweden wins medals at Helsinki Summer Olympics',
     1955:'Compulsory national health insurance introduced',
     1958:'Sweden hosts FIFA World Cup, reaches the final',
     1960:'EFTA formed, Sweden joins as founding member',
@@ -2362,18 +2362,17 @@ const MUSIC_ES_NO1 = {
   1962:{s:'El porompompero',a:'Manolo Escobar'},
   1968:{s:'La la la',a:'Massiel'},
   1970:{s:'Gwendolyne',a:'Julio Iglesias'},
-  1975:{s:'Eres tu',a:'Mocedades'},
+  1973:{s:'Eres tu',a:'Mocedades'},
   1981:{s:'Quiereme mucho',a:'Julio Iglesias'},
   1984:{s:'Me cuesta tanto olvidarte',a:'Mecano'},
   1988:{s:'Hijo de la luna',a:'Mecano'},
-  1991:{s:'Corazon partio',a:'Alejandro Sanz'},
-  1996:{s:'Macarena',a:'Los Del Rio'},
+  1995:{s:'Macarena',a:'Los Del Rio'},
+  1997:{s:'Corazon partio',a:'Alejandro Sanz'},
   1999:{s:'Livin\' la Vida Loca',a:'Ricky Martin'},
   2001:{s:'Wherever, Whenever',a:'Shakira'},
   2004:{s:'Tu calorro',a:'Estopa'},
   2006:{s:'Hips Don\'t Lie',a:'Shakira'},
-  2008:{s:'Waka Waka',a:'Shakira'},
-  2010:{s:'Loca',a:'Shakira ft. El Cata'},
+  2010:{s:'Waka Waka',a:'Shakira'},
 };
 
 const MUSIC_BR_NO1 = {
@@ -2382,14 +2381,15 @@ const MUSIC_BR_NO1 = {
   1967:{s:'Alegria, Alegria',a:'Caetano Veloso'},
   1970:{s:'Detalhes',a:'Roberto Carlos'},
   1973:{s:'Eu te amo',a:'Roberto Carlos'},
-  1977:{s:'Exagerado',a:'Cazuza'},
+  1977:{s:'Gita',a:'Raul Seixas'},
   1980:{s:'Menino do Rio',a:'Baby Consuelo'},
   1984:{s:'Como uma onda',a:'Lulu Santos'},
+  1985:{s:'Exagerado',a:'Cazuza'},
   1988:{s:'Brasil',a:'Cazuza'},
   1991:{s:'Pais e filhos',a:'Legiao Urbana'},
   1995:{s:'Sera',a:'Legiao Urbana'},
   1997:{s:'Sozinho',a:'Caetano Veloso'},
-  2000:{s:'Velha infancia',a:'Tribalistas'},
+  2002:{s:'Velha infancia',a:'Tribalistas'},
   2003:{s:'Ainda lembro',a:'Marisa Monte'},
   2005:{s:'Vai chover',a:'Ivete Sangalo'},
   2008:{s:'Balanca Brasil',a:'Ivete Sangalo'},
@@ -2397,14 +2397,15 @@ const MUSIC_BR_NO1 = {
 
 const MUSIC_JP_NO1 = {
   1952:{s:'Ringo Oiwake',a:'Hibari Misora'},
-  1956:{s:'Kawa no nagare no you ni',a:'Hibari Misora'},
+  1956:{s:'Koko ni Sachi Ari',a:'Eri Chiemi'},
   1963:{s:'Konnichiwa Akachan',a:'Michiyo Azusa'},
   1970:{s:'Kuroneko no Tango',a:'Minako Yoshida'},
   1975:{s:'Oyoge! Taiyaki-kun',a:'Masato Shimon'},
   1978:{s:'UFO',a:'Pink Lady'},
-  1983:{s:'Nagai aida',a:'Kiroro'},
+  1983:{s:'Sazan no Yado',a:'Otsuki Miyako'},
   1985:{s:'Tenshi no You ni',a:'Hideaki Tokunaga'},
   1988:{s:'Paradise Ginga',a:'Hikaru Genji'},
+  1989:{s:'Kawa no Nagare no You ni',a:'Hibari Misora'},
   1991:{s:'Oh! Yeah!',a:'Dreams Come True'},
   1994:{s:'Innocent World',a:'Mr. Children'},
   1998:{s:'Automatic',a:'Utada Hikaru'},
@@ -2424,8 +2425,8 @@ const MUSIC_KR_NO1 = {
   1996:{s:'Couple',a:'SECHSKIES'},
   1998:{s:'Dasi Mannayo',a:'Kim Gun-mo'},
   2000:{s:'ID; Peace B',a:'BoA'},
-  2003:{s:'Rising Sun',a:'TVXQ'},
-  2005:{s:'Love Love Love',a:'FT Island'},
+  2003:{s:'Lies',a:'Big Bang'},
+  2005:{s:'Rising Sun',a:'TVXQ'},
   2007:{s:'Tell Me',a:'Wonder Girls'},
   2009:{s:'Gee',a:'Girls\' Generation'},
   2010:{s:'Bad Boy',a:'Big Bang'},
@@ -2441,12 +2442,12 @@ const MUSIC_IN_NO1 = {
   1981:{s:'Om Shanti Om',a:'Kishore Kumar (Karz)'},
   1988:{s:'Ek Do Teen',a:'Alka Yagnik (Tezaab)'},
   1992:{s:'Dhak Dhak Karne Laga',a:'Udit Narayan (Beta)'},
-  1995:{s:'Tu Cheez Badi Hai Mast',a:'Udit Narayan (Mohra)'},
+  1994:{s:'Tu Cheez Badi Hai Mast',a:'Udit Narayan (Mohra)'},
   1998:{s:'Chaiyya Chaiyya',a:'Sukhwinder Singh (Dil Se)'},
   1999:{s:'Taal Se Taal Mila',a:'A.R. Rahman (Taal)'},
-  2002:{s:'Kal Ho Naa Ho',a:'Sonu Nigam'},
-  2004:{s:'Kajra Re',a:'Alisha Chinai (Bunty Aur Babli)'},
-  2007:{s:'Jai Ho',a:'A.R. Rahman (Slumdog Millionaire)'},
+  2003:{s:'Kal Ho Naa Ho',a:'Sonu Nigam'},
+  2005:{s:'Kajra Re',a:'Alisha Chinai (Bunty Aur Babli)'},
+  2008:{s:'Jai Ho',a:'A.R. Rahman (Slumdog Millionaire)'},
   2010:{s:'Munni Badnaam Hui',a:'Mamta Sharma (Dabangg)'},
 };
 
@@ -2505,17 +2506,16 @@ const MUSIC_PT_NO1 = {
 
 const MUSIC_NL_NO1 = {
   1960:{s:'Kom van dat dak af',a:'Peter Koelewijn'},
-  1966:{s:'Venus',a:'Shocking Blue'},
-  1969:{s:'Radar Love',a:'Golden Earring'},
-  1973:{s:'Waterloo',a:'Golden Earring'},
+  1969:{s:'Venus',a:'Shocking Blue'},
+  1973:{s:'Radar Love',a:'Golden Earring'},
   1977:{s:'Ma Belle Amie',a:'Tee Set'},
   1980:{s:'De Vlieger',a:'Andre Hazes'},
   1984:{s:'Zij Gelooft in Mij',a:'Andre Hazes'},
   1987:{s:'Het Land van Maansen en Mansen',a:'Herman van Veen'},
   1989:{s:'Bloed, Zweet en Tranen',a:'Andre Hazes'},
   1993:{s:'Leef',a:'Andre Hazes'},
-  1997:{s:'Hoe het danst',a:'Marco Borsato'},
-  1999:{s:'Dromen zijn bedrog',a:'Marco Borsato'},
+  1997:{s:'Dromen zijn bedrog',a:'Marco Borsato'},
+  1999:{s:'Hoe het danst',a:'Marco Borsato'},
   2002:{s:'Leven zonder jou',a:'Marco Borsato'},
   2005:{s:'Afscheid nemen bestaat niet',a:'Marco Borsato'},
   2007:{s:'Watermensen',a:'Within Temptation'},
@@ -2703,9 +2703,8 @@ const FILM_IT_NO1 = {
   1984:{t:'Once Upon a Time in America',d:'Sergio Leone'},
   1986:{t:'The Name of the Rose',d:'Jean-Jacques Annaud'},
   1988:{t:'Cinema Paradiso',d:'Giuseppe Tornatore'},
-  1990:{t:'The Postman',d:'Michael Radford'},
-  1992:{t:'The Stolen Children',d:'Gianni Amelio'},
-  1994:{t:'Caro Diario',d:'Nanni Moretti'},
+  1990:{t:'The Stolen Children',d:'Gianni Amelio'},
+  1994:{t:'The Postman',d:'Michael Radford'},
   1997:{t:'Life is Beautiful',d:'Roberto Benigni'},
   2000:{t:'Malena',d:'Giuseppe Tornatore'},
   2001:{t:"The Son's Room",d:'Nanni Moretti'},
@@ -2713,7 +2712,8 @@ const FILM_IT_NO1 = {
   2006:{t:'Caos calmo',d:'Antonello Grimaldi'},
   2008:{t:'Gomorra',d:'Matteo Garrone'},
   2009:{t:'Il Divo',d:'Paolo Sorrentino'},
-  2010:{t:'The Great Beauty',d:'Paolo Sorrentino'},
+  2010:{t:'La Nostra Vita',d:'Daniele Luchetti'},
+  2013:{t:'The Great Beauty',d:'Paolo Sorrentino'},
 };
 
 const FILM_BR_NO1 = {
@@ -3331,7 +3331,7 @@ async function loadAndRender(year, countryCode) {
     const resp = await fetch(url);
     if (!resp.ok) throw new Error('not_found');
     const data = await resp.json();
-    renderInfograpic(year, countryCode, data);
+    renderInfographic(year, countryCode, data);
     updateURL(year, countryCode);
   } catch (err) {
     $revealOverlay.classList.remove('active');
@@ -3346,7 +3346,7 @@ async function loadAndRender(year, countryCode) {
 // RENDER INFOGRAPHIC
 // ---------------------------------------------------------------------------
 
-function renderInfograpic(year, countryCode, data) {
+function renderInfographic(year, countryCode, data) {
   _lastRender = { year, countryCode, data };
   const country = COUNTRY_MAP[countryCode] || COUNTRIES[0];
   const name = getUserName();
@@ -3470,7 +3470,7 @@ function renderActI(year, countryCode, data) {
 
   // Feature 3: 1-in-X cohort stat
   const birthsMil = data.world?.births_millions;
-  const oneInX = birthsMil ? Math.round(8_200_000_000 / (birthsMil * 1_000_000)) : null;
+  const oneInX = birthsMil ? Math.round((TODAY.population_billions * 1_000_000_000) / (birthsMil * 1_000_000)) : null;
   const cohortCallout = oneInX
     ? `<p class="birth-cohort-callout">1 in ${oneInX.toLocaleString()} people alive today was born in ${year}.</p>`
     : '';
@@ -3743,8 +3743,8 @@ function renderActII(year, countryCode, data) {
             desc: verdictDesc,
           },
           commentary: incomeAdj > TODAY.us_median_income
-            ? 'Your parents\' generation had more purchasing power per dollar. What they couldn\'t buy was an answer to any question in three seconds.'
-            : 'Wages have grown, but housing, healthcare, and education have grown faster. The math isn\'t in your favor.',
+            ? 'Inflation-adjusted incomes were higher then. What they couldn\'t buy was an answer to any question in three seconds.'
+            : 'Wages have grown, but housing, healthcare, and education have grown faster.',
         }) : ''}
 
         ${!isUS ? gdpCompareCard : ''}
@@ -3774,7 +3774,7 @@ function renderActII(year, countryCode, data) {
             desc: `Median home now costs ${ratioToday}x the average annual salary`,
           },
           commentary: parseFloat(ratioToday) > parseFloat(ratioThen)
-            ? `Housing has gotten ${(parseFloat(ratioToday) / parseFloat(ratioThen)).toFixed(1)}x harder to afford relative to income. Your parents weren't exaggerating about how cheap houses were.`
+            ? `Housing has gotten ${(parseFloat(ratioToday) / parseFloat(ratioThen)).toFixed(1)}x harder to afford relative to income.`
             : 'Housing was actually more expensive relative to income back then. One of the rare things that got better.',
         }) : ''}
 
@@ -4279,7 +4279,7 @@ function renderOutro(year, countryCode, data) {
   const decade = Math.floor(year / 10) * 10;
   const closingLines = {
     1950: "The world you were born into would be unrecognizable today. Television was new, air travel was rare, and your parents had never heard the word 'computer.'",
-    1960: "You arrived in a decade of upheaval. Civil rights, the space race, a world on the brink. And somehow, here you are.",
+    1960: "You arrived in a decade of upheaval. The space race, decolonization, a world on the brink. And somehow, here you are.",
     1970: "You grew up in the last decade where being unreachable was normal. No pagers, no cell phones, just the world right in front of you.",
     1980: "You're part of the last generation that remembers a world without the internet.",
     1990: "You came of age as the internet rewired everything - and you were young enough to adapt.",
