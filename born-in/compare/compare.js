@@ -185,6 +185,72 @@ const VOICE_THEN = {
   2010: 'sharing your voice meant voice notes and YouTube vlogs',
 };
 
+const SHARED = window.BORN_IN_SHARED || {};
+const CURRENT_YEAR = SHARED.CURRENT_YEAR || 2026;
+const TEMPORAL_ANCHORS = SHARED.TEMPORAL_ANCHORS || [];
+const SOCIAL_MEDIA_TIMELINE = SHARED.SOCIAL_MEDIA_TIMELINE || [];
+const CO2_PPM = SHARED.CO2_PPM || {};
+const CO2_TODAY = SHARED.CO2_TODAY || 422.5;
+const EXOPLANETS_BY_YEAR = SHARED.EXOPLANETS_BY_YEAR || {};
+const EXOPLANETS_TODAY = SHARED.EXOPLANETS_TODAY || 5800;
+const CURATED_WORLD_EVENTS = SHARED.CURATED_WORLD_EVENTS || {};
+const COUNTRY_EVENTS = SHARED.COUNTRY_EVENTS || {};
+const getWordsAfterYear = SHARED.getWordsAfterYear || function () { return []; };
+
+const DOMESTIC_WORLD_EVENT_PATTERNS = [
+  /super bowl/i,
+  /world series/i,
+  /afl-nfl/i,
+  /\bnba\b/i,
+  /\bnfl\b/i,
+  /\bmlb\b/i,
+  /american idol/i,
+];
+
+const US_LOCAL_WORLD_EVENT_PATTERNS = [
+  /\bDetroit\b/i,
+  /\bLos Angeles\b/i,
+  /\bNew York\b/i,
+  /\bChicago\b/i,
+  /\bCalifornia\b/i,
+  /\bTexas\b/i,
+  /\bFlorida\b/i,
+];
+
+const DOMESTIC_POLITICAL_WORLD_EVENT_PATTERNS = [
+  /presidential debate/i,
+  /\belected\b.*\bpresident\b/i,
+  /\bpresident\b.*\bdefeat/i,
+  /\bprime minister\b.*\bdefeat/i,
+  /\belection\b/i,
+  /\bcampaign\b/i,
+  /\bparliament\b/i,
+  /\bcoalition\b/i,
+  /lunch counter/i,
+];
+
+const EDITORIAL_WORLD_EVENT_PATTERNS = [
+  /landmark in political history/i,
+  /one of the closest elections in history/i,
+  /exposing disaster preparedness failures/i,
+  /in the worst terrorist attack on [^.,;]+/i,
+  /at that time$/i,
+];
+
+const GLOBAL_WORLD_EVENT_PATTERNS = [
+  /\bwar\b/i,
+  /treaty|accord|ceasefire|summit|peace/i,
+  /independence|declares independence|reunif/i,
+  /revolution|coup|uprising|protest|assassinat/i,
+  /elected|election|president|prime minister|king/i,
+  /earthquake|tsunami|cyclone|hurricane|flood|famine|drought/i,
+  /moon|space|satellite|astronaut|transplant/i,
+  /nuclear|atomic|reactor/i,
+  /financial crisis|crash|recession/i,
+  /olympics|world cup/i,
+  /\bUN\b|United Nations/i,
+];
+
 // ---------------------------------------------------------------------------
 // LOCAL MUSIC CHARTS (copied from parent app.js)
 // Each entry: {s: 'song', a: 'artist'}
@@ -751,6 +817,7 @@ const LOCAL_FILM_LABEL = {
 let selectedParentCountry = COUNTRIES[0]; // default US
 let selectedChildCountry  = COUNTRIES[0]; // default US
 let revealObserver = null;
+let _hasExplicitCountries = true;
 let _lastCompare = null; // { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData }
 
 // ---------------------------------------------------------------------------
@@ -857,6 +924,369 @@ function signedRaw(val, decimals) {
   const d = decimals != null ? decimals : 1;
   if (val > 0) return '+' + val.toFixed(d);
   return val.toFixed(d);
+}
+
+function formatPopulationValue(popMillions) {
+  if (popMillions == null) return null;
+  const num = parseFloat(popMillions);
+  if (isNaN(num)) return null;
+  if (num >= 1000) {
+    return (num / 1000).toFixed(num >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'B';
+  }
+  return Math.round(num).toLocaleString() + 'M';
+}
+
+function countrySnapshotLine(countryCode, year, countryData) {
+  if (!countryCode || !countryData) return null;
+
+  const population = formatPopulationValue(countryData.population_millions);
+  const lifeExpectancy = countryData.life_expectancy
+    ? String(countryData.life_expectancy).replace(/\.0$/, '') + ' years'
+    : null;
+
+  if (!population && !lifeExpectancy) return null;
+
+  const country = COUNTRY_MAP[countryCode] || { code: countryCode, name: countryCode };
+  const countryName = displayCountryName(country, year);
+
+  if (population && lifeExpectancy) {
+    return countryName + ' had ' + population + ' people and life expectancy of ' + lifeExpectancy;
+  }
+  if (population) {
+    return countryName + ' had ' + population + ' people';
+  }
+  return countryName + ' had life expectancy of ' + lifeExpectancy;
+}
+
+function findTemporalAnchor(year) {
+  const yearsToToday = CURRENT_YEAR - year;
+  let bestAnchor = null;
+  let bestSurplus = -Infinity;
+
+  for (const anchor of TEMPORAL_ANCHORS) {
+    const distToAnchor = Math.abs(year - anchor.year);
+    if (distToAnchor < yearsToToday) {
+      const surplus = yearsToToday - distToAnchor;
+      if (surplus > bestSurplus) {
+        bestSurplus = surplus;
+        bestAnchor = { ...anchor, distance: distToAnchor, yearsToToday };
+      }
+    }
+  }
+
+  return bestAnchor;
+}
+
+function temporalShockLine(year) {
+  const anchor = findTemporalAnchor(year);
+  if (!anchor) return null;
+  return 'Your birth year is closer to ' + anchor.label + ' than to today.';
+}
+
+function summarizeWords(year) {
+  if (year >= 2005) return null;
+  const words = getWordsAfterYear(year);
+  if (!words || words.length < 3) return null;
+
+  const shown = words.slice(0, 3);
+  const extra = words.length - shown.length;
+
+  return {
+    value: shown.join(', '),
+    desc: extra > 0
+      ? extra + ' more common digital terms were still in the future'
+      : 'common digital words that did not exist yet',
+  };
+}
+
+function summarizeSocialTimeline(year) {
+  const afterBirth = SOCIAL_MEDIA_TIMELINE.filter(item => item.year > year);
+  if (afterBirth.length === 0) return null;
+
+  const selected = year >= 2000
+    ? afterBirth.slice().sort((a, b) => a.year - b.year).slice(0, 3)
+    : afterBirth.slice(0, 3);
+
+  const primary = selected[0];
+  const rest = selected.slice(1)
+    .map(item => item.name + ' at ' + (item.year - year))
+    .join(' · ');
+
+  return {
+    value: primary.name + ' at ' + (primary.year - year),
+    desc: rest || 'still had not launched yet',
+  };
+}
+
+function sanitizeWorldEventText(text) {
+  if (!text) return '';
+
+  let cleaned = String(text).trim();
+
+  cleaned = cleaned
+    .replace(/\b(?:far-)?right-wing\b/gi, '')
+    .replace(/\b(?:far-)?left-wing\b/gi, '')
+    .replace(/\bdomestic\b/gi, '')
+    .replace(/\ba\s+Israeli extremist\b/gi, 'an Israeli extremist')
+    .replace(/\ba\s+extremist\b/gi, 'an extremist');
+
+  EDITORIAL_WORLD_EVENT_PATTERNS.forEach((pattern) => {
+    cleaned = cleaned.replace(new RegExp(`,?\\s*${pattern.source}`, pattern.flags), '');
+  });
+
+  return cleaned
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+,/g, ',')
+    .replace(/\(\s+/g, '(')
+    .replace(/\s+\)/g, ')')
+    .trim();
+}
+
+function normalizeComparableText(text) {
+  return String(text || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\b(the|a|an|and|or|of|to|in|on|at|for|from|with|by|after|before|into|over|under|across)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function eventIsDistinct(text, otherText) {
+  const left = normalizeComparableText(text);
+  const right = normalizeComparableText(otherText);
+
+  if (!left || !right) return true;
+  if (left === right) return false;
+  if (left.includes(right) || right.includes(left)) return false;
+
+  const leftTokens = new Set(left.split(' ').filter(token => token.length > 3));
+  const rightTokens = new Set(right.split(' ').filter(token => token.length > 3));
+  let overlap = 0;
+
+  leftTokens.forEach((token) => {
+    if (rightTokens.has(token)) overlap += 1;
+  });
+
+  return overlap < 2;
+}
+
+function filterDistinctEvents(events, avoidTexts) {
+  const blocked = (avoidTexts || []).filter(Boolean);
+  const selected = [];
+
+  (events || []).forEach((entry) => {
+    const eventText = sanitizeWorldEventText(entry && entry.event);
+    if (!eventText) return;
+    if (blocked.some(text => !eventIsDistinct(eventText, text))) return;
+    if (selected.some(existing => !eventIsDistinct(eventText, existing.event))) return;
+    selected.push({
+      ...entry,
+      event: eventText,
+    });
+  });
+
+  return selected;
+}
+
+function curatedWorldEvents(year, limit, avoidTexts) {
+  const curated = CURATED_WORLD_EVENTS[year] || [];
+  return filterDistinctEvents(curated, avoidTexts).slice(0, limit);
+}
+
+function worldEventCategory(text) {
+  if (!text) return 'other';
+  if (/earthquake|tsunami|cyclone|hurricane|flood|volcano|erupts|famine|drought/i.test(text)) return 'disaster';
+  if (/treaty|accord|ceasefire|summit|peace|independence|founded|joins|federation|union/i.test(text)) return 'diplomacy';
+  if (/space|moon|satellite|astronaut|transplant|internet|computer|windows|iphone|opec|oil production/i.test(text)) return 'science';
+  if (/elected|election|president|prime minister|parliament|debate|campaign|cabinet/i.test(text)) return 'politics';
+  if (/war|bombing|attack|hijack|assassinat|u-2|sarin|uprising|protest/i.test(text)) return 'conflict';
+  if (/olympics|world cup|film|music|chart|tv|television/i.test(text)) return 'culture';
+  return 'other';
+}
+
+function scoreWorldEvent(entry, countryCode) {
+  const text = sanitizeWorldEventText((entry && entry.event) || '');
+  if (!text) return -Infinity;
+
+  let score = 0;
+  const category = worldEventCategory(text);
+
+  DOMESTIC_WORLD_EVENT_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) score -= 8;
+  });
+
+  US_LOCAL_WORLD_EVENT_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) score -= countryCode === 'US' ? 1.5 : 3;
+  });
+
+  GLOBAL_WORLD_EVENT_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) score += 3;
+  });
+
+  DOMESTIC_POLITICAL_WORLD_EVENT_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) score -= 4;
+  });
+
+  if (/\bworld\b|\bglobal\b|\binternational\b/i.test(text)) score += 1;
+  if (/killed|dies|assassinated|launch|erupts|summit|agreement|independence|crisis/i.test(text)) score += 0.75;
+  if (text.length >= 90) score += 0.5;
+  if (/album|film|movie|tv|television|chart/i.test(text)) score -= 1;
+  if (/in US history|on Japan's soil/i.test(text)) score -= 1.5;
+  if (category === 'politics') score -= 1.5;
+  if (category === 'science' || category === 'disaster' || category === 'diplomacy') score += 1.25;
+
+  return score;
+}
+
+function selectWorldEvents(year, events, countryCode, limit, options) {
+  const avoidTexts = options?.avoidTexts || [];
+  const curated = curatedWorldEvents(year, limit, avoidTexts);
+  if (curated.length > 0) return curated;
+
+  const normalizedSeen = new Set();
+  const scored = (events || [])
+    .map((entry, index) => ({
+      entry: {
+        ...entry,
+        event: sanitizeWorldEventText(entry && entry.event),
+      },
+      index,
+      score: scoreWorldEvent(entry, countryCode),
+      category: worldEventCategory(sanitizeWorldEventText(entry && entry.event)),
+    }))
+    .filter(item => item.entry.event && item.score > -6)
+    .sort((a, b) => b.score - a.score || a.index - b.index);
+
+  const selected = [];
+  const categoryCounts = Object.create(null);
+
+  function categoryCap(category) {
+    if (category === 'politics') return 1;
+    if (category === 'conflict') return Math.min(2, limit);
+    return limit;
+  }
+
+  function tryPush(item, minScore) {
+    if (selected.length >= limit || item.score < minScore) return;
+    const key = String(item.entry.event || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    if (!key || normalizedSeen.has(key)) return;
+    if (avoidTexts.some(text => !eventIsDistinct(item.entry.event, text))) return;
+    if (selected.some(existing => !eventIsDistinct(item.entry.event, existing.event))) return;
+    if ((categoryCounts[item.category] || 0) >= categoryCap(item.category)) return;
+    normalizedSeen.add(key);
+    selected.push(item.entry);
+    categoryCounts[item.category] = (categoryCounts[item.category] || 0) + 1;
+  }
+
+  scored.filter(item => item.category !== 'politics').forEach(item => tryPush(item, 1));
+  scored.filter(item => item.category === 'politics').forEach(item => tryPush(item, 2));
+  scored.forEach(item => tryPush(item, 0));
+  scored.forEach(item => tryPush(item, -1));
+
+  return selected
+    .slice(0, limit)
+    .sort((a, b) => (a.month || 99) - (b.month || 99));
+}
+
+function textTimelineCard({ eyebrow, headline, parentYear, childYear, parentText, childText }) {
+  return dualTimeline({
+    eyebrow,
+    headline,
+    parentYear,
+    childYear,
+    parentEvents: parentText ? [{ event: parentText }] : [],
+    childEvents: childText ? [{ event: childText }] : [],
+  });
+}
+
+function localMusicSelection(year, countryCode, data) {
+  if (!countryCode || !data) return null;
+
+  const localData = LOCAL_MUSIC[countryCode];
+  const music = data.culture?.music;
+
+  if (localData && localData[year]) {
+    return {
+      label: LOCAL_MUSIC_LABEL[countryCode] || 'Local Chart #1',
+      title: localData[year].s,
+      detail: localData[year].a || '',
+    };
+  }
+
+  if (countryCode === 'GB' && (music?.uk_no1_jan || music?.billboard_no1_song)) {
+    return {
+      label: 'UK Chart #1',
+      title: music?.uk_no1_jan || music?.billboard_no1_song,
+      detail: music?.uk_no1_jan_artist || music?.billboard_no1_artist || '',
+    };
+  }
+
+  if (countryCode === 'US' && (music?.billboard_no1_song || music?.uk_no1_jan)) {
+    return {
+      label: 'Billboard #1 Song',
+      title: music?.billboard_no1_song || music?.uk_no1_jan,
+      detail: music?.billboard_no1_artist || music?.uk_no1_jan_artist || '',
+    };
+  }
+
+  return null;
+}
+
+function localFilmSelection(year, countryCode, data) {
+  if (!countryCode || !data) return null;
+
+  const localData = LOCAL_FILM[countryCode];
+  const film = data.culture?.film;
+
+  if (localData && localData[year]) {
+    return {
+      label: LOCAL_FILM_LABEL[countryCode] || 'Local Film',
+      title: localData[year].t,
+      detail: localData[year].d ? 'dir. ' + localData[year].d : '',
+    };
+  }
+
+  if (countryCode === 'US' && (film?.box_office_no1 || film?.oscar_best_picture)) {
+    return {
+      label: film?.box_office_no1 ? 'Box Office #1' : 'Oscar Best Picture',
+      title: film?.box_office_no1 || film?.oscar_best_picture,
+      detail: film?.oscar_best_director_name ? 'dir. ' + film.oscar_best_director_name : '',
+    };
+  }
+
+  return null;
+}
+
+function birthLotterySnapshot(year, data, selectedCountryCode) {
+  const countryEntries = Object.entries(data?.countries || {})
+    .filter(([, info]) => info && info.life_expectancy)
+    .map(([code, info]) => ({
+      code,
+      lifeExpectancy: info.life_expectancy,
+      country: COUNTRY_MAP[code] || null,
+    }))
+    .filter(item => item.country);
+
+  if (countryEntries.length < 2) return null;
+
+  countryEntries.sort((a, b) => b.lifeExpectancy - a.lifeExpectancy);
+  const highest = countryEntries[0];
+  const lowest = countryEntries[countryEntries.length - 1];
+  const gap = +(highest.lifeExpectancy - lowest.lifeExpectancy).toFixed(1);
+
+  let commentary = 'A birth-year lottery decided by geography alone.';
+  if (selectedCountryCode === highest.code) {
+    commentary = 'This country sat at the top of the life-expectancy table that year.';
+  } else if (selectedCountryCode === lowest.code) {
+    commentary = 'This country sat at the bottom of the life-expectancy table that year.';
+  }
+
+  return {
+    gap,
+    highest,
+    lowest,
+    commentary,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -1293,6 +1723,7 @@ async function loadBothYears(parentYear, childYear) {
 function renderComparison(parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData) {
   const parentCountry = COUNTRY_MAP[parentCountryCode] || COUNTRIES[0];
   const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
+  const explicitCountries = _hasExplicitCountries;
   const cpiP = CPI_TO_2024[parentYear] || 1;
   const cpiC = CPI_TO_2024[childYear] || 1;
 
@@ -1303,6 +1734,11 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   const accentC = getAccentForYear(childYear);
 
   const sections = [];
+  const countryDisplayP = displayCountryName(parentCountry, parentYear);
+  const countryDisplayC = displayCountryName(childCountry, childYear);
+  const sameCountry = parentCountryCode === childCountryCode;
+  const filteredWorldEventsP = selectWorldEvents(parentYear, parentData.world_events || [], parentCountryCode, 3);
+  const filteredWorldEventsC = selectWorldEvents(childYear, childData.world_events || [], childCountryCode, 3);
 
   // -----------------------------------------------------------------------
   // SECTION 1: POPULATION
@@ -1343,55 +1779,100 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     sections.push(`<div class="chart-container" data-reveal>${svgPopulationChart(popP, popC, popToday, parentYear, childYear)}</div>`);
   }
 
-  // -----------------------------------------------------------------------
-  // SECTION 2: COUNTRY LEADERS - each side uses its own country
-  // -----------------------------------------------------------------------
+  if (explicitCountries) {
+    const countryPopP = parentCountryData.population_millions;
+    const countryPopC = childCountryData.population_millions;
 
-  let parentLeaderInfo = LEADER_KEYS[parentCountryCode] || LEADER_KEYS.US;
-  let childLeaderInfo  = LEADER_KEYS[childCountryCode]  || LEADER_KEYS.US;
+    if (countryPopP && countryPopC) {
+      sections.push(compareCard({
+        eyebrow: sameCountry
+          ? parentCountry.flag + ' Country Population'
+          : parentCountry.flag + ' / ' + childCountry.flag + ' Country Population',
+        headline: 'How large the selected country was',
+        parent: {
+          label: String(parentYear),
+          value: formatPopulationValue(countryPopP),
+          desc: 'people in ' + countryDisplayP,
+        },
+        child: {
+          label: String(childYear),
+          value: formatPopulationValue(countryPopC),
+          desc: 'people in ' + countryDisplayC,
+        },
+        delta: sameCountry
+          ? {
+              text: signedPct(((countryPopC - countryPopP) / countryPopP) * 100) + ' population growth between generations',
+              type: 'neutral',
+            }
+          : null,
+        commentary: sameCountry
+          ? 'This shows how much the country itself grew between the two generations.'
+          : 'Two different national stories, shown side by side without pretending they are the same trajectory.',
+      }));
+    }
 
-  const leaderP = parentData.leaders?.[parentLeaderInfo.key]
-    || parentCountryData.leader
-    || null;
-  const leaderC = childData.leaders?.[childLeaderInfo.key]
-    || childCountryData.leader
-    || null;
+    const countryEventP = COUNTRY_EVENTS[parentCountryCode]?.[parentYear] || null;
+    const countryEventC = COUNTRY_EVENTS[childCountryCode]?.[childYear] || null;
 
-  const countryDisplayP = displayCountryName(parentCountry, parentYear);
-  const countryDisplayC = displayCountryName(childCountry, childYear);
+    if (countryEventP || countryEventC) {
+      sections.push(textTimelineCard({
+        eyebrow: sameCountry
+          ? parentCountry.flag + ' ' + countryDisplayP
+          : parentCountry.flag + ' ' + countryDisplayP + ' / ' + childCountry.flag + ' ' + countryDisplayC,
+        headline: sameCountry ? 'That year in the country' : 'What was happening in each selected country',
+        parentYear,
+        childYear,
+        parentText: countryEventP,
+        childText: countryEventC,
+      }));
+    }
 
-  const leaderEyebrow = parentCountryCode === childCountryCode
-    ? parentCountry.flag + ' ' + countryDisplayP + ' Leadership'
-    : parentCountry.flag + ' ' + countryDisplayP + ' / ' + childCountry.flag + ' ' + countryDisplayC + ' Leadership';
+    // -----------------------------------------------------------------------
+    // SECTION 2: COUNTRY LEADERS - each side uses its own country
+    // -----------------------------------------------------------------------
 
-  if (leaderP && leaderC) {
-    sections.push(compareCard({
-      eyebrow: leaderEyebrow,
-      headline: 'Who was in charge',
-      parent: {
-        label: String(parentYear),
-        value: leaderP,
-        desc: parentLeaderInfo.title + ' of ' + countryDisplayP,
-      },
-      child: {
-        label: String(childYear),
-        value: leaderC,
-        desc: childLeaderInfo.title + ' of ' + countryDisplayC,
-      },
-    }));
-  }
+    let parentLeaderInfo = LEADER_KEYS[parentCountryCode] || LEADER_KEYS.US;
+    let childLeaderInfo  = LEADER_KEYS[childCountryCode]  || LEADER_KEYS.US;
 
-  // -----------------------------------------------------------------------
-  // SECTION 3: LIFE EXPECTANCY - each side uses its own country
-  // Do not fall back to world average - it would be presented as country-specific data
-  // -----------------------------------------------------------------------
+    const leaderP = parentData.leaders?.[parentLeaderInfo.key]
+      || parentCountryData.leader
+      || null;
+    const leaderC = childData.leaders?.[childLeaderInfo.key]
+      || childCountryData.leader
+      || null;
 
-  const lifeP = parentCountryData.life_expectancy || null;
-  const lifeC = childCountryData.life_expectancy  || null;
+    const leaderEyebrow = parentCountryCode === childCountryCode
+      ? parentCountry.flag + ' ' + countryDisplayP + ' Leadership'
+      : parentCountry.flag + ' ' + countryDisplayP + ' / ' + childCountry.flag + ' ' + countryDisplayC + ' Leadership';
 
-  const sameCountryLE = (parentCountryCode === childCountryCode);
+    if (leaderP && leaderC) {
+      sections.push(compareCard({
+        eyebrow: leaderEyebrow,
+        headline: 'Who was in charge',
+        parent: {
+          label: String(parentYear),
+          value: leaderP,
+          desc: parentLeaderInfo.title + ' of ' + countryDisplayP,
+        },
+        child: {
+          label: String(childYear),
+          value: leaderC,
+          desc: childLeaderInfo.title + ' of ' + countryDisplayC,
+        },
+      }));
+    }
 
-  if (lifeP && lifeC) {
+    // -----------------------------------------------------------------------
+    // SECTION 3: LIFE EXPECTANCY - each side uses its own country
+    // Do not fall back to world average - it would be presented as country-specific data
+    // -----------------------------------------------------------------------
+
+    const lifeP = parentCountryData.life_expectancy || null;
+    const lifeC = childCountryData.life_expectancy  || null;
+
+    const sameCountryLE = (parentCountryCode === childCountryCode);
+
+    if (lifeP && lifeC) {
     // Birth lottery: highest vs lowest country gap (always useful regardless of country comparison)
     const allCountries = Object.keys(parentData.countries || {});
     const lifeValsP = allCountries.map(k => parentData.countries[k].life_expectancy).filter(Boolean);
@@ -1450,7 +1931,6 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     }));
 
     // Life expectancy SVG chart - use each country's today value separately
-    const todayLEP = TODAY.life_expectancy[parentCountryCode] || TODAY.global_life_expectancy;
     const todayLEC = TODAY.life_expectancy[childCountryCode]  || TODAY.global_life_expectancy;
     // Chart uses child today LE as the "today" bar for reference
     sections.push(`<div class="chart-container" data-reveal>${svgLifeExpChart(lifeP, lifeC, todayLEC, parentYear, childYear, accentP, accentC)}</div>`);
@@ -1610,13 +2090,12 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   }
 
   // Price comparison grid (inflation-adjusted, US prices only)
-  // Only show when at least one side is US; when neither is US, skip entirely (prices are US-specific)
-  const eitherIsUS = (parentCountryCode === 'US' || childCountryCode === 'US');
+  // Only show when both selected countries are US. Otherwise it becomes misleading.
   const bothAreUS  = (parentCountryCode === 'US' && childCountryCode === 'US');
   const pricesP = parentData.prices_us;
   const pricesC = childData.prices_us;
 
-  if (eitherIsUS && pricesP && pricesC) {
+  if (bothAreUS && pricesP && pricesC) {
     const priceItems = [
       { emoji: '\u26FD', label: 'Gallon of gas',   keyP: 'gallon_gas_usd',    keyC: 'gallon_gas_usd' },
       { emoji: '\uD83E\uDD5B', label: 'Gallon of milk',  keyP: 'gallon_milk_usd',   keyC: 'gallon_milk_usd' },
@@ -1649,17 +2128,11 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
       .filter(Boolean);
 
     if (gridItems.length > 0) {
-      // When comparing across countries, clearly label these as US prices
-      const pricesEyebrow = bothAreUS ? 'Everyday Prices' : 'Everyday Prices (US)';
-      const pricesNote = bothAreUS
-        ? 'All prices adjusted to 2024 dollars. A negative change means something got cheaper in real terms.'
-        : 'US prices only - adjusted to 2024 dollars. These reflect the American cost of living, not ' + (parentCountryCode !== 'US' ? countryDisplayP : countryDisplayC) + '.';
-
       sections.push(priceCompareGrid({
-        eyebrow: pricesEyebrow,
-        headline: 'What things cost in the US - in today\'s dollars',
+        eyebrow: 'Everyday Prices (US)',
+        headline: 'What things cost then vs now',
         items: gridItems,
-        note: pricesNote,
+        note: 'All prices adjusted to 2024 dollars. This section stays US-only until equivalent local price series exist for other countries.',
       }));
 
       // Price SVG chart - same items mapped for chart function
@@ -1682,157 +2155,68 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   // SECTION 5: CULTURE - each side uses its own country
   // -----------------------------------------------------------------------
 
-  const musicP = parentData.culture?.music;
-  const musicC = childData.culture?.music;
-
-  // Use local chart data for each side's respective country
-  const localMusicDataP = LOCAL_MUSIC[parentCountryCode];
-  const localMusicDataC = LOCAL_MUSIC[childCountryCode];
-
-  let songP, artistP, musicLabelP;
-  if (localMusicDataP && localMusicDataP[parentYear]) {
-    songP = localMusicDataP[parentYear].s;
-    artistP = localMusicDataP[parentYear].a;
-    musicLabelP = LOCAL_MUSIC_LABEL[parentCountryCode];
-  } else if (localMusicDataP) {
-    // Country has local music data but not for this year - skip rather than show US fallback
-    songP = null;
-    artistP = null;
-    musicLabelP = LOCAL_MUSIC_LABEL[parentCountryCode];
-  } else if (parentCountryCode === 'GB') {
-    songP = musicP?.uk_no1_jan || musicP?.billboard_no1_song;
-    artistP = musicP?.uk_no1_jan_artist || musicP?.billboard_no1_artist;
-    musicLabelP = 'UK #1 Song';
-  } else {
-    songP = musicP?.billboard_no1_song || musicP?.uk_no1_jan;
-    artistP = musicP?.billboard_no1_artist || musicP?.uk_no1_jan_artist;
-    musicLabelP = 'Top Song';
-  }
-
-  let songC, artistC, musicLabelC;
-  if (localMusicDataC && localMusicDataC[childYear]) {
-    songC = localMusicDataC[childYear].s;
-    artistC = localMusicDataC[childYear].a;
-    musicLabelC = LOCAL_MUSIC_LABEL[childCountryCode];
-  } else if (localMusicDataC) {
-    songC = null;
-    artistC = null;
-    musicLabelC = LOCAL_MUSIC_LABEL[childCountryCode];
-  } else if (childCountryCode === 'GB') {
-    songC = musicC?.uk_no1_jan || musicC?.billboard_no1_song;
-    artistC = musicC?.uk_no1_jan_artist || musicC?.billboard_no1_artist;
-    musicLabelC = 'UK #1 Song';
-  } else {
-    songC = musicC?.billboard_no1_song || musicC?.uk_no1_jan;
-    artistC = musicC?.billboard_no1_artist || musicC?.uk_no1_jan_artist;
-    musicLabelC = 'Top Song';
-  }
-
-  const sameCountryMusic = (musicLabelP === musicLabelC);
-  const musicHeadline = sameCountryMusic ? musicLabelP : 'The song each generation grew up with';
-
-  if (songP && songC) {
+  const musicP = localMusicSelection(parentYear, parentCountryCode, parentData);
+  const musicC = localMusicSelection(childYear, childCountryCode, childData);
+  if (musicP && musicC) {
+    const sameMusicLabel = musicP.label === musicC.label;
     sections.push(compareCard({
       eyebrow: '\uD83C\uDFB5 Music',
-      headline: musicHeadline,
+      headline: sameMusicLabel ? musicP.label : 'The song each generation grew up with',
       parent: {
-        label: sameCountryMusic ? String(parentYear) : String(parentYear) + ' \u00B7 ' + musicLabelP,
-        value: songP,
-        desc: artistP ? 'by ' + artistP : '',
+        label: sameMusicLabel ? String(parentYear) : String(parentYear) + ' \u00B7 ' + musicP.label,
+        value: musicP.title,
+        desc: musicP.detail || '',
       },
       child: {
-        label: sameCountryMusic ? String(childYear) : String(childYear) + ' \u00B7 ' + musicLabelC,
-        value: songC,
-        desc: artistC ? 'by ' + artistC : '',
+        label: sameMusicLabel ? String(childYear) : String(childYear) + ' \u00B7 ' + musicC.label,
+        value: musicC.title,
+        desc: musicC.detail || '',
       },
     }));
   }
 
-  // Use local film data for each side's respective country
-  const localFilmDataP = LOCAL_FILM[parentCountryCode];
-  const localFilmDataC = LOCAL_FILM[childCountryCode];
-
-  let filmTitleP, filmDirP, filmLabelP;
-  if (localFilmDataP && localFilmDataP[parentYear]) {
-    filmTitleP = localFilmDataP[parentYear].t;
-    filmDirP = localFilmDataP[parentYear].d;
-    filmLabelP = LOCAL_FILM_LABEL[parentCountryCode];
-  } else if (localFilmDataP) {
-    // Country has local film data but not for this year - skip rather than show Oscar fallback
-    filmTitleP = null;
-    filmDirP = null;
-    filmLabelP = LOCAL_FILM_LABEL[parentCountryCode];
-  } else {
-    filmTitleP = parentData.culture?.film?.oscar_best_picture;
-    filmDirP = parentData.culture?.film?.oscar_best_director_name;
-    filmLabelP = 'Oscar Best Picture';
-  }
-
-  let filmTitleC, filmDirC, filmLabelC;
-  if (localFilmDataC && localFilmDataC[childYear]) {
-    filmTitleC = localFilmDataC[childYear].t;
-    filmDirC = localFilmDataC[childYear].d;
-    filmLabelC = LOCAL_FILM_LABEL[childCountryCode];
-  } else if (localFilmDataC) {
-    filmTitleC = null;
-    filmDirC = null;
-    filmLabelC = LOCAL_FILM_LABEL[childCountryCode];
-  } else {
-    filmTitleC = childData.culture?.film?.oscar_best_picture;
-    filmDirC = childData.culture?.film?.oscar_best_director_name;
-    filmLabelC = 'Oscar Best Picture';
-  }
-
-  const sameCountryFilm = (filmLabelP === filmLabelC);
-  const filmHeadline = sameCountryFilm ? filmLabelP : 'The film that defined each generation';
-
-  if (filmTitleP && filmTitleC) {
+  const filmP = localFilmSelection(parentYear, parentCountryCode, parentData);
+  const filmC = localFilmSelection(childYear, childCountryCode, childData);
+  if (filmP && filmC) {
+    const sameFilmLabel = filmP.label === filmC.label;
     sections.push(compareCard({
       eyebrow: '\uD83C\uDFC6 Film',
-      headline: filmHeadline,
+      headline: sameFilmLabel ? filmP.label : 'The film that defined each generation',
       parent: {
-        label: sameCountryFilm ? String(parentYear) : String(parentYear) + ' \u00B7 ' + filmLabelP,
-        value: filmTitleP,
-        desc: filmDirP ? 'dir. ' + filmDirP : '',
+        label: sameFilmLabel ? String(parentYear) : String(parentYear) + ' \u00B7 ' + filmP.label,
+        value: filmP.title,
+        desc: filmP.detail || '',
       },
       child: {
-        label: sameCountryFilm ? String(childYear) : String(childYear) + ' \u00B7 ' + filmLabelC,
-        value: filmTitleC,
-        desc: filmDirC ? 'dir. ' + filmDirC : '',
+        label: sameFilmLabel ? String(childYear) : String(childYear) + ' \u00B7 ' + filmC.label,
+        value: filmC.title,
+        desc: filmC.detail || '',
       },
     }));
   }
 
-  // TV data in the JSON files is US-only (US ratings/networks)
-  // Only show TV for the US side; for non-US sides show "not available"
-  const parentIsUS = (parentCountryCode === 'US');
-  const childIsUS  = (childCountryCode  === 'US');
-  const tvP = parentIsUS ? parentData.culture?.television?.most_watched_show : null;
-  const tvC = childIsUS  ? childData.culture?.television?.most_watched_show  : null;
+  if (parentCountryCode === 'US' && childCountryCode === 'US') {
+    const tvP = parentData.culture?.television?.most_watched_show;
+    const tvC = childData.culture?.television?.most_watched_show;
 
-  // Show TV section only when at least one side is US
-  if (parentIsUS || childIsUS) {
-    const tvEyebrow = (parentIsUS && childIsUS) ? '\uD83D\uDCFA Television' : '\uD83D\uDCFA Television (US)';
-    const tvHeadline = (parentIsUS && childIsUS) ? 'Most-watched TV show' : 'Most-watched US TV show';
+    if (tvP && tvC) {
+      sections.push(compareCard({
+        eyebrow: '\uD83D\uDCFA Television (US)',
+        headline: 'Most-watched TV show',
+        parent: {
+          label: String(parentYear),
+          value: tvP,
+          desc: parentData.culture?.television?.most_watched_network || '',
+        },
+        child: {
+          label: String(childYear),
+          value: tvC,
+          desc: childData.culture?.television?.most_watched_network || '',
+        },
+      }));
+    }
+  }
 
-    sections.push(compareCard({
-      eyebrow: tvEyebrow,
-      headline: tvHeadline,
-      parent: {
-        label: String(parentYear),
-        value: tvP || 'Not available',
-        desc: tvP
-          ? (parentData.culture?.television?.most_watched_network || '')
-          : 'TV data covers US only',
-      },
-      child: {
-        label: String(childYear),
-        value: tvC || 'Not available',
-        desc: tvC
-          ? (childData.culture?.television?.most_watched_network || '')
-          : 'TV data covers US only',
-      },
-    }));
   }
 
   // -----------------------------------------------------------------------
@@ -1927,17 +2311,153 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   // SECTION 7: WORLD EVENTS
   // -----------------------------------------------------------------------
 
-  const eventsP = (parentData.world_events || []).slice(0, 4);
-  const eventsC = (childData.world_events || []).slice(0, 4);
-
-  if (eventsP.length > 0 || eventsC.length > 0) {
+  if (filteredWorldEventsP.length > 0 || filteredWorldEventsC.length > 0) {
     sections.push(dualTimeline({
-      eyebrow: '\uD83C\uDF0D World Events',
+      eyebrow: '\uD83C\uDF0D World Context',
       headline: 'What was happening when each generation arrived',
       parentYear,
       childYear,
-      parentEvents: eventsP,
-      childEvents: eventsC,
+      parentEvents: filteredWorldEventsP,
+      childEvents: filteredWorldEventsC,
+    }));
+  }
+
+  // -----------------------------------------------------------------------
+  // SECTION 8: WOW FACTS
+  // -----------------------------------------------------------------------
+
+  const temporalP = findTemporalAnchor(parentYear);
+  const temporalC = findTemporalAnchor(childYear);
+
+  if (temporalP && temporalC) {
+    sections.push(compareCard({
+      eyebrow: '\u23F3 Time Shift',
+      headline: 'What felt closer than the present',
+      parent: {
+        label: String(parentYear),
+        value: temporalP.label,
+        desc: temporalP.distance + ' years away when they were born',
+      },
+      child: {
+        label: String(childYear),
+        value: temporalC.label,
+        desc: temporalC.distance + ' years away when you were born',
+      },
+      commentary: temporalShockLine(parentYear) + ' ' + temporalShockLine(childYear),
+    }));
+  }
+
+  const co2P = CO2_PPM[parentYear];
+  const co2C = CO2_PPM[childYear];
+  if (co2P && co2C) {
+    sections.push(compareCard({
+      eyebrow: 'Atmosphere',
+      headline: 'CO\u2082 in the air each generation first breathed',
+      parent: {
+        label: String(parentYear),
+        value: co2P + ' ppm',
+        desc: '+' + (CO2_TODAY - co2P).toFixed(1) + ' ppm to today',
+      },
+      child: {
+        label: String(childYear),
+        value: co2C + ' ppm',
+        desc: '+' + (CO2_TODAY - co2C).toFixed(1) + ' ppm to today',
+      },
+      delta: {
+        text: signedRaw(co2C - co2P, 1) + ' ppm between the two birth years',
+        type: 'negative',
+      },
+      commentary: 'Both sides use annual atmospheric CO\u2082 concentrations. This is one of the few numbers that only keeps rising.',
+    }));
+  }
+
+  const exoP = EXOPLANETS_BY_YEAR[parentYear];
+  const exoC = EXOPLANETS_BY_YEAR[childYear];
+  if (exoP != null && exoC != null) {
+    sections.push(compareCard({
+      eyebrow: 'The Universe',
+      headline: 'Worlds we had confirmed beyond our solar system',
+      parent: {
+        label: String(parentYear),
+        value: exoP > 0 ? String(exoP) : 'None',
+        desc: exoP > 0 ? 'confirmed exoplanets by then' : 'humanity had no confirmed exoplanets yet',
+      },
+      child: {
+        label: String(childYear),
+        value: exoC > 0 ? String(exoC) : 'None',
+        desc: exoC > 0 ? 'confirmed exoplanets by then' : 'humanity still had no confirmed exoplanets yet',
+      },
+      commentary: 'Today we know about ' + EXOPLANETS_TODAY.toLocaleString() + '+. The universe looks radically bigger now than it did at either birth year.',
+    }));
+  }
+
+  const socialP = summarizeSocialTimeline(parentYear);
+  const socialC = summarizeSocialTimeline(childYear);
+  if (socialP && socialC) {
+    sections.push(compareCard({
+      eyebrow: 'Social Media Timeline',
+      headline: 'How old each generation was when the platform era arrived',
+      parent: {
+        label: String(parentYear),
+        value: socialP.value,
+        desc: socialP.desc,
+      },
+      child: {
+        label: String(childYear),
+        value: socialC.value,
+        desc: socialC.desc,
+      },
+      commentary: 'The internet age did not arrive all at once. Different birth years experienced it at radically different ages.',
+    }));
+  }
+
+  const wordsP = summarizeWords(parentYear) || {
+    value: 'Almost none',
+    desc: 'most everyday digital words already existed',
+  };
+  const wordsC = summarizeWords(childYear) || {
+    value: 'Almost none',
+    desc: 'most everyday digital words already existed',
+  };
+
+  sections.push(compareCard({
+    eyebrow: 'Language',
+    headline: 'Words that did not exist yet',
+    parent: {
+      label: String(parentYear),
+      value: wordsP.value,
+      desc: wordsP.desc,
+    },
+    child: {
+      label: String(childYear),
+      value: wordsC.value,
+      desc: wordsC.desc,
+    },
+    commentary: 'The vocabulary of modern life arrived in waves. A birth year changes which ideas were not even nameable yet.',
+  }));
+
+  const lotteryP = birthLotterySnapshot(parentYear, parentData, explicitCountries ? parentCountryCode : null);
+  const lotteryC = birthLotterySnapshot(childYear, childData, explicitCountries ? childCountryCode : null);
+
+  if (lotteryP && lotteryC) {
+    sections.push(compareCard({
+      eyebrow: 'The Birth Lottery',
+      headline: 'How much birthplace alone changed life expectancy',
+      parent: {
+        label: String(parentYear),
+        value: lotteryP.gap + ' yrs',
+        desc: displayCountryName(lotteryP.highest.country, parentYear) + ' vs ' + displayCountryName(lotteryP.lowest.country, parentYear),
+      },
+      child: {
+        label: String(childYear),
+        value: lotteryC.gap + ' yrs',
+        desc: displayCountryName(lotteryC.highest.country, childYear) + ' vs ' + displayCountryName(lotteryC.lowest.country, childYear),
+      },
+      delta: {
+        text: signedRaw(lotteryC.gap - lotteryP.gap, 1) + ' years in the global life-expectancy gap',
+        type: lotteryC.gap <= lotteryP.gap ? 'positive' : 'negative',
+      },
+      commentary: 'Same planet, same birth year, completely different odds depending on where you arrived.',
     }));
   }
 
@@ -1952,14 +2472,14 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
   // "WHEN YOU WERE 18" - async section appended after initial render
   // -----------------------------------------------------------------------
 
-  renderAt18Section(parentYear, childYear, parentCountryCode, childCountryCode, accentP, accentC);
+  renderAt18Section(parentYear, childYear, parentCountryCode, childCountryCode, accentP, accentC, explicitCountries);
 }
 
 // ---------------------------------------------------------------------------
 // WHEN YOU WERE 18 - async section
 // ---------------------------------------------------------------------------
 
-async function renderAt18Section(parentYear, childYear, parentCountryCode, childCountryCode, accentP, accentC) {
+async function renderAt18Section(parentYear, childYear, parentCountryCode, childCountryCode, accentP, accentC, explicitCountries) {
   const parentAt18 = parentYear + 18;
   const childAt18  = childYear  + 18;
 
@@ -1981,7 +2501,7 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
   const cpiP18 = CPI_TO_2024[parentAt18] || 1;
   const cpiC18 = CPI_TO_2024[childAt18]  || 1;
 
-  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid, countryCode, isChild) {
+  function at18Card(year, data, cpiYear, accentColor, pillClass, pillLabel, isValid, countryCode, useCountryContext, isChild) {
     if (!isValid || !data) {
       const currentYear = new Date().getFullYear();
       const fallbackText = isChild
@@ -2001,49 +2521,32 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
     </div>`;
     }
 
-    const music   = data.culture?.music;
-    const film    = data.culture?.film;
     const tv      = data.culture?.television;
     const tech    = data.technology;
-    const events  = data.world_events || [];
-    const countryD = data.countries?.[countryCode] || {};
+    const effectiveCountryCode = useCountryContext ? countryCode : null;
+    const countryD = effectiveCountryCode ? (data.countries?.[effectiveCountryCode] || {}) : {};
 
     // Leader: check country-level first, then leaders lookup (skip if unknown)
-    const leaderInfo = LEADER_KEYS[countryCode] || LEADER_KEYS.US;
-    const leader = data.leaders?.[leaderInfo.key] || countryD.leader || null;
+    const leaderInfo = effectiveCountryCode ? (LEADER_KEYS[effectiveCountryCode] || LEADER_KEYS.US) : null;
+    const leader = leaderInfo ? (data.leaders?.[leaderInfo.key] || countryD.leader || null) : null;
 
     // Gas price inflation-adjusted to 2024 dollars
     const gasRaw   = data.prices_us?.gallon_gas_usd;
-    const gasFinal = gasRaw ? ('$' + (gasRaw * cpiYear).toFixed(2)) : null;
+    const gasFinal = (effectiveCountryCode === 'US' && gasRaw) ? ('$' + (gasRaw * cpiYear).toFixed(2)) : null;
 
-    // Use local chart data for this card's country
-    const localMusicEntry = LOCAL_MUSIC[countryCode] && LOCAL_MUSIC[countryCode][year];
-    let song, artist;
-    if (localMusicEntry) {
-      song   = localMusicEntry.s;
-      artist = localMusicEntry.a;
-    } else if (countryCode === 'GB') {
-      song   = music?.uk_no1_jan  || music?.billboard_no1_song;
-      artist = music?.uk_no1_jan_artist || music?.billboard_no1_artist;
-    } else {
-      song   = music?.billboard_no1_song  || music?.uk_no1_jan;
-      artist = music?.billboard_no1_artist || music?.uk_no1_jan_artist;
-    }
-
-    // Use local film data for this card's country
-    const localFilmEntry = LOCAL_FILM[countryCode] && LOCAL_FILM[countryCode][year];
-    let movie, movieDir;
-    if (localFilmEntry) {
-      movie    = localFilmEntry.t;
-      movieDir = localFilmEntry.d;
-    } else {
-      movie    = film?.box_office_no1 || film?.oscar_best_picture;
-      movieDir = null;
-    }
+    const musicSelection = effectiveCountryCode ? localMusicSelection(year, effectiveCountryCode, data) : null;
+    const filmSelection = effectiveCountryCode ? localFilmSelection(year, effectiveCountryCode, data) : null;
+    const countryEvent = effectiveCountryCode ? (COUNTRY_EVENTS[effectiveCountryCode]?.[year] || null) : null;
+    const countrySnapshot = effectiveCountryCode && !countryEvent
+      ? countrySnapshotLine(effectiveCountryCode, year, countryD)
+      : null;
 
     // TV data is US-only; only show it for US cards
-    const tvShow  = (countryCode === 'US') ? tv?.most_watched_show : null;
+    const tvShow  = (effectiveCountryCode === 'US') ? tv?.most_watched_show : null;
     const techMil = tech?.milestone;
+    const events  = selectWorldEvents(year, data.world_events || [], effectiveCountryCode || '', 2, {
+      avoidTexts: [techMil, countryEvent],
+    });
 
     // Pick one notable world event
     const bigEvent = events.length > 0 ? events[0].event : null;
@@ -2057,17 +2560,23 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
       </div>`;
     }
 
-    const songDisplay = song ? song + (artist ? ' - ' + artist : '') : null;
-    const movieDisplay = movie ? movie + (movieDir ? ' (dir. ' + movieDir + ')' : '') : null;
+    const songDisplay = musicSelection
+      ? musicSelection.title + (musicSelection.detail ? ' - ' + musicSelection.detail : '')
+      : null;
+    const movieDisplay = filmSelection
+      ? filmSelection.title + (filmSelection.detail ? ' (' + filmSelection.detail + ')' : '')
+      : null;
 
     const rows = [
       row('\uD83C\uDFB5', '#1 Song',      songDisplay),
       row('\uD83C\uDFAC', 'Biggest Film', movieDisplay),
       row('\uD83D\uDCFA', 'Top TV Show',  tvShow),
-      row('\uD83D\uDCBB', 'Technology',   techMil ? techMil.slice(0, 90) + (techMil.length > 90 ? '...' : '') : null),
-      row('\uD83C\uDF0D', 'World Event',  bigEvent ? bigEvent.slice(0, 100) + (bigEvent.length > 100 ? '...' : '') : null),
+      row('\uD83C\uDFF3\uFE0F', 'Country Event', countryEvent),
+      row('\uD83D\uDCCD', 'Country Context', countrySnapshot),
+      row('\uD83D\uDCBB', 'Technology',   techMil || null),
+      row('\uD83C\uDF0D', 'Global Event', countryEvent ? null : bigEvent),
       row('\u26FD',       'Gas (2024$)',  gasFinal),
-      row('\uD83C\uDFF3\uFE0F', leaderInfo.title, leader),
+      row('\uD83D\uDC64', leaderInfo ? leaderInfo.title : '', leader),
     ].filter(Boolean).join('');
 
     return `<div class="at18-col">
@@ -2080,8 +2589,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
     </div>`;
   }
 
-  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid, parentCountryCode, false);
-  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid,  childCountryCode, true);
+  const parentCard = at18Card(parentAt18, parentAt18Data, cpiP18, accentP, 'gen-pill--parent', 'Their 18th', parentAt18Valid, parentCountryCode, explicitCountries, false);
+  const childCard  = at18Card(childAt18,  childAt18Data,  cpiC18, accentC, 'gen-pill--child',  'Your 18th',  childAt18Valid,  childCountryCode, explicitCountries, true);
 
   const sectionHtml = `
     <div class="at18-section" data-reveal>
@@ -2112,7 +2621,7 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
 
 function buildCompareShareCard() {
   if (!_lastCompare) return;
-  const { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData } = _lastCompare;
+  const { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData, hasExplicitCountries } = _lastCompare;
 
   const parentCountry = COUNTRY_MAP[parentCountryCode] || COUNTRIES[0];
   const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
@@ -2148,11 +2657,14 @@ function buildCompareShareCard() {
   const popP = parentData.world?.population_billions;
   const popC = childData.world?.population_billions;
   const popChangePct = (popP && popC) ? ((popC - popP) / popP * 100).toFixed(1) : null;
+  const co2P = CO2_PPM[parentYear];
+  const co2C = CO2_PPM[childYear];
 
   const stats = [
-    lifeP    && lifeC    && lifeDeltaForShare && { icon: '\u2764\uFE0F', label: 'Life expectancy',        value: signedRaw(parseFloat(lifeDeltaForShare)) + ' yrs between generations' },
-    shareGdpRawP && shareGdpRawC && gdpChangePct && { icon: '\uD83D\uDCB0', label: 'GDP per capita (real)',  value: signedPct(parseFloat(gdpChangePct)) + ' change (2024 dollars)' },
+    hasExplicitCountries && lifeP && lifeC && lifeDeltaForShare && { icon: '\u2764\uFE0F', label: 'Life expectancy', value: signedRaw(parseFloat(lifeDeltaForShare)) + ' yrs between generations' },
+    hasExplicitCountries && shareGdpRawP && shareGdpRawC && gdpChangePct && { icon: '\uD83D\uDCB0', label: 'GDP per capita (real)', value: signedPct(parseFloat(gdpChangePct)) + ' change (2024 dollars)' },
     popP     && popC     && { icon: '\uD83C\uDF0D', label: 'World population',       value: popP.toFixed(2) + 'B to ' + popC.toFixed(2) + 'B (' + signedPct(parseFloat(popChangePct)) + ')' },
+    !hasExplicitCountries && co2P && co2C && { icon: '\u2601\uFE0F', label: 'Atmosphere', value: co2P + ' ppm to ' + co2C + ' ppm' },
   ].filter(Boolean);
 
   const statsHTML = stats.map(s => `
@@ -2166,9 +2678,11 @@ function buildCompareShareCard() {
   `).join('');
 
   // Show both flags; if same country, show once
-  const flagDisplay = parentCountryCode === childCountryCode
-    ? parentCountry.flag
-    : parentCountry.flag + ' ' + childCountry.flag;
+  const flagDisplay = !hasExplicitCountries
+    ? '\uD83C\uDF0D'
+    : (parentCountryCode === childCountryCode
+      ? parentCountry.flag
+      : parentCountry.flag + ' ' + childCountry.flag);
 
   $shareCard.style.setProperty('--sc-accent', accentP);
   $shareCard.style.setProperty('--sc-accent-child', accentC);
@@ -2295,12 +2809,13 @@ function updateCompareDirectoryLinks() {
   const dir = document.getElementById('compare-directory');
   if (!dir) return;
   const bothUS = selectedParentCountry.code === 'US' && selectedChildCountry.code === 'US';
+  const useStaticCompareLinks = !_hasExplicitCountries && bothUS;
   dir.querySelectorAll('.directory-links a').forEach(a => {
     const text = a.textContent.trim();
     // Compare links: "YYYY vs YYYY"
     const cmpMatch = text.match(/^(\d{4})\s+vs\s+(\d{4})$/);
     if (cmpMatch) {
-      if (bothUS) {
+      if (useStaticCompareLinks) {
         a.href = `/born-in/compare/${cmpMatch[1]}-vs-${cmpMatch[2]}/`;
       } else {
         a.href = `/born-in/compare/?parent=${cmpMatch[1]}&child=${cmpMatch[2]}&pcountry=${selectedParentCountry.code}&ccountry=${selectedChildCountry.code}`;
@@ -2364,6 +2879,7 @@ $parentCountryList.addEventListener('click', (e) => {
   const match = COUNTRY_MAP[code];
   if (match) {
     selectedParentCountry = match;
+    _hasExplicitCountries = true;
     setCountryDisplay($parentCountryDisplay, match);
     closeParentCountryDropdown();
     updateCompareDirectoryLinks();
@@ -2415,6 +2931,7 @@ $childCountryList.addEventListener('click', (e) => {
   const match = COUNTRY_MAP[code];
   if (match) {
     selectedChildCountry = match;
+    _hasExplicitCountries = true;
     setCountryDisplay($childCountryDisplay, match);
     closeChildCountryDropdown();
     updateCompareDirectoryLinks();
@@ -2463,7 +2980,7 @@ function validateYear(raw, errorEl, label) {
 // ---------------------------------------------------------------------------
 
 function showResult(parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData) {
-  _lastCompare = { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData };
+  _lastCompare = { parentYear, childYear, parentCountryCode, childCountryCode, parentData, childData, hasExplicitCountries: _hasExplicitCountries };
 
   applyAccents(parentYear, childYear);
 
@@ -2474,7 +2991,9 @@ function showResult(parentYear, childYear, parentCountryCode, childCountryCode, 
   const childCountry  = COUNTRY_MAP[childCountryCode]  || COUNTRIES[0];
   $headerLabel.innerHTML = '<span class="cmp-header-parent">' + escHtml(String(parentYear)) + '</span> vs <span class="cmp-header-child">' + escHtml(String(childYear)) + '</span>';
 
-  if (parentCountryCode === childCountryCode) {
+  if (!_hasExplicitCountries) {
+    $headerCountries.innerHTML = '\uD83C\uDF0D <span class="country-name">Global context</span>';
+  } else if (parentCountryCode === childCountryCode) {
     $headerCountries.innerHTML = parentCountry.flag + ' <span class="country-name">' + escHtml(parentCountry.name) + '</span>';
   } else {
     $headerCountries.innerHTML = parentCountry.flag + ' <span class="country-name">' + escHtml(parentCountry.name) + '</span>' +
@@ -2535,6 +3054,7 @@ $form.addEventListener('submit', async (e) => {
 
   try {
     const { parentData, childData } = await loadBothYears(py, cy);
+    _hasExplicitCountries = true;
     updateUrl(py, cy, pCountry.code, cCountry.code);
     showResult(py, cy, pCountry.code, cCountry.code, parentData, childData);
   } catch (err) {
@@ -2585,6 +3105,8 @@ async function readUrlParams() {
   if (YEAR_GAPS.has(py) || YEAR_GAPS.has(cy)) return;
   if (Math.abs(cy - py) < 15) return;
 
+  _hasExplicitCountries = Boolean(pcountryParam || ccountryParam || legacyCountry);
+
   // Resolve parent country
   const resolvedPCountry = (pcountryParam && COUNTRY_MAP[pcountryParam])
     ? COUNTRY_MAP[pcountryParam]
@@ -2607,6 +3129,7 @@ async function readUrlParams() {
   }
   setCountryDisplay($parentCountryDisplay, selectedParentCountry);
   setCountryDisplay($childCountryDisplay,  selectedChildCountry);
+  updateCompareDirectoryLinks();
 
   try {
     const { parentData, childData } = await loadBothYears(parentYear, childYear);
@@ -2676,6 +3199,7 @@ $saveCardBtn.addEventListener('click', () => {
 });
 
 function handleNew() {
+  _hasExplicitCountries = true;
   showLanding();
   $parentYearInput.value = '';
   $childYearInput.value = '';
@@ -2709,6 +3233,7 @@ window.addEventListener('popstate', () => {
 
 setCountryDisplay($parentCountryDisplay, selectedParentCountry);
 setCountryDisplay($childCountryDisplay,  selectedChildCountry);
+updateCompareDirectoryLinks();
 
 // Directory toggle
 const $dirToggle = document.getElementById('directory-toggle');
