@@ -2573,7 +2573,7 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
       row('\uD83D\uDCCD', 'Country Context', countrySnapshot),
       row('\uD83D\uDCBB', 'Technology',   techMil || null),
       row('\uD83C\uDF0D', 'Global Event', countryEvent ? null : bigEvent),
-      row('\u26FD',       'Gas (2024$)',  gasFinal),
+      row('\u26FD',       `Gas (${CURRENT_YEAR}$)`,  gasFinal),
       row('\uD83D\uDC64', leaderInfo ? leaderInfo.title : '', leader),
     ].filter(Boolean).join('');
 
