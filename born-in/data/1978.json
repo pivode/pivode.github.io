@@ -184,8 +184,8 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 643.0,
-      "life_expectancy": 52.0,
+      "population_millions": 643,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 176,
       "leader": "Morarji Desai",
       "leader_title": "Prime Minister"
@@ -199,7 +199,7 @@
     },
     "JP": {
       "population_millions": 114.9,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 8670,
       "leader": "Takeo Fukuda",
       "leader_title": "Prime Minister"
@@ -240,14 +240,14 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 138.0,
+      "population_millions": 138,
       "life_expectancy": 66.2,
       "gdp_per_capita_usd": 5500,
       "leader": "Leonid Brezhnev",
       "leader_title": "General Secretary"
     },
     "MX": {
-      "population_millions": 67.0,
+      "population_millions": 67,
       "life_expectancy": 66.7,
       "gdp_per_capita_usd": 5100,
       "leader": "José López Portillo",
@@ -276,14 +276,14 @@
     },
     "ZA": {
       "population_millions": 27.9,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 1722,
       "leader": "P.W. Botha",
       "leader_title": "Prime Minister"
     },
     "AR": {
       "population_millions": 27.1,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 2146,
       "leader": "Jorge Videla",
       "leader_title": "President"
@@ -345,7 +345,7 @@
       "leader_title": "President"
     },
     "BD": {
-      "population_millions": 80.0,
+      "population_millions": 80,
       "life_expectancy": 51.6,
       "gdp_per_capita_usd": 127,
       "leader": "Ziaur Rahman",
@@ -353,7 +353,7 @@
     },
     "PL": {
       "population_millions": 35.2,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1250,
       "leader": "Edward Gierek",
       "leader_title": "First Secretary"
@@ -381,14 +381,14 @@
     },
     "CO": {
       "population_millions": 28.3,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 1100,
       "leader": "Julio Cesar Turbay Ayala",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 17.5,
-      "life_expectancy": 54.0,
+      "life_expectancy": 54,
       "gdp_per_capita_usd": 368,
       "leader": "Daniel arap Moi",
       "leader_title": "President"
@@ -416,7 +416,7 @@
     },
     "CL": {
       "population_millions": 11.1,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 1440,
       "leader": "Augusto Pinochet",
       "leader_title": "President"
@@ -437,7 +437,7 @@
     },
     "GH": {
       "population_millions": 12.1,
-      "life_expectancy": 51.0,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 410,
       "leader": "Fred Akuffo",
       "leader_title": "Head of State"
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 900,
       "leader": "Francisco Morales Bermudez",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.3,
+      "life_expectancy": 75.6,
+      "gdp_per_capita_usd": 24200,
+      "leader": "Willi Ritschard",
+      "leader_title": "Federal Council President"
     }
   }
 }

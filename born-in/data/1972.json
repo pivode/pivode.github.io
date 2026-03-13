@@ -184,7 +184,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 554.0,
+      "population_millions": 554,
       "life_expectancy": 48.4,
       "gdp_per_capita_usd": 118,
       "leader": "Indira Gandhi",
@@ -213,7 +213,7 @@
     },
     "BR": {
       "population_millions": 97.6,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 531,
       "leader": "Emílio Garrastazu Médici",
       "leader_title": "President"
@@ -283,7 +283,7 @@
     },
     "AR": {
       "population_millions": 24.6,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 1409,
       "leader": "Alejandro Lanusse",
       "leader_title": "President"
@@ -374,21 +374,21 @@
     },
     "VN": {
       "population_millions": 45.1,
-      "life_expectancy": 54.0,
+      "life_expectancy": 54,
       "gdp_per_capita_usd": 92,
       "leader": "Ton Duc Thang",
       "leader_title": "President of DRV"
     },
     "CO": {
       "population_millions": 24.2,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 530,
       "leader": "Misael Pastrana Borrero",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 13.7,
-      "life_expectancy": 51.0,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 168,
       "leader": "Jomo Kenyatta",
       "leader_title": "President"
@@ -437,17 +437,24 @@
     },
     "GH": {
       "population_millions": 10.2,
-      "life_expectancy": 49.0,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 260,
       "leader": "Ignatius Kutu Acheampong",
       "leader_title": "Head of State"
     },
     "PE": {
-      "population_millions": 14.0,
+      "population_millions": 14,
       "life_expectancy": 54.5,
       "gdp_per_capita_usd": 590,
       "leader": "Juan Velasco Alvarado",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.4,
+      "life_expectancy": 74.3,
+      "gdp_per_capita_usd": 21000,
+      "leader": "Nello Celio",
+      "leader_title": "Federal Council President"
     }
   }
 }

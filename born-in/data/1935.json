@@ -2,21 +2,21 @@
   "year": 1935,
   "schema_version": 1,
   "world": {
-    "population_billions": 2.30,
+    "population_billions": 2.3,
     "births_millions": 70,
-    "life_expectancy_global": 40.0,
+    "life_expectancy_global": 40,
     "countries_count": 54,
     "internet_users": 0
   },
   "economy": {
     "us_gdp_per_capita_usd": 703,
     "us_median_household_income_usd": 1160,
-    "us_inflation_pct": 3.0,
+    "us_inflation_pct": 3,
     "us_unemployment_pct": 20.1,
     "us_minimum_wage_usd": null,
     "sp500_year_end": null,
     "dow_jones_year_end": 144.13,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 0.97
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Top Hat",
-      "box_office_no1_gross_m": 3.0,
+      "box_office_no1_gross_m": 3,
       "oscar_best_picture": "It Happened One Night",
       "oscar_best_director": "It Happened One Night",
       "oscar_best_director_name": "Frank Capra",
@@ -170,14 +170,14 @@
     },
     "GB": {
       "population_millions": 47.1,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 520,
       "leader": "Stanley Baldwin",
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 66.0,
-      "life_expectancy": 61.0,
+      "population_millions": 66,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 460,
       "leader": "Adolf Hitler",
       "leader_title": "Fuhrer and Chancellor"
@@ -204,8 +204,8 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 500.0,
-      "life_expectancy": 34.0,
+      "population_millions": 500,
+      "life_expectancy": 34,
       "gdp_per_capita_usd": 40,
       "leader": "Chiang Kai-shek",
       "leader_title": "Generalissimo"
@@ -218,15 +218,15 @@
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 11.0,
+      "population_millions": 11,
       "life_expectancy": 62.1,
       "gdp_per_capita_usd": 700,
       "leader": "R. B. Bennett",
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 109.0,
-      "life_expectancy": 44.0,
+      "population_millions": 109,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 450,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
@@ -240,136 +240,143 @@
     },
     "IE": {
       "population_millions": 2.95,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 430,
       "leader": "Eamon de Valera",
       "leader_title": "President of the Executive Council"
     },
     "NG": {
-      "population_millions": 21.0,
-      "life_expectancy": 28.0,
+      "population_millions": 21,
+      "life_expectancy": 28,
       "gdp_per_capita_usd": 50,
       "leader": "British Colonial Administration",
       "leader_title": "Colonial Government"
     },
     "ZA": {
       "population_millions": 10.2,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 210,
       "leader": "J. B. M. Hertzog",
       "leader_title": "Prime Minister"
     },
     "AR": {
       "population_millions": 12.4,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 500,
       "leader": "Agustin Pedro Justo",
       "leader_title": "President"
     },
     "PH": {
       "population_millions": 15.2,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 120,
       "leader": "Manuel Quezon",
       "leader_title": "President (Commonwealth)"
     },
     "EG": {
       "population_millions": 15.9,
-      "life_expectancy": 35.0,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 80,
       "leader": "King Fuad I",
       "leader_title": "King"
     },
     "IT": {
       "population_millions": 42.5,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 290,
       "leader": "Benito Mussolini",
       "leader_title": "Head of Government"
     },
     "ES": {
       "population_millions": 24.2,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 170,
       "leader": "Niceto Alcala-Zamora",
       "leader_title": "President"
     },
     "NL": {
       "population_millions": 8.5,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 430,
       "leader": "Hendrikus Colijn",
       "leader_title": "Prime Minister"
     },
     "TR": {
-      "population_millions": 16.0,
-      "life_expectancy": 38.0,
+      "population_millions": 16,
+      "life_expectancy": 38,
       "gdp_per_capita_usd": 170,
       "leader": "Mustafa Kemal Ataturk",
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 33.0,
-      "life_expectancy": 49.0,
+      "population_millions": 33,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 185,
       "leader": "Jozef Pilsudski (to May), then Edward Smigly-Rydz",
       "leader_title": "Marshal"
     },
     "SE": {
       "population_millions": 6.3,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 760,
       "leader": "Per Albin Hansson",
       "leader_title": "Prime Minister"
     },
     "TH": {
       "population_millions": 14.5,
-      "life_expectancy": 35.0,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 60,
       "leader": "Phraya Phahon Phonphayuhasena",
       "leader_title": "Prime Minister"
     },
     "CO": {
       "population_millions": 8.7,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 145,
       "leader": "Alfonso Lopez Pumarejo",
       "leader_title": "President"
     },
     "SA": {
       "population_millions": 3.5,
-      "life_expectancy": 33.0,
+      "life_expectancy": 33,
       "gdp_per_capita_usd": 75,
       "leader": "Abdulaziz ibn Saud",
       "leader_title": "King"
     },
     "PT": {
       "population_millions": 7.3,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 170,
       "leader": "Antonio de Oliveira Salazar",
       "leader_title": "Prime Minister"
     },
     "CL": {
       "population_millions": 4.5,
-      "life_expectancy": 47.0,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 250,
       "leader": "Arturo Alessandri Palma",
       "leader_title": "President"
     },
     "UA": {
-      "population_millions": 30.0,
-      "life_expectancy": 40.0,
+      "population_millions": 30,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 350,
       "leader": "Vlas Chubar",
       "leader_title": "Chairman, Council of People's Commissars"
     },
     "PE": {
       "population_millions": 6.2,
-      "life_expectancy": 37.0,
+      "life_expectancy": 37,
       "gdp_per_capita_usd": 140,
       "leader": "Oscar Benavides",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.18,
+      "life_expectancy": 63.3,
+      "gdp_per_capita_usd": 5700,
+      "leader": "Rudolf Minger",
+      "leader_title": "Federal Council President"
     }
   }
 }

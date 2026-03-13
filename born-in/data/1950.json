@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
     "dow_jones_year_end": 235.41,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.71
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Cinderella",
-      "box_office_no1_gross_m": 41.0,
+      "box_office_no1_gross_m": 41,
       "oscar_best_picture": "All the King's Men",
       "oscar_best_director": "A Letter to Three Wives",
       "oscar_best_director_name": "Joseph L. Mankiewicz",
@@ -193,7 +193,7 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 50.0,
+      "population_millions": 50,
       "life_expectancy": 66.1,
       "gdp_per_capita_usd": 505,
       "leader": "Konrad Adenauer",
@@ -221,7 +221,7 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 544.0,
+      "population_millions": 544,
       "life_expectancy": 40.8,
       "gdp_per_capita_usd": 50,
       "leader": "Mao Zedong",
@@ -256,7 +256,7 @@
       "leader_title": "President"
     },
     "KR": {
-      "population_millions": 20.0,
+      "population_millions": 20,
       "life_expectancy": 45.5,
       "gdp_per_capita_usd": 80,
       "leader": "Syngman Rhee",
@@ -299,7 +299,7 @@
     },
     "EG": {
       "population_millions": 20.7,
-      "life_expectancy": 34.0,
+      "life_expectancy": 34,
       "gdp_per_capita_usd": 110,
       "leader": "King Farouk",
       "leader_title": "King"
@@ -341,7 +341,7 @@
     },
     "PK": {
       "population_millions": 37.5,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 64,
       "leader": "Liaquat Ali Khan",
       "leader_title": "Prime Minister"
@@ -369,7 +369,7 @@
     },
     "VN": {
       "population_millions": 27.4,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 53,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
@@ -383,14 +383,14 @@
     },
     "KE": {
       "population_millions": 6.3,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 68,
       "leader": "Philip Mitchell",
       "leader_title": "Governor"
     },
     "SA": {
       "population_millions": 3.1,
-      "life_expectancy": 39.0,
+      "life_expectancy": 39,
       "gdp_per_capita_usd": 278,
       "leader": "Abdulaziz ibn Saud",
       "leader_title": "King"
@@ -425,14 +425,14 @@
     },
     "UA": {
       "population_millions": 36.9,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 550,
       "leader": "Leonid Melnikov",
       "leader_title": "First Secretary"
     },
     "GH": {
-      "population_millions": 5.0,
-      "life_expectancy": 42.0,
+      "population_millions": 5,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 170,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
@@ -443,6 +443,13 @@
       "gdp_per_capita_usd": 220,
       "leader": "Manuel Odria",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.69,
+      "life_expectancy": 68.3,
+      "gdp_per_capita_usd": 8280,
+      "leader": "Max-Edouard Petitpierre",
+      "leader_title": "Federal Council President"
     }
   }
 }

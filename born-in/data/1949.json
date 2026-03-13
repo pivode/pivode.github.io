@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Samson and Delilah",
-      "box_office_no1_gross_m": 25.0,
+      "box_office_no1_gross_m": 25,
       "oscar_best_picture": "Hamlet",
       "oscar_best_director": "The Treasure of the Sierra Madre",
       "oscar_best_director_name": "John Huston",
@@ -169,7 +169,7 @@
   "countries": {
     "US": {
       "population_millions": 149.2,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1651,
       "leader": "Harry S. Truman",
       "leader_title": "President"
@@ -182,15 +182,15 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 352.0,
-      "life_expectancy": 34.0,
+      "population_millions": 352,
+      "life_expectancy": 34,
       "gdp_per_capita_usd": 62,
       "leader": "Jawaharlal Nehru",
       "leader_title": "Prime Minister"
     },
     "PK": {
       "population_millions": 34.8,
-      "life_expectancy": 39.0,
+      "life_expectancy": 39,
       "gdp_per_capita_usd": 60,
       "leader": "Liaquat Ali Khan",
       "leader_title": "Prime Minister"
@@ -204,14 +204,14 @@
     },
     "KR": {
       "population_millions": 19.8,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 79,
       "leader": "Syngman Rhee",
       "leader_title": "President"
     },
     "DE": {
-      "population_millions": 68.0,
-      "life_expectancy": 65.0,
+      "population_millions": 68,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 420,
       "leader": "Konrad Adenauer",
       "leader_title": "Chancellor"
@@ -238,14 +238,14 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 547.0,
-      "life_expectancy": 40.0,
+      "population_millions": 547,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 49,
       "leader": "Mao Zedong",
       "leader_title": "Chairman"
     },
     "AU": {
-      "population_millions": 8.0,
+      "population_millions": 8,
       "life_expectancy": 68.8,
       "gdp_per_capita_usd": 1020,
       "leader": "Ben Chifley",
@@ -281,21 +281,21 @@
     },
     "VN": {
       "population_millions": 24.9,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 48,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
     },
     "IE": {
       "population_millions": 2.96,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 480,
       "leader": "John A. Costello",
       "leader_title": "Taoiseach"
     },
     "NG": {
       "population_millions": 32.6,
-      "life_expectancy": 35.0,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 73,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
@@ -316,7 +316,7 @@
     },
     "PH": {
       "population_millions": 19.6,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 185,
       "leader": "Elpidio Quirino",
       "leader_title": "President"
@@ -330,7 +330,7 @@
     },
     "IT": {
       "population_millions": 46.9,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 340,
       "leader": "Alcide De Gasperi",
       "leader_title": "Prime Minister"
@@ -358,7 +358,7 @@
     },
     "PL": {
       "population_millions": 24.3,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 235,
       "leader": "Jozef Cyrankiewicz",
       "leader_title": "Prime Minister"
@@ -372,7 +372,7 @@
     },
     "TH": {
       "population_millions": 19.4,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 75,
       "leader": "Plaek Phibunsongkhram",
       "leader_title": "Prime Minister"
@@ -386,7 +386,7 @@
     },
     "SA": {
       "population_millions": 3.1,
-      "life_expectancy": 39.0,
+      "life_expectancy": 39,
       "gdp_per_capita_usd": 260,
       "leader": "Abdulaziz ibn Saud",
       "leader_title": "King"
@@ -399,22 +399,22 @@
       "leader_title": "Prime Minister"
     },
     "CL": {
-      "population_millions": 6.0,
-      "life_expectancy": 54.0,
+      "population_millions": 6,
+      "life_expectancy": 54,
       "gdp_per_capita_usd": 363,
       "leader": "Gabriel Gonzalez Videla",
       "leader_title": "President"
     },
     "MY": {
       "population_millions": 5.9,
-      "life_expectancy": 47.0,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 250,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
     },
     "UA": {
-      "population_millions": 36.0,
-      "life_expectancy": 56.0,
+      "population_millions": 36,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 500,
       "leader": "Nikita Khrushchev",
       "leader_title": "First Secretary"
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 215,
       "leader": "Manuel Odria",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.6,
+      "life_expectancy": 67.5,
+      "gdp_per_capita_usd": 7600,
+      "leader": "Ernst Nobs",
+      "leader_title": "Federal Council President"
     }
   }
 }

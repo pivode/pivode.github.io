@@ -182,7 +182,7 @@
     },
     "GB": {
       "population_millions": 55.6,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 2278,
       "leader": "Edward Heath",
       "leader_title": "Prime Minister"
@@ -203,7 +203,7 @@
     },
     "JP": {
       "population_millions": 103.7,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 2044,
       "leader": "Eisaku Sato",
       "leader_title": "Prime Minister"
@@ -238,14 +238,14 @@
     },
     "CA": {
       "population_millions": 21.3,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 3957,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
     },
     "RU": {
       "population_millions": 130.4,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 4280,
       "leader": "Leonid Brezhnev",
       "leader_title": "General Secretary"
@@ -273,7 +273,7 @@
     },
     "NG": {
       "population_millions": 55.9,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 224,
       "leader": "Yakubu Gowon",
       "leader_title": "Head of State"
@@ -301,7 +301,7 @@
     },
     "EG": {
       "population_millions": 34.6,
-      "life_expectancy": 49.0,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 233,
       "leader": "Anwar Sadat",
       "leader_title": "President"
@@ -321,7 +321,7 @@
       "leader_title": "Head of State"
     },
     "NL": {
-      "population_millions": 13.0,
+      "population_millions": 13,
       "life_expectancy": 73.6,
       "gdp_per_capita_usd": 2600,
       "leader": "Piet de Jong",
@@ -343,7 +343,7 @@
     },
     "PK": {
       "population_millions": 67.3,
-      "life_expectancy": 51.0,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 142,
       "leader": "Yahya Khan",
       "leader_title": "President"
@@ -371,42 +371,42 @@
     },
     "VN": {
       "population_millions": 43.4,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 90,
       "leader": "Ton Duc Thang",
       "leader_title": "President of DRV"
     },
     "CO": {
       "population_millions": 22.9,
-      "life_expectancy": 62.0,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 475,
       "leader": "Misael Pastrana Borrero",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 12.7,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 148,
       "leader": "Jomo Kenyatta",
       "leader_title": "President"
     },
     "SA": {
       "population_millions": 5.8,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 820,
       "leader": "Faisal bin Abdulaziz",
       "leader_title": "King"
     },
     "IL": {
-      "population_millions": 3.0,
-      "life_expectancy": 72.0,
+      "population_millions": 3,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 1920,
       "leader": "Golda Meir",
       "leader_title": "Prime Minister"
     },
     "PT": {
       "population_millions": 8.7,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 780,
       "leader": "Marcelo Caetano",
       "leader_title": "Prime Minister"
@@ -445,6 +445,13 @@
       "gdp_per_capita_usd": 530,
       "leader": "Juan Velasco Alvarado",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.27,
+      "life_expectancy": 73.8,
+      "gdp_per_capita_usd": 19500,
+      "leader": "Hans-Peter Tschudi",
+      "leader_title": "Federal Council President"
     }
   }
 }

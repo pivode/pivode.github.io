@@ -16,14 +16,14 @@
     "us_minimum_wage_usd": 7.25,
     "sp500_year_end": 1426.19,
     "dow_jones_year_end": 13104.14,
-    "gold_oz_usd": 1657.50,
+    "gold_oz_usd": 1657.5,
     "oil_barrel_usd": 94.05
   },
   "prices_us": {
     "gallon_gas_usd": 3.64,
     "gallon_milk_usd": 3.46,
     "dozen_eggs_usd": 1.86,
-    "loaf_bread_usd": 2.00,
+    "loaf_bread_usd": 2,
     "movie_ticket_usd": 8.35,
     "new_car_avg_usd": 31099,
     "median_home_usd": 173200,
@@ -147,7 +147,7 @@
   "notable_births": [],
   "countries": {
     "US": {
-      "population_millions": 314.0,
+      "population_millions": 314,
       "life_expectancy": 78.8,
       "gdp_per_capita_usd": 51784,
       "leader": "Barack Obama",
@@ -231,7 +231,7 @@
       "leader_title": "President"
     },
     "KR": {
-      "population_millions": 50.0,
+      "population_millions": 50,
       "life_expectancy": 81.4,
       "gdp_per_capita_usd": 25457,
       "leader": "Lee Myung-bak",
@@ -253,7 +253,7 @@
     },
     "ZA": {
       "population_millions": 53.8,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 7507,
       "leader": "Jacob Zuma",
       "leader_title": "President"
@@ -315,7 +315,7 @@
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 185.0,
+      "population_millions": 185,
       "life_expectancy": 67.4,
       "gdp_per_capita_usd": 1257,
       "leader": "Asif Ali Zardari",
@@ -330,7 +330,7 @@
     },
     "PL": {
       "population_millions": 38.5,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 13432,
       "leader": "Bronislaw Komorowski",
       "leader_title": "President"
@@ -365,7 +365,7 @@
     },
     "KE": {
       "population_millions": 44.4,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 1147,
       "leader": "Mwai Kibaki",
       "leader_title": "President"
@@ -414,7 +414,7 @@
     },
     "GH": {
       "population_millions": 26.4,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 1605,
       "leader": "John Mahama",
       "leader_title": "President"
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 6797,
       "leader": "Ollanta Humala",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.99,
+      "life_expectancy": 82.8,
+      "gdp_per_capita_usd": 51000,
+      "leader": "Eveline Widmer-Schlumpf",
+      "leader_title": "Federal Council President"
     }
   }
 }

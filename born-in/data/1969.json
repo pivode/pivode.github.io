@@ -197,7 +197,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 512.0,
+      "population_millions": 512,
       "life_expectancy": 46.9,
       "gdp_per_capita_usd": 107,
       "leader": "Indira Gandhi",
@@ -246,14 +246,14 @@
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 21.0,
-      "life_expectancy": 73.0,
+      "population_millions": 21,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 3533,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 132.0,
+      "population_millions": 132,
       "life_expectancy": 66.9,
       "gdp_per_capita_usd": 4050,
       "leader": "Leonid Brezhnev",
@@ -303,7 +303,7 @@
     },
     "PH": {
       "population_millions": 36.7,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 275,
       "leader": "Ferdinand Marcos",
       "leader_title": "President"
@@ -345,7 +345,7 @@
     },
     "TR": {
       "population_millions": 35.7,
-      "life_expectancy": 56.0,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 643,
       "leader": "Suleyman Demirel",
       "leader_title": "Prime Minister"
@@ -422,14 +422,14 @@
     },
     "CL": {
       "population_millions": 9.6,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 760,
       "leader": "Eduardo Frei Montalva",
       "leader_title": "President"
     },
     "MY": {
       "population_millions": 10.6,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 460,
       "leader": "Tunku Abdul Rahman",
       "leader_title": "Prime Minister"
@@ -443,17 +443,24 @@
     },
     "GH": {
       "population_millions": 9.3,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 265,
       "leader": "Kofi Abrefa Busia",
       "leader_title": "Prime Minister"
     },
     "PE": {
-      "population_millions": 13.0,
+      "population_millions": 13,
       "life_expectancy": 53.2,
       "gdp_per_capita_usd": 510,
       "leader": "Juan Velasco Alvarado",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.14,
+      "life_expectancy": 73.2,
+      "gdp_per_capita_usd": 18200,
+      "leader": "Ludwig von Moos",
+      "leader_title": "Federal Council President"
     }
   }
 }

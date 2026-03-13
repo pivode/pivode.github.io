@@ -4,7 +4,7 @@
   "world": {
     "population_billions": 2.96,
     "births_millions": 103,
-    "life_expectancy_global": 51.0,
+    "life_expectancy_global": 51,
     "countries_count": 85,
     "internet_users": 0
   },
@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 5400,
     "us_inflation_pct": 0.69,
     "us_unemployment_pct": 5.5,
-    "us_minimum_wage_usd": 1.0,
+    "us_minimum_wage_usd": 1,
     "sp500_year_end": 59.89,
     "dow_jones_year_end": 679.36,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.9
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Ben-Hur",
-      "box_office_no1_gross_m": 70.0,
+      "box_office_no1_gross_m": 70,
       "oscar_best_picture": "Gigi",
       "oscar_best_director": "Gigi",
       "oscar_best_director_name": "Vincente Minnelli",
@@ -180,8 +180,8 @@
       "leader_title": "President"
     },
     "GB": {
-      "population_millions": 52.0,
-      "life_expectancy": 71.0,
+      "population_millions": 52,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1250,
       "leader": "Harold Macmillan",
       "leader_title": "Prime Minister"
@@ -202,14 +202,14 @@
     },
     "JP": {
       "population_millions": 93.4,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 459,
       "leader": "Nobusuke Kishi",
       "leader_title": "Prime Minister"
     },
     "FR": {
       "population_millions": 45.3,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1235,
       "leader": "Charles de Gaulle",
       "leader_title": "President"
@@ -222,7 +222,7 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 654.0,
+      "population_millions": 654,
       "life_expectancy": 47.9,
       "gdp_per_capita_usd": 69,
       "leader": "Mao Zedong",
@@ -243,7 +243,7 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 114.0,
+      "population_millions": 114,
       "life_expectancy": 65.5,
       "gdp_per_capita_usd": 2750,
       "leader": "Nikita Khrushchev",
@@ -272,7 +272,7 @@
     },
     "NG": {
       "population_millions": 44.7,
-      "life_expectancy": 37.0,
+      "life_expectancy": 37,
       "gdp_per_capita_usd": 91,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
@@ -342,7 +342,7 @@
     },
     "PK": {
       "population_millions": 47.9,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 82,
       "leader": "Ayub Khan",
       "leader_title": "President"
@@ -363,7 +363,7 @@
     },
     "TH": {
       "population_millions": 26.7,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 105,
       "leader": "Sarit Thanarat",
       "leader_title": "Prime Minister"
@@ -376,7 +376,7 @@
       "leader_title": "President of DRV"
     },
     "CO": {
-      "population_millions": 16.0,
+      "population_millions": 16,
       "life_expectancy": 54.9,
       "gdp_per_capita_usd": 310,
       "leader": "Alberto Lleras Camargo",
@@ -398,7 +398,7 @@
     },
     "IL": {
       "population_millions": 2.1,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 760,
       "leader": "David Ben-Gurion",
       "leader_title": "Prime Minister"
@@ -419,7 +419,7 @@
     },
     "MY": {
       "population_millions": 7.8,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 335,
       "leader": "Tunku Abdul Rahman",
       "leader_title": "Prime Minister"
@@ -444,6 +444,13 @@
       "gdp_per_capita_usd": 290,
       "leader": "Manuel Prado Ugarteche",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.35,
+      "life_expectancy": 70.8,
+      "gdp_per_capita_usd": 11200,
+      "leader": "Paul Chaudet",
+      "leader_title": "Federal Council President"
     }
   }
 }

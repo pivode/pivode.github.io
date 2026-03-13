@@ -11,12 +11,12 @@
   "economy": {
     "us_gdp_per_capita_usd": 25467,
     "us_median_household_income_usd": 30636,
-    "us_inflation_pct": 3.0,
+    "us_inflation_pct": 3,
     "us_unemployment_pct": 7.5,
     "us_minimum_wage_usd": 4.25,
     "sp500_year_end": 435.71,
     "dow_jones_year_end": 3301.11,
-    "gold_oz_usd": 333.0,
+    "gold_oz_usd": 333,
     "oil_barrel_usd": 19.25
   },
   "prices_us": {
@@ -171,7 +171,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 255.0,
+      "population_millions": 255,
       "life_expectancy": 75.8,
       "gdp_per_capita_usd": 25467,
       "leader": "George H. W. Bush",
@@ -214,7 +214,7 @@
     },
     "BR": {
       "population_millions": 154.1,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 2617,
       "leader": "Fernando Collor de Mello",
       "leader_title": "President"
@@ -255,7 +255,7 @@
       "leader_title": "President"
     },
     "KR": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 73.7,
       "gdp_per_capita_usd": 8263,
       "leader": "Roh Tae-woo",
@@ -263,7 +263,7 @@
     },
     "IE": {
       "population_millions": 3.56,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 16500,
       "leader": "Albert Reynolds",
       "leader_title": "Taoiseach"
@@ -340,7 +340,7 @@
     },
     "PK": {
       "population_millions": 115.2,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 455,
       "leader": "Nawaz Sharif",
       "leader_title": "Prime Minister"
@@ -361,7 +361,7 @@
     },
     "SE": {
       "population_millions": 8.67,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 29100,
       "leader": "Carl Bildt",
       "leader_title": "Prime Minister"
@@ -388,7 +388,7 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 30.0,
+      "population_millions": 30,
       "life_expectancy": 57.8,
       "gdp_per_capita_usd": 345,
       "leader": "Daniel arap Moi",
@@ -409,7 +409,7 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 74.6,
       "gdp_per_capita_usd": 9140,
       "leader": "Anibal Cavaco Silva",
@@ -449,6 +449,13 @@
       "gdp_per_capita_usd": 1050,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.88,
+      "life_expectancy": 78.3,
+      "gdp_per_capita_usd": 33500,
+      "leader": "René Felber",
+      "leader_title": "Federal Council President"
     }
   }
 }

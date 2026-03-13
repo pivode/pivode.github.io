@@ -184,8 +184,8 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 735.0,
-      "life_expectancy": 56.0,
+      "population_millions": 735,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 268,
       "leader": "Rajiv Gandhi",
       "leader_title": "Prime Minister"
@@ -198,14 +198,14 @@
       "leader_title": "Chancellor"
     },
     "JP": {
-      "population_millions": 120.0,
+      "population_millions": 120,
       "life_expectancy": 77.5,
       "gdp_per_capita_usd": 10663,
       "leader": "Yasuhiro Nakasone",
       "leader_title": "Prime Minister"
     },
     "FR": {
-      "population_millions": 55.0,
+      "population_millions": 55,
       "life_expectancy": 75.2,
       "gdp_per_capita_usd": 9907,
       "leader": "François Mitterrand",
@@ -360,7 +360,7 @@
     },
     "SE": {
       "population_millions": 8.34,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 11850,
       "leader": "Olof Palme",
       "leader_title": "Prime Minister"
@@ -388,13 +388,13 @@
     },
     "KE": {
       "population_millions": 22.3,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 355,
       "leader": "Daniel arap Moi",
       "leader_title": "President"
     },
     "SA": {
-      "population_millions": 12.0,
+      "population_millions": 12,
       "life_expectancy": 57.9,
       "gdp_per_capita_usd": 8780,
       "leader": "Fahd bin Abdulaziz",
@@ -408,7 +408,7 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 72.2,
       "gdp_per_capita_usd": 2380,
       "leader": "Mario Soares",
@@ -429,7 +429,7 @@
       "leader_title": "Prime Minister"
     },
     "UA": {
-      "population_millions": 51.0,
+      "population_millions": 51,
       "life_expectancy": 68.6,
       "gdp_per_capita_usd": 2460,
       "leader": "Volodymyr Shcherbytsky",
@@ -437,7 +437,7 @@
     },
     "GH": {
       "population_millions": 13.8,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 330,
       "leader": "Jerry Rawlings",
       "leader_title": "Head of State"
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 990,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.44,
+      "life_expectancy": 76.9,
+      "gdp_per_capita_usd": 27300,
+      "leader": "Leon Schlumpf",
+      "leader_title": "Federal Council President"
     }
   }
 }

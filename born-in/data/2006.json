@@ -175,7 +175,7 @@
     },
     "GB": {
       "population_millions": 60.6,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 43675,
       "leader": "Tony Blair",
       "leader_title": "Prime Minister"
@@ -209,7 +209,7 @@
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 188.0,
+      "population_millions": 188,
       "life_expectancy": 72.3,
       "gdp_per_capita_usd": 5885,
       "leader": "Luiz Inácio Lula da Silva",
@@ -217,14 +217,14 @@
     },
     "CN": {
       "population_millions": 1311.8,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 2099,
       "leader": "Hu Jintao",
       "leader_title": "General Secretary"
     },
     "AU": {
       "population_millions": 20.7,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 36248,
       "leader": "John Howard",
       "leader_title": "Prime Minister"
@@ -237,7 +237,7 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 142.0,
+      "population_millions": 142,
       "life_expectancy": 66.3,
       "gdp_per_capita_usd": 14140,
       "leader": "Vladimir Putin",
@@ -259,7 +259,7 @@
     },
     "IE": {
       "population_millions": 4.34,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 57700,
       "leader": "Bertie Ahern",
       "leader_title": "Taoiseach"
@@ -272,7 +272,7 @@
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 50.0,
+      "population_millions": 50,
       "life_expectancy": 54.2,
       "gdp_per_capita_usd": 6267,
       "leader": "Thabo Mbeki",
@@ -315,7 +315,7 @@
     },
     "NL": {
       "population_millions": 16.6,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 43029,
       "leader": "Jan Peter Balkenende",
       "leader_title": "Prime Minister"
@@ -335,14 +335,14 @@
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 166.0,
+      "population_millions": 166,
       "life_expectancy": 66.2,
       "gdp_per_capita_usd": 811,
       "leader": "Pervez Musharraf",
       "leader_title": "President"
     },
     "BD": {
-      "population_millions": 141.0,
+      "population_millions": 141,
       "life_expectancy": 68.4,
       "gdp_per_capita_usd": 457,
       "leader": "Khaleda Zia",
@@ -364,7 +364,7 @@
     },
     "TH": {
       "population_millions": 64.9,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 3168,
       "leader": "Surayud Chulanont",
       "leader_title": "Prime Minister"
@@ -391,8 +391,8 @@
       "leader_title": "President"
     },
     "SA": {
-      "population_millions": 25.0,
-      "life_expectancy": 72.0,
+      "population_millions": 25,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 14740,
       "leader": "Abdullah bin Abdulaziz",
       "leader_title": "King"
@@ -445,6 +445,13 @@
       "gdp_per_capita_usd": 2930,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.48,
+      "life_expectancy": 81.5,
+      "gdp_per_capita_usd": 43500,
+      "leader": "Moritz Leuenberger",
+      "leader_title": "Federal Council President"
     }
   }
 }

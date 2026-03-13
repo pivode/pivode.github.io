@@ -176,7 +176,7 @@
   "countries": {
     "US": {
       "population_millions": 189.2,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 3375,
       "leader": "John F. Kennedy",
       "leader_title": "President"
@@ -189,7 +189,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 466.0,
+      "population_millions": 466,
       "life_expectancy": 42.5,
       "gdp_per_capita_usd": 90,
       "leader": "Jawaharlal Nehru",
@@ -217,7 +217,7 @@
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 78.0,
+      "population_millions": 78,
       "life_expectancy": 55.8,
       "gdp_per_capita_usd": 235,
       "leader": "João Goulart",
@@ -225,7 +225,7 @@
     },
     "CN": {
       "population_millions": 686.4,
-      "life_expectancy": 51.0,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 80,
       "leader": "Mao Zedong",
       "leader_title": "Chairman"
@@ -238,7 +238,7 @@
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 19.0,
+      "population_millions": 19,
       "life_expectancy": 71.8,
       "gdp_per_capita_usd": 2637,
       "leader": "Lester B. Pearson",
@@ -252,7 +252,7 @@
       "leader_title": "First Secretary"
     },
     "MX": {
-      "population_millions": 41.0,
+      "population_millions": 41,
       "life_expectancy": 59.4,
       "gdp_per_capita_usd": 2750,
       "leader": "Adolfo López Mateos",
@@ -273,14 +273,14 @@
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 48.0,
+      "population_millions": 48,
       "life_expectancy": 37.8,
       "gdp_per_capita_usd": 108,
       "leader": "Abubakar Tafawa Balewa",
       "leader_title": "Prime Minister"
     },
     "ZA": {
-      "population_millions": 18.0,
+      "population_millions": 18,
       "life_expectancy": 53.9,
       "gdp_per_capita_usd": 512,
       "leader": "Hendrik Verwoerd",
@@ -295,7 +295,7 @@
     },
     "PH": {
       "population_millions": 30.7,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 190,
       "leader": "Diosdado Macapagal",
       "leader_title": "President"
@@ -343,14 +343,14 @@
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 54.0,
-      "life_expectancy": 47.0,
+      "population_millions": 54,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 96,
       "leader": "Ayub Khan",
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 31.0,
+      "population_millions": 31,
       "life_expectancy": 67.9,
       "gdp_per_capita_usd": 425,
       "leader": "Wladyslaw Gomulka",
@@ -358,7 +358,7 @@
     },
     "SE": {
       "population_millions": 7.7,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 2320,
       "leader": "Tage Erlander",
       "leader_title": "Prime Minister"
@@ -420,8 +420,8 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 9.0,
-      "life_expectancy": 55.0,
+      "population_millions": 9,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 380,
       "leader": "Tunku Abdul Rahman",
       "leader_title": "Prime Minister"
@@ -435,17 +435,24 @@
     },
     "GH": {
       "population_millions": 7.7,
-      "life_expectancy": 46.0,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 270,
       "leader": "Kwame Nkrumah",
       "leader_title": "President"
     },
     "PE": {
-      "population_millions": 11.0,
+      "population_millions": 11,
       "life_expectancy": 50.2,
       "gdp_per_capita_usd": 370,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.79,
+      "life_expectancy": 72,
+      "gdp_per_capita_usd": 14600,
+      "leader": "Willy Spühler",
+      "leader_title": "Federal Council President"
     }
   }
 }

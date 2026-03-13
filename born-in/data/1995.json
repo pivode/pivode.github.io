@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 4.25,
     "sp500_year_end": 615.93,
     "dow_jones_year_end": 5117.12,
-    "gold_oz_usd": 387.0,
+    "gold_oz_usd": 387,
     "oil_barrel_usd": 17.02
   },
   "prices_us": {
@@ -180,7 +180,7 @@
     },
     "GB": {
       "population_millions": 58.3,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 19974,
       "leader": "John Major",
       "leader_title": "Prime Minister"
@@ -207,7 +207,7 @@
       "leader_title": "Prime Minister"
     },
     "FR": {
-      "population_millions": 58.0,
+      "population_millions": 58,
       "life_expectancy": 78.2,
       "gdp_per_capita_usd": 26780,
       "leader": "Jacques Chirac",
@@ -333,7 +333,7 @@
       "leader_title": "President"
     },
     "TR": {
-      "population_millions": 61.0,
+      "population_millions": 61,
       "life_expectancy": 69.8,
       "gdp_per_capita_usd": 2883,
       "leader": "Tansu Ciller",
@@ -376,7 +376,7 @@
     },
     "VN": {
       "population_millions": 72.5,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 260,
       "leader": "Le Duc Anh",
       "leader_title": "President"
@@ -418,21 +418,21 @@
     },
     "CL": {
       "population_millions": 14.2,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 4540,
       "leader": "Eduardo Frei Ruiz-Tagle",
       "leader_title": "President"
     },
     "MY": {
       "population_millions": 20.5,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 4280,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
     },
     "UA": {
       "population_millions": 51.7,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 720,
       "leader": "Leonid Kuchma",
       "leader_title": "President"
@@ -446,10 +446,17 @@
     },
     "PE": {
       "population_millions": 23.2,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 1510,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.04,
+      "life_expectancy": 79,
+      "gdp_per_capita_usd": 35000,
+      "leader": "Kaspar Villiger",
+      "leader_title": "Federal Council President"
     }
   }
 }

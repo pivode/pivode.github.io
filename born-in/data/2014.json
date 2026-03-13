@@ -14,7 +14,7 @@
     "us_inflation_pct": 1.6,
     "us_unemployment_pct": 6.2,
     "us_minimum_wage_usd": 7.25,
-    "sp500_year_end": 2058.90,
+    "sp500_year_end": 2058.9,
     "dow_jones_year_end": 17823.07,
     "gold_oz_usd": 1199.25,
     "oil_barrel_usd": 62.34
@@ -28,7 +28,7 @@
     "new_car_avg_usd": 32386,
     "median_home_usd": 209700,
     "first_class_stamp_cents": 49,
-    "big_mac_usd": 4.80
+    "big_mac_usd": 4.8
   },
   "culture": {
     "music": {
@@ -155,7 +155,7 @@
     },
     "GB": {
       "population_millions": 64.6,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 47446,
       "leader": "David Cameron",
       "leader_title": "Prime Minister"
@@ -182,21 +182,21 @@
       "leader_title": "Prime Minister"
     },
     "FR": {
-      "population_millions": 64.0,
+      "population_millions": 64,
       "life_expectancy": 82.4,
       "gdp_per_capita_usd": 42934,
       "leader": "Francois Hollande",
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 202.0,
-      "life_expectancy": 75.0,
+      "population_millions": 202,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 12239,
       "leader": "Dilma Rousseff",
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 1368.0,
+      "population_millions": 1368,
       "life_expectancy": 76.1,
       "gdp_per_capita_usd": 7683,
       "leader": "Xi Jinping",
@@ -232,7 +232,7 @@
     },
     "KR": {
       "population_millions": 50.4,
-      "life_expectancy": 82.0,
+      "life_expectancy": 82,
       "gdp_per_capita_usd": 29243,
       "leader": "Park Geun-hye",
       "leader_title": "President"
@@ -280,7 +280,7 @@
       "leader_title": "President"
     },
     "IT": {
-      "population_millions": 61.0,
+      "population_millions": 61,
       "life_expectancy": 82.7,
       "gdp_per_capita_usd": 34909,
       "leader": "Matteo Renzi",
@@ -309,7 +309,7 @@
     },
     "TR": {
       "population_millions": 77.2,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 12127,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "President"
@@ -351,7 +351,7 @@
     },
     "VN": {
       "population_millions": 92.7,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 2052,
       "leader": "Truong Tan Sang",
       "leader_title": "President"
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 6541,
       "leader": "Ollanta Humala",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.19,
+      "life_expectancy": 83.2,
+      "gdp_per_capita_usd": 55000,
+      "leader": "Didier Burkhalter",
+      "leader_title": "Federal Council President"
     }
   }
 }

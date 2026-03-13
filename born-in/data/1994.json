@@ -194,7 +194,7 @@
       "leader_title": "Chancellor"
     },
     "JP": {
-      "population_millions": 125.0,
+      "population_millions": 125,
       "life_expectancy": 79.6,
       "gdp_per_capita_usd": 38497,
       "leader": "Morihiro Hosokawa",
@@ -202,7 +202,7 @@
     },
     "FR": {
       "population_millions": 57.9,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 23580,
       "leader": "François Mitterrand",
       "leader_title": "President"
@@ -223,7 +223,7 @@
     },
     "AU": {
       "population_millions": 18.1,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 18532,
       "leader": "Paul Keating",
       "leader_title": "Prime Minister"
@@ -271,7 +271,7 @@
       "leader_title": "Head of State"
     },
     "ZA": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 62.1,
       "gdp_per_capita_usd": 3784,
       "leader": "Nelson Mandela",
@@ -285,8 +285,8 @@
       "leader_title": "President"
     },
     "PH": {
-      "population_millions": 69.0,
-      "life_expectancy": 66.0,
+      "population_millions": 69,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 1073,
       "leader": "Fidel Ramos",
       "leader_title": "President"
@@ -300,14 +300,14 @@
     },
     "IT": {
       "population_millions": 57.2,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 16837,
       "leader": "Silvio Berlusconi",
       "leader_title": "Prime Minister"
     },
     "ES": {
       "population_millions": 39.8,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 11293,
       "leader": "Felipe Gonzalez",
       "leader_title": "Prime Minister"
@@ -320,7 +320,7 @@
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 197.0,
+      "population_millions": 197,
       "life_expectancy": 64.5,
       "gdp_per_capita_usd": 789,
       "leader": "Suharto",
@@ -411,28 +411,28 @@
       "leader_title": "Prime Minister"
     },
     "CL": {
-      "population_millions": 14.0,
+      "population_millions": 14,
       "life_expectancy": 73.6,
       "gdp_per_capita_usd": 3760,
       "leader": "Eduardo Frei Ruiz-Tagle",
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 20.0,
+      "population_millions": 20,
       "life_expectancy": 70.5,
       "gdp_per_capita_usd": 3720,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
     },
     "UA": {
-      "population_millions": 52.0,
+      "population_millions": 52,
       "life_expectancy": 67.5,
       "gdp_per_capita_usd": 830,
       "leader": "Leonid Kuchma",
       "leader_title": "President"
     },
     "GH": {
-      "population_millions": 17.0,
+      "population_millions": 17,
       "life_expectancy": 56.3,
       "gdp_per_capita_usd": 340,
       "leader": "Jerry Rawlings",
@@ -444,6 +444,13 @@
       "gdp_per_capita_usd": 1280,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.02,
+      "life_expectancy": 78.8,
+      "gdp_per_capita_usd": 34000,
+      "leader": "Otto Stich",
+      "leader_title": "Federal Council President"
     }
   }
 }

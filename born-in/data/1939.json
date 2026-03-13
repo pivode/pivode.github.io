@@ -4,19 +4,19 @@
   "world": {
     "population_billions": 2.3,
     "births_millions": 71,
-    "life_expectancy_global": 41.0,
+    "life_expectancy_global": 41,
     "countries_count": 55,
     "internet_users": 0
   },
   "economy": {
     "us_gdp_per_capita_usd": 945,
     "us_median_household_income_usd": 1296,
-    "us_inflation_pct": 0.0,
+    "us_inflation_pct": 0,
     "us_unemployment_pct": 17.2,
     "us_minimum_wage_usd": 0.3,
     "sp500_year_end": null,
     "dow_jones_year_end": 150.24,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.02
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Gone with the Wind",
-      "box_office_no1_gross_m": 32.0,
+      "box_office_no1_gross_m": 32,
       "oscar_best_picture": "You Can't Take It with You",
       "oscar_best_director": "You Can't Take It with You",
       "oscar_best_director_name": "Frank Capra",
@@ -164,7 +164,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 131.0,
+      "population_millions": 131,
       "life_expectancy": 63.7,
       "gdp_per_capita_usd": 945,
       "leader": "Franklin D. Roosevelt",
@@ -172,21 +172,21 @@
     },
     "GB": {
       "population_millions": 47.8,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 650,
       "leader": "Neville Chamberlain",
       "leader_title": "Prime Minister"
     },
     "DE": {
       "population_millions": 69.3,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 710,
       "leader": "Adolf Hitler",
       "leader_title": "Fuhrer and Chancellor"
     },
     "JP": {
       "population_millions": 72.5,
-      "life_expectancy": 49.0,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 135,
       "leader": "Kiichiro Hiranuma",
       "leader_title": "Prime Minister"
@@ -206,14 +206,14 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 517.0,
-      "life_expectancy": 35.0,
+      "population_millions": 517,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 38,
       "leader": "Chiang Kai-shek",
       "leader_title": "Generalissimo"
     },
     "AU": {
-      "population_millions": 7.0,
+      "population_millions": 7,
       "life_expectancy": 65.5,
       "gdp_per_capita_usd": 730,
       "leader": "Robert Menzies",
@@ -221,69 +221,69 @@
     },
     "CA": {
       "population_millions": 11.5,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 830,
       "leader": "William Lyon Mackenzie King",
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 113.0,
-      "life_expectancy": 46.0,
+      "population_millions": 113,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 530,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
     },
     "MX": {
       "population_millions": 19.8,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 325,
       "leader": "Lazaro Cardenas",
       "leader_title": "President"
     },
     "IE": {
       "population_millions": 2.93,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 495,
       "leader": "Eamon de Valera",
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 23.0,
-      "life_expectancy": 30.0,
+      "population_millions": 23,
+      "life_expectancy": 30,
       "gdp_per_capita_usd": 58,
       "leader": "British Colonial Administration",
       "leader_title": "Colonial Government"
     },
     "ZA": {
       "population_millions": 11.1,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 250,
       "leader": "J. B. M. Hertzog",
       "leader_title": "Prime Minister"
     },
     "AR": {
       "population_millions": 13.6,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 565,
       "leader": "Roberto Ortiz",
       "leader_title": "President"
     },
     "PH": {
       "population_millions": 16.8,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 140,
       "leader": "Manuel Quezon",
       "leader_title": "President (Commonwealth)"
     },
     "EG": {
       "population_millions": 17.1,
-      "life_expectancy": 37.0,
+      "life_expectancy": 37,
       "gdp_per_capita_usd": 89,
       "leader": "King Farouk",
       "leader_title": "King"
     },
     "IT": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 57.5,
       "gdp_per_capita_usd": 350,
       "leader": "Benito Mussolini",
@@ -291,87 +291,94 @@
     },
     "ES": {
       "population_millions": 25.6,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 140,
       "leader": "Francisco Franco",
       "leader_title": "Head of State"
     },
     "NL": {
       "population_millions": 8.9,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 505,
       "leader": "Hendrikus Colijn",
       "leader_title": "Prime Minister"
     },
     "TR": {
       "population_millions": 17.4,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 190,
       "leader": "Ismet Inonu",
       "leader_title": "President"
     },
     "PL": {
       "population_millions": 35.1,
-      "life_expectancy": 49.0,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 180,
       "leader": "Wladyslaw Raczkiewicz",
       "leader_title": "President (Government-in-Exile)"
     },
     "SE": {
       "population_millions": 6.3,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 900,
       "leader": "Per Albin Hansson",
       "leader_title": "Prime Minister"
     },
     "TH": {
       "population_millions": 15.7,
-      "life_expectancy": 37.0,
+      "life_expectancy": 37,
       "gdp_per_capita_usd": 70,
       "leader": "Plaek Phibunsongkhram",
       "leader_title": "Prime Minister"
     },
     "CO": {
       "population_millions": 9.5,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 163,
       "leader": "Eduardo Santos",
       "leader_title": "President"
     },
     "SA": {
       "population_millions": 3.9,
-      "life_expectancy": 35.0,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 86,
       "leader": "Abdulaziz ibn Saud",
       "leader_title": "King"
     },
     "PT": {
       "population_millions": 7.6,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 190,
       "leader": "Antonio de Oliveira Salazar",
       "leader_title": "Prime Minister"
     },
     "CL": {
       "population_millions": 4.9,
-      "life_expectancy": 49.0,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 275,
       "leader": "Pedro Aguirre Cerda",
       "leader_title": "President"
     },
     "UA": {
       "population_millions": 30.9,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 400,
       "leader": "Nikita Khrushchev",
       "leader_title": "First Secretary, Ukrainian Communist Party"
     },
     "PE": {
       "population_millions": 6.7,
-      "life_expectancy": 39.0,
+      "life_expectancy": 39,
       "gdp_per_capita_usd": 153,
       "leader": "Oscar Benavides",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.21,
+      "life_expectancy": 64.5,
+      "gdp_per_capita_usd": 5900,
+      "leader": "Philipp Etter",
+      "leader_title": "Federal Council President"
     }
   }
 }

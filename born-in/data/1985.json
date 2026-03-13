@@ -195,7 +195,7 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 61.0,
+      "population_millions": 61,
       "life_expectancy": 74.8,
       "gdp_per_capita_usd": 11224,
       "leader": "Helmut Kohl",
@@ -244,7 +244,7 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 144.0,
+      "population_millions": 144,
       "life_expectancy": 65.6,
       "gdp_per_capita_usd": 6300,
       "leader": "Mikhail Gorbachev",
@@ -279,7 +279,7 @@
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 35.0,
+      "population_millions": 35,
       "life_expectancy": 62.2,
       "gdp_per_capita_usd": 1808,
       "leader": "P.W. Botha",
@@ -329,7 +329,7 @@
     },
     "ID": {
       "population_millions": 166.8,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 519,
       "leader": "Suharto",
       "leader_title": "President"
@@ -378,14 +378,14 @@
     },
     "VN": {
       "population_millions": 60.1,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 131,
       "leader": "Truong Chinh",
       "leader_title": "Chairman of State Council"
     },
     "CO": {
-      "population_millions": 33.0,
-      "life_expectancy": 69.0,
+      "population_millions": 33,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1316,
       "leader": "Belisario Betancur",
       "leader_title": "President"
@@ -412,7 +412,7 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 72.5,
       "gdp_per_capita_usd": 2530,
       "leader": "Anibal Cavaco Silva",
@@ -420,14 +420,14 @@
     },
     "CL": {
       "population_millions": 12.3,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1430,
       "leader": "Augusto Pinochet",
       "leader_title": "President"
     },
     "MY": {
       "population_millions": 16.1,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 2000,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
@@ -448,10 +448,17 @@
     },
     "PE": {
       "population_millions": 18.9,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 960,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.47,
+      "life_expectancy": 77.1,
+      "gdp_per_capita_usd": 27800,
+      "leader": "Kurt Furgler",
+      "leader_title": "Federal Council President"
     }
   }
 }

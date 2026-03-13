@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": null,
     "sp500_year_end": null,
     "dow_jones_year_end": 179.9,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.09
   },
   "prices_us": {
@@ -179,7 +179,7 @@
     },
     "DE": {
       "population_millions": 67.5,
-      "life_expectancy": 62.0,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 530,
       "leader": "Adolf Hitler",
       "leader_title": "Fuhrer and Chancellor"
@@ -200,13 +200,13 @@
     },
     "BR": {
       "population_millions": 40.3,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 95,
       "leader": "Getulio Vargas",
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 505.0,
+      "population_millions": 505,
       "life_expectancy": 34.5,
       "gdp_per_capita_usd": 42,
       "leader": "Chiang Kai-shek",
@@ -214,7 +214,7 @@
     },
     "AU": {
       "population_millions": 6.7,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 640,
       "leader": "Joseph Lyons",
       "leader_title": "Prime Minister"
@@ -284,14 +284,14 @@
     },
     "IT": {
       "population_millions": 42.9,
-      "life_expectancy": 56.0,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 310,
       "leader": "Benito Mussolini",
       "leader_title": "Head of Government"
     },
     "ES": {
       "population_millions": 24.5,
-      "life_expectancy": 47.0,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 155,
       "leader": "Manuel Azana",
       "leader_title": "President"
@@ -311,7 +311,7 @@
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 34.0,
+      "population_millions": 34,
       "life_expectancy": 49.5,
       "gdp_per_capita_usd": 190,
       "leader": "Edward Smigly-Rydz",
@@ -372,6 +372,13 @@
       "gdp_per_capita_usd": 145,
       "leader": "Oscar Benavides",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.2,
+      "life_expectancy": 63.8,
+      "gdp_per_capita_usd": 5800,
+      "leader": "Albert Meyer",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -248,7 +248,7 @@
     },
     "MX": {
       "population_millions": 105.9,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 6620,
       "leader": "Ernesto Zedillo",
       "leader_title": "President"
@@ -262,14 +262,14 @@
     },
     "IE": {
       "population_millions": 3.75,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 27100,
       "leader": "Bertie Ahern",
       "leader_title": "Taoiseach"
     },
     "NG": {
       "population_millions": 116.8,
-      "life_expectancy": 46.0,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 480,
       "leader": "Sani Abacha",
       "leader_title": "Head of State"
@@ -290,7 +290,7 @@
     },
     "PH": {
       "population_millions": 73.9,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 1289,
       "leader": "Fidel Ramos",
       "leader_title": "President"
@@ -374,7 +374,7 @@
     },
     "VN": {
       "population_millions": 74.7,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 315,
       "leader": "Tran Duc Luong",
       "leader_title": "President"
@@ -395,7 +395,7 @@
     },
     "SA": {
       "population_millions": 19.8,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 8120,
       "leader": "Fahd bin Abdulaziz",
       "leader_title": "King"
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 21.5,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 4600,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
@@ -444,10 +444,17 @@
     },
     "PE": {
       "population_millions": 24.1,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 1730,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.09,
+      "life_expectancy": 79.5,
+      "gdp_per_capita_usd": 36000,
+      "leader": "Arnold Koller",
+      "leader_title": "Federal Council President"
     }
   }
 }

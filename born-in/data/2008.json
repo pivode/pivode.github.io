@@ -267,7 +267,7 @@
     },
     "ZA": {
       "population_millions": 51.1,
-      "life_expectancy": 56.0,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 6351,
       "leader": "Kgalema Motlanthe",
       "leader_title": "President"
@@ -379,14 +379,14 @@
     },
     "KE": {
       "population_millions": 43.2,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 859,
       "leader": "Mwai Kibaki",
       "leader_title": "President"
     },
     "SA": {
       "population_millions": 26.2,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 19110,
       "leader": "Abdullah bin Abdulaziz",
       "leader_title": "King"
@@ -414,7 +414,7 @@
     },
     "MY": {
       "population_millions": 27.1,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 8460,
       "leader": "Abdullah Ahmad Badawi",
       "leader_title": "Prime Minister"
@@ -439,6 +439,13 @@
       "gdp_per_capita_usd": 4210,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.65,
+      "life_expectancy": 81.9,
+      "gdp_per_capita_usd": 47500,
+      "leader": "Pascal Couchepin",
+      "leader_title": "Federal Council President"
     }
   }
 }

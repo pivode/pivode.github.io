@@ -165,7 +165,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 253.0,
+      "population_millions": 253,
       "life_expectancy": 75.5,
       "gdp_per_capita_usd": 24342,
       "leader": "George H. W. Bush",
@@ -173,14 +173,14 @@
     },
     "GB": {
       "population_millions": 57.4,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 18373,
       "leader": "John Major",
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 872.0,
-      "life_expectancy": 59.0,
+      "population_millions": 872,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 303,
       "leader": "P. V. Narasimha Rao",
       "leader_title": "Prime Minister"
@@ -271,14 +271,14 @@
     },
     "ZA": {
       "population_millions": 41.7,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 3286,
       "leader": "F.W. de Klerk",
       "leader_title": "President"
     },
     "AR": {
       "population_millions": 33.2,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 5735,
       "leader": "Carlos Menem",
       "leader_title": "President"
@@ -291,7 +291,7 @@
       "leader_title": "President"
     },
     "EG": {
-      "population_millions": 60.0,
+      "population_millions": 60,
       "life_expectancy": 63.1,
       "gdp_per_capita_usd": 651,
       "leader": "Hosni Mubarak",
@@ -326,7 +326,7 @@
       "leader_title": "President"
     },
     "TR": {
-      "population_millions": 57.0,
+      "population_millions": 57,
       "life_expectancy": 68.2,
       "gdp_per_capita_usd": 2697,
       "leader": "Suleyman Demirel",
@@ -340,7 +340,7 @@
       "leader_title": "Prime Minister"
     },
     "BD": {
-      "population_millions": 109.0,
+      "population_millions": 109,
       "life_expectancy": 60.1,
       "gdp_per_capita_usd": 275,
       "leader": "Khaleda Zia",
@@ -361,15 +361,15 @@
       "leader_title": "Prime Minister"
     },
     "TH": {
-      "population_millions": 58.0,
+      "population_millions": 58,
       "life_expectancy": 68.5,
       "gdp_per_capita_usd": 1724,
       "leader": "Anand Panyarachun",
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 68.0,
-      "life_expectancy": 67.0,
+      "population_millions": 68,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 114,
       "leader": "Vo Chi Cong",
       "leader_title": "Chairman of State Council"
@@ -382,7 +382,7 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 29.0,
+      "population_millions": 29,
       "life_expectancy": 58.5,
       "gdp_per_capita_usd": 360,
       "leader": "Daniel arap Moi",
@@ -403,7 +403,7 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 74.3,
       "gdp_per_capita_usd": 7470,
       "leader": "Anibal Cavaco Silva",
@@ -418,14 +418,14 @@
     },
     "MY": {
       "population_millions": 18.6,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 2710,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
     },
     "UA": {
       "population_millions": 51.9,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1970,
       "leader": "Leonid Kravchuk",
       "leader_title": "President"
@@ -439,10 +439,17 @@
     },
     "PE": {
       "population_millions": 21.4,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 1100,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.8,
+      "life_expectancy": 78.2,
+      "gdp_per_capita_usd": 33000,
+      "leader": "Flavio Cotti",
+      "leader_title": "Federal Council President"
     }
   }
 }

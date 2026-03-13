@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 5.85,
     "sp500_year_end": 1468.36,
     "dow_jones_year_end": 13264.82,
-    "gold_oz_usd": 838.0,
+    "gold_oz_usd": 838,
     "oil_barrel_usd": 95.98
   },
   "prices_us": {
@@ -169,7 +169,7 @@
       "leader_title": "President"
     },
     "GB": {
-      "population_millions": 61.0,
+      "population_millions": 61,
       "life_expectancy": 79.2,
       "gdp_per_capita_usd": 47110,
       "leader": "Gordon Brown",
@@ -211,14 +211,14 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 1318.0,
+      "population_millions": 1318,
       "life_expectancy": 74.5,
       "gdp_per_capita_usd": 2650,
       "leader": "Hu Jintao",
       "leader_title": "General Secretary"
     },
     "AU": {
-      "population_millions": 21.0,
+      "population_millions": 21,
       "life_expectancy": 81.2,
       "gdp_per_capita_usd": 39773,
       "leader": "Kevin Rudd",
@@ -274,7 +274,7 @@
       "leader_title": "President"
     },
     "AR": {
-      "population_millions": 40.0,
+      "population_millions": 40,
       "life_expectancy": 74.8,
       "gdp_per_capita_usd": 7245,
       "leader": "Cristina Fernandez de Kirchner",
@@ -317,7 +317,7 @@
     },
     "ID": {
       "population_millions": 236.2,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1858,
       "leader": "Susilo Bambang Yudhoyono",
       "leader_title": "President"
@@ -352,7 +352,7 @@
     },
     "SE": {
       "population_millions": 9.15,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 50100,
       "leader": "Fredrik Reinfeldt",
       "leader_title": "Prime Minister"
@@ -415,7 +415,7 @@
     },
     "MY": {
       "population_millions": 26.6,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 7010,
       "leader": "Abdullah Ahmad Badawi",
       "leader_title": "Prime Minister"
@@ -429,17 +429,24 @@
     },
     "GH": {
       "population_millions": 23.2,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 710,
       "leader": "John Kufuor",
       "leader_title": "President"
     },
     "PE": {
       "population_millions": 28.2,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 3460,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.55,
+      "life_expectancy": 81.7,
+      "gdp_per_capita_usd": 46000,
+      "leader": "Micheline Calmy-Rey",
+      "leader_title": "Federal Council President"
     }
   }
 }

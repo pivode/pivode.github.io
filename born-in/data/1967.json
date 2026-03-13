@@ -4,7 +4,7 @@
   "world": {
     "population_billions": 3.49,
     "births_millions": 120,
-    "life_expectancy_global": 57.0,
+    "life_expectancy_global": 57,
     "countries_count": 123,
     "internet_users": 0
   },
@@ -194,7 +194,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 500.0,
+      "population_millions": 500,
       "life_expectancy": 45.9,
       "gdp_per_capita_usd": 101,
       "leader": "Indira Gandhi",
@@ -230,7 +230,7 @@
     },
     "CN": {
       "population_millions": 722.2,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 95,
       "leader": "Mao Zedong",
       "leader_title": "Chairman"
@@ -258,7 +258,7 @@
     },
     "MX": {
       "population_millions": 46.8,
-      "life_expectancy": 62.0,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 3380,
       "leader": "Gustavo Díaz Ordaz",
       "leader_title": "President"
@@ -286,7 +286,7 @@
     },
     "ZA": {
       "population_millions": 20.3,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 675,
       "leader": "B.J. Vorster",
       "leader_title": "Prime Minister"
@@ -314,7 +314,7 @@
     },
     "IT": {
       "population_millions": 52.5,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1367,
       "leader": "Aldo Moro",
       "leader_title": "Prime Minister"
@@ -355,8 +355,8 @@
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 32.0,
-      "life_expectancy": 69.0,
+      "population_millions": 32,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 510,
       "leader": "Wladyslaw Gomulka",
       "leader_title": "First Secretary"
@@ -419,14 +419,14 @@
     },
     "CL": {
       "population_millions": 9.2,
-      "life_expectancy": 62.0,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 680,
       "leader": "Eduardo Frei Montalva",
       "leader_title": "President"
     },
     "MY": {
       "population_millions": 10.1,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 420,
       "leader": "Tunku Abdul Rahman",
       "leader_title": "Prime Minister"
@@ -451,6 +451,13 @@
       "gdp_per_capita_usd": 490,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6,
+      "life_expectancy": 72.8,
+      "gdp_per_capita_usd": 16800,
+      "leader": "Roger Bonvin",
+      "leader_title": "Federal Council President"
     }
   }
 }

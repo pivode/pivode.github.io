@@ -12,11 +12,11 @@
     "us_gdp_per_capita_usd": 18980,
     "us_median_household_income_usd": 24897,
     "us_inflation_pct": 1.91,
-    "us_unemployment_pct": 7.0,
+    "us_unemployment_pct": 7,
     "us_minimum_wage_usd": 3.35,
     "sp500_year_end": 242.17,
     "dow_jones_year_end": 1895.95,
-    "gold_oz_usd": 395.0,
+    "gold_oz_usd": 395,
     "oil_barrel_usd": 14.44
   },
   "prices_us": {
@@ -178,7 +178,7 @@
     },
     "GB": {
       "population_millions": 56.6,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 10086,
       "leader": "Margaret Thatcher",
       "leader_title": "Prime Minister"
@@ -192,13 +192,13 @@
     },
     "DE": {
       "population_millions": 61.1,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 12972,
       "leader": "Helmut Kohl",
       "leader_title": "Chancellor"
     },
     "JP": {
-      "population_millions": 121.0,
+      "population_millions": 121,
       "life_expectancy": 78.2,
       "gdp_per_capita_usd": 17051,
       "leader": "Yasuhiro Nakasone",
@@ -206,7 +206,7 @@
     },
     "FR": {
       "population_millions": 55.5,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 13013,
       "leader": "François Mitterrand",
       "leader_title": "President"
@@ -226,7 +226,7 @@
       "leader_title": "Paramount Leader"
     },
     "AU": {
-      "population_millions": 16.0,
+      "population_millions": 16,
       "life_expectancy": 75.9,
       "gdp_per_capita_usd": 11406,
       "leader": "Bob Hawke",
@@ -269,7 +269,7 @@
     },
     "NG": {
       "population_millions": 87.2,
-      "life_expectancy": 46.0,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 639,
       "leader": "Ibrahim Babangida",
       "leader_title": "President"
@@ -388,7 +388,7 @@
     },
     "KE": {
       "population_millions": 24.1,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 370,
       "leader": "Daniel arap Moi",
       "leader_title": "President"
@@ -408,7 +408,7 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 72.8,
       "gdp_per_capita_usd": 3270,
       "leader": "Anibal Cavaco Silva",
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 1070,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.5,
+      "life_expectancy": 77.3,
+      "gdp_per_capita_usd": 28500,
+      "leader": "Alphons Egli",
+      "leader_title": "Federal Council President"
     }
   }
 }

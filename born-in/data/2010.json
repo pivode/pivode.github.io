@@ -44,7 +44,7 @@
     },
     "film": {
       "box_office_no1": "Toy Story 3",
-      "box_office_no1_gross_m": 415.0,
+      "box_office_no1_gross_m": 415,
       "oscar_best_picture": "The Hurt Locker",
       "oscar_best_director": "The Hurt Locker",
       "oscar_best_director_name": "Kathryn Bigelow",
@@ -172,7 +172,7 @@
     },
     "GB": {
       "population_millions": 62.3,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 38711,
       "leader": "David Cameron",
       "leader_title": "Prime Minister"
@@ -193,7 +193,7 @@
     },
     "JP": {
       "population_millions": 128.1,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 43118,
       "leader": "Naoto Kan",
       "leader_title": "Prime Minister"
@@ -206,7 +206,7 @@
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 195.0,
+      "population_millions": 195,
       "life_expectancy": 73.5,
       "gdp_per_capita_usd": 11121,
       "leader": "Luiz Inacio Lula da Silva",
@@ -227,7 +227,7 @@
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 34.0,
+      "population_millions": 34,
       "life_expectancy": 81.1,
       "gdp_per_capita_usd": 47447,
       "leader": "Stephen Harper",
@@ -305,7 +305,7 @@
     },
     "ES": {
       "population_millions": 46.8,
-      "life_expectancy": 82.0,
+      "life_expectancy": 82,
       "gdp_per_capita_usd": 30636,
       "leader": "Jose Luis Rodriguez Zapatero",
       "leader_title": "Prime Minister"
@@ -326,7 +326,7 @@
     },
     "TR": {
       "population_millions": 73.3,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 10671,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "Prime Minister"
@@ -339,7 +339,7 @@
       "leader_title": "President"
     },
     "BD": {
-      "population_millions": 148.0,
+      "population_millions": 148,
       "life_expectancy": 70.3,
       "gdp_per_capita_usd": 674,
       "leader": "Sheikh Hasina",
@@ -403,14 +403,14 @@
     },
     "PT": {
       "population_millions": 10.6,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 22539,
       "leader": "Jose Socrates",
       "leader_title": "Prime Minister"
     },
     "CL": {
       "population_millions": 17.1,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 12640,
       "leader": "Sebastian Pinera",
       "leader_title": "President"
@@ -442,6 +442,13 @@
       "gdp_per_capita_usd": 5030,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.82,
+      "life_expectancy": 82.5,
+      "gdp_per_capita_usd": 48000,
+      "leader": "Doris Leuthard",
+      "leader_title": "Federal Council President"
     }
   }
 }

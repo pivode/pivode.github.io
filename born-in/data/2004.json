@@ -235,7 +235,7 @@
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 32.0,
+      "population_millions": 32,
       "life_expectancy": 79.8,
       "gdp_per_capita_usd": 31629,
       "leader": "Paul Martin",
@@ -277,8 +277,8 @@
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 49.0,
-      "life_expectancy": 54.0,
+      "population_millions": 49,
+      "life_expectancy": 54,
       "gdp_per_capita_usd": 5409,
       "leader": "Thabo Mbeki",
       "leader_title": "President"
@@ -326,7 +326,7 @@
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 229.0,
+      "population_millions": 229,
       "life_expectancy": 67.4,
       "gdp_per_capita_usd": 1147,
       "leader": "Susilo Bambang Yudhoyono",
@@ -355,7 +355,7 @@
     },
     "PL": {
       "population_millions": 38.5,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 6625,
       "leader": "Aleksander Kwasniewski",
       "leader_title": "President"
@@ -375,7 +375,7 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 82.0,
+      "population_millions": 82,
       "life_expectancy": 72.6,
       "gdp_per_capita_usd": 544,
       "leader": "Tran Duc Luong",
@@ -389,22 +389,22 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 40.0,
-      "life_expectancy": 54.0,
+      "population_millions": 40,
+      "life_expectancy": 54,
       "gdp_per_capita_usd": 498,
       "leader": "Mwai Kibaki",
       "leader_title": "President"
     },
     "SA": {
       "population_millions": 23.8,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 10760,
       "leader": "Fahd bin Abdulaziz",
       "leader_title": "King"
     },
     "IL": {
       "population_millions": 6.8,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 20100,
       "leader": "Ariel Sharon",
       "leader_title": "Prime Minister"
@@ -417,14 +417,14 @@
       "leader_title": "Prime Minister"
     },
     "CL": {
-      "population_millions": 16.0,
+      "population_millions": 16,
       "life_expectancy": 77.2,
       "gdp_per_capita_usd": 5460,
       "leader": "Ricardo Lagos",
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 25.0,
+      "population_millions": 25,
       "life_expectancy": 74.1,
       "gdp_per_capita_usd": 4710,
       "leader": "Abdullah Ahmad Badawi",
@@ -450,6 +450,13 @@
       "gdp_per_capita_usd": 2120,
       "leader": "Alejandro Toledo",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.39,
+      "life_expectancy": 81.1,
+      "gdp_per_capita_usd": 40500,
+      "leader": "Joseph Deiss",
+      "leader_title": "Federal Council President"
     }
   }
 }

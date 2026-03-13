@@ -176,7 +176,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 1182.0,
+      "population_millions": 1182,
       "life_expectancy": 66.2,
       "gdp_per_capita_usd": 1099,
       "leader": "Manmohan Singh",
@@ -191,7 +191,7 @@
     },
     "JP": {
       "population_millions": 127.6,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 39321,
       "leader": "Yukio Hatoyama",
       "leader_title": "Prime Minister"
@@ -232,7 +232,7 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 141.0,
+      "population_millions": 141,
       "life_expectancy": 68.4,
       "gdp_per_capita_usd": 15422,
       "leader": "Dmitry Medvedev",
@@ -254,13 +254,13 @@
     },
     "IE": {
       "population_millions": 4.54,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 48900,
       "leader": "Brian Cowen",
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 162.0,
+      "population_millions": 162,
       "life_expectancy": 51.1,
       "gdp_per_capita_usd": 1912,
       "leader": "Umaru Yar'Adua",
@@ -295,7 +295,7 @@
       "leader_title": "President"
     },
     "IT": {
-      "population_millions": 60.0,
+      "population_millions": 60,
       "life_expectancy": 81.9,
       "gdp_per_capita_usd": 36101,
       "leader": "Silvio Berlusconi",
@@ -316,7 +316,7 @@
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 242.0,
+      "population_millions": 242,
       "life_expectancy": 68.3,
       "gdp_per_capita_usd": 2272,
       "leader": "Susilo Bambang Yudhoyono",
@@ -359,7 +359,7 @@
     },
     "TH": {
       "population_millions": 65.9,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 3939,
       "leader": "Abhisit Vejjajiva",
       "leader_title": "Prime Minister"
@@ -379,7 +379,7 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 60.2,
       "gdp_per_capita_usd": 879,
       "leader": "Mwai Kibaki",
@@ -422,24 +422,31 @@
     },
     "UA": {
       "population_millions": 45.8,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 2545,
       "leader": "Viktor Yushchenko",
       "leader_title": "President"
     },
     "GH": {
       "population_millions": 24.3,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 1090,
       "leader": "John Atta Mills",
       "leader_title": "President"
     },
     "PE": {
-      "population_millions": 29.0,
-      "life_expectancy": 73.0,
+      "population_millions": 29,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 4160,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.74,
+      "life_expectancy": 82.1,
+      "gdp_per_capita_usd": 46000,
+      "leader": "Hans-Rudolf Merz",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -12,7 +12,7 @@
     "us_gdp_per_capita_usd": 36335,
     "us_median_household_income_usd": 41990,
     "us_inflation_pct": 3.4,
-    "us_unemployment_pct": 4.0,
+    "us_unemployment_pct": 4,
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1320.28,
     "dow_jones_year_end": 10786.85,
@@ -208,7 +208,7 @@
     },
     "FR": {
       "population_millions": 59.3,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 21966,
       "leader": "Jacques Chirac",
       "leader_title": "President"
@@ -242,7 +242,7 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 146.0,
+      "population_millions": 146,
       "life_expectancy": 64.9,
       "gdp_per_capita_usd": 4780,
       "leader": "Vladimir Putin",
@@ -250,7 +250,7 @@
     },
     "MX": {
       "population_millions": 97.5,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 8070,
       "leader": "Ernesto Zedillo",
       "leader_title": "President"
@@ -312,7 +312,7 @@
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 41.0,
+      "population_millions": 41,
       "life_expectancy": 79.4,
       "gdp_per_capita_usd": 14641,
       "leader": "Jose Maria Aznar",
@@ -341,7 +341,7 @@
     },
     "PK": {
       "population_millions": 144.5,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 513,
       "leader": "Pervez Musharraf",
       "leader_title": "Chief Executive"
@@ -375,7 +375,7 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 78.0,
+      "population_millions": 78,
       "life_expectancy": 71.3,
       "gdp_per_capita_usd": 390,
       "leader": "Tran Duc Luong",
@@ -397,34 +397,34 @@
     },
     "SA": {
       "population_millions": 21.5,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 8600,
       "leader": "Fahd bin Abdulaziz",
       "leader_title": "King"
     },
     "IL": {
       "population_millions": 6.3,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 20720,
       "leader": "Ehud Barak",
       "leader_title": "Prime Minister"
     },
     "PT": {
       "population_millions": 10.3,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 11300,
       "leader": "Antonio Guterres",
       "leader_title": "Prime Minister"
     },
     "CL": {
       "population_millions": 15.2,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 4870,
       "leader": "Ricardo Lagos",
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 23.0,
+      "population_millions": 23,
       "life_expectancy": 72.9,
       "gdp_per_capita_usd": 3880,
       "leader": "Mahathir Mohamad",
@@ -439,7 +439,7 @@
     },
     "GH": {
       "population_millions": 19.6,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 260,
       "leader": "Jerry Rawlings",
       "leader_title": "President"
@@ -450,6 +450,13 @@
       "gdp_per_capita_usd": 1630,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.18,
+      "life_expectancy": 80.3,
+      "gdp_per_capita_usd": 38200,
+      "leader": "Adolf Ogi",
+      "leader_title": "Federal Council President"
     }
   }
 }

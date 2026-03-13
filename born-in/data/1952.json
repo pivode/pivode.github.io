@@ -12,11 +12,11 @@
     "us_gdp_per_capita_usd": 1786,
     "us_median_household_income_usd": 3900,
     "us_inflation_pct": 0.88,
-    "us_unemployment_pct": 3.0,
+    "us_unemployment_pct": 3,
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
     "dow_jones_year_end": 291.9,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.75
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "This Is Cinerama",
-      "box_office_no1_gross_m": 32.0,
+      "box_office_no1_gross_m": 32,
       "oscar_best_picture": "An American in Paris",
       "oscar_best_director": "A Place in the Sun",
       "oscar_best_director_name": "George Stevens",
@@ -199,21 +199,21 @@
     },
     "DE": {
       "population_millions": 50.8,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 742,
       "leader": "Konrad Adenauer",
       "leader_title": "Chancellor"
     },
     "JP": {
-      "population_millions": 86.0,
-      "life_expectancy": 63.0,
+      "population_millions": 86,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 228,
       "leader": "Shigeru Yoshida",
       "leader_title": "Prime Minister"
     },
     "FR": {
       "population_millions": 42.5,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 878,
       "leader": "Vincent Auriol",
       "leader_title": "President"
@@ -241,14 +241,14 @@
     },
     "CA": {
       "population_millions": 14.5,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1622,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
     },
     "RU": {
       "population_millions": 104.5,
-      "life_expectancy": 62.0,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 1700,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
@@ -275,7 +275,7 @@
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 39.0,
+      "population_millions": 39,
       "life_expectancy": 35.9,
       "gdp_per_capita_usd": 80,
       "leader": "British Colony",
@@ -283,7 +283,7 @@
     },
     "ZA": {
       "population_millions": 14.3,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 345,
       "leader": "D.F. Malan",
       "leader_title": "Prime Minister"
@@ -325,7 +325,7 @@
     },
     "NL": {
       "population_millions": 10.4,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 651,
       "leader": "Willem Drees",
       "leader_title": "Prime Minister"
@@ -339,7 +339,7 @@
     },
     "TR": {
       "population_millions": 22.6,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 340,
       "leader": "Adnan Menderes",
       "leader_title": "Prime Minister"
@@ -374,21 +374,21 @@
     },
     "VN": {
       "population_millions": 28.5,
-      "life_expectancy": 43.0,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 56,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
     },
     "CO": {
-      "population_millions": 13.0,
-      "life_expectancy": 50.0,
+      "population_millions": 13,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 242,
       "leader": "Laureano Gomez",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 6.7,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 72,
       "leader": "Evelyn Baring",
       "leader_title": "Governor"
@@ -430,7 +430,7 @@
     },
     "UA": {
       "population_millions": 37.9,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 620,
       "leader": "Leonid Melnikov",
       "leader_title": "First Secretary"
@@ -443,11 +443,18 @@
       "leader_title": "Colonial Government"
     },
     "PE": {
-      "population_millions": 8.0,
+      "population_millions": 8,
       "life_expectancy": 44.8,
       "gdp_per_capita_usd": 240,
       "leader": "Manuel Odria",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.82,
+      "life_expectancy": 69,
+      "gdp_per_capita_usd": 8750,
+      "leader": "Karl Kobelt",
+      "leader_title": "Federal Council President"
     }
   }
 }

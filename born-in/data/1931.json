@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Frankenstein",
-      "box_office_no1_gross_m": 12.0,
+      "box_office_no1_gross_m": 12,
       "oscar_best_picture": "Cimarron",
       "oscar_best_director": "Skippy",
       "oscar_best_director_name": "Norman Taurog",
@@ -172,20 +172,20 @@
     },
     "GB": {
       "population_millions": 46.1,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 700,
       "leader": "Ramsay MacDonald",
       "leader_title": "Prime Minister"
     },
     "DE": {
       "population_millions": 65.5,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 597,
       "leader": "Heinrich Bruning",
       "leader_title": "Chancellor"
     },
     "JP": {
-      "population_millions": 65.0,
+      "population_millions": 65,
       "life_expectancy": 44.8,
       "gdp_per_capita_usd": 270,
       "leader": "Reijiro Wakatsuki",
@@ -193,20 +193,20 @@
     },
     "FR": {
       "population_millions": 41.7,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 1010,
       "leader": "Pierre Laval",
       "leader_title": "Prime Minister"
     },
     "BR": {
       "population_millions": 34.3,
-      "life_expectancy": 37.0,
+      "life_expectancy": 37,
       "gdp_per_capita_usd": 98,
       "leader": "Getulio Vargas",
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 494.0,
+      "population_millions": 494,
       "life_expectancy": 26.5,
       "gdp_per_capita_usd": 44,
       "leader": "Chiang Kai-shek",
@@ -227,8 +227,8 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 151.0,
-      "life_expectancy": 43.0,
+      "population_millions": 151,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 437,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
@@ -263,7 +263,7 @@
     },
     "AR": {
       "population_millions": 12.2,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 1088,
       "leader": "Jose Felix Uriburu",
       "leader_title": "President"
@@ -297,7 +297,7 @@
       "leader_title": "President"
     },
     "NL": {
-      "population_millions": 8.0,
+      "population_millions": 8,
       "life_expectancy": 65.9,
       "gdp_per_capita_usd": 719,
       "leader": "Hendrikus Colijn",
@@ -305,7 +305,7 @@
     },
     "TR": {
       "population_millions": 14.4,
-      "life_expectancy": 39.0,
+      "life_expectancy": 39,
       "gdp_per_capita_usd": 223,
       "leader": "Ismet Inonu",
       "leader_title": "Prime Minister"
@@ -361,7 +361,7 @@
     },
     "UA": {
       "population_millions": 30.5,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 295,
       "leader": "Stanislav Kosior",
       "leader_title": "First Secretary"
@@ -372,6 +372,13 @@
       "gdp_per_capita_usd": 196,
       "leader": "Luis Miguel Sanchez Cerro",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.12,
+      "life_expectancy": 61.9,
+      "gdp_per_capita_usd": 5980,
+      "leader": "Heinrich Häberlin",
+      "leader_title": "Federal Council President"
     }
   }
 }

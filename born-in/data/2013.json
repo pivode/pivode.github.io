@@ -16,11 +16,11 @@
     "us_minimum_wage_usd": 7.25,
     "sp500_year_end": 1848.36,
     "dow_jones_year_end": 16576.66,
-    "gold_oz_usd": 1204.50,
+    "gold_oz_usd": 1204.5,
     "oil_barrel_usd": 97.98
   },
   "prices_us": {
-    "gallon_gas_usd": 3.50,
+    "gallon_gas_usd": 3.5,
     "gallon_milk_usd": 3.53,
     "dozen_eggs_usd": 1.93,
     "loaf_bread_usd": 1.98,
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Iron Man 3",
-      "box_office_no1_gross_m": 409.0,
+      "box_office_no1_gross_m": 409,
       "oscar_best_picture": "Argo",
       "oscar_best_director": "Life of Pi",
       "oscar_best_director_name": "Ang Lee",
@@ -239,7 +239,7 @@
     },
     "IE": {
       "population_millions": 4.59,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 51048,
       "leader": "Enda Kenny",
       "leader_title": "Taoiseach"
@@ -322,8 +322,8 @@
       "leader_title": "President"
     },
     "BD": {
-      "population_millions": 157.0,
-      "life_expectancy": 72.0,
+      "population_millions": 157,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 953,
       "leader": "Sheikh Hasina",
       "leader_title": "Prime Minister"
@@ -337,14 +337,14 @@
     },
     "SE": {
       "population_millions": 9.59,
-      "life_expectancy": 82.0,
+      "life_expectancy": 82,
       "gdp_per_capita_usd": 59609,
       "leader": "Fredrik Reinfeldt",
       "leader_title": "Prime Minister"
     },
     "TH": {
       "population_millions": 67.7,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 6170,
       "leader": "Yingluck Shinawatra",
       "leader_title": "Prime Minister"
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 6660,
       "leader": "Ollanta Humala",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.08,
+      "life_expectancy": 83,
+      "gdp_per_capita_usd": 53000,
+      "leader": "Ueli Maurer",
+      "leader_title": "Federal Council President"
     }
   }
 }

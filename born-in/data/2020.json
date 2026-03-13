@@ -148,7 +148,7 @@
   "countries": {
     "US": {
       "population_millions": 329.5,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 63544,
       "leader": "Donald Trump",
       "leader_title": "President"
@@ -161,8 +161,8 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 1380.0,
-      "life_expectancy": 70.0,
+      "population_millions": 1380,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1901,
       "leader": "Narendra Modi",
       "leader_title": "Prime Minister"
@@ -204,13 +204,13 @@
     },
     "AU": {
       "population_millions": 25.5,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 52825,
       "leader": "Scott Morrison",
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 38.0,
+      "population_millions": 38,
       "life_expectancy": 82.3,
       "gdp_per_capita_usd": 43241,
       "leader": "Justin Trudeau",
@@ -238,7 +238,7 @@
       "leader_title": "President"
     },
     "IE": {
-      "population_millions": 5.00,
+      "population_millions": 5,
       "life_expectancy": 82.3,
       "gdp_per_capita_usd": 83713,
       "leader": "Micheal Martin",
@@ -309,7 +309,7 @@
     },
     "TR": {
       "population_millions": 84.3,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 8538,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "President"
@@ -323,7 +323,7 @@
     },
     "BD": {
       "population_millions": 169.4,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 1968,
       "leader": "Sheikh Hasina",
       "leader_title": "Prime Minister"
@@ -337,7 +337,7 @@
     },
     "SE": {
       "population_millions": 10.4,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 51926,
       "leader": "Stefan Lofven",
       "leader_title": "Prime Minister"
@@ -407,14 +407,14 @@
     },
     "UA": {
       "population_millions": 43.7,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 3727,
       "leader": "Volodymyr Zelensky",
       "leader_title": "President"
     },
     "GH": {
       "population_millions": 31.7,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 2222,
       "leader": "Nana Akufo-Addo",
       "leader_title": "President"
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 6058,
       "leader": "Francisco Sagasti",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.64,
+      "life_expectancy": 83.1,
+      "gdp_per_capita_usd": 60000,
+      "leader": "Simonetta Sommaruga",
+      "leader_title": "Federal Council President"
     }
   }
 }

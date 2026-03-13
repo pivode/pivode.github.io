@@ -184,7 +184,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 827.0,
+      "population_millions": 827,
       "life_expectancy": 58.2,
       "gdp_per_capita_usd": 346,
       "leader": "Rajiv Gandhi",
@@ -254,7 +254,7 @@
       "leader_title": "President"
     },
     "KR": {
-      "population_millions": 43.0,
+      "population_millions": 43,
       "life_expectancy": 72.3,
       "gdp_per_capita_usd": 5418,
       "leader": "Roh Tae-woo",
@@ -276,7 +276,7 @@
     },
     "ZA": {
       "population_millions": 39.6,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 2756,
       "leader": "F.W. de Klerk",
       "leader_title": "President"
@@ -303,15 +303,15 @@
       "leader_title": "President"
     },
     "IT": {
-      "population_millions": 57.0,
+      "population_millions": 57,
       "life_expectancy": 76.7,
       "gdp_per_capita_usd": 16494,
       "leader": "Giulio Andreotti",
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 39.0,
-      "life_expectancy": 77.0,
+      "population_millions": 39,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 10546,
       "leader": "Felipe Gonzalez",
       "leader_title": "Prime Minister"
@@ -352,7 +352,7 @@
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 38.0,
+      "population_millions": 38,
       "life_expectancy": 71.1,
       "gdp_per_capita_usd": 1600,
       "leader": "Wojciech Jaruzelski",
@@ -374,7 +374,7 @@
     },
     "VN": {
       "population_millions": 65.3,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 97,
       "leader": "Vo Chi Cong",
       "leader_title": "Chairman of State Council"
@@ -387,7 +387,7 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 27.0,
+      "population_millions": 27,
       "life_expectancy": 59.3,
       "gdp_per_capita_usd": 405,
       "leader": "Daniel arap Moi",
@@ -408,14 +408,14 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 73.7,
       "gdp_per_capita_usd": 4680,
       "leader": "Anibal Cavaco Silva",
       "leader_title": "Prime Minister"
     },
     "CL": {
-      "population_millions": 13.0,
+      "population_millions": 13,
       "life_expectancy": 71.6,
       "gdp_per_capita_usd": 2170,
       "leader": "Augusto Pinochet",
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 17.7,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 2240,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
@@ -444,10 +444,17 @@
     },
     "PE": {
       "population_millions": 20.5,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 1010,
       "leader": "Alan Garcia",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.65,
+      "life_expectancy": 77.9,
+      "gdp_per_capita_usd": 31000,
+      "leader": "Jean-Pascal Delamuraz",
+      "leader_title": "Federal Council President"
     }
   }
 }

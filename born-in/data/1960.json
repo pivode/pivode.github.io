@@ -13,7 +13,7 @@
     "us_median_household_income_usd": 5600,
     "us_inflation_pct": 1.72,
     "us_unemployment_pct": 5.5,
-    "us_minimum_wage_usd": 1.0,
+    "us_minimum_wage_usd": 1,
     "sp500_year_end": 58.03,
     "dow_jones_year_end": 615.89,
     "gold_oz_usd": 35.27,
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Spartacus",
-      "box_office_no1_gross_m": 60.0,
+      "box_office_no1_gross_m": 60,
       "oscar_best_picture": "Ben-Hur",
       "oscar_best_director": "Ben-Hur",
       "oscar_best_director_name": "William Wyler",
@@ -262,7 +262,7 @@
       "leader_title": "President"
     },
     "KR": {
-      "population_millions": 25.0,
+      "population_millions": 25,
       "life_expectancy": 55.3,
       "gdp_per_capita_usd": 158,
       "leader": "Yun Po-sun",
@@ -270,7 +270,7 @@
     },
     "IE": {
       "population_millions": 2.83,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 3630,
       "leader": "Seán Lemass",
       "leader_title": "Taoiseach"
@@ -354,7 +354,7 @@
     },
     "PL": {
       "population_millions": 29.6,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 380,
       "leader": "Wladyslaw Gomulka",
       "leader_title": "First Secretary"
@@ -374,7 +374,7 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 34.0,
+      "population_millions": 34,
       "life_expectancy": 47.2,
       "gdp_per_capita_usd": 70,
       "leader": "Ho Chi Minh",
@@ -389,14 +389,14 @@
     },
     "KE": {
       "population_millions": 8.9,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 100,
       "leader": "Patrick Renison",
       "leader_title": "Governor"
     },
     "SA": {
       "population_millions": 4.1,
-      "life_expectancy": 43.0,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 450,
       "leader": "Saud bin Abdulaziz",
       "leader_title": "King"
@@ -410,7 +410,7 @@
     },
     "PT": {
       "population_millions": 8.9,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 370,
       "leader": "Antonio de Oliveira Salazar",
       "leader_title": "Prime Minister"
@@ -431,24 +431,31 @@
     },
     "UA": {
       "population_millions": 43.1,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 920,
       "leader": "Mykola Pidhirny",
       "leader_title": "First Secretary"
     },
     "GH": {
       "population_millions": 6.9,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 250,
       "leader": "Kwame Nkrumah",
       "leader_title": "President"
     },
     "PE": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 48.7,
       "gdp_per_capita_usd": 310,
       "leader": "Manuel Prado Ugarteche",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.36,
+      "life_expectancy": 71.4,
+      "gdp_per_capita_usd": 12850,
+      "leader": "Max-Edouard Petitpierre",
+      "leader_title": "Federal Council President"
     }
   }
 }

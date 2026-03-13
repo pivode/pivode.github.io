@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 4700,
     "us_inflation_pct": 1.49,
     "us_unemployment_pct": 4.1,
-    "us_minimum_wage_usd": 1.0,
+    "us_minimum_wage_usd": 1,
     "sp500_year_end": null,
     "dow_jones_year_end": 499.47,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.83
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "The Ten Commandments",
-      "box_office_no1_gross_m": 65.0,
+      "box_office_no1_gross_m": 65,
       "oscar_best_picture": "Marty",
       "oscar_best_director": "Marty",
       "oscar_best_director_name": "Delbert Mann",
@@ -193,7 +193,7 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 52.0,
+      "population_millions": 52,
       "life_expectancy": 68.6,
       "gdp_per_capita_usd": 1178,
       "leader": "Konrad Adenauer",
@@ -221,7 +221,7 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 614.0,
+      "population_millions": 614,
       "life_expectancy": 45.5,
       "gdp_per_capita_usd": 66,
       "leader": "Mao Zedong",
@@ -229,7 +229,7 @@
     },
     "AU": {
       "population_millions": 9.4,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1627,
       "leader": "Robert Menzies",
       "leader_title": "Prime Minister"
@@ -243,7 +243,7 @@
     },
     "RU": {
       "population_millions": 109.9,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 2300,
       "leader": "Nikita Khrushchev",
       "leader_title": "First Secretary"
@@ -299,7 +299,7 @@
     },
     "EG": {
       "population_millions": 24.5,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 145,
       "leader": "Gamal Abdel Nasser",
       "leader_title": "President"
@@ -333,14 +333,14 @@
       "leader_title": "President"
     },
     "TR": {
-      "population_millions": 25.0,
+      "population_millions": 25,
       "life_expectancy": 49.7,
       "gdp_per_capita_usd": 410,
       "leader": "Adnan Menderes",
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 43.5,
       "gdp_per_capita_usd": 76,
       "leader": "Huseyn Shaheed Suhrawardy",
@@ -368,8 +368,8 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 31.0,
-      "life_expectancy": 45.0,
+      "population_millions": 31,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 62,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
@@ -383,7 +383,7 @@
     },
     "KE": {
       "population_millions": 7.7,
-      "life_expectancy": 43.0,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 85,
       "leader": "Evelyn Baring",
       "leader_title": "Governor"
@@ -410,8 +410,8 @@
       "leader_title": "Prime Minister"
     },
     "CL": {
-      "population_millions": 7.0,
-      "life_expectancy": 57.0,
+      "population_millions": 7,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 430,
       "leader": "Carlos Ibanez del Campo",
       "leader_title": "President"
@@ -438,11 +438,18 @@
       "leader_title": "Colonial Government"
     },
     "PE": {
-      "population_millions": 9.0,
+      "population_millions": 9,
       "life_expectancy": 46.7,
       "gdp_per_capita_usd": 280,
       "leader": "Manuel Prado Ugarteche",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.1,
+      "life_expectancy": 70,
+      "gdp_per_capita_usd": 10000,
+      "leader": "Markus Feldmann",
+      "leader_title": "Federal Council President"
     }
   }
 }

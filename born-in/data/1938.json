@@ -12,11 +12,11 @@
     "us_gdp_per_capita_usd": 860,
     "us_median_household_income_usd": 1231,
     "us_inflation_pct": -2.8,
-    "us_unemployment_pct": 19.0,
+    "us_unemployment_pct": 19,
     "us_minimum_wage_usd": 0.25,
     "sp500_year_end": null,
     "dow_jones_year_end": 154.76,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.13
   },
   "prices_us": {
@@ -162,7 +162,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 130.0,
+      "population_millions": 130,
       "life_expectancy": 63.5,
       "gdp_per_capita_usd": 860,
       "leader": "Franklin D. Roosevelt",
@@ -176,8 +176,8 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 69.0,
-      "life_expectancy": 62.0,
+      "population_millions": 69,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 680,
       "leader": "Adolf Hitler",
       "leader_title": "Fuhrer and Chancellor"
@@ -198,21 +198,21 @@
     },
     "BR": {
       "population_millions": 41.8,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 105,
       "leader": "Getulio Vargas",
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 513.0,
-      "life_expectancy": 35.0,
+      "population_millions": 513,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 40,
       "leader": "Chiang Kai-shek",
       "leader_title": "Generalissimo"
     },
     "AU": {
       "population_millions": 6.9,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 700,
       "leader": "Joseph Lyons",
       "leader_title": "Prime Minister"
@@ -225,7 +225,7 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 112.0,
+      "population_millions": 112,
       "life_expectancy": 45.5,
       "gdp_per_capita_usd": 510,
       "leader": "Joseph Stalin",
@@ -282,14 +282,14 @@
     },
     "IT": {
       "population_millions": 43.6,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 340,
       "leader": "Benito Mussolini",
       "leader_title": "Head of Government"
     },
     "ES": {
       "population_millions": 23.5,
-      "life_expectancy": 40.0,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 110,
       "leader": "Francisco Franco",
       "leader_title": "Head of State (Nationalist)"
@@ -302,14 +302,14 @@
       "leader_title": "Prime Minister"
     },
     "TR": {
-      "population_millions": 17.0,
+      "population_millions": 17,
       "life_expectancy": 39.5,
       "gdp_per_capita_usd": 185,
       "leader": "Mustafa Kemal Ataturk",
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 35.0,
+      "population_millions": 35,
       "life_expectancy": 50.5,
       "gdp_per_capita_usd": 200,
       "leader": "Edward Smigly-Rydz",
@@ -370,6 +370,13 @@
       "gdp_per_capita_usd": 150,
       "leader": "Oscar Benavides",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.22,
+      "life_expectancy": 64.2,
+      "gdp_per_capita_usd": 6000,
+      "leader": "Johannes Baumann",
+      "leader_title": "Federal Council President"
     }
   }
 }

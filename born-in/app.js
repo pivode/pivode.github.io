@@ -2768,6 +2768,63 @@ const COUNTRY_EVENTS = {
     2024:'Political crisis deepens, Peru cycles through record number of ministers',
     2025:'Political instability continues as Peru cycles through leaders',
   },
+  CH: {
+    1950:'Switzerland joins the European Convention on Human Rights',
+    1952:'Swiss women still denied the vote at federal level',
+    1954:'Switzerland hosts and wins the ice hockey world championship',
+    1955:'CERN begins operations near Geneva',
+    1957:'First nuclear reactor in Switzerland starts up',
+    1958:'Swiss watchmaking industry faces early competition from Japan',
+    1960:'Huge dam construction boom across the Alps',
+    1962:'Switzerland becomes an EFTA stronghold',
+    1964:'National Exhibition (Expo 64) held in Lausanne',
+    1967:'Colour television broadcasting begins in Switzerland',
+    1969:'Major debate over foreign worker quotas (Schwarzenbach initiative)',
+    1971:'Women finally gain the right to vote at federal level',
+    1972:'Switzerland signs free trade deal with EEC but stays outside',
+    1974:'Jura independence movement intensifies',
+    1975:'Economic recession hits Swiss watchmaking hard',
+    1978:'Canton of Jura created after separating from Bern',
+    1979:'Swatch concept born as Swiss watch industry reinvents itself',
+    1980:'Gotthard road tunnel opens, longest in the world',
+    1982:'Banking secrecy faces first major international pressure',
+    1984:'Elisabeth Kopp becomes first woman in the Federal Council',
+    1986:'Schweizerhalle chemical fire pollutes the Rhine',
+    1988:'Kopp forced to resign over leaked investigation information',
+    1989:'Swiss army scandal reveals secret resistance organisation P-26',
+    1990:'Switzerland applies to join the EEA',
+    1992:'Swiss voters reject joining the European Economic Area',
+    1994:'Anti-racism law passed after controversies',
+    1995:'Swiss banks face scrutiny over dormant Holocaust-era accounts',
+    1996:'Swissair crisis begins with aggressive expansion strategy',
+    1998:'Swiss banks agree $1.25 billion Holocaust settlement',
+    2000:'Bilateral agreements with the EU come into force',
+    2001:'Swissair collapses, grounded overnight in national shock',
+    2002:'Switzerland joins the United Nations',
+    2003:'Christoph Blocher enters Federal Council, shifting politics right',
+    2005:'Switzerland joins Schengen Area via bilateral agreements',
+    2006:'Switzerland hosts a successful FIFA World Cup fan zone',
+    2007:'Blocher ousted from Federal Council in parliamentary vote',
+    2008:'UBS receives massive government bailout during financial crisis',
+    2009:'Switzerland votes to ban minaret construction',
+    2010:'Switzerland arrests Polanski, refuses US extradition request',
+    2011:'Swiss franc surges, central bank pegs it to the euro',
+    2012:'Gotthard base tunnel completed after 17 years of construction',
+    2013:'Voters approve strict executive pay curbs (Minder initiative)',
+    2014:'Swiss voters narrowly approve immigration quotas against EU wishes',
+    2015:'Swiss National Bank shocks markets by unpegging franc from euro',
+    2016:'Gotthard Base Tunnel opens, world\'s longest railway tunnel',
+    2017:'Voters approve plan to phase out nuclear energy',
+    2018:'Swiss vote to keep licence fee funding public broadcaster SRG',
+    2019:'Climate strikes sweep Swiss cities, Green parties surge in elections',
+    2020:'COVID-19 lockdown halts Swiss public life for first time in decades',
+    2021:'Swiss voters narrowly approve same-sex marriage',
+    2022:'Switzerland breaks neutrality tradition to sanction Russia over Ukraine',
+    2023:'Credit Suisse collapses, forced merger with UBS shakes banking world',
+    2024:'UBS completes Credit Suisse integration, becoming banking giant',
+    2025:'Neutrality debate intensifies as European security landscape shifts',
+  },
+
   US: {
     1950:'Korean War begins, US troops sent to defend South Korea',
     1952:'Eisenhower elected president, hydrogen bomb tested',
@@ -3122,19 +3179,38 @@ const MUSIC_NL_NO1 = {
   2010:{s:'Drank & Drugs',a:'Lil Kleine & Ronnie Flex'},
 };
 
+const MUSIC_CH_NO1 = {
+  1960:{s:'Ne me quitte pas',a:'Jacques Brel'},
+  1966:{s:'Diese Welt',a:'Mina'},
+  1974:{s:'Waterloo',a:'ABBA'},
+  1977:{s:'Ma Baker',a:'Boney M'},
+  1979:{s:'Dschingis Khan',a:'Dschingis Khan'},
+  1982:{s:'Stumblin\' In',a:'Suzi Quatro & Chris Norman'},
+  1985:{s:'Rock Me Amadeus',a:'Falco'},
+  1988:{s:'One Moment in Time',a:'Whitney Houston'},
+  1991:{s:'Sadeness',a:'Enigma'},
+  1993:{s:'Mr. Vain',a:'Culture Beat'},
+  1996:{s:'Macarena',a:'Los del Rio'},
+  1998:{s:'My Heart Will Go On',a:'Celine Dion'},
+  2001:{s:'Can\'t Get You Out of My Head',a:'Kylie Minogue'},
+  2004:{s:'Dragostea Din Tei',a:'O-Zone'},
+  2007:{s:'Mein Stern',a:'Nena'},
+  2010:{s:'Waka Waka',a:'Shakira'},
+};
+
 const LOCAL_MUSIC = {
   DE: MUSIC_DE_NO1, FR: MUSIC_FR_NO1, AU: MUSIC_AU_NO1,
   IT: MUSIC_IT_NO1, ES: MUSIC_ES_NO1, BR: MUSIC_BR_NO1,
   JP: MUSIC_JP_NO1, KR: MUSIC_KR_NO1, IN: MUSIC_IN_NO1,
   TR: MUSIC_TR_NO1, SE: MUSIC_SE_NO1, PT: MUSIC_PT_NO1,
-  NL: MUSIC_NL_NO1,
+  NL: MUSIC_NL_NO1, CH: MUSIC_CH_NO1,
 };
 const LOCAL_MUSIC_LABEL = {
   DE: 'German Chart #1', FR: 'French Chart #1', AU: 'Australian Chart #1',
   IT: 'Italian Chart #1', ES: 'Spanish Chart #1', BR: 'Brazilian Chart #1',
   JP: 'Japanese Oricon #1', KR: 'Korean Chart #1', IN: 'Indian Chart #1',
   TR: 'Turkish Chart #1', SE: 'Swedish Chart #1', PT: 'Portuguese Chart #1',
-  NL: 'Dutch Chart #1',
+  NL: 'Dutch Chart #1', CH: 'Swiss Chart #1',
 };
 
 
@@ -3482,6 +3558,7 @@ const COUNTRIES = [
   { code: 'UA', name: 'Ukraine',       flag: '🇺🇦' },
   { code: 'GH', name: 'Ghana',         flag: '🇬🇭' },
   { code: 'PE', name: 'Peru',          flag: '🇵🇪' },
+  { code: 'CH', name: 'Switzerland',  flag: '🇨🇭' },
 ];
 
 const COUNTRY_MAP = Object.fromEntries(COUNTRIES.map(c => [c.code, c]));
@@ -3527,6 +3604,7 @@ const LEADER_KEYS = {
   UA: { key: 'ukraine_president',     title: 'President' },
   GH: { key: 'ghana_president',       title: 'President' },
   PE: { key: 'peru_president',        title: 'President' },
+  CH: { key: 'switzerland_president', title: 'Federal Council President' },
 };
 
 const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -3544,7 +3622,7 @@ const TODAY = {
     IT:83.5, ES:83.2, NL:82.0, ID:71.8, TR:76.0, NG:53.9,
     ZA:64.1, AR:76.5, PH:71.4, EG:72.0,
     PK:67.3, BD:72.4, PL:77.5, SE:83.1, TH:78.7, VN:75.4, CO:77.3, KE:61.4,
-    SA:77.6, IL:82.6, PT:81.1, CL:80.2, MY:76.2, UA:73.6, GH:64.1, PE:76.5,
+    SA:77.6, IL:82.6, PT:81.1, CL:80.2, MY:76.2, UA:73.6, GH:64.1, PE:76.5, CH:84.2,
   },
   // 2024 nominal GDP per capita in USD (IMF/Worldometers)
   gdp_per_capita: {
@@ -3553,7 +3631,7 @@ const TODAY = {
     IT:40226, ES:35297, NL:68219, ID:4925, TR:15473, NG:1084,
     ZA:6253, AR:13858, PH:3985, EG:3338,
     PK:1485, BD:2593, PL:25023, SE:57723, TH:7345, VN:4717, CO:7914, KE:2206,
-    SA:35057, IL:54177, PT:28844, CL:16710, MY:11867, UA:5389, GH:2406, PE:8452,
+    SA:35057, IL:54177, PT:28844, CL:16710, MY:11867, UA:5389, GH:2406, PE:8452, CH:105000,
   },
   population_millions: {
     US:336, GB:68.4, IN:1442, DE:84.5, JP:123.3, FR:68.2, BR:216,
@@ -3561,7 +3639,7 @@ const TODAY = {
     IT:58.8, ES:48.4, NL:17.9, ID:278, TR:85.8, NG:230,
     ZA:62, AR:46.7, PH:117, EG:106,
     PK:240, BD:173, PL:37.6, SE:10.6, TH:72, VN:100, CO:52.2, KE:56,
-    SA:37, IL:9.9, PT:10.3, CL:19.8, MY:34, UA:37, GH:34, PE:34.4,
+    SA:37, IL:9.9, PT:10.3, CL:19.8, MY:34, UA:37, GH:34, PE:34.4, CH:9.1,
   },
   home_salary_ratio: (420000 / 80000).toFixed(1),
   // Current US prices (2024 averages, BLS/USDA/industry sources)

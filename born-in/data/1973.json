@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "The Exorcist",
-      "box_office_no1_gross_m": 193.0,
+      "box_office_no1_gross_m": 193,
       "oscar_best_picture": "The Godfather",
       "oscar_best_director": "Cabaret",
       "oscar_best_director_name": "Bob Fosse",
@@ -184,8 +184,8 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 574.0,
-      "life_expectancy": 49.0,
+      "population_millions": 574,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 128,
       "leader": "Indira Gandhi",
       "leader_title": "Prime Minister"
@@ -206,7 +206,7 @@
     },
     "FR": {
       "population_millions": 52.1,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 4307,
       "leader": "Georges Pompidou",
       "leader_title": "President"
@@ -241,14 +241,14 @@
     },
     "RU": {
       "population_millions": 133.5,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 4700,
       "leader": "Leonid Brezhnev",
       "leader_title": "General Secretary"
     },
     "MX": {
-      "population_millions": 57.0,
-      "life_expectancy": 65.0,
+      "population_millions": 57,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 4400,
       "leader": "Luis Echeverría",
       "leader_title": "President"
@@ -282,7 +282,7 @@
       "leader_title": "Prime Minister"
     },
     "AR": {
-      "population_millions": 25.0,
+      "population_millions": 25,
       "life_expectancy": 66.2,
       "gdp_per_capita_usd": 2097,
       "leader": "Juan Peron",
@@ -310,7 +310,7 @@
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 35.0,
+      "population_millions": 35,
       "life_expectancy": 73.1,
       "gdp_per_capita_usd": 2093,
       "leader": "Francisco Franco",
@@ -346,7 +346,7 @@
     },
     "BD": {
       "population_millions": 71.3,
-      "life_expectancy": 49.0,
+      "life_expectancy": 49,
       "gdp_per_capita_usd": 90,
       "leader": "Sheikh Mujibur Rahman",
       "leader_title": "Prime Minister"
@@ -373,7 +373,7 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 46.0,
+      "population_millions": 46,
       "life_expectancy": 54.5,
       "gdp_per_capita_usd": 94,
       "leader": "Ton Duc Thang",
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 11.9,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 590,
       "leader": "Abdul Razak Hussein",
       "leader_title": "Prime Minister"
@@ -444,10 +444,17 @@
     },
     "PE": {
       "population_millions": 14.4,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 660,
       "leader": "Juan Velasco Alvarado",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.44,
+      "life_expectancy": 74.5,
+      "gdp_per_capita_usd": 22000,
+      "leader": "Roger Bonvin",
+      "leader_title": "Federal Council President"
     }
   }
 }

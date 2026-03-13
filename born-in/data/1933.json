@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "King Kong",
-      "box_office_no1_gross_m": 10.0,
+      "box_office_no1_gross_m": 10,
       "oscar_best_picture": "Cavalcade",
       "oscar_best_director": "Cavalcade",
       "oscar_best_director_name": "Frank Lloyd",
@@ -178,7 +178,7 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 66.0,
+      "population_millions": 66,
       "life_expectancy": 57.7,
       "gdp_per_capita_usd": 472,
       "leader": "Adolf Hitler",
@@ -192,7 +192,7 @@
       "leader_title": "Prime Minister"
     },
     "FR": {
-      "population_millions": 42.0,
+      "population_millions": 42,
       "life_expectancy": 57.5,
       "gdp_per_capita_usd": 888,
       "leader": "Edouard Daladier",
@@ -206,7 +206,7 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 504.0,
+      "population_millions": 504,
       "life_expectancy": 27.5,
       "gdp_per_capita_usd": 41,
       "leader": "Chiang Kai-shek",
@@ -214,21 +214,21 @@
     },
     "AU": {
       "population_millions": 6.8,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 671,
       "leader": "Joseph Lyons",
       "leader_title": "Prime Minister"
     },
     "CA": {
       "population_millions": 10.6,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 745,
       "leader": "Richard Bedford Bennett",
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 153.0,
-      "life_expectancy": 32.0,
+      "population_millions": 153,
+      "life_expectancy": 32,
       "gdp_per_capita_usd": 462,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
@@ -256,7 +256,7 @@
     },
     "ZA": {
       "population_millions": 10.9,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 218,
       "leader": "J.B.M. Hertzog",
       "leader_title": "Prime Minister"
@@ -304,7 +304,7 @@
       "leader_title": "Prime Minister"
     },
     "TR": {
-      "population_millions": 15.0,
+      "population_millions": 15,
       "life_expectancy": 39.8,
       "gdp_per_capita_usd": 212,
       "leader": "Ismet Inonu",
@@ -332,7 +332,7 @@
       "leader_title": "Prime Minister"
     },
     "CO": {
-      "population_millions": 8.0,
+      "population_millions": 8,
       "life_expectancy": 37.8,
       "gdp_per_capita_usd": 148,
       "leader": "Alfonso Lopez Pumarejo",
@@ -354,24 +354,31 @@
     },
     "CL": {
       "population_millions": 4.7,
-      "life_expectancy": 41.0,
+      "life_expectancy": 41,
       "gdp_per_capita_usd": 227,
       "leader": "Arturo Alessandri",
       "leader_title": "President"
     },
     "UA": {
       "population_millions": 29.5,
-      "life_expectancy": 20.0,
+      "life_expectancy": 20,
       "gdp_per_capita_usd": 268,
       "leader": "Stanislav Kosior",
       "leader_title": "First Secretary"
     },
     "PE": {
-      "population_millions": 6.0,
+      "population_millions": 6,
       "life_expectancy": 34.7,
       "gdp_per_capita_usd": 176,
       "leader": "Oscar R. Benavides",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.16,
+      "life_expectancy": 62.5,
+      "gdp_per_capita_usd": 5500,
+      "leader": "Edmund Schulthess",
+      "leader_title": "Federal Council President"
     }
   }
 }

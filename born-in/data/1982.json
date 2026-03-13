@@ -178,13 +178,13 @@
     },
     "GB": {
       "population_millions": 56.3,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 9531,
       "leader": "Margaret Thatcher",
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 700.0,
+      "population_millions": 700,
       "life_expectancy": 54.6,
       "gdp_per_capita_usd": 271,
       "leader": "Indira Gandhi",
@@ -192,7 +192,7 @@
     },
     "DE": {
       "population_millions": 61.6,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 11316,
       "leader": "Helmut Kohl",
       "leader_title": "Chancellor"
@@ -212,7 +212,7 @@
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 128.0,
+      "population_millions": 128,
       "life_expectancy": 63.9,
       "gdp_per_capita_usd": 2308,
       "leader": "João Figueiredo",
@@ -262,7 +262,7 @@
     },
     "IE": {
       "population_millions": 3.48,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 10900,
       "leader": "Charles Haughey",
       "leader_title": "Taoiseach"
@@ -283,7 +283,7 @@
     },
     "AR": {
       "population_millions": 28.9,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 2928,
       "leader": "Reynaldo Bignone",
       "leader_title": "President"
@@ -310,7 +310,7 @@
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 38.0,
+      "population_millions": 38,
       "life_expectancy": 75.9,
       "gdp_per_capita_usd": 5145,
       "leader": "Felipe Gonzalez",
@@ -345,7 +345,7 @@
       "leader_title": "President"
     },
     "BD": {
-      "population_millions": 88.0,
+      "population_millions": 88,
       "life_expectancy": 54.4,
       "gdp_per_capita_usd": 183,
       "leader": "Hussain Muhammad Ershad",
@@ -374,13 +374,13 @@
     },
     "VN": {
       "population_millions": 56.4,
-      "life_expectancy": 62.0,
+      "life_expectancy": 62,
       "gdp_per_capita_usd": 118,
       "leader": "Truong Chinh",
       "leader_title": "Chairman of State Council"
     },
     "CO": {
-      "population_millions": 31.0,
+      "population_millions": 31,
       "life_expectancy": 67.8,
       "gdp_per_capita_usd": 1470,
       "leader": "Belisario Betancur",
@@ -388,7 +388,7 @@
     },
     "KE": {
       "population_millions": 20.6,
-      "life_expectancy": 56.0,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 402,
       "leader": "Daniel arap Moi",
       "leader_title": "President"
@@ -401,7 +401,7 @@
       "leader_title": "King"
     },
     "IL": {
-      "population_millions": 4.0,
+      "population_millions": 4,
       "life_expectancy": 74.6,
       "gdp_per_capita_usd": 5620,
       "leader": "Menachem Begin",
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 1230,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.39,
+      "life_expectancy": 76.5,
+      "gdp_per_capita_usd": 26500,
+      "leader": "Fritz Honegger",
+      "leader_title": "Federal Council President"
     }
   }
 }

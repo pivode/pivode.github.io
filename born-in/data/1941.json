@@ -4,14 +4,14 @@
   "world": {
     "population_billions": 2.33,
     "births_millions": 91,
-    "life_expectancy_global": 44.0,
+    "life_expectancy_global": 44,
     "countries_count": 61,
     "internet_users": 0
   },
   "economy": {
     "us_gdp_per_capita_usd": 1218,
     "us_median_household_income_usd": 1900,
-    "us_inflation_pct": 5.0,
+    "us_inflation_pct": 5,
     "us_unemployment_pct": 9.9,
     "us_minimum_wage_usd": 0.3,
     "sp500_year_end": null,
@@ -179,21 +179,21 @@
     },
     "DE": {
       "population_millions": 69.5,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 1500,
       "leader": "Adolf Hitler",
       "leader_title": "Fuhrer"
     },
     "JP": {
       "population_millions": 72.7,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 348,
       "leader": "Hideki Tojo",
       "leader_title": "Prime Minister"
     },
     "FR": {
-      "population_millions": 41.0,
-      "life_expectancy": 56.0,
+      "population_millions": 41,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 620,
       "leader": "Philippe Petain",
       "leader_title": "Head of State (Vichy)"
@@ -206,8 +206,8 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 519.0,
-      "life_expectancy": 38.0,
+      "population_millions": 519,
+      "life_expectancy": 38,
       "gdp_per_capita_usd": 48,
       "leader": "Chiang Kai-shek",
       "leader_title": "Generalissimo"
@@ -227,8 +227,8 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 168.0,
-      "life_expectancy": 40.0,
+      "population_millions": 168,
+      "life_expectancy": 40,
       "gdp_per_capita_usd": 820,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
@@ -263,21 +263,21 @@
     },
     "PH": {
       "population_millions": 17.3,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 115,
       "leader": "Manuel Quezon",
       "leader_title": "President (Commonwealth)"
     },
     "EG": {
       "population_millions": 17.1,
-      "life_expectancy": 36.0,
+      "life_expectancy": 36,
       "gdp_per_capita_usd": 102,
       "leader": "King Farouk",
       "leader_title": "King"
     },
     "IT": {
       "population_millions": 44.5,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 540,
       "leader": "Benito Mussolini",
       "leader_title": "Il Duce"
@@ -291,7 +291,7 @@
     },
     "NL": {
       "population_millions": 8.9,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 600,
       "leader": "Queen Wilhelmina (in exile)",
       "leader_title": "Queen (Government in Exile)"
@@ -304,8 +304,8 @@
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 35.0,
-      "life_expectancy": 44.0,
+      "population_millions": 35,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 175,
       "leader": "Wladyslaw Raczkiewicz (in exile)",
       "leader_title": "President (Government in Exile)"
@@ -318,7 +318,7 @@
       "leader_title": "Prime Minister"
     },
     "TH": {
-      "population_millions": 16.0,
+      "population_millions": 16,
       "life_expectancy": 42.5,
       "gdp_per_capita_usd": 92,
       "leader": "Plaek Phibunsongkhram",
@@ -353,8 +353,8 @@
       "leader_title": "President"
     },
     "UA": {
-      "population_millions": 28.0,
-      "life_expectancy": 35.0,
+      "population_millions": 28,
+      "life_expectancy": 35,
       "gdp_per_capita_usd": 280,
       "leader": "Nikita Khrushchev",
       "leader_title": "First Secretary"
@@ -368,10 +368,17 @@
     },
     "NG": {
       "population_millions": 22.5,
-      "life_expectancy": 30.0,
+      "life_expectancy": 30,
       "gdp_per_capita_usd": 60,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
+    },
+    "CH": {
+      "population_millions": 4.27,
+      "life_expectancy": 64.2,
+      "gdp_per_capita_usd": 5750,
+      "leader": "Ernst Wetter",
+      "leader_title": "Federal Council President"
     }
   }
 }

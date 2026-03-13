@@ -170,7 +170,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 218.0,
+      "population_millions": 218,
       "life_expectancy": 72.9,
       "gdp_per_capita_usd": 8592,
       "leader": "Gerald Ford",
@@ -178,7 +178,7 @@
     },
     "GB": {
       "population_millions": 56.2,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 4085,
       "leader": "James Callaghan",
       "leader_title": "Prime Minister"
@@ -192,7 +192,7 @@
     },
     "DE": {
       "population_millions": 61.5,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 7594,
       "leader": "Helmut Schmidt",
       "leader_title": "Chancellor"
@@ -219,21 +219,21 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 933.0,
+      "population_millions": 933,
       "life_expectancy": 65.5,
       "gdp_per_capita_usd": 166,
       "leader": "Mao Zedong",
       "leader_title": "Chairman"
     },
     "AU": {
-      "population_millions": 14.0,
+      "population_millions": 14,
       "life_expectancy": 73.3,
       "gdp_per_capita_usd": 7232,
       "leader": "Malcolm Fraser",
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 23.0,
+      "population_millions": 23,
       "life_expectancy": 74.2,
       "gdp_per_capita_usd": 8562,
       "leader": "Pierre Trudeau",
@@ -254,7 +254,7 @@
       "leader_title": "President"
     },
     "KR": {
-      "population_millions": 36.0,
+      "population_millions": 36,
       "life_expectancy": 67.8,
       "gdp_per_capita_usd": 820,
       "leader": "Park Chung-hee",
@@ -276,14 +276,14 @@
     },
     "ZA": {
       "population_millions": 26.4,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 1417,
       "leader": "B.J. Vorster",
       "leader_title": "Prime Minister"
     },
     "AR": {
       "population_millions": 26.3,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 1948,
       "leader": "Jorge Videla",
       "leader_title": "President"
@@ -374,21 +374,21 @@
     },
     "VN": {
       "population_millions": 49.2,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 100,
       "leader": "Ton Duc Thang",
       "leader_title": "President"
     },
     "CO": {
-      "population_millions": 27.0,
-      "life_expectancy": 65.0,
+      "population_millions": 27,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 810,
       "leader": "Alfonso Lopez Michelsen",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 16.1,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 270,
       "leader": "Jomo Kenyatta",
       "leader_title": "President"
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 870,
       "leader": "Francisco Morales Bermudez",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.33,
+      "life_expectancy": 75.2,
+      "gdp_per_capita_usd": 22800,
+      "leader": "Rudolf Gnägi",
+      "leader_title": "Federal Council President"
     }
   }
 }

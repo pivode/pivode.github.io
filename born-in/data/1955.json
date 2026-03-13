@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
     "dow_jones_year_end": 488.4,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.77
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Lady and the Tramp",
-      "box_office_no1_gross_m": 40.0,
+      "box_office_no1_gross_m": 40,
       "oscar_best_picture": "On the Waterfront",
       "oscar_best_director": "On the Waterfront",
       "oscar_best_director_name": "Elia Kazan",
@@ -213,14 +213,14 @@
     },
     "FR": {
       "population_millions": 43.4,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1003,
       "leader": "René Coty",
       "leader_title": "President"
     },
     "BR": {
       "population_millions": 61.3,
-      "life_expectancy": 51.0,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 159,
       "leader": "João Café Filho",
       "leader_title": "President"
@@ -241,7 +241,7 @@
     },
     "CA": {
       "population_millions": 15.7,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1872,
       "leader": "Louis St. Laurent",
       "leader_title": "Prime Minister"
@@ -332,7 +332,7 @@
     },
     "ID": {
       "population_millions": 77.3,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 46,
       "leader": "Sukarno",
       "leader_title": "President"
@@ -346,13 +346,13 @@
     },
     "PK": {
       "population_millions": 42.8,
-      "life_expectancy": 43.0,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 74,
       "leader": "Muhammad Ali Bogra",
       "leader_title": "Prime Minister"
     },
     "PL": {
-      "population_millions": 27.0,
+      "population_millions": 27,
       "life_expectancy": 64.3,
       "gdp_per_capita_usd": 315,
       "leader": "Boleslaw Bierut",
@@ -360,14 +360,14 @@
     },
     "SE": {
       "population_millions": 7.29,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 1580,
       "leader": "Tage Erlander",
       "leader_title": "Prime Minister"
     },
     "TH": {
       "population_millions": 23.7,
-      "life_expectancy": 51.0,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 91,
       "leader": "Plaek Phibunsongkhram",
       "leader_title": "Prime Minister"
@@ -422,8 +422,8 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 7.0,
-      "life_expectancy": 51.0,
+      "population_millions": 7,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 320,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 270,
       "leader": "Manuel Odria",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.01,
+      "life_expectancy": 69.8,
+      "gdp_per_capita_usd": 9550,
+      "leader": "Max-Edouard Petitpierre",
+      "leader_title": "Federal Council President"
     }
   }
 }

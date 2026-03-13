@@ -154,7 +154,7 @@
       "leader_title": "President"
     },
     "GB": {
-      "population_millions": 66.0,
+      "population_millions": 66,
       "life_expectancy": 81.1,
       "gdp_per_capita_usd": 40412,
       "leader": "Theresa May",
@@ -211,7 +211,7 @@
     },
     "CA": {
       "population_millions": 36.7,
-      "life_expectancy": 82.0,
+      "life_expectancy": 82,
       "gdp_per_capita_usd": 45129,
       "leader": "Justin Trudeau",
       "leader_title": "Prime Minister"
@@ -274,7 +274,7 @@
     },
     "EG": {
       "population_millions": 97.6,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 2413,
       "leader": "Abdel Fattah el-Sisi",
       "leader_title": "President"
@@ -315,7 +315,7 @@
       "leader_title": "President"
     },
     "PK": {
-      "population_millions": 197.0,
+      "population_millions": 197,
       "life_expectancy": 67.1,
       "gdp_per_capita_usd": 1548,
       "leader": "Mamnoon Hussain",
@@ -336,7 +336,7 @@
       "leader_title": "President"
     },
     "SE": {
-      "population_millions": 10.0,
+      "population_millions": 10,
       "life_expectancy": 82.5,
       "gdp_per_capita_usd": 53442,
       "leader": "Stefan Lofven",
@@ -358,7 +358,7 @@
     },
     "CO": {
       "population_millions": 49.1,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 6301,
       "leader": "Juan Manuel Santos",
       "leader_title": "President"
@@ -393,7 +393,7 @@
     },
     "CL": {
       "population_millions": 18.2,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 14896,
       "leader": "Michelle Bachelet",
       "leader_title": "President"
@@ -407,7 +407,7 @@
     },
     "UA": {
       "population_millions": 44.2,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 2640,
       "leader": "Petro Poroshenko",
       "leader_title": "President"
@@ -421,10 +421,17 @@
     },
     "PE": {
       "population_millions": 32.2,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 6571,
       "leader": "Pedro Pablo Kuczynski",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.45,
+      "life_expectancy": 83.6,
+      "gdp_per_capita_usd": 60000,
+      "leader": "Doris Leuthard",
+      "leader_title": "Federal Council President"
     }
   }
 }

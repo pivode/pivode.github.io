@@ -198,7 +198,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 487.0,
+      "population_millions": 487,
       "life_expectancy": 44.6,
       "gdp_per_capita_usd": 97,
       "leader": "Lal Bahadur Shastri",
@@ -248,7 +248,7 @@
     },
     "CA": {
       "population_millions": 19.6,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 2773,
       "leader": "Lester B. Pearson",
       "leader_title": "Prime Minister"
@@ -353,7 +353,7 @@
     },
     "PK": {
       "population_millions": 57.5,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 105,
       "leader": "Ayub Khan",
       "leader_title": "President"
@@ -388,7 +388,7 @@
     },
     "CO": {
       "population_millions": 19.6,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 378,
       "leader": "Guillermo Leon Valencia",
       "leader_title": "President"
@@ -416,21 +416,21 @@
     },
     "PT": {
       "population_millions": 8.9,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 540,
       "leader": "Antonio de Oliveira Salazar",
       "leader_title": "Prime Minister"
     },
     "CL": {
       "population_millions": 8.8,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 600,
       "leader": "Eduardo Frei Montalva",
       "leader_title": "President"
     },
     "MY": {
       "population_millions": 9.5,
-      "life_expectancy": 56.0,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 400,
       "leader": "Tunku Abdul Rahman",
       "leader_title": "Prime Minister"
@@ -455,6 +455,13 @@
       "gdp_per_capita_usd": 430,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.94,
+      "life_expectancy": 72.5,
+      "gdp_per_capita_usd": 15800,
+      "leader": "Hans-Peter Tschudi",
+      "leader_title": "Federal Council President"
     }
   }
 }

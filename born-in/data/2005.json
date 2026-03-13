@@ -16,13 +16,13 @@
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1248.29,
     "dow_jones_year_end": 10717.5,
-    "gold_oz_usd": 513.0,
+    "gold_oz_usd": 513,
     "oil_barrel_usd": 61.04
   },
   "prices_us": {
     "gallon_gas_usd": 2.3,
     "gallon_milk_usd": 3.22,
-    "dozen_eggs_usd": 1.0,
+    "dozen_eggs_usd": 1,
     "loaf_bread_usd": 1.03,
     "movie_ticket_usd": 6.41,
     "new_car_avg_usd": 28399,
@@ -209,7 +209,7 @@
     },
     "BR": {
       "population_millions": 186.1,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 4789,
       "leader": "Luiz Inácio Lula da Silva",
       "leader_title": "President"
@@ -243,7 +243,7 @@
       "leader_title": "President"
     },
     "MX": {
-      "population_millions": 120.0,
+      "population_millions": 120,
       "life_expectancy": 74.6,
       "gdp_per_capita_usd": 9330,
       "leader": "Vicente Fox",
@@ -264,7 +264,7 @@
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 145.0,
+      "population_millions": 145,
       "life_expectancy": 49.5,
       "gdp_per_capita_usd": 1268,
       "leader": "Olusegun Obasanjo",
@@ -285,7 +285,7 @@
       "leader_title": "President"
     },
     "PH": {
-      "population_millions": 88.0,
+      "population_millions": 88,
       "life_expectancy": 68.4,
       "gdp_per_capita_usd": 1244,
       "leader": "Gloria Macapagal Arroyo",
@@ -306,7 +306,7 @@
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 80.5,
       "gdp_per_capita_usd": 26393,
       "leader": "Jose Luis Rodriguez Zapatero",
@@ -335,7 +335,7 @@
     },
     "PK": {
       "population_millions": 162.4,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 717,
       "leader": "Pervez Musharraf",
       "leader_title": "President"
@@ -370,7 +370,7 @@
     },
     "VN": {
       "population_millions": 83.1,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 633,
       "leader": "Tran Duc Luong",
       "leader_title": "President"
@@ -426,24 +426,31 @@
     },
     "UA": {
       "population_millions": 47.1,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1829,
       "leader": "Viktor Yushchenko",
       "leader_title": "President"
     },
     "GH": {
       "population_millions": 22.1,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 500,
       "leader": "John Kufuor",
       "leader_title": "President"
     },
     "PE": {
       "population_millions": 27.5,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 2470,
       "leader": "Alejandro Toledo",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.44,
+      "life_expectancy": 81.3,
+      "gdp_per_capita_usd": 41800,
+      "leader": "Samuel Schmid",
+      "leader_title": "Federal Council President"
     }
   }
 }

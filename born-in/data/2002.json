@@ -214,7 +214,7 @@
     },
     "BR": {
       "population_millions": 179.9,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 2830,
       "leader": "Fernando Henrique Cardoso",
       "leader_title": "President"
@@ -263,27 +263,27 @@
     },
     "IE": {
       "population_millions": 4.03,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 42900,
       "leader": "Bertie Ahern",
       "leader_title": "Taoiseach"
     },
     "NG": {
       "population_millions": 133.5,
-      "life_expectancy": 48.0,
+      "life_expectancy": 48,
       "gdp_per_capita_usd": 742,
       "leader": "Olusegun Obasanjo",
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 48.0,
+      "population_millions": 48,
       "life_expectancy": 55.6,
       "gdp_per_capita_usd": 2797,
       "leader": "Thabo Mbeki",
       "leader_title": "President"
     },
     "AR": {
-      "population_millions": 38.0,
+      "population_millions": 38,
       "life_expectancy": 74.3,
       "gdp_per_capita_usd": 2593,
       "leader": "Eduardo Duhalde",
@@ -361,7 +361,7 @@
     },
     "SE": {
       "population_millions": 8.94,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 27650,
       "leader": "Goran Persson",
       "leader_title": "Prime Minister"
@@ -374,8 +374,8 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 80.0,
-      "life_expectancy": 72.0,
+      "population_millions": 80,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 434,
       "leader": "Tran Duc Luong",
       "leader_title": "President"
@@ -396,7 +396,7 @@
     },
     "SA": {
       "population_millions": 22.6,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 8530,
       "leader": "Fahd bin Abdulaziz",
       "leader_title": "King"
@@ -423,7 +423,7 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 24.0,
+      "population_millions": 24,
       "life_expectancy": 73.5,
       "gdp_per_capita_usd": 3820,
       "leader": "Mahathir Mohamad",
@@ -449,6 +449,13 @@
       "gdp_per_capita_usd": 1690,
       "leader": "Alejandro Toledo",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.28,
+      "life_expectancy": 80.7,
+      "gdp_per_capita_usd": 38500,
+      "leader": "Kaspar Villiger",
+      "leader_title": "Federal Council President"
     }
   }
 }

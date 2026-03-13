@@ -20,9 +20,9 @@
     "oil_barrel_usd": 57.04
   },
   "prices_us": {
-    "gallon_gas_usd": 2.60,
+    "gallon_gas_usd": 2.6,
     "gallon_milk_usd": 3.25,
-    "dozen_eggs_usd": 1.40,
+    "dozen_eggs_usd": 1.4,
     "loaf_bread_usd": 1.55,
     "movie_ticket_usd": 9.16,
     "new_car_avg_usd": 38000,
@@ -189,7 +189,7 @@
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 211.0,
+      "population_millions": 211,
       "life_expectancy": 75.9,
       "gdp_per_capita_usd": 8897,
       "leader": "Jair Bolsonaro",
@@ -232,7 +232,7 @@
     },
     "KR": {
       "population_millions": 51.7,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 31846,
       "leader": "Moon Jae-in",
       "leader_title": "President"
@@ -302,14 +302,14 @@
     },
     "ID": {
       "population_millions": 270.6,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 4136,
       "leader": "Joko Widodo",
       "leader_title": "President"
     },
     "TR": {
       "population_millions": 83.4,
-      "life_expectancy": 78.0,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 9042,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "President"
@@ -329,7 +329,7 @@
       "leader_title": "Prime Minister"
     },
     "PL": {
-      "population_millions": 38.0,
+      "population_millions": 38,
       "life_expectancy": 78.2,
       "gdp_per_capita_usd": 15656,
       "leader": "Andrzej Duda",
@@ -344,7 +344,7 @@
     },
     "TH": {
       "population_millions": 69.6,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 7808,
       "leader": "Prayuth Chan-ocha",
       "leader_title": "Prime Minister"
@@ -400,7 +400,7 @@
     },
     "MY": {
       "population_millions": 32.4,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 11415,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 6947,
       "leader": "Martin Vizcarra",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.57,
+      "life_expectancy": 83.9,
+      "gdp_per_capita_usd": 64000,
+      "leader": "Ueli Maurer",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -15,8 +15,8 @@
     "us_unemployment_pct": 7.6,
     "us_minimum_wage_usd": 3.35,
     "sp500_year_end": 122.55,
-    "dow_jones_year_end": 875.0,
-    "gold_oz_usd": 460.0,
+    "dow_jones_year_end": 875,
+    "gold_oz_usd": 460,
     "oil_barrel_usd": 35.69
   },
   "prices_us": {
@@ -199,7 +199,7 @@
     },
     "JP": {
       "population_millions": 117.6,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 10168,
       "leader": "Zenko Suzuki",
       "leader_title": "Prime Minister"
@@ -226,7 +226,7 @@
       "leader_title": "Paramount Leader"
     },
     "AU": {
-      "population_millions": 15.0,
+      "population_millions": 15,
       "life_expectancy": 74.3,
       "gdp_per_capita_usd": 11812,
       "leader": "Malcolm Fraser",
@@ -241,7 +241,7 @@
     },
     "RU": {
       "population_millions": 140.6,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 5800,
       "leader": "Leonid Brezhnev",
       "leader_title": "General Secretary"
@@ -318,7 +318,7 @@
     },
     "NL": {
       "population_millions": 14.2,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 10478,
       "leader": "Dries van Agt",
       "leader_title": "Prime Minister"
@@ -352,8 +352,8 @@
       "leader_title": "President"
     },
     "PL": {
-      "population_millions": 36.0,
-      "life_expectancy": 70.0,
+      "population_millions": 36,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1250,
       "leader": "Wojciech Jaruzelski",
       "leader_title": "First Secretary"
@@ -374,7 +374,7 @@
     },
     "VN": {
       "population_millions": 55.2,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 115,
       "leader": "Truong Chinh",
       "leader_title": "Chairman of State Council"
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 14.5,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 1790,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
@@ -436,18 +436,25 @@
       "leader_title": "First Secretary"
     },
     "GH": {
-      "population_millions": 13.0,
-      "life_expectancy": 52.0,
+      "population_millions": 13,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 400,
       "leader": "Jerry Rawlings",
       "leader_title": "Head of State"
     },
     "PE": {
       "population_millions": 17.4,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 1250,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.37,
+      "life_expectancy": 76.4,
+      "gdp_per_capita_usd": 26200,
+      "leader": "Kurt Furgler",
+      "leader_title": "Federal Council President"
     }
   }
 }

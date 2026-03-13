@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 5100,
     "us_inflation_pct": 2.73,
     "us_unemployment_pct": 6.8,
-    "us_minimum_wage_usd": 1.0,
+    "us_minimum_wage_usd": 1,
     "sp500_year_end": 55.21,
     "dow_jones_year_end": 583.65,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.87
   },
   "prices_us": {
@@ -221,7 +221,7 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 640.0,
+      "population_millions": 640,
       "life_expectancy": 47.1,
       "gdp_per_capita_usd": 68,
       "leader": "Mao Zedong",
@@ -298,7 +298,7 @@
       "leader_title": "President"
     },
     "EG": {
-      "population_millions": 26.0,
+      "population_millions": 26,
       "life_expectancy": 42.9,
       "gdp_per_capita_usd": 155,
       "leader": "Gamal Abdel Nasser",
@@ -327,7 +327,7 @@
     },
     "ID": {
       "population_millions": 83.5,
-      "life_expectancy": 46.0,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 48,
       "leader": "Sukarno",
       "leader_title": "President"
@@ -348,7 +348,7 @@
     },
     "PL": {
       "population_millions": 28.6,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 350,
       "leader": "Wladyslaw Gomulka",
       "leader_title": "First Secretary"
@@ -369,7 +369,7 @@
     },
     "VN": {
       "population_millions": 32.4,
-      "life_expectancy": 46.0,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 66,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
@@ -383,7 +383,7 @@
     },
     "KE": {
       "population_millions": 8.3,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 91,
       "leader": "Evelyn Baring",
       "leader_title": "Governor"
@@ -396,7 +396,7 @@
       "leader_title": "King"
     },
     "IL": {
-      "population_millions": 2.0,
+      "population_millions": 2,
       "life_expectancy": 68.6,
       "gdp_per_capita_usd": 700,
       "leader": "David Ben-Gurion",
@@ -425,7 +425,7 @@
     },
     "UA": {
       "population_millions": 42.2,
-      "life_expectancy": 66.0,
+      "life_expectancy": 66,
       "gdp_per_capita_usd": 840,
       "leader": "Oleksiy Kyrychenko",
       "leader_title": "First Secretary"
@@ -443,6 +443,13 @@
       "gdp_per_capita_usd": 295,
       "leader": "Manuel Prado Ugarteche",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.26,
+      "life_expectancy": 70.6,
+      "gdp_per_capita_usd": 10800,
+      "leader": "Thomas Holenstein",
+      "leader_title": "Federal Council President"
     }
   }
 }

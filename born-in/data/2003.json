@@ -12,7 +12,7 @@
     "us_gdp_per_capita_usd": 37749,
     "us_median_household_income_usd": 43564,
     "us_inflation_pct": 2.3,
-    "us_unemployment_pct": 6.0,
+    "us_unemployment_pct": 6,
     "us_minimum_wage_usd": 5.15,
     "sp500_year_end": 1111.92,
     "dow_jones_year_end": 10453.92,
@@ -242,14 +242,14 @@
     },
     "RU": {
       "population_millions": 144.3,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 7940,
       "leader": "Vladimir Putin",
       "leader_title": "President"
     },
     "MX": {
       "population_millions": 116.6,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 8190,
       "leader": "Vicente Fox",
       "leader_title": "President"
@@ -291,14 +291,14 @@
     },
     "PH": {
       "population_millions": 84.7,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1048,
       "leader": "Gloria Macapagal Arroyo",
       "leader_title": "President"
     },
     "EG": {
       "population_millions": 77.9,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1102,
       "leader": "Hosni Mubarak",
       "leader_title": "President"
@@ -311,8 +311,8 @@
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 43.0,
-      "life_expectancy": 80.0,
+      "population_millions": 43,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 21389,
       "leader": "Jose Maria Aznar",
       "leader_title": "Prime Minister"
@@ -339,7 +339,7 @@
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 155.0,
+      "population_millions": 155,
       "life_expectancy": 65.6,
       "gdp_per_capita_usd": 547,
       "leader": "Pervez Musharraf",
@@ -374,7 +374,7 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 81.0,
+      "population_millions": 81,
       "life_expectancy": 72.3,
       "gdp_per_capita_usd": 471,
       "leader": "Tran Duc Luong",
@@ -389,7 +389,7 @@
     },
     "KE": {
       "population_millions": 39.3,
-      "life_expectancy": 53.0,
+      "life_expectancy": 53,
       "gdp_per_capita_usd": 453,
       "leader": "Mwai Kibaki",
       "leader_title": "President"
@@ -430,7 +430,7 @@
       "leader_title": "Prime Minister"
     },
     "UA": {
-      "population_millions": 48.0,
+      "population_millions": 48,
       "life_expectancy": 68.3,
       "gdp_per_capita_usd": 1049,
       "leader": "Leonid Kuchma",
@@ -445,10 +445,17 @@
     },
     "PE": {
       "population_millions": 26.7,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1840,
       "leader": "Alejandro Toledo",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.34,
+      "life_expectancy": 80.9,
+      "gdp_per_capita_usd": 39200,
+      "leader": "Pascal Couchepin",
+      "leader_title": "Federal Council President"
     }
   }
 }

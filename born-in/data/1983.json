@@ -4,7 +4,7 @@
   "world": {
     "population_billions": 4.69,
     "births_millions": 128,
-    "life_expectancy_global": 65.0,
+    "life_expectancy_global": 65,
     "countries_count": 158,
     "internet_users": 400
   },
@@ -184,7 +184,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 717.0,
+      "population_millions": 717,
       "life_expectancy": 55.3,
       "gdp_per_capita_usd": 279,
       "leader": "Indira Gandhi",
@@ -234,7 +234,7 @@
     },
     "CA": {
       "population_millions": 24.9,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 13706,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
@@ -248,14 +248,14 @@
     },
     "MX": {
       "population_millions": 77.7,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 4890,
       "leader": "Miguel de la Madrid",
       "leader_title": "President"
     },
     "KR": {
       "population_millions": 39.9,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 2015,
       "leader": "Chun Doo-hwan",
       "leader_title": "President"
@@ -297,7 +297,7 @@
     },
     "EG": {
       "population_millions": 47.8,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 663,
       "leader": "Hosni Mubarak",
       "leader_title": "President"
@@ -338,7 +338,7 @@
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 86.0,
+      "population_millions": 86,
       "life_expectancy": 58.9,
       "gdp_per_capita_usd": 382,
       "leader": "Muhammad Zia-ul-Haq",
@@ -374,7 +374,7 @@
     },
     "VN": {
       "population_millions": 57.6,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 122,
       "leader": "Truong Chinh",
       "leader_title": "Chairman of State Council"
@@ -415,7 +415,7 @@
       "leader_title": "Prime Minister"
     },
     "CL": {
-      "population_millions": 12.0,
+      "population_millions": 12,
       "life_expectancy": 69.2,
       "gdp_per_capita_usd": 1720,
       "leader": "Augusto Pinochet",
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 15.3,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 1970,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
@@ -444,10 +444,17 @@
     },
     "PE": {
       "population_millions": 18.1,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 1020,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.41,
+      "life_expectancy": 76.7,
+      "gdp_per_capita_usd": 26800,
+      "leader": "Pierre Aubert",
+      "leader_title": "Federal Council President"
     }
   }
 }

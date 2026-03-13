@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 0.75,
     "sp500_year_end": null,
     "dow_jones_year_end": 404.39,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.75
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "White Christmas",
-      "box_office_no1_gross_m": 30.0,
+      "box_office_no1_gross_m": 30,
       "oscar_best_picture": "From Here to Eternity",
       "oscar_best_director": "From Here to Eternity",
       "oscar_best_director_name": "Fred Zinnemann",
@@ -172,7 +172,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 163.0,
+      "population_millions": 163,
       "life_expectancy": 69.6,
       "gdp_per_capita_usd": 1855,
       "leader": "Dwight D. Eisenhower",
@@ -180,7 +180,7 @@
     },
     "GB": {
       "population_millions": 51.1,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 968,
       "leader": "Winston Churchill",
       "leader_title": "Prime Minister"
@@ -228,7 +228,7 @@
       "leader_title": "Chairman"
     },
     "AU": {
-      "population_millions": 9.0,
+      "population_millions": 9,
       "life_expectancy": 70.5,
       "gdp_per_capita_usd": 1453,
       "leader": "Robert Menzies",
@@ -243,7 +243,7 @@
     },
     "RU": {
       "population_millions": 107.2,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 1900,
       "leader": "Nikita Khrushchev",
       "leader_title": "First Secretary"
@@ -291,8 +291,8 @@
       "leader_title": "President"
     },
     "PH": {
-      "population_millions": 23.0,
-      "life_expectancy": 56.0,
+      "population_millions": 23,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 240,
       "leader": "Ramon Magsaysay",
       "leader_title": "President"
@@ -305,14 +305,14 @@
       "leader_title": "President"
     },
     "IT": {
-      "population_millions": 48.0,
+      "population_millions": 48,
       "life_expectancy": 67.2,
       "gdp_per_capita_usd": 548,
       "leader": "Mario Scelba",
       "leader_title": "Prime Minister"
     },
     "ES": {
-      "population_millions": 29.0,
+      "population_millions": 29,
       "life_expectancy": 65.4,
       "gdp_per_capita_usd": 238,
       "leader": "Francisco Franco",
@@ -326,7 +326,7 @@
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 76.0,
+      "population_millions": 76,
       "life_expectancy": 43.2,
       "gdp_per_capita_usd": 43,
       "leader": "Sukarno",
@@ -361,7 +361,7 @@
       "leader_title": "Prime Minister"
     },
     "TH": {
-      "population_millions": 23.0,
+      "population_millions": 23,
       "life_expectancy": 50.5,
       "gdp_per_capita_usd": 88,
       "leader": "Plaek Phibunsongkhram",
@@ -369,7 +369,7 @@
     },
     "VN": {
       "population_millions": 29.7,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 58,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
@@ -383,7 +383,7 @@
     },
     "KE": {
       "population_millions": 7.2,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 78,
       "leader": "Evelyn Baring",
       "leader_title": "Governor"
@@ -397,7 +397,7 @@
     },
     "IL": {
       "population_millions": 1.7,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 520,
       "leader": "Moshe Sharett",
       "leader_title": "Prime Minister"
@@ -432,7 +432,7 @@
     },
     "GH": {
       "population_millions": 5.7,
-      "life_expectancy": 43.0,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 200,
       "leader": "British Colony",
       "leader_title": "Colonial Government"
@@ -443,6 +443,13 @@
       "gdp_per_capita_usd": 260,
       "leader": "Manuel Odria",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.95,
+      "life_expectancy": 69.5,
+      "gdp_per_capita_usd": 9200,
+      "leader": "Rodolphe Rubattel",
+      "leader_title": "Federal Council President"
     }
   }
 }

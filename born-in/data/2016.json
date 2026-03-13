@@ -15,7 +15,7 @@
     "us_unemployment_pct": 4.9,
     "us_minimum_wage_usd": 7.25,
     "sp500_year_end": 2238.83,
-    "dow_jones_year_end": 19762.60,
+    "dow_jones_year_end": 19762.6,
     "gold_oz_usd": 1152.06,
     "oil_barrel_usd": 43.29
   },
@@ -156,7 +156,7 @@
     },
     "GB": {
       "population_millions": 65.6,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 40941,
       "leader": "Theresa May",
       "leader_title": "Prime Minister"
@@ -191,7 +191,7 @@
     },
     "BR": {
       "population_millions": 207.7,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 8671,
       "leader": "Michel Temer",
       "leader_title": "President"
@@ -226,7 +226,7 @@
     },
     "MX": {
       "population_millions": 127.5,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 8555,
       "leader": "Enrique Pena Nieto",
       "leader_title": "President"
@@ -253,8 +253,8 @@
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 56.0,
-      "life_expectancy": 63.0,
+      "population_millions": 56,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 5280,
       "leader": "Jacob Zuma",
       "leader_title": "President"
@@ -268,7 +268,7 @@
     },
     "PH": {
       "population_millions": 103.7,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 2951,
       "leader": "Rodrigo Duterte",
       "leader_title": "President"
@@ -289,13 +289,13 @@
     },
     "ES": {
       "population_millions": 46.5,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 26618,
       "leader": "Mariano Rajoy",
       "leader_title": "Prime Minister"
     },
     "NL": {
-      "population_millions": 17.0,
+      "population_millions": 17,
       "life_expectancy": 81.7,
       "gdp_per_capita_usd": 44938,
       "leader": "Mark Rutte",
@@ -366,7 +366,7 @@
     },
     "KE": {
       "population_millions": 48.5,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 1473,
       "leader": "Uhuru Kenyatta",
       "leader_title": "President"
@@ -393,7 +393,7 @@
       "leader_title": "President"
     },
     "CL": {
-      "population_millions": 18.0,
+      "population_millions": 18,
       "life_expectancy": 79.9,
       "gdp_per_capita_usd": 13574,
       "leader": "Michelle Bachelet",
@@ -426,6 +426,13 @@
       "gdp_per_capita_usd": 6030,
       "leader": "Pedro Pablo Kuczynski",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.37,
+      "life_expectancy": 83.5,
+      "gdp_per_capita_usd": 58000,
+      "leader": "Johann Schneider-Ammann",
+      "leader_title": "Federal Council President"
     }
   }
 }

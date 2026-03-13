@@ -4,7 +4,7 @@
   "world": {
     "population_billions": 2.86,
     "births_millions": 101,
-    "life_expectancy_global": 50.0,
+    "life_expectancy_global": 50,
     "countries_count": 82,
     "internet_users": 0
   },
@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 4900,
     "us_inflation_pct": 3.31,
     "us_unemployment_pct": 4.3,
-    "us_minimum_wage_usd": 1.0,
+    "us_minimum_wage_usd": 1,
     "sp500_year_end": 44.06,
     "dow_jones_year_end": 435.69,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.88
   },
   "prices_us": {
@@ -177,7 +177,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 172.0,
+      "population_millions": 172,
       "life_expectancy": 69.5,
       "gdp_per_capita_usd": 2188,
       "leader": "Dwight D. Eisenhower",
@@ -199,7 +199,7 @@
     },
     "DE": {
       "population_millions": 52.7,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1295,
       "leader": "Konrad Adenauer",
       "leader_title": "Chancellor"
@@ -213,20 +213,20 @@
     },
     "FR": {
       "population_millions": 44.3,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1109,
       "leader": "René Coty",
       "leader_title": "President"
     },
     "BR": {
       "population_millions": 64.7,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 170,
       "leader": "Juscelino Kubitschek",
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 627.0,
+      "population_millions": 627,
       "life_expectancy": 46.3,
       "gdp_per_capita_usd": 68,
       "leader": "Mao Zedong",
@@ -282,7 +282,7 @@
       "leader_title": "Colonial Government"
     },
     "ZA": {
-      "population_millions": 16.0,
+      "population_millions": 16,
       "life_expectancy": 50.2,
       "gdp_per_capita_usd": 418,
       "leader": "J.G. Strijdom",
@@ -324,7 +324,7 @@
       "leader_title": "Head of State"
     },
     "NL": {
-      "population_millions": 11.0,
+      "population_millions": 11,
       "life_expectancy": 73.2,
       "gdp_per_capita_usd": 991,
       "leader": "Willem Drees",
@@ -346,7 +346,7 @@
     },
     "PK": {
       "population_millions": 45.2,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 78,
       "leader": "Huseyn Shaheed Suhrawardy",
       "leader_title": "Prime Minister"
@@ -367,7 +367,7 @@
     },
     "TH": {
       "population_millions": 25.1,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 97,
       "leader": "Thanom Kittikachorn",
       "leader_title": "Prime Minister"
@@ -387,7 +387,7 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 8.0,
+      "population_millions": 8,
       "life_expectancy": 43.5,
       "gdp_per_capita_usd": 88,
       "leader": "Evelyn Baring",
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 7.4,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 330,
       "leader": "Tunku Abdul Rahman",
       "leader_title": "Prime Minister"
@@ -437,7 +437,7 @@
     },
     "GH": {
       "population_millions": 6.3,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 225,
       "leader": "Kwame Nkrumah",
       "leader_title": "Prime Minister"
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 290,
       "leader": "Manuel Prado Ugarteche",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.18,
+      "life_expectancy": 70.3,
+      "gdp_per_capita_usd": 10400,
+      "leader": "Hans Streuli",
+      "leader_title": "Federal Council President"
     }
   }
 }

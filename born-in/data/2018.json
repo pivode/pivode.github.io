@@ -168,7 +168,7 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 83.0,
+      "population_millions": 83,
       "life_expectancy": 80.9,
       "gdp_per_capita_usd": 47603,
       "leader": "Angela Merkel",
@@ -203,7 +203,7 @@
       "leader_title": "General Secretary"
     },
     "AU": {
-      "population_millions": 25.0,
+      "population_millions": 25,
       "life_expectancy": 82.7,
       "gdp_per_capita_usd": 57305,
       "leader": "Scott Morrison",
@@ -246,7 +246,7 @@
     },
     "NG": {
       "population_millions": 195.9,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 2028,
       "leader": "Muhammadu Buhari",
       "leader_title": "President"
@@ -295,7 +295,7 @@
     },
     "NL": {
       "population_millions": 17.2,
-      "life_expectancy": 82.0,
+      "life_expectancy": 82,
       "gdp_per_capita_usd": 53024,
       "leader": "Mark Rutte",
       "leader_title": "Prime Minister"
@@ -329,7 +329,7 @@
       "leader_title": "Prime Minister"
     },
     "PL": {
-      "population_millions": 38.0,
+      "population_millions": 38,
       "life_expectancy": 77.9,
       "gdp_per_capita_usd": 15441,
       "leader": "Andrzej Duda",
@@ -399,14 +399,14 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 32.0,
+      "population_millions": 32,
       "life_expectancy": 75.9,
       "gdp_per_capita_usd": 11373,
       "leader": "Mahathir Mohamad",
       "leader_title": "Prime Minister"
     },
     "UA": {
-      "population_millions": 44.0,
+      "population_millions": 44,
       "life_expectancy": 72.3,
       "gdp_per_capita_usd": 3095,
       "leader": "Petro Poroshenko",
@@ -425,6 +425,13 @@
       "gdp_per_capita_usd": 7003,
       "leader": "Martin Vizcarra",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.51,
+      "life_expectancy": 83.7,
+      "gdp_per_capita_usd": 62000,
+      "leader": "Alain Berset",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -184,7 +184,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 654.0,
+      "population_millions": 654,
       "life_expectancy": 52.6,
       "gdp_per_capita_usd": 190,
       "leader": "Charan Singh",
@@ -206,7 +206,7 @@
     },
     "FR": {
       "population_millions": 53.8,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 10924,
       "leader": "Valéry Giscard d'Estaing",
       "leader_title": "President"
@@ -219,7 +219,7 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 969.0,
+      "population_millions": 969,
       "life_expectancy": 67.2,
       "gdp_per_capita_usd": 185,
       "leader": "Deng Xiaoping",
@@ -234,7 +234,7 @@
     },
     "CA": {
       "population_millions": 23.7,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 11659,
       "leader": "Pierre Trudeau",
       "leader_title": "Prime Minister"
@@ -248,7 +248,7 @@
     },
     "MX": {
       "population_millions": 69.1,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 5650,
       "leader": "José López Portillo",
       "leader_title": "President"
@@ -304,7 +304,7 @@
     },
     "IT": {
       "population_millions": 56.3,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 7099,
       "leader": "Francesco Cossiga",
       "leader_title": "Prime Minister"
@@ -317,14 +317,14 @@
       "leader_title": "Prime Minister"
     },
     "NL": {
-      "population_millions": 14.0,
+      "population_millions": 14,
       "life_expectancy": 75.5,
       "gdp_per_capita_usd": 11178,
       "leader": "Dries van Agt",
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 146.0,
+      "population_millions": 146,
       "life_expectancy": 57.9,
       "gdp_per_capita_usd": 393,
       "leader": "Suharto",
@@ -374,13 +374,13 @@
     },
     "VN": {
       "population_millions": 52.9,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 108,
       "leader": "Ton Duc Thang",
       "leader_title": "President"
     },
     "CO": {
-      "population_millions": 29.0,
+      "population_millions": 29,
       "life_expectancy": 66.5,
       "gdp_per_capita_usd": 1280,
       "leader": "Julio Cesar Turbay Ayala",
@@ -394,7 +394,7 @@
       "leader_title": "President"
     },
     "SA": {
-      "population_millions": 9.0,
+      "population_millions": 9,
       "life_expectancy": 54.4,
       "gdp_per_capita_usd": 8960,
       "leader": "Khalid bin Abdulaziz",
@@ -423,7 +423,7 @@
     },
     "MY": {
       "population_millions": 13.8,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 1360,
       "leader": "Hussein Onn",
       "leader_title": "Prime Minister"
@@ -444,10 +444,17 @@
     },
     "PE": {
       "population_millions": 16.6,
-      "life_expectancy": 58.0,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 1020,
       "leader": "Francisco Morales Bermudez",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.33,
+      "life_expectancy": 75.8,
+      "gdp_per_capita_usd": 24800,
+      "leader": "Hans Hürlimann",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -67,6 +67,7 @@ const COUNTRIES = [
   { code: 'UA', name: 'Ukraine',       flag: '\uD83C\uDDFA\uD83C\uDDE6' },
   { code: 'GH', name: 'Ghana',         flag: '\uD83C\uDDEC\uD83C\uDDED' },
   { code: 'PE', name: 'Peru',          flag: '\uD83C\uDDF5\uD83C\uDDEA' },
+  { code: 'CH', name: 'Switzerland',  flag: '\uD83C\uDDE8\uD83C\uDDED' },
 ];
 
 const COUNTRY_MAP = Object.fromEntries(COUNTRIES.map(c => [c.code, c]));
@@ -112,6 +113,7 @@ const LEADER_KEYS = {
   UA: { key: 'ukraine_president',     title: 'President' },
   GH: { key: 'ghana_president',       title: 'President' },
   PE: { key: 'peru_president',        title: 'President' },
+  CH: { key: 'switzerland_president', title: 'Federal Council President' },
 };
 
 // Hardcoded "today" comparison values
@@ -127,7 +129,7 @@ const TODAY = {
     IT:83.5, ES:83.2, NL:82.0, ID:71.8, TR:76.0, NG:53.9,
     ZA:64.1, AR:76.5, PH:71.4, EG:72.0,
     PK:67.3, BD:72.4, PL:77.5, SE:83.1, TH:78.7, VN:75.4, CO:77.3, KE:61.4,
-    SA:77.6, IL:82.6, PT:81.1, CL:80.2, MY:76.2, UA:73.6, GH:64.1, PE:76.5,
+    SA:77.6, IL:82.6, PT:81.1, CL:80.2, MY:76.2, UA:73.6, GH:64.1, PE:76.5, CH:84.2,
   },
   gdp_per_capita: {
     US:85810, GB:52637, IN:2697, DE:55800, JP:32476, FR:46150, BR:10280,
@@ -135,7 +137,7 @@ const TODAY = {
     IT:40226, ES:35297, NL:68219, ID:4925, TR:15473, NG:1084,
     ZA:6253, AR:13858, PH:3985, EG:3338,
     PK:1485, BD:2593, PL:25023, SE:57723, TH:7345, VN:4717, CO:7914, KE:2206,
-    SA:35057, IL:54177, PT:28844, CL:16710, MY:11867, UA:5389, GH:2406, PE:8452,
+    SA:35057, IL:54177, PT:28844, CL:16710, MY:11867, UA:5389, GH:2406, PE:8452, CH:105000,
   },
   home_salary_ratio: (420000 / 80000).toFixed(1),
   prices: {
@@ -513,19 +515,38 @@ const MUSIC_GB_NO1 = {
   2010:{s:'Love the Way You Lie',a:'Eminem ft. Rihanna'},
 };
 
+const MUSIC_CH_NO1 = {
+  1960:{s:'Ne me quitte pas',a:'Jacques Brel'},
+  1966:{s:'Diese Welt',a:'Mina'},
+  1974:{s:'Waterloo',a:'ABBA'},
+  1977:{s:'Ma Baker',a:'Boney M'},
+  1979:{s:'Dschingis Khan',a:'Dschingis Khan'},
+  1982:{s:'Stumblin\' In',a:'Suzi Quatro & Chris Norman'},
+  1985:{s:'Rock Me Amadeus',a:'Falco'},
+  1988:{s:'One Moment in Time',a:'Whitney Houston'},
+  1991:{s:'Sadeness',a:'Enigma'},
+  1993:{s:'Mr. Vain',a:'Culture Beat'},
+  1996:{s:'Macarena',a:'Los del Rio'},
+  1998:{s:'My Heart Will Go On',a:'Celine Dion'},
+  2001:{s:'Can\'t Get You Out of My Head',a:'Kylie Minogue'},
+  2004:{s:'Dragostea Din Tei',a:'O-Zone'},
+  2007:{s:'Mein Stern',a:'Nena'},
+  2010:{s:'Waka Waka',a:'Shakira'},
+};
+
 const LOCAL_MUSIC = {
   DE: MUSIC_DE_NO1, FR: MUSIC_FR_NO1, AU: MUSIC_AU_NO1,
   IT: MUSIC_IT_NO1, ES: MUSIC_ES_NO1, BR: MUSIC_BR_NO1,
   JP: MUSIC_JP_NO1, KR: MUSIC_KR_NO1, IN: MUSIC_IN_NO1,
   TR: MUSIC_TR_NO1, SE: MUSIC_SE_NO1, PT: MUSIC_PT_NO1,
-  NL: MUSIC_NL_NO1, GB: MUSIC_GB_NO1,
+  NL: MUSIC_NL_NO1, GB: MUSIC_GB_NO1, CH: MUSIC_CH_NO1,
 };
 const LOCAL_MUSIC_LABEL = {
   DE: 'German Chart #1', FR: 'French Chart #1', AU: 'Australian Chart #1',
   IT: 'Italian Chart #1', ES: 'Spanish Chart #1', BR: 'Brazilian Chart #1',
   JP: 'Japanese Oricon #1', KR: 'Korean Chart #1', IN: 'Indian Chart #1',
   TR: 'Turkish Chart #1', SE: 'Swedish Chart #1', PT: 'Portuguese Chart #1',
-  NL: 'Dutch Chart #1', GB: 'UK Chart #1',
+  NL: 'Dutch Chart #1', GB: 'UK Chart #1', CH: 'Swiss Chart #1',
 };
 
 // ---------------------------------------------------------------------------

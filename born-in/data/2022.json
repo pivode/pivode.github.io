@@ -2,7 +2,7 @@
   "year": 2022,
   "schema_version": 1,
   "world": {
-    "population_billions": 8.00,
+    "population_billions": 8,
     "births_millions": 139,
     "life_expectancy_global": 71.4,
     "countries_count": 195,
@@ -11,10 +11,10 @@
   "economy": {
     "us_gdp_per_capita_usd": 76399,
     "us_median_household_income_usd": 74580,
-    "us_inflation_pct": 8.0,
+    "us_inflation_pct": 8,
     "us_unemployment_pct": 3.6,
     "us_minimum_wage_usd": 7.25,
-    "sp500_year_end": 3839.50,
+    "sp500_year_end": 3839.5,
     "dow_jones_year_end": 33147.25,
     "gold_oz_usd": 1800.05,
     "oil_barrel_usd": 94.53
@@ -183,7 +183,7 @@
       "leader_title": "Prime Minister"
     },
     "FR": {
-      "population_millions": 68.0,
+      "population_millions": 68,
       "life_expectancy": 82.3,
       "gdp_per_capita_usd": 43658,
       "leader": "Emmanuel Macron",
@@ -268,7 +268,7 @@
     },
     "PH": {
       "population_millions": 112.5,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 3623,
       "leader": "Ferdinand Marcos Jr.",
       "leader_title": "President"
@@ -303,14 +303,14 @@
     },
     "ID": {
       "population_millions": 275.5,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 4788,
       "leader": "Joko Widodo",
       "leader_title": "President"
     },
     "TR": {
       "population_millions": 85.3,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 10616,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "President"
@@ -331,14 +331,14 @@
     },
     "PL": {
       "population_millions": 37.7,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 18009,
       "leader": "Andrzej Duda",
       "leader_title": "President"
     },
     "SE": {
       "population_millions": 10.5,
-      "life_expectancy": 83.0,
+      "life_expectancy": 83,
       "gdp_per_capita_usd": 55685,
       "leader": "Ulf Kristersson",
       "leader_title": "Prime Minister"
@@ -359,7 +359,7 @@
     },
     "CO": {
       "population_millions": 51.9,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 6630,
       "leader": "Gustavo Petro",
       "leader_title": "President"
@@ -400,7 +400,7 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 33.0,
+      "population_millions": 33,
       "life_expectancy": 76.3,
       "gdp_per_capita_usd": 12478,
       "leader": "Anwar Ibrahim",
@@ -408,7 +408,7 @@
     },
     "UA": {
       "population_millions": 36.7,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 4534,
       "leader": "Volodymyr Zelensky",
       "leader_title": "President"
@@ -426,6 +426,13 @@
       "gdp_per_capita_usd": 6748,
       "leader": "Pedro Castillo",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.78,
+      "life_expectancy": 83.8,
+      "gdp_per_capita_usd": 65000,
+      "leader": "Ignazio Cassis",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -175,21 +175,21 @@
     },
     "GB": {
       "population_millions": 49.5,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 748,
       "leader": "Clement Attlee",
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 65.0,
-      "life_expectancy": 58.0,
+      "population_millions": 65,
+      "life_expectancy": 58,
       "gdp_per_capita_usd": 230,
       "leader": "Allied Military Government",
       "leader_title": "Occupation Authority"
     },
     "JP": {
       "population_millions": 72.1,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 115,
       "leader": "Shigeru Yoshida",
       "leader_title": "Prime Minister"
@@ -209,8 +209,8 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 538.0,
-      "life_expectancy": 37.0,
+      "population_millions": 538,
+      "life_expectancy": 37,
       "gdp_per_capita_usd": 49,
       "leader": "Chiang Kai-shek",
       "leader_title": "Generalissimo"
@@ -230,8 +230,8 @@
       "leader_title": "Prime Minister"
     },
     "RU": {
-      "population_millions": 100.0,
-      "life_expectancy": 47.0,
+      "population_millions": 100,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 920,
       "leader": "Joseph Stalin",
       "leader_title": "General Secretary"
@@ -245,7 +245,7 @@
     },
     "ID": {
       "population_millions": 64.4,
-      "life_expectancy": 38.0,
+      "life_expectancy": 38,
       "gdp_per_capita_usd": 29,
       "leader": "Sukarno",
       "leader_title": "President"
@@ -273,7 +273,7 @@
     },
     "ZA": {
       "population_millions": 11.7,
-      "life_expectancy": 42.0,
+      "life_expectancy": 42,
       "gdp_per_capita_usd": 300,
       "leader": "Jan Smuts",
       "leader_title": "Prime Minister"
@@ -301,14 +301,14 @@
     },
     "IT": {
       "population_millions": 45.8,
-      "life_expectancy": 60.0,
+      "life_expectancy": 60,
       "gdp_per_capita_usd": 220,
       "leader": "Alcide De Gasperi",
       "leader_title": "Prime Minister"
     },
     "ES": {
       "population_millions": 27.5,
-      "life_expectancy": 59.0,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 172,
       "leader": "Francisco Franco",
       "leader_title": "Head of State"
@@ -322,14 +322,14 @@
     },
     "TR": {
       "population_millions": 19.2,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 240,
       "leader": "Ismet Inonu",
       "leader_title": "President"
     },
     "PL": {
       "population_millions": 23.6,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 175,
       "leader": "Edward Osobka-Morawski",
       "leader_title": "Prime Minister"
@@ -363,7 +363,7 @@
       "leader_title": "King"
     },
     "PT": {
-      "population_millions": 8.0,
+      "population_millions": 8,
       "life_expectancy": 57.2,
       "gdp_per_capita_usd": 195,
       "leader": "Antonio de Oliveira Salazar",
@@ -371,7 +371,7 @@
     },
     "CL": {
       "population_millions": 5.7,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 352,
       "leader": "Gabriel Gonzalez Videla",
       "leader_title": "President"
@@ -385,7 +385,7 @@
     },
     "UA": {
       "population_millions": 34.5,
-      "life_expectancy": 47.0,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 330,
       "leader": "Nikita Khrushchev",
       "leader_title": "First Secretary"
@@ -396,6 +396,13 @@
       "gdp_per_capita_usd": 200,
       "leader": "Jose Luis Bustamante",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 4.42,
+      "life_expectancy": 66,
+      "gdp_per_capita_usd": 6800,
+      "leader": "Karl Kobelt",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -4,7 +4,7 @@
   "world": {
     "population_billions": 3.25,
     "births_millions": 107,
-    "life_expectancy_global": 54.0,
+    "life_expectancy_global": 54,
     "countries_count": 113,
     "internet_users": 0
   },
@@ -182,15 +182,15 @@
       "leader_title": "President"
     },
     "GB": {
-      "population_millions": 54.0,
+      "population_millions": 54,
       "life_expectancy": 71.4,
       "gdp_per_capita_usd": 1599,
       "leader": "Alec Douglas-Home",
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 472.0,
-      "life_expectancy": 43.0,
+      "population_millions": 472,
+      "life_expectancy": 43,
       "gdp_per_capita_usd": 92,
       "leader": "Jawaharlal Nehru",
       "leader_title": "Prime Minister"
@@ -204,7 +204,7 @@
     },
     "JP": {
       "population_millions": 97.2,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 825,
       "leader": "Hayato Ikeda",
       "leader_title": "Prime Minister"
@@ -217,7 +217,7 @@
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 80.0,
+      "population_millions": 80,
       "life_expectancy": 56.2,
       "gdp_per_capita_usd": 245,
       "leader": "Humberto Castelo Branco",
@@ -273,8 +273,8 @@
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 49.0,
-      "life_expectancy": 38.0,
+      "population_millions": 49,
+      "life_expectancy": 38,
       "gdp_per_capita_usd": 113,
       "leader": "Abubakar Tafawa Balewa",
       "leader_title": "Prime Minister"
@@ -329,7 +329,7 @@
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 99.0,
+      "population_millions": 99,
       "life_expectancy": 49.5,
       "gdp_per_capita_usd": 69,
       "leader": "Sukarno",
@@ -372,7 +372,7 @@
     },
     "VN": {
       "population_millions": 37.7,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 78,
       "leader": "Ho Chi Minh",
       "leader_title": "President of DRV"
@@ -386,21 +386,21 @@
     },
     "KE": {
       "population_millions": 10.1,
-      "life_expectancy": 47.0,
+      "life_expectancy": 47,
       "gdp_per_capita_usd": 112,
       "leader": "Jomo Kenyatta",
       "leader_title": "President"
     },
     "SA": {
       "population_millions": 4.7,
-      "life_expectancy": 45.0,
+      "life_expectancy": 45,
       "gdp_per_capita_usd": 560,
       "leader": "Faisal bin Abdulaziz",
       "leader_title": "King"
     },
     "IL": {
       "population_millions": 2.5,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1220,
       "leader": "Levi Eshkol",
       "leader_title": "Prime Minister"
@@ -428,7 +428,7 @@
     },
     "UA": {
       "population_millions": 45.4,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1080,
       "leader": "Petro Shelest",
       "leader_title": "First Secretary"
@@ -446,6 +446,13 @@
       "gdp_per_capita_usd": 400,
       "leader": "Fernando Belaunde Terry",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.89,
+      "life_expectancy": 72.2,
+      "gdp_per_capita_usd": 15200,
+      "leader": "Ludwig von Moos",
+      "leader_title": "Federal Council President"
     }
   }
 }

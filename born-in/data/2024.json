@@ -12,7 +12,7 @@
     "us_gdp_per_capita_usd": 85812,
     "us_median_household_income_usd": 83730,
     "us_inflation_pct": 2.9,
-    "us_unemployment_pct": 4.0,
+    "us_unemployment_pct": 4,
     "us_minimum_wage_usd": 7.25,
     "sp500_year_end": 5881.63,
     "dow_jones_year_end": 42544.22,
@@ -20,10 +20,10 @@
     "oil_barrel_usd": 76.61
   },
   "prices_us": {
-    "gallon_gas_usd": 3.30,
+    "gallon_gas_usd": 3.3,
     "gallon_milk_usd": 3.84,
     "dozen_eggs_usd": 3.18,
-    "loaf_bread_usd": 2.10,
+    "loaf_bread_usd": 2.1,
     "movie_ticket_usd": 11.31,
     "new_car_avg_usd": 47899,
     "median_home_usd": 427200,
@@ -44,7 +44,7 @@
     },
     "film": {
       "box_office_no1": "Inside Out 2",
-      "box_office_no1_gross_m": 653.0,
+      "box_office_no1_gross_m": 653,
       "oscar_best_picture": "Oppenheimer",
       "oscar_best_director": "Oppenheimer",
       "oscar_best_director_name": "Christopher Nolan",
@@ -148,7 +148,7 @@
   "notable_births": [],
   "countries": {
     "US": {
-      "population_millions": 336.0,
+      "population_millions": 336,
       "life_expectancy": 78.4,
       "gdp_per_capita_usd": 85812,
       "leader": "Joe Biden",
@@ -197,21 +197,21 @@
       "leader_title": "President"
     },
     "CN": {
-      "population_millions": 1407.0,
+      "population_millions": 1407,
       "life_expectancy": 78.8,
       "gdp_per_capita_usd": 13136,
       "leader": "Xi Jinping",
       "leader_title": "General Secretary"
     },
     "AU": {
-      "population_millions": 27.0,
+      "population_millions": 27,
       "life_expectancy": 83.7,
       "gdp_per_capita_usd": 64813,
       "leader": "Anthony Albanese",
       "leader_title": "Prime Minister"
     },
     "CA": {
-      "population_millions": 41.0,
+      "population_millions": 41,
       "life_expectancy": 82.6,
       "gdp_per_capita_usd": 54017,
       "leader": "Justin Trudeau",
@@ -253,8 +253,8 @@
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 62.0,
-      "life_expectancy": 65.0,
+      "population_millions": 62,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 6728,
       "leader": "Cyril Ramaphosa",
       "leader_title": "President"
@@ -295,14 +295,14 @@
       "leader_title": "Prime Minister"
     },
     "NL": {
-      "population_millions": 18.0,
+      "population_millions": 18,
       "life_expectancy": 82.1,
       "gdp_per_capita_usd": 60480,
       "leader": "Dick Schoof",
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 279.0,
+      "population_millions": 279,
       "life_expectancy": 72.4,
       "gdp_per_capita_usd": 4994,
       "leader": "Prabowo Subianto",
@@ -310,7 +310,7 @@
     },
     "TR": {
       "population_millions": 85.8,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 14967,
       "leader": "Recep Tayyip Erdogan",
       "leader_title": "President"
@@ -344,8 +344,8 @@
       "leader_title": "Prime Minister"
     },
     "TH": {
-      "population_millions": 72.0,
-      "life_expectancy": 78.0,
+      "population_millions": 72,
+      "life_expectancy": 78,
       "gdp_per_capita_usd": 7062,
       "leader": "Paetongtarn Shinawatra",
       "leader_title": "Prime Minister"
@@ -372,7 +372,7 @@
       "leader_title": "President"
     },
     "SA": {
-      "population_millions": 37.0,
+      "population_millions": 37,
       "life_expectancy": 77.1,
       "gdp_per_capita_usd": 31557,
       "leader": "Salman bin Abdulaziz",
@@ -400,7 +400,7 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 34.0,
+      "population_millions": 34,
       "life_expectancy": 76.9,
       "gdp_per_capita_usd": 13444,
       "leader": "Anwar Ibrahim",
@@ -415,17 +415,24 @@
     },
     "GH": {
       "population_millions": 34.1,
-      "life_expectancy": 65.0,
+      "life_expectancy": 65,
       "gdp_per_capita_usd": 2445,
       "leader": "Nana Akufo-Addo",
       "leader_title": "President"
     },
     "PE": {
-      "population_millions": 34.0,
+      "population_millions": 34,
       "life_expectancy": 73.7,
       "gdp_per_capita_usd": 7098,
       "leader": "Dina Boluarte",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 8.92,
+      "life_expectancy": 84.1,
+      "gdp_per_capita_usd": 70000,
+      "leader": "Viola Amherd",
+      "leader_title": "Federal Council President"
     }
   }
 }

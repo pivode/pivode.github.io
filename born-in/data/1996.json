@@ -11,12 +11,12 @@
   "economy": {
     "us_gdp_per_capita_usd": 29968,
     "us_median_household_income_usd": 35492,
-    "us_inflation_pct": 3.0,
+    "us_inflation_pct": 3,
     "us_unemployment_pct": 5.4,
     "us_minimum_wage_usd": 4.75,
     "sp500_year_end": 740.74,
     "dow_jones_year_end": 6448.27,
-    "gold_oz_usd": 369.0,
+    "gold_oz_usd": 369,
     "oil_barrel_usd": 22.16
   },
   "prices_us": {
@@ -200,7 +200,7 @@
     },
     "JP": {
       "population_millions": 125.7,
-      "life_expectancy": 80.0,
+      "life_expectancy": 80,
       "gdp_per_capita_usd": 37304,
       "leader": "Ryutaro Hashimoto",
       "leader_title": "Prime Minister"
@@ -248,7 +248,7 @@
       "leader_title": "President"
     },
     "MX": {
-      "population_millions": 104.0,
+      "population_millions": 104,
       "life_expectancy": 71.7,
       "gdp_per_capita_usd": 5870,
       "leader": "Ernesto Zedillo",
@@ -297,7 +297,7 @@
       "leader_title": "President"
     },
     "EG": {
-      "population_millions": 67.0,
+      "population_millions": 67,
       "life_expectancy": 65.7,
       "gdp_per_capita_usd": 1063,
       "leader": "Hosni Mubarak",
@@ -332,7 +332,7 @@
       "leader_title": "President"
     },
     "TR": {
-      "population_millions": 62.0,
+      "population_millions": 62,
       "life_expectancy": 70.2,
       "gdp_per_capita_usd": 3013,
       "leader": "Necmettin Erbakan",
@@ -347,7 +347,7 @@
     },
     "BD": {
       "population_millions": 121.1,
-      "life_expectancy": 63.0,
+      "life_expectancy": 63,
       "gdp_per_capita_usd": 333,
       "leader": "Sheikh Hasina",
       "leader_title": "Prime Minister"
@@ -361,7 +361,7 @@
     },
     "SE": {
       "population_millions": 8.84,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 30950,
       "leader": "Goran Persson",
       "leader_title": "Prime Minister"
@@ -423,7 +423,7 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 21.0,
+      "population_millions": 21,
       "life_expectancy": 71.5,
       "gdp_per_capita_usd": 4730,
       "leader": "Mahathir Mohamad",
@@ -438,7 +438,7 @@
     },
     "GH": {
       "population_millions": 17.8,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 390,
       "leader": "Jerry Rawlings",
       "leader_title": "President"
@@ -449,6 +449,13 @@
       "gdp_per_capita_usd": 1590,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.07,
+      "life_expectancy": 79.2,
+      "gdp_per_capita_usd": 35500,
+      "leader": "Jean-Pascal Delamuraz",
+      "leader_title": "Federal Council President"
     }
   }
 }

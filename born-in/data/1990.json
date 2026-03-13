@@ -22,7 +22,7 @@
   "prices_us": {
     "gallon_gas_usd": 1.16,
     "gallon_milk_usd": 2.78,
-    "dozen_eggs_usd": 1.0,
+    "dozen_eggs_usd": 1,
     "loaf_bread_usd": 0.7,
     "movie_ticket_usd": 4.23,
     "new_car_avg_usd": 15900,
@@ -208,7 +208,7 @@
     },
     "FR": {
       "population_millions": 56.7,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 21374,
       "leader": "François Mitterrand",
       "leader_title": "President"
@@ -229,7 +229,7 @@
     },
     "AU": {
       "population_millions": 17.1,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 17721,
       "leader": "Bob Hawke",
       "leader_title": "Prime Minister"
@@ -305,22 +305,22 @@
       "leader_title": "President"
     },
     "IT": {
-      "population_millions": 57.0,
-      "life_expectancy": 77.0,
+      "population_millions": 57,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 20111,
       "leader": "Giulio Andreotti",
       "leader_title": "Prime Minister"
     },
     "ES": {
       "population_millions": 39.1,
-      "life_expectancy": 77.0,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 13559,
       "leader": "Felipe Gonzalez",
       "leader_title": "Prime Minister"
     },
     "NL": {
-      "population_millions": 15.0,
-      "life_expectancy": 77.0,
+      "population_millions": 15,
+      "life_expectancy": 77,
       "gdp_per_capita_usd": 19140,
       "leader": "Ruud Lubbers",
       "leader_title": "Prime Minister"
@@ -333,14 +333,14 @@
       "leader_title": "President"
     },
     "TR": {
-      "population_millions": 56.0,
+      "population_millions": 56,
       "life_expectancy": 67.8,
       "gdp_per_capita_usd": 2794,
       "leader": "Yildirim Akbulut",
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 108.0,
+      "population_millions": 108,
       "life_expectancy": 62.3,
       "gdp_per_capita_usd": 410,
       "leader": "Nawaz Sharif",
@@ -355,7 +355,7 @@
     },
     "PL": {
       "population_millions": 38.1,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1693,
       "leader": "Lech Walesa",
       "leader_title": "President"
@@ -389,8 +389,8 @@
       "leader_title": "President"
     },
     "KE": {
-      "population_millions": 28.0,
-      "life_expectancy": 59.0,
+      "population_millions": 28,
+      "life_expectancy": 59,
       "gdp_per_capita_usd": 385,
       "leader": "Daniel arap Moi",
       "leader_title": "President"
@@ -410,15 +410,15 @@
       "leader_title": "Prime Minister"
     },
     "PT": {
-      "population_millions": 10.0,
-      "life_expectancy": 74.0,
+      "population_millions": 10,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 6360,
       "leader": "Anibal Cavaco Silva",
       "leader_title": "Prime Minister"
     },
     "CL": {
       "population_millions": 13.2,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 2388,
       "leader": "Patricio Aylwin",
       "leader_title": "President"
@@ -439,17 +439,24 @@
     },
     "GH": {
       "population_millions": 15.5,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 400,
       "leader": "Jerry Rawlings",
       "leader_title": "Head of State"
     },
     "PE": {
-      "population_millions": 21.0,
+      "population_millions": 21,
       "life_expectancy": 63.5,
       "gdp_per_capita_usd": 1050,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.71,
+      "life_expectancy": 78,
+      "gdp_per_capita_usd": 32500,
+      "leader": "Arnold Koller",
+      "leader_title": "Federal Council President"
     }
   }
 }

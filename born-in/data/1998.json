@@ -182,7 +182,7 @@
       "leader_title": "Prime Minister"
     },
     "DE": {
-      "population_millions": 82.0,
+      "population_millions": 82,
       "life_expectancy": 77.6,
       "gdp_per_capita_usd": 26978,
       "leader": "Gerhard Schröder",
@@ -218,14 +218,14 @@
     },
     "AU": {
       "population_millions": 18.9,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 20676,
       "leader": "John Howard",
       "leader_title": "Prime Minister"
     },
     "CA": {
       "population_millions": 30.2,
-      "life_expectancy": 79.0,
+      "life_expectancy": 79,
       "gdp_per_capita_usd": 20186,
       "leader": "Jean Chrétien",
       "leader_title": "Prime Minister"
@@ -323,7 +323,7 @@
     },
     "TR": {
       "population_millions": 63.8,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 3295,
       "leader": "Mesut Yilmaz",
       "leader_title": "Prime Minister"
@@ -413,7 +413,7 @@
       "leader_title": "President"
     },
     "MY": {
-      "population_millions": 22.0,
+      "population_millions": 22,
       "life_expectancy": 72.3,
       "gdp_per_capita_usd": 3240,
       "leader": "Mahathir Mohamad",
@@ -421,7 +421,7 @@
     },
     "UA": {
       "population_millions": 50.4,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 635,
       "leader": "Leonid Kuchma",
       "leader_title": "President"
@@ -439,6 +439,13 @@
       "gdp_per_capita_usd": 1690,
       "leader": "Alberto Fujimori",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.12,
+      "life_expectancy": 79.7,
+      "gdp_per_capita_usd": 36800,
+      "leader": "Flavio Cotti",
+      "leader_title": "Federal Council President"
     }
   }
 }

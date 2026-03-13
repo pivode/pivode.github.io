@@ -2,7 +2,7 @@
   "year": 2011,
   "schema_version": 1,
   "world": {
-    "population_billions": 7.00,
+    "population_billions": 7,
     "births_millions": 140,
     "life_expectancy_global": 70.5,
     "countries_count": 195,
@@ -14,9 +14,9 @@
     "us_inflation_pct": 3.2,
     "us_unemployment_pct": 8.9,
     "us_minimum_wage_usd": 7.25,
-    "sp500_year_end": 1257.60,
+    "sp500_year_end": 1257.6,
     "dow_jones_year_end": 12217.56,
-    "gold_oz_usd": 1566.80,
+    "gold_oz_usd": 1566.8,
     "oil_barrel_usd": 98.83
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Harry Potter and the Deathly Hallows Part II",
-      "box_office_no1_gross_m": 381.0,
+      "box_office_no1_gross_m": 381,
       "oscar_best_picture": "The King's Speech",
       "oscar_best_director": "The King's Speech",
       "oscar_best_director_name": "Tom Hooper",
@@ -232,7 +232,7 @@
     },
     "KR": {
       "population_millions": 49.8,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 24156,
       "leader": "Lee Myung-bak",
       "leader_title": "President"
@@ -252,7 +252,7 @@
       "leader_title": "President"
     },
     "ZA": {
-      "population_millions": 53.0,
+      "population_millions": 53,
       "life_expectancy": 58.1,
       "gdp_per_capita_usd": 8072,
       "leader": "Jacob Zuma",
@@ -273,7 +273,7 @@
       "leader_title": "President"
     },
     "EG": {
-      "population_millions": 83.0,
+      "population_millions": 83,
       "life_expectancy": 70.1,
       "gdp_per_capita_usd": 2975,
       "leader": "Hosni Mubarak / Mohamed Tantawi",
@@ -295,7 +295,7 @@
     },
     "NL": {
       "population_millions": 16.7,
-      "life_expectancy": 81.0,
+      "life_expectancy": 81,
       "gdp_per_capita_usd": 53061,
       "leader": "Mark Rutte",
       "leader_title": "Prime Minister"
@@ -323,7 +323,7 @@
     },
     "BD": {
       "population_millions": 151.1,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 742,
       "leader": "Sheikh Hasina",
       "leader_title": "Prime Minister"
@@ -343,7 +343,7 @@
       "leader_title": "Prime Minister"
     },
     "TH": {
-      "population_millions": 67.0,
+      "population_millions": 67,
       "life_expectancy": 74.3,
       "gdp_per_capita_usd": 5678,
       "leader": "Yingluck Shinawatra",
@@ -351,14 +351,14 @@
     },
     "VN": {
       "population_millions": 89.7,
-      "life_expectancy": 75.0,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 1543,
       "leader": "Truong Tan Sang",
       "leader_title": "President"
     },
     "CO": {
-      "population_millions": 46.0,
-      "life_expectancy": 75.0,
+      "population_millions": 46,
+      "life_expectancy": 75,
       "gdp_per_capita_usd": 7169,
       "leader": "Juan Manuel Santos",
       "leader_title": "President"
@@ -407,7 +407,7 @@
     },
     "UA": {
       "population_millions": 45.7,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 3567,
       "leader": "Viktor Yanukovych",
       "leader_title": "President"
@@ -420,11 +420,18 @@
       "leader_title": "President"
     },
     "PE": {
-      "population_millions": 30.0,
+      "population_millions": 30,
       "life_expectancy": 74.2,
       "gdp_per_capita_usd": 5796,
       "leader": "Ollanta Humala",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 7.91,
+      "life_expectancy": 82.7,
+      "gdp_per_capita_usd": 50000,
+      "leader": "Micheline Calmy-Rey",
+      "leader_title": "Federal Council President"
     }
   }
 }

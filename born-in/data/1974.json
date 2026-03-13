@@ -2,9 +2,9 @@
   "year": 1974,
   "schema_version": 1,
   "world": {
-    "population_billions": 4.0,
+    "population_billions": 4,
     "births_millions": 128,
-    "life_expectancy_global": 61.0,
+    "life_expectancy_global": 61,
     "countries_count": 138,
     "internet_users": 0
   },
@@ -13,10 +13,10 @@
     "us_median_household_income_usd": 11101,
     "us_inflation_pct": 11.04,
     "us_unemployment_pct": 5.6,
-    "us_minimum_wage_usd": 2.0,
+    "us_minimum_wage_usd": 2,
     "sp500_year_end": 68.56,
     "dow_jones_year_end": 616.24,
-    "gold_oz_usd": 154.0,
+    "gold_oz_usd": 154,
     "oil_barrel_usd": 10.41
   },
   "prices_us": {
@@ -171,7 +171,7 @@
   "countries": {
     "US": {
       "population_millions": 213.9,
-      "life_expectancy": 72.0,
+      "life_expectancy": 72,
       "gdp_per_capita_usd": 7226,
       "leader": "Richard Nixon",
       "leader_title": "President"
@@ -184,7 +184,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 581.0,
+      "population_millions": 581,
       "life_expectancy": 49.6,
       "gdp_per_capita_usd": 140,
       "leader": "Indira Gandhi",
@@ -275,7 +275,7 @@
       "leader_title": "Head of State"
     },
     "ZA": {
-      "population_millions": 25.0,
+      "population_millions": 25,
       "life_expectancy": 57.1,
       "gdp_per_capita_usd": 1499,
       "leader": "B.J. Vorster",
@@ -296,14 +296,14 @@
       "leader_title": "President"
     },
     "EG": {
-      "population_millions": 38.0,
-      "life_expectancy": 51.0,
+      "population_millions": 38,
+      "life_expectancy": 51,
       "gdp_per_capita_usd": 245,
       "leader": "Anwar Sadat",
       "leader_title": "President"
     },
     "IT": {
-      "population_millions": 55.0,
+      "population_millions": 55,
       "life_expectancy": 72.7,
       "gdp_per_capita_usd": 3559,
       "leader": "Aldo Moro",
@@ -324,7 +324,7 @@
       "leader_title": "Prime Minister"
     },
     "ID": {
-      "population_millions": 128.0,
+      "population_millions": 128,
       "life_expectancy": 55.3,
       "gdp_per_capita_usd": 178,
       "leader": "Suharto",
@@ -338,7 +338,7 @@
       "leader_title": "Prime Minister"
     },
     "PK": {
-      "population_millions": 65.0,
+      "population_millions": 65,
       "life_expectancy": 53.4,
       "gdp_per_capita_usd": 210,
       "leader": "Zulfikar Ali Bhutto",
@@ -346,13 +346,13 @@
     },
     "BD": {
       "population_millions": 73.1,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 108,
       "leader": "Sheikh Mujibur Rahman",
       "leader_title": "Prime Minister"
     },
     "PL": {
-      "population_millions": 34.0,
+      "population_millions": 34,
       "life_expectancy": 70.6,
       "gdp_per_capita_usd": 870,
       "leader": "Edward Gierek",
@@ -374,21 +374,21 @@
     },
     "VN": {
       "population_millions": 46.9,
-      "life_expectancy": 55.0,
+      "life_expectancy": 55,
       "gdp_per_capita_usd": 96,
       "leader": "Ton Duc Thang",
       "leader_title": "President of DRV"
     },
     "CO": {
       "population_millions": 25.6,
-      "life_expectancy": 64.0,
+      "life_expectancy": 64,
       "gdp_per_capita_usd": 660,
       "leader": "Alfonso Lopez Michelsen",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 14.9,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 230,
       "leader": "Jomo Kenyatta",
       "leader_title": "President"
@@ -448,6 +448,13 @@
       "gdp_per_capita_usd": 780,
       "leader": "Juan Velasco Alvarado",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.46,
+      "life_expectancy": 74.7,
+      "gdp_per_capita_usd": 22500,
+      "leader": "Ernst Brugger",
+      "leader_title": "Federal Council President"
     }
   }
 }

@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "Jaws",
-      "box_office_no1_gross_m": 260.0,
+      "box_office_no1_gross_m": 260,
       "oscar_best_picture": "The Godfather Part II",
       "oscar_best_director": "The Godfather Part II",
       "oscar_best_director_name": "Francis Ford Coppola",
@@ -174,7 +174,7 @@
   ],
   "countries": {
     "US": {
-      "population_millions": 216.0,
+      "population_millions": 216,
       "life_expectancy": 72.6,
       "gdp_per_capita_usd": 7801,
       "leader": "Gerald Ford",
@@ -203,7 +203,7 @@
     },
     "JP": {
       "population_millions": 111.5,
-      "life_expectancy": 74.0,
+      "life_expectancy": 74,
       "gdp_per_capita_usd": 4512,
       "leader": "Takeo Miki",
       "leader_title": "Prime Minister"
@@ -287,7 +287,7 @@
     },
     "AR": {
       "population_millions": 25.9,
-      "life_expectancy": 67.0,
+      "life_expectancy": 67,
       "gdp_per_capita_usd": 2027,
       "leader": "Isabel Peron",
       "leader_title": "President"
@@ -308,7 +308,7 @@
     },
     "IT": {
       "population_millions": 55.2,
-      "life_expectancy": 73.0,
+      "life_expectancy": 73,
       "gdp_per_capita_usd": 3602,
       "leader": "Aldo Moro",
       "leader_title": "Prime Minister"
@@ -343,7 +343,7 @@
     },
     "PK": {
       "population_millions": 66.9,
-      "life_expectancy": 54.0,
+      "life_expectancy": 54,
       "gdp_per_capita_usd": 218,
       "leader": "Zulfikar Ali Bhutto",
       "leader_title": "Prime Minister"
@@ -364,7 +364,7 @@
     },
     "SE": {
       "population_millions": 8.22,
-      "life_expectancy": 76.0,
+      "life_expectancy": 76,
       "gdp_per_capita_usd": 8700,
       "leader": "Olof Palme",
       "leader_title": "Prime Minister"
@@ -377,8 +377,8 @@
       "leader_title": "Prime Minister"
     },
     "VN": {
-      "population_millions": 48.0,
-      "life_expectancy": 56.0,
+      "population_millions": 48,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 98,
       "leader": "Ton Duc Thang",
       "leader_title": "President"
@@ -413,7 +413,7 @@
     },
     "PT": {
       "population_millions": 9.1,
-      "life_expectancy": 69.0,
+      "life_expectancy": 69,
       "gdp_per_capita_usd": 1670,
       "leader": "Vasco Goncalves",
       "leader_title": "Prime Minister"
@@ -427,7 +427,7 @@
     },
     "MY": {
       "population_millions": 12.5,
-      "life_expectancy": 61.0,
+      "life_expectancy": 61,
       "gdp_per_capita_usd": 780,
       "leader": "Abdul Razak Hussein",
       "leader_title": "Prime Minister"
@@ -441,17 +441,24 @@
     },
     "GH": {
       "population_millions": 11.1,
-      "life_expectancy": 50.0,
+      "life_expectancy": 50,
       "gdp_per_capita_usd": 370,
       "leader": "Ignatius Kutu Acheampong",
       "leader_title": "Head of State"
     },
     "PE": {
       "population_millions": 15.1,
-      "life_expectancy": 56.0,
+      "life_expectancy": 56,
       "gdp_per_capita_usd": 910,
       "leader": "Francisco Morales Bermudez",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 6.4,
+      "life_expectancy": 75,
+      "gdp_per_capita_usd": 22000,
+      "leader": "Pierre Graber",
+      "leader_title": "Federal Council President"
     }
   }
 }

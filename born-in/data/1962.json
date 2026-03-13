@@ -16,7 +16,7 @@
     "us_minimum_wage_usd": 1.15,
     "sp500_year_end": 63.1,
     "dow_jones_year_end": 652.1,
-    "gold_oz_usd": 35.0,
+    "gold_oz_usd": 35,
     "oil_barrel_usd": 1.8
   },
   "prices_us": {
@@ -43,7 +43,7 @@
     },
     "film": {
       "box_office_no1": "How the West Was Won",
-      "box_office_no1_gross_m": 50.0,
+      "box_office_no1_gross_m": 50,
       "oscar_best_picture": "West Side Story",
       "oscar_best_director": "West Side Story",
       "oscar_best_director_name": "Robert Wise & Jerome Robbins",
@@ -189,7 +189,7 @@
       "leader_title": "Prime Minister"
     },
     "IN": {
-      "population_millions": 460.0,
+      "population_millions": 460,
       "life_expectancy": 42.1,
       "gdp_per_capita_usd": 87,
       "leader": "Jawaharlal Nehru",
@@ -197,7 +197,7 @@
     },
     "DE": {
       "population_millions": 56.8,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 1538,
       "leader": "Konrad Adenauer",
       "leader_title": "Chancellor"
@@ -211,13 +211,13 @@
     },
     "FR": {
       "population_millions": 46.7,
-      "life_expectancy": 71.0,
+      "life_expectancy": 71,
       "gdp_per_capita_usd": 1479,
       "leader": "Charles de Gaulle",
       "leader_title": "President"
     },
     "BR": {
-      "population_millions": 76.0,
+      "population_millions": 76,
       "life_expectancy": 55.5,
       "gdp_per_capita_usd": 228,
       "leader": "João Goulart",
@@ -273,7 +273,7 @@
       "leader_title": "Taoiseach"
     },
     "NG": {
-      "population_millions": 47.0,
+      "population_millions": 47,
       "life_expectancy": 37.6,
       "gdp_per_capita_usd": 104,
       "leader": "Abubakar Tafawa Balewa",
@@ -316,7 +316,7 @@
     },
     "ES": {
       "population_millions": 31.2,
-      "life_expectancy": 70.0,
+      "life_expectancy": 70,
       "gdp_per_capita_usd": 554,
       "leader": "Francisco Franco",
       "leader_title": "Head of State"
@@ -337,7 +337,7 @@
     },
     "TR": {
       "population_millions": 29.8,
-      "life_expectancy": 52.0,
+      "life_expectancy": 52,
       "gdp_per_capita_usd": 562,
       "leader": "Ismet Inonu",
       "leader_title": "Prime Minister"
@@ -379,21 +379,21 @@
     },
     "CO": {
       "population_millions": 17.7,
-      "life_expectancy": 57.0,
+      "life_expectancy": 57,
       "gdp_per_capita_usd": 340,
       "leader": "Guillermo Leon Valencia",
       "leader_title": "President"
     },
     "KE": {
       "population_millions": 9.5,
-      "life_expectancy": 46.0,
+      "life_expectancy": 46,
       "gdp_per_capita_usd": 105,
       "leader": "Malcolm MacDonald",
       "leader_title": "Governor"
     },
     "SA": {
       "population_millions": 4.4,
-      "life_expectancy": 44.0,
+      "life_expectancy": 44,
       "gdp_per_capita_usd": 510,
       "leader": "Saud bin Abdulaziz",
       "leader_title": "King"
@@ -428,7 +428,7 @@
     },
     "UA": {
       "population_millions": 44.3,
-      "life_expectancy": 68.0,
+      "life_expectancy": 68,
       "gdp_per_capita_usd": 1000,
       "leader": "Mykola Pidhirny",
       "leader_title": "First Secretary"
@@ -446,6 +446,13 @@
       "gdp_per_capita_usd": 350,
       "leader": "Ricardo Perez Godoy",
       "leader_title": "President"
+    },
+    "CH": {
+      "population_millions": 5.67,
+      "life_expectancy": 71.8,
+      "gdp_per_capita_usd": 14000,
+      "leader": "Paul Chaudet",
+      "leader_title": "Federal Council President"
     }
   }
 }
