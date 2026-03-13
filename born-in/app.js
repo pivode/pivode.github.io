@@ -3555,6 +3555,14 @@ const TODAY = {
     PK:1485, BD:2593, PL:25023, SE:57723, TH:7345, VN:4717, CO:7914, KE:2206,
     SA:35057, IL:54177, PT:28844, CL:16710, MY:11867, UA:5389, GH:2406, PE:8452,
   },
+  population_millions: {
+    US:336, GB:68.4, IN:1442, DE:84.5, JP:123.3, FR:68.2, BR:216,
+    CN:1425, AU:26.8, CA:41, RU:144, MX:130, KR:51.7, IE:5.3,
+    IT:58.8, ES:48.4, NL:17.9, ID:278, TR:85.8, NG:230,
+    ZA:62, AR:46.7, PH:117, EG:106,
+    PK:240, BD:173, PL:37.6, SE:10.6, TH:72, VN:100, CO:52.2, KE:56,
+    SA:37, IL:9.9, PT:10.3, CL:19.8, MY:34, UA:37, GH:34, PE:34.4,
+  },
   home_salary_ratio: (420000 / 80000).toFixed(1),
   // Current US prices (2024 averages, BLS/USDA/industry sources)
   prices: {
@@ -4223,34 +4231,67 @@ function renderActII(year, countryCode, data) {
   const globalLifeExp  = data.world?.life_expectancy_global;
 
   let lifeExpCard = '';
-  if (!isUS && countryLifeExp && globalLifeExp) {
-    const diff = (countryLifeExp - globalLifeExp).toFixed(1);
-    const diffAbs = Math.abs(diff);
-    const aboveBelow = diff > 0
-      ? `${diffAbs} years above the world average`
-      : `${diffAbs} years below the world average`;
-    const lifeCommentary = diff > 5
-      ? `Well above the global average. ${country.name} was ahead of most of the world.`
-      : diff > 0
-      ? `Slightly above the world average at the time.`
-      : diff > -5
-      ? `Below the global average then. The gap has narrowed since.`
-      : `Well below the global average in ${year}. Life expectancy in ${country.name} has risen substantially since.`;
+  const todayLifeExp = TODAY.life_expectancy[countryCode];
+  if (!isUS && countryLifeExp && todayLifeExp) {
+    const gain = (todayLifeExp - countryLifeExp).toFixed(1);
+    const displayName = displayCountryName(country, year);
+    const lifeCommentary = gain > 15
+      ? `${gain} more years of life in a generation. A transformation in health and survival.`
+      : gain > 8
+      ? `People born today can expect ${gain} more years than those born in ${year}.`
+      : gain > 3
+      ? `A steady ${gain}-year improvement in life expectancy since ${year}.`
+      : gain > 0
+      ? `Life expectancy has risen modestly - ${gain} years since ${year}.`
+      : `Life expectancy has actually declined since ${year}, a worrying trend.`;
     lifeExpCard = patternB({
-      eyebrow: 'Health',
-      headline: 'How long people lived',
+      eyebrow: `${displayName} Health`,
+      headline: 'Life expectancy - then and now',
       left: {
-        label: `${country.flag} ${country.name}`,
-        value: `${countryLifeExp}`,
-        desc: aboveBelow,
+        label: `${country.flag} ${year}`,
+        value: `${countryLifeExp} yrs`,
+        desc: `life expectancy at birth`,
       },
       right: {
-        label: '🌍 World Average',
-        labelMuted: true,
-        value: `${globalLifeExp}`,
-        desc: `life expectancy at birth in ${year}`,
+        label: `${country.flag} Today`,
+        value: `${todayLifeExp} yrs`,
+        desc: gain > 0 ? `+${gain} years since ${year}` : `${gain} years since ${year}`,
       },
       commentary: lifeCommentary,
+    });
+  }
+
+  // Population then vs now card (non-US)
+  let populationCard = '';
+  const countryPop = countryData?.population_millions;
+  const todayPop = TODAY.population_millions[countryCode];
+  if (!isUS && countryPop && todayPop) {
+    const displayName = displayCountryName(country, year);
+    const growth = (todayPop / countryPop).toFixed(1);
+    function fmtPop(m) { return m >= 1000 ? (m / 1000).toFixed(m >= 10000 ? 0 : 1) + 'B' : Math.round(m).toLocaleString() + 'M'; }
+    const popCommentary = growth >= 4
+      ? `${displayName}'s population has grown ${growth}x since ${year}. An entirely different scale.`
+      : growth >= 2
+      ? `The population has more than doubled since ${year}.`
+      : growth >= 1.3
+      ? `Significant growth - ${growth}x more people live in ${displayName} today than in ${year}.`
+      : growth >= 1
+      ? `Population has grown modestly since ${year}.`
+      : `Population has actually shrunk since ${year}.`;
+    populationCard = patternB({
+      eyebrow: `${displayName} Population`,
+      headline: 'How many people called it home',
+      left: {
+        label: `${country.flag} ${year}`,
+        value: fmtPop(countryPop),
+        desc: `population at birth`,
+      },
+      right: {
+        label: `${country.flag} Today`,
+        value: fmtPop(todayPop),
+        desc: `${growth}x since ${year}`,
+      },
+      commentary: popCommentary,
     });
   }
 
@@ -4351,11 +4392,13 @@ function renderActII(year, countryCode, data) {
 
         ${!isUS ? lifeExpCard : ''}
 
+        ${!isUS ? populationCard : ''}
+
         ${birthLotteryCard}
 
         ${patternE({
-          eyebrow: isUS ? 'Everyday Prices' : 'Meanwhile in America',
-          headline: isUS ? 'What things cost' : 'What things cost in the US',
+          eyebrow: isUS ? 'Everyday Prices' : 'For Context: US Prices',
+          headline: isUS ? 'What things cost' : 'What things cost in the US that year',
           prices,
         })}
 
