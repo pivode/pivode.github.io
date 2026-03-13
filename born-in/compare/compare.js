@@ -2463,31 +2463,6 @@ function renderComparison(parentYear, childYear, parentCountryCode, childCountry
     commentary: 'The vocabulary of modern life arrived in waves. A birth year changes which ideas were not even nameable yet.',
   }));
 
-  const lotteryP = birthLotterySnapshot(parentYear, parentData, explicitCountries ? parentCountryCode : null);
-  const lotteryC = birthLotterySnapshot(childYear, childData, explicitCountries ? childCountryCode : null);
-
-  if (lotteryP && lotteryC) {
-    sections.push(compareCard({
-      eyebrow: 'The Birth Lottery',
-      headline: 'How much birthplace alone changed life expectancy',
-      parent: {
-        label: String(parentYear),
-        value: lotteryP.gap + ' yrs',
-        desc: displayCountryName(lotteryP.highest.country, parentYear) + ' vs ' + displayCountryName(lotteryP.lowest.country, parentYear),
-      },
-      child: {
-        label: String(childYear),
-        value: lotteryC.gap + ' yrs',
-        desc: displayCountryName(lotteryC.highest.country, childYear) + ' vs ' + displayCountryName(lotteryC.lowest.country, childYear),
-      },
-      delta: {
-        text: signedRaw(lotteryC.gap - lotteryP.gap, 1) + ' years in the global life-expectancy gap',
-        type: lotteryC.gap <= lotteryP.gap ? 'positive' : 'negative',
-      },
-      commentary: 'Same planet, same birth year, completely different odds depending on where you arrived.',
-    }));
-  }
-
   // -----------------------------------------------------------------------
   // RENDER TO DOM (first pass - everything except "at 18")
   // -----------------------------------------------------------------------
