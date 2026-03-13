@@ -2538,20 +2538,13 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
 
     const musicSelection = localMusicSelection(year, effectiveCountryCode, data);
     const filmSelection = localFilmSelection(year, effectiveCountryCode, data);
-    const countryEvent = effectiveCountryCode ? (COUNTRY_EVENTS[effectiveCountryCode]?.[year] || null) : null;
-    const countrySnapshot = effectiveCountryCode && !countryEvent
-      ? countrySnapshotLine(effectiveCountryCode, year, countryD)
+    const countryEvent = effectiveCountryCode
+      ? (COUNTRY_EVENTS[effectiveCountryCode]?.[year] || countrySnapshotLine(effectiveCountryCode, year, countryD) || null)
       : null;
 
     // TV data is US-only; only show it for US cards
     const tvShow  = (effectiveCountryCode === 'US') ? tv?.most_watched_show : null;
     const techMil = tech?.milestone;
-    const events  = selectWorldEvents(year, data.world_events || [], effectiveCountryCode || '', 2, {
-      avoidTexts: [techMil, countryEvent],
-    });
-
-    // Pick one notable world event
-    const bigEvent = events.length > 0 ? events[0].event : null;
 
     function row(icon, label, value) {
       if (!value) return '';
@@ -2573,10 +2566,8 @@ async function renderAt18Section(parentYear, childYear, parentCountryCode, child
       row('\uD83C\uDFB5', musicSelection?.rowLabel || '#1 Song', songDisplay),
       row('\uD83C\uDFAC', filmSelection?.rowLabel || 'Biggest Film', movieDisplay),
       row('\uD83D\uDCFA', 'Top TV Show',  tvShow),
-      row('\uD83C\uDFF3\uFE0F', 'Country Event', countryEvent),
-      row('\uD83D\uDCCD', 'Country Context', countrySnapshot),
+      row('\uD83D\uDCCD', 'Country', countryEvent),
       row('\uD83D\uDCBB', 'Technology',   techMil || null),
-      row('\uD83C\uDF0D', 'Global Event', countryEvent ? null : bigEvent),
       row('\u26FD',       `Gas (${CURRENT_YEAR}$)`,  gasFinal),
       row('\uD83D\uDC64', leaderInfo ? leaderInfo.title : '', leader),
     ].filter(Boolean).join('');
