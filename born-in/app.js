@@ -2358,41 +2358,41 @@ const MUSIC_IT_NO1 = {
 };
 
 const MUSIC_ES_NO1 = {
-  1956:{s:'Me lo dijo Perez',a:'Gloria Lasso'},
-  1962:{s:'El porompompero',a:'Manolo Escobar'},
-  1968:{s:'La la la',a:'Massiel'},
+  1956:{s:'Me Lo Dijo Pérez',a:'Gloria Lasso'},
+  1962:{s:'El Porompompero',a:'Manolo Escobar'},
+  1968:{s:'La La La',a:'Massiel'},
   1970:{s:'Gwendolyne',a:'Julio Iglesias'},
-  1973:{s:'Eres tu',a:'Mocedades'},
-  1981:{s:'Quiereme mucho',a:'Julio Iglesias'},
-  1984:{s:'Me cuesta tanto olvidarte',a:'Mecano'},
-  1988:{s:'Hijo de la luna',a:'Mecano'},
-  1995:{s:'Macarena',a:'Los Del Rio'},
-  1997:{s:'Corazon partio',a:'Alejandro Sanz'},
+  1973:{s:'Eres Tú',a:'Mocedades'},
+  1981:{s:'Quiéreme Mucho',a:'Julio Iglesias'},
+  1984:{s:'Me Cuesta Tanto Olvidarte',a:'Mecano'},
+  1988:{s:'Hijo de la Luna',a:'Mecano'},
+  1995:{s:'Macarena',a:'Los Del Río'},
+  1997:{s:'Corazón Partío',a:'Alejandro Sanz'},
   1999:{s:'Livin\' la Vida Loca',a:'Ricky Martin'},
   2001:{s:'Wherever, Whenever',a:'Shakira'},
-  2004:{s:'Tu calorro',a:'Estopa'},
+  2004:{s:'Tu Calorro',a:'Estopa'},
   2006:{s:'Hips Don\'t Lie',a:'Shakira'},
   2010:{s:'Waka Waka',a:'Shakira'},
 };
 
 const MUSIC_BR_NO1 = {
-  1959:{s:'A felicidade',a:'Tom Jobim & Vinicius de Moraes'},
-  1962:{s:'Garota de Ipanema',a:'Tom Jobim & Vinicius de Moraes'},
+  1959:{s:'A Felicidade',a:'Tom Jobim & Vinícius de Moraes'},
+  1962:{s:'Garota de Ipanema',a:'Tom Jobim & Vinícius de Moraes'},
   1967:{s:'Alegria, Alegria',a:'Caetano Veloso'},
   1970:{s:'Detalhes',a:'Roberto Carlos'},
-  1973:{s:'Eu te amo',a:'Roberto Carlos'},
+  1973:{s:'Eu Te Amo',a:'Roberto Carlos'},
   1977:{s:'Gita',a:'Raul Seixas'},
   1980:{s:'Menino do Rio',a:'Baby Consuelo'},
-  1984:{s:'Como uma onda',a:'Lulu Santos'},
+  1984:{s:'Como Uma Onda',a:'Lulu Santos'},
   1985:{s:'Exagerado',a:'Cazuza'},
   1988:{s:'Brasil',a:'Cazuza'},
-  1991:{s:'Pais e filhos',a:'Legiao Urbana'},
-  1995:{s:'Sera',a:'Legiao Urbana'},
+  1991:{s:'Pais e Filhos',a:'Legião Urbana'},
+  1995:{s:'Será',a:'Legião Urbana'},
   1997:{s:'Sozinho',a:'Caetano Veloso'},
-  2002:{s:'Velha infancia',a:'Tribalistas'},
-  2003:{s:'Ainda lembro',a:'Marisa Monte'},
-  2005:{s:'Vai chover',a:'Ivete Sangalo'},
-  2008:{s:'Balanca Brasil',a:'Ivete Sangalo'},
+  2002:{s:'Velha Infância',a:'Tribalistas'},
+  2003:{s:'Ainda Lembro',a:'Marisa Monte'},
+  2005:{s:'Vai Chover',a:'Ivete Sangalo'},
+  2008:{s:'Balança Brasil',a:'Ivete Sangalo'},
 };
 
 const MUSIC_JP_NO1 = {
@@ -2452,26 +2452,26 @@ const MUSIC_IN_NO1 = {
 };
 
 const MUSIC_TR_NO1 = {
-  1960:{s:'Yesil Yesil',a:'Zeki Muren'},
-  1967:{s:'Yalan Dunya',a:'Orhan Gencebay'},
+  1960:{s:'Yeşil Yeşil',a:'Zeki Müren'},
+  1967:{s:'Yalan Dünya',a:'Orhan Gencebay'},
   1975:{s:'Kara Sevda',a:'Ajda Pekkan'},
   1978:{s:'Petrol',a:'Ajda Pekkan'},
   1982:{s:'Firuze',a:'Sezen Aksu'},
   1985:{s:'Git',a:'Sezen Aksu'},
-  1988:{s:'Hadi Bakalim',a:'Sezen Aksu'},
-  1992:{s:'Yalnizlik Senfonisi',a:'Ibrahim Tatlises'},
-  1995:{s:'Dom Dom Kursunu',a:'Ibrahim Tatlises'},
-  1997:{s:'Simarik',a:'Tarkan'},
-  1999:{s:'Sikidim',a:'Tarkan'},
+  1988:{s:'Hadi Bakalım',a:'Sezen Aksu'},
+  1992:{s:'Yalnızlık Senfonisi',a:'İbrahim Tatlıses'},
+  1995:{s:'Dom Dom Kurşunu',a:'İbrahim Tatlıses'},
+  1997:{s:'Şımarık',a:'Tarkan'},
+  1999:{s:'Şıkıdım',a:'Tarkan'},
   2003:{s:'Dudu',a:'Tarkan'},
-  2006:{s:'Sor',a:'Hadise'},
+  2006:{s:'Şor',a:'Hadise'},
   2008:{s:'Deli',a:'Tarkan'},
-  2010:{s:'Isyan',a:'Manga'},
+  2010:{s:'İsyan',a:'maNga'},
 };
 
 const MUSIC_SE_NO1 = {
-  1958:{s:'Sommaren ar kort',a:'Anita Lindblom'},
-  1966:{s:'Harliga sommardag',a:'Lill-Babs'},
+  1958:{s:'Sommaren Är Kort',a:'Anita Lindblom'},
+  1966:{s:'Härliga Sommardag',a:'Lill-Babs'},
   1974:{s:'Waterloo',a:'ABBA'},
   1976:{s:'Fernando',a:'ABBA'},
   1979:{s:'Gimme! Gimme! Gimme!',a:'ABBA'},
@@ -2481,43 +2481,43 @@ const MUSIC_SE_NO1 = {
   1991:{s:'Joyride',a:'Roxette'},
   1993:{s:'The Sign',a:'Ace of Base'},
   1995:{s:'All That She Wants',a:'Ace of Base'},
-  1999:{s:'Livet ar',a:'Markoolio'},
+  1999:{s:'Livet Är',a:'Markoolio'},
   2004:{s:'Toxic',a:'Britney Spears'},
-  2006:{s:'Hej Moansen',a:'Markoolio'},
-  2009:{s:'Nar vindarna viskar mitt namn',a:'Lisa Nilsson'},
+  2006:{s:'Hej Människan',a:'Markoolio'},
+  2009:{s:'När Vindarna Viskar Mitt Namn',a:'Lisa Nilsson'},
 };
 
 const MUSIC_PT_NO1 = {
-  1955:{s:'Uma Casa Portuguesa',a:'Amalia Rodrigues'},
-  1959:{s:'Tudo Isto e Fado',a:'Amalia Rodrigues'},
-  1965:{s:'Barco Negro',a:'Amalia Rodrigues'},
+  1955:{s:'Uma Casa Portuguesa',a:'Amália Rodrigues'},
+  1959:{s:'Tudo Isto É Fado',a:'Amália Rodrigues'},
+  1965:{s:'Barco Negro',a:'Amália Rodrigues'},
   1970:{s:'E Depois do Adeus',a:'Paulo de Carvalho'},
-  1974:{s:'Grandola, Vila Morena',a:'Zeca Afonso'},
+  1974:{s:'Grândola, Vila Morena',a:'Zeca Afonso'},
   1980:{s:'Cavaleiro Monge',a:'Carlos Paredes'},
-  1985:{s:'O Corpo e que Paga',a:'Rui Veloso'},
-  1990:{s:'Lisboa Menina e Moca',a:'Carlos do Carmo'},
+  1985:{s:'O Corpo É Que Paga',a:'Rui Veloso'},
+  1990:{s:'Lisboa Menina e Moça',a:'Carlos do Carmo'},
   1994:{s:'O Pastor',a:'Madredeus'},
-  1998:{s:'Mar Portugues',a:'Dulce Pontes'},
+  1998:{s:'Mar Português',a:'Dulce Pontes'},
   2001:{s:'Flor de Lis',a:'Da Vinci'},
   2005:{s:'Conquistador',a:'Da Vinci'},
   2008:{s:'Senhora do Mar',a:'Vitorino'},
-  2010:{s:'Ha Dias Assim',a:'Mariza'},
+  2010:{s:'Há Dias Assim',a:'Mariza'},
 };
 
 const MUSIC_NL_NO1 = {
-  1960:{s:'Kom van dat dak af',a:'Peter Koelewijn'},
+  1960:{s:'Kom van dat Dak Af',a:'Peter Koelewijn'},
   1969:{s:'Venus',a:'Shocking Blue'},
   1973:{s:'Radar Love',a:'Golden Earring'},
   1977:{s:'Ma Belle Amie',a:'Tee Set'},
-  1980:{s:'De Vlieger',a:'Andre Hazes'},
-  1984:{s:'Zij Gelooft in Mij',a:'Andre Hazes'},
+  1980:{s:'De Vlieger',a:'André Hazes'},
+  1984:{s:'Zij Gelooft in Mij',a:'André Hazes'},
   1987:{s:'Het Land van Maansen en Mansen',a:'Herman van Veen'},
-  1989:{s:'Bloed, Zweet en Tranen',a:'Andre Hazes'},
-  1993:{s:'Leef',a:'Andre Hazes'},
-  1997:{s:'Dromen zijn bedrog',a:'Marco Borsato'},
-  1999:{s:'Hoe het danst',a:'Marco Borsato'},
-  2002:{s:'Leven zonder jou',a:'Marco Borsato'},
-  2005:{s:'Afscheid nemen bestaat niet',a:'Marco Borsato'},
+  1989:{s:'Bloed, Zweet en Tranen',a:'André Hazes'},
+  1993:{s:'Leef',a:'André Hazes'},
+  1997:{s:'Dromen Zijn Bedrog',a:'Marco Borsato'},
+  1999:{s:'Hoe het Danst',a:'Marco Borsato'},
+  2002:{s:'Leven Zonder Jou',a:'Marco Borsato'},
+  2005:{s:'Afscheid Nemen Bestaat Niet',a:'Marco Borsato'},
   2007:{s:'Watermensen',a:'Within Temptation'},
   2010:{s:'Drank & Drugs',a:'Lil Kleine & Ronnie Flex'},
 };
@@ -3818,13 +3818,27 @@ function renderActIII(year, countryCode, data) {
   const songArtist = (countryCode === 'GB' && ukSong) ? ukArtist : artist;
   const songLabel  = (countryCode === 'GB' && ukSong) ? 'UK Chart #1' : (isUS ? 'Billboard Year-End #1' : 'US Billboard #1');
 
-  // Tier 2: Local music chart (DE, FR, AU)
-  const localMusic = LOCAL_MUSIC[countryCode]?.[year];
+  // Tier 2: Local music chart — nearest year match
+  const localMusicData = LOCAL_MUSIC[countryCode] || null;
+  let localMusic = localMusicData?.[year] || null;
   const localMusicLabel = LOCAL_MUSIC_LABEL[countryCode] || null;
+  if (!localMusic && localMusicData) {
+    const keys = Object.keys(localMusicData).map(Number);
+    let best = null, bestDist = Infinity;
+    for (const k of keys) { const d = Math.abs(year - k); if (d < bestDist) { best = k; bestDist = d; } }
+    if (best !== null && bestDist <= 3) localMusic = localMusicData[best];
+  }
 
-  // Tier 2: Local film
-  const localFilm = LOCAL_FILM[countryCode]?.[year];
+  // Tier 2: Local film — nearest year match
+  const localFilmData = LOCAL_FILM[countryCode] || null;
+  let localFilm = localFilmData?.[year] || null;
   const localFilmLabel = LOCAL_FILM_LABEL[countryCode] || null;
+  if (!localFilm && localFilmData) {
+    const keys = Object.keys(localFilmData).map(Number);
+    let best = null, bestDist = Infinity;
+    for (const k of keys) { const d = Math.abs(year - k); if (d < bestDist) { best = k; bestDist = d; } }
+    if (best !== null && bestDist <= 3) localFilm = localFilmData[best];
+  }
 
   // Tier 2: Local sports champion
   const sportEntry = SPORTS_LOOKUP[countryCode];
