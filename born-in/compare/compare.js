@@ -1192,13 +1192,20 @@ function selectWorldEvents(year, events, countryCode, limit, options) {
 }
 
 function textTimelineCard({ eyebrow, headline, parentYear, childYear, parentText, childText }) {
+  // Split comma-separated events into individual bullet points.
+  // Only split on ", " followed by an uppercase letter (new event),
+  // not on commas inside numbers like "kills 6,434".
+  function splitEvents(text) {
+    if (!text) return [];
+    return text.split(/,\s+(?=[A-Z])/).map(e => ({ event: e.trim() })).filter(e => e.event);
+  }
   return dualTimeline({
     eyebrow,
     headline,
     parentYear,
     childYear,
-    parentEvents: parentText ? [{ event: parentText }] : [],
-    childEvents: childText ? [{ event: childText }] : [],
+    parentEvents: splitEvents(parentText),
+    childEvents: splitEvents(childText),
   });
 }
 
