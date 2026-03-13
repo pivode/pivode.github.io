@@ -1144,7 +1144,7 @@ function scoreWorldEvent(entry, countryCode) {
 function selectWorldEvents(year, events, countryCode, limit, options) {
   const avoidTexts = options?.avoidTexts || [];
   const curated = curatedWorldEvents(year, limit, avoidTexts);
-  if (curated.length > 0) return curated;
+  if (curated.length >= limit) return curated;
 
   const normalizedSeen = new Set();
   const scored = (events || [])
@@ -1160,7 +1160,12 @@ function selectWorldEvents(year, events, countryCode, limit, options) {
     .filter(item => item.entry.event && item.score > -6)
     .sort((a, b) => b.score - a.score || a.index - b.index);
 
-  const selected = [];
+  // Start with any curated events already found (< limit)
+  const selected = curated.slice();
+  selected.forEach(ev => {
+    const key = String(ev.event || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    if (key) normalizedSeen.add(key);
+  });
   const categoryCounts = Object.create(null);
 
   function categoryCap(category) {
@@ -1737,7 +1742,7 @@ function dualTimeline({ eyebrow, headline, parentYear, childYear, parentEvents, 
             <div class="timeline-dot"></div>
             <div class="timeline-line"></div>
           </div>
-          ${month ? `<span class="timeline-month">${escHtml(month)}</span>` : ''}
+          <span class="timeline-month">${month ? escHtml(month) : ''}</span>
           <p class="timeline-event">${escHtml(ev.event)}</p>
         </div>
       `;
