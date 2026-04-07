@@ -235,11 +235,11 @@ function exploreCardsHTML(variant) {
       </span>
       <span class="explore-card-arrow">&rarr;</span>
     </a>
-    <a href="/" class="explore-card">
-      <span class="explore-card-icon">📊</span>
+    <a href="/games/" class="explore-card">
+      <span class="explore-card-icon">🎮</span>
       <span class="explore-card-text">
-        <span class="explore-card-title">Browse Datasets</span>
-        <span class="explore-card-sub">Interactive experiences and datasets built from real-world data</span>
+        <span class="explore-card-title">Game Codebases</span>
+        <span class="explore-card-sub">Production-ready game source code you can learn from and build on</span>
       </span>
       <span class="explore-card-arrow">&rarr;</span>
     </a>
@@ -763,6 +763,12 @@ function generateSitemap(allYears, comparePairs) {
 
   // Other existing pages
   xml += `
+  <url>
+    <loc>${SITE}/datasets/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>${SITE}/games/</loc>
     <lastmod>${today}</lastmod>

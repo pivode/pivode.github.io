@@ -1,15 +1,18 @@
 # Pivode
 
-> High quality datasets for analysts, researchers, and builders. Exhaustive, cleaned datasets formatted as CSV - ready to use immediately in pandas, R, or Excel.
+> Pivode publishes free interactive tools and clean datasets. Flagship product: "The World When You Were Born" - a personalized infographic of life the year you were born across 40 countries.
 
-Pivode publishes ready-to-use data products covering sports, food, travel, automotive, and life science topics. All datasets are collected, cleaned, and delivered as structured CSV files with full schema documentation.
+## Interactive Tools
+
+- [The World When You Were Born](https://pivode.github.io/born-in/): Enter your birth year and country to see a personalized infographic of what the world looked like when you were born. Covers population, prices, leaders, music, movies, technology, and more for years 1950-2010 across 40 countries. All prices inflation-adjusted to 2024 dollars.
+- [Compare Generations](https://pivode.github.io/born-in/compare/): Enter two birth years to see how the world changed between generations. Compare life expectancy, GDP, prices, and culture side by side. Supports different countries for each generation.
 
 ## Datasets
 
 - [Roller Coaster Database](https://seangularity.gumroad.com/l/roller-coasters): Every roller coaster in the RCDB database - 2,160 coasters across 144 countries. Includes height, speed, length, manufacturer, park, country, and coaster type. Free.
-- [US Flight Delays and Airport Performance](https://seangularity.gumroad.com/l/flight-delays): Five years of US domestic flight performance data (2020-2024) with delay breakdowns by cause - carrier, weather, NAS, and late aircraft. Two CSVs: 559K route-level rows and 21K airport-level rows, enriched with full airport names, cities, states, and coordinates. $2.99.
+- [US Flight Delays and Airport Performance](https://seangularity.gumroad.com/l/flight-delays): Five years of US domestic flight performance data (2020-2024) with delay breakdowns by cause - carrier, weather, NAS, and late aircraft. Two CSVs: 559K route-level rows and 21K airport-level rows, enriched with full airport names, cities, states, and coordinates. $1.99.
 - [European Football Player Stats](https://seangularity.gumroad.com/l/football-data-set): Player-level statistics across 30 seasons of the top 8 European leagues (1996-2025). Includes goals, assists, market value, nationality, club history. $3.99.
-- [Biotech IP + Funding Data](https://seangularity.gumroad.com/l/biotech-patents): 1.4 million USPTO biotech patent records matched with SEC Form D fundraising disclosures across 3,591 companies (2000-2024). Includes patent counts, CPC classification, total capital raised, and funding timeline. $3.99.
+- [Biotech IP + Funding Data](https://seangularity.gumroad.com/l/biotech-patents): 1.4 million USPTO biotech patent records matched with SEC Form D fundraising disclosures across 3,591 companies (2000-2024). Includes patent counts, CPC classification, total capital raised, and funding timeline. $2.99.
 - [Michelin Guide Restaurants](https://seangularity.gumroad.com/l/michelin): Every Michelin-starred and Bib Gourmand restaurant across 51 countries, complete 2026 guide. Includes award level, price tier, city, and Michelin profile link. $1.99.
 - [Indian Cars Database](https://seangularity.gumroad.com/l/indian-cars): Every car variant on sale in India in 2026 - 1,968 variants across 285 models from 41 brands. Includes engine specs, dimensions, fuel type, pricing, and crash test safety ratings. $2.99.
 
@@ -18,12 +21,8 @@ Pivode publishes ready-to-use data products covering sports, food, travel, autom
 - [The Frontier - Race to AGI](https://seangularity.gumroad.com/l/the-frontier): Production-ready browser game codebase. AI startup simulation with 32 interconnected systems. 44,000 lines of TypeScript, 860 passing tests. $1,999.
 - [Golden Era - FC Barcelona Manager](https://seangularity.gumroad.com/l/golden-era): Browser-based football manager simulation. 5 real Barcelona seasons (2017-2022), platform builds for CrazyGames, Poki, and GameDistribution. 22,354 lines of code, 656 passing tests. $1,999.
 
-## Interactive Tools
-
-- [The World When You Were Born](https://pivode.github.io/born-in/): Enter your birth year and country to see a personalized infographic of what the world looked like when you were born. Covers population, prices, leaders, music, movies, technology, and more for years 1950-2010 across 20+ countries. All prices inflation-adjusted to 2024 dollars.
-- [Compare Generations](https://pivode.github.io/born-in/compare/): Enter two birth years to see how the world changed between generations. Compare life expectancy, GDP, prices, and culture side by side. Supports different countries for each generation.
-
 ## Links
 
 - Homepage: https://pivode.github.io
-- All datasets: https://seangularity.gumroad.com
+- Datasets: https://pivode.github.io/datasets/
+- Game Codebases: https://pivode.github.io/games/
