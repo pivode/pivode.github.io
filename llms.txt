@@ -1,11 +1,11 @@
-# Pivode
+# Meplar
 
-> Pivode publishes free interactive tools and clean datasets. Flagship product: "The World When You Were Born" - a personalized infographic of life the year you were born across 40 countries.
+> Meplar publishes free interactive tools and clean datasets. Flagship product: "The World When You Were Born" - a personalized infographic of life the year you were born across 40 countries.
 
 ## Interactive Tools
 
-- [The World When You Were Born](https://pivode.github.io/born-in/): Enter your birth year and country to see a personalized infographic of what the world looked like when you were born. Covers population, prices, leaders, music, movies, technology, and more for years 1950-2010 across 40 countries. All prices inflation-adjusted to 2024 dollars.
-- [Compare Generations](https://pivode.github.io/born-in/compare/): Enter two birth years to see how the world changed between generations. Compare life expectancy, GDP, prices, and culture side by side. Supports different countries for each generation.
+- [The World When You Were Born](https://meplar.com/born-in/): Enter your birth year and country to see a personalized infographic of what the world looked like when you were born. Covers population, prices, leaders, music, movies, technology, and more for years 1950-2010 across 40 countries. All prices inflation-adjusted to 2024 dollars.
+- [Compare Generations](https://meplar.com/born-in/compare/): Enter two birth years to see how the world changed between generations. Compare life expectancy, GDP, prices, and culture side by side. Supports different countries for each generation.
 
 ## Datasets
 
@@ -23,6 +23,6 @@
 
 ## Links
 
-- Homepage: https://pivode.github.io
-- Datasets: https://pivode.github.io/datasets/
-- Game Codebases: https://pivode.github.io/games/
+- Homepage: https://meplar.com
+- Datasets: https://meplar.com/datasets/
+- Game Codebases: https://meplar.com/games/

@@ -678,7 +678,7 @@ function renderVerdict() {
 
     <div class="verdict-footer">
       <button class="btn-secondary" id="btn-another">Try another question</button>
-      <a class="btn-data" href="https://pivode.github.io" target="_blank" rel="noopener">
+      <a class="btn-data" href="https://meplar.com" target="_blank" rel="noopener">
         Browse our datasets →
       </a>
     </div>

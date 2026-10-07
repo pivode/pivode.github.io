@@ -4047,8 +4047,8 @@ function renderInfographic(year, countryCode, data) {
 
   // Update document title for SEO and social sharing
   document.title = name
-    ? `The World When ${name} Was Born (${year}) - Pivode`
-    : `The World in ${year} - What Life Was Like - Pivode`;
+    ? `The World When ${name} Was Born (${year}) - Meplar`
+    : `The World in ${year} - What Life Was Like - Meplar`;
 
   // Build all acts
   $infoContent.innerHTML = [
@@ -5268,7 +5268,7 @@ $copyLinkBtn.addEventListener('click', () => {
 $tweetBtn.addEventListener('click', () => {
   const params = getURLParams();
   if (!params) return;
-  const text = `The world the year I was born - ${params.year}. pivode.github.io/born-in?year=${params.year}&country=${params.country}`;
+  const text = `The world the year I was born - ${params.year}. meplar.com/born-in?year=${params.year}&country=${params.country}`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
   window.open(tweetUrl, '_blank', 'noopener,noreferrer');
   $sharePopover.classList.add('hidden');
@@ -5344,7 +5344,7 @@ function buildShareCard() {
       <div class="sc-stats">${statsHTML}</div>
       ${eventsHTML}
       <div class="sc-footer">
-        <span class="sc-brand">pivode.github.io/born-in</span>
+        <span class="sc-brand">meplar.com/born-in</span>
       </div>
     </div>
   `;
@@ -5463,8 +5463,8 @@ function updateURL(year, countryCode) {
 
 function buildShareURL() {
   const params = getURLParams();
-  if (!params) return 'https://pivode.github.io/born-in';
-  return `https://pivode.github.io/born-in?year=${params.year}&country=${params.country}`;
+  if (!params) return 'https://meplar.com/born-in';
+  return `https://meplar.com/born-in?year=${params.year}&country=${params.country}`;
 }
 
 function getURLParams() {

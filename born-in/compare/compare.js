@@ -2711,7 +2711,7 @@ function buildCompareShareCard() {
       </div>
       <div class="sc-stats">${statsHTML}</div>
       <div class="sc-footer">
-        <span class="sc-brand">pivode.github.io/born-in/compare</span>
+        <span class="sc-brand">meplar.com/born-in/compare</span>
       </div>
     </div>
   `;

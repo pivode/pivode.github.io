@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = 8765;
 const BASE = `http://localhost:${PORT}`;
-const SITE = 'https://pivode.github.io';
+const SITE = 'https://meplar.com';
 const CONCURRENCY = 4;
 const DATA_DIR = path.join(__dirname, 'born-in', 'data');
 const OUT_DIR = path.join(__dirname, 'born-in');
@@ -249,8 +249,8 @@ function adUnitHTML() {
 function footerHTML() {
   return `<footer class="site-footer">
   <div class="footer-inner">
-    <p class="footer-brand">pivode</p>
-    <p class="footer-copy">Data compiled and maintained by Pivode.</p>
+    <p class="footer-brand">meplar</p>
+    <p class="footer-copy">Data compiled and maintained by Meplar.</p>
     <p class="footer-disclosure">Some links are affiliate links. We may earn a small commission at no extra cost to you.</p>
     <a href="/privacy.html" style="font-size:13px;color:#7a7a92;text-decoration:none">Privacy Policy</a>
   </div>
@@ -262,7 +262,7 @@ function footerHTML() {
 function bornInPageHTML(year, contentHTML, yearData, allYears, comparePairs) {
   const accent = getAccent(year);
   const era = getEraClass(year);
-  const title = `The World in ${year} - What Life Was Like | Pivode`;
+  const title = `The World in ${year} - What Life Was Like | Meplar`;
   const desc = bornInMeta(year, yearData);
   const canonical = `${SITE}/born-in/${year}/`;
 
@@ -297,6 +297,7 @@ function bornInPageHTML(year, contentHTML, yearData, allYears, comparePairs) {
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(desc)}">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meplar">
   <meta property="og:url" content="${canonical}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
@@ -324,7 +325,7 @@ function bornInPageHTML(year, contentHTML, yearData, allYears, comparePairs) {
     "description": "${esc(desc)}",
     "isPartOf": {
       "@type": "WebSite",
-      "name": "Pivode",
+      "name": "Meplar",
       "url": "${SITE}"
     }
   }
@@ -390,7 +391,7 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
   const accent = getAccent(childYear);
   const pData = loadYearData(parentYear);
   const cData = loadYearData(childYear);
-  const title = `${parentYear} vs ${childYear} - How the World Changed | Pivode`;
+  const title = `${parentYear} vs ${childYear} - How the World Changed | Meplar`;
   const desc = compareMeta(parentYear, childYear, pData, cData);
   const canonical = `${SITE}/born-in/compare/${parentYear}-vs-${childYear}/`;
 
@@ -443,6 +444,7 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(desc)}">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meplar">
   <meta property="og:url" content="${canonical}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
@@ -470,7 +472,7 @@ function comparePageHTML(parentYear, childYear, contentHTML, comparePairs, allBo
     "description": "${esc(desc)}",
     "isPartOf": {
       "@type": "WebSite",
-      "name": "Pivode",
+      "name": "Meplar",
       "url": "${SITE}"
     }
   }
@@ -768,6 +770,12 @@ function generateSitemap(allYears, comparePairs) {
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>${SITE}/india-car-guide/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>${SITE}/privacy.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>yearly</changefreq>
@@ -799,7 +807,10 @@ async function main() {
 
   // Launch browser
   console.log('Launching browser...');
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    headless: true,
+    executablePath: process.env.CHROMIUM_EXECUTABLE_PATH || undefined,
+  });
 
   // ─── Generate born-in pages ──────────────────────────────────────────
   console.log(`\nGenerating ${allYears.length} born-in pages...`);
